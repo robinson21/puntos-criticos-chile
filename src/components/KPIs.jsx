@@ -1,37 +1,39 @@
-import { useFilters } from '../data/FilterContext';
+import { useData } from '../data/DataContext';
 
 export default function KPIs() {
-  const { stats, ranking } = useFilters();
-  const topComuna = ranking[0];
+  const { metadata, records } = useData();
+  const total = metadata?.total || 0;
+  const niveles = metadata?.niveles || {};
+  const riesgoAlto = (niveles['Alto'] || 0) + (niveles['Muy Alto'] || 0);
+  const pctAlto = total ? Math.round(riesgoAlto / total * 100) : 0;
+  const topComuna = metadata?.ranking?.[0];
 
   return (
     <div className="kpis">
       <div className="kpi">
         <div className="label">Puntos Críticos</div>
-        <div className="value">{stats.total.toLocaleString('es-CL')}</div>
-        <div className="sub">bajo el filtro actual</div>
+        <div className="value">{total.toLocaleString('es-CL')}</div>
+        <div className="sub">total nacional</div>
       </div>
       <div className="kpi accent">
         <div className="label">Riesgo Alto o Superior</div>
-        <div className="value">{stats.pctAlto}%<span> · {stats.riesgoAlto.toLocaleString('es-CL')}</span></div>
-        <div className="sub">{stats.total ? Math.round(stats.riesgoAlto/stats.total*100)+'% del total' : 'sin datos'}</div>
+        <div className="value">{pctAlto}%<span> · {riesgoAlto.toLocaleString('es-CL')}</span></div>
+        <div className="sub">{total ? `${Math.round(riesgoAlto/total*100)}% del total` : 'sin datos'}</div>
       </div>
       <div className="kpi">
-        <div className="label">Tasa de riesgo</div>
-        <div className="value" style={{fontSize:'22px'}}>
-          {stats.total ? (stats.riesgoAlto / stats.total * 100).toFixed(1) : '—'}%
-        </div>
-        <div className="sub">puntos con nivel alto o muy alto</div>
+        <div className="label">Comunas afectadas</div>
+        <div className="value">{metadata?.comunas || '—'}</div>
+        <div className="sub">en 14 regiones</div>
       </div>
       <div className="kpi">
-        <div className="label">Comuna más compleja</div>
-        <div className="value" style={{fontSize:'18px'}}>{topComuna?.c || '—'}</div>
-        <div className="sub">{topComuna ? `${topComuna.n} puntos · índice ${topComuna.idx}/100` : 'sin datos'}</div>
+        <div className="label">Región más crítica</div>
+        <div className="value" style={{fontSize:'18px'}}>Metropolitana</div>
+        <div className="sub">2.320 puntos</div>
       </div>
       <div className="kpi">
-        <div className="label">Requieren infraestructura</div>
-        <div className="value">42%</div>
-        <div className="sub">del total con solución definida</div>
+        <div className="label">Comuna top</div>
+        <div className="value" style={{fontSize:'17px'}}>{topComuna?.c || '—'}</div>
+        <div className="sub">{topComuna ? `${topComuna.n} pts · índice ${topComuna.idx}` : ''}</div>
       </div>
     </div>
   );
