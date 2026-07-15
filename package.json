@@ -1,0 +1,27 @@
+{
+  "name": "puntos-criticos-chile",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "leaflet": "^1.9.4",
+    "chart.js": "^4.4.7",
+    "react-chartjs-2": "^5.2.0",
+    "react-leaflet": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "vite": "^5.4.0",
+    "gh-pages": "^6.1.0"
+  },
+  "homepage": "https://robinson21.github.io/puntos-criticos-chile/"
+}
