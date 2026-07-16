@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-16T16:39:30.660301",
+  "actualizado": "2026-07-16T19:41:06.537926",
   "totales": {
     "avisos": 10,
     "alertas": 7,
@@ -7,6 +7,47 @@
     "total": 19
   },
   "alertas": [
+    {
+      "id": 5168,
+      "tipo": "Aviso",
+      "codigo": "A320-4/2026",
+      "emision": "Jueves 16 de julio del 2026 a las 15:08 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del jueves 16 de julio del 2026",
+      "hasta": "la noche del martes 21 de julio del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5167,
+      "tipo": "Alerta",
+      "codigo": "AA95-2/2026",
+      "emision": "Jueves 16 de julio del 2026 a las 12:42 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del jueves 16 de julio del 2026",
+      "hasta": "la noche del jueves 16 de julio del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Precordillera) | Los Lagos (Litoral, Cordillera Costa, Chiloé, Litoral Interior)",
+      "titulo": "Viento Moderado a Fuerte en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
     {
       "id": 5166,
       "tipo": "Alerta",
@@ -186,26 +227,6 @@
       ]
     },
     {
-      "id": 5153,
-      "tipo": "Alerta",
-      "codigo": "AA95-1/2026",
-      "emision": "Miércoles 15 de julio del 2026 a las 13:28 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del jueves 16 de julio del 2026",
-      "hasta": "la noche del jueves 16 de julio del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Precordillera) | Los Lagos (Litoral, Cordillera Costa)",
-      "titulo": "Viento Moderado a Fuerte en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
       "id": 5152,
       "tipo": "Aviso",
       "codigo": "A319-5/2026",
@@ -251,27 +272,6 @@
         "O'Higgins",
         "Valparaíso",
         "Ñuble"
-      ]
-    },
-    {
-      "id": 5148,
-      "tipo": "Aviso",
-      "codigo": "A320-3/2026",
-      "emision": "Miércoles 15 de julio del 2026 a las 12:51 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del miércoles 15 de julio del 2026",
-      "hasta": "la noche del lunes 20 de julio del 2026",
-      "observacion": "Probabilidad de viento blanco",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Atacama",
-        "Tarapacá"
       ]
     },
     {
