@@ -1,12 +1,48 @@
 {
-  "actualizado": "2026-07-16T13:37:39.224379",
+  "actualizado": "2026-07-16T16:39:30.660301",
   "totales": {
     "avisos": 10,
-    "alertas": 6,
-    "alarmas": 1,
-    "total": 17
+    "alertas": 7,
+    "alarmas": 2,
+    "total": 19
   },
   "alertas": [
+    {
+      "id": 5166,
+      "tipo": "Alerta",
+      "codigo": "AA98-1/2026",
+      "emision": "Jueves 16 de julio del 2026 a las 10:53 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Alta presión fría",
+      "desde": "la madrugada del domingo 19 de julio del 2026",
+      "hasta": "la mañana del lunes 20 de julio del 2026",
+      "observacion": "",
+      "zonas": "Aysén (Patagonia Subandina Norte)",
+      "titulo": "Heladas Moderadas a Intensas en patagonia subandina norte de la región de Aysén",
+      "icono": "🥶",
+      "color": "#f97316",
+      "regiones": [
+        "Aysén"
+      ]
+    },
+    {
+      "id": 5163,
+      "tipo": "Aviso",
+      "codigo": "A330/2026",
+      "emision": "Jueves 16 de julio del 2026 a las 10:03 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Centro de baja presión",
+      "desde": "la madrugada del viernes 17 de julio del 2026",
+      "hasta": "la mañana del viernes 17 de julio del 2026",
+      "observacion": "",
+      "zonas": "Aysén (Patagonia Subandina Norte)",
+      "titulo": "Nevadas Normales a Moderadas en patagonia subandina norte de la región de Aysén",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén"
+      ]
+    },
     {
       "id": 5162,
       "tipo": "Alerta",
@@ -113,22 +149,20 @@
       ]
     },
     {
-      "id": 5156,
-      "tipo": "Aviso",
-      "codigo": "A328/2026",
-      "emision": "Miércoles 15 de julio del 2026 a las 15:26 hrs.",
-      "fenomeno": "Bajas Temperaturas",
-      "condicion": "Alta presión fría",
-      "desde": "la madrugada del domingo 19 de julio del 2026",
-      "hasta": "la tarde del lunes 20 de julio del 2026",
+      "id": 5155,
+      "tipo": "Alarma",
+      "codigo": "AAA5/2026",
+      "emision": "Jueves 16 de julio del 2026 a las 10:03 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del sábado 18 de julio del 2026",
+      "hasta": "la mañana del lunes 20 de julio del 2026",
       "observacion": "",
-      "zonas": "Aysén (Patagonia Subandina Norte, Patagonia Subandina Sur)",
-      "titulo": "Bajas Temperaturas en zonas de la región de Aysén",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén"
-      ]
+      "zonas": "Provincia de Huasco (Costa a precordillera)",
+      "titulo": "Precipitaciones Intensas en Provincia de Huasco (Costa a precordillera)",
+      "icono": "🌧️",
+      "color": "#ef4444",
+      "regiones": []
     },
     {
       "id": 5154,
