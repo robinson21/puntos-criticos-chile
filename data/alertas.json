@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-07-16T22:42:05.146148",
+  "actualizado": "2026-07-17T01:43:44.118647",
   "totales": {
-    "avisos": 10,
+    "avisos": 9,
     "alertas": 6,
     "alarmas": 2,
-    "total": 18
+    "total": 17
   },
   "alertas": [
     {
@@ -136,30 +136,6 @@
       ]
     },
     {
-      "id": 5152,
-      "tipo": "Aviso",
-      "codigo": "A319-5/2026",
-      "emision": "Miércoles 15 de julio del 2026 a las 13:11 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del miércoles 15 de julio del 2026",
-      "hasta": "la noche del sábado 18 de julio del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
       "id": 5154,
       "tipo": "Aviso",
       "codigo": "A324-3/2026",
@@ -238,25 +214,6 @@
         "Metropolitana",
         "O'Higgins",
         "Valparaíso"
-      ]
-    },
-    {
-      "id": 5160,
-      "tipo": "Aviso",
-      "codigo": "A329/2026",
-      "emision": "Jueves 16 de julio del 2026 a las 05:59 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Frente frío e inestabilidad post frontal",
-      "desde": "la tarde del jueves 16 de julio del 2026",
-      "hasta": "la tarde del jueves 16 de julio del 2026",
-      "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "Biobío y La Araucanía",
-      "titulo": "Probables Tormentas Eléctricas en las regiones del Biobío y La Araucanía",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía"
       ]
     },
     {
@@ -375,6 +332,30 @@
       "icono": "⚡",
       "color": "#fbbf24",
       "regiones": []
+    },
+    {
+      "id": 5172,
+      "tipo": "Aviso",
+      "codigo": "A319-6/2026",
+      "emision": "Jueves 16 de julio del 2026 a las 19:07 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del viernes 17 de julio del 2026",
+      "hasta": "la noche del domingo 19 de julio del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
     }
   ]
 }
