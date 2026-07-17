@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-17T19:59:37.400941",
+  "actualizado": "2026-07-17T23:00:27.836633",
   "totales": {
     "avisos": 7,
     "alertas": 5,
@@ -8,21 +8,22 @@
   },
   "alertas": [
     {
-      "id": 5180,
+      "id": 5182,
       "tipo": "Alerta",
-      "codigo": "AA90-6/2026",
-      "emision": "Viernes 17 de julio del 2026 a las 15:32 hrs.",
+      "codigo": "AA90-8/2026",
+      "emision": "Viernes 17 de julio del 2026 a las 17:08 hrs.",
       "fenomeno": "Viento",
       "condicion": "Sistema frontal",
       "desde": "la tarde del viernes 17 de julio del 2026",
       "hasta": "la noche del domingo 19 de julio del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas de las regiones de Coquimbo y Valparaíso",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa)",
+      "titulo": "Viento Moderado a Fuerte en zonas de las regiones de Coquimbo, Valparaíso y Metropolitana",
       "icono": "💨",
       "color": "#f97316",
       "regiones": [
         "Coquimbo",
+        "Metropolitana",
         "Valparaíso"
       ]
     },
