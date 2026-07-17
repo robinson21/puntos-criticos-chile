@@ -1,30 +1,12 @@
 {
-  "actualizado": "2026-07-17T01:43:44.118647",
+  "actualizado": "2026-07-17T04:45:19.747688",
   "totales": {
-    "avisos": 9,
-    "alertas": 6,
+    "avisos": 8,
+    "alertas": 5,
     "alarmas": 2,
-    "total": 17
+    "total": 15
   },
   "alertas": [
-    {
-      "id": 5127,
-      "tipo": "Aviso",
-      "codigo": "A326-1/2026",
-      "emision": "Lunes 13 de julio del 2026 a las 12:59 hrs.",
-      "fenomeno": "Nevadas",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del jueves 16 de julio del 2026",
-      "hasta": "la noche del jueves 16 de julio del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Atacama (Cordillera)",
-      "titulo": "Nevadas Normales a Moderadas en cordillera de la región de Atacama",
-      "icono": "❄️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Atacama"
-      ]
-    },
     {
       "id": 5134,
       "tipo": "Alerta",
@@ -232,26 +214,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Aysén"
-      ]
-    },
-    {
-      "id": 5167,
-      "tipo": "Alerta",
-      "codigo": "AA95-2/2026",
-      "emision": "Jueves 16 de julio del 2026 a las 12:42 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del jueves 16 de julio del 2026",
-      "hasta": "la noche del jueves 16 de julio del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Precordillera) | Los Lagos (Litoral, Cordillera Costa, Chiloé, Litoral Interior)",
-      "titulo": "Viento Moderado a Fuerte en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
       ]
     },
     {
