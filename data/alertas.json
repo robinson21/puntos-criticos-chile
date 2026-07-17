@@ -1,12 +1,76 @@
 {
-  "actualizado": "2026-07-17T16:58:37.065153",
+  "actualizado": "2026-07-17T19:59:37.400941",
   "totales": {
-    "avisos": 8,
+    "avisos": 7,
     "alertas": 5,
     "alarmas": 2,
-    "total": 15
+    "total": 14
   },
   "alertas": [
+    {
+      "id": 5180,
+      "tipo": "Alerta",
+      "codigo": "AA90-6/2026",
+      "emision": "Viernes 17 de julio del 2026 a las 15:32 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del viernes 17 de julio del 2026",
+      "hasta": "la noche del domingo 19 de julio del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en zonas de las regiones de Coquimbo y Valparaíso",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Coquimbo",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5179,
+      "tipo": "Aviso",
+      "codigo": "A332-2/2026",
+      "emision": "Viernes 17 de julio del 2026 a las 15:27 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del viernes 17 de julio del 2026",
+      "hasta": "la madrugada del sábado 18 de julio del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de O&#039;Higgins",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Coquimbo",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5178,
+      "tipo": "Aviso",
+      "codigo": "A319-7/2026",
+      "emision": "Viernes 17 de julio del 2026 a las 15:19 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del sábado 18 de julio del 2026",
+      "hasta": "la noche del martes 21 de julio del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5177,
       "tipo": "Aviso",
@@ -49,27 +113,6 @@
       ]
     },
     {
-      "id": 5175,
-      "tipo": "Aviso",
-      "codigo": "A332-1/2026",
-      "emision": "Viernes 17 de julio del 2026 a las 09:59 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del viernes 17 de julio del 2026",
-      "hasta": "la noche del viernes 17 de julio del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa) | Valparaíso (Litoral, Cordillera Costa) | Metropolitana (Cordillera Costa) | O&#039;Higgins (Litoral)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de O&#039;Higgins",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
       "id": 5174,
       "tipo": "Alerta",
       "codigo": "AA98-2/2026",
@@ -89,30 +132,6 @@
       ]
     },
     {
-      "id": 5172,
-      "tipo": "Aviso",
-      "codigo": "A319-6/2026",
-      "emision": "Jueves 16 de julio del 2026 a las 19:07 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del viernes 17 de julio del 2026",
-      "hasta": "la noche del domingo 19 de julio del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
       "id": 5171,
       "tipo": "Aviso",
       "codigo": "A331/2026",
@@ -127,48 +146,6 @@
       "icono": "⚡",
       "color": "#fbbf24",
       "regiones": []
-    },
-    {
-      "id": 5170,
-      "tipo": "Alerta",
-      "codigo": "AA90-5/2026",
-      "emision": "Jueves 16 de julio del 2026 a las 17:39 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del jueves 16 de julio del 2026",
-      "hasta": "la noche del domingo 19 de julio del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5163,
-      "tipo": "Aviso",
-      "codigo": "A330/2026",
-      "emision": "Jueves 16 de julio del 2026 a las 10:03 hrs.",
-      "fenomeno": "Nevadas",
-      "condicion": "Centro de baja presión",
-      "desde": "la madrugada del viernes 17 de julio del 2026",
-      "hasta": "la mañana del viernes 17 de julio del 2026",
-      "observacion": "",
-      "zonas": "Aysén (Patagonia Subandina Norte)",
-      "titulo": "Nevadas Normales a Moderadas en patagonia subandina norte de la región de Aysén",
-      "icono": "❄️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén"
-      ]
     },
     {
       "id": 5158,
