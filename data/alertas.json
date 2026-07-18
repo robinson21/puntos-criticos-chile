@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-18T08:13:04.466501",
+  "actualizado": "2026-07-18T11:23:27.050423",
   "totales": {
     "avisos": 7,
     "alertas": 7,
@@ -7,6 +7,43 @@
     "total": 16
   },
   "alertas": [
+    {
+      "id": 5186,
+      "tipo": "Alerta",
+      "codigo": "AA91-2/2026",
+      "emision": "Sábado 18 de julio del 2026 a las 07:14 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del sábado 18 de julio del 2026",
+      "hasta": "la noche del lunes 20 de julio del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera) | Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos)",
+      "titulo": "Precipitaciones Moderadas a Fuertes en zonas de las regiones de Atacama y Coquimbo",
+      "icono": "🌧️",
+      "color": "#f97316",
+      "regiones": [
+        "Atacama",
+        "Coquimbo"
+      ]
+    },
+    {
+      "id": 5185,
+      "tipo": "Alarma",
+      "codigo": "AAA4-1/2026",
+      "emision": "Sábado 18 de julio del 2026 a las 06:27 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del sábado 18 de julio del 2026",
+      "hasta": "la noche del martes 21 de julio del 2026",
+      "observacion": "Precipitaciones intensas y continúas provocarán alta probabilidad de saturación de suelos",
+      "zonas": "Coquimbo",
+      "titulo": "Precipitaciones Intensas en la región de Coquimbo",
+      "icono": "🌧️",
+      "color": "#ef4444",
+      "regiones": [
+        "Coquimbo"
+      ]
+    },
     {
       "id": 5184,
       "tipo": "Alerta",
@@ -208,27 +245,6 @@
       ]
     },
     {
-      "id": 5157,
-      "tipo": "Alarma",
-      "codigo": "AAA4/2026",
-      "emision": "Miércoles 15 de julio del 2026 a las 15:36 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del viernes 17 de julio del 2026",
-      "hasta": "la noche del domingo 19 de julio del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo, Valparaíso, Metropolitana y O&#039;Higgins",
-      "titulo": "Precipitaciones Intensas desde la región de Coquimbo a la región de O&#039;Higgins",
-      "icono": "🌧️",
-      "color": "#ef4444",
-      "regiones": [
-        "Coquimbo",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
       "id": 5155,
       "tipo": "Alarma",
       "codigo": "AAA5/2026",
@@ -307,31 +323,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5134,
-      "tipo": "Alerta",
-      "codigo": "AA91-1/2026",
-      "emision": "Martes 14 de julio del 2026 a las 11:19 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del martes 14 de julio del 2026",
-      "hasta": "la noche del domingo 19 de julio del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera) | Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Precipitaciones Moderadas a Fuertes en zonas desde la región de Atacama a la región del Biobío",
-      "icono": "🌧️",
-      "color": "#f97316",
-      "regiones": [
-        "Atacama",
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     }
   ]
