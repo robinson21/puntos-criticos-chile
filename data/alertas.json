@@ -1,12 +1,48 @@
 {
-  "actualizado": "2026-07-17T23:00:27.836633",
+  "actualizado": "2026-07-18T02:01:25.898631",
   "totales": {
     "avisos": 7,
-    "alertas": 5,
+    "alertas": 7,
     "alarmas": 2,
-    "total": 14
+    "total": 16
   },
   "alertas": [
+    {
+      "id": 5184,
+      "tipo": "Alerta",
+      "codigo": "AA100/2026",
+      "emision": "Viernes 17 de julio del 2026 a las 21:26 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Centro de baja presión",
+      "desde": "la noche del viernes 17 de julio del 2026",
+      "hasta": "la madrugada del sábado 18 de julio del 2026",
+      "observacion": "",
+      "zonas": "Valparaíso, Metropolitana y O&#039;Higgins",
+      "titulo": "Tormentas Eléctricas en las regiones de Valparaíso, Metropolitana y O&#039;Higgins",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5183,
+      "tipo": "Alerta",
+      "codigo": "AA99/2026",
+      "emision": "Viernes 17 de julio del 2026 a las 19:37 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Centro de baja presión",
+      "desde": "la noche del viernes 17 de julio del 2026",
+      "hasta": "la madrugada del sábado 18 de julio del 2026",
+      "observacion": "Probabilidad de fuertes rachas de vientos locales",
+      "zonas": "Provincias de Limarí y Choapa",
+      "titulo": "Tormentas Eléctricas en Provincias de Limarí y Choapa",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": []
+    },
     {
       "id": 5182,
       "tipo": "Alerta",
