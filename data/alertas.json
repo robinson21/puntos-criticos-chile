@@ -1,28 +1,101 @@
 {
-  "actualizado": "2026-07-18T17:37:51.798532",
+  "actualizado": "2026-07-18T20:38:46.850608",
   "totales": {
-    "avisos": 7,
+    "avisos": 9,
     "alertas": 6,
     "alarmas": 2,
-    "total": 15
+    "total": 17
   },
   "alertas": [
     {
-      "id": 5193,
+      "id": 5198,
+      "tipo": "Aviso",
+      "codigo": "A335/2026",
+      "emision": "Sábado 18 de julio del 2026 a las 16:27 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Alta presión fría",
+      "desde": "la madrugada del domingo 19 de julio del 2026",
+      "hasta": "la mañana del martes 21 de julio del 2026",
+      "observacion": "",
+      "zonas": "Aysén (Patagonia Subandina Sur)",
+      "titulo": "Heladas Normales a Moderadas en patagonia subandina sur de la región de Aysén",
+      "icono": "🥶",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén"
+      ]
+    },
+    {
+      "id": 5197,
       "tipo": "Alerta",
-      "codigo": "AA101/2026",
-      "emision": "Sábado 18 de julio del 2026 a las 12:30 hrs.",
+      "codigo": "AA98-3/2026",
+      "emision": "Sábado 18 de julio del 2026 a las 16:26 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Alta presión fría",
+      "desde": "la madrugada del domingo 19 de julio del 2026",
+      "hasta": "la mañana del martes 21 de julio del 2026",
+      "observacion": "",
+      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte)",
+      "titulo": "Heladas Moderadas a Intensas en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "🥶",
+      "color": "#f97316",
+      "regiones": [
+        "Aysén",
+        "Los Lagos"
+      ]
+    },
+    {
+      "id": 5196,
+      "tipo": "Aviso",
+      "codigo": "A327-1/2026",
+      "emision": "Sábado 18 de julio del 2026 a las 14:36 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Altas presiones",
+      "desde": "la madrugada del domingo 19 de julio del 2026",
+      "hasta": "la mañana del jueves 23 de julio del 2026",
+      "observacion": "Formación de hielo",
+      "zonas": "Magallanes (Cordillera Austral Sur, Insular Sur, Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Heladas Normales a Moderadas en zonas de la región de Magallanes",
+      "icono": "🥶",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5195,
+      "tipo": "Alerta",
+      "codigo": "AA101-1/2026",
+      "emision": "Sábado 18 de julio del 2026 a las 14:10 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
       "desde": "la tarde del sábado 18 de julio del 2026",
       "hasta": "la tarde del sábado 18 de julio del 2026",
       "observacion": "",
-      "zonas": "Biobío (Litoral, Cordillera Costa)",
+      "zonas": "Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
       "titulo": "Tormentas Eléctricas en zonas de la región del Biobío",
       "icono": "⚡",
       "color": "#f97316",
       "regiones": [
         "Biobío"
+      ]
+    },
+    {
+      "id": 5194,
+      "tipo": "Aviso",
+      "codigo": "A334/2026",
+      "emision": "Sábado 18 de julio del 2026 a las 14:08 hrs.",
+      "fenomeno": "Nevadas en otras áreas",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del sábado 18 de julio del 2026",
+      "hasta": "la tarde del martes 21 de julio del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Precordillera)",
+      "titulo": "Probables Nevadas en precordillera de la región de Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
       ]
     },
     {
@@ -230,25 +303,6 @@
       ]
     },
     {
-      "id": 5174,
-      "tipo": "Alerta",
-      "codigo": "AA98-2/2026",
-      "emision": "Viernes 17 de julio del 2026 a las 09:55 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Alta presión fría",
-      "desde": "la madrugada del domingo 19 de julio del 2026",
-      "hasta": "la mañana del martes 21 de julio del 2026",
-      "observacion": "",
-      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte, Patagonia Subandina Sur)",
-      "titulo": "Heladas Moderadas a Intensas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "🥶",
-      "color": "#f97316",
-      "regiones": [
-        "Aysén",
-        "Los Lagos"
-      ]
-    },
-    {
       "id": 5171,
       "tipo": "Aviso",
       "codigo": "A331/2026",
@@ -279,24 +333,6 @@
       "icono": "🌧️",
       "color": "#ef4444",
       "regiones": []
-    },
-    {
-      "id": 5138,
-      "tipo": "Aviso",
-      "codigo": "A327/2026",
-      "emision": "Martes 14 de julio del 2026 a las 15:32 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Altas presiones",
-      "desde": "la madrugada del jueves 16 de julio del 2026",
-      "hasta": "la mañana del domingo 19 de julio del 2026",
-      "observacion": "Formación de hielo",
-      "zonas": "Magallanes (Cordillera Austral Sur, Insular Sur, Pampa Patagonica Norte, Pampa Patagonica Sur)",
-      "titulo": "Heladas Normales a Moderadas en zonas de la región de Magallanes",
-      "icono": "🥶",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
     }
   ]
 }
