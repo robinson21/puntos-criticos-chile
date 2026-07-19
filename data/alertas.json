@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-19T11:52:10.054103",
+  "actualizado": "2026-07-19T14:58:03.925958",
   "totales": {
     "avisos": 9,
     "alertas": 5,
@@ -8,13 +8,29 @@
   },
   "alertas": [
     {
-      "id": 5211,
-      "tipo": "Alerta",
-      "codigo": "AA91-4/2026",
-      "emision": "Domingo 19 de julio del 2026 a las 06:15 hrs.",
+      "id": 5213,
+      "tipo": "Alarma",
+      "codigo": "AAA5-1/2026",
+      "emision": "Domingo 19 de julio del 2026 a las 10:21 hrs.",
       "fenomeno": "Precipitaciones",
       "condicion": "Sistema frontal",
-      "desde": "la madrugada del domingo 19 de julio del 2026",
+      "desde": "la mañana del domingo 19 de julio del 2026",
+      "hasta": "la mañana del lunes 20 de julio del 2026",
+      "observacion": "Precipitaciones intensas y continúas provocarán alta probabilidad de saturación de suelos",
+      "zonas": "Provincia de Huasco (Costa a precordillera)",
+      "titulo": "Precipitaciones Intensas en Provincia de Huasco (Costa a precordillera)",
+      "icono": "🌧️",
+      "color": "#ef4444",
+      "regiones": []
+    },
+    {
+      "id": 5212,
+      "tipo": "Alerta",
+      "codigo": "AA91-5/2026",
+      "emision": "Domingo 19 de julio del 2026 a las 08:38 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del domingo 19 de julio del 2026",
       "hasta": "la noche del lunes 20 de julio del 2026",
       "observacion": "",
       "zonas": "Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera) | Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos)",
@@ -289,22 +305,6 @@
       "titulo": "Probables Tormentas Eléctricas en Provincia de Huasco (Costa a precordillera)",
       "icono": "⚡",
       "color": "#fbbf24",
-      "regiones": []
-    },
-    {
-      "id": 5155,
-      "tipo": "Alarma",
-      "codigo": "AAA5/2026",
-      "emision": "Jueves 16 de julio del 2026 a las 10:03 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del sábado 18 de julio del 2026",
-      "hasta": "la mañana del lunes 20 de julio del 2026",
-      "observacion": "",
-      "zonas": "Provincia de Huasco (Costa a precordillera)",
-      "titulo": "Precipitaciones Intensas en Provincia de Huasco (Costa a precordillera)",
-      "icono": "🌧️",
-      "color": "#ef4444",
       "regiones": []
     }
   ]
