@@ -1,12 +1,92 @@
 {
-  "actualizado": "2026-07-19T14:58:03.925958",
+  "actualizado": "2026-07-19T18:03:20.334408",
   "totales": {
-    "avisos": 9,
+    "avisos": 11,
     "alertas": 5,
     "alarmas": 2,
-    "total": 16
+    "total": 18
   },
   "alertas": [
+    {
+      "id": 5217,
+      "tipo": "Aviso",
+      "codigo": "A337/2026",
+      "emision": "Domingo 19 de julio del 2026 a las 13:19 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la tarde del domingo 19 de julio del 2026",
+      "hasta": "la tarde del domingo 19 de julio del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Litoral)",
+      "titulo": "Viento Normal a Moderado en litoral de la región de Arica y Parinacota",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Arica y Parinacota"
+      ]
+    },
+    {
+      "id": 5216,
+      "tipo": "Aviso",
+      "codigo": "A333-4/2026",
+      "emision": "Domingo 19 de julio del 2026 a las 12:34 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del lunes 20 de julio del 2026",
+      "hasta": "la mañana del miércoles 22 de julio del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | O&#039;Higgins (Litoral, Cordillera Costa) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Coquimbo, Valparaíso, O&#039;Higgins, Maule y &Ntilde;uble",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Coquimbo",
+        "Maule",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5215,
+      "tipo": "Aviso",
+      "codigo": "A336/2026",
+      "emision": "Domingo 19 de julio del 2026 a las 12:34 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad post frontal",
+      "desde": "la tarde del lunes 20 de julio del 2026",
+      "hasta": "la tarde del martes 21 de julio del 2026",
+      "observacion": "",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Probables Tormentas Eléctricas en Archipielago Juan Fernández",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
+    },
+    {
+      "id": 5214,
+      "tipo": "Aviso",
+      "codigo": "A332-6/2026",
+      "emision": "Domingo 19 de julio del 2026 a las 12:34 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Frente frío e inestabilidad post frontal",
+      "desde": "la tarde del domingo 19 de julio del 2026",
+      "hasta": "la noche del martes 21 de julio del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo, Valparaíso, Metropolitana, O&#039;Higgins y Maule",
+      "titulo": "Probables Tormentas Eléctricas desde la región de Coquimbo a la región del Maule",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
     {
       "id": 5213,
       "tipo": "Alarma",
@@ -58,44 +138,6 @@
       "color": "#ef4444",
       "regiones": [
         "Coquimbo"
-      ]
-    },
-    {
-      "id": 5209,
-      "tipo": "Aviso",
-      "codigo": "A333-3/2026",
-      "emision": "Domingo 19 de julio del 2026 a las 05:57 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del lunes 20 de julio del 2026",
-      "hasta": "la noche del martes 21 de julio del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Coquimbo y Valparaíso",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5208,
-      "tipo": "Aviso",
-      "codigo": "A332-5/2026",
-      "emision": "Domingo 19 de julio del 2026 a las 04:26 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del domingo 19 de julio del 2026",
-      "hasta": "la noche del lunes 20 de julio del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo y Valparaíso",
-      "titulo": "Probables Tormentas Eléctricas en las regiones de Coquimbo y Valparaíso",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Valparaíso"
       ]
     },
     {
