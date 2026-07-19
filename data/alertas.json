@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-19T02:41:51.248046",
+  "actualizado": "2026-07-19T05:42:58.211491",
   "totales": {
     "avisos": 9,
     "alertas": 5,
@@ -8,31 +8,28 @@
   },
   "alertas": [
     {
-      "id": 5204,
+      "id": 5207,
       "tipo": "Aviso",
-      "codigo": "A322-6/2026",
-      "emision": "Sábado 18 de julio del 2026 a las 18:55 hrs.",
+      "codigo": "A322-7/2026",
+      "emision": "Domingo 19 de julio del 2026 a las 00:12 hrs.",
       "fenomeno": "Nevadas",
       "condicion": "Sistema frontal",
-      "desde": "la mañana del sábado 18 de julio del 2026",
+      "desde": "la mañana del lunes 20 de julio del 2026",
       "hasta": "la noche del martes 21 de julio del 2026",
       "observacion": "Probabilidad de ventisca",
-      "zonas": "Coquimbo (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Cordillera)",
-      "titulo": "Nevadas Normales a Moderadas en cordillera de las regiones de Coquimbo, Metropolitana, O&#039;Higgins y Maule",
+      "zonas": "Coquimbo (Cordillera)",
+      "titulo": "Nevadas Normales a Moderadas en cordillera de la región de Coquimbo",
       "icono": "❄️",
       "color": "#fbbf24",
       "regiones": [
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins"
+        "Coquimbo"
       ]
     },
     {
-      "id": 5203,
+      "id": 5206,
       "tipo": "Aviso",
-      "codigo": "A333-1/2026",
-      "emision": "Sábado 18 de julio del 2026 a las 18:55 hrs.",
+      "codigo": "A333-2/2026",
+      "emision": "Sábado 18 de julio del 2026 a las 23:39 hrs.",
       "fenomeno": "Precipitaciones",
       "condicion": "Sistema frontal",
       "desde": "la madrugada del lunes 20 de julio del 2026",
@@ -45,6 +42,30 @@
       "regiones": [
         "Coquimbo",
         "Valparaíso"
+      ]
+    },
+    {
+      "id": 5205,
+      "tipo": "Aviso",
+      "codigo": "A319-9/2026",
+      "emision": "Sábado 18 de julio del 2026 a las 23:33 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del domingo 19 de julio del 2026",
+      "hasta": "la noche del martes 21 de julio del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
       ]
     },
     {
@@ -106,30 +127,6 @@
       "color": "#f97316",
       "regiones": [
         "Coquimbo"
-      ]
-    },
-    {
-      "id": 5199,
-      "tipo": "Aviso",
-      "codigo": "A319-8/2026",
-      "emision": "Sábado 18 de julio del 2026 a las 18:31 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del domingo 19 de julio del 2026",
-      "hasta": "la noche del martes 21 de julio del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     },
     {
