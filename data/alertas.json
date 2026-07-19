@@ -1,12 +1,80 @@
 {
-  "actualizado": "2026-07-19T18:03:20.334408",
+  "actualizado": "2026-07-19T21:04:07.138418",
   "totales": {
-    "avisos": 11,
+    "avisos": 15,
     "alertas": 5,
     "alarmas": 2,
-    "total": 18
+    "total": 22
   },
   "alertas": [
+    {
+      "id": 5221,
+      "tipo": "Aviso",
+      "codigo": "A339/2026",
+      "emision": "Domingo 19 de julio del 2026 a las 14:45 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del martes 21 de julio del 2026",
+      "hasta": "la tarde del martes 21 de julio del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 5220,
+      "tipo": "Aviso",
+      "codigo": "A340/2026",
+      "emision": "Domingo 19 de julio del 2026 a las 14:51 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del lunes 20 de julio del 2026",
+      "hasta": "la mañana del martes 21 de julio del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Atacama (Cordillera)",
+      "titulo": "Nevadas Normales a Moderadas en cordillera de la región de Atacama",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5219,
+      "tipo": "Aviso",
+      "codigo": "A341/2026",
+      "emision": "Domingo 19 de julio del 2026 a las 14:51 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Frente frío",
+      "desde": "la mañana del lunes 20 de julio del 2026",
+      "hasta": "la mañana del martes 21 de julio del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de la región de Atacama",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5218,
+      "tipo": "Aviso",
+      "codigo": "A338/2026",
+      "emision": "Domingo 19 de julio del 2026 a las 14:18 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la noche del domingo 19 de julio del 2026",
+      "hasta": "la mañana del martes 21 de julio del 2026",
+      "observacion": "",
+      "zonas": "costa de Región de Antofagasta (Paposo al sur)",
+      "titulo": "Precipitaciones Normales a Moderadas en costa de Región de Antofagasta (Paposo al sur) ",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": []
+    },
     {
       "id": 5217,
       "tipo": "Aviso",
