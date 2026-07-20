@@ -1,23 +1,210 @@
 {
-  "actualizado": "2026-07-20T15:18:30.762170",
+  "actualizado": "2026-07-20T18:20:24.574605",
   "totales": {
-    "avisos": 13,
-    "alertas": 3,
-    "alarmas": 2,
-    "total": 18
+    "avisos": 16,
+    "alertas": 4,
+    "alarmas": 1,
+    "total": 21
   },
   "alertas": [
     {
-      "id": 5225,
+      "id": 5238,
       "tipo": "Aviso",
-      "codigo": "A333-5/2026",
-      "emision": "Lunes 20 de julio del 2026 a las 06:24 hrs.",
-      "fenomeno": "Precipitaciones",
+      "codigo": "A342-1/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 13:46 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Frente frío",
+      "desde": "la mañana del jueves 23 de julio del 2026",
+      "hasta": "la tarde del jueves 23 de julio del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle) | Los Lagos (Litoral, Cordillera Costa, Chiloé, Litoral Interior) | Aysén (Insular Norte)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de La Araucanía a la región de Aysén",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5237,
+      "tipo": "Aviso",
+      "codigo": "A344/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 13:46 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Centro de baja presión",
+      "desde": "la madrugada del jueves 23 de julio del 2026",
+      "hasta": "la tarde del jueves 23 de julio del 2026",
+      "observacion": "",
+      "zonas": "Aysén (Cordillera Austral Norte, Patagonia Subandina Norte)",
+      "titulo": "Nevadas Normales a Moderadas en zonas de la región de Aysén",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén"
+      ]
+    },
+    {
+      "id": 5236,
+      "tipo": "Aviso",
+      "codigo": "A339-1/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 13:45 hrs.",
+      "fenomeno": "Viento",
       "condicion": "Sistema frontal",
-      "desde": "la madrugada del lunes 20 de julio del 2026",
+      "desde": "la noche del lunes 20 de julio del 2026",
+      "hasta": "la mañana del martes 21 de julio del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 5235,
+      "tipo": "Aviso",
+      "codigo": "A335-1/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 12:48 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Alta presión fría",
+      "desde": "la madrugada del martes 21 de julio del 2026",
       "hasta": "la mañana del miércoles 22 de julio del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | O&#039;Higgins (Litoral, Cordillera Costa) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral)",
+      "zonas": "Aysén (Patagonia Subandina Sur)",
+      "titulo": "Heladas Normales a Moderadas en patagonia subandina sur de la región de Aysén",
+      "icono": "🥶",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén"
+      ]
+    },
+    {
+      "id": 5234,
+      "tipo": "Alerta",
+      "codigo": "AA98-4/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 12:48 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Alta presión fría",
+      "desde": "la madrugada del martes 21 de julio del 2026",
+      "hasta": "la mañana del miércoles 22 de julio del 2026",
+      "observacion": "",
+      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte)",
+      "titulo": "Heladas Moderadas a Intensas en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "🥶",
+      "color": "#f97316",
+      "regiones": [
+        "Aysén",
+        "Los Lagos"
+      ]
+    },
+    {
+      "id": 5233,
+      "tipo": "Aviso",
+      "codigo": "A319-10/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 12:23 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del lunes 20 de julio del 2026",
+      "hasta": "la noche del miércoles 22 de julio del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5232,
+      "tipo": "Aviso",
+      "codigo": "A343/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 11:20 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Alta presión fría",
+      "desde": "la madrugada del martes 21 de julio del 2026",
+      "hasta": "la mañana del martes 21 de julio del 2026",
+      "observacion": "",
+      "zonas": "Los Lagos (Valle, Litoral Interior)",
+      "titulo": "Heladas Normales a Moderadas en zonas de la región de Los Lagos",
+      "icono": "🥶",
+      "color": "#fbbf24",
+      "regiones": [
+        "Los Lagos"
+      ]
+    },
+    {
+      "id": 5230,
+      "tipo": "Alerta",
+      "codigo": "AA102/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 11:38 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del martes 21 de julio del 2026",
+      "hasta": "la noche del martes 21 de julio del 2026",
+      "observacion": "Desarrollo de ventisca",
+      "zonas": "Atacama (Cordillera)",
+      "titulo": "Nevadas Moderadas a Fuertes en cordillera de la región de Atacama",
+      "icono": "❄️",
+      "color": "#f97316",
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5229,
+      "tipo": "Aviso",
+      "codigo": "A340-1/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 11:38 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del lunes 20 de julio del 2026",
+      "hasta": "la mañana del martes 21 de julio del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
+      "titulo": "Nevadas Normales a Moderadas en cordillera de las regiones de Antofagasta y Atacama",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5228,
+      "tipo": "Alarma",
+      "codigo": "AAA5-2/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 11:38 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del martes 21 de julio del 2026",
+      "hasta": "la tarde del martes 21 de julio del 2026",
+      "observacion": "Precipitaciones intensas y continuas provocarán alta probabilidad de saturación de suelos",
+      "zonas": "Provincia de Huasco (Costa a precordillera)",
+      "titulo": "Precipitaciones Intensas en Provincia de Huasco (Costa a precordillera)",
+      "icono": "🌧️",
+      "color": "#ef4444",
+      "regiones": []
+    },
+    {
+      "id": 5227,
+      "tipo": "Aviso",
+      "codigo": "A333-6/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 12:23 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del lunes 20 de julio del 2026",
+      "hasta": "la mañana del miércoles 22 de julio del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | O&#039;Higgins (Litoral, Cordillera Costa) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral)",
       "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Coquimbo, Valparaíso, O&#039;Higgins, Maule y &Ntilde;uble",
       "icono": "🌧️",
       "color": "#fbbf24",
@@ -30,16 +217,16 @@
       ]
     },
     {
-      "id": 5224,
+      "id": 5226,
       "tipo": "Alerta",
-      "codigo": "AA91-6/2026",
-      "emision": "Lunes 20 de julio del 2026 a las 06:24 hrs.",
+      "codigo": "AA91-7/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 12:23 hrs.",
       "fenomeno": "Precipitaciones",
       "condicion": "Sistema frontal",
       "desde": "la mañana del lunes 20 de julio del 2026",
       "hasta": "la mañana del martes 21 de julio del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa)",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos)",
       "titulo": "Precipitaciones Moderadas a Fuertes en zonas de la región de Coquimbo",
       "icono": "🌧️",
       "color": "#f97316",
@@ -65,40 +252,6 @@
         "Antofagasta",
         "Atacama",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5221,
-      "tipo": "Aviso",
-      "codigo": "A339/2026",
-      "emision": "Domingo 19 de julio del 2026 a las 14:45 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del martes 21 de julio del 2026",
-      "hasta": "la tarde del martes 21 de julio del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
-    },
-    {
-      "id": 5220,
-      "tipo": "Aviso",
-      "codigo": "A340/2026",
-      "emision": "Domingo 19 de julio del 2026 a las 14:51 hrs.",
-      "fenomeno": "Nevadas",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del lunes 20 de julio del 2026",
-      "hasta": "la mañana del martes 21 de julio del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Atacama (Cordillera)",
-      "titulo": "Nevadas Normales a Moderadas en cordillera de la región de Atacama",
-      "icono": "❄️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Atacama"
       ]
     },
     {
@@ -176,40 +329,6 @@
       ]
     },
     {
-      "id": 5213,
-      "tipo": "Alarma",
-      "codigo": "AAA5-1/2026",
-      "emision": "Domingo 19 de julio del 2026 a las 10:21 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del domingo 19 de julio del 2026",
-      "hasta": "la mañana del lunes 20 de julio del 2026",
-      "observacion": "Precipitaciones intensas y continúas provocarán alta probabilidad de saturación de suelos",
-      "zonas": "Provincia de Huasco (Costa a precordillera)",
-      "titulo": "Precipitaciones Intensas en Provincia de Huasco (Costa a precordillera)",
-      "icono": "🌧️",
-      "color": "#ef4444",
-      "regiones": []
-    },
-    {
-      "id": 5210,
-      "tipo": "Alarma",
-      "codigo": "AAA4-3/2026",
-      "emision": "Domingo 19 de julio del 2026 a las 06:13 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del domingo 19 de julio del 2026",
-      "hasta": "la mañana del lunes 20 de julio del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo",
-      "titulo": "Precipitaciones Intensas en la región de Coquimbo",
-      "icono": "🌧️",
-      "color": "#ef4444",
-      "regiones": [
-        "Coquimbo"
-      ]
-    },
-    {
       "id": 5207,
       "tipo": "Aviso",
       "codigo": "A322-7/2026",
@@ -225,67 +344,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Coquimbo"
-      ]
-    },
-    {
-      "id": 5205,
-      "tipo": "Aviso",
-      "codigo": "A319-9/2026",
-      "emision": "Sábado 18 de julio del 2026 a las 23:33 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del domingo 19 de julio del 2026",
-      "hasta": "la noche del martes 21 de julio del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5198,
-      "tipo": "Aviso",
-      "codigo": "A335/2026",
-      "emision": "Sábado 18 de julio del 2026 a las 16:27 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Alta presión fría",
-      "desde": "la madrugada del domingo 19 de julio del 2026",
-      "hasta": "la mañana del martes 21 de julio del 2026",
-      "observacion": "",
-      "zonas": "Aysén (Patagonia Subandina Sur)",
-      "titulo": "Heladas Normales a Moderadas en patagonia subandina sur de la región de Aysén",
-      "icono": "🥶",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén"
-      ]
-    },
-    {
-      "id": 5197,
-      "tipo": "Alerta",
-      "codigo": "AA98-3/2026",
-      "emision": "Sábado 18 de julio del 2026 a las 16:26 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Alta presión fría",
-      "desde": "la madrugada del domingo 19 de julio del 2026",
-      "hasta": "la mañana del martes 21 de julio del 2026",
-      "observacion": "",
-      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte)",
-      "titulo": "Heladas Moderadas a Intensas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "🥶",
-      "color": "#f97316",
-      "regiones": [
-        "Aysén",
-        "Los Lagos"
       ]
     },
     {
