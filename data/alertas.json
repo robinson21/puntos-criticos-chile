@@ -1,12 +1,33 @@
 {
-  "actualizado": "2026-07-19T21:04:07.138418",
+  "actualizado": "2026-07-20T00:05:28.906437",
   "totales": {
-    "avisos": 15,
+    "avisos": 14,
     "alertas": 5,
     "alarmas": 2,
-    "total": 22
+    "total": 21
   },
   "alertas": [
+    {
+      "id": 5222,
+      "tipo": "Aviso",
+      "codigo": "A320-6/2026",
+      "emision": "Domingo 19 de julio del 2026 a las 19:43 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del domingo 19 de julio del 2026",
+      "hasta": "la noche del miércoles 22 de julio del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Litoral, Cordillera Costa, Pampa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5221,
       "tipo": "Aviso",
@@ -74,24 +95,6 @@
       "icono": "🌧️",
       "color": "#fbbf24",
       "regiones": []
-    },
-    {
-      "id": 5217,
-      "tipo": "Aviso",
-      "codigo": "A337/2026",
-      "emision": "Domingo 19 de julio del 2026 a las 13:19 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la tarde del domingo 19 de julio del 2026",
-      "hasta": "la tarde del domingo 19 de julio del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Litoral)",
-      "titulo": "Viento Normal a Moderado en litoral de la región de Arica y Parinacota",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Arica y Parinacota"
-      ]
     },
     {
       "id": 5216,
@@ -358,27 +361,6 @@
       "regiones": [
         "Atacama",
         "Coquimbo"
-      ]
-    },
-    {
-      "id": 5177,
-      "tipo": "Aviso",
-      "codigo": "A320-5/2026",
-      "emision": "Viernes 17 de julio del 2026 a las 11:32 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del viernes 17 de julio del 2026",
-      "hasta": "la noche del martes 21 de julio del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Litoral, Cordillera Costa, Pampa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Atacama",
-        "Tarapacá"
       ]
     },
     {
