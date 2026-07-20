@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-20T09:14:21.707170",
+  "actualizado": "2026-07-20T12:17:36.643050",
   "totales": {
     "avisos": 13,
     "alertas": 3,
@@ -7,6 +7,46 @@
     "total": 18
   },
   "alertas": [
+    {
+      "id": 5225,
+      "tipo": "Aviso",
+      "codigo": "A333-5/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 06:24 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del lunes 20 de julio del 2026",
+      "hasta": "la mañana del miércoles 22 de julio del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | O&#039;Higgins (Litoral, Cordillera Costa) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Coquimbo, Valparaíso, O&#039;Higgins, Maule y &Ntilde;uble",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Coquimbo",
+        "Maule",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5224,
+      "tipo": "Alerta",
+      "codigo": "AA91-6/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 06:24 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del lunes 20 de julio del 2026",
+      "hasta": "la mañana del martes 21 de julio del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa)",
+      "titulo": "Precipitaciones Moderadas a Fuertes en zonas de la región de Coquimbo",
+      "icono": "🌧️",
+      "color": "#f97316",
+      "regiones": [
+        "Coquimbo"
+      ]
+    },
     {
       "id": 5223,
       "tipo": "Aviso",
@@ -96,28 +136,6 @@
       "regiones": []
     },
     {
-      "id": 5216,
-      "tipo": "Aviso",
-      "codigo": "A333-4/2026",
-      "emision": "Domingo 19 de julio del 2026 a las 12:34 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del lunes 20 de julio del 2026",
-      "hasta": "la mañana del miércoles 22 de julio del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | O&#039;Higgins (Litoral, Cordillera Costa) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Coquimbo, Valparaíso, O&#039;Higgins, Maule y &Ntilde;uble",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Maule",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
       "id": 5215,
       "tipo": "Aviso",
       "codigo": "A336/2026",
@@ -172,25 +190,6 @@
       "icono": "🌧️",
       "color": "#ef4444",
       "regiones": []
-    },
-    {
-      "id": 5212,
-      "tipo": "Alerta",
-      "codigo": "AA91-5/2026",
-      "emision": "Domingo 19 de julio del 2026 a las 08:38 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del domingo 19 de julio del 2026",
-      "hasta": "la noche del lunes 20 de julio del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera) | Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos)",
-      "titulo": "Precipitaciones Moderadas a Fuertes en zonas de las regiones de Atacama y Coquimbo",
-      "icono": "🌧️",
-      "color": "#f97316",
-      "regiones": [
-        "Atacama",
-        "Coquimbo"
-      ]
     },
     {
       "id": 5210,
