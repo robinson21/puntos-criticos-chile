@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-07-21T18:49:04.373725",
+  "actualizado": "2026-07-21T21:51:43.741092",
   "totales": {
     "avisos": 10,
-    "alertas": 5,
+    "alertas": 4,
     "alarmas": 0,
-    "total": 15
+    "total": 14
   },
   "alertas": [
     {
@@ -180,22 +180,6 @@
       "regiones": [
         "Magallanes"
       ]
-    },
-    {
-      "id": 5245,
-      "tipo": "Alerta",
-      "codigo": "AA105/2026",
-      "emision": "Martes 21 de julio del 2026 a las 09:37 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del martes 21 de julio del 2026",
-      "hasta": "la tarde del martes 21 de julio del 2026",
-      "observacion": "",
-      "zonas": "Provincia de Copiapó y Huasco",
-      "titulo": "Tormentas Eléctricas en Provincia de Copiapó y Huasco",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": []
     },
     {
       "id": 5246,
