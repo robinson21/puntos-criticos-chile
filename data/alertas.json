@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-07-21T21:51:43.741092",
+  "actualizado": "2026-07-22T00:52:49.811928",
   "totales": {
-    "avisos": 10,
+    "avisos": 8,
     "alertas": 4,
     "alarmas": 0,
-    "total": 14
+    "total": 12
   },
   "alertas": [
     {
@@ -126,24 +126,6 @@
       ]
     },
     {
-      "id": 5241,
-      "tipo": "Aviso",
-      "codigo": "A334-1/2026",
-      "emision": "Lunes 20 de julio del 2026 a las 16:40 hrs.",
-      "fenomeno": "Nevadas en otras áreas",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del martes 21 de julio del 2026",
-      "hasta": "la noche del martes 21 de julio del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Precordillera)",
-      "titulo": "Probables Nevadas en precordillera de la región de Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Atacama"
-      ]
-    },
-    {
       "id": 5240,
       "tipo": "Aviso",
       "codigo": "A320-8/2026",
@@ -179,28 +161,6 @@
       "color": "#f97316",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5246,
-      "tipo": "Aviso",
-      "codigo": "A333-7/2026",
-      "emision": "Martes 21 de julio del 2026 a las 10:16 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del martes 21 de julio del 2026",
-      "hasta": "la mañana del miércoles 22 de julio del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | O&#039;Higgins (Litoral, Cordillera Costa) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Coquimbo, Valparaíso, O&#039;Higgins, Maule y &Ntilde;uble",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Maule",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     },
     {
