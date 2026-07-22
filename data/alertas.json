@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-07-22T13:09:48.205039",
+  "actualizado": "2026-07-22T16:17:34.236133",
   "totales": {
-    "avisos": 6,
-    "alertas": 3,
+    "avisos": 5,
+    "alertas": 2,
     "alarmas": 0,
-    "total": 9
+    "total": 7
   },
   "alertas": [
     {
@@ -47,24 +47,6 @@
         "O'Higgins",
         "Valparaíso",
         "Ñuble"
-      ]
-    },
-    {
-      "id": 5235,
-      "tipo": "Aviso",
-      "codigo": "A335-1/2026",
-      "emision": "Lunes 20 de julio del 2026 a las 12:48 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Alta presión fría",
-      "desde": "la madrugada del martes 21 de julio del 2026",
-      "hasta": "la mañana del miércoles 22 de julio del 2026",
-      "observacion": "",
-      "zonas": "Aysén (Patagonia Subandina Sur)",
-      "titulo": "Heladas Normales a Moderadas en patagonia subandina sur de la región de Aysén",
-      "icono": "🥶",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén"
       ]
     },
     {
@@ -165,24 +147,6 @@
       "regiones": [
         "Aysén",
         "Los Lagos"
-      ]
-    },
-    {
-      "id": 5251,
-      "tipo": "Alerta",
-      "codigo": "AA98-5/2026",
-      "emision": "Martes 21 de julio del 2026 a las 13:47 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Alta presión fría",
-      "desde": "la madrugada del miércoles 22 de julio del 2026",
-      "hasta": "la mañana del miércoles 22 de julio del 2026",
-      "observacion": "",
-      "zonas": "Aysén (Patagonia Subandina Norte)",
-      "titulo": "Heladas Moderadas a Intensas en patagonia subandina norte de la región de Aysén",
-      "icono": "🥶",
-      "color": "#f97316",
-      "regiones": [
-        "Aysén"
       ]
     }
   ]
