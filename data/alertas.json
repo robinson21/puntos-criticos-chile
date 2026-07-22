@@ -1,28 +1,133 @@
 {
-  "actualizado": "2026-07-22T16:17:34.236133",
+  "actualizado": "2026-07-22T19:19:04.081281",
   "totales": {
     "avisos": 5,
-    "alertas": 2,
+    "alertas": 3,
     "alarmas": 0,
-    "total": 7
+    "total": 8
   },
   "alertas": [
     {
-      "id": 5196,
+      "id": 5254,
+      "tipo": "Alerta",
+      "codigo": "AA106-1/2026",
+      "emision": "Miércoles 22 de julio del 2026 a las 12:58 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Frente frío",
+      "desde": "la madrugada del jueves 23 de julio del 2026",
+      "hasta": "la tarde del jueves 23 de julio del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Valle) | Los Ríos (Litoral, Cordillera Costa, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Chiloé)",
+      "titulo": "Viento Moderado a Fuerte en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5253,
       "tipo": "Aviso",
-      "codigo": "A327-1/2026",
-      "emision": "Sábado 18 de julio del 2026 a las 14:36 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Altas presiones",
-      "desde": "la madrugada del domingo 19 de julio del 2026",
-      "hasta": "la mañana del jueves 23 de julio del 2026",
-      "observacion": "Formación de hielo",
-      "zonas": "Magallanes (Cordillera Austral Sur, Insular Sur, Pampa Patagonica Norte, Pampa Patagonica Sur)",
-      "titulo": "Heladas Normales a Moderadas en zonas de la región de Magallanes",
-      "icono": "🥶",
+      "codigo": "A342-4/2026",
+      "emision": "Miércoles 22 de julio del 2026 a las 12:58 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Frente frío",
+      "desde": "la madrugada del jueves 23 de julio del 2026",
+      "hasta": "la tarde del jueves 23 de julio del 2026",
+      "observacion": "",
+      "zonas": "Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Cordillera) | &Ntilde;uble (Cordillera) | Biobío (Cordillera) | La Araucanía (Litoral, Cordillera Costa) | Los Ríos (Valle, Precordillera) | Los Lagos (Litoral Interior) | Aysén (Insular Norte)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región Metropolitana a la región de Aysén",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
+        "Aysén",
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5252,
+      "tipo": "Alerta",
+      "codigo": "AA107/2026",
+      "emision": "Miércoles 22 de julio del 2026 a las 12:57 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Frente frío",
+      "desde": "la madrugada del jueves 23 de julio del 2026",
+      "hasta": "la tarde del jueves 23 de julio del 2026",
+      "observacion": "",
+      "zonas": "Maule (Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Viento Moderado a Fuerte en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5250,
+      "tipo": "Aviso",
+      "codigo": "A344-1/2026",
+      "emision": "Martes 21 de julio del 2026 a las 13:47 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Centro de baja presión",
+      "desde": "la noche del miércoles 22 de julio del 2026",
+      "hasta": "la noche del jueves 23 de julio del 2026",
+      "observacion": "",
+      "zonas": "Los Lagos (Cordillera Austral) | Aysén (Litoral Interior Norte, Cordillera Austral Norte, Patagonia Subandina Norte)",
+      "titulo": "Nevadas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "Los Lagos"
+      ]
+    },
+    {
+      "id": 5244,
+      "tipo": "Alerta",
+      "codigo": "AA104/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 22:13 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Altas presiones",
+      "desde": "la mañana del martes 21 de julio del 2026",
+      "hasta": "la mañana del jueves 23 de julio del 2026",
+      "observacion": "Formación de escarcha",
+      "zonas": "Magallanes (Cordillera Austral Norte, Insular Norte, Pampa Patagonica Norte)",
+      "titulo": "Heladas Moderadas a Intensas en zonas de la región de Magallanes",
+      "icono": "🥶",
+      "color": "#f97316",
+      "regiones": [
         "Magallanes"
+      ]
+    },
+    {
+      "id": 5240,
+      "tipo": "Aviso",
+      "codigo": "A320-8/2026",
+      "emision": "Lunes 20 de julio del 2026 a las 15:44 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del lunes 20 de julio del 2026",
+      "hasta": "la noche del miércoles 22 de julio del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Tarapacá (Cordillera) | Antofagasta (Litoral, Cordillera Costa, Pampa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
       ]
     },
     {
@@ -50,103 +155,21 @@
       ]
     },
     {
-      "id": 5240,
+      "id": 5196,
       "tipo": "Aviso",
-      "codigo": "A320-8/2026",
-      "emision": "Lunes 20 de julio del 2026 a las 15:44 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del lunes 20 de julio del 2026",
-      "hasta": "la noche del miércoles 22 de julio del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Cordillera) | Antofagasta (Litoral, Cordillera Costa, Pampa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5244,
-      "tipo": "Alerta",
-      "codigo": "AA104/2026",
-      "emision": "Lunes 20 de julio del 2026 a las 22:13 hrs.",
+      "codigo": "A327-1/2026",
+      "emision": "Sábado 18 de julio del 2026 a las 14:36 hrs.",
       "fenomeno": "Heladas",
       "condicion": "Altas presiones",
-      "desde": "la mañana del martes 21 de julio del 2026",
+      "desde": "la madrugada del domingo 19 de julio del 2026",
       "hasta": "la mañana del jueves 23 de julio del 2026",
-      "observacion": "Formación de escarcha",
-      "zonas": "Magallanes (Cordillera Austral Norte, Insular Norte, Pampa Patagonica Norte)",
-      "titulo": "Heladas Moderadas a Intensas en zonas de la región de Magallanes",
+      "observacion": "Formación de hielo",
+      "zonas": "Magallanes (Cordillera Austral Sur, Insular Sur, Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Heladas Normales a Moderadas en zonas de la región de Magallanes",
       "icono": "🥶",
-      "color": "#f97316",
+      "color": "#fbbf24",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5248,
-      "tipo": "Alerta",
-      "codigo": "AA106/2026",
-      "emision": "Martes 21 de julio del 2026 a las 12:24 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Frente frío",
-      "desde": "la madrugada del jueves 23 de julio del 2026",
-      "hasta": "la tarde del jueves 23 de julio del 2026",
-      "observacion": "",
-      "zonas": "Los Lagos (Litoral, Cordillera Costa, Chiloé) | Aysén (Insular Norte)",
-      "titulo": "Viento Moderado a Fuerte en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Aysén",
-        "Los Lagos"
-      ]
-    },
-    {
-      "id": 5249,
-      "tipo": "Aviso",
-      "codigo": "A342-3/2026",
-      "emision": "Martes 21 de julio del 2026 a las 12:24 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Frente frío",
-      "desde": "la madrugada del jueves 23 de julio del 2026",
-      "hasta": "la tarde del jueves 23 de julio del 2026",
-      "observacion": "",
-      "zonas": "O&#039;Higgins (Cordillera) | Maule (Cordillera) | &Ntilde;uble (Cordillera) | Biobío (Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle) | Los Lagos (Litoral Interior)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de O&#039;Higgins a la región de Los Lagos",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "O'Higgins",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5250,
-      "tipo": "Aviso",
-      "codigo": "A344-1/2026",
-      "emision": "Martes 21 de julio del 2026 a las 13:47 hrs.",
-      "fenomeno": "Nevadas",
-      "condicion": "Centro de baja presión",
-      "desde": "la noche del miércoles 22 de julio del 2026",
-      "hasta": "la noche del jueves 23 de julio del 2026",
-      "observacion": "",
-      "zonas": "Los Lagos (Cordillera Austral) | Aysén (Litoral Interior Norte, Cordillera Austral Norte, Patagonia Subandina Norte)",
-      "titulo": "Nevadas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "❄️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén",
-        "Los Lagos"
       ]
     }
   ]
