@@ -1,12 +1,54 @@
 {
-  "actualizado": "2026-07-23T19:45:01.990782",
+  "actualizado": "2026-07-23T22:47:18.242884",
   "totales": {
     "avisos": 9,
-    "alertas": 2,
+    "alertas": 0,
     "alarmas": 0,
-    "total": 11
+    "total": 9
   },
   "alertas": [
+    {
+      "id": 5265,
+      "tipo": "Aviso",
+      "codigo": "A353/2026",
+      "emision": "Jueves 23 de julio del 2026 a las 18:33 hrs.",
+      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del domingo 26 de julio del 2026",
+      "hasta": "la mañana del lunes 27 de julio del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en zonas de las regiones de La Araucanía y Los Ríos",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5263,
+      "tipo": "Aviso",
+      "codigo": "A347-1/2026",
+      "emision": "Jueves 23 de julio del 2026 a las 17:06 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del sábado 25 de julio del 2026",
+      "hasta": "la noche del lunes 27 de julio del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Valparaíso a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5262,
       "tipo": "Aviso",
@@ -107,28 +149,6 @@
       ]
     },
     {
-      "id": 5257,
-      "tipo": "Aviso",
-      "codigo": "A347/2026",
-      "emision": "Miércoles 22 de julio del 2026 a las 16:37 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del sábado 25 de julio del 2026",
-      "hasta": "la noche del lunes 27 de julio del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Cordillera) | &Ntilde;uble (Cordillera) | Biobío (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera desde la región Metropolitana a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Ñuble"
-      ]
-    },
-    {
       "id": 5255,
       "tipo": "Aviso",
       "codigo": "A345/2026",
@@ -144,72 +164,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Atacama"
-      ]
-    },
-    {
-      "id": 5254,
-      "tipo": "Alerta",
-      "codigo": "AA106-1/2026",
-      "emision": "Miércoles 22 de julio del 2026 a las 12:58 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Frente frío",
-      "desde": "la madrugada del jueves 23 de julio del 2026",
-      "hasta": "la tarde del jueves 23 de julio del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Valle) | Los Ríos (Litoral, Cordillera Costa, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Chiloé)",
-      "titulo": "Viento Moderado a Fuerte en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5253,
-      "tipo": "Aviso",
-      "codigo": "A342-4/2026",
-      "emision": "Miércoles 22 de julio del 2026 a las 12:58 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Frente frío",
-      "desde": "la madrugada del jueves 23 de julio del 2026",
-      "hasta": "la tarde del jueves 23 de julio del 2026",
-      "observacion": "",
-      "zonas": "Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Cordillera) | &Ntilde;uble (Cordillera) | Biobío (Cordillera) | La Araucanía (Litoral, Cordillera Costa) | Los Ríos (Valle, Precordillera) | Los Lagos (Litoral Interior) | Aysén (Insular Norte)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región Metropolitana a la región de Aysén",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén",
-        "Biobío",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5252,
-      "tipo": "Alerta",
-      "codigo": "AA107/2026",
-      "emision": "Miércoles 22 de julio del 2026 a las 12:57 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Frente frío",
-      "desde": "la madrugada del jueves 23 de julio del 2026",
-      "hasta": "la tarde del jueves 23 de julio del 2026",
-      "observacion": "",
-      "zonas": "Maule (Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Ñuble"
       ]
     },
     {
