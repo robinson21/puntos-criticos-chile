@@ -1,12 +1,47 @@
 {
-  "actualizado": "2026-07-23T16:43:01.040032",
+  "actualizado": "2026-07-23T19:45:01.990782",
   "totales": {
-    "avisos": 8,
-    "alertas": 3,
+    "avisos": 9,
+    "alertas": 2,
     "alarmas": 0,
     "total": 11
   },
   "alertas": [
+    {
+      "id": 5262,
+      "tipo": "Aviso",
+      "codigo": "A351/2026",
+      "emision": "Jueves 23 de julio del 2026 a las 14:20 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del viernes 24 de julio del 2026",
+      "hasta": "la tarde del sábado 25 de julio del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de La Araucanía y Los Ríos",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5261,
+      "tipo": "Aviso",
+      "codigo": "A350/2026",
+      "emision": "Jueves 23 de julio del 2026 a las 12:59 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del viernes 24 de julio del 2026",
+      "hasta": "la madrugada del sábado 25 de julio del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
     {
       "id": 5260,
       "tipo": "Aviso",
@@ -194,42 +229,6 @@
       "regiones": [
         "Aysén",
         "Los Lagos"
-      ]
-    },
-    {
-      "id": 5244,
-      "tipo": "Alerta",
-      "codigo": "AA104/2026",
-      "emision": "Lunes 20 de julio del 2026 a las 22:13 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Altas presiones",
-      "desde": "la mañana del martes 21 de julio del 2026",
-      "hasta": "la mañana del jueves 23 de julio del 2026",
-      "observacion": "Formación de escarcha",
-      "zonas": "Magallanes (Cordillera Austral Norte, Insular Norte, Pampa Patagonica Norte)",
-      "titulo": "Heladas Moderadas a Intensas en zonas de la región de Magallanes",
-      "icono": "🥶",
-      "color": "#f97316",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 5196,
-      "tipo": "Aviso",
-      "codigo": "A327-1/2026",
-      "emision": "Sábado 18 de julio del 2026 a las 14:36 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Altas presiones",
-      "desde": "la madrugada del domingo 19 de julio del 2026",
-      "hasta": "la mañana del jueves 23 de julio del 2026",
-      "observacion": "Formación de hielo",
-      "zonas": "Magallanes (Cordillera Austral Sur, Insular Sur, Pampa Patagonica Norte, Pampa Patagonica Sur)",
-      "titulo": "Heladas Normales a Moderadas en zonas de la región de Magallanes",
-      "icono": "🥶",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
       ]
     }
   ]
