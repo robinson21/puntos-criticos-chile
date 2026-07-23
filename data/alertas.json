@@ -1,12 +1,33 @@
 {
-  "actualizado": "2026-07-22T22:20:02.486655",
+  "actualizado": "2026-07-23T01:21:08.803453",
   "totales": {
-    "avisos": 8,
+    "avisos": 9,
     "alertas": 3,
     "alarmas": 0,
-    "total": 11
+    "total": 12
   },
   "alertas": [
+    {
+      "id": 5258,
+      "tipo": "Aviso",
+      "codigo": "A348/2026",
+      "emision": "Miércoles 22 de julio del 2026 a las 20:08 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del jueves 23 de julio del 2026",
+      "hasta": "la mañana del viernes 24 de julio del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa) | Los Ríos (Litoral) | Los Lagos (Litoral, Cordillera Costa, Chiloé, Litoral Interior) | Aysén (Insular Norte)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de La Araucanía a la región de Aysén",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
     {
       "id": 5257,
       "tipo": "Aviso",
