@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-23T20:59:21.202439",
+  "actualizado": "2026-07-24T00:00:59.880638",
   "fuente": "OpenWeatherMap 5 días / 3 horas. Alertas oficiales DMC se muestran en sección separada.",
   "nota": "Pronóstico operacional por ciudad de referencia regional; no reemplaza avisos/alertas/alarma DMC.",
   "regiones": {
@@ -11,24 +11,6 @@
         "lon": -70.65
       },
       "horas24": [
-        {
-          "hora": "21:00",
-          "temp": 14,
-          "pop": 0,
-          "lluvia_mm": 0.0,
-          "viento_ms": 0.8,
-          "icono": "☁️",
-          "desc": "Cubierto"
-        },
-        {
-          "hora": "00:00",
-          "temp": 13,
-          "pop": 59,
-          "lluvia_mm": 0.7,
-          "viento_ms": 1.9,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
         {
           "hora": "03:00",
           "temp": 12,
@@ -82,30 +64,37 @@
           "viento_ms": 0.5,
           "icono": "☁️",
           "desc": "Cubierto"
+        },
+        {
+          "hora": "21:00",
+          "temp": 24,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 0.2,
+          "icono": "☁️",
+          "desc": "Cubierto"
+        },
+        {
+          "hora": "00:00",
+          "temp": 15,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 0.6,
+          "icono": "☁️",
+          "desc": "Cubierto"
         }
       ],
       "dias": [
         {
-          "fecha": "2026-07-23",
-          "temp_min": 14,
-          "temp_max": 14,
-          "pop_max": 0,
-          "lluvia_mm": 0.0,
-          "viento_max_ms": 0.8,
-          "icono": "☁️",
-          "desc": "Cubierto",
-          "riesgo_operacional": "normal"
-        },
-        {
           "fecha": "2026-07-24",
           "temp_min": 11,
           "temp_max": 27,
-          "pop_max": 59,
-          "lluvia_mm": 0.8,
+          "pop_max": 36,
+          "lluvia_mm": 0.1,
           "viento_max_ms": 2.8,
           "icono": "☁️",
           "desc": "Cubierto",
-          "riesgo_operacional": "medio"
+          "riesgo_operacional": "normal"
         },
         {
           "fecha": "2026-07-25",
@@ -139,6 +128,17 @@
           "icono": "🌧️",
           "desc": "Lluvia ligera",
           "riesgo_operacional": "normal"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": 11,
+          "temp_max": 12,
+          "pop_max": 100,
+          "lluvia_mm": 5.7,
+          "viento_max_ms": 1.3,
+          "icono": "🌧️",
+          "desc": "Lluvia ligera",
+          "riesgo_operacional": "alto"
         }
       ]
     },
@@ -151,26 +151,8 @@
       },
       "horas24": [
         {
-          "hora": "21:00",
-          "temp": 14,
-          "pop": 72,
-          "lluvia_mm": 0.4,
-          "viento_ms": 1.6,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
-          "hora": "00:00",
-          "temp": 13,
-          "pop": 100,
-          "lluvia_mm": 0.4,
-          "viento_ms": 2.4,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
           "hora": "03:00",
-          "temp": 12,
+          "temp": 13,
           "pop": 86,
           "lluvia_mm": 0.5,
           "viento_ms": 2.2,
@@ -179,7 +161,7 @@
         },
         {
           "hora": "06:00",
-          "temp": 12,
+          "temp": 13,
           "pop": 21,
           "lluvia_mm": 0.0,
           "viento_ms": 3.1,
@@ -221,26 +203,33 @@
           "viento_ms": 1.8,
           "icono": "☁️",
           "desc": "Cubierto"
+        },
+        {
+          "hora": "21:00",
+          "temp": 20,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 1.6,
+          "icono": "🌥️",
+          "desc": "Nuboso"
+        },
+        {
+          "hora": "00:00",
+          "temp": 13,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 0.2,
+          "icono": "🌥️",
+          "desc": "Nuboso"
         }
       ],
       "dias": [
         {
-          "fecha": "2026-07-23",
-          "temp_min": 14,
-          "temp_max": 14,
-          "pop_max": 72,
-          "lluvia_mm": 0.4,
-          "viento_max_ms": 1.6,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera",
-          "riesgo_operacional": "medio"
-        },
-        {
           "fecha": "2026-07-24",
           "temp_min": 11,
           "temp_max": 20,
-          "pop_max": 100,
-          "lluvia_mm": 0.9,
+          "pop_max": 86,
+          "lluvia_mm": 0.5,
           "viento_max_ms": 3.1,
           "icono": "☁️",
           "desc": "Cubierto",
@@ -278,6 +267,17 @@
           "icono": "🌧️",
           "desc": "Lluvia ligera",
           "riesgo_operacional": "alto"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": 11,
+          "temp_max": 14,
+          "pop_max": 0,
+          "lluvia_mm": 0.0,
+          "viento_max_ms": 2.8,
+          "icono": "☁️",
+          "desc": "Cubierto",
+          "riesgo_operacional": "normal"
         }
       ]
     },
@@ -289,24 +289,6 @@
         "lon": -73.05
       },
       "horas24": [
-        {
-          "hora": "21:00",
-          "temp": 13,
-          "pop": 100,
-          "lluvia_mm": 1.5,
-          "viento_ms": 3.8,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
-          "hora": "00:00",
-          "temp": 12,
-          "pop": 100,
-          "lluvia_mm": 1.1,
-          "viento_ms": 2.0,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
         {
           "hora": "03:00",
           "temp": 11,
@@ -360,30 +342,37 @@
           "viento_ms": 1.4,
           "icono": "☁️",
           "desc": "Cubierto"
+        },
+        {
+          "hora": "21:00",
+          "temp": 12,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 1.1,
+          "icono": "☁️",
+          "desc": "Cubierto"
+        },
+        {
+          "hora": "00:00",
+          "temp": 11,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 1.4,
+          "icono": "☁️",
+          "desc": "Cubierto"
         }
       ],
       "dias": [
         {
-          "fecha": "2026-07-23",
-          "temp_min": 13,
-          "temp_max": 13,
-          "pop_max": 100,
-          "lluvia_mm": 1.5,
-          "viento_max_ms": 3.8,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera",
-          "riesgo_operacional": "alto"
-        },
-        {
           "fecha": "2026-07-24",
           "temp_min": 10,
           "temp_max": 13,
-          "pop_max": 100,
-          "lluvia_mm": 1.4,
+          "pop_max": 38,
+          "lluvia_mm": 0.3,
           "viento_max_ms": 2.2,
           "icono": "☁️",
           "desc": "Cubierto",
-          "riesgo_operacional": "alto"
+          "riesgo_operacional": "normal"
         },
         {
           "fecha": "2026-07-25",
@@ -417,6 +406,17 @@
           "icono": "🌧️",
           "desc": "Lluvia ligera",
           "riesgo_operacional": "alto"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": 9,
+          "temp_max": 12,
+          "pop_max": 100,
+          "lluvia_mm": 4.5,
+          "viento_max_ms": 6.2,
+          "icono": "🌧️",
+          "desc": "Lluvia ligera",
+          "riesgo_operacional": "alto"
         }
       ]
     },
@@ -429,24 +429,6 @@
       },
       "horas24": [
         {
-          "hora": "21:00",
-          "temp": 16,
-          "pop": 0,
-          "lluvia_mm": 0.0,
-          "viento_ms": 2.3,
-          "icono": "☁️",
-          "desc": "Cubierto"
-        },
-        {
-          "hora": "00:00",
-          "temp": 16,
-          "pop": 0,
-          "lluvia_mm": 0.0,
-          "viento_ms": 1.6,
-          "icono": "☁️",
-          "desc": "Cubierto"
-        },
-        {
           "hora": "03:00",
           "temp": 16,
           "pop": 0,
@@ -457,7 +439,7 @@
         },
         {
           "hora": "06:00",
-          "temp": 15,
+          "temp": 16,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 0.7,
@@ -499,20 +481,27 @@
           "viento_ms": 1.7,
           "icono": "🌥️",
           "desc": "Nuboso"
+        },
+        {
+          "hora": "21:00",
+          "temp": 17,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 3.5,
+          "icono": "☁️",
+          "desc": "Cubierto"
+        },
+        {
+          "hora": "00:00",
+          "temp": 17,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 1.3,
+          "icono": "☁️",
+          "desc": "Cubierto"
         }
       ],
       "dias": [
-        {
-          "fecha": "2026-07-23",
-          "temp_min": 16,
-          "temp_max": 16,
-          "pop_max": 0,
-          "lluvia_mm": 0.0,
-          "viento_max_ms": 2.3,
-          "icono": "☁️",
-          "desc": "Cubierto",
-          "riesgo_operacional": "normal"
-        },
         {
           "fecha": "2026-07-24",
           "temp_min": 15,
@@ -556,6 +545,17 @@
           "icono": "☁️",
           "desc": "Cubierto",
           "riesgo_operacional": "normal"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": 14,
+          "temp_max": 15,
+          "pop_max": 0,
+          "lluvia_mm": 0.0,
+          "viento_max_ms": 3.5,
+          "icono": "☁️",
+          "desc": "Cubierto",
+          "riesgo_operacional": "normal"
         }
       ]
     },
@@ -568,26 +568,8 @@
       },
       "horas24": [
         {
-          "hora": "21:00",
-          "temp": 10,
-          "pop": 100,
-          "lluvia_mm": 1.2,
-          "viento_ms": 1.5,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
-          "hora": "00:00",
-          "temp": 9,
-          "pop": 100,
-          "lluvia_mm": 0.3,
-          "viento_ms": 1.4,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
           "hora": "03:00",
-          "temp": 8,
+          "temp": 7,
           "pop": 29,
           "lluvia_mm": 0.2,
           "viento_ms": 1.8,
@@ -638,30 +620,37 @@
           "viento_ms": 2.8,
           "icono": "☁️",
           "desc": "Cubierto"
+        },
+        {
+          "hora": "21:00",
+          "temp": 10,
+          "pop": 20,
+          "lluvia_mm": 0.2,
+          "viento_ms": 2.7,
+          "icono": "🌧️",
+          "desc": "Lluvia ligera"
+        },
+        {
+          "hora": "00:00",
+          "temp": 9,
+          "pop": 3,
+          "lluvia_mm": 0.0,
+          "viento_ms": 1.9,
+          "icono": "☁️",
+          "desc": "Cubierto"
         }
       ],
       "dias": [
         {
-          "fecha": "2026-07-23",
-          "temp_min": 10,
-          "temp_max": 10,
-          "pop_max": 100,
-          "lluvia_mm": 1.2,
-          "viento_max_ms": 1.5,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera",
-          "riesgo_operacional": "alto"
-        },
-        {
           "fecha": "2026-07-24",
           "temp_min": 6,
           "temp_max": 12,
-          "pop_max": 100,
-          "lluvia_mm": 2.0,
+          "pop_max": 69,
+          "lluvia_mm": 1.7,
           "viento_max_ms": 2.8,
           "icono": "🌧️",
           "desc": "Lluvia ligera",
-          "riesgo_operacional": "alto"
+          "riesgo_operacional": "medio"
         },
         {
           "fecha": "2026-07-25",
@@ -695,6 +684,17 @@
           "icono": "🌧️",
           "desc": "Lluvia ligera",
           "riesgo_operacional": "alto"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": 4,
+          "temp_max": 9,
+          "pop_max": 100,
+          "lluvia_mm": 17.7,
+          "viento_max_ms": 2.4,
+          "icono": "☁️",
+          "desc": "Cubierto",
+          "riesgo_operacional": "alto"
         }
       ]
     },
@@ -707,26 +707,8 @@
       },
       "horas24": [
         {
-          "hora": "21:00",
-          "temp": 17,
-          "pop": 59,
-          "lluvia_mm": 0.2,
-          "viento_ms": 0.5,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
-          "hora": "00:00",
-          "temp": 15,
-          "pop": 94,
-          "lluvia_mm": 1.2,
-          "viento_ms": 0.7,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
           "hora": "03:00",
-          "temp": 12,
+          "temp": 10,
           "pop": 100,
           "lluvia_mm": 0.5,
           "viento_ms": 1.4,
@@ -735,7 +717,7 @@
         },
         {
           "hora": "06:00",
-          "temp": 11,
+          "temp": 10,
           "pop": 48,
           "lluvia_mm": 0.1,
           "viento_ms": 2.6,
@@ -777,26 +759,33 @@
           "viento_ms": 0.9,
           "icono": "☁️",
           "desc": "Cubierto"
+        },
+        {
+          "hora": "21:00",
+          "temp": 20,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 0.5,
+          "icono": "☁️",
+          "desc": "Cubierto"
+        },
+        {
+          "hora": "00:00",
+          "temp": 13,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 0.2,
+          "icono": "☁️",
+          "desc": "Cubierto"
         }
       ],
       "dias": [
-        {
-          "fecha": "2026-07-23",
-          "temp_min": 17,
-          "temp_max": 17,
-          "pop_max": 59,
-          "lluvia_mm": 0.2,
-          "viento_max_ms": 0.5,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera",
-          "riesgo_operacional": "medio"
-        },
         {
           "fecha": "2026-07-24",
           "temp_min": 10,
           "temp_max": 20,
           "pop_max": 100,
-          "lluvia_mm": 1.8,
+          "lluvia_mm": 0.6,
           "viento_max_ms": 2.6,
           "icono": "☁️",
           "desc": "Cubierto",
@@ -834,6 +823,17 @@
           "icono": "🌧️",
           "desc": "Lluvia ligera",
           "riesgo_operacional": "alto"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": 10,
+          "temp_max": 14,
+          "pop_max": 100,
+          "lluvia_mm": 6.7,
+          "viento_max_ms": 2.1,
+          "icono": "🌧️",
+          "desc": "Lluvia ligera",
+          "riesgo_operacional": "alto"
         }
       ]
     },
@@ -846,26 +846,8 @@
       },
       "horas24": [
         {
-          "hora": "21:00",
-          "temp": 11,
-          "pop": 100,
-          "lluvia_mm": 1.0,
-          "viento_ms": 3.8,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
-          "hora": "00:00",
-          "temp": 11,
-          "pop": 100,
-          "lluvia_mm": 0.1,
-          "viento_ms": 3.2,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
           "hora": "03:00",
-          "temp": 11,
+          "temp": 10,
           "pop": 20,
           "lluvia_mm": 0.1,
           "viento_ms": 2.6,
@@ -916,30 +898,37 @@
           "viento_ms": 1.5,
           "icono": "☁️",
           "desc": "Cubierto"
+        },
+        {
+          "hora": "21:00",
+          "temp": 14,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 0.6,
+          "icono": "☁️",
+          "desc": "Cubierto"
+        },
+        {
+          "hora": "00:00",
+          "temp": 12,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 0.8,
+          "icono": "☁️",
+          "desc": "Cubierto"
         }
       ],
       "dias": [
         {
-          "fecha": "2026-07-23",
-          "temp_min": 11,
-          "temp_max": 11,
-          "pop_max": 100,
-          "lluvia_mm": 1.0,
-          "viento_max_ms": 3.8,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera",
-          "riesgo_operacional": "alto"
-        },
-        {
           "fecha": "2026-07-24",
           "temp_min": 9,
           "temp_max": 15,
-          "pop_max": 100,
-          "lluvia_mm": 0.2,
-          "viento_max_ms": 3.2,
+          "pop_max": 20,
+          "lluvia_mm": 0.1,
+          "viento_max_ms": 2.6,
           "icono": "☁️",
           "desc": "Cubierto",
-          "riesgo_operacional": "alto"
+          "riesgo_operacional": "normal"
         },
         {
           "fecha": "2026-07-25",
@@ -973,6 +962,17 @@
           "icono": "🌧️",
           "desc": "Lluvia ligera",
           "riesgo_operacional": "alto"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": 10,
+          "temp_max": 13,
+          "pop_max": 100,
+          "lluvia_mm": 6.2,
+          "viento_max_ms": 3.0,
+          "icono": "🌧️",
+          "desc": "Lluvia ligera",
+          "riesgo_operacional": "alto"
         }
       ]
     },
@@ -985,119 +985,108 @@
       },
       "horas24": [
         {
-          "hora": "21:00",
-          "temp": 8,
-          "pop": 83,
-          "lluvia_mm": 1.2,
-          "viento_ms": 3.4,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
-          "hora": "00:00",
-          "temp": 8,
-          "pop": 70,
-          "lluvia_mm": 0.5,
-          "viento_ms": 3.6,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
           "hora": "03:00",
           "temp": 7,
           "pop": 76,
-          "lluvia_mm": 0.2,
-          "viento_ms": 3.6,
+          "lluvia_mm": 0.5,
+          "viento_ms": 4.0,
           "icono": "🌧️",
           "desc": "Lluvia ligera"
         },
         {
           "hora": "06:00",
-          "temp": 6,
-          "pop": 83,
-          "lluvia_mm": 0.6,
-          "viento_ms": 3.9,
+          "temp": 7,
+          "pop": 91,
+          "lluvia_mm": 1.1,
+          "viento_ms": 4.3,
           "icono": "🌧️",
           "desc": "Lluvia ligera"
         },
         {
           "hora": "09:00",
-          "temp": 6,
-          "pop": 50,
+          "temp": 7,
+          "pop": 49,
           "lluvia_mm": 0.3,
-          "viento_ms": 3.9,
+          "viento_ms": 4.4,
           "icono": "🌧️",
           "desc": "Lluvia ligera"
         },
         {
           "hora": "12:00",
           "temp": 7,
-          "pop": 50,
-          "lluvia_mm": 0.1,
-          "viento_ms": 3.6,
+          "pop": 46,
+          "lluvia_mm": 0.0,
+          "viento_ms": 4.2,
+          "icono": "☁️",
+          "desc": "Cubierto"
+        },
+        {
+          "hora": "15:00",
+          "temp": 8,
+          "pop": 79,
+          "lluvia_mm": 1.0,
+          "viento_ms": 3.9,
           "icono": "🌧️",
           "desc": "Lluvia ligera"
         },
         {
-          "hora": "15:00",
-          "temp": 9,
-          "pop": 34,
-          "lluvia_mm": 0.0,
-          "viento_ms": 3.8,
-          "icono": "🌥️",
-          "desc": "Nuboso"
+          "hora": "18:00",
+          "temp": 7,
+          "pop": 76,
+          "lluvia_mm": 0.3,
+          "viento_ms": 4.3,
+          "icono": "🌧️",
+          "desc": "Lluvia ligera"
         },
         {
-          "hora": "18:00",
+          "hora": "21:00",
           "temp": 8,
-          "pop": 86,
-          "lluvia_mm": 1.5,
-          "viento_ms": 4.6,
+          "pop": 42,
+          "lluvia_mm": 0.2,
+          "viento_ms": 3.5,
+          "icono": "🌧️",
+          "desc": "Lluvia ligera"
+        },
+        {
+          "hora": "00:00",
+          "temp": 9,
+          "pop": 53,
+          "lluvia_mm": 0.5,
+          "viento_ms": 4.1,
           "icono": "🌧️",
           "desc": "Lluvia ligera"
         }
       ],
       "dias": [
         {
-          "fecha": "2026-07-23",
-          "temp_min": 8,
-          "temp_max": 8,
-          "pop_max": 83,
-          "lluvia_mm": 1.2,
-          "viento_max_ms": 3.4,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera",
-          "riesgo_operacional": "alto"
-        },
-        {
           "fecha": "2026-07-24",
-          "temp_min": 6,
-          "temp_max": 9,
-          "pop_max": 100,
-          "lluvia_mm": 4.8,
-          "viento_max_ms": 5.1,
+          "temp_min": 7,
+          "temp_max": 8,
+          "pop_max": 91,
+          "lluvia_mm": 3.4,
+          "viento_max_ms": 4.4,
           "icono": "🌧️",
           "desc": "Lluvia ligera",
           "riesgo_operacional": "alto"
         },
         {
           "fecha": "2026-07-25",
-          "temp_min": 7,
+          "temp_min": 6,
           "temp_max": 9,
           "pop_max": 100,
-          "lluvia_mm": 28.7,
-          "viento_max_ms": 5.4,
+          "lluvia_mm": 33.8,
+          "viento_max_ms": 5.5,
           "icono": "🌧️",
-          "desc": "Lluvia ligera",
+          "desc": "Lluvia moderada",
           "riesgo_operacional": "alto"
         },
         {
           "fecha": "2026-07-26",
           "temp_min": 4,
-          "temp_max": 7,
+          "temp_max": 9,
           "pop_max": 100,
-          "lluvia_mm": 12.1,
-          "viento_max_ms": 3.4,
+          "lluvia_mm": 11.1,
+          "viento_max_ms": 5.9,
           "icono": "☁️",
           "desc": "Cubierto",
           "riesgo_operacional": "alto"
@@ -1107,10 +1096,21 @@
           "temp_min": 7,
           "temp_max": 11,
           "pop_max": 100,
-          "lluvia_mm": 40.0,
-          "viento_max_ms": 7.1,
+          "lluvia_mm": 17.1,
+          "viento_max_ms": 8.4,
           "icono": "🌧️",
-          "desc": "Lluvia moderada",
+          "desc": "Lluvia ligera",
+          "riesgo_operacional": "alto"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": 5,
+          "temp_max": 8,
+          "pop_max": 87,
+          "lluvia_mm": 2.0,
+          "viento_max_ms": 2.8,
+          "icono": "🌧️",
+          "desc": "Lluvia ligera",
           "riesgo_operacional": "alto"
         }
       ]
@@ -1123,24 +1123,6 @@
         "lon": -72.1
       },
       "horas24": [
-        {
-          "hora": "21:00",
-          "temp": 10,
-          "pop": 100,
-          "lluvia_mm": 1.6,
-          "viento_ms": 6.6,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
-          "hora": "00:00",
-          "temp": 10,
-          "pop": 100,
-          "lluvia_mm": 1.3,
-          "viento_ms": 5.2,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
         {
           "hora": "03:00",
           "temp": 9,
@@ -1194,29 +1176,36 @@
           "viento_ms": 1.4,
           "icono": "☁️",
           "desc": "Cubierto"
+        },
+        {
+          "hora": "21:00",
+          "temp": 13,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 0.5,
+          "icono": "☁️",
+          "desc": "Cubierto"
+        },
+        {
+          "hora": "00:00",
+          "temp": 11,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 1.9,
+          "icono": "☁️",
+          "desc": "Cubierto"
         }
       ],
       "dias": [
-        {
-          "fecha": "2026-07-23",
-          "temp_min": 10,
-          "temp_max": 10,
-          "pop_max": 100,
-          "lluvia_mm": 1.6,
-          "viento_max_ms": 6.6,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera",
-          "riesgo_operacional": "alto"
-        },
         {
           "fecha": "2026-07-24",
           "temp_min": 8,
           "temp_max": 14,
           "pop_max": 100,
-          "lluvia_mm": 3.7,
-          "viento_max_ms": 5.2,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera",
+          "lluvia_mm": 2.4,
+          "viento_max_ms": 4.4,
+          "icono": "☁️",
+          "desc": "Cubierto",
           "riesgo_operacional": "alto"
         },
         {
@@ -1251,6 +1240,17 @@
           "icono": "🌧️",
           "desc": "Lluvia ligera",
           "riesgo_operacional": "alto"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": 9,
+          "temp_max": 11,
+          "pop_max": 100,
+          "lluvia_mm": 3.2,
+          "viento_max_ms": 6.8,
+          "icono": "🌧️",
+          "desc": "Lluvia ligera",
+          "riesgo_operacional": "alto"
         }
       ]
     },
@@ -1263,26 +1263,8 @@
       },
       "horas24": [
         {
-          "hora": "21:00",
-          "temp": 22,
-          "pop": 0,
-          "lluvia_mm": 0.0,
-          "viento_ms": 1.6,
-          "icono": "☁️",
-          "desc": "Cubierto"
-        },
-        {
-          "hora": "00:00",
-          "temp": 21,
-          "pop": 0,
-          "lluvia_mm": 0.0,
-          "viento_ms": 0.3,
-          "icono": "☁️",
-          "desc": "Cubierto"
-        },
-        {
           "hora": "03:00",
-          "temp": 19,
+          "temp": 18,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 0.6,
@@ -1333,20 +1315,27 @@
           "viento_ms": 1.6,
           "icono": "☁️",
           "desc": "Cubierto"
+        },
+        {
+          "hora": "21:00",
+          "temp": 26,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 1.7,
+          "icono": "☁️",
+          "desc": "Cubierto"
+        },
+        {
+          "hora": "00:00",
+          "temp": 22,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 0.5,
+          "icono": "☁️",
+          "desc": "Cubierto"
         }
       ],
       "dias": [
-        {
-          "fecha": "2026-07-23",
-          "temp_min": 22,
-          "temp_max": 22,
-          "pop_max": 0,
-          "lluvia_mm": 0.0,
-          "viento_max_ms": 1.6,
-          "icono": "☁️",
-          "desc": "Cubierto",
-          "riesgo_operacional": "normal"
-        },
         {
           "fecha": "2026-07-24",
           "temp_min": 18,
@@ -1390,6 +1379,17 @@
           "icono": "☁️",
           "desc": "Cubierto",
           "riesgo_operacional": "normal"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": 14,
+          "temp_max": 21,
+          "pop_max": 0,
+          "lluvia_mm": 0.0,
+          "viento_max_ms": 2.6,
+          "icono": "☁️",
+          "desc": "Cubierto",
+          "riesgo_operacional": "normal"
         }
       ]
     },
@@ -1402,26 +1402,8 @@
       },
       "horas24": [
         {
-          "hora": "21:00",
-          "temp": 9,
-          "pop": 100,
-          "lluvia_mm": 0.7,
-          "viento_ms": 1.5,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
-          "hora": "00:00",
-          "temp": 8,
-          "pop": 100,
-          "lluvia_mm": 0.3,
-          "viento_ms": 0.7,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera"
-        },
-        {
           "hora": "03:00",
-          "temp": 8,
+          "temp": 7,
           "pop": 100,
           "lluvia_mm": 0.6,
           "viento_ms": 0.7,
@@ -1472,29 +1454,36 @@
           "viento_ms": 1.7,
           "icono": "🌧️",
           "desc": "Lluvia moderada"
+        },
+        {
+          "hora": "21:00",
+          "temp": 10,
+          "pop": 100,
+          "lluvia_mm": 4.7,
+          "viento_ms": 2.9,
+          "icono": "🌧️",
+          "desc": "Lluvia moderada"
+        },
+        {
+          "hora": "00:00",
+          "temp": 10,
+          "pop": 100,
+          "lluvia_mm": 4.8,
+          "viento_ms": 0.8,
+          "icono": "🌧️",
+          "desc": "Lluvia moderada"
         }
       ],
       "dias": [
-        {
-          "fecha": "2026-07-23",
-          "temp_min": 9,
-          "temp_max": 9,
-          "pop_max": 100,
-          "lluvia_mm": 0.7,
-          "viento_max_ms": 1.5,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera",
-          "riesgo_operacional": "alto"
-        },
         {
           "fecha": "2026-07-24",
           "temp_min": 6,
           "temp_max": 10,
           "pop_max": 100,
-          "lluvia_mm": 25.5,
+          "lluvia_mm": 25.2,
           "viento_max_ms": 2.9,
           "icono": "🌧️",
-          "desc": "Lluvia ligera",
+          "desc": "Lluvia moderada",
           "riesgo_operacional": "alto"
         },
         {
@@ -1529,6 +1518,17 @@
           "icono": "🌧️",
           "desc": "Lluvia moderada",
           "riesgo_operacional": "alto"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": 2,
+          "temp_max": 9,
+          "pop_max": 100,
+          "lluvia_mm": 0.3,
+          "viento_max_ms": 1.4,
+          "icono": "☁️",
+          "desc": "Cubierto",
+          "riesgo_operacional": "alto"
         }
       ]
     },
@@ -1541,26 +1541,8 @@
       },
       "horas24": [
         {
-          "hora": "21:00",
-          "temp": 19,
-          "pop": 0,
-          "lluvia_mm": 0.0,
-          "viento_ms": 4.0,
-          "icono": "☀️",
-          "desc": "Despejado"
-        },
-        {
-          "hora": "00:00",
-          "temp": 19,
-          "pop": 0,
-          "lluvia_mm": 0.0,
-          "viento_ms": 2.3,
-          "icono": "☀️",
-          "desc": "Despejado"
-        },
-        {
           "hora": "03:00",
-          "temp": 19,
+          "temp": 18,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 2.6,
@@ -1611,23 +1593,30 @@
           "viento_ms": 1.3,
           "icono": "☀️",
           "desc": "Despejado"
+        },
+        {
+          "hora": "21:00",
+          "temp": 20,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 1.9,
+          "icono": "☀️",
+          "desc": "Despejado"
+        },
+        {
+          "hora": "00:00",
+          "temp": 16,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 1.0,
+          "icono": "⛅",
+          "desc": "Nubes dispersas"
         }
       ],
       "dias": [
         {
-          "fecha": "2026-07-23",
-          "temp_min": 19,
-          "temp_max": 19,
-          "pop_max": 0,
-          "lluvia_mm": 0.0,
-          "viento_max_ms": 4.0,
-          "icono": "☀️",
-          "desc": "Despejado",
-          "riesgo_operacional": "normal"
-        },
-        {
           "fecha": "2026-07-24",
-          "temp_min": 19,
+          "temp_min": 18,
           "temp_max": 23,
           "pop_max": 0,
           "lluvia_mm": 0.0,
@@ -1668,6 +1657,17 @@
           "icono": "🌤️",
           "desc": "Pocas nubes",
           "riesgo_operacional": "normal"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": 16,
+          "temp_max": 20,
+          "pop_max": 0,
+          "lluvia_mm": 0.0,
+          "viento_max_ms": 2.9,
+          "icono": "⛅",
+          "desc": "Nubes dispersas",
+          "riesgo_operacional": "normal"
         }
       ]
     },
@@ -1680,95 +1680,84 @@
       },
       "horas24": [
         {
-          "hora": "21:00",
-          "temp": 0,
-          "pop": 70,
-          "lluvia_mm": 0.0,
-          "viento_ms": 0.7,
-          "icono": "❄️",
-          "desc": "Nieve ligera"
-        },
-        {
-          "hora": "00:00",
-          "temp": -1,
-          "pop": 62,
-          "lluvia_mm": 0.0,
-          "viento_ms": 0.9,
-          "icono": "❄️",
-          "desc": "Nieve ligera"
-        },
-        {
           "hora": "03:00",
-          "temp": 0,
-          "pop": 67,
+          "temp": -2,
+          "pop": 69,
           "lluvia_mm": 0.0,
-          "viento_ms": 0.2,
+          "viento_ms": 0.4,
           "icono": "❄️",
           "desc": "Nieve ligera"
         },
         {
           "hora": "06:00",
           "temp": -2,
-          "pop": 78,
+          "pop": 79,
           "lluvia_mm": 0.0,
-          "viento_ms": 0.5,
+          "viento_ms": 0.4,
           "icono": "❄️",
           "desc": "Nieve"
         },
         {
           "hora": "09:00",
           "temp": -1,
-          "pop": 83,
+          "pop": 90,
           "lluvia_mm": 0.0,
-          "viento_ms": 1.1,
+          "viento_ms": 0.9,
           "icono": "❄️",
           "desc": "Nieve"
         },
         {
           "hora": "12:00",
-          "temp": -2,
-          "pop": 84,
+          "temp": 0,
+          "pop": 90,
           "lluvia_mm": 0.0,
-          "viento_ms": 1.5,
+          "viento_ms": 1.1,
           "icono": "❄️",
           "desc": "Nieve ligera"
         },
         {
           "hora": "15:00",
           "temp": 3,
-          "pop": 54,
+          "pop": 64,
           "lluvia_mm": 0.0,
-          "viento_ms": 1.9,
+          "viento_ms": 1.6,
           "icono": "❄️",
           "desc": "Nieve ligera"
         },
         {
           "hora": "18:00",
-          "temp": 4,
-          "pop": 47,
+          "temp": 3,
+          "pop": 54,
           "lluvia_mm": 0.0,
           "viento_ms": 2.3,
+          "icono": "❄️",
+          "desc": "Nieve ligera"
+        },
+        {
+          "hora": "21:00",
+          "temp": 2,
+          "pop": 31,
+          "lluvia_mm": 0.0,
+          "viento_ms": 2.1,
+          "icono": "☁️",
+          "desc": "Cubierto"
+        },
+        {
+          "hora": "00:00",
+          "temp": 1,
+          "pop": 28,
+          "lluvia_mm": 0.0,
+          "viento_ms": 2.5,
           "icono": "❄️",
           "desc": "Nieve ligera"
         }
       ],
       "dias": [
         {
-          "fecha": "2026-07-23",
-          "temp_min": 0,
-          "temp_max": 0,
-          "pop_max": 70,
-          "lluvia_mm": 0.0,
-          "viento_max_ms": 0.7,
-          "icono": "❄️",
-          "desc": "Nieve ligera",
-          "riesgo_operacional": "medio"
-        },
-        {
           "fecha": "2026-07-24",
           "temp_min": -2,
-          "temp_max": 4,
-          "pop_max": 84,
+          "temp_max": 3,
+          "pop_max": 90,
           "lluvia_mm": 0.0,
           "viento_max_ms": 2.3,
           "icono": "❄️",
@@ -1777,33 +1766,44 @@
         },
         {
           "fecha": "2026-07-25",
-          "temp_min": -1,
+          "temp_min": -3,
           "temp_max": 3,
-          "pop_max": 34,
-          "lluvia_mm": 0.0,
-          "viento_max_ms": 2.4,
+          "pop_max": 35,
+          "lluvia_mm": 0.1,
+          "viento_max_ms": 2.5,
           "icono": "☁️",
           "desc": "Cubierto",
           "riesgo_operacional": "normal"
         },
         {
           "fecha": "2026-07-26",
-          "temp_min": -2,
+          "temp_min": -3,
           "temp_max": 2,
-          "pop_max": 26,
+          "pop_max": 32,
           "lluvia_mm": 0.0,
-          "viento_max_ms": 2.4,
+          "viento_max_ms": 2.0,
           "icono": "☁️",
           "desc": "Cubierto",
           "riesgo_operacional": "normal"
         },
         {
           "fecha": "2026-07-27",
-          "temp_min": -7,
-          "temp_max": 1,
-          "pop_max": 39,
+          "temp_min": -6,
+          "temp_max": 2,
+          "pop_max": 52,
           "lluvia_mm": 0.0,
-          "viento_max_ms": 1.5,
+          "viento_max_ms": 2.1,
+          "icono": "☁️",
+          "desc": "Cubierto",
+          "riesgo_operacional": "medio"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": -6,
+          "temp_max": 1,
+          "pop_max": 34,
+          "lluvia_mm": 0.0,
+          "viento_max_ms": 1.3,
           "icono": "☁️",
           "desc": "Cubierto",
           "riesgo_operacional": "normal"
@@ -1819,108 +1819,97 @@
       },
       "horas24": [
         {
-          "hora": "21:00",
-          "temp": -2,
-          "pop": 0,
+          "hora": "03:00",
+          "temp": -1,
+          "pop": 5,
           "lluvia_mm": 0.0,
           "viento_ms": 3.7,
           "icono": "☁️",
           "desc": "Cubierto"
         },
         {
-          "hora": "00:00",
-          "temp": -1,
-          "pop": 0,
-          "lluvia_mm": 0.0,
-          "viento_ms": 4.4,
-          "icono": "☁️",
-          "desc": "Cubierto"
-        },
-        {
-          "hora": "03:00",
-          "temp": 0,
-          "pop": 5,
-          "lluvia_mm": 0.0,
-          "viento_ms": 3.8,
-          "icono": "☁️",
-          "desc": "Cubierto"
-        },
-        {
           "hora": "06:00",
           "temp": 0,
-          "pop": 41,
+          "pop": 33,
           "lluvia_mm": 0.0,
-          "viento_ms": 3.8,
+          "viento_ms": 3.9,
           "icono": "❄️",
           "desc": "Nieve ligera"
         },
         {
           "hora": "09:00",
           "temp": 1,
-          "pop": 75,
+          "pop": 66,
           "lluvia_mm": 0.0,
-          "viento_ms": 4.3,
+          "viento_ms": 4.5,
           "icono": "❄️",
           "desc": "Nieve ligera"
         },
         {
           "hora": "12:00",
           "temp": 1,
-          "pop": 75,
+          "pop": 63,
           "lluvia_mm": 0.0,
-          "viento_ms": 3.1,
+          "viento_ms": 3.2,
           "icono": "❄️",
           "desc": "Nieve ligera"
         },
         {
           "hora": "15:00",
           "temp": 1,
-          "pop": 78,
+          "pop": 72,
           "lluvia_mm": 0.0,
-          "viento_ms": 2.5,
+          "viento_ms": 2.7,
           "icono": "❄️",
           "desc": "Nieve ligera"
         },
         {
           "hora": "18:00",
           "temp": 1,
-          "pop": 70,
+          "pop": 72,
           "lluvia_mm": 0.0,
           "viento_ms": 1.6,
+          "icono": "❄️",
+          "desc": "Nieve ligera"
+        },
+        {
+          "hora": "21:00",
+          "temp": 1,
+          "pop": 26,
+          "lluvia_mm": 0.0,
+          "viento_ms": 1.6,
+          "icono": "☁️",
+          "desc": "Cubierto"
+        },
+        {
+          "hora": "00:00",
+          "temp": 1,
+          "pop": 34,
+          "lluvia_mm": 0.0,
+          "viento_ms": 1.3,
           "icono": "❄️",
           "desc": "Nieve ligera"
         }
       ],
       "dias": [
         {
-          "fecha": "2026-07-23",
-          "temp_min": -2,
-          "temp_max": -2,
-          "pop_max": 0,
-          "lluvia_mm": 0.0,
-          "viento_max_ms": 3.7,
-          "icono": "☁️",
-          "desc": "Cubierto",
-          "riesgo_operacional": "normal"
-        },
-        {
           "fecha": "2026-07-24",
           "temp_min": -1,
           "temp_max": 1,
-          "pop_max": 78,
+          "pop_max": 72,
           "lluvia_mm": 0.0,
-          "viento_max_ms": 4.4,
+          "viento_max_ms": 4.5,
           "icono": "❄️",
           "desc": "Nieve ligera",
           "riesgo_operacional": "medio"
         },
         {
           "fecha": "2026-07-25",
-          "temp_min": 1,
+          "temp_min": 0,
           "temp_max": 3,
-          "pop_max": 45,
+          "pop_max": 40,
           "lluvia_mm": 0.0,
-          "viento_max_ms": 3.1,
+          "viento_max_ms": 2.6,
           "icono": "☁️",
           "desc": "Cubierto",
           "riesgo_operacional": "normal"
@@ -1928,12 +1917,12 @@
         {
           "fecha": "2026-07-26",
           "temp_min": 0,
-          "temp_max": 2,
+          "temp_max": 1,
           "pop_max": 39,
           "lluvia_mm": 0.0,
-          "viento_max_ms": 2.1,
-          "icono": "☁️",
-          "desc": "Cubierto",
+          "viento_max_ms": 1.7,
+          "icono": "❄️",
+          "desc": "Nieve ligera",
           "riesgo_operacional": "normal"
         },
         {
@@ -1942,9 +1931,20 @@
           "temp_max": 1,
           "pop_max": 0,
           "lluvia_mm": 0.0,
-          "viento_max_ms": 3.5,
-          "icono": "⛅",
-          "desc": "Nubes dispersas",
+          "viento_max_ms": 2.5,
+          "icono": "🌥️",
+          "desc": "Nuboso",
+          "riesgo_operacional": "normal"
+        },
+        {
+          "fecha": "2026-07-28",
+          "temp_min": -1,
+          "temp_max": 3,
+          "pop_max": 0,
+          "lluvia_mm": 0.0,
+          "viento_max_ms": 5.2,
+          "icono": "☀️",
+          "desc": "Despejado",
           "riesgo_operacional": "normal"
         }
       ]
