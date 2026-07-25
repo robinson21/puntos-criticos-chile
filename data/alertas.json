@@ -1,28 +1,12 @@
 {
-  "actualizado": "2026-07-25T11:27:09.102509",
+  "actualizado": "2026-07-25T14:32:28.097167",
   "totales": {
-    "avisos": 9,
+    "avisos": 8,
     "alertas": 0,
     "alarmas": 0,
-    "total": 9
+    "total": 8
   },
   "alertas": [
-    {
-      "id": 5261,
-      "tipo": "Aviso",
-      "codigo": "A350/2026",
-      "emision": "Jueves 23 de julio del 2026 a las 12:59 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del viernes 24 de julio del 2026",
-      "hasta": "la madrugada del sábado 25 de julio del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
-    },
     {
       "id": 5262,
       "tipo": "Aviso",
