@@ -1,12 +1,70 @@
 {
-  "actualizado": "2026-07-26T15:15:44.563642",
+  "actualizado": "2026-07-26T18:23:14.259001",
   "totales": {
-    "avisos": 9,
+    "avisos": 11,
     "alertas": 1,
     "alarmas": 0,
-    "total": 10
+    "total": 12
   },
   "alertas": [
+    {
+      "id": 5287,
+      "tipo": "Aviso",
+      "codigo": "A361/2026",
+      "emision": "Domingo 26 de julio del 2026 a las 14:01 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Altas presiones",
+      "desde": "la madrugada del lunes 27 de julio del 2026",
+      "hasta": "la mañana del jueves 30 de julio del 2026",
+      "observacion": "Formación de hielo",
+      "zonas": "Magallanes (Cordillera Austral Sur, Insular Sur, Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Heladas Normales a Moderadas en zonas de la región de Magallanes",
+      "icono": "🥶",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5286,
+      "tipo": "Aviso",
+      "codigo": "A360/2026",
+      "emision": "Domingo 26 de julio del 2026 a las 13:40 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del lunes 27 de julio del 2026",
+      "hasta": "la tarde del lunes 27 de julio del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Viento Normal a Moderado en zonas de la región de La Araucanía",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía"
+      ]
+    },
+    {
+      "id": 5285,
+      "tipo": "Aviso",
+      "codigo": "A357-1/2026",
+      "emision": "Domingo 26 de julio del 2026 a las 12:24 hrs.",
+      "fenomeno": "Nubes Convectivas Tornádicas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del domingo 26 de julio del 2026",
+      "hasta": "la noche del domingo 26 de julio del 2026",
+      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
+      "zonas": "&Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle) | Los Lagos (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas desde la región de &Ntilde;uble a la región de Los Lagos",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5284,
       "tipo": "Aviso",
@@ -106,25 +164,6 @@
         "O'Higgins",
         "Valparaíso",
         "Ñuble"
-      ]
-    },
-    {
-      "id": 5278,
-      "tipo": "Aviso",
-      "codigo": "A357/2026",
-      "emision": "Sábado 25 de julio del 2026 a las 13:19 hrs.",
-      "fenomeno": "Nubes Convectivas Tornádicas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del domingo 26 de julio del 2026",
-      "hasta": "la noche del domingo 26 de julio del 2026",
-      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
-      "zonas": "Los Ríos (Litoral, Cordillera Costa, Valle) | Los Lagos (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de Los Ríos y Los Lagos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Los Lagos",
-        "Los Ríos"
       ]
     },
     {
