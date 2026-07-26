@@ -1,12 +1,55 @@
 {
-  "actualizado": "2026-07-26T18:23:14.259001",
+  "actualizado": "2026-07-26T21:28:02.869884",
   "totales": {
-    "avisos": 11,
+    "avisos": 12,
     "alertas": 1,
     "alarmas": 0,
-    "total": 12
+    "total": 13
   },
   "alertas": [
+    {
+      "id": 5289,
+      "tipo": "Aviso",
+      "codigo": "A362/2026",
+      "emision": "Domingo 26 de julio del 2026 a las 14:44 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Alta presión fría",
+      "desde": "la madrugada del lunes 27 de julio del 2026",
+      "hasta": "la tarde del viernes 31 de julio del 2026",
+      "observacion": "",
+      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte, Patagonia Subandina Sur)",
+      "titulo": "Heladas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "🥶",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "Los Lagos"
+      ]
+    },
+    {
+      "id": 5288,
+      "tipo": "Aviso",
+      "codigo": "A347-4/2026",
+      "emision": "Domingo 26 de julio del 2026 a las 14:48 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del domingo 26 de julio del 2026",
+      "hasta": "la noche del martes 28 de julio del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5287,
       "tipo": "Aviso",
@@ -156,29 +199,6 @@
       "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Cordillera Costa, Valle, Precordillera, Cordillera)",
       "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en zonas desde la región de Valparaíso a la región del Biobío",
       "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5274,
-      "tipo": "Aviso",
-      "codigo": "A347-3/2026",
-      "emision": "Viernes 24 de julio del 2026 a las 16:24 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del sábado 25 de julio del 2026",
-      "hasta": "la noche del lunes 27 de julio del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Valparaíso a la región del Biobío",
-      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Biobío",
