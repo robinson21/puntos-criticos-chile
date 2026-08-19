@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-19T06:00:02.198968",
+  "actualizado": "2026-08-19T12:00:11.309587",
   "totales": {
     "avisos": 5,
-    "alertas": 1,
-    "alarmas": 1,
-    "total": 7
+    "alertas": 0,
+    "alarmas": 0,
+    "total": 5
   },
   "alertas": [
     {
@@ -43,41 +43,6 @@
       "regiones": [
         "Aysén",
         "Los Lagos"
-      ]
-    },
-    {
-      "id": 5528,
-      "tipo": "Alarma",
-      "codigo": "AAA8/2026",
-      "emision": "Lunes 17 de agosto del 2026 a las 13:24 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Baja segregada",
-      "desde": "la madrugada del martes 18 de agosto del 2026",
-      "hasta": "la noche del martes 18 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Región de Antofagasta: Litoral (Tocopilla y Taltal) Cordillera Costa (Tocopilla hasta Taltal)",
-      "titulo": "Precipitaciones Intensas en Región de Antofagasta: Litoral (Tocopilla y Taltal) Cordillera Costa (Tocopilla hasta Taltal)",
-      "icono": "🌧️",
-      "color": "#ef4444",
-      "regiones": []
-    },
-    {
-      "id": 5532,
-      "tipo": "Alerta",
-      "codigo": "AA141-3/2026",
-      "emision": "Martes 18 de agosto del 2026 a las 10:19 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Baja segregada",
-      "desde": "la mañana del martes 18 de agosto del 2026",
-      "hasta": "la madrugada del miércoles 19 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Litoral, Cordillera Costa) | Atacama (Litoral)",
-      "titulo": "Precipitaciones Moderadas a Fuertes en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "🌧️",
-      "color": "#f97316",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
       ]
     },
     {
