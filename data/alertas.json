@@ -1,44 +1,25 @@
 {
-  "actualizado": "2026-08-19T12:00:11.309587",
+  "actualizado": "2026-08-19T18:00:15.689940",
   "totales": {
-    "avisos": 5,
+    "avisos": 4,
     "alertas": 0,
     "alarmas": 0,
-    "total": 5
+    "total": 4
   },
   "alertas": [
     {
-      "id": 5517,
+      "id": 5540,
       "tipo": "Aviso",
-      "codigo": "A428/2026",
-      "emision": "Domingo 16 de agosto del 2026 a las 16:20 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Baja segregada",
-      "desde": "la noche del lunes 17 de agosto del 2026",
-      "hasta": "la tarde del miércoles 19 de agosto del 2026",
-      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
-      "zonas": "Antofagasta (Litoral, Cordillera Costa) | Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5527,
-      "tipo": "Aviso",
-      "codigo": "A431/2026",
-      "emision": "Lunes 17 de agosto del 2026 a las 12:57 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del miércoles 19 de agosto del 2026",
-      "hasta": "la mañana del jueves 20 de agosto del 2026",
+      "codigo": "A434/2026",
+      "emision": "Miércoles 19 de agosto del 2026 a las 11:22 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Alta presión fría",
+      "desde": "la mañana del viernes 21 de agosto del 2026",
+      "hasta": "la mañana del sábado 22 de agosto del 2026",
       "observacion": "",
-      "zonas": "Los Lagos (Litoral Interior, Cordillera Austral) | Aysén (Litoral Interior Norte, Cordillera Austral Norte)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "🌧️",
+      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte, Patagonia Subandina Sur)",
+      "titulo": "Heladas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "🥶",
       "color": "#fbbf24",
       "regiones": [
         "Aysén",
@@ -46,41 +27,22 @@
       ]
     },
     {
-      "id": 5534,
+      "id": 5539,
       "tipo": "Aviso",
-      "codigo": "A425-2/2026",
-      "emision": "Martes 18 de agosto del 2026 a las 14:32 hrs.",
-      "fenomeno": "Nevadas",
-      "condicion": "Baja segregada",
-      "desde": "la tarde del martes 18 de agosto del 2026",
-      "hasta": "la mañana del miércoles 19 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
-      "titulo": "Nevadas Normales a Moderadas en cordillera de las regiones de Antofagasta y Atacama",
-      "icono": "❄️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5535,
-      "tipo": "Aviso",
-      "codigo": "A388-10/2026",
-      "emision": "Martes 18 de agosto del 2026 a las 15:03 hrs.",
+      "codigo": "A388-11/2026",
+      "emision": "Miércoles 19 de agosto del 2026 a las 10:09 hrs.",
       "fenomeno": "Viento",
       "condicion": "Vaguada en altura",
-      "desde": "la tarde del martes 18 de agosto del 2026",
+      "desde": "la tarde del miércoles 19 de agosto del 2026",
       "hasta": "la noche del miércoles 19 de agosto del 2026",
       "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Pampa, Precordillera, Cordillera) | Antofagasta (Cordillera Costa, Pampa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Pampa, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Pampa, Precordillera, Cordillera) | Antofagasta (Cordillera Costa, Pampa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
-        "Atacama",
+        "Arica y Parinacota",
         "Tarapacá"
       ]
     },
@@ -102,6 +64,25 @@
         "Antofagasta",
         "Arica y Parinacota",
         "Tarapacá"
+      ]
+    },
+    {
+      "id": 5527,
+      "tipo": "Aviso",
+      "codigo": "A431/2026",
+      "emision": "Lunes 17 de agosto del 2026 a las 12:57 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del miércoles 19 de agosto del 2026",
+      "hasta": "la mañana del jueves 20 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Los Lagos (Litoral Interior, Cordillera Austral) | Aysén (Litoral Interior Norte, Cordillera Austral Norte)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "Los Lagos"
       ]
     }
   ]
