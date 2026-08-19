@@ -1,31 +1,12 @@
 {
-  "actualizado": "2026-08-19T02:09:07.086852",
+  "actualizado": "2026-08-19T06:00:02.198968",
   "totales": {
-    "avisos": 10,
-    "alertas": 4,
+    "avisos": 5,
+    "alertas": 1,
     "alarmas": 1,
-    "total": 15
+    "total": 7
   },
   "alertas": [
-    {
-      "id": 5502,
-      "tipo": "Aviso",
-      "codigo": "A424/2026",
-      "emision": "Sábado 15 de agosto del 2026 a las 13:41 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Vaguada en altura",
-      "desde": "la madrugada del lunes 17 de agosto del 2026",
-      "hasta": "la noche del martes 18 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Arica y Parinacota (Litoral, Cordillera Costa, Pampa, Precordillera) | Tarapacá (Litoral, Cordillera Costa, Pampa, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Arica y Parinacota y Tarapacá",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    },
     {
       "id": 5517,
       "tipo": "Aviso",
@@ -44,58 +25,6 @@
         "Antofagasta",
         "Atacama"
       ]
-    },
-    {
-      "id": 5524,
-      "tipo": "Aviso",
-      "codigo": "A427-1/2026",
-      "emision": "Lunes 17 de agosto del 2026 a las 10:39 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la mañana del lunes 17 de agosto del 2026",
-      "hasta": "la noche del martes 18 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Sur, Insular Central, Pampa Patagonica Sur)",
-      "titulo": "Viento Normal a Moderado en zonas de la región de Magallanes",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 5525,
-      "tipo": "Aviso",
-      "codigo": "A430/2026",
-      "emision": "Lunes 17 de agosto del 2026 a las 12:09 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Baja segregada",
-      "desde": "la noche del lunes 17 de agosto del 2026",
-      "hasta": "la noche del martes 18 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Pampa)",
-      "titulo": "Precipitaciones Normales a Moderadas en pampa de la región de Antofagasta",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta"
-      ]
-    },
-    {
-      "id": 5526,
-      "tipo": "Alerta",
-      "codigo": "AA143/2026",
-      "emision": "Lunes 17 de agosto del 2026 a las 13:16 hrs.",
-      "fenomeno": "Nevadas en otras áreas",
-      "condicion": "Baja segregada",
-      "desde": "la noche del lunes 17 de agosto del 2026",
-      "hasta": "la noche del martes 18 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Precordillera Sector Minera Escondida al sur) Atacama (Precord Inca de oro al norte)",
-      "titulo": "Nevadas Moderadas en Antofagasta (Precordillera Sector Minera Escondida al sur) Atacama (Precord Inca de oro al norte)",
-      "icono": "⚠️",
-      "color": "#f97316",
-      "regiones": []
     },
     {
       "id": 5527,
@@ -133,27 +62,6 @@
       "regiones": []
     },
     {
-      "id": 5530,
-      "tipo": "Alerta",
-      "codigo": "AA139-1/2026",
-      "emision": "Lunes 17 de agosto del 2026 a las 14:58 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del lunes 17 de agosto del 2026",
-      "hasta": "la noche del martes 18 de agosto del 2026",
-      "observacion": "Desarrollo de ventisca",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Pampa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas desde la región de Arica y Parinacota a la región de Atacama",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Atacama",
-        "Tarapacá"
-      ]
-    },
-    {
       "id": 5532,
       "tipo": "Alerta",
       "codigo": "AA141-3/2026",
@@ -169,24 +77,6 @@
       "color": "#f97316",
       "regiones": [
         "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5533,
-      "tipo": "Aviso",
-      "codigo": "A421-3/2026",
-      "emision": "Martes 18 de agosto del 2026 a las 10:19 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Baja segregada",
-      "desde": "la mañana del martes 18 de agosto del 2026",
-      "hasta": "la noche del martes 18 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de la región de Atacama",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
         "Atacama"
       ]
     },
@@ -247,43 +137,6 @@
         "Antofagasta",
         "Arica y Parinacota",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5537,
-      "tipo": "Alerta",
-      "codigo": "AA144/2026",
-      "emision": "Martes 18 de agosto del 2026 a las 17:59 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Baja segregada",
-      "desde": "la tarde del martes 18 de agosto del 2026",
-      "hasta": "la noche del martes 18 de agosto del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Antofagasta (Litoral)",
-      "titulo": "Tormentas Eléctricas en litoral de la región de Antofagasta",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": [
-        "Antofagasta"
-      ]
-    },
-    {
-      "id": 5538,
-      "tipo": "Aviso",
-      "codigo": "A422-3/2026",
-      "emision": "Martes 18 de agosto del 2026 a las 20:17 hrs.",
-      "fenomeno": "Nevadas en otras áreas",
-      "condicion": "Baja segregada",
-      "desde": "la noche del martes 18 de agosto del 2026",
-      "hasta": "la noche del martes 18 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar) | Atacama (Precordillera)",
-      "titulo": "Probables Nevadas en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
       ]
     }
   ]
