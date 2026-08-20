@@ -1,31 +1,12 @@
 {
-  "actualizado": "2026-08-20T12:00:46.272309",
+  "actualizado": "2026-08-20T18:00:01.698370",
   "totales": {
-    "avisos": 4,
+    "avisos": 3,
     "alertas": 0,
     "alarmas": 0,
-    "total": 4
+    "total": 3
   },
   "alertas": [
-    {
-      "id": 5527,
-      "tipo": "Aviso",
-      "codigo": "A431/2026",
-      "emision": "Lunes 17 de agosto del 2026 a las 12:57 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del miércoles 19 de agosto del 2026",
-      "hasta": "la mañana del jueves 20 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Los Lagos (Litoral Interior, Cordillera Austral) | Aysén (Litoral Interior Norte, Cordillera Austral Norte)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén",
-        "Los Lagos"
-      ]
-    },
     {
       "id": 5540,
       "tipo": "Aviso",
