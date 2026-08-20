@@ -1,12 +1,48 @@
 {
-  "actualizado": "2026-08-19T18:00:15.689940",
+  "actualizado": "2026-08-20T00:00:38.072443",
   "totales": {
-    "avisos": 4,
+    "avisos": 6,
     "alertas": 0,
     "alarmas": 0,
-    "total": 4
+    "total": 6
   },
   "alertas": [
+    {
+      "id": 5542,
+      "tipo": "Aviso",
+      "codigo": "A436/2026",
+      "emision": "Miércoles 19 de agosto del 2026 a las 15:44 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del sábado 22 de agosto del 2026",
+      "hasta": "la noche del domingo 23 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 5541,
+      "tipo": "Aviso",
+      "codigo": "A435/2026",
+      "emision": "Miércoles 19 de agosto del 2026 a las 15:27 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del jueves 20 de agosto del 2026",
+      "hasta": "la tarde del sábado 22 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5540,
       "tipo": "Aviso",
