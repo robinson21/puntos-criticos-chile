@@ -1,46 +1,29 @@
 {
-  "actualizado": "2026-08-20T00:00:38.072443",
+  "actualizado": "2026-08-20T06:00:42.764986",
   "totales": {
-    "avisos": 6,
+    "avisos": 4,
     "alertas": 0,
     "alarmas": 0,
-    "total": 6
+    "total": 4
   },
   "alertas": [
     {
-      "id": 5542,
+      "id": 5527,
       "tipo": "Aviso",
-      "codigo": "A436/2026",
-      "emision": "Miércoles 19 de agosto del 2026 a las 15:44 hrs.",
-      "fenomeno": "Viento",
+      "codigo": "A431/2026",
+      "emision": "Lunes 17 de agosto del 2026 a las 12:57 hrs.",
+      "fenomeno": "Precipitaciones",
       "condicion": "Sistema frontal",
-      "desde": "la mañana del sábado 22 de agosto del 2026",
-      "hasta": "la noche del domingo 23 de agosto del 2026",
+      "desde": "la mañana del miércoles 19 de agosto del 2026",
+      "hasta": "la mañana del jueves 20 de agosto del 2026",
       "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
-    },
-    {
-      "id": 5541,
-      "tipo": "Aviso",
-      "codigo": "A435/2026",
-      "emision": "Miércoles 19 de agosto del 2026 a las 15:27 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del jueves 20 de agosto del 2026",
-      "hasta": "la tarde del sábado 22 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "⚠️",
+      "zonas": "Los Lagos (Litoral Interior, Cordillera Austral) | Aysén (Litoral Interior Norte, Cordillera Austral Norte)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "🌧️",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
+        "Aysén",
+        "Los Lagos"
       ]
     },
     {
@@ -63,63 +46,40 @@
       ]
     },
     {
-      "id": 5539,
+      "id": 5541,
       "tipo": "Aviso",
-      "codigo": "A388-11/2026",
-      "emision": "Miércoles 19 de agosto del 2026 a las 10:09 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del miércoles 19 de agosto del 2026",
-      "hasta": "la noche del miércoles 19 de agosto del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Pampa, Precordillera, Cordillera) | Antofagasta (Cordillera Costa, Pampa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5536,
-      "tipo": "Aviso",
-      "codigo": "A433/2026",
-      "emision": "Martes 18 de agosto del 2026 a las 15:25 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Predominio de alta presión",
-      "desde": "la mañana del miércoles 19 de agosto del 2026",
-      "hasta": "la noche del miércoles 19 de agosto del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Litoral) | Tarapacá (Litoral) | Antofagasta (Litoral)",
-      "titulo": "Viento Normal a Moderado en litoral de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5527,
-      "tipo": "Aviso",
-      "codigo": "A431/2026",
-      "emision": "Lunes 17 de agosto del 2026 a las 12:57 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del miércoles 19 de agosto del 2026",
-      "hasta": "la mañana del jueves 20 de agosto del 2026",
+      "codigo": "A435/2026",
+      "emision": "Miércoles 19 de agosto del 2026 a las 15:27 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del jueves 20 de agosto del 2026",
+      "hasta": "la tarde del sábado 22 de agosto del 2026",
       "observacion": "",
-      "zonas": "Los Lagos (Litoral Interior, Cordillera Austral) | Aysén (Litoral Interior Norte, Cordillera Austral Norte)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "🌧️",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
-        "Aysén",
-        "Los Lagos"
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
       ]
+    },
+    {
+      "id": 5542,
+      "tipo": "Aviso",
+      "codigo": "A436/2026",
+      "emision": "Miércoles 19 de agosto del 2026 a las 15:44 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del sábado 22 de agosto del 2026",
+      "hasta": "la noche del domingo 23 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
     }
   ]
 }
