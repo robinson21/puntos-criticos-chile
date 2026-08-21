@@ -1,31 +1,97 @@
 {
-  "actualizado": "2026-08-21T12:00:25.591185",
+  "actualizado": "2026-08-21T18:00:29.109425",
   "totales": {
-    "avisos": 3,
+    "avisos": 6,
     "alertas": 0,
     "alarmas": 0,
-    "total": 3
+    "total": 6
   },
   "alertas": [
     {
-      "id": 5543,
+      "id": 5547,
       "tipo": "Aviso",
-      "codigo": "A435-1/2026",
-      "emision": "Jueves 20 de agosto del 2026 a las 16:55 hrs.",
+      "codigo": "A439/2026",
+      "emision": "Viernes 21 de agosto del 2026 a las 12:38 hrs.",
+      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del martes 25 de agosto del 2026",
+      "hasta": "la tarde del miércoles 26 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5546,
+      "tipo": "Aviso",
+      "codigo": "A438/2026",
+      "emision": "Viernes 21 de agosto del 2026 a las 12:37 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del martes 25 de agosto del 2026",
+      "hasta": "la tarde del miércoles 26 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Maule (Litoral, Cordillera Costa, Valle) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5545,
+      "tipo": "Aviso",
+      "codigo": "A437/2026",
+      "emision": "Viernes 21 de agosto del 2026 a las 12:19 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del lunes 24 de agosto del 2026",
+      "hasta": "la tarde del miércoles 26 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5544,
+      "tipo": "Aviso",
+      "codigo": "A435-2/2026",
+      "emision": "Viernes 21 de agosto del 2026 a las 12:05 hrs.",
       "fenomeno": "Altas Temperaturas",
       "condicion": "Dorsal en altura",
-      "desde": "la tarde del jueves 20 de agosto del 2026",
+      "desde": "la tarde del viernes 21 de agosto del 2026",
       "hasta": "la tarde del sábado 22 de agosto del 2026",
       "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera) | Coquimbo (Precordillera y valles precordilleranos)",
-      "titulo": "Altas Temperaturas en zonas desde la región de Tarapacá a la región de Coquimbo",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera) | Coquimbo (Precordillera y valles precordilleranos) | Valparaíso (Litoral) | Metropolitana (Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas desde la región de Tarapacá a la región Metropolitana",
       "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
         "Atacama",
         "Coquimbo",
-        "Tarapacá"
+        "Metropolitana",
+        "Tarapacá",
+        "Valparaíso"
       ]
     },
     {
