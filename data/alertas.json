@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-20T18:00:01.698370",
+  "actualizado": "2026-08-21T00:00:18.499045",
   "totales": {
     "avisos": 3,
     "alertas": 0,
@@ -8,41 +8,23 @@
   },
   "alertas": [
     {
-      "id": 5540,
+      "id": 5543,
       "tipo": "Aviso",
-      "codigo": "A434/2026",
-      "emision": "Miércoles 19 de agosto del 2026 a las 11:22 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Alta presión fría",
-      "desde": "la mañana del viernes 21 de agosto del 2026",
-      "hasta": "la mañana del sábado 22 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte, Patagonia Subandina Sur)",
-      "titulo": "Heladas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "🥶",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén",
-        "Los Lagos"
-      ]
-    },
-    {
-      "id": 5541,
-      "tipo": "Aviso",
-      "codigo": "A435/2026",
-      "emision": "Miércoles 19 de agosto del 2026 a las 15:27 hrs.",
+      "codigo": "A435-1/2026",
+      "emision": "Jueves 20 de agosto del 2026 a las 16:55 hrs.",
       "fenomeno": "Altas Temperaturas",
       "condicion": "Dorsal en altura",
       "desde": "la tarde del jueves 20 de agosto del 2026",
       "hasta": "la tarde del sábado 22 de agosto del 2026",
       "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera) | Coquimbo (Precordillera y valles precordilleranos)",
+      "titulo": "Altas Temperaturas en zonas desde la región de Tarapacá a la región de Coquimbo",
       "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
         "Atacama",
+        "Coquimbo",
         "Tarapacá"
       ]
     },
@@ -61,6 +43,25 @@
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": []
+    },
+    {
+      "id": 5540,
+      "tipo": "Aviso",
+      "codigo": "A434/2026",
+      "emision": "Miércoles 19 de agosto del 2026 a las 11:22 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Alta presión fría",
+      "desde": "la mañana del viernes 21 de agosto del 2026",
+      "hasta": "la mañana del sábado 22 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte, Patagonia Subandina Sur)",
+      "titulo": "Heladas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "🥶",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "Los Lagos"
+      ]
     }
   ]
 }
