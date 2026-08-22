@@ -1,12 +1,31 @@
 {
-  "actualizado": "2026-08-21T18:00:29.109425",
+  "actualizado": "2026-08-22T00:00:33.502588",
   "totales": {
-    "avisos": 6,
+    "avisos": 7,
     "alertas": 0,
     "alarmas": 0,
-    "total": 6
+    "total": 7
   },
   "alertas": [
+    {
+      "id": 5548,
+      "tipo": "Aviso",
+      "codigo": "A440/2026",
+      "emision": "Viernes 21 de agosto del 2026 a las 14:32 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del martes 25 de agosto del 2026",
+      "hasta": "la tarde del miércoles 26 de agosto del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de La Araucanía y Los Ríos",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Ríos"
+      ]
+    },
     {
       "id": 5547,
       "tipo": "Aviso",
