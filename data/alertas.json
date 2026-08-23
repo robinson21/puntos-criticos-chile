@@ -1,37 +1,119 @@
 {
-  "actualizado": "2026-08-23T12:00:09.092110",
+  "actualizado": "2026-08-23T18:00:12.163718",
   "totales": {
-    "avisos": 6,
-    "alertas": 0,
+    "avisos": 8,
+    "alertas": 2,
     "alarmas": 0,
-    "total": 6
+    "total": 10
   },
   "alertas": [
     {
-      "id": 5542,
+      "id": 5557,
       "tipo": "Aviso",
-      "codigo": "A436/2026",
-      "emision": "Miércoles 19 de agosto del 2026 a las 15:44 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del sábado 22 de agosto del 2026",
+      "codigo": "A443/2026",
+      "emision": "Domingo 23 de agosto del 2026 a las 13:05 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del domingo 23 de agosto del 2026",
       "hasta": "la noche del domingo 23 de agosto del 2026",
       "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
+      "zonas": "Arica y Parinacota (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de la región de Arica y Parinacota",
+      "icono": "⚡",
       "color": "#fbbf24",
-      "regiones": []
+      "regiones": [
+        "Arica y Parinacota"
+      ]
     },
     {
-      "id": 5545,
+      "id": 5556,
       "tipo": "Aviso",
-      "codigo": "A437/2026",
-      "emision": "Viernes 21 de agosto del 2026 a las 12:19 hrs.",
+      "codigo": "A438-1/2026",
+      "emision": "Domingo 23 de agosto del 2026 a las 12:44 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del martes 25 de agosto del 2026",
+      "hasta": "la mañana del miércoles 26 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Maule (Litoral, Cordillera Costa, Valle) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5555,
+      "tipo": "Aviso",
+      "codigo": "A439-1/2026",
+      "emision": "Domingo 23 de agosto del 2026 a las 12:44 hrs.",
+      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del martes 25 de agosto del 2026",
+      "hasta": "la noche del martes 25 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Maule (Cordillera) | &Ntilde;uble (Cordillera) | Biobío (Cordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en cordillera de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5554,
+      "tipo": "Alerta",
+      "codigo": "AA146/2026",
+      "emision": "Domingo 23 de agosto del 2026 a las 12:45 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del martes 25 de agosto del 2026",
+      "hasta": "la mañana del miércoles 26 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Maule (Precordillera) | &Ntilde;uble (Precordillera) | Biobío (Precordillera)",
+      "titulo": "Precipitaciones Moderadas a Fuertes en precordillera de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "🌧️",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5553,
+      "tipo": "Alerta",
+      "codigo": "AA145/2026",
+      "emision": "Domingo 23 de agosto del 2026 a las 12:37 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del martes 25 de agosto del 2026",
+      "hasta": "la madrugada del miércoles 26 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Maule (Litoral) | &Ntilde;uble (Litoral) | Biobío (Litoral, Cordillera Costa)",
+      "titulo": "Precipitaciones Moderadas a Fuertes en corto periodo de tiempo en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "🌧️",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5552,
+      "tipo": "Aviso",
+      "codigo": "A437-1/2026",
+      "emision": "Domingo 23 de agosto del 2026 a las 12:19 hrs.",
       "fenomeno": "Viento",
       "condicion": "Sistema frontal",
-      "desde": "la tarde del lunes 24 de agosto del 2026",
-      "hasta": "la tarde del miércoles 26 de agosto del 2026",
+      "desde": "la noche del lunes 24 de agosto del 2026",
+      "hasta": "la noche del jueves 27 de agosto del 2026",
       "observacion": "",
       "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
       "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
@@ -48,62 +130,21 @@
       ]
     },
     {
-      "id": 5546,
+      "id": 5551,
       "tipo": "Aviso",
-      "codigo": "A438/2026",
-      "emision": "Viernes 21 de agosto del 2026 a las 12:37 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del martes 25 de agosto del 2026",
-      "hasta": "la tarde del miércoles 26 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Maule (Litoral, Cordillera Costa, Valle) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5547,
-      "tipo": "Aviso",
-      "codigo": "A439/2026",
-      "emision": "Viernes 21 de agosto del 2026 a las 12:38 hrs.",
-      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del martes 25 de agosto del 2026",
-      "hasta": "la tarde del miércoles 26 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5549,
-      "tipo": "Aviso",
-      "codigo": "A440-1/2026",
-      "emision": "Sábado 22 de agosto del 2026 a las 10:42 hrs.",
-      "fenomeno": "Precipitaciones",
+      "codigo": "A442/2026",
+      "emision": "Domingo 23 de agosto del 2026 a las 12:10 hrs.",
+      "fenomeno": "Viento",
       "condicion": "Sistema frontal",
       "desde": "la mañana del martes 25 de agosto del 2026",
-      "hasta": "la mañana del miércoles 26 de agosto del 2026",
+      "hasta": "la noche del martes 25 de agosto del 2026",
       "observacion": "",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de La Araucanía y Los Ríos",
-      "icono": "🌧️",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "La Araucanía",
-        "Los Ríos"
+        "Archipiélago Juan Fernández"
       ]
     },
     {
@@ -126,6 +167,41 @@
         "Los Lagos",
         "Los Ríos"
       ]
+    },
+    {
+      "id": 5549,
+      "tipo": "Aviso",
+      "codigo": "A440-1/2026",
+      "emision": "Sábado 22 de agosto del 2026 a las 10:42 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del martes 25 de agosto del 2026",
+      "hasta": "la mañana del miércoles 26 de agosto del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de La Araucanía y Los Ríos",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5542,
+      "tipo": "Aviso",
+      "codigo": "A436/2026",
+      "emision": "Miércoles 19 de agosto del 2026 a las 15:44 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del sábado 22 de agosto del 2026",
+      "hasta": "la noche del domingo 23 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
     }
   ]
 }
