@@ -1,12 +1,31 @@
 {
-  "actualizado": "2026-08-23T18:00:12.163718",
+  "actualizado": "2026-08-24T00:00:16.621196",
   "totales": {
-    "avisos": 8,
+    "avisos": 9,
     "alertas": 2,
     "alarmas": 0,
-    "total": 10
+    "total": 11
   },
   "alertas": [
+    {
+      "id": 5558,
+      "tipo": "Aviso",
+      "codigo": "A444/2026",
+      "emision": "Domingo 23 de agosto del 2026 a las 15:07 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del domingo 23 de agosto del 2026",
+      "hasta": "la tarde del lunes 24 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
+      "titulo": "Nevadas Normales a Moderadas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5557,
       "tipo": "Aviso",
