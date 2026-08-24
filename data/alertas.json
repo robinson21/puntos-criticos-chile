@@ -1,28 +1,12 @@
 {
-  "actualizado": "2026-08-24T06:00:22.981339",
+  "actualizado": "2026-08-24T12:00:26.478745",
   "totales": {
-    "avisos": 10,
+    "avisos": 9,
     "alertas": 2,
     "alarmas": 0,
-    "total": 12
+    "total": 11
   },
   "alertas": [
-    {
-      "id": 5542,
-      "tipo": "Aviso",
-      "codigo": "A436/2026",
-      "emision": "Miércoles 19 de agosto del 2026 a las 15:44 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del sábado 22 de agosto del 2026",
-      "hasta": "la noche del domingo 23 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
-    },
     {
       "id": 5549,
       "tipo": "Aviso",
