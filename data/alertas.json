@@ -1,12 +1,34 @@
 {
-  "actualizado": "2026-08-25T12:00:48.699989",
+  "actualizado": "2026-08-25T18:00:02.667050",
   "totales": {
-    "avisos": 9,
+    "avisos": 10,
     "alertas": 3,
     "alarmas": 0,
-    "total": 12
+    "total": 13
   },
   "alertas": [
+    {
+      "id": 5577,
+      "tipo": "Aviso",
+      "codigo": "A450-1/2026",
+      "emision": "Martes 25 de agosto del 2026 a las 12:37 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad post frontal",
+      "desde": "la madrugada del miércoles 26 de agosto del 2026",
+      "hasta": "la noche del jueves 27 de agosto del 2026",
+      "observacion": "Probabilidad de fuertes rachas de vientos locales",
+      "zonas": "&Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Chiloé)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de &Ntilde;uble a la región de Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5575,
       "tipo": "Aviso",
