@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-25T06:00:44.181430",
+  "actualizado": "2026-08-25T12:00:48.699989",
   "totales": {
     "avisos": 9,
     "alertas": 3,
@@ -7,6 +7,26 @@
     "total": 12
   },
   "alertas": [
+    {
+      "id": 5575,
+      "tipo": "Aviso",
+      "codigo": "A439-2/2026",
+      "emision": "Martes 25 de agosto del 2026 a las 07:40 hrs.",
+      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del martes 25 de agosto del 2026",
+      "hasta": "la tarde del martes 25 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Maule (Cordillera) | &Ntilde;uble (Cordillera) | Biobío (Cordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en cordillera de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5574,
       "tipo": "Aviso",
@@ -219,26 +239,6 @@
         "Metropolitana",
         "O'Higgins",
         "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5555,
-      "tipo": "Aviso",
-      "codigo": "A439-1/2026",
-      "emision": "Domingo 23 de agosto del 2026 a las 12:44 hrs.",
-      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del martes 25 de agosto del 2026",
-      "hasta": "la noche del martes 25 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Maule (Cordillera) | &Ntilde;uble (Cordillera) | Biobío (Cordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en cordillera de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
         "Ñuble"
       ]
     }
