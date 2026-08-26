@@ -1,204 +1,56 @@
 {
-  "actualizado": "2026-08-26T00:00:08.276361",
+  "actualizado": "2026-08-26T06:00:11.374653",
   "totales": {
-    "avisos": 9,
-    "alertas": 3,
+    "avisos": 7,
+    "alertas": 4,
     "alarmas": 0,
-    "total": 12
+    "total": 11
   },
   "alertas": [
     {
-      "id": 5563,
-      "tipo": "Aviso",
-      "codigo": "A442-1/2026",
-      "emision": "Lunes 24 de agosto del 2026 a las 11:50 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del martes 25 de agosto del 2026",
-      "hasta": "la noche del martes 25 de agosto del 2026",
+      "id": 5581,
+      "tipo": "Alerta",
+      "codigo": "AA148/2026",
+      "emision": "Martes 25 de agosto del 2026 a las 22:10 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad post frontal",
+      "desde": "la noche del martes 25 de agosto del 2026",
+      "hasta": "la noche del miércoles 26 de agosto del 2026",
       "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
-      "icono": "💨",
-      "color": "#fbbf24",
+      "zonas": "La Araucanía, Los Ríos y Los Lagos",
+      "titulo": "Tormentas Eléctricas en las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
+      "color": "#f97316",
       "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5566,
-      "tipo": "Aviso",
-      "codigo": "A445-1/2026",
-      "emision": "Lunes 24 de agosto del 2026 a las 14:01 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la madrugada del jueves 27 de agosto del 2026",
-      "hasta": "la noche del sábado 29 de agosto del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Antofagasta (Cordillera Costa, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de la región de Antofagasta",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta"
-      ]
-    },
-    {
-      "id": 5567,
-      "tipo": "Aviso",
-      "codigo": "A441-1/2026",
-      "emision": "Lunes 24 de agosto del 2026 a las 13:57 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del martes 25 de agosto del 2026",
-      "hasta": "la tarde del miércoles 26 de agosto del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa) | Los Lagos (Litoral, Cordillera Costa, Chiloé, Litoral Interior) | Aysén (Insular Norte)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de La Araucanía a la región de Aysén",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén",
         "La Araucanía",
         "Los Lagos",
         "Los Ríos"
       ]
     },
     {
-      "id": 5569,
-      "tipo": "Alerta",
-      "codigo": "AA146-1/2026",
-      "emision": "Lunes 24 de agosto del 2026 a las 15:44 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del martes 25 de agosto del 2026",
-      "hasta": "la mañana del miércoles 26 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Maule (Precordillera) | &Ntilde;uble (Precordillera) | Biobío (Precordillera)",
-      "titulo": "Precipitaciones Moderadas a Fuertes en precordillera de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "🌧️",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5570,
-      "tipo": "Alerta",
-      "codigo": "AA145-1/2026",
-      "emision": "Lunes 24 de agosto del 2026 a las 15:44 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del martes 25 de agosto del 2026",
-      "hasta": "la madrugada del miércoles 26 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Maule (Litoral) | &Ntilde;uble (Litoral) | Biobío (Litoral, Cordillera Costa)",
-      "titulo": "Precipitaciones Moderadas a Fuertes en corto periodo de tiempo en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "🌧️",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5571,
+      "id": 5580,
       "tipo": "Aviso",
-      "codigo": "A438-2/2026",
-      "emision": "Lunes 24 de agosto del 2026 a las 15:45 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del martes 25 de agosto del 2026",
-      "hasta": "la mañana del miércoles 26 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Maule (Litoral, Cordillera Costa, Valle) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "🌧️",
+      "codigo": "A450-2/2026",
+      "emision": "Martes 25 de agosto del 2026 a las 18:41 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad post frontal",
+      "desde": "la noche del martes 25 de agosto del 2026",
+      "hasta": "la noche del jueves 27 de agosto del 2026",
+      "observacion": "Probabilidad de fuertes rachas de vientos locales",
+      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Chiloé)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región de Los Lagos",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
         "Biobío",
-        "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5573,
-      "tipo": "Aviso",
-      "codigo": "A449/2026",
-      "emision": "Lunes 24 de agosto del 2026 a las 19:49 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del martes 25 de agosto del 2026",
-      "hasta": "la tarde del jueves 27 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa)",
-      "titulo": "Altas Temperaturas en pampa de las regiones de Tarapacá y Antofagasta",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5574,
-      "tipo": "Aviso",
-      "codigo": "A440-2/2026",
-      "emision": "Lunes 24 de agosto del 2026 a las 23:08 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del martes 25 de agosto del 2026",
-      "hasta": "la mañana del miércoles 26 de agosto del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de La Araucanía y Los Ríos",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
         "La Araucanía",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5575,
-      "tipo": "Aviso",
-      "codigo": "A439-2/2026",
-      "emision": "Martes 25 de agosto del 2026 a las 07:40 hrs.",
-      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del martes 25 de agosto del 2026",
-      "hasta": "la tarde del martes 25 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Maule (Cordillera) | &Ntilde;uble (Cordillera) | Biobío (Cordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en cordillera de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
+        "Los Lagos",
+        "Los Ríos",
         "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
         "Ñuble"
-      ]
-    },
-    {
-      "id": 5578,
-      "tipo": "Alerta",
-      "codigo": "AA147-1/2026",
-      "emision": "Martes 25 de agosto del 2026 a las 14:46 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del miércoles 26 de agosto del 2026",
-      "hasta": "la noche del domingo 30 de agosto del 2026",
-      "observacion": "Desarrollo de ventisca",
-      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en cordillera de las regiones de Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
       ]
     },
     {
@@ -226,29 +78,159 @@
       ]
     },
     {
-      "id": 5580,
+      "id": 5578,
+      "tipo": "Alerta",
+      "codigo": "AA147-1/2026",
+      "emision": "Martes 25 de agosto del 2026 a las 14:46 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la mañana del miércoles 26 de agosto del 2026",
+      "hasta": "la noche del domingo 30 de agosto del 2026",
+      "observacion": "Desarrollo de ventisca",
+      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en cordillera de las regiones de Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5574,
       "tipo": "Aviso",
-      "codigo": "A450-2/2026",
-      "emision": "Martes 25 de agosto del 2026 a las 18:41 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad post frontal",
-      "desde": "la noche del martes 25 de agosto del 2026",
-      "hasta": "la noche del jueves 27 de agosto del 2026",
-      "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Chiloé)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región de Los Lagos",
-      "icono": "⚡",
+      "codigo": "A440-2/2026",
+      "emision": "Lunes 24 de agosto del 2026 a las 23:08 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del martes 25 de agosto del 2026",
+      "hasta": "la mañana del miércoles 26 de agosto del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de La Araucanía y Los Ríos",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5573,
+      "tipo": "Aviso",
+      "codigo": "A449/2026",
+      "emision": "Lunes 24 de agosto del 2026 a las 19:49 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del martes 25 de agosto del 2026",
+      "hasta": "la tarde del jueves 27 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa)",
+      "titulo": "Altas Temperaturas en pampa de las regiones de Tarapacá y Antofagasta",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5571,
+      "tipo": "Aviso",
+      "codigo": "A438-2/2026",
+      "emision": "Lunes 24 de agosto del 2026 a las 15:45 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del martes 25 de agosto del 2026",
+      "hasta": "la mañana del miércoles 26 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Maule (Litoral, Cordillera Costa, Valle) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "🌧️",
       "color": "#fbbf24",
       "regiones": [
         "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5570,
+      "tipo": "Alerta",
+      "codigo": "AA145-1/2026",
+      "emision": "Lunes 24 de agosto del 2026 a las 15:44 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del martes 25 de agosto del 2026",
+      "hasta": "la madrugada del miércoles 26 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Maule (Litoral) | &Ntilde;uble (Litoral) | Biobío (Litoral, Cordillera Costa)",
+      "titulo": "Precipitaciones Moderadas a Fuertes en corto periodo de tiempo en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "🌧️",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5569,
+      "tipo": "Alerta",
+      "codigo": "AA146-1/2026",
+      "emision": "Lunes 24 de agosto del 2026 a las 15:44 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del martes 25 de agosto del 2026",
+      "hasta": "la mañana del miércoles 26 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Maule (Precordillera) | &Ntilde;uble (Precordillera) | Biobío (Precordillera)",
+      "titulo": "Precipitaciones Moderadas a Fuertes en precordillera de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "🌧️",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5567,
+      "tipo": "Aviso",
+      "codigo": "A441-1/2026",
+      "emision": "Lunes 24 de agosto del 2026 a las 13:57 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del martes 25 de agosto del 2026",
+      "hasta": "la tarde del miércoles 26 de agosto del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa) | Los Lagos (Litoral, Cordillera Costa, Chiloé, Litoral Interior) | Aysén (Insular Norte)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de La Araucanía a la región de Aysén",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
         "La Araucanía",
         "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5566,
+      "tipo": "Aviso",
+      "codigo": "A445-1/2026",
+      "emision": "Lunes 24 de agosto del 2026 a las 14:01 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la madrugada del jueves 27 de agosto del 2026",
+      "hasta": "la noche del sábado 29 de agosto del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Antofagasta (Cordillera Costa, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de la región de Antofagasta",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta"
       ]
     }
   ]
