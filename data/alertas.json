@@ -1,12 +1,53 @@
 {
-  "actualizado": "2026-08-27T06:00:25.075812",
+  "actualizado": "2026-08-27T12:00:29.064199",
   "totales": {
-    "avisos": 5,
-    "alertas": 2,
+    "avisos": 6,
+    "alertas": 1,
     "alarmas": 0,
     "total": 7
   },
   "alertas": [
+    {
+      "id": 5592,
+      "tipo": "Aviso",
+      "codigo": "A453/2026",
+      "emision": "Jueves 27 de agosto del 2026 a las 06:43 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del jueves 27 de agosto del 2026",
+      "hasta": "la noche del jueves 27 de agosto del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Probables Tormentas Eléctricas en Archipielago Juan Fernández",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
+    },
+    {
+      "id": 5591,
+      "tipo": "Aviso",
+      "codigo": "A450-5/2026",
+      "emision": "Jueves 27 de agosto del 2026 a las 05:58 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad post frontal",
+      "desde": "la tarde del jueves 27 de agosto del 2026",
+      "hasta": "la noche del viernes 28 de agosto del 2026",
+      "observacion": "Probabilidad de fuertes rachas de vientos locales",
+      "zonas": "Valparaíso (Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5590,
       "tipo": "Aviso",
@@ -21,25 +62,6 @@
       "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía y Los Ríos",
       "icono": "⚡",
       "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5589,
-      "tipo": "Alerta",
-      "codigo": "AA150/2026",
-      "emision": "Miércoles 26 de agosto del 2026 a las 15:40 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del miércoles 26 de agosto del 2026",
-      "hasta": "la noche del miércoles 26 de agosto del 2026",
-      "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Precordillera)",
-      "titulo": "Tormentas Eléctricas en zonas de las regiones de La Araucanía y Los Ríos",
-      "icono": "⚡",
-      "color": "#f97316",
       "regiones": [
         "La Araucanía",
         "Los Ríos"
@@ -83,32 +105,6 @@
         "Atacama",
         "Coquimbo",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5586,
-      "tipo": "Aviso",
-      "codigo": "A450-4/2026",
-      "emision": "Miércoles 26 de agosto del 2026 a las 12:41 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad post frontal",
-      "desde": "la tarde del miércoles 26 de agosto del 2026",
-      "hasta": "la noche del viernes 28 de agosto del 2026",
-      "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "Valparaíso (Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Chiloé)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región de Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     },
     {
