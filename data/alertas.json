@@ -1,12 +1,75 @@
 {
-  "actualizado": "2026-08-27T12:00:29.064199",
+  "actualizado": "2026-08-27T18:00:32.280057",
   "totales": {
-    "avisos": 6,
+    "avisos": 7,
     "alertas": 1,
     "alarmas": 0,
-    "total": 7
+    "total": 8
   },
   "alertas": [
+    {
+      "id": 5595,
+      "tipo": "Aviso",
+      "codigo": "A450-6/2026",
+      "emision": "Jueves 27 de agosto del 2026 a las 12:54 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad post frontal",
+      "desde": "la tarde del jueves 27 de agosto del 2026",
+      "hasta": "la noche del sábado 29 de agosto del 2026",
+      "observacion": "Probabilidad de fuertes rachas de vientos locales",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5594,
+      "tipo": "Aviso",
+      "codigo": "A452-1/2026",
+      "emision": "Jueves 27 de agosto del 2026 a las 11:21 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del jueves 27 de agosto del 2026",
+      "hasta": "la mañana del viernes 28 de agosto del 2026",
+      "observacion": "Probabilidad de fuertes rachas de vientos locales",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa) | Los Lagos (Litoral, Chiloé)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5593,
+      "tipo": "Aviso",
+      "codigo": "A454/2026",
+      "emision": "Jueves 27 de agosto del 2026 a las 09:46 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del viernes 28 de agosto del 2026",
+      "hasta": "la mañana del sábado 29 de agosto del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral) | Los Ríos (Litoral, Cordillera Costa) | Los Lagos (Litoral)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
     {
       "id": 5592,
       "tipo": "Aviso",
@@ -23,48 +86,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5591,
-      "tipo": "Aviso",
-      "codigo": "A450-5/2026",
-      "emision": "Jueves 27 de agosto del 2026 a las 05:58 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad post frontal",
-      "desde": "la tarde del jueves 27 de agosto del 2026",
-      "hasta": "la noche del viernes 28 de agosto del 2026",
-      "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "Valparaíso (Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5590,
-      "tipo": "Aviso",
-      "codigo": "A452/2026",
-      "emision": "Miércoles 26 de agosto del 2026 a las 22:56 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del jueves 27 de agosto del 2026",
-      "hasta": "la tarde del jueves 27 de agosto del 2026",
-      "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía y Los Ríos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Ríos"
       ]
     },
     {
