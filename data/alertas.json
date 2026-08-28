@@ -1,133 +1,12 @@
 {
-  "actualizado": "2026-08-27T18:00:32.280057",
+  "actualizado": "2026-08-28T00:00:36.888612",
   "totales": {
-    "avisos": 7,
+    "avisos": 6,
     "alertas": 1,
     "alarmas": 0,
-    "total": 8
+    "total": 7
   },
   "alertas": [
-    {
-      "id": 5595,
-      "tipo": "Aviso",
-      "codigo": "A450-6/2026",
-      "emision": "Jueves 27 de agosto del 2026 a las 12:54 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad post frontal",
-      "desde": "la tarde del jueves 27 de agosto del 2026",
-      "hasta": "la noche del sábado 29 de agosto del 2026",
-      "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5594,
-      "tipo": "Aviso",
-      "codigo": "A452-1/2026",
-      "emision": "Jueves 27 de agosto del 2026 a las 11:21 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del jueves 27 de agosto del 2026",
-      "hasta": "la mañana del viernes 28 de agosto del 2026",
-      "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa) | Los Lagos (Litoral, Chiloé)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5593,
-      "tipo": "Aviso",
-      "codigo": "A454/2026",
-      "emision": "Jueves 27 de agosto del 2026 a las 09:46 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del viernes 28 de agosto del 2026",
-      "hasta": "la mañana del sábado 29 de agosto del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Litoral) | Los Ríos (Litoral, Cordillera Costa) | Los Lagos (Litoral)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5592,
-      "tipo": "Aviso",
-      "codigo": "A453/2026",
-      "emision": "Jueves 27 de agosto del 2026 a las 06:43 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del jueves 27 de agosto del 2026",
-      "hasta": "la noche del jueves 27 de agosto del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Probables Tormentas Eléctricas en Archipielago Juan Fernández",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5588,
-      "tipo": "Aviso",
-      "codigo": "A445-2/2026",
-      "emision": "Miércoles 26 de agosto del 2026 a las 12:58 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la madrugada del jueves 27 de agosto del 2026",
-      "hasta": "la noche del domingo 30 de agosto del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Cordillera) | Antofagasta (Precordillera Occidental, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá y Antofagasta",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5587,
-      "tipo": "Alerta",
-      "codigo": "AA147-3/2026",
-      "emision": "Miércoles 26 de agosto del 2026 a las 12:46 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del miércoles 26 de agosto del 2026",
-      "hasta": "la noche del domingo 30 de agosto del 2026",
-      "observacion": "Desarrollo de ventisca",
-      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera) | Coquimbo (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas desde la región de Tarapacá a la región de Coquimbo",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Coquimbo",
-        "Tarapacá"
-      ]
-    },
     {
       "id": 5579,
       "tipo": "Aviso",
@@ -153,22 +32,124 @@
       ]
     },
     {
-      "id": 5573,
+      "id": 5587,
+      "tipo": "Alerta",
+      "codigo": "AA147-3/2026",
+      "emision": "Miércoles 26 de agosto del 2026 a las 12:46 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del miércoles 26 de agosto del 2026",
+      "hasta": "la noche del domingo 30 de agosto del 2026",
+      "observacion": "Desarrollo de ventisca",
+      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera) | Coquimbo (Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en zonas desde la región de Tarapacá a la región de Coquimbo",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Coquimbo",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5588,
       "tipo": "Aviso",
-      "codigo": "A449/2026",
-      "emision": "Lunes 24 de agosto del 2026 a las 19:49 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del martes 25 de agosto del 2026",
-      "hasta": "la tarde del jueves 27 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa)",
-      "titulo": "Altas Temperaturas en pampa de las regiones de Tarapacá y Antofagasta",
-      "icono": "⚠️",
+      "codigo": "A445-2/2026",
+      "emision": "Miércoles 26 de agosto del 2026 a las 12:58 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la madrugada del jueves 27 de agosto del 2026",
+      "hasta": "la noche del domingo 30 de agosto del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Tarapacá (Cordillera) | Antofagasta (Precordillera Occidental, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá y Antofagasta",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
         "Tarapacá"
+      ]
+    },
+    {
+      "id": 5592,
+      "tipo": "Aviso",
+      "codigo": "A453/2026",
+      "emision": "Jueves 27 de agosto del 2026 a las 06:43 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del jueves 27 de agosto del 2026",
+      "hasta": "la noche del jueves 27 de agosto del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Probables Tormentas Eléctricas en Archipielago Juan Fernández",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
+    },
+    {
+      "id": 5593,
+      "tipo": "Aviso",
+      "codigo": "A454/2026",
+      "emision": "Jueves 27 de agosto del 2026 a las 09:46 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del viernes 28 de agosto del 2026",
+      "hasta": "la mañana del sábado 29 de agosto del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral) | Los Ríos (Litoral, Cordillera Costa) | Los Lagos (Litoral)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5594,
+      "tipo": "Aviso",
+      "codigo": "A452-1/2026",
+      "emision": "Jueves 27 de agosto del 2026 a las 11:21 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del jueves 27 de agosto del 2026",
+      "hasta": "la mañana del viernes 28 de agosto del 2026",
+      "observacion": "Probabilidad de fuertes rachas de vientos locales",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa) | Los Lagos (Litoral, Chiloé)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5595,
+      "tipo": "Aviso",
+      "codigo": "A450-6/2026",
+      "emision": "Jueves 27 de agosto del 2026 a las 12:54 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad post frontal",
+      "desde": "la tarde del jueves 27 de agosto del 2026",
+      "hasta": "la noche del sábado 29 de agosto del 2026",
+      "observacion": "Probabilidad de fuertes rachas de vientos locales",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
       ]
     }
   ]
