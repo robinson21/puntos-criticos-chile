@@ -1,12 +1,84 @@
 {
-  "actualizado": "2026-08-28T18:00:57.066103",
+  "actualizado": "2026-08-29T00:00:00.768129",
   "totales": {
-    "avisos": 4,
+    "avisos": 7,
     "alertas": 2,
     "alarmas": 0,
-    "total": 6
+    "total": 9
   },
   "alertas": [
+    {
+      "id": 5605,
+      "tipo": "Alerta",
+      "codigo": "AA152-1/2026",
+      "emision": "Viernes 28 de agosto del 2026 a las 19:33 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la noche del viernes 28 de agosto del 2026",
+      "hasta": "la madrugada del sábado 29 de agosto del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "&Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Tormentas Eléctricas en zonas de las regiones de &Ntilde;uble y Biobío",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5604,
+      "tipo": "Aviso",
+      "codigo": "A457/2026",
+      "emision": "Viernes 28 de agosto del 2026 a las 15:32 hrs.",
+      "fenomeno": "Nubes Convectivas Tornádicas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del viernes 28 de agosto del 2026",
+      "hasta": "la noche del viernes 28 de agosto del 2026",
+      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
+      "zonas": "Biobío (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de la región del Biobío",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío"
+      ]
+    },
+    {
+      "id": 5603,
+      "tipo": "Aviso",
+      "codigo": "A456/2026",
+      "emision": "Viernes 28 de agosto del 2026 a las 14:20 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del domingo 30 de agosto del 2026",
+      "hasta": "la mañana del domingo 30 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 5602,
+      "tipo": "Aviso",
+      "codigo": "A455/2026",
+      "emision": "Viernes 28 de agosto del 2026 a las 14:19 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la mañana del domingo 30 de agosto del 2026",
+      "hasta": "la noche del domingo 30 de agosto del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa)",
+      "titulo": "Viento Normal a Moderado en pampa de las regiones de Tarapacá y Antofagasta",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5601,
       "tipo": "Alerta",
@@ -46,25 +118,6 @@
         "Antofagasta",
         "Atacama",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5599,
-      "tipo": "Alerta",
-      "codigo": "AA152/2026",
-      "emision": "Viernes 28 de agosto del 2026 a las 10:32 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del viernes 28 de agosto del 2026",
-      "hasta": "la tarde del viernes 28 de agosto del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "&Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Tormentas Eléctricas en zonas de las regiones de &Ntilde;uble y Biobío",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "Ñuble"
       ]
     },
     {
