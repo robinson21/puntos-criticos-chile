@@ -1,40 +1,60 @@
 {
-  "actualizado": "2026-08-29T06:00:04.176967",
+  "actualizado": "2026-08-29T12:00:07.189035",
   "totales": {
-    "avisos": 6,
-    "alertas": 3,
+    "avisos": 7,
+    "alertas": 2,
     "alarmas": 0,
     "total": 9
   },
   "alertas": [
     {
-      "id": 5606,
-      "tipo": "Alerta",
-      "codigo": "AA153/2026",
-      "emision": "Viernes 28 de agosto del 2026 a las 23:06 hrs.",
+      "id": 5609,
+      "tipo": "Aviso",
+      "codigo": "A450-7/2026",
+      "emision": "Sábado 29 de agosto del 2026 a las 07:40 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del sábado 29 de agosto del 2026",
+      "hasta": "la noche del sábado 29 de agosto del 2026",
+      "observacion": "Probabilidad de fuertes rachas de vientos locales",
+      "zonas": "Maule (Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5608,
+      "tipo": "Aviso",
+      "codigo": "A458/2026",
+      "emision": "Sábado 29 de agosto del 2026 a las 06:49 hrs.",
       "fenomeno": "Nubes Convectivas Tornádicas",
       "condicion": "Inestabilidad atmosférica",
-      "desde": "la noche del viernes 28 de agosto del 2026",
-      "hasta": "la madrugada del sábado 29 de agosto del 2026",
-      "observacion": "Alta probabilidad de intensos vientos locales arrachados y tornádicos",
+      "desde": "la mañana del sábado 29 de agosto del 2026",
+      "hasta": "la tarde del sábado 29 de agosto del 2026",
+      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
       "zonas": "&Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de &Ntilde;uble y Biobío",
+      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de &Ntilde;uble y Biobío",
       "icono": "⚠️",
-      "color": "#f97316",
+      "color": "#fbbf24",
       "regiones": [
         "Biobío",
         "Ñuble"
       ]
     },
     {
-      "id": 5605,
+      "id": 5607,
       "tipo": "Alerta",
-      "codigo": "AA152-1/2026",
-      "emision": "Viernes 28 de agosto del 2026 a las 19:33 hrs.",
+      "codigo": "AA152-2/2026",
+      "emision": "Sábado 29 de agosto del 2026 a las 06:40 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
-      "desde": "la noche del viernes 28 de agosto del 2026",
-      "hasta": "la madrugada del sábado 29 de agosto del 2026",
+      "desde": "la mañana del sábado 29 de agosto del 2026",
+      "hasta": "la tarde del sábado 29 de agosto del 2026",
       "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
       "zonas": "&Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
       "titulo": "Tormentas Eléctricas en zonas de las regiones de &Ntilde;uble y Biobío",
@@ -139,29 +159,6 @@
         "La Araucanía",
         "Los Lagos",
         "Los Ríos"
-      ]
-    },
-    {
-      "id": 5595,
-      "tipo": "Aviso",
-      "codigo": "A450-6/2026",
-      "emision": "Jueves 27 de agosto del 2026 a las 12:54 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad post frontal",
-      "desde": "la tarde del jueves 27 de agosto del 2026",
-      "hasta": "la noche del sábado 29 de agosto del 2026",
-      "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     },
     {
