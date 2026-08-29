@@ -1,12 +1,31 @@
 {
-  "actualizado": "2026-08-29T00:00:00.768129",
+  "actualizado": "2026-08-29T06:00:04.176967",
   "totales": {
-    "avisos": 7,
-    "alertas": 2,
+    "avisos": 6,
+    "alertas": 3,
     "alarmas": 0,
     "total": 9
   },
   "alertas": [
+    {
+      "id": 5606,
+      "tipo": "Alerta",
+      "codigo": "AA153/2026",
+      "emision": "Viernes 28 de agosto del 2026 a las 23:06 hrs.",
+      "fenomeno": "Nubes Convectivas Tornádicas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la noche del viernes 28 de agosto del 2026",
+      "hasta": "la madrugada del sábado 29 de agosto del 2026",
+      "observacion": "Alta probabilidad de intensos vientos locales arrachados y tornádicos",
+      "zonas": "&Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de &Ntilde;uble y Biobío",
+      "icono": "⚠️",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5605,
       "tipo": "Alerta",
@@ -24,24 +43,6 @@
       "regiones": [
         "Biobío",
         "Ñuble"
-      ]
-    },
-    {
-      "id": 5604,
-      "tipo": "Aviso",
-      "codigo": "A457/2026",
-      "emision": "Viernes 28 de agosto del 2026 a las 15:32 hrs.",
-      "fenomeno": "Nubes Convectivas Tornádicas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del viernes 28 de agosto del 2026",
-      "hasta": "la noche del viernes 28 de agosto del 2026",
-      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
-      "zonas": "Biobío (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de la región del Biobío",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío"
       ]
     },
     {
