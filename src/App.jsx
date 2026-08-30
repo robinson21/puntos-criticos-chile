@@ -8,6 +8,7 @@ import Ranking from './components/Ranking';
 import Charts from './components/Charts';
 import Insights from './components/Insights';
 import Alertas from './components/Alertas';
+import PronosticoRegional from './components/PronosticoRegional';
 
 function Dashboard() {
   const { records, metadata, loading, loadingRegion, error, hasRegion } = useData();
@@ -52,6 +53,7 @@ function Dashboard() {
 
         <KPIs />
         <Filters />
+        <PronosticoRegional />
         {loadingRegion && <div className="loading-bar">Cargando datos regionales...</div>}
         {hasRegion ? (
           <div className="grid">

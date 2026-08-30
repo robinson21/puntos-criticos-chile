@@ -53,8 +53,13 @@ def descargar_excel():
             resp = urlopen(url, timeout=30)
             data = resp.read()
             if len(data) > 10000:
-                print(f'  ✅ Descargado: {len(data)/1024:.0f} KB')
-                return data
+                # Validar que sea Excel real (empieza con ZIP magic bytes "PK")
+                if data[:2] == b'PK':
+                    print(f'  ✅ Descargado: {len(data)/1024:.0f} KB')
+                    return data
+                else:
+                    print(f'  ❌ Respuesta no es Excel (HTML? {data[:20]})')
+                    continue  # Probar siguiente URL
         except Exception as e:
             print(f'  ❌ {e}')
     raise Exception('No se pudo descargar el Excel desde ninguna URL')

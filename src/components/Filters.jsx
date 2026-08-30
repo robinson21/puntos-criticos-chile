@@ -4,10 +4,9 @@ import { useData } from '../data/DataContext';
 
 export default function Filters() {
   const { comuna, setComuna, causa, setCausa, nivel, setNivel, tipoSolucion, setTipoSolucion, filtered, comunas, causas } = useFilters();
-  const { metadata, loadRegion, records } = useData();
+  const { metadata, loadRegion, regionActual, setRegionActual, records } = useData();
   const [buscar, setBuscar] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
-  const [regionActual, setRegionActual] = useState('');
 
   const regiones = metadata?.regiones ? Object.keys(metadata.regiones) : [];
 
