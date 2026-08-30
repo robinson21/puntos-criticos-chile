@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-30T00:00:16.099492",
+  "actualizado": "2026-08-30T06:00:19.379637",
   "totales": {
-    "avisos": 7,
+    "avisos": 6,
     "alertas": 1,
     "alarmas": 0,
-    "total": 8
+    "total": 7
   },
   "alertas": [
     {
@@ -82,26 +82,6 @@
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": []
-    },
-    {
-      "id": 5609,
-      "tipo": "Aviso",
-      "codigo": "A450-7/2026",
-      "emision": "Sábado 29 de agosto del 2026 a las 07:40 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del sábado 29 de agosto del 2026",
-      "hasta": "la noche del sábado 29 de agosto del 2026",
-      "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "Maule (Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Ñuble"
-      ]
     },
     {
       "id": 5610,
