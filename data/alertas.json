@@ -1,120 +1,29 @@
 {
-  "actualizado": "2026-08-29T18:00:10.888038",
+  "actualizado": "2026-08-30T00:00:16.099492",
   "totales": {
     "avisos": 7,
-    "alertas": 2,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 9
+    "total": 8
   },
   "alertas": [
     {
-      "id": 5610,
+      "id": 5600,
       "tipo": "Aviso",
-      "codigo": "A459/2026",
-      "emision": "Sábado 29 de agosto del 2026 a las 12:25 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del domingo 30 de agosto del 2026",
-      "hasta": "la tarde del domingo 30 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en Archipielago Juan Fernández",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5609,
-      "tipo": "Aviso",
-      "codigo": "A450-7/2026",
-      "emision": "Sábado 29 de agosto del 2026 a las 07:40 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del sábado 29 de agosto del 2026",
-      "hasta": "la noche del sábado 29 de agosto del 2026",
-      "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "Maule (Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5608,
-      "tipo": "Aviso",
-      "codigo": "A458/2026",
-      "emision": "Sábado 29 de agosto del 2026 a las 06:49 hrs.",
-      "fenomeno": "Nubes Convectivas Tornádicas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del sábado 29 de agosto del 2026",
-      "hasta": "la tarde del sábado 29 de agosto del 2026",
-      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
-      "zonas": "&Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de &Ntilde;uble y Biobío",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5607,
-      "tipo": "Alerta",
-      "codigo": "AA152-2/2026",
-      "emision": "Sábado 29 de agosto del 2026 a las 06:40 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del sábado 29 de agosto del 2026",
-      "hasta": "la tarde del sábado 29 de agosto del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "&Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Tormentas Eléctricas en zonas de las regiones de &Ntilde;uble y Biobío",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5603,
-      "tipo": "Aviso",
-      "codigo": "A456/2026",
-      "emision": "Viernes 28 de agosto del 2026 a las 14:20 hrs.",
+      "codigo": "A445-3/2026",
+      "emision": "Viernes 28 de agosto del 2026 a las 12:50 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del domingo 30 de agosto del 2026",
-      "hasta": "la mañana del domingo 30 de agosto del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
-    },
-    {
-      "id": 5602,
-      "tipo": "Aviso",
-      "codigo": "A455/2026",
-      "emision": "Viernes 28 de agosto del 2026 a las 14:19 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la mañana del domingo 30 de agosto del 2026",
-      "hasta": "la noche del domingo 30 de agosto del 2026",
+      "condicion": "Corriente en chorro",
+      "desde": "la madrugada del sábado 29 de agosto del 2026",
+      "hasta": "la noche del lunes 31 de agosto del 2026",
       "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa)",
-      "titulo": "Viento Normal a Moderado en pampa de las regiones de Tarapacá y Antofagasta",
+      "zonas": "Tarapacá (Cordillera) | Antofagasta (Precordillera Occidental) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
+        "Atacama",
         "Tarapacá"
       ]
     },
@@ -140,43 +49,112 @@
       ]
     },
     {
-      "id": 5600,
+      "id": 5602,
       "tipo": "Aviso",
-      "codigo": "A445-3/2026",
-      "emision": "Viernes 28 de agosto del 2026 a las 12:50 hrs.",
+      "codigo": "A455/2026",
+      "emision": "Viernes 28 de agosto del 2026 a las 14:19 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la madrugada del sábado 29 de agosto del 2026",
-      "hasta": "la noche del lunes 31 de agosto del 2026",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la mañana del domingo 30 de agosto del 2026",
+      "hasta": "la noche del domingo 30 de agosto del 2026",
       "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Cordillera) | Antofagasta (Precordillera Occidental) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa)",
+      "titulo": "Viento Normal a Moderado en pampa de las regiones de Tarapacá y Antofagasta",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
-        "Atacama",
         "Tarapacá"
       ]
     },
     {
-      "id": 5598,
+      "id": 5603,
       "tipo": "Aviso",
-      "codigo": "A452-3/2026",
-      "emision": "Viernes 28 de agosto del 2026 a las 10:29 hrs.",
+      "codigo": "A456/2026",
+      "emision": "Viernes 28 de agosto del 2026 a las 14:20 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del domingo 30 de agosto del 2026",
+      "hasta": "la mañana del domingo 30 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 5609,
+      "tipo": "Aviso",
+      "codigo": "A450-7/2026",
+      "emision": "Sábado 29 de agosto del 2026 a las 07:40 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del viernes 28 de agosto del 2026",
+      "desde": "la mañana del sábado 29 de agosto del 2026",
       "hasta": "la noche del sábado 29 de agosto del 2026",
       "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle) | Los Lagos (Litoral, Cordillera Costa, Valle, Chiloé, Litoral Interior)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "zonas": "Maule (Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
       "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5610,
+      "tipo": "Aviso",
+      "codigo": "A459/2026",
+      "emision": "Sábado 29 de agosto del 2026 a las 12:25 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del domingo 30 de agosto del 2026",
+      "hasta": "la tarde del domingo 30 de agosto del 2026",
+      "observacion": "",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en Archipielago Juan Fernández",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
+    },
+    {
+      "id": 5611,
+      "tipo": "Aviso",
+      "codigo": "A460/2026",
+      "emision": "Sábado 29 de agosto del 2026 a las 14:08 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la mañana del martes 01 de septiembre del 2026",
+      "hasta": "la tarde del martes 01 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa)",
+      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5612,
+      "tipo": "Aviso",
+      "codigo": "A461/2026",
+      "emision": "Sábado 29 de agosto del 2026 a las 14:18 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la tarde del lunes 31 de agosto del 2026",
+      "hasta": "la noche del martes 01 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Atacama (Litoral)",
+      "titulo": "Viento Normal a Moderado en litoral de la región de Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
       ]
     }
   ]
