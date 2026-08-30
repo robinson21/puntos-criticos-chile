@@ -9,24 +9,35 @@ const COLORS = {'Bajo':'#4FB6A8','Medio':'#E0B84D','Alto':'#E08D45','Muy Alto':'
 
 const MAPTILER_KEY = (import.meta.env.VITE_MAPTILER_KEY || '').trim();
 
+// Atribuciones para los basemaps.
+const ATTR_MT = '&copy; <a href="https://www.maptiler.com/copyright/">MapTiler</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+const ATTR_OSM = '&copy; OpenStreetMap contributors';
+
+// Probamos la key una vez. Si MapTiler responde distinto de 200 (key inválida/restringida),
+// forzamos OSM y ocultamos el selector de basemap para no confundir.
+function useMapTilerValida() {
+  const [valida, setValida] = useState(() => !MAPTILER_KEY ? false : null); // null = no comprobado aún
+  useEffect(() => {
+    let activo = true;
+    if (!MAPTILER_KEY) { setValida(false); return; }
+    fetch(`https://api.maptiler.com/maps/basic-v2/6/18/38.png?key=${MAPTILER_KEY}`, { method: 'HEAD' })
+      .then(r => activo && setValida(r.ok))
+      .catch(() => activo && setValida(false));
+    return () => { activo = false; };
+  }, []);
+  return valida;
+}
+
 const BASEMAPS = {
   light: {
     label: '☀️ Claro',
-    url: MAPTILER_KEY
-      ? `https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`
-      : 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-    attr: MAPTILER_KEY
-      ? '&copy; <a href="https://www.maptiler.com/copyright/">MapTiler</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      : '&copy; OpenStreetMap contributors'
+    url: () => `https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`,
+    attr: () => ATTR_MT
   },
   dark: {
     label: '🌙 Oscuro',
-    url: MAPTILER_KEY
-      ? `https://api.maptiler.com/maps/dark-matter/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`
-      : 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-    attr: MAPTILER_KEY
-      ? '&copy; <a href="https://www.maptiler.com/copyright/">MapTiler</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      : '&copy; OpenStreetMap contributors'
+    url: () => `https://api.maptiler.com/maps/dark-matter/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`,
+    attr: () => ATTR_MT
   }
 };
 
@@ -85,6 +96,8 @@ export default function MapView() {
   const { filtered } = useFilters();
   const { metadata, regionActual } = useData();
   const [baseMap, setBaseMap] = useState('dark');
+  const maptilerValida = useMapTilerValida();
+  const usarMapTiler = maptilerValida === true;
   const { comuna } = useFilters();
 
   const center = [-37, -71];
@@ -210,11 +223,13 @@ export default function MapView() {
       <div className="panel-head">
         <h2>Mapa de puntos críticos</h2>
         <div className="map-controls">
-          <select value={baseMap} onChange={e => setBaseMap(e.target.value)} className="basemap-select">
-            {Object.entries(BASEMAPS).map(([k, v]) => (
-              <option key={k} value={k}>{v.label}</option>
-            ))}
-          </select>
+          {usarMapTiler && (
+            <select value={baseMap} onChange={e => setBaseMap(e.target.value)} className="basemap-select">
+              {Object.entries(BASEMAPS).map(([k, v]) => (
+                <option key={k} value={k}>{v.label}</option>
+              ))}
+            </select>
+          )}
           <span className="count">{filtered.length.toLocaleString('es-CL')}</span>
         </div>
       </div>
@@ -254,7 +269,10 @@ export default function MapView() {
       {/* Punto geocodificado (marcador) y re-centrado a Chile se manejan dentro del MapContainer */}
       <MapContainer center={center} zoom={zoom} zoomControl={false} className="map-container" scrollWheelZoom={true}>
         <ZoomControl position="bottomright" />
-        <TileLayer url={BASEMAPS[baseMap].url} attribution={BASEMAPS[baseMap].attr} />
+        <TileLayer
+          url={usarMapTiler ? BASEMAPS[baseMap].url() : 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'}
+          attribution={usarMapTiler ? BASEMAPS[baseMap].attr() : ATTR_OSM}
+        />
         {recenterToken > 0 && <Recenter token={recenterToken} />}
         {flyTo && <FlyTo coords={flyTo} />}
         {displayPoints.map((p, i) => (
