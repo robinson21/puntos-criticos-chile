@@ -111,27 +111,49 @@ export default function MapView() {
     setRecenterToken(0);
 
     let items = [];
+    let maptilerKeyOk = false;
     if (MAPTILER_KEY) {
       try {
         const url = `https://api.maptiler.com/geocoding/${encodeURIComponent(raw)}.json?key=${MAPTILER_KEY}&language=es&limit=5&country=cl`;
         const res = await fetch(url);
         const data = await res.json();
-        items = (data.features || []).map(f => ({
-          id: f.id,
-          label: f.place_name_es || f.place_name || f.text,
-          lat: f.center?.[1],
-          lon: f.center?.[0]
-        }));
+        // Si MapTiler devuelve "Invalid key" o un array vacío (key sin permiso),
+        // marcamos que no funcionó para saltar al respaldo.
+        if (data && Array.isArray(data.features)) {
+          items = data.features.map(f => ({
+            id: f.id,
+            label: f.place_name_es || f.place_name || f.text,
+            lat: f.center?.[1],
+            lon: f.center?.[0]
+          }));
+          if (items.length >= 0) maptilerKeyOk = true;
+        }
       } catch (e) {
-        items = [];
+        items = []; // key inválida -> respaldo
       }
     }
 
-    // Fallback gratis si no hay key o falló MapTiler: Nominatim (sin key, geocodificación mundial)
-    if (items.length === 0) {
+    // Si MapTiler no dio resultados (key inválida o sin permisos),
+    // respaldo garantizado: Nominatim (OSM, gratis, sin key, mundial).
+    if (items.length === 0 || !maptilerKeyOk) {
       try {
-        const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(raw)}&limit=5&countrycodes=cl&accept-language=es&polygon_geojson=0`;
-        const data = await (await fetch(url)).json();
+        const tryQuery = async (q) => {
+          const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(q)}&limit=5&countrycodes=cl&accept-language=es&polygon_geojson=0`;
+          return (await (await fetch(url)).json()) || [];
+        };
+        let data = await tryQuery(raw);
+        // Si la dirección completa no dio resultados, relajar:
+        // quitar números de calle y volver a intentar (busca calle/comuna).
+        if (data.length === 0) {
+          // Reemplaza patrones tipo "123", "123-A", "N°123" por espacio
+          const simplificado = raw.replace(/n[º°]\s*\d+/i, ' ').replace(/\b\d+\s*-\s*\d+\b/g, ' ').replace(/[0-9]+[a-zA-Z]?/g, ' ').replace(/\s+/g, ' ').trim();
+          if (simplificado && simplificado !== raw) data = await tryQuery(simplificado);
+        }
+        // Si aún nada, buscar la última parte (comuna/ciudad más probable).
+        if (data.length === 0) {
+          const partes = raw.split(',').map(p => p.trim()).filter(Boolean);
+          if (partes.length > 1) data = await tryQuery(partes[partes.length - 1]);
+        }
         items = (data || []).filter(r => r.lat && r.lon).map(r => ({
           id: r.place_id,
           label: r.display_name,
