@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-31T06:00:07.987330",
+  "actualizado": "2026-08-31T12:00:10.970769",
   "totales": {
     "avisos": 3,
-    "alertas": 2,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 5
+    "total": 4
   },
   "alertas": [
     {
@@ -84,24 +84,6 @@
         "Antofagasta",
         "Atacama",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5616,
-      "tipo": "Alerta",
-      "codigo": "AA154/2026",
-      "emision": "Domingo 30 de agosto del 2026 a las 19:36 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la noche del domingo 30 de agosto del 2026",
-      "hasta": "la madrugada del lunes 31 de agosto del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Metropolitana (Valle, Precordillera, Cordillera)",
-      "titulo": "Tormentas Eléctricas en zonas de la región Metropolitana",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": [
-        "Metropolitana"
       ]
     }
   ]
