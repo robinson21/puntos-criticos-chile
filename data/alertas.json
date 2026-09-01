@@ -1,32 +1,12 @@
 {
-  "actualizado": "2026-09-01T00:00:17.964717",
+  "actualizado": "2026-09-01T06:00:23.768741",
   "totales": {
-    "avisos": 3,
-    "alertas": 1,
+    "avisos": 2,
+    "alertas": 0,
     "alarmas": 0,
-    "total": 4
+    "total": 2
   },
   "alertas": [
-    {
-      "id": 5617,
-      "tipo": "Aviso",
-      "codigo": "A461-2/2026",
-      "emision": "Lunes 31 de agosto del 2026 a las 14:53 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la tarde del lunes 31 de agosto del 2026",
-      "hasta": "la noche del martes 01 de septiembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
-      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
-      ]
-    },
     {
       "id": 5611,
       "tipo": "Aviso",
@@ -46,38 +26,17 @@
       ]
     },
     {
-      "id": 5601,
-      "tipo": "Alerta",
-      "codigo": "AA147-4/2026",
-      "emision": "Viernes 28 de agosto del 2026 a las 12:51 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del viernes 28 de agosto del 2026",
-      "hasta": "la noche del lunes 31 de agosto del 2026",
-      "observacion": "Desarrollo de ventisca",
-      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera) | Coquimbo (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas desde la región de Tarapacá a la región de Coquimbo",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Coquimbo",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5600,
+      "id": 5617,
       "tipo": "Aviso",
-      "codigo": "A445-3/2026",
-      "emision": "Viernes 28 de agosto del 2026 a las 12:50 hrs.",
+      "codigo": "A461-2/2026",
+      "emision": "Lunes 31 de agosto del 2026 a las 14:53 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la madrugada del sábado 29 de agosto del 2026",
-      "hasta": "la noche del lunes 31 de agosto del 2026",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la tarde del lunes 31 de agosto del 2026",
+      "hasta": "la noche del martes 01 de septiembre del 2026",
       "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Cordillera) | Antofagasta (Precordillera Occidental) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
+      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
