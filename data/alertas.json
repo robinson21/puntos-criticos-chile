@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-31T18:00:14.467042",
+  "actualizado": "2026-09-01T00:00:17.964717",
   "totales": {
     "avisos": 3,
     "alertas": 1,
@@ -8,23 +8,41 @@
   },
   "alertas": [
     {
-      "id": 5600,
+      "id": 5617,
       "tipo": "Aviso",
-      "codigo": "A445-3/2026",
-      "emision": "Viernes 28 de agosto del 2026 a las 12:50 hrs.",
+      "codigo": "A461-2/2026",
+      "emision": "Lunes 31 de agosto del 2026 a las 14:53 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la madrugada del sábado 29 de agosto del 2026",
-      "hasta": "la noche del lunes 31 de agosto del 2026",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la tarde del lunes 31 de agosto del 2026",
+      "hasta": "la noche del martes 01 de septiembre del 2026",
       "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Cordillera) | Antofagasta (Precordillera Occidental) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
+      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
         "Atacama",
         "Tarapacá"
+      ]
+    },
+    {
+      "id": 5611,
+      "tipo": "Aviso",
+      "codigo": "A460/2026",
+      "emision": "Sábado 29 de agosto del 2026 a las 14:08 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la mañana del martes 01 de septiembre del 2026",
+      "hasta": "la tarde del martes 01 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa)",
+      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
       ]
     },
     {
@@ -49,35 +67,17 @@
       ]
     },
     {
-      "id": 5611,
+      "id": 5600,
       "tipo": "Aviso",
-      "codigo": "A460/2026",
-      "emision": "Sábado 29 de agosto del 2026 a las 14:08 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la mañana del martes 01 de septiembre del 2026",
-      "hasta": "la tarde del martes 01 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa)",
-      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5613,
-      "tipo": "Aviso",
-      "codigo": "A461-1/2026",
-      "emision": "Domingo 30 de agosto del 2026 a las 13:56 hrs.",
+      "codigo": "A445-3/2026",
+      "emision": "Viernes 28 de agosto del 2026 a las 12:50 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la tarde del lunes 31 de agosto del 2026",
-      "hasta": "la noche del martes 01 de septiembre del 2026",
+      "condicion": "Corriente en chorro",
+      "desde": "la madrugada del sábado 29 de agosto del 2026",
+      "hasta": "la noche del lunes 31 de agosto del 2026",
       "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
-      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
+      "zonas": "Tarapacá (Cordillera) | Antofagasta (Precordillera Occidental) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
