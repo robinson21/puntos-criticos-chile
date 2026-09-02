@@ -31,28 +31,45 @@ function useMapTilerValida() {
 }
 
 const BASEMAPS = {
+  // === ESRI (gratis, sin key, sin restricción de origen — respaldo fiable) ===
+  esriSat: {
+    label: '🛰️ Esri Satélite',
+    url: () => 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    attr: () => 'Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community'
+  },
+  esriHybrid: {
+    label: '🛰️ Esri Híbrido',
+    url: () => 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    attr: () => 'Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community'
+  },
+  esriTopo: {
+    label: '⛰️ Esri Topo',
+    url: () => 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
+    attr: () => 'Tiles © Esri — Source: Esri'
+  },
+  // === MapTiler (necesita VITE_MAPTILER_KEY válida con Allowed Origins correcto) ===
   light: {
-    label: '☀️ Claro',
+    label: '☀️ Claro (MT)',
     url: () => `https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`,
     attr: () => ATTR_MT
   },
   dark: {
-    label: '🌙 Oscuro',
+    label: '🌙 Oscuro (MT)',
     url: () => `https://api.maptiler.com/maps/dark-matter/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`,
     attr: () => ATTR_MT
   },
   satellite: {
-    label: '🛰️ Satelital',
+    label: '🛰️ Satelital (MT)',
     url: () => `https://api.maptiler.com/maps/satellite-v2/{z}/{x}/{y}.jpg?key=${MAPTILER_KEY}`,
     attr: () => ATTR_MT
   },
   hybrid: {
-    label: '🛰️ Híbrido',
+    label: '🛰️ Híbrido (MT)',
     url: () => `https://api.maptiler.com/maps/hybrid-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`,
     attr: () => ATTR_MT
   },
   topo: {
-    label: '⛰️ Topográfico',
+    label: '⛰️ Topográfico (MT)',
     url: () => `https://api.maptiler.com/maps/topographique-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`,
     attr: () => ATTR_MT
   },
@@ -221,7 +238,7 @@ function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey }) {
 export default function MapView() {
   const { filtered } = useFilters();
   const { metadata, regionActual } = useData();
-  const [baseMap, setBaseMap] = useState('dark');
+  const [baseMap, setBaseMap] = useState('esriSat');
   const OWM_KEY = (import.meta.env.VITE_OWM_KEY || '').trim();
   const hasOwmKey = OWM_KEY.length > 0;
   // Capas ambientales activas. Default: incendios + lluvia (no requieren key).
@@ -419,12 +436,17 @@ export default function MapView() {
         <div className="map-controls">
           {usarMapTiler && (
             <select value={baseMap} onChange={e => setBaseMap(e.target.value)} className="basemap-select">
-              <optgroup label="── MapTiler ──">
-                <option value="light">☀️ Claro</option>
-                <option value="dark">🌙 Oscuro</option>
-                <option value="satellite">🛰️ Satelital</option>
-                <option value="hybrid">🛰️ Híbrido (sat + calles)</option>
-                <option value="topo">⛰️ Topográfico</option>
+              <optgroup label="── Esri (gratis, sin key) ──">
+                <option value="esriSat">🛰️ Esri Satélite</option>
+                <option value="esriHybrid">🛰️ Esri Híbrido</option>
+                <option value="esriTopo">⛰️ Esri Topo</option>
+              </optgroup>
+              <optgroup label="── MapTiler (con key) ──">
+                <option value="light">☀️ Claro (MT)</option>
+                <option value="dark">🌙 Oscuro (MT)</option>
+                <option value="satellite">🛰️ Satelital (MT)</option>
+                <option value="hybrid">🛰️ Híbrido (MT)</option>
+                <option value="topo">⛰️ Topográfico (MT)</option>
               </optgroup>
               <optgroup label="── GPS (gratis) ──">
                 <option value="gps">🗺️ GPS Calles</option>
@@ -434,8 +456,15 @@ export default function MapView() {
           )}
           {!usarMapTiler && (
             <select value={baseMap} onChange={e => setBaseMap(e.target.value)} className="basemap-select">
-              <option value="gps">🗺️ GPS Calles</option>
-              <option value="gpsTopo">📐 GPS Topo</option>
+              <optgroup label="── Esri (gratis, sin key) ──">
+                <option value="esriSat">🛰️ Esri Satélite</option>
+                <option value="esriHybrid">🛰️ Esri Híbrido</option>
+                <option value="esriTopo">⛰️ Esri Topo</option>
+              </optgroup>
+              <optgroup label="── GPS (gratis) ──">
+                <option value="gps">🗺️ GPS Calles</option>
+                <option value="gpsTopo">📐 GPS Topo</option>
+              </optgroup>
             </select>
           )}
           <span className="count">{filtered.length.toLocaleString('es-CL')}</span>
