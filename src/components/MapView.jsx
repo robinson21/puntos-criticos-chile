@@ -40,6 +40,31 @@ const BASEMAPS = {
     label: '🌙 Oscuro',
     url: () => `https://api.maptiler.com/maps/dark-matter/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`,
     attr: () => ATTR_MT
+  },
+  satellite: {
+    label: '🛰️ Satelital',
+    url: () => `https://api.maptiler.com/maps/satellite-v2/{z}/{x}/{y}.jpg?key=${MAPTILER_KEY}`,
+    attr: () => ATTR_MT
+  },
+  hybrid: {
+    label: '🛰️ Híbrido',
+    url: () => `https://api.maptiler.com/maps/hybrid-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`,
+    attr: () => ATTR_MT
+  },
+  topo: {
+    label: '⛰️ Topográfico',
+    url: () => `https://api.maptiler.com/maps/topographique-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`,
+    attr: () => ATTR_MT
+  },
+  gps: {
+    label: '🗺️ GPS Calles',
+    url: () => 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    attr: () => ATTR_OSM
+  },
+  gpsTopo: {
+    label: '📐 GPS Topo',
+    url: () => 'https://a.tile.opentopomap.org/{z}/{x}/{y}.png',
+    attr: () => '© <a href="https://opentopomap.org">OpenTopoMap</a> · © OpenStreetMap contributors'
   }
 };
 
@@ -59,6 +84,37 @@ const REGION_CENTERS = {
   'AYSÉN DEL GENERAL CARLOS IBANEZ DEL CAMPO': [-45.55, -72.05],
   'MAGALLANES Y DE LA ANTÁRTICA CHILENA': [-53.15, -70.95],
 };
+
+// Marcador "Mi ubicación" — punto azul con halo pulsante (estilo Google Maps GPS).
+function MyLocation({ coords }) {
+  const map = useMap();
+  const markerRef = useRef(null);
+  const lastCoords = useRef(null);
+  useEffect(() => {
+    if (!coords || coords === lastCoords.current) return;
+    lastCoords.current = coords;
+    // Limpia marcador anterior
+    if (markerRef.current) {
+      try { map.removeLayer(markerRef.current); } catch (e) { /* noop */ }
+    }
+    // HTML custom: círculo azul con pulso
+    const icon = L.divIcon({
+      className: 'my-loc-marker',
+      html: '<div class="my-loc-dot"></div><div class="my-loc-pulse"></div>',
+      iconSize: [22, 22],
+      iconAnchor: [11, 11]
+    });
+    markerRef.current = L.marker(coords, { icon, interactive: false }).addTo(map);
+    // Centra con zoom apropiado
+    try { map.flyTo(coords, 13, { duration: 1.2 }); } catch (e) { /* noop */ }
+    return () => {
+      if (markerRef.current) {
+        try { map.removeLayer(markerRef.current); } catch (e) { /* noop */ }
+      }
+    };
+  }, [map, coords]);
+  return null;
+}
 
 // Componente que centra el mapa en unas coordenadas (marca geocodificada).
 // Solo se dispara cuando coords cambia; no vuelve a disparar en re-renders.
@@ -212,6 +268,10 @@ export default function MapView() {
   const [searching, setSearching] = useState(false);
   const [searchMsg, setSearchMsg] = useState('');
   const [recenterToken, setRecenterToken] = useState(0);
+  // Estado para geolocation del usuario (botón "Mi ubicación")
+  const [myLoc, setMyLoc] = useState(null);
+  const [locating, setLocating] = useState(false);
+  const [locErr, setLocErr] = useState('');
   const debounceRef = useRef(null);
 
   const displayPoints = filtered.slice(0, 2500);
@@ -320,6 +380,38 @@ export default function MapView() {
     }
   }
 
+  // Geolocalización del navegador: pide permiso, centra el mapa y muestra un marcador.
+  function locateMe() {
+    setLocErr('');
+    if (!('geolocation' in navigator)) {
+      setLocErr('Tu navegador no soporta geolocalización.');
+      return;
+    }
+    setLocating(true);
+    navigator.geolocation.getCurrentPosition(
+      pos => {
+        const { latitude, longitude, accuracy } = pos.coords;
+        setMyLoc([latitude, longitude]);
+        setFlyTo([latitude, longitude]);
+        setRecenterToken(0);
+        setLocating(false);
+        setLocErr('');
+        // Guarda en consola para debug
+        if (typeof console !== 'undefined' && console.log) {
+          console.log(`[GPS] Ubicación: ${latitude.toFixed(5)}, ${longitude.toFixed(5)} (±${Math.round(accuracy)}m)`);
+        }
+      },
+      err => {
+        setLocating(false);
+        if (err.code === 1) setLocErr('Permiso de ubicación denegado. Actívalo en tu navegador.');
+        else if (err.code === 2) setLocErr('No se pudo determinar tu ubicación.');
+        else if (err.code === 3) setLocErr('Tiempo agotado. Inténtalo de nuevo.');
+        else setLocErr('Error desconocido al obtener ubicación.');
+      },
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 30000 }
+    );
+  }
+
   return (
     <div className="panel map-panel">
       <div className="panel-head">
@@ -327,9 +419,23 @@ export default function MapView() {
         <div className="map-controls">
           {usarMapTiler && (
             <select value={baseMap} onChange={e => setBaseMap(e.target.value)} className="basemap-select">
-              {Object.entries(BASEMAPS).map(([k, v]) => (
-                <option key={k} value={k}>{v.label}</option>
-              ))}
+              <optgroup label="── MapTiler ──">
+                <option value="light">☀️ Claro</option>
+                <option value="dark">🌙 Oscuro</option>
+                <option value="satellite">🛰️ Satelital</option>
+                <option value="hybrid">🛰️ Híbrido (sat + calles)</option>
+                <option value="topo">⛰️ Topográfico</option>
+              </optgroup>
+              <optgroup label="── GPS (gratis) ──">
+                <option value="gps">🗺️ GPS Calles</option>
+                <option value="gpsTopo">📐 GPS Topo</option>
+              </optgroup>
+            </select>
+          )}
+          {!usarMapTiler && (
+            <select value={baseMap} onChange={e => setBaseMap(e.target.value)} className="basemap-select">
+              <option value="gps">🗺️ GPS Calles</option>
+              <option value="gpsTopo">📐 GPS Topo</option>
             </select>
           )}
           <span className="count">{filtered.length.toLocaleString('es-CL')}</span>
@@ -372,9 +478,11 @@ export default function MapView() {
       <MapContainer center={center} zoom={zoom} zoomControl={false} className="map-container" scrollWheelZoom={true}>
         <ZoomControl position="bottomright" />
         <TileLayer
-          url={usarMapTiler ? BASEMAPS[baseMap].url() : 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'}
-          attribution={usarMapTiler ? BASEMAPS[baseMap].attr() : ATTR_OSM}
+          url={BASEMAPS[baseMap].url()}
+          attribution={BASEMAPS[baseMap].attr()}
         />
+        {/* Marcador "Mi ubicación" (GPS del navegador) */}
+        {myLoc && <MyLocation coords={myLoc} />}
         {/* Capas ambientales (estilo Zoom Earth) */}
         <EnvironmentalLayers activeLayers={activeLayers} rainFrames={rainFrames} rainNow={rainNow} owmKey={OWM_KEY} />
         {recenterToken > 0 && <Recenter token={recenterToken} />}
@@ -412,6 +520,17 @@ export default function MapView() {
           </CircleMarker>
         )}
       </MapContainer>
+      {/* Botón flotante "Mi ubicación" (GPS navegador) — estilo brújula */}
+      <button
+        type="button"
+        className={`gps-locate-btn ${locating ? 'is-loading' : ''} ${myLoc ? 'is-active' : ''}`}
+        onClick={locateMe}
+        title="Centrar en mi ubicación (GPS)"
+        aria-label="Centrar mapa en mi ubicación"
+      >
+        {locating ? '⏳' : '📍'}
+      </button>
+      {locErr && <div className="gps-locate-err">{locErr}</div>}
       <LayersControl activeLayers={activeLayers} onToggle={toggleLayer} hasOwmKey={hasOwmKey} />
       <div className="legend">
         {Object.entries(COLORS).map(([n, c]) => (
