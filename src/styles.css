@@ -911,13 +911,84 @@ footer {
   .alerta-title { font-size: 13px; }
 }
 
-.pron-panel{background:linear-gradient(135deg,rgba(15,23,42,.96),rgba(8,13,24,.96));border:1px solid rgba(56,189,248,.18);border-radius:18px;padding:16px;margin:16px 0;box-shadow:0 16px 40px rgba(0,0,0,.22)}
-.pron-source{margin:4px 0 0;color:#94a3b8;font-size:.82rem}
-.pron-summary{display:flex;align-items:center;gap:14px;background:rgba(15,23,42,.75);border:1px solid rgba(148,163,184,.16);border-radius:14px;padding:12px;margin:12px 0}
-.pron-summary p{margin:3px 0 0;color:#cbd5e1;font-size:.9rem}.pron-main-icon{font-size:2rem}.pron-risk{margin-left:auto;text-transform:uppercase;font-size:.68rem;font-weight:800;padding:5px 8px;border-radius:999px}.pron-risk.high{background:#7f1d1d;color:#fecaca}.pron-risk.med{background:#78350f;color:#fde68a}.pron-risk.low{background:#064e3b;color:#a7f3d0}
-.pron-days{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.pron-day{background:rgba(2,6,23,.55);border:1px solid rgba(148,163,184,.13);border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:4px;font-size:.78rem}.pron-date{color:#93c5fd;font-weight:700;text-transform:capitalize}.pron-emoji{font-size:1.35rem}
-.pron-hours{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;margin-top:10px}.pron-hour{background:rgba(14,116,144,.16);border:1px solid rgba(34,211,238,.16);border-radius:10px;padding:8px 4px;text-align:center;display:flex;flex-direction:column;gap:2px;font-size:.74rem}.pron-hour small{color:#bae6fd}.pron-note{margin:10px 0 0;color:#94a3b8;font-size:.75rem}
-@media(max-width:760px){.pron-panel{padding:12px;margin:12px 0}.pron-summary{align-items:flex-start}.pron-risk{margin-left:0}.pron-days{grid-template-columns:repeat(2,1fr)}.pron-hours{grid-template-columns:repeat(4,1fr)}}
+.pron-panel{background:linear-gradient(135deg,#0b1a33,#0f2547);border:1px solid rgba(56,189,248,.18);border-radius:18px;padding:18px;margin:16px 0;box-shadow:0 16px 40px rgba(0,0,0,.22)}
+
+/* === HERO CARD: "El tiempo ahora" estilo moderno === */
+.pron-hero{
+  background:linear-gradient(135deg,#3b82f6 0%,#1d4ed8 55%,#1e3a8a 100%);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:18px;
+  padding:18px 20px;
+  margin-bottom:18px;
+  color:#fff;
+  box-shadow:0 12px 32px rgba(29,78,216,.35);
+  position:relative;
+  overflow:hidden;
+}
+.pron-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse at top right,rgba(255,255,255,.18),transparent 60%);
+  pointer-events:none;
+}
+.pron-hero-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px;position:relative}
+.pron-hero-title h3{margin:0;font-size:1.05rem;font-weight:600;color:#fff;letter-spacing:.2px}
+.pron-hero-title h3 .pron-city{font-weight:700;color:#fde68a}
+.pron-hero-date{margin:4px 0 0;font-size:.78rem;color:rgba(255,255,255,.7);text-transform:capitalize}
+.pron-hero-body{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;position:relative}
+.pron-hero-temp{display:flex;align-items:center;gap:8px}
+.pron-temp-value{font-size:4.4rem;font-weight:200;line-height:1;color:#fff;letter-spacing:-2px}
+.pron-temp-icon{font-size:3.2rem;line-height:1;filter:drop-shadow(0 4px 12px rgba(0,0,0,.25))}
+.pron-hero-center{padding:0 4px}
+.pron-hero-desc{font-size:1.1rem;font-weight:600;color:#fff;margin-bottom:6px}
+.pron-hero-minmax{font-size:.85rem;color:rgba(255,255,255,.85);margin-bottom:3px}
+.pron-hero-feel{font-size:.78rem;color:rgba(255,255,255,.65)}
+.pron-hero-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 22px;padding-left:18px;border-left:1px solid rgba(255,255,255,.18)}
+.pron-metric{display:flex;align-items:center;gap:8px}
+.pron-metric-icon{font-size:1.05rem;opacity:.92}
+.pron-metric-value{font-size:.95rem;font-weight:700;color:#fff;line-height:1.1}
+.pron-metric-label{font-size:.68rem;color:rgba(255,255,255,.7);text-transform:lowercase;letter-spacing:.2px}
+
+/* === Subtítulos de sección === */
+.pron-subtitle{margin:14px 0 8px;font-size:.85rem;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:.6px}
+
+/* === Próximas 24h === */
+.pron-hours{display:grid;grid-template-columns:repeat(8,1fr);gap:6px}
+.pron-hour{background:rgba(14,116,144,.16);border:1px solid rgba(34,211,238,.16);border-radius:10px;padding:8px 4px;text-align:center;display:flex;flex-direction:column;gap:2px;font-size:.74rem}
+.pron-hour-icon{font-size:1.2rem}
+.pron-hour-temp{font-weight:700;color:#e0f2fe}
+.pron-hour small{color:#bae6fd}
+
+/* === Próximos 5 días === */
+.pron-days{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.pron-day{background:rgba(2,6,23,.55);border:1px solid rgba(148,163,184,.13);border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:4px;font-size:.78rem;transition:border-color .2s}
+.pron-day.is-high{border-color:rgba(213,81,74,.5);background:rgba(127,29,29,.18)}
+.pron-day.is-med{border-color:rgba(224,184,77,.5);background:rgba(120,53,15,.16)}
+.pron-date{color:#93c5fd;font-weight:700;text-transform:capitalize}
+.pron-emoji{font-size:1.35rem}
+.pron-day-temp{color:#e0f2fe;font-size:.85rem}
+.pron-day-detail{display:flex;flex-direction:column;gap:1px;color:#94a3b8;font-size:.7rem}
+.pron-day-desc{color:#cbd5e1;font-size:.7rem;margin-top:2px}
+
+/* === Riesgo operacional === */
+.pron-risk{text-transform:uppercase;font-size:.65rem;font-weight:800;padding:5px 8px;border-radius:999px;white-space:nowrap}
+.pron-risk.high{background:rgba(127,29,29,.85);color:#fecaca;border:1px solid rgba(213,81,74,.6)}
+.pron-risk.med{background:rgba(120,53,15,.85);color:#fde68a;border:1px solid rgba(224,184,77,.6)}
+.pron-risk.low{background:rgba(6,78,59,.85);color:#a7f3d0;border:1px solid rgba(74,222,128,.5)}
+
+/* === Footer === */
+.pron-foot{margin:14px 0 0;color:#94a3b8;font-size:.72rem;display:flex;gap:6px;flex-wrap:wrap}
+.pron-foot-sep{opacity:.5}
+
+@media(max-width:760px){
+  .pron-panel{padding:14px;margin:12px 0}
+  .pron-hero-body{grid-template-columns:1fr;gap:14px}
+  .pron-hero-metrics{padding-left:0;border-left:none;border-top:1px solid rgba(255,255,255,.18);padding-top:14px;grid-template-columns:repeat(2,1fr)}
+  .pron-temp-value{font-size:3.4rem}
+  .pron-days{grid-template-columns:repeat(2,1fr)}
+  .pron-hours{grid-template-columns:repeat(4,1fr)}
+}
 
 /* Panel de capas ambientales (estilo Zoom Earth) */
 .layers-control{position:absolute;top:12px;right:12px;z-index:500;font-family:var(--font-sans,system-ui)}

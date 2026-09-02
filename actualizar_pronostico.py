@@ -16,6 +16,7 @@ from urllib.request import urlopen
 
 PUBLIC_DIR = '/home/ubuntu/puntos-criticos/public/data'
 FORECAST_URL = 'https://api.openweathermap.org/data/2.5/forecast'
+CURRENT_URL = 'https://api.openweathermap.org/data/2.5/weather'
 API_KEY = os.getenv('OPENWEATHER_API_KEY')
 
 REGIONES = {
@@ -51,6 +52,34 @@ def fetch_forecast(lat, lon):
         return json.loads(r.read().decode('utf-8'))
 
 
+def fetch_current(lat, lon):
+    """Clima actual: temp, humedad, presión, viento, sensación."""
+    qs = urlencode({'lat': lat, 'lon': lon, 'units': 'metric', 'lang': 'es', 'appid': API_KEY})
+    with urlopen(f'{CURRENT_URL}?{qs}', timeout=15) as r:
+        d = json.loads(r.read().decode('utf-8'))
+    main = d.get('main', {})
+    wind = d.get('wind', {})
+    code = d.get('weather', [{}])[0].get('id', 800)
+    emoji, desc = describe(code)
+    return {
+        'temp': round(float(main.get('temp', 0))),
+        'sensacion': round(float(main.get('feels_like', 0))),
+        'temp_min_hoy': round(float(main.get('temp_min', 0))),
+        'temp_max_hoy': round(float(main.get('temp_max', 0))),
+        'humedad': int(main.get('humidity', 0)),
+        'presion': int(main.get('pressure', 0)),
+        'viento_ms': round(float(wind.get('speed', 0)), 1),
+        'viento_kmh': round(float(wind.get('speed', 0)) * 3.6, 1),
+        'rafaga_ms': round(float(wind.get('gust', 0) or 0), 1),
+        'rafaga_kmh': round(float(wind.get('gust', 0) or 0) * 3.6, 1),
+        'dir_viento': int(wind.get('deg', 0)),
+        'icono': emoji,
+        'desc': desc,
+        'nubes': int(d.get('clouds', {}).get('all', 0)),
+        'visibilidad_m': int(d.get('visibility', 0)),
+    }
+
+
 def describe(code):
     return WEATHER_ES.get(int(code), ('🌡️', 'Variable'))
 
@@ -58,6 +87,10 @@ def describe(code):
 def summarize_region(region, cfg):
     raw = fetch_forecast(cfg['lat'], cfg['lon'])
     items = raw.get('list', [])
+    try:
+        actual = fetch_current(cfg['lat'], cfg['lon'])
+    except Exception:
+        actual = None
     daily = defaultdict(lambda: {'temps': [], 'pops': [], 'rain': 0.0, 'wind': [], 'codes': []})
     horas24 = []
 
@@ -118,6 +151,7 @@ def summarize_region(region, cfg):
         'region': region,
         'ciudad_referencia': cfg['ciudad'],
         'coords': {'lat': cfg['lat'], 'lon': cfg['lon']},
+        'actual': actual,
         'horas24': horas24,
         'dias': dias,
     }
