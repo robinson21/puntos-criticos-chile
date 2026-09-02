@@ -1,8 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
 import { MapContainer, TileLayer, CircleMarker, Popup, ZoomControl, useMap } from 'react-leaflet';
+import L from 'leaflet';
 import { useFilters } from '../data/FilterContext';
 import { useData } from '../data/DataContext';
 import AramcoMarkers from './AramcoMarkers';
+import LayersControl from './LayersControl';
 import 'leaflet/dist/leaflet.css';
 
 const COLORS = {'Bajo':'#4FB6A8','Medio':'#E0B84D','Alto':'#E08D45','Muy Alto':'#D5514A'};
@@ -92,16 +94,116 @@ function Recenter({ token }) {
   return null;
 }
 
+// Capas ambientales estilo Zoom Earth: incendios FIRMS (WMS, sin key),
+// lluvia animada RainViewer (sin key), y viento/nubes/temperatura de
+// OpenWeatherMap (requieren VITE_OWM_KEY en .env.local).
+function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey }) {
+  const map = useMap();
+  const layersRef = useRef({});
+
+  useEffect(() => {
+    const add = (id, layer) => {
+      layersRef.current[id] = layer;
+      if (activeLayers.includes(id)) layer.addTo(map);
+    };
+    const remove = (id) => {
+      const l = layersRef.current[id];
+      if (l) { map.removeLayer(l); delete layersRef.current[id]; }
+    };
+
+    // 1. Incendios FIRMS (WMS, sin key). MODIS + VIIRS últimas 24h.
+    if (activeLayers.includes('incendios')) {
+      if (!layersRef.current.incendios) {
+        const fires = L.tileLayer.wms('https://firms.modaps.eosdis.nasa.gov/wms/', {
+          layers: 'fires_modis_24hrs,fires_viirs_24hrs',
+          format: 'image/png',
+          transparent: true,
+          opacity: 0.75,
+          version: '1.1.1'
+        });
+        add('incendios', fires);
+      }
+    } else remove('incendios');
+
+    // 2. Lluvia animada RainViewer (sin key).
+    if (activeLayers.includes('lluvia') && rainFrames && rainFrames[rainNow]) {
+      const ts = rainFrames[rainNow].time;
+      const url = `https://tilecache.rainviewer.com/v2/radar/${ts}/256/{z}/{x}/{y}/2/1_1.png`;
+      if (!layersRef.current.lluvia) {
+        add('lluvia', L.tileLayer(url, { tileSize: 256, opacity: 0.7, attribution: '© RainViewer' }));
+      } else {
+        // actualizar URL al cambiar de frame
+        layersRef.current.lluvia.setUrl(url);
+      }
+    } else remove('lluvia');
+
+    // 3. Viento / nubes / temperatura OpenWeatherMap (requieren key).
+    if (owmKey) {
+      if (activeLayers.includes('viento')) {
+        if (!layersRef.current.viento) {
+          add('viento', L.tileLayer(`https://tile.openweathermap.org/map/wind_new/{z}/{x}/{y}.png?appid=${owmKey}`, { opacity: 0.6 }));
+        }
+      } else remove('viento');
+      if (activeLayers.includes('nubes')) {
+        if (!layersRef.current.nubes) {
+          add('nubes', L.tileLayer(`https://tile.openweathermap.org/map/clouds_new/{z}/{x}/{y}.png?appid=${owmKey}`, { opacity: 0.6 }));
+        }
+      } else remove('nubes');
+      if (activeLayers.includes('temperatura')) {
+        if (!layersRef.current.temperatura) {
+          add('temperatura', L.tileLayer(`https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=${owmKey}`, { opacity: 0.6 }));
+        }
+      } else remove('temperatura');
+    } else {
+      remove('viento'); remove('nubes'); remove('temperatura');
+    }
+  }, [map, activeLayers, rainFrames, rainNow, owmKey]);
+
+  return null;
+}
+
 export default function MapView() {
   const { filtered } = useFilters();
   const { metadata, regionActual } = useData();
   const [baseMap, setBaseMap] = useState('dark');
+  const OWM_KEY = (import.meta.env.VITE_OWM_KEY || '').trim();
+  const hasOwmKey = OWM_KEY.length > 0;
+  // Capas ambientales activas. Default: incendios + lluvia (no requieren key).
+  const [activeLayers, setActiveLayers] = useState(['incendios', 'lluvia']);
+  const [rainFrames, setRainFrames] = useState(null); // timestamps RainViewer para animación
+  const [rainNow, setRainNow] = useState(0); // índice del frame actual
   const maptilerValida = useMapTilerValida();
   const usarMapTiler = maptilerValida === true;
   const { comuna } = useFilters();
 
   const center = [-37, -71];
   const zoom = 6;
+
+  // Toggle de capas ambientales (panel estilo Zoom Earth).
+  function toggleLayer(id) {
+    setActiveLayers(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
+  }
+
+  // Carga frames de animación de lluvia desde RainViewer (gratis, sin key).
+  useEffect(() => {
+    if (!activeLayers.includes('lluvia')) return;
+    fetch('https://api.rainviewer.com/public/weather-maps.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (data && Array.isArray(data.radar?.past)) {
+          setRainFrames([...data.radar.past, ...(data.radar.nowcast || [])]);
+          setRainNow(0);
+        }
+      })
+      .catch(() => setRainFrames(null));
+  }, [activeLayers]);
+
+  // Avanza la animación de lluvia cada 600ms.
+  useEffect(() => {
+    if (!rainFrames || rainFrames.length < 2) return;
+    const t = setInterval(() => setRainNow(i => (i + 1) % rainFrames.length), 600);
+    return () => clearInterval(t);
+  }, [rainFrames]);
 
   // Estado para la geocodificación (búsqueda por dirección)
   const [query, setQuery] = useState('');
@@ -273,6 +375,8 @@ export default function MapView() {
           url={usarMapTiler ? BASEMAPS[baseMap].url() : 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'}
           attribution={usarMapTiler ? BASEMAPS[baseMap].attr() : ATTR_OSM}
         />
+        {/* Capas ambientales (estilo Zoom Earth) */}
+        <EnvironmentalLayers activeLayers={activeLayers} rainFrames={rainFrames} rainNow={rainNow} owmKey={OWM_KEY} />
         {recenterToken > 0 && <Recenter token={recenterToken} />}
         {flyTo && <FlyTo coords={flyTo} />}
         {displayPoints.map((p, i) => (
@@ -308,6 +412,7 @@ export default function MapView() {
           </CircleMarker>
         )}
       </MapContainer>
+      <LayersControl activeLayers={activeLayers} onToggle={toggleLayer} hasOwmKey={hasOwmKey} />
       <div className="legend">
         {Object.entries(COLORS).map(([n, c]) => (
           <span key={n}><span className="dot" style={{background:c}}></span> {n}</span>
