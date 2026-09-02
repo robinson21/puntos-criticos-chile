@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-02T06:00:48.768230",
+  "actualizado": "2026-09-02T12:00:52.660422",
   "totales": {
     "avisos": 3,
     "alertas": 0,
@@ -8,42 +8,25 @@
   },
   "alertas": [
     {
-      "id": 5618,
+      "id": 5621,
       "tipo": "Aviso",
-      "codigo": "A463/2026",
-      "emision": "Martes 1 de septiembre del 2026 a las 12:01 hrs.",
+      "codigo": "A463-1/2026",
+      "emision": "Miércoles 2 de septiembre del 2026 a las 07:12 hrs.",
       "fenomeno": "Viento",
       "condicion": "Corriente en chorro",
-      "desde": "la madrugada del jueves 03 de septiembre del 2026",
+      "desde": "la mañana del miércoles 02 de septiembre del 2026",
       "hasta": "la noche del jueves 03 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Coquimbo y Valparaíso",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera desde la región de Coquimbo a la región del Maule",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
         "Valparaíso"
-      ]
-    },
-    {
-      "id": 5619,
-      "tipo": "Aviso",
-      "codigo": "A465/2026",
-      "emision": "Martes 1 de septiembre del 2026 a las 13:44 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Altas presiones",
-      "desde": "la mañana del sábado 05 de septiembre del 2026",
-      "hasta": "la mañana del domingo 06 de septiembre del 2026",
-      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
-      "zonas": "La Araucanía (Precordillera, Cordillera) | Los Ríos (Precordillera, Cordillera) | Los Lagos (Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
       ]
     },
     {
@@ -59,6 +42,26 @@
       "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera)",
       "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
       "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5619,
+      "tipo": "Aviso",
+      "codigo": "A465/2026",
+      "emision": "Martes 1 de septiembre del 2026 a las 13:44 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Altas presiones",
+      "desde": "la mañana del sábado 05 de septiembre del 2026",
+      "hasta": "la mañana del domingo 06 de septiembre del 2026",
+      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
+      "zonas": "La Araucanía (Precordillera, Cordillera) | Los Ríos (Precordillera, Cordillera) | Los Lagos (Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "La Araucanía",
