@@ -1,12 +1,87 @@
 {
-  "actualizado": "2026-09-02T12:00:52.660422",
+  "actualizado": "2026-09-02T18:00:59.074911",
   "totales": {
-    "avisos": 3,
+    "avisos": 6,
     "alertas": 0,
     "alarmas": 0,
-    "total": 3
+    "total": 6
   },
   "alertas": [
+    {
+      "id": 5626,
+      "tipo": "Aviso",
+      "codigo": "A466/2026",
+      "emision": "Miércoles 2 de septiembre del 2026 a las 13:22 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la mañana del viernes 04 de septiembre del 2026",
+      "hasta": "la noche del viernes 04 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Litoral Provincia de Huasco",
+      "titulo": "Viento Normal a Moderado en Litoral Provincia de Huasco",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 5625,
+      "tipo": "Aviso",
+      "codigo": "A467/2026",
+      "emision": "Miércoles 2 de septiembre del 2026 a las 13:23 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del domingo 06 de septiembre del 2026",
+      "hasta": "la noche del lunes 07 de septiembre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5624,
+      "tipo": "Aviso",
+      "codigo": "A468/2026",
+      "emision": "Miércoles 2 de septiembre del 2026 a las 13:24 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la mañana del viernes 04 de septiembre del 2026",
+      "hasta": "la tarde del viernes 04 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa)",
+      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5623,
+      "tipo": "Aviso",
+      "codigo": "A465-1/2026",
+      "emision": "Miércoles 2 de septiembre del 2026 a las 12:02 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Altas presiones",
+      "desde": "la mañana del sábado 05 de septiembre del 2026",
+      "hasta": "la mañana del domingo 06 de septiembre del 2026",
+      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
+      "zonas": "&Ntilde;uble (Precordillera, Cordillera) | Biobío (Valle, Precordillera, Cordillera) | La Araucanía (Precordillera, Cordillera) | Los Ríos (Precordillera, Cordillera) | Los Lagos (Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de &Ntilde;uble a la región de Los Lagos",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5621,
       "tipo": "Aviso",
@@ -42,26 +117,6 @@
       "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera)",
       "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
       "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5619,
-      "tipo": "Aviso",
-      "codigo": "A465/2026",
-      "emision": "Martes 1 de septiembre del 2026 a las 13:44 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Altas presiones",
-      "desde": "la mañana del sábado 05 de septiembre del 2026",
-      "hasta": "la mañana del domingo 06 de septiembre del 2026",
-      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
-      "zonas": "La Araucanía (Precordillera, Cordillera) | Los Ríos (Precordillera, Cordillera) | Los Lagos (Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "La Araucanía",
