@@ -167,10 +167,16 @@ function Recenter({ token }) {
   return null;
 }
 
-// Capas ambientales estilo Zoom Earth: incendios FIRMS (WMS, sin key),
-// lluvia animada RainViewer (sin key), y viento/nubes/temperatura de
-// OpenWeatherMap (requieren VITE_OWM_KEY en .env.local).
-function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey }) {
+// Capas ambientales estilo Zoom Earth:
+//  - Incendios FIRMS (deshabilitado: el WMS público dejó de funcionar, ahora
+//    requiere Map Key; queda bloqueado con 🔑 hasta que se configure FIRMS_KEY
+//    en el proxy backend).
+//  - Lluvia animada RainViewer (sin key).
+//  - Viento / nubes / temperatura / precipitación OWM: servidas vía proxy
+//    backend en `tileProxy` para no exponer la API key en el bundle.
+// Si el proxy está caído, las capas se sirven desde OWM directo si owmKey está
+// presente (fallback opcional).
+function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey, tileProxy }) {
   const map = useMap();
   const layersRef = useRef({});
 
@@ -184,18 +190,11 @@ function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey }) {
       if (l) { map.removeLayer(l); delete layersRef.current[id]; }
     };
 
-    // 1. Incendios FIRMS (WMS, sin key). MODIS + VIIRS últimas 24h.
+    // 1. Incendios FIRMS — desactivado: el WMS público dejó de funcionar.
+    //    Se deja la rama remove() para que el panel pueda apagar la capa limpia.
     if (activeLayers.includes('incendios')) {
-      if (!layersRef.current.incendios) {
-        const fires = L.tileLayer.wms('https://firms.modaps.eosdis.nasa.gov/wms/', {
-          layers: 'fires_modis_24hrs,fires_viirs_24hrs',
-          format: 'image/png',
-          transparent: true,
-          opacity: 0.75,
-          version: '1.1.1'
-        });
-        add('incendios', fires);
-      }
+      // Sin proxy FIRMS configurado: no se dibuja nada.
+      remove('incendios');
     } else remove('incendios');
 
     // 2. Lluvia animada RainViewer (sin key).
@@ -205,27 +204,29 @@ function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey }) {
       if (!layersRef.current.lluvia) {
         add('lluvia', L.tileLayer(url, { tileSize: 256, opacity: 0.7, attribution: '© RainViewer' }));
       } else {
-        // actualizar URL al cambiar de frame
         layersRef.current.lluvia.setUrl(url);
       }
     } else remove('lluvia');
 
-    // 3. Viento / nubes / temperatura OpenWeatherMap (requieren key).
-    if (owmKey) {
+    // 3. Viento / nubes / temperatura vía PROXY backend (sin exponer key).
+    //    Si no hay proxy y no hay key, no se dibujan.
+    const owm = (layer) => {
+      if (tileProxy) return `${tileProxy}/api/tiles/owm/${layer}/{z}/{x}/{y}.png`;
+      if (owmKey) return `https://tile.openweathermap.org/map/${layer}/{z}/{x}/{y}.png?appid=${owmKey}`;
+      return null;
+    };
+    if (tileProxy || owmKey) {
       if (activeLayers.includes('viento')) {
-        if (!layersRef.current.viento) {
-          add('viento', L.tileLayer(`https://tile.openweathermap.org/map/wind_new/{z}/{x}/{y}.png?appid=${owmKey}`, { opacity: 0.6 }));
-        }
+        const u = owm('wind_new');
+        if (u && !layersRef.current.viento) add('viento', L.tileLayer(u, { opacity: 0.6 }));
       } else remove('viento');
       if (activeLayers.includes('nubes')) {
-        if (!layersRef.current.nubes) {
-          add('nubes', L.tileLayer(`https://tile.openweathermap.org/map/clouds_new/{z}/{x}/{y}.png?appid=${owmKey}`, { opacity: 0.6 }));
-        }
+        const u = owm('clouds_new');
+        if (u && !layersRef.current.nubes) add('nubes', L.tileLayer(u, { opacity: 0.6 }));
       } else remove('nubes');
       if (activeLayers.includes('temperatura')) {
-        if (!layersRef.current.temperatura) {
-          add('temperatura', L.tileLayer(`https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=${owmKey}`, { opacity: 0.6 }));
-        }
+        const u = owm('temp_new');
+        if (u && !layersRef.current.temperatura) add('temperatura', L.tileLayer(u, { opacity: 0.6 }));
       } else remove('temperatura');
     } else {
       remove('viento'); remove('nubes'); remove('temperatura');
@@ -241,6 +242,12 @@ export default function MapView() {
   const [baseMap, setBaseMap] = useState('esriSat');
   const OWM_KEY = (import.meta.env.VITE_OWM_KEY || '').trim();
   const hasOwmKey = OWM_KEY.length > 0;
+  // Proxy backend para servir tiles OWM sin exponer la key en el bundle.
+  // Default localhost:8081 (dev). En producción, sobreescribir con
+  // VITE_TILE_PROXY apuntando a un endpoint público del proxy.
+  const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY || 'http://localhost:8081').trim();
+  const hasTileProxy = TILE_PROXY.length > 0;
+  const hasOwmSource = hasTileProxy || hasOwmKey;
   // Capas ambientales activas. Default: incendios + lluvia (no requieren key).
   const [activeLayers, setActiveLayers] = useState(['incendios', 'lluvia']);
   const [rainFrames, setRainFrames] = useState(null); // timestamps RainViewer para animación
@@ -513,7 +520,7 @@ export default function MapView() {
         {/* Marcador "Mi ubicación" (GPS del navegador) */}
         {myLoc && <MyLocation coords={myLoc} />}
         {/* Capas ambientales (estilo Zoom Earth) */}
-        <EnvironmentalLayers activeLayers={activeLayers} rainFrames={rainFrames} rainNow={rainNow} owmKey={OWM_KEY} />
+        <EnvironmentalLayers activeLayers={activeLayers} rainFrames={rainFrames} rainNow={rainNow} owmKey={OWM_KEY} tileProxy={hasTileProxy ? TILE_PROXY : null} />
         {recenterToken > 0 && <Recenter token={recenterToken} />}
         {flyTo && <FlyTo coords={flyTo} />}
         {displayPoints.map((p, i) => (
@@ -560,7 +567,7 @@ export default function MapView() {
         {locating ? '⏳' : '📍'}
       </button>
       {locErr && <div className="gps-locate-err">{locErr}</div>}
-      <LayersControl activeLayers={activeLayers} onToggle={toggleLayer} hasOwmKey={hasOwmKey} />
+      <LayersControl activeLayers={activeLayers} onToggle={toggleLayer} hasOwmKey={hasOwmSource} hasFirmsKey={false} />
       <div className="legend">
         {Object.entries(COLORS).map(([n, c]) => (
           <span key={n}><span className="dot" style={{background:c}}></span> {n}</span>
