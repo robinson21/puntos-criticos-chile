@@ -1,63 +1,32 @@
 {
-  "actualizado": "2026-09-03T00:00:31.795457",
+  "actualizado": "2026-09-03T06:00:03.265016",
   "totales": {
-    "avisos": 6,
+    "avisos": 5,
     "alertas": 0,
     "alarmas": 0,
-    "total": 6
+    "total": 5
   },
   "alertas": [
     {
-      "id": 5626,
+      "id": 5621,
       "tipo": "Aviso",
-      "codigo": "A466/2026",
-      "emision": "Miércoles 2 de septiembre del 2026 a las 13:22 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la mañana del viernes 04 de septiembre del 2026",
-      "hasta": "la noche del viernes 04 de septiembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Litoral Provincia de Huasco",
-      "titulo": "Viento Normal a Moderado en Litoral Provincia de Huasco",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
-    },
-    {
-      "id": 5625,
-      "tipo": "Aviso",
-      "codigo": "A467/2026",
-      "emision": "Miércoles 2 de septiembre del 2026 a las 13:23 hrs.",
+      "codigo": "A463-1/2026",
+      "emision": "Miércoles 2 de septiembre del 2026 a las 07:12 hrs.",
       "fenomeno": "Viento",
       "condicion": "Corriente en chorro",
-      "desde": "la tarde del domingo 06 de septiembre del 2026",
-      "hasta": "la noche del lunes 07 de septiembre del 2026",
+      "desde": "la mañana del miércoles 02 de septiembre del 2026",
+      "hasta": "la noche del jueves 03 de septiembre del 2026",
       "observacion": "Probabilidad de ventisca",
-      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta y Atacama",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera desde la región de Coquimbo a la región del Maule",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5624,
-      "tipo": "Aviso",
-      "codigo": "A468/2026",
-      "emision": "Miércoles 2 de septiembre del 2026 a las 13:24 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la mañana del viernes 04 de septiembre del 2026",
-      "hasta": "la tarde del viernes 04 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa)",
-      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Atacama"
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
       ]
     },
     {
@@ -83,46 +52,57 @@
       ]
     },
     {
-      "id": 5621,
+      "id": 5624,
       "tipo": "Aviso",
-      "codigo": "A463-1/2026",
-      "emision": "Miércoles 2 de septiembre del 2026 a las 07:12 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del miércoles 02 de septiembre del 2026",
-      "hasta": "la noche del jueves 03 de septiembre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera desde la región de Coquimbo a la región del Maule",
-      "icono": "💨",
+      "codigo": "A468/2026",
+      "emision": "Miércoles 2 de septiembre del 2026 a las 13:24 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la mañana del viernes 04 de septiembre del 2026",
+      "hasta": "la tarde del viernes 04 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa)",
+      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
+      "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
+        "Atacama"
       ]
     },
     {
-      "id": 5620,
+      "id": 5625,
       "tipo": "Aviso",
-      "codigo": "A464/2026",
-      "emision": "Martes 1 de septiembre del 2026 a las 13:43 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del miércoles 02 de septiembre del 2026",
-      "hasta": "la tarde del miércoles 02 de septiembre del 2026",
-      "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚡",
+      "codigo": "A467/2026",
+      "emision": "Miércoles 2 de septiembre del 2026 a las 13:23 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del domingo 06 de septiembre del 2026",
+      "hasta": "la noche del lunes 07 de septiembre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta y Atacama",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
+        "Antofagasta",
+        "Atacama"
       ]
+    },
+    {
+      "id": 5626,
+      "tipo": "Aviso",
+      "codigo": "A466/2026",
+      "emision": "Miércoles 2 de septiembre del 2026 a las 13:22 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la mañana del viernes 04 de septiembre del 2026",
+      "hasta": "la noche del viernes 04 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Litoral Provincia de Huasco",
+      "titulo": "Viento Normal a Moderado en Litoral Provincia de Huasco",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
     }
   ]
 }
