@@ -23,6 +23,26 @@ function badgeClass(riesgo) {
   return 'pron-risk low';
 }
 
+// Escala de categoría del índice UV (OMS / OMM).
+function uvInfo(uvi) {
+  if (uvi <= 2) return { txt: 'Bajo', cls: 'uvo-verde' };
+  if (uvi <= 5) return { txt: 'Moderado', cls: 'uvo-amarillo' };
+  if (uvi <= 7) return { txt: 'Alto', cls: 'uvo-naranja' };
+  if (uvi <= 10) return { txt: 'Muy alto', cls: 'uvo-rojo' };
+  return { txt: 'Extremo', cls: 'uvo-violeta' };
+}
+
+function UvBadge({ uvi }) {
+  const { txt, cls } = uvInfo(uvi);
+  return (
+    <div className={`uv-badge ${cls}`} title="Índice UV actual (radiación solar). Fuente: Open-Meteo">
+      <span className="uv-icon">🌞</span>
+      <span className="uv-txt">UV {uvi.toFixed(1)}</span>
+      <span className="uv-cat">{txt}</span>
+    </div>
+  );
+}
+
 export default function PronosticoRegional() {
   const { regionActual } = useData();
   const [data, setData] = useState(null);
@@ -75,6 +95,7 @@ export default function PronosticoRegional() {
                 Mín {actual.temp_min_hoy}° · Máx {actual.temp_max_hoy}°
               </div>
               <div className="pron-hero-feel">Sensación térmica {actual.sensacion}°</div>
+              {actual.uvi != null && <UvBadge uvi={actual.uvi} />}
             </div>
 
             {/* Derecha: métricas */}

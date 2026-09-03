@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-02T22:12:33.061193",
+  "actualizado": "2026-09-02T22:45:01.696150",
   "fuente": "OpenWeatherMap 5 días / 3 horas. Alertas oficiales DMC se muestran en sección separada.",
   "nota": "Pronóstico operacional por ciudad de referencia regional; no reemplaza avisos/alertas/alarma DMC.",
   "regiones": {
@@ -11,11 +11,11 @@
         "lon": -70.65
       },
       "actual": {
-        "temp": 19,
-        "sensacion": 18,
-        "temp_min_hoy": 19,
+        "temp": 18,
+        "sensacion": 17,
+        "temp_min_hoy": 17,
         "temp_max_hoy": 19,
-        "humedad": 59,
+        "humedad": 58,
         "presion": 1018,
         "viento_ms": 5.7,
         "viento_kmh": 20.4,
@@ -25,51 +25,52 @@
         "icono": "☀️",
         "desc": "Despejado",
         "nubes": 3,
-        "visibilidad_m": 10000
+        "visibilidad_m": 10000,
+        "uvi": 0.0
       },
       "horas24": [
         {
           "hora": "00:00",
           "temp": 18,
-          "pop": 20,
-          "lluvia_mm": 0.1,
-          "viento_ms": 1.1,
+          "pop": 28,
+          "lluvia_mm": 0.2,
+          "viento_ms": 1.0,
           "icono": "🌧️",
           "desc": "Lluvia ligera"
         },
         {
           "hora": "03:00",
-          "temp": 15,
+          "temp": 17,
           "pop": 0,
           "lluvia_mm": 0.0,
-          "viento_ms": 1.5,
+          "viento_ms": 1.4,
           "icono": "☀️",
           "desc": "Despejado"
         },
         {
           "hora": "06:00",
-          "temp": 11,
+          "temp": 13,
           "pop": 0,
           "lluvia_mm": 0.0,
-          "viento_ms": 0.5,
-          "icono": "⛅",
-          "desc": "Nubes dispersas"
+          "viento_ms": 0.3,
+          "icono": "🌤️",
+          "desc": "Pocas nubes"
         },
         {
           "hora": "09:00",
           "temp": 9,
           "pop": 0,
           "lluvia_mm": 0.0,
-          "viento_ms": 0.4,
-          "icono": "⛅",
-          "desc": "Nubes dispersas"
+          "viento_ms": 0.2,
+          "icono": "🌥️",
+          "desc": "Nuboso"
         },
         {
           "hora": "12:00",
-          "temp": 10,
+          "temp": 9,
           "pop": 0,
           "lluvia_mm": 0.0,
-          "viento_ms": 1.1,
+          "viento_ms": 0.9,
           "icono": "🌥️",
           "desc": "Nuboso"
         },
@@ -78,7 +79,7 @@
           "temp": 16,
           "pop": 0,
           "lluvia_mm": 0.0,
-          "viento_ms": 2.2,
+          "viento_ms": 2.4,
           "icono": "☀️",
           "desc": "Despejado"
         },
@@ -87,7 +88,7 @@
           "temp": 20,
           "pop": 0,
           "lluvia_mm": 0.0,
-          "viento_ms": 2.9,
+          "viento_ms": 3.1,
           "icono": "☀️",
           "desc": "Despejado"
         },
@@ -96,7 +97,7 @@
           "temp": 17,
           "pop": 3,
           "lluvia_mm": 0.0,
-          "viento_ms": 3.7,
+          "viento_ms": 3.8,
           "icono": "🌥️",
           "desc": "Nuboso"
         }
@@ -106,9 +107,9 @@
           "fecha": "2026-09-03",
           "temp_min": 9,
           "temp_max": 20,
-          "pop_max": 20,
-          "lluvia_mm": 0.1,
-          "viento_max_ms": 3.7,
+          "pop_max": 28,
+          "lluvia_mm": 0.2,
+          "viento_max_ms": 3.8,
           "icono": "☀️",
           "desc": "Despejado",
           "riesgo_operacional": "normal"
@@ -117,20 +118,20 @@
           "fecha": "2026-09-04",
           "temp_min": 9,
           "temp_max": 19,
-          "pop_max": 5,
+          "pop_max": 6,
           "lluvia_mm": 0.0,
-          "viento_max_ms": 3.2,
+          "viento_max_ms": 3.4,
           "icono": "🌥️",
           "desc": "Nuboso",
           "riesgo_operacional": "normal"
         },
         {
           "fecha": "2026-09-05",
-          "temp_min": 10,
-          "temp_max": 21,
+          "temp_min": 11,
+          "temp_max": 20,
           "pop_max": 0,
           "lluvia_mm": 0.0,
-          "viento_max_ms": 2.7,
+          "viento_max_ms": 2.8,
           "icono": "☀️",
           "desc": "Despejado",
           "riesgo_operacional": "normal"
@@ -141,14 +142,14 @@
           "temp_max": 22,
           "pop_max": 0,
           "lluvia_mm": 0.0,
-          "viento_max_ms": 3.0,
+          "viento_max_ms": 3.1,
           "icono": "☀️",
           "desc": "Despejado",
           "riesgo_operacional": "normal"
         },
         {
           "fecha": "2026-09-07",
-          "temp_min": 12,
+          "temp_min": 13,
           "temp_max": 21,
           "pop_max": 0,
           "lluvia_mm": 0.0,
@@ -172,7 +173,7 @@
         "temp_min_hoy": 16,
         "temp_max_hoy": 19,
         "humedad": 55,
-        "presion": 1018,
+        "presion": 1019,
         "viento_ms": 4.6,
         "viento_kmh": 16.7,
         "rafaga_ms": 0.0,
@@ -181,12 +182,13 @@
         "icono": "☀️",
         "desc": "Despejado",
         "nubes": 0,
-        "visibilidad_m": 10000
+        "visibilidad_m": 10000,
+        "uvi": 0.0
       },
       "horas24": [
         {
           "hora": "00:00",
-          "temp": 18,
+          "temp": 19,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 4.0,
@@ -195,7 +197,7 @@
         },
         {
           "hora": "03:00",
-          "temp": 15,
+          "temp": 17,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 3.5,
@@ -204,7 +206,7 @@
         },
         {
           "hora": "06:00",
-          "temp": 12,
+          "temp": 14,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 3.5,
@@ -328,21 +330,22 @@
         "temp_min_hoy": 13,
         "temp_max_hoy": 14,
         "humedad": 71,
-        "presion": 1017,
+        "presion": 1021,
         "viento_ms": 4.1,
         "viento_kmh": 14.8,
         "rafaga_ms": 0.0,
         "rafaga_kmh": 0.0,
         "dir_viento": 260,
-        "icono": "☁️",
-        "desc": "Cubierto",
-        "nubes": 97,
-        "visibilidad_m": 10000
+        "icono": "🌥️",
+        "desc": "Nuboso",
+        "nubes": 79,
+        "visibilidad_m": 10000,
+        "uvi": 0.0
       },
       "horas24": [
         {
           "hora": "00:00",
-          "temp": 12,
+          "temp": 13,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 2.1,
@@ -351,7 +354,7 @@
         },
         {
           "hora": "03:00",
-          "temp": 10,
+          "temp": 12,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 0.9,
@@ -360,7 +363,7 @@
         },
         {
           "hora": "06:00",
-          "temp": 10,
+          "temp": 11,
           "pop": 20,
           "lluvia_mm": 0.1,
           "viento_ms": 1.2,
@@ -492,8 +495,9 @@
         "dir_viento": 280,
         "icono": "☁️",
         "desc": "Cubierto",
-        "nubes": 90,
-        "visibilidad_m": 10000
+        "nubes": 92,
+        "visibilidad_m": 10000,
+        "uvi": 0.0
       },
       "horas24": [
         {
@@ -648,13 +652,14 @@
         "dir_viento": 300,
         "icono": "🌧️",
         "desc": "Lluvia ligera",
-        "nubes": 7,
-        "visibilidad_m": 10000
+        "nubes": 8,
+        "visibilidad_m": 10000,
+        "uvi": 0.0
       },
       "horas24": [
         {
           "hora": "00:00",
-          "temp": 10,
+          "temp": 11,
           "pop": 100,
           "lluvia_mm": 0.5,
           "viento_ms": 1.2,
@@ -663,7 +668,7 @@
         },
         {
           "hora": "03:00",
-          "temp": 9,
+          "temp": 10,
           "pop": 82,
           "lluvia_mm": 0.5,
           "viento_ms": 1.3,
@@ -672,7 +677,7 @@
         },
         {
           "hora": "06:00",
-          "temp": 8,
+          "temp": 9,
           "pop": 46,
           "lluvia_mm": 0.2,
           "viento_ms": 1.4,
@@ -729,7 +734,7 @@
         {
           "fecha": "2026-09-03",
           "temp_min": 6,
-          "temp_max": 10,
+          "temp_max": 11,
           "pop_max": 100,
           "lluvia_mm": 1.4,
           "viento_max_ms": 2.6,
@@ -791,26 +796,27 @@
         "lon": -70.74
       },
       "actual": {
-        "temp": 20,
-        "sensacion": 19,
-        "temp_min_hoy": 20,
-        "temp_max_hoy": 20,
-        "humedad": 52,
+        "temp": 18,
+        "sensacion": 17,
+        "temp_min_hoy": 18,
+        "temp_max_hoy": 18,
+        "humedad": 55,
         "presion": 1018,
-        "viento_ms": 2.6,
-        "viento_kmh": 9.3,
+        "viento_ms": 4.1,
+        "viento_kmh": 14.8,
         "rafaga_ms": 0.0,
         "rafaga_kmh": 0.0,
-        "dir_viento": 210,
+        "dir_viento": 200,
         "icono": "🌧️",
         "desc": "Lluvia ligera",
-        "nubes": 22,
-        "visibilidad_m": 10000
+        "nubes": 23,
+        "visibilidad_m": 10000,
+        "uvi": 0.0
       },
       "horas24": [
         {
           "hora": "00:00",
-          "temp": 17,
+          "temp": 18,
           "pop": 87,
           "lluvia_mm": 0.6,
           "viento_ms": 1.5,
@@ -819,7 +825,7 @@
         },
         {
           "hora": "03:00",
-          "temp": 14,
+          "temp": 16,
           "pop": 25,
           "lluvia_mm": 0.2,
           "viento_ms": 1.3,
@@ -828,12 +834,12 @@
         },
         {
           "hora": "06:00",
-          "temp": 10,
+          "temp": 13,
           "pop": 11,
           "lluvia_mm": 0.0,
           "viento_ms": 1.4,
-          "icono": "☁️",
-          "desc": "Cubierto"
+          "icono": "🌥️",
+          "desc": "Nuboso"
         },
         {
           "hora": "09:00",
@@ -947,26 +953,27 @@
         "lon": -71.66
       },
       "actual": {
-        "temp": 17,
-        "sensacion": 17,
-        "temp_min_hoy": 17,
-        "temp_max_hoy": 17,
-        "humedad": 76,
-        "presion": 1019,
-        "viento_ms": 1.4,
-        "viento_kmh": 5.2,
-        "rafaga_ms": 1.2,
-        "rafaga_kmh": 4.5,
-        "dir_viento": 196,
+        "temp": 16,
+        "sensacion": 15,
+        "temp_min_hoy": 16,
+        "temp_max_hoy": 16,
+        "humedad": 77,
+        "presion": 1020,
+        "viento_ms": 1.9,
+        "viento_kmh": 6.8,
+        "rafaga_ms": 2.2,
+        "rafaga_kmh": 7.8,
+        "dir_viento": 209,
         "icono": "☁️",
         "desc": "Cubierto",
-        "nubes": 95,
-        "visibilidad_m": 10000
+        "nubes": 96,
+        "visibilidad_m": 10000,
+        "uvi": 0.0
       },
       "horas24": [
         {
           "hora": "00:00",
-          "temp": 17,
+          "temp": 16,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 2.5,
@@ -984,12 +991,12 @@
         },
         {
           "hora": "06:00",
-          "temp": 10,
+          "temp": 12,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 2.4,
-          "icono": "⛅",
-          "desc": "Nubes dispersas"
+          "icono": "🌥️",
+          "desc": "Nuboso"
         },
         {
           "hora": "09:00",
@@ -1108,7 +1115,7 @@
         "temp_min_hoy": 9,
         "temp_max_hoy": 9,
         "humedad": 93,
-        "presion": 1017,
+        "presion": 1018,
         "viento_ms": 1.0,
         "viento_kmh": 3.7,
         "rafaga_ms": 0.0,
@@ -1116,8 +1123,9 @@
         "dir_viento": 0,
         "icono": "🌧️",
         "desc": "Lluvia ligera",
-        "nubes": 100,
-        "visibilidad_m": 10000
+        "nubes": 99,
+        "visibilidad_m": 10000,
+        "uvi": 0.0
       },
       "horas24": [
         {
@@ -1140,7 +1148,7 @@
         },
         {
           "hora": "06:00",
-          "temp": 6,
+          "temp": 7,
           "pop": 3,
           "lluvia_mm": 0.0,
           "viento_ms": 2.9,
@@ -1259,11 +1267,11 @@
         "lon": -72.1
       },
       "actual": {
-        "temp": 15,
-        "sensacion": 14,
-        "temp_min_hoy": 15,
-        "temp_max_hoy": 15,
-        "humedad": 63,
+        "temp": 14,
+        "sensacion": 13,
+        "temp_min_hoy": 14,
+        "temp_max_hoy": 14,
+        "humedad": 67,
         "presion": 1020,
         "viento_ms": 2.6,
         "viento_kmh": 9.3,
@@ -1272,13 +1280,14 @@
         "dir_viento": 290,
         "icono": "☁️",
         "desc": "Cubierto",
-        "nubes": 100,
-        "visibilidad_m": 10000
+        "nubes": 99,
+        "visibilidad_m": 10000,
+        "uvi": 0.0
       },
       "horas24": [
         {
           "hora": "00:00",
-          "temp": 12,
+          "temp": 14,
           "pop": 80,
           "lluvia_mm": 0.0,
           "viento_ms": 2.8,
@@ -1287,21 +1296,21 @@
         },
         {
           "hora": "03:00",
+          "temp": 12,
+          "pop": 0,
+          "lluvia_mm": 0.0,
+          "viento_ms": 0.8,
+          "icono": "🌥️",
+          "desc": "Nuboso"
+        },
+        {
+          "hora": "06:00",
           "temp": 9,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 0.8,
           "icono": "⛅",
           "desc": "Nubes dispersas"
-        },
-        {
-          "hora": "06:00",
-          "temp": 6,
-          "pop": 0,
-          "lluvia_mm": 0.0,
-          "viento_ms": 0.8,
-          "icono": "☀️",
-          "desc": "Despejado"
         },
         {
           "hora": "09:00",
@@ -1415,26 +1424,27 @@
         "lon": -70.33
       },
       "actual": {
-        "temp": 22,
-        "sensacion": 21,
-        "temp_min_hoy": 22,
-        "temp_max_hoy": 22,
-        "humedad": 43,
-        "presion": 1014,
-        "viento_ms": 2.4,
-        "viento_kmh": 8.5,
-        "rafaga_ms": 1.5,
-        "rafaga_kmh": 5.3,
-        "dir_viento": 247,
+        "temp": 20,
+        "sensacion": 20,
+        "temp_min_hoy": 20,
+        "temp_max_hoy": 20,
+        "humedad": 55,
+        "presion": 1015,
+        "viento_ms": 1.6,
+        "viento_kmh": 5.9,
+        "rafaga_ms": 1.2,
+        "rafaga_kmh": 4.4,
+        "dir_viento": 260,
         "icono": "☀️",
         "desc": "Despejado",
         "nubes": 1,
-        "visibilidad_m": 10000
+        "visibilidad_m": 10000,
+        "uvi": 0.0
       },
       "horas24": [
         {
           "hora": "00:00",
-          "temp": 22,
+          "temp": 19,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 1.0,
@@ -1443,7 +1453,7 @@
         },
         {
           "hora": "03:00",
-          "temp": 20,
+          "temp": 19,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 0.3,
@@ -1452,7 +1462,7 @@
         },
         {
           "hora": "06:00",
-          "temp": 17,
+          "temp": 18,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 0.4,
@@ -1575,22 +1585,23 @@
         "sensacion": 11,
         "temp_min_hoy": 11,
         "temp_max_hoy": 11,
-        "humedad": 96,
-        "presion": 1017,
-        "viento_ms": 2.4,
-        "viento_kmh": 8.6,
-        "rafaga_ms": 7.1,
-        "rafaga_kmh": 25.6,
-        "dir_viento": 291,
+        "humedad": 93,
+        "presion": 1018,
+        "viento_ms": 1.7,
+        "viento_kmh": 6.0,
+        "rafaga_ms": 4.8,
+        "rafaga_kmh": 17.4,
+        "dir_viento": 307,
         "icono": "🌧️",
         "desc": "Lluvia ligera",
-        "nubes": 82,
-        "visibilidad_m": 10000
+        "nubes": 87,
+        "visibilidad_m": 10000,
+        "uvi": 0.0
       },
       "horas24": [
         {
           "hora": "00:00",
-          "temp": 10,
+          "temp": 11,
           "pop": 100,
           "lluvia_mm": 0.8,
           "viento_ms": 1.1,
@@ -1599,16 +1610,16 @@
         },
         {
           "hora": "03:00",
-          "temp": 8,
+          "temp": 9,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 0.5,
-          "icono": "⛅",
-          "desc": "Nubes dispersas"
+          "icono": "🌥️",
+          "desc": "Nuboso"
         },
         {
           "hora": "06:00",
-          "temp": 6,
+          "temp": 7,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 0.2,
@@ -1665,12 +1676,12 @@
         {
           "fecha": "2026-09-03",
           "temp_min": 5,
-          "temp_max": 10,
+          "temp_max": 11,
           "pop_max": 100,
           "lluvia_mm": 0.9,
           "viento_max_ms": 1.4,
-          "icono": "🌧️",
-          "desc": "Lluvia ligera",
+          "icono": "🌥️",
+          "desc": "Nuboso",
           "riesgo_operacional": "alto"
         },
         {
@@ -1731,22 +1742,23 @@
         "sensacion": 18,
         "temp_min_hoy": 19,
         "temp_max_hoy": 19,
-        "humedad": 73,
+        "humedad": 75,
         "presion": 1015,
-        "viento_ms": 2.0,
-        "viento_kmh": 7.1,
-        "rafaga_ms": 1.7,
-        "rafaga_kmh": 6.2,
-        "dir_viento": 209,
+        "viento_ms": 2.1,
+        "viento_kmh": 7.7,
+        "rafaga_ms": 2.0,
+        "rafaga_kmh": 7.2,
+        "dir_viento": 204,
         "icono": "☀️",
         "desc": "Despejado",
         "nubes": 1,
-        "visibilidad_m": 10000
+        "visibilidad_m": 10000,
+        "uvi": 0.0
       },
       "horas24": [
         {
           "hora": "00:00",
-          "temp": 18,
+          "temp": 19,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 2.1,
@@ -1755,7 +1767,7 @@
         },
         {
           "hora": "03:00",
-          "temp": 17,
+          "temp": 18,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 1.6,
@@ -1764,7 +1776,7 @@
         },
         {
           "hora": "06:00",
-          "temp": 16,
+          "temp": 17,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 1.5,
@@ -1883,26 +1895,27 @@
         "lon": -72.07
       },
       "actual": {
-        "temp": 2,
+        "temp": 1,
         "sensacion": -3,
-        "temp_min_hoy": 2,
-        "temp_max_hoy": 2,
-        "humedad": 86,
-        "presion": 1013,
-        "viento_ms": 4.3,
-        "viento_kmh": 15.4,
-        "rafaga_ms": 7.3,
-        "rafaga_kmh": 26.2,
-        "dir_viento": 286,
+        "temp_min_hoy": 1,
+        "temp_max_hoy": 1,
+        "humedad": 87,
+        "presion": 1014,
+        "viento_ms": 4.0,
+        "viento_kmh": 14.5,
+        "rafaga_ms": 7.2,
+        "rafaga_kmh": 26.0,
+        "dir_viento": 287,
         "icono": "🌥️",
         "desc": "Nuboso",
         "nubes": 79,
-        "visibilidad_m": 10000
+        "visibilidad_m": 10000,
+        "uvi": 0.0
       },
       "horas24": [
         {
           "hora": "00:00",
-          "temp": 2,
+          "temp": 0,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 3.5,
@@ -1911,7 +1924,7 @@
         },
         {
           "hora": "03:00",
-          "temp": 0,
+          "temp": -1,
           "pop": 0,
           "lluvia_mm": 0.0,
           "viento_ms": 3.5,
@@ -2051,14 +2064,15 @@
         "rafaga_kmh": 81.5,
         "dir_viento": 280,
         "icono": "🌧️",
-        "desc": "Lluvia moderada",
+        "desc": "Lluvia ligera",
         "nubes": 98,
-        "visibilidad_m": 4476
+        "visibilidad_m": 5559,
+        "uvi": 0.0
       },
       "horas24": [
         {
           "hora": "00:00",
-          "temp": 5,
+          "temp": 4,
           "pop": 69,
           "lluvia_mm": 1.7,
           "viento_ms": 10.5,

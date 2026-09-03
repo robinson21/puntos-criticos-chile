@@ -17,7 +17,11 @@ from urllib.request import urlopen
 PUBLIC_DIR = '/home/ubuntu/puntos-criticos/public/data'
 FORECAST_URL = 'https://api.openweathermap.org/data/2.5/forecast'
 CURRENT_URL = 'https://api.openweathermap.org/data/2.5/weather'
-API_KEY = os.getenv('OPENWEATHER_API_KEY')
+UV_URL = 'https://api.open-meteo.com/v1/forecast'
+API_KEY = os.getenv('OPENWEATHER_API_KEY')  # requerida; se inyecta via variable de entorno, nunca hardcodeada
+if not API_KEY:
+    raise SystemExit('ERROR: variable de entorno OPENWEATHER_API_KEY no configurada. '
+                     'Configúrala en el entorno donde corre este script (ej. el cron).')
 
 REGIONES = {
     'METROPOLITANA DE SANTIAGO': {'lat': -33.45, 'lon': -70.65, 'ciudad': 'Santiago'},
@@ -77,7 +81,24 @@ def fetch_current(lat, lon):
         'desc': desc,
         'nubes': int(d.get('clouds', {}).get('all', 0)),
         'visibilidad_m': int(d.get('visibility', 0)),
+        # Índice UV desde Open-Meteo (gratis, sin key). OWM /2.5 no entrega uvi
+        # y One Call 3.0 exige suscripción de pago separada.
+        'uvi': fetch_uv(lat, lon),
     }
+
+
+def fetch_uv(lat, lon):
+    """Índice UV actual (0-11+) vía Open-Meteo. Gratis, sin key, CORS abierto.
+    Devuelve None si no se puede obtener (servicio caído, red, etc.)."""
+    try:
+        qs = urlencode({'latitude': lat, 'longitude': lon,
+                        'current': 'uv_index', 'timezone': 'auto'})
+        with urlopen(f'{UV_URL}?{qs}', timeout=8) as r:
+            d = json.loads(r.read().decode('utf-8'))
+        uv = d.get('current', {}).get('uv_index')
+        return None if uv is None else round(float(uv), 1)
+    except Exception:
+        return None
 
 
 def describe(code):
@@ -170,7 +191,7 @@ def actualizar():
         try:
             data['regiones'][region] = summarize_region(region, cfg)
             print(f'✅ {region}')
-            time.sleep(0.3)
+            time.sleep(0.8)
         except Exception as e:
             errores[region] = str(e)
             print(f'❌ {region}: {e}')

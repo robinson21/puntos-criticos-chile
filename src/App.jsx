@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { DataProvider, useData } from './data/DataContext';
 import { FilterProvider } from './data/FilterContext';
 import KPIs from './components/KPIs';
@@ -9,6 +9,44 @@ import Charts from './components/Charts';
 import Insights from './components/Insights';
 import Alertas from './components/Alertas';
 import PronosticoRegional from './components/PronosticoRegional';
+
+// Estado global de tema (claro por defecto como pidió el usuario).
+// Se guarda en localStorage y se aplica al <html data-theme="light|dark">.
+const TEMA_KEY = 'pc-tema';
+function temaInicial() {
+  try {
+    return localStorage.getItem(TEMA_KEY) || 'light';
+  } catch (e) {
+    return 'light';
+  }
+}
+
+function ThemeToggle() {
+  const [tema, setTema] = useState(temaInicial);
+  // `setTema` con un updater inline: al montar, asegura estado coherente.
+  // Aplica el atributo data-theme en el <html> cada vez que cambia el tema.
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', tema);
+  }, [tema]);
+
+  const cambiar = () => {
+    const nuevo = tema === 'light' ? 'dark' : 'light';
+    setTema(nuevo);
+    try { localStorage.setItem(TEMA_KEY, nuevo); } catch (e) { /* noop */ }
+  };
+
+  return (
+    <button
+      className="theme-toggle"
+      onClick={cambiar}
+      title={tema === 'light' ? 'Cambiar a modo oscuro' : 'Cambiar a modo claro'}
+      aria-label="Cambiar tema claro/oscuro"
+    >
+      {tema === 'light' ? '🌙' : '☀️'}
+      <span className="theme-label">{tema === 'light' ? 'Oscuro' : 'Claro'}</span>
+    </button>
+  );
+}
 
 function Dashboard() {
   const { records, metadata, loading, loadingRegion, error, hasRegion } = useData();
@@ -48,24 +86,32 @@ function Dashboard() {
           <div className="meta">
             <div><b>Fuente:</b> SENAPRED</div>
             {metadata && <div><b>Datos:</b> {metadata.total.toLocaleString('es-CL')} · {metadata.comunas} comunas</div>}
+            <ThemeToggle />
           </div>
         </header>
 
-        <KPIs />
         <Filters />
-        <PronosticoRegional />
+
+        {/* MOSTRAR SELECCIÓN / FILTROS Y LUEGO EL MAPA COMO PROTAGONISTA */}
         {loadingRegion && <div className="loading-bar">Cargando datos regionales...</div>}
+
+        {/* ===== MAPA PROTAGONISTA (ancho completo, arriba) ===== */}
         {hasRegion ? (
-          <div className="grid">
-            <MapView />
-            <Ranking />
-          </div>
+          <MapView />
         ) : (
           <div className="empty-state">
-            <p>Selecciona una región para ver el mapa y ranking detallado</p>
-            <p className="sub">Los datos globales (KPI, causas, soluciones) se muestran abajo sin necesidad de descargar nada</p>
+            <p>Selecciona una región para ver el mapa de puntos críticos detallado</p>
+            <p className="sub">Elige una región arriba para explorar el mapa, ranking y pronóstico</p>
           </div>
         )}
+
+        {/* Ranking desplegable (plegado por defecto): solo ocupa espacio al abrirlo */}
+        {hasRegion && <Ranking />}
+
+        {/* Pronóstico del clima: AHORA va después del mapa para no empujarlo hacia abajo */}
+        <PronosticoRegional />
+
+        <KPIs />
         <Charts />
         <Insights />
         <Alertas />
