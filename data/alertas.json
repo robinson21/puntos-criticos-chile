@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-05T06:00:41.962107",
+  "actualizado": "2026-09-05T12:00:45.464972",
   "totales": {
     "avisos": 3,
-    "alertas": 2,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 5
+    "total": 4
   },
   "alertas": [
     {
@@ -44,25 +44,6 @@
       "regiones": [
         "Antofagasta",
         "Atacama"
-      ]
-    },
-    {
-      "id": 5630,
-      "tipo": "Alerta",
-      "codigo": "AA156/2026",
-      "emision": "Viernes 4 de septiembre del 2026 a las 12:48 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Alta presión fría",
-      "desde": "la madrugada del sábado 05 de septiembre del 2026",
-      "hasta": "la mañana del sábado 05 de septiembre del 2026",
-      "observacion": "Formación de escarcha",
-      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte)",
-      "titulo": "Heladas Moderadas a Intensas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "🥶",
-      "color": "#f97316",
-      "regiones": [
-        "Aysén",
-        "Los Lagos"
       ]
     },
     {
