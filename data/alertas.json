@@ -1,48 +1,30 @@
 {
-  "actualizado": "2026-09-05T00:00:38.367596",
+  "actualizado": "2026-09-05T06:00:41.962107",
   "totales": {
-    "avisos": 5,
+    "avisos": 3,
     "alertas": 2,
     "alarmas": 0,
-    "total": 7
+    "total": 5
   },
   "alertas": [
     {
-      "id": 5631,
-      "tipo": "Aviso",
-      "codigo": "A469/2026",
-      "emision": "Viernes 4 de septiembre del 2026 a las 12:48 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Alta presión fría",
-      "desde": "la madrugada del sábado 05 de septiembre del 2026",
-      "hasta": "la mañana del domingo 06 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte, Patagonia Subandina Sur)",
-      "titulo": "Heladas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "🥶",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén",
-        "Los Lagos"
-      ]
-    },
-    {
-      "id": 5630,
+      "id": 5627,
       "tipo": "Alerta",
-      "codigo": "AA156/2026",
-      "emision": "Viernes 4 de septiembre del 2026 a las 12:48 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Alta presión fría",
-      "desde": "la madrugada del sábado 05 de septiembre del 2026",
-      "hasta": "la mañana del sábado 05 de septiembre del 2026",
-      "observacion": "Formación de escarcha",
-      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte)",
-      "titulo": "Heladas Moderadas a Intensas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "🥶",
+      "codigo": "AA155/2026",
+      "emision": "Jueves 3 de septiembre del 2026 a las 10:28 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Altas presiones",
+      "desde": "la mañana del sábado 05 de septiembre del 2026",
+      "hasta": "la mañana del domingo 06 de septiembre del 2026",
+      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
+      "zonas": "Biobío (Valle, Precordillera, Cordillera) | La Araucanía (Cordillera) | Los Ríos (Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en zonas de las regiones del Biobío, La Araucanía y Los Ríos",
+      "icono": "💨",
       "color": "#f97316",
       "regiones": [
-        "Aysén",
-        "Los Lagos"
+        "Biobío",
+        "La Araucanía",
+        "Los Ríos"
       ]
     },
     {
@@ -65,10 +47,48 @@
       ]
     },
     {
-      "id": 5628,
+      "id": 5630,
+      "tipo": "Alerta",
+      "codigo": "AA156/2026",
+      "emision": "Viernes 4 de septiembre del 2026 a las 12:48 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Alta presión fría",
+      "desde": "la madrugada del sábado 05 de septiembre del 2026",
+      "hasta": "la mañana del sábado 05 de septiembre del 2026",
+      "observacion": "Formación de escarcha",
+      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte)",
+      "titulo": "Heladas Moderadas a Intensas en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "🥶",
+      "color": "#f97316",
+      "regiones": [
+        "Aysén",
+        "Los Lagos"
+      ]
+    },
+    {
+      "id": 5631,
       "tipo": "Aviso",
-      "codigo": "A465-2/2026",
-      "emision": "Jueves 3 de septiembre del 2026 a las 10:27 hrs.",
+      "codigo": "A469/2026",
+      "emision": "Viernes 4 de septiembre del 2026 a las 12:48 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Alta presión fría",
+      "desde": "la madrugada del sábado 05 de septiembre del 2026",
+      "hasta": "la mañana del domingo 06 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte, Patagonia Subandina Sur)",
+      "titulo": "Heladas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "🥶",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "Los Lagos"
+      ]
+    },
+    {
+      "id": 5632,
+      "tipo": "Aviso",
+      "codigo": "A465-3/2026",
+      "emision": "Viernes 4 de septiembre del 2026 a las 23:17 hrs.",
       "fenomeno": "Viento",
       "condicion": "Altas presiones",
       "desde": "la mañana del sábado 05 de septiembre del 2026",
@@ -84,60 +104,6 @@
         "Los Lagos",
         "Los Ríos",
         "Ñuble"
-      ]
-    },
-    {
-      "id": 5627,
-      "tipo": "Alerta",
-      "codigo": "AA155/2026",
-      "emision": "Jueves 3 de septiembre del 2026 a las 10:28 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Altas presiones",
-      "desde": "la mañana del sábado 05 de septiembre del 2026",
-      "hasta": "la mañana del domingo 06 de septiembre del 2026",
-      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
-      "zonas": "Biobío (Valle, Precordillera, Cordillera) | La Araucanía (Cordillera) | Los Ríos (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas de las regiones del Biobío, La Araucanía y Los Ríos",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5626,
-      "tipo": "Aviso",
-      "codigo": "A466/2026",
-      "emision": "Miércoles 2 de septiembre del 2026 a las 13:22 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la mañana del viernes 04 de septiembre del 2026",
-      "hasta": "la noche del viernes 04 de septiembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Litoral Provincia de Huasco",
-      "titulo": "Viento Normal a Moderado en Litoral Provincia de Huasco",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
-    },
-    {
-      "id": 5624,
-      "tipo": "Aviso",
-      "codigo": "A468/2026",
-      "emision": "Miércoles 2 de septiembre del 2026 a las 13:24 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la mañana del viernes 04 de septiembre del 2026",
-      "hasta": "la tarde del viernes 04 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa)",
-      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Atacama"
       ]
     }
   ]
