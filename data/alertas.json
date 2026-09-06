@@ -1,71 +1,48 @@
 {
-  "actualizado": "2026-09-06T12:00:09.380667",
+  "actualizado": "2026-09-06T18:00:12.767701",
   "totales": {
     "avisos": 2,
-    "alertas": 2,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 4
+    "total": 3
   },
   "alertas": [
     {
-      "id": 5627,
-      "tipo": "Alerta",
-      "codigo": "AA155/2026",
-      "emision": "Jueves 3 de septiembre del 2026 a las 10:28 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Altas presiones",
-      "desde": "la mañana del sábado 05 de septiembre del 2026",
-      "hasta": "la mañana del domingo 06 de septiembre del 2026",
-      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
-      "zonas": "Biobío (Valle, Precordillera, Cordillera) | La Araucanía (Cordillera) | Los Ríos (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas de las regiones del Biobío, La Araucanía y Los Ríos",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5632,
+      "id": 5637,
       "tipo": "Aviso",
-      "codigo": "A465-3/2026",
-      "emision": "Viernes 4 de septiembre del 2026 a las 23:17 hrs.",
+      "codigo": "A470/2026",
+      "emision": "Domingo 6 de septiembre del 2026 a las 14:34 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Altas presiones",
-      "desde": "la mañana del sábado 05 de septiembre del 2026",
-      "hasta": "la mañana del domingo 06 de septiembre del 2026",
-      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
-      "zonas": "&Ntilde;uble (Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa) | La Araucanía (Precordillera) | Los Ríos (Precordillera) | Los Lagos (Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de &Ntilde;uble a la región de Los Lagos",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del miércoles 09 de septiembre del 2026",
+      "hasta": "la mañana del jueves 10 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
       "icono": "💨",
       "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Ñuble"
-      ]
+      "regiones": []
     },
     {
-      "id": 5633,
+      "id": 5636,
       "tipo": "Aviso",
-      "codigo": "A467-2/2026",
-      "emision": "Sábado 5 de septiembre del 2026 a las 13:56 hrs.",
+      "codigo": "A467-4/2026",
+      "emision": "Domingo 6 de septiembre del 2026 a las 14:17 hrs.",
       "fenomeno": "Viento",
       "condicion": "Corriente en chorro",
-      "desde": "la tarde del sábado 05 de septiembre del 2026",
-      "hasta": "la noche del jueves 10 de septiembre del 2026",
+      "desde": "la tarde del domingo 06 de septiembre del 2026",
+      "hasta": "la tarde del viernes 11 de septiembre del 2026",
       "observacion": "Probabilidad de ventisca",
-      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta y Atacama",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera) | Coquimbo (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Coquimbo",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
-        "Atacama"
+        "Arica y Parinacota",
+        "Atacama",
+        "Coquimbo",
+        "Tarapacá"
       ]
     },
     {
