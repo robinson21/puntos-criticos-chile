@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-05T18:00:58.382045",
+  "actualizado": "2026-09-06T00:00:02.915738",
   "totales": {
-    "avisos": 3,
-    "alertas": 1,
+    "avisos": 2,
+    "alertas": 2,
     "alarmas": 0,
     "total": 4
   },
@@ -28,44 +28,6 @@
       ]
     },
     {
-      "id": 5629,
-      "tipo": "Aviso",
-      "codigo": "A467-1/2026",
-      "emision": "Jueves 3 de septiembre del 2026 a las 11:35 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del sábado 05 de septiembre del 2026",
-      "hasta": "la noche del martes 08 de septiembre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5631,
-      "tipo": "Aviso",
-      "codigo": "A469/2026",
-      "emision": "Viernes 4 de septiembre del 2026 a las 12:48 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Alta presión fría",
-      "desde": "la madrugada del sábado 05 de septiembre del 2026",
-      "hasta": "la mañana del domingo 06 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Los Lagos (Patagonia Subandina) | Aysén (Patagonia Subandina Norte, Patagonia Subandina Sur)",
-      "titulo": "Heladas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "🥶",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén",
-        "Los Lagos"
-      ]
-    },
-    {
       "id": 5632,
       "tipo": "Aviso",
       "codigo": "A465-3/2026",
@@ -85,6 +47,43 @@
         "Los Lagos",
         "Los Ríos",
         "Ñuble"
+      ]
+    },
+    {
+      "id": 5633,
+      "tipo": "Aviso",
+      "codigo": "A467-2/2026",
+      "emision": "Sábado 5 de septiembre del 2026 a las 13:56 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del sábado 05 de septiembre del 2026",
+      "hasta": "la noche del jueves 10 de septiembre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5634,
+      "tipo": "Alerta",
+      "codigo": "AA157/2026",
+      "emision": "Sábado 5 de septiembre del 2026 a las 13:56 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la mañana del martes 08 de septiembre del 2026",
+      "hasta": "la noche del miércoles 09 de septiembre del 2026",
+      "observacion": "Desarrollo de ventisca",
+      "zonas": "Atacama (Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en cordillera de la región de Atacama",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Atacama"
       ]
     }
   ]
