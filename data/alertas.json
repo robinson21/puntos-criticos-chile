@@ -1,12 +1,44 @@
 {
-  "actualizado": "2026-09-08T12:00:47.263508",
+  "actualizado": "2026-09-08T18:00:50.480988",
   "totales": {
-    "avisos": 3,
+    "avisos": 5,
     "alertas": 1,
     "alarmas": 0,
-    "total": 4
+    "total": 6
   },
   "alertas": [
+    {
+      "id": 5643,
+      "tipo": "Aviso",
+      "codigo": "A473/2026",
+      "emision": "Martes 8 de septiembre del 2026 a las 14:40 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la noche del miércoles 09 de septiembre del 2026",
+      "hasta": "la noche del jueves 10 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Precipitaciones Normales a Moderadas en Isla de Pascua",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 5642,
+      "tipo": "Aviso",
+      "codigo": "A472/2026",
+      "emision": "Martes 8 de septiembre del 2026 a las 09:53 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del martes 08 de septiembre del 2026",
+      "hasta": "la noche del martes 08 de septiembre del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Entre Caleta El Cobre y la Provincia de Chañaral",
+      "titulo": "Probables Tormentas Eléctricas en Entre Caleta El Cobre y la Provincia de Chañaral",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": []
+    },
     {
       "id": 5641,
       "tipo": "Aviso",
