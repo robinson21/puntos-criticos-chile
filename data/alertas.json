@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-07T18:00:35.391235",
+  "actualizado": "2026-09-08T00:00:39.794147",
   "totales": {
     "avisos": 3,
     "alertas": 1,
@@ -7,6 +7,28 @@
     "total": 4
   },
   "alertas": [
+    {
+      "id": 5641,
+      "tipo": "Aviso",
+      "codigo": "A467-6/2026",
+      "emision": "Lunes 7 de septiembre del 2026 a las 16:07 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del lunes 07 de septiembre del 2026",
+      "hasta": "la tarde del viernes 11 de septiembre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Salar, Cordillera) | Atacama (Precordillera) | Coquimbo (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Coquimbo",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Atacama",
+        "Coquimbo",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5640,
       "tipo": "Aviso",
@@ -23,28 +45,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta"
-      ]
-    },
-    {
-      "id": 5639,
-      "tipo": "Aviso",
-      "codigo": "A467-5/2026",
-      "emision": "Lunes 7 de septiembre del 2026 a las 11:52 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del lunes 07 de septiembre del 2026",
-      "hasta": "la tarde del viernes 11 de septiembre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Salar, Cordillera) | Atacama (Precordillera, Cordillera) | Coquimbo (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Coquimbo",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Atacama",
-        "Coquimbo",
-        "Tarapacá"
       ]
     },
     {
