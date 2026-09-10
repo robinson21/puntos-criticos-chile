@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-10T06:00:39.488377",
+  "actualizado": "2026-09-10T12:00:42.563108",
   "totales": {
     "avisos": 6,
     "alertas": 1,
@@ -7,6 +7,28 @@
     "total": 7
   },
   "alertas": [
+    {
+      "id": 5649,
+      "tipo": "Aviso",
+      "codigo": "A475-2/2026",
+      "emision": "Jueves 10 de septiembre del 2026 a las 06:46 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del jueves 10 de septiembre del 2026",
+      "hasta": "la noche del viernes 11 de septiembre del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Maule",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
     {
       "id": 5648,
       "tipo": "Aviso",
@@ -46,28 +68,6 @@
         "Arica y Parinacota",
         "Coquimbo",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5646,
-      "tipo": "Aviso",
-      "codigo": "A475-1/2026",
-      "emision": "Miércoles 9 de septiembre del 2026 a las 14:29 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del miércoles 09 de septiembre del 2026",
-      "hasta": "la noche del viernes 11 de septiembre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Maule",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
       ]
     },
     {
