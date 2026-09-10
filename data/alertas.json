@@ -1,23 +1,43 @@
 {
-  "actualizado": "2026-09-10T12:00:42.563108",
+  "actualizado": "2026-09-10T18:00:45.992870",
   "totales": {
-    "avisos": 6,
+    "avisos": 4,
     "alertas": 1,
     "alarmas": 0,
-    "total": 7
+    "total": 5
   },
   "alertas": [
     {
-      "id": 5649,
+      "id": 5651,
       "tipo": "Aviso",
-      "codigo": "A475-2/2026",
-      "emision": "Jueves 10 de septiembre del 2026 a las 06:46 hrs.",
+      "codigo": "A467-8/2026",
+      "emision": "Jueves 10 de septiembre del 2026 a las 14:55 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del jueves 10 de septiembre del 2026",
+      "hasta": "la tarde del domingo 13 de septiembre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5650,
+      "tipo": "Aviso",
+      "codigo": "A475-3/2026",
+      "emision": "Jueves 10 de septiembre del 2026 a las 11:32 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Vaguada en altura",
       "desde": "la tarde del jueves 10 de septiembre del 2026",
       "hasta": "la noche del viernes 11 de septiembre del 2026",
       "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Precordillera, Cordillera)",
+      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Cordillera Costa, Valle, Precordillera, Cordillera)",
       "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Maule",
       "icono": "⚡",
       "color": "#fbbf24",
@@ -50,27 +70,6 @@
       ]
     },
     {
-      "id": 5647,
-      "tipo": "Aviso",
-      "codigo": "A467-7/2026",
-      "emision": "Miércoles 9 de septiembre del 2026 a las 14:45 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del miércoles 09 de septiembre del 2026",
-      "hasta": "la tarde del sábado 12 de septiembre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Coquimbo (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá, Antofagasta y Coquimbo",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Coquimbo",
-        "Tarapacá"
-      ]
-    },
-    {
       "id": 5644,
       "tipo": "Aviso",
       "codigo": "A474/2026",
@@ -87,22 +86,6 @@
       "regiones": [
         "Biobío"
       ]
-    },
-    {
-      "id": 5643,
-      "tipo": "Aviso",
-      "codigo": "A473/2026",
-      "emision": "Martes 8 de septiembre del 2026 a las 14:40 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la noche del miércoles 09 de septiembre del 2026",
-      "hasta": "la noche del jueves 10 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Precipitaciones Normales a Moderadas en Isla de Pascua",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": []
     },
     {
       "id": 5638,
@@ -122,22 +105,6 @@
         "Antofagasta",
         "Atacama"
       ]
-    },
-    {
-      "id": 5637,
-      "tipo": "Aviso",
-      "codigo": "A470/2026",
-      "emision": "Domingo 6 de septiembre del 2026 a las 14:34 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del miércoles 09 de septiembre del 2026",
-      "hasta": "la mañana del jueves 10 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
     }
   ]
 }
