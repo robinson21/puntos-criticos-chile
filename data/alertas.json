@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-11T12:00:55.960937",
+  "actualizado": "2026-09-11T18:00:02.965288",
   "totales": {
     "avisos": 4,
     "alertas": 1,
@@ -8,21 +8,22 @@
   },
   "alertas": [
     {
-      "id": 5655,
+      "id": 5656,
       "tipo": "Alerta",
-      "codigo": "AA159-1/2026",
-      "emision": "Viernes 11 de septiembre del 2026 a las 05:59 hrs.",
+      "codigo": "AA159-2/2026",
+      "emision": "Viernes 11 de septiembre del 2026 a las 10:11 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Vaguada en altura",
-      "desde": "la madrugada del viernes 11 de septiembre del 2026",
+      "desde": "la mañana del viernes 11 de septiembre del 2026",
       "hasta": "la noche del viernes 11 de septiembre del 2026",
       "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Maule (Precordillera, Cordillera)",
-      "titulo": "Tormentas Eléctricas en zonas de la región del Maule",
+      "zonas": "O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
+      "titulo": "Tormentas Eléctricas en zonas de las regiones de O&#039;Higgins y Maule",
       "icono": "⚡",
       "color": "#f97316",
       "regiones": [
-        "Maule"
+        "Maule",
+        "O'Higgins"
       ]
     },
     {
