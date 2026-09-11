@@ -1,12 +1,33 @@
 {
-  "actualizado": "2026-09-10T18:00:45.992870",
+  "actualizado": "2026-09-11T00:00:49.993268",
   "totales": {
     "avisos": 4,
-    "alertas": 1,
+    "alertas": 2,
     "alarmas": 0,
-    "total": 5
+    "total": 6
   },
   "alertas": [
+    {
+      "id": 5653,
+      "tipo": "Alerta",
+      "codigo": "AA158-1/2026",
+      "emision": "Jueves 10 de septiembre del 2026 a las 18:48 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del jueves 10 de septiembre del 2026",
+      "hasta": "la noche del jueves 10 de septiembre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Coquimbo (Precordillera y valles precordilleranos) | Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O&#039;Higgins (Precordillera)",
+      "titulo": "Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de O&#039;Higgins",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "Coquimbo",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
     {
       "id": 5651,
       "tipo": "Aviso",
