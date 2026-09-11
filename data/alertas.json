@@ -1,31 +1,29 @@
 {
-  "actualizado": "2026-09-11T00:00:49.993268",
+  "actualizado": "2026-09-11T06:00:53.061581",
   "totales": {
     "avisos": 4,
-    "alertas": 2,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 6
+    "total": 5
   },
   "alertas": [
     {
-      "id": 5653,
+      "id": 5654,
       "tipo": "Alerta",
-      "codigo": "AA158-1/2026",
-      "emision": "Jueves 10 de septiembre del 2026 a las 18:48 hrs.",
+      "codigo": "AA159/2026",
+      "emision": "Viernes 11 de septiembre del 2026 a las 02:08 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Vaguada en altura",
-      "desde": "la tarde del jueves 10 de septiembre del 2026",
-      "hasta": "la noche del jueves 10 de septiembre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos) | Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O&#039;Higgins (Precordillera)",
-      "titulo": "Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de O&#039;Higgins",
+      "desde": "la madrugada del viernes 11 de septiembre del 2026",
+      "hasta": "la madrugada del viernes 11 de septiembre del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera)",
+      "titulo": "Tormentas Eléctricas en zonas de las regiones de O&#039;Higgins y Maule",
       "icono": "⚡",
       "color": "#f97316",
       "regiones": [
-        "Coquimbo",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
+        "Maule",
+        "O'Higgins"
       ]
     },
     {
@@ -106,25 +104,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Biobío"
-      ]
-    },
-    {
-      "id": 5638,
-      "tipo": "Alerta",
-      "codigo": "AA157-1/2026",
-      "emision": "Lunes 7 de septiembre del 2026 a las 11:52 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del lunes 07 de septiembre del 2026",
-      "hasta": "la noche del jueves 10 de septiembre del 2026",
-      "observacion": "Desarrollo de ventisca",
-      "zonas": "Antofagasta (Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
       ]
     }
   ]
