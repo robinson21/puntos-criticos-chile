@@ -1,49 +1,28 @@
 {
-  "actualizado": "2026-09-12T00:00:07.579468",
+  "actualizado": "2026-09-12T06:00:22.581977",
   "totales": {
-    "avisos": 4,
+    "avisos": 3,
     "alertas": 1,
     "alarmas": 0,
-    "total": 5
+    "total": 4
   },
   "alertas": [
     {
-      "id": 5656,
-      "tipo": "Alerta",
-      "codigo": "AA159-2/2026",
-      "emision": "Viernes 11 de septiembre del 2026 a las 10:11 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la mañana del viernes 11 de septiembre del 2026",
-      "hasta": "la noche del viernes 11 de septiembre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
-      "titulo": "Tormentas Eléctricas en zonas de las regiones de O&#039;Higgins y Maule",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": [
-        "Maule",
-        "O'Higgins"
-      ]
-    },
-    {
-      "id": 5651,
+      "id": 5644,
       "tipo": "Aviso",
-      "codigo": "A467-8/2026",
-      "emision": "Jueves 10 de septiembre del 2026 a las 14:55 hrs.",
+      "codigo": "A474/2026",
+      "emision": "Miércoles 9 de septiembre del 2026 a las 12:43 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del jueves 10 de septiembre del 2026",
-      "hasta": "la tarde del domingo 13 de septiembre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
+      "condicion": "Altas presiones",
+      "desde": "la noche del viernes 11 de septiembre del 2026",
+      "hasta": "la noche del sábado 12 de septiembre del 2026",
+      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
+      "zonas": "Biobío (Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de la región del Biobío",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
+        "Biobío"
       ]
     },
     {
@@ -69,41 +48,43 @@
       ]
     },
     {
-      "id": 5648,
+      "id": 5651,
       "tipo": "Aviso",
-      "codigo": "A476/2026",
-      "emision": "Miércoles 9 de septiembre del 2026 a las 14:46 hrs.",
+      "codigo": "A467-8/2026",
+      "emision": "Jueves 10 de septiembre del 2026 a las 14:55 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la mañana del viernes 11 de septiembre del 2026",
-      "hasta": "la noche del viernes 11 de septiembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
-      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del jueves 10 de septiembre del 2026",
+      "hasta": "la tarde del domingo 13 de septiembre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
-        "Atacama",
+        "Arica y Parinacota",
         "Tarapacá"
       ]
     },
     {
-      "id": 5644,
-      "tipo": "Aviso",
-      "codigo": "A474/2026",
-      "emision": "Miércoles 9 de septiembre del 2026 a las 12:43 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Altas presiones",
+      "id": 5657,
+      "tipo": "Alerta",
+      "codigo": "AA159-3/2026",
+      "emision": "Viernes 11 de septiembre del 2026 a las 21:03 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
       "desde": "la noche del viernes 11 de septiembre del 2026",
       "hasta": "la noche del sábado 12 de septiembre del 2026",
-      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
-      "zonas": "Biobío (Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
+      "titulo": "Tormentas Eléctricas en zonas de las regiones Metropolitana, O&#039;Higgins y Maule",
+      "icono": "⚡",
+      "color": "#f97316",
       "regiones": [
-        "Biobío"
+        "Maule",
+        "Metropolitana",
+        "O'Higgins"
       ]
     }
   ]
