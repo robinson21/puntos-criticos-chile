@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-12T06:00:22.581977",
+  "actualizado": "2026-09-12T12:00:33.590445",
   "totales": {
-    "avisos": 3,
-    "alertas": 1,
+    "avisos": 2,
+    "alertas": 0,
     "alarmas": 0,
-    "total": 4
+    "total": 2
   },
   "alertas": [
     {
@@ -26,28 +26,6 @@
       ]
     },
     {
-      "id": 5650,
-      "tipo": "Aviso",
-      "codigo": "A475-3/2026",
-      "emision": "Jueves 10 de septiembre del 2026 a las 11:32 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del jueves 10 de septiembre del 2026",
-      "hasta": "la noche del viernes 11 de septiembre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Maule",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
       "id": 5651,
       "tipo": "Aviso",
       "codigo": "A467-8/2026",
@@ -65,26 +43,6 @@
         "Antofagasta",
         "Arica y Parinacota",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5657,
-      "tipo": "Alerta",
-      "codigo": "AA159-3/2026",
-      "emision": "Viernes 11 de septiembre del 2026 a las 21:03 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la noche del viernes 11 de septiembre del 2026",
-      "hasta": "la noche del sábado 12 de septiembre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
-      "titulo": "Tormentas Eléctricas en zonas de las regiones Metropolitana, O&#039;Higgins y Maule",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": [
-        "Maule",
-        "Metropolitana",
-        "O'Higgins"
       ]
     }
   ]
