@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-12T18:00:36.589759",
+  "actualizado": "2026-09-13T00:00:43.294477",
   "totales": {
     "avisos": 2,
     "alertas": 0,
@@ -7,6 +7,26 @@
     "total": 2
   },
   "alertas": [
+    {
+      "id": 5658,
+      "tipo": "Aviso",
+      "codigo": "A467-9/2026",
+      "emision": "Sábado 12 de septiembre del 2026 a las 15:57 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del sábado 12 de septiembre del 2026",
+      "hasta": "la noche del domingo 13 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5644,
       "tipo": "Aviso",
@@ -23,26 +43,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Biobío"
-      ]
-    },
-    {
-      "id": 5651,
-      "tipo": "Aviso",
-      "codigo": "A467-8/2026",
-      "emision": "Jueves 10 de septiembre del 2026 a las 14:55 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del jueves 10 de septiembre del 2026",
-      "hasta": "la tarde del domingo 13 de septiembre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
       ]
     }
   ]
