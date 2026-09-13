@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-13T00:00:43.294477",
+  "actualizado": "2026-09-13T06:00:46.471363",
   "totales": {
-    "avisos": 2,
+    "avisos": 1,
     "alertas": 0,
     "alarmas": 0,
-    "total": 2
+    "total": 1
   },
   "alertas": [
     {
@@ -25,24 +25,6 @@
         "Antofagasta",
         "Arica y Parinacota",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5644,
-      "tipo": "Aviso",
-      "codigo": "A474/2026",
-      "emision": "Miércoles 9 de septiembre del 2026 a las 12:43 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Altas presiones",
-      "desde": "la noche del viernes 11 de septiembre del 2026",
-      "hasta": "la noche del sábado 12 de septiembre del 2026",
-      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
-      "zonas": "Biobío (Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío"
       ]
     }
   ]
