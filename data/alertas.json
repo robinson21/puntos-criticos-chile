@@ -1,31 +1,10 @@
 {
-  "actualizado": "2026-09-13T18:00:53.589288",
+  "actualizado": "2026-09-14T06:01:00.581998",
   "totales": {
-    "avisos": 1,
+    "avisos": 0,
     "alertas": 0,
     "alarmas": 0,
-    "total": 1
+    "total": 0
   },
-  "alertas": [
-    {
-      "id": 5658,
-      "tipo": "Aviso",
-      "codigo": "A467-9/2026",
-      "emision": "Sábado 12 de septiembre del 2026 a las 15:57 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del sábado 12 de septiembre del 2026",
-      "hasta": "la noche del domingo 13 de septiembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    }
-  ]
+  "alertas": []
 }
