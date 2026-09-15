@@ -1,10 +1,68 @@
 {
-  "actualizado": "2026-09-14T18:00:08.970007",
+  "actualizado": "2026-09-15T00:00:19.582700",
   "totales": {
-    "avisos": 0,
+    "avisos": 3,
     "alertas": 0,
     "alarmas": 0,
-    "total": 0
+    "total": 3
   },
-  "alertas": []
+  "alertas": [
+    {
+      "id": 5662,
+      "tipo": "Aviso",
+      "codigo": "A478-1/2026",
+      "emision": "Lunes 14 de septiembre del 2026 a las 15:28 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la madrugada del viernes 18 de septiembre del 2026",
+      "hasta": "la noche del viernes 18 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Litoral, Cordillera Costa, Pampa) | Tarapacá (Litoral, Cordillera Costa, Pampa)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota y Tarapacá",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5661,
+      "tipo": "Aviso",
+      "codigo": "A477/2026",
+      "emision": "Lunes 14 de septiembre del 2026 a las 15:02 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Vaguada en altura",
+      "desde": "la mañana del jueves 17 de septiembre del 2026",
+      "hasta": "la madrugada del viernes 18 de septiembre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
+      "titulo": "Nevadas Normales a Moderadas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5659,
+      "tipo": "Aviso",
+      "codigo": "A479/2026",
+      "emision": "Lunes 14 de septiembre del 2026 a las 15:03 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del martes 15 de septiembre del 2026",
+      "hasta": "la tarde del miércoles 16 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa)",
+      "titulo": "Altas Temperaturas en pampa de las regiones de Tarapacá y Antofagasta",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Tarapacá"
+      ]
+    }
+  ]
 }
