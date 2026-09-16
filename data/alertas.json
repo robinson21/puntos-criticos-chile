@@ -1,12 +1,68 @@
 {
-  "actualizado": "2026-09-15T18:00:36.279363",
+  "actualizado": "2026-09-16T00:00:41.496370",
   "totales": {
-    "avisos": 3,
+    "avisos": 6,
     "alertas": 0,
     "alarmas": 0,
-    "total": 3
+    "total": 6
   },
   "alertas": [
+    {
+      "id": 5665,
+      "tipo": "Aviso",
+      "codigo": "A482/2026",
+      "emision": "Martes 15 de septiembre del 2026 a las 15:05 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la madrugada del viernes 18 de septiembre del 2026",
+      "hasta": "la noche del viernes 18 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Arica y Parinacota (Litoral)",
+      "titulo": "Altas Temperaturas en litoral de la región de Arica y Parinacota",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Arica y Parinacota"
+      ]
+    },
+    {
+      "id": 5664,
+      "tipo": "Aviso",
+      "codigo": "A481/2026",
+      "emision": "Martes 15 de septiembre del 2026 a las 15:03 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Vaguada en altura",
+      "desde": "la mañana del jueves 17 de septiembre del 2026",
+      "hasta": "la noche del viernes 18 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Arica y Parinacota (Precordillera) | Tarapacá (Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en precordillera de las regiones de Arica y Parinacota y Tarapacá",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5663,
+      "tipo": "Aviso",
+      "codigo": "A480/2026",
+      "emision": "Martes 15 de septiembre del 2026 a las 15:03 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del jueves 17 de septiembre del 2026",
+      "hasta": "la noche del viernes 18 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5662,
       "tipo": "Aviso",
