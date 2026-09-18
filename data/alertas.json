@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-18T00:00:27.568816",
+  "actualizado": "2026-09-18T06:00:31.261931",
   "totales": {
-    "avisos": 12,
-    "alertas": 6,
+    "avisos": 11,
+    "alertas": 7,
     "alarmas": 0,
     "total": 18
   },
@@ -43,22 +43,6 @@
       "regiones": [
         "Arica y Parinacota"
       ]
-    },
-    {
-      "id": 5669,
-      "tipo": "Aviso",
-      "codigo": "A484/2026",
-      "emision": "Miércoles 16 de septiembre del 2026 a las 12:46 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal aproxima la zona",
-      "desde": "la tarde del jueves 17 de septiembre del 2026",
-      "hasta": "la noche del jueves 17 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
     },
     {
       "id": 5670,
@@ -326,17 +310,35 @@
       ]
     },
     {
-      "id": 5688,
+      "id": 5689,
+      "tipo": "Alerta",
+      "codigo": "AA167/2026",
+      "emision": "Jueves 17 de septiembre del 2026 a las 21:26 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la noche del jueves 17 de septiembre del 2026",
+      "hasta": "la madrugada del viernes 18 de septiembre del 2026",
+      "observacion": "Desarrollo de tormentas de arena",
+      "zonas": "Antofagasta (Litoral)",
+      "titulo": "Viento Moderado a Fuerte en litoral de la región de Antofagasta",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Antofagasta"
+      ]
+    },
+    {
+      "id": 5690,
       "tipo": "Aviso",
-      "codigo": "A492/2026",
-      "emision": "Jueves 17 de septiembre del 2026 a las 16:32 hrs.",
+      "codigo": "A492-1/2026",
+      "emision": "Jueves 17 de septiembre del 2026 a las 21:38 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Vaguada en altura",
-      "desde": "la tarde del jueves 17 de septiembre del 2026",
+      "desde": "la noche del jueves 17 de septiembre del 2026",
       "hasta": "la noche del viernes 18 de septiembre del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera desde la región de Coquimbo a la región de O&#039;Higgins",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de O&#039;Higgins",
       "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
