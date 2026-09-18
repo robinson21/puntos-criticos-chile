@@ -1,12 +1,122 @@
 {
-  "actualizado": "2026-09-18T12:00:36.273004",
+  "actualizado": "2026-09-18T18:00:39.868626",
   "totales": {
-    "avisos": 11,
+    "avisos": 13,
     "alertas": 6,
     "alarmas": 0,
-    "total": 17
+    "total": 19
   },
   "alertas": [
+    {
+      "id": 5699,
+      "tipo": "Aviso",
+      "codigo": "A483-3/2026",
+      "emision": "Viernes 18 de septiembre del 2026 a las 14:29 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del sábado 19 de septiembre del 2026",
+      "hasta": "la noche del lunes 21 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Cordillera Costa, Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral) | Los Lagos (Litoral, Chiloé, Litoral Interior)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Valparaíso a la región de Los Lagos",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5698,
+      "tipo": "Alerta",
+      "codigo": "AA165-2/2026",
+      "emision": "Viernes 18 de septiembre del 2026 a las 14:29 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la noche del sábado 19 de septiembre del 2026",
+      "hasta": "la noche del domingo 20 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Litoral, Valle, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5697,
+      "tipo": "Aviso",
+      "codigo": "A494/2026",
+      "emision": "Viernes 18 de septiembre del 2026 a las 13:26 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del sábado 19 de septiembre del 2026",
+      "hasta": "la noche del domingo 20 de septiembre del 2026",
+      "observacion": "Probabilidad de fuertes rachas de vientos locales",
+      "zonas": "Maule, &Ntilde;uble y Biobío",
+      "titulo": "Probables Tormentas Eléctricas en las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5695,
+      "tipo": "Aviso",
+      "codigo": "A493/2026",
+      "emision": "Viernes 18 de septiembre del 2026 a las 12:31 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del sábado 19 de septiembre del 2026",
+      "hasta": "la tarde del domingo 20 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "O&#039;Higgins (Precordillera, Cordillera) | Maule (Litoral, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas desde la región de O&#039;Higgins a la región del Biobío",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "O'Higgins",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5693,
+      "tipo": "Aviso",
+      "codigo": "A481-2/2026",
+      "emision": "Viernes 18 de septiembre del 2026 a las 11:25 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Vaguada en altura",
+      "desde": "la mañana del viernes 18 de septiembre del 2026",
+      "hasta": "la noche del viernes 18 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Precordillera) | Atacama (Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en precordillera de las regiones de Tarapacá y Atacama",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5691,
       "tipo": "Aviso",
@@ -97,53 +207,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5683,
-      "tipo": "Alerta",
-      "codigo": "AA165/2026",
-      "emision": "Jueves 17 de septiembre del 2026 a las 13:11 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del domingo 20 de septiembre del 2026",
-      "hasta": "la noche del domingo 20 de septiembre del 2026",
-      "observacion": "Desarrollo de ventisca",
-      "zonas": "Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en cordillera de las regiones Metropolitana, O&#039;Higgins y Maule",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Maule",
-        "Metropolitana",
-        "O'Higgins"
-      ]
-    },
-    {
-      "id": 5682,
-      "tipo": "Aviso",
-      "codigo": "A483-1/2026",
-      "emision": "Jueves 17 de septiembre del 2026 a las 13:11 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del sábado 19 de septiembre del 2026",
-      "hasta": "la noche del lunes 21 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral) | Los Lagos (Litoral)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región de Los Lagos",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     },
     {
@@ -253,24 +316,6 @@
       "color": "#f97316",
       "regiones": [
         "Arica y Parinacota"
-      ]
-    },
-    {
-      "id": 5671,
-      "tipo": "Aviso",
-      "codigo": "A481-1/2026",
-      "emision": "Miércoles 16 de septiembre del 2026 a las 14:07 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Vaguada en altura",
-      "desde": "la mañana del jueves 17 de septiembre del 2026",
-      "hasta": "la noche del viernes 18 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en precordillera de la región de Tarapacá",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Tarapacá"
       ]
     },
     {
