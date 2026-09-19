@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-19T06:00:46.965006",
+  "actualizado": "2026-09-19T12:00:50.189659",
   "totales": {
     "avisos": 9,
-    "alertas": 3,
+    "alertas": 2,
     "alarmas": 0,
-    "total": 12
+    "total": 11
   },
   "alertas": [
     {
@@ -222,22 +222,6 @@
         "Valparaíso",
         "Ñuble"
       ]
-    },
-    {
-      "id": 5703,
-      "tipo": "Alerta",
-      "codigo": "AA168-1/2026",
-      "emision": "Viernes 18 de septiembre del 2026 a las 20:48 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la noche del viernes 18 de septiembre del 2026",
-      "hasta": "la madrugada del sábado 19 de septiembre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Litoral comunas de Taltal y Chañaral",
-      "titulo": "Tormentas Eléctricas en Litoral comunas de Taltal y Chañaral ",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": []
     }
   ]
 }
