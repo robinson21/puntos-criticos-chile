@@ -1,12 +1,67 @@
 {
-  "actualizado": "2026-09-18T18:00:39.868626",
+  "actualizado": "2026-09-19T00:00:43.590539",
   "totales": {
-    "avisos": 13,
-    "alertas": 6,
+    "avisos": 14,
+    "alertas": 7,
     "alarmas": 0,
-    "total": 19
+    "total": 21
   },
   "alertas": [
+    {
+      "id": 5703,
+      "tipo": "Alerta",
+      "codigo": "AA168-1/2026",
+      "emision": "Viernes 18 de septiembre del 2026 a las 20:48 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
+      "desde": "la noche del viernes 18 de septiembre del 2026",
+      "hasta": "la madrugada del sábado 19 de septiembre del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Litoral comunas de Taltal y Chañaral",
+      "titulo": "Tormentas Eléctricas en Litoral comunas de Taltal y Chañaral ",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": []
+    },
+    {
+      "id": 5701,
+      "tipo": "Aviso",
+      "codigo": "A495/2026",
+      "emision": "Viernes 18 de septiembre del 2026 a las 17:56 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la tarde del viernes 18 de septiembre del 2026",
+      "hasta": "la noche del viernes 18 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Antofagasta (Litoral, Pampa)",
+      "titulo": "Viento Normal a Moderado en zonas de la región de Antofagasta",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta"
+      ]
+    },
+    {
+      "id": 5700,
+      "tipo": "Aviso",
+      "codigo": "A492-3/2026",
+      "emision": "Viernes 18 de septiembre del 2026 a las 15:54 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
+      "desde": "la mañana del viernes 18 de septiembre del 2026",
+      "hasta": "la noche del viernes 18 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de O&#039;Higgins",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Coquimbo",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
     {
       "id": 5699,
       "tipo": "Aviso",
@@ -115,27 +170,6 @@
       "regiones": [
         "Atacama",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5691,
-      "tipo": "Aviso",
-      "codigo": "A492-2/2026",
-      "emision": "Viernes 18 de septiembre del 2026 a las 06:45 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la mañana del viernes 18 de septiembre del 2026",
-      "hasta": "la noche del viernes 18 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de O&#039;Higgins",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
       ]
     },
     {
