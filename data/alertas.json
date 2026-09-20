@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-19T18:00:53.615314",
+  "actualizado": "2026-09-20T00:00:56.763577",
   "totales": {
     "avisos": 10,
     "alertas": 2,
@@ -7,6 +7,32 @@
     "total": 12
   },
   "alertas": [
+    {
+      "id": 5707,
+      "tipo": "Aviso",
+      "codigo": "A483-4/2026",
+      "emision": "Sábado 19 de septiembre del 2026 a las 16:21 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del sábado 19 de septiembre del 2026",
+      "hasta": "la noche del lunes 21 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Cordillera Costa, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Precordillera, Cordillera) | Biobío (Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral) | Los Lagos (Litoral, Chiloé, Litoral Interior)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Valparaíso a la región de Los Lagos",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5706,
       "tipo": "Aviso",
@@ -63,32 +89,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5699,
-      "tipo": "Aviso",
-      "codigo": "A483-3/2026",
-      "emision": "Viernes 18 de septiembre del 2026 a las 14:29 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del sábado 19 de septiembre del 2026",
-      "hasta": "la noche del lunes 21 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Cordillera Costa, Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral) | Los Lagos (Litoral, Chiloé, Litoral Interior)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Valparaíso a la región de Los Lagos",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
         "Maule",
         "Metropolitana",
         "O'Higgins",
