@@ -1,81 +1,12 @@
 {
-  "actualizado": "2026-09-21T00:00:18.393101",
+  "actualizado": "2026-09-21T06:00:21.786656",
   "totales": {
-    "avisos": 5,
-    "alertas": 1,
+    "avisos": 3,
+    "alertas": 0,
     "alarmas": 0,
-    "total": 6
+    "total": 3
   },
   "alertas": [
-    {
-      "id": 5698,
-      "tipo": "Alerta",
-      "codigo": "AA165-2/2026",
-      "emision": "Viernes 18 de septiembre del 2026 a las 14:29 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la noche del sábado 19 de septiembre del 2026",
-      "hasta": "la noche del domingo 20 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Litoral, Valle, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5704,
-      "tipo": "Aviso",
-      "codigo": "A494-1/2026",
-      "emision": "Sábado 19 de septiembre del 2026 a las 09:55 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del sábado 19 de septiembre del 2026",
-      "hasta": "la noche del domingo 20 de septiembre del 2026",
-      "observacion": "Probabilidad de fuertes rachas de vientos locales",
-      "zonas": "Valparaíso, Metropolitana, O&#039;Higgins, Maule, &Ntilde;uble y Biobío",
-      "titulo": "Probables Tormentas Eléctricas desde la región de Valparaíso a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5706,
-      "tipo": "Aviso",
-      "codigo": "A493-1/2026",
-      "emision": "Sábado 19 de septiembre del 2026 a las 13:03 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del sábado 19 de septiembre del 2026",
-      "hasta": "la tarde del domingo 20 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Metropolitana (Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Litoral, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas desde la región Metropolitana a la región del Biobío",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Ñuble"
-      ]
-    },
     {
       "id": 5707,
       "tipo": "Aviso",
