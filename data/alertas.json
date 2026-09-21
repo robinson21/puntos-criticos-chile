@@ -1,12 +1,73 @@
 {
-  "actualizado": "2026-09-21T12:00:26.967582",
+  "actualizado": "2026-09-21T18:00:30.296163",
   "totales": {
-    "avisos": 3,
+    "avisos": 4,
     "alertas": 0,
     "alarmas": 0,
-    "total": 3
+    "total": 4
   },
   "alertas": [
+    {
+      "id": 5710,
+      "tipo": "Aviso",
+      "codigo": "A498/2026",
+      "emision": "Lunes 21 de septiembre del 2026 a las 12:02 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del miércoles 23 de septiembre del 2026",
+      "hasta": "la mañana del viernes 25 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5709,
+      "tipo": "Aviso",
+      "codigo": "A486-1/2026",
+      "emision": "Domingo 20 de septiembre del 2026 a las 14:40 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Inestabilidad post frontal",
+      "desde": "la tarde del domingo 20 de septiembre del 2026",
+      "hasta": "la tarde del martes 22 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 5708,
+      "tipo": "Aviso",
+      "codigo": "A497/2026",
+      "emision": "Domingo 20 de septiembre del 2026 a las 14:22 hrs.",
+      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del miércoles 23 de septiembre del 2026",
+      "hasta": "la mañana del jueves 24 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Precordillera, Cordillera, Litoral Interior, Cordillera Austral)",
+      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en zonas desde la región del Biobío a la región de Los Lagos",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
     {
       "id": 5707,
       "tipo": "Aviso",
@@ -32,43 +93,6 @@
         "Valparaíso",
         "Ñuble"
       ]
-    },
-    {
-      "id": 5708,
-      "tipo": "Aviso",
-      "codigo": "A497/2026",
-      "emision": "Domingo 20 de septiembre del 2026 a las 14:22 hrs.",
-      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del miércoles 23 de septiembre del 2026",
-      "hasta": "la mañana del jueves 24 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Precordillera, Cordillera, Litoral Interior, Cordillera Austral)",
-      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en zonas desde la región del Biobío a la región de Los Lagos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5709,
-      "tipo": "Aviso",
-      "codigo": "A486-1/2026",
-      "emision": "Domingo 20 de septiembre del 2026 a las 14:40 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Inestabilidad post frontal",
-      "desde": "la tarde del domingo 20 de septiembre del 2026",
-      "hasta": "la tarde del martes 22 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
     }
   ]
 }
