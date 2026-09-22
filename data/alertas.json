@@ -1,12 +1,115 @@
 {
-  "actualizado": "2026-09-21T18:00:30.296163",
+  "actualizado": "2026-09-22T00:00:34.397141",
   "totales": {
-    "avisos": 4,
-    "alertas": 0,
+    "avisos": 7,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 4
+    "total": 8
   },
   "alertas": [
+    {
+      "id": 5716,
+      "tipo": "Aviso",
+      "codigo": "A501/2026",
+      "emision": "Lunes 21 de septiembre del 2026 a las 15:37 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del jueves 24 de septiembre del 2026",
+      "hasta": "la tarde del sábado 26 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Antofagasta (Precordillera Salar) | Atacama (Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Antofagasta y Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5715,
+      "tipo": "Aviso",
+      "codigo": "A500/2026",
+      "emision": "Lunes 21 de septiembre del 2026 a las 15:07 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Oclusión frontal",
+      "desde": "la tarde del martes 22 de septiembre del 2026",
+      "hasta": "la tarde del miércoles 23 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Norte, Insular Norte, Pampa Patagonica Norte)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de la región de Magallanes",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5714,
+      "tipo": "Aviso",
+      "codigo": "A499/2026",
+      "emision": "Lunes 21 de septiembre del 2026 a las 15:00 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del miércoles 23 de septiembre del 2026",
+      "hasta": "la tarde del jueves 24 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral) | Los Lagos (Litoral)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5712,
+      "tipo": "Alerta",
+      "codigo": "AA169/2026",
+      "emision": "Lunes 21 de septiembre del 2026 a las 15:04 hrs.",
+      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del martes 22 de septiembre del 2026",
+      "hasta": "la noche del jueves 24 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Maule (Litoral, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Precordillera, Cordillera, Litoral Interior, Cordillera Austral)",
+      "titulo": "Precipitaciones Moderadas a Fuertes con Isoterma Cero Alta en zonas desde la región del Maule a la región de Los Lagos",
+      "icono": "⚠️",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5711,
+      "tipo": "Aviso",
+      "codigo": "A497-1/2026",
+      "emision": "Lunes 21 de septiembre del 2026 a las 14:56 hrs.",
+      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del martes 22 de septiembre del 2026",
+      "hasta": "la mañana del jueves 24 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "O&#039;Higgins (Cordillera) | Maule (Cordillera Costa, Valle, Cordillera) | &Ntilde;uble (Cordillera Costa, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Aysén (Cordillera Austral Norte, Cordillera Austral Sur)",
+      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en zonas de las regiones de O&#039;Higgins, Maule, &Ntilde;uble, Biobío, La Araucanía y Aysén",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "Biobío",
+        "La Araucanía",
+        "Maule",
+        "O'Higgins",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5710,
       "tipo": "Aviso",
@@ -46,27 +149,6 @@
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": []
-    },
-    {
-      "id": 5708,
-      "tipo": "Aviso",
-      "codigo": "A497/2026",
-      "emision": "Domingo 20 de septiembre del 2026 a las 14:22 hrs.",
-      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del miércoles 23 de septiembre del 2026",
-      "hasta": "la mañana del jueves 24 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Precordillera, Cordillera, Litoral Interior, Cordillera Austral)",
-      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en zonas desde la región del Biobío a la región de Los Lagos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
     },
     {
       "id": 5707,
