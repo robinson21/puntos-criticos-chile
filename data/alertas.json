@@ -1,12 +1,30 @@
 {
-  "actualizado": "2026-09-22T18:00:07.467278",
+  "actualizado": "2026-09-23T00:00:12.361555",
   "totales": {
-    "avisos": 8,
+    "avisos": 9,
     "alertas": 1,
     "alarmas": 1,
-    "total": 10
+    "total": 11
   },
   "alertas": [
+    {
+      "id": 5724,
+      "tipo": "Aviso",
+      "codigo": "A504/2026",
+      "emision": "Martes 22 de septiembre del 2026 a las 16:27 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Altas presiones",
+      "desde": "la madrugada del jueves 24 de septiembre del 2026",
+      "hasta": "la mañana del viernes 25 de septiembre del 2026",
+      "observacion": "Probabilidad de formación de escarcha",
+      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
+      "titulo": "Heladas Normales a Moderadas en zonas de la región de Magallanes",
+      "icono": "🥶",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
     {
       "id": 5723,
       "tipo": "Aviso",
