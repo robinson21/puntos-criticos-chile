@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-23T06:00:22.885575",
+  "actualizado": "2026-09-23T12:00:26.289723",
   "totales": {
     "avisos": 9,
     "alertas": 1,
@@ -7,6 +7,91 @@
     "total": 11
   },
   "alertas": [
+    {
+      "id": 5728,
+      "tipo": "Alerta",
+      "codigo": "AA169-3/2026",
+      "emision": "Miércoles 23 de septiembre del 2026 a las 08:37 hrs.",
+      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del miércoles 23 de septiembre del 2026",
+      "hasta": "la noche del jueves 24 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Maule (Litoral, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Lagos (Litoral, Cordillera, Litoral Interior)",
+      "titulo": "Precipitaciones Moderadas a Fuertes con Isoterma Cero Alta en zonas de las regiones del Maule, &Ntilde;uble, Biobío, La Araucanía y Los Lagos",
+      "icono": "⚠️",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5727,
+      "tipo": "Aviso",
+      "codigo": "A503-1/2026",
+      "emision": "Miércoles 23 de septiembre del 2026 a las 07:00 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del miércoles 23 de septiembre del 2026",
+      "hasta": "la madrugada del viernes 25 de septiembre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5726,
+      "tipo": "Alarma",
+      "codigo": "AAA9-1/2026",
+      "emision": "Miércoles 23 de septiembre del 2026 a las 06:56 hrs.",
+      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del miércoles 23 de septiembre del 2026",
+      "hasta": "la mañana del jueves 24 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Cordillera Costa, Precordillera, Cordillera Austral)",
+      "titulo": "Precipitaciones Intensas con Isoterma Cero Alta en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚠️",
+      "color": "#ef4444",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5725,
+      "tipo": "Aviso",
+      "codigo": "A505/2026",
+      "emision": "Miércoles 23 de septiembre del 2026 a las 04:34 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del jueves 24 de septiembre del 2026",
+      "hasta": "la noche del jueves 24 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía, Los Ríos y Los Lagos",
+      "titulo": "Probables Tormentas Eléctricas en las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
     {
       "id": 5724,
       "tipo": "Aviso",
@@ -26,27 +111,6 @@
       ]
     },
     {
-      "id": 5723,
-      "tipo": "Aviso",
-      "codigo": "A503/2026",
-      "emision": "Martes 22 de septiembre del 2026 a las 14:36 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del miércoles 23 de septiembre del 2026",
-      "hasta": "la madrugada del viernes 25 de septiembre del 2026",
-      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
-      "zonas": "O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de O&#039;Higgins a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "O'Higgins",
-        "Ñuble"
-      ]
-    },
-    {
       "id": 5722,
       "tipo": "Aviso",
       "codigo": "A502/2026",
@@ -62,65 +126,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5721,
-      "tipo": "Aviso",
-      "codigo": "A486-2/2026",
-      "emision": "Martes 22 de septiembre del 2026 a las 13:42 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Inestabilidad post frontal",
-      "desde": "la tarde del martes 22 de septiembre del 2026",
-      "hasta": "la madrugada del miércoles 23 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
-    },
-    {
-      "id": 5720,
-      "tipo": "Alerta",
-      "codigo": "AA169-2/2026",
-      "emision": "Martes 22 de septiembre del 2026 a las 12:43 hrs.",
-      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del martes 22 de septiembre del 2026",
-      "hasta": "la noche del jueves 24 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Maule (Litoral, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa) | Los Lagos (Litoral, Cordillera, Litoral Interior)",
-      "titulo": "Precipitaciones Moderadas a Fuertes con Isoterma Cero Alta en zonas desde la región del Maule a la región de Los Lagos",
-      "icono": "⚠️",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5719,
-      "tipo": "Alarma",
-      "codigo": "AAA9/2026",
-      "emision": "Martes 22 de septiembre del 2026 a las 11:44 hrs.",
-      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del miércoles 23 de septiembre del 2026",
-      "hasta": "la mañana del jueves 24 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Precordillera, Cordillera) | Los Ríos (Valle, Precordillera, Cordillera) | Los Lagos (Cordillera Costa, Precordillera, Cordillera Austral)",
-      "titulo": "Precipitaciones Intensas con Isoterma Cero Alta en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚠️",
-      "color": "#ef4444",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
       ]
     },
     {
