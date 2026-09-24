@@ -1,12 +1,54 @@
 {
-  "actualizado": "2026-09-23T18:00:29.793692",
+  "actualizado": "2026-09-24T00:00:34.071231",
   "totales": {
-    "avisos": 9,
+    "avisos": 8,
     "alertas": 2,
     "alarmas": 1,
-    "total": 12
+    "total": 11
   },
   "alertas": [
+    {
+      "id": 5735,
+      "tipo": "Aviso",
+      "codigo": "A497-4/2026",
+      "emision": "Miércoles 23 de septiembre del 2026 a las 18:05 hrs.",
+      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del miércoles 23 de septiembre del 2026",
+      "hasta": "la noche del jueves 24 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "O&#039;Higgins (Cordillera) | Maule (Cordillera Costa, Valle, Cordillera) | &Ntilde;uble (Cordillera Costa, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Cordillera) | La Araucanía (Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en zonas desde la región de O&#039;Higgins a la región de La Araucanía",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Maule",
+        "O'Higgins",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5733,
+      "tipo": "Aviso",
+      "codigo": "A501-1/2026",
+      "emision": "Miércoles 23 de septiembre del 2026 a las 15:13 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del jueves 24 de septiembre del 2026",
+      "hasta": "la tarde del sábado 26 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Salar) | Atacama (Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5732,
       "tipo": "Alerta",
@@ -189,66 +231,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5717,
-      "tipo": "Aviso",
-      "codigo": "A497-2/2026",
-      "emision": "Martes 22 de septiembre del 2026 a las 11:36 hrs.",
-      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del martes 22 de septiembre del 2026",
-      "hasta": "la mañana del jueves 24 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "O&#039;Higgins (Cordillera) | Maule (Cordillera Costa, Valle, Cordillera) | &Ntilde;uble (Cordillera Costa, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Aysén (Cordillera Austral Norte, Cordillera Austral Sur)",
-      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en zonas de las regiones de O&#039;Higgins, Maule, &Ntilde;uble, Biobío, La Araucanía y Aysén",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén",
-        "Biobío",
-        "La Araucanía",
-        "Maule",
-        "O'Higgins",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5716,
-      "tipo": "Aviso",
-      "codigo": "A501/2026",
-      "emision": "Lunes 21 de septiembre del 2026 a las 15:37 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del jueves 24 de septiembre del 2026",
-      "hasta": "la tarde del sábado 26 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Precordillera Salar) | Atacama (Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5715,
-      "tipo": "Aviso",
-      "codigo": "A500/2026",
-      "emision": "Lunes 21 de septiembre del 2026 a las 15:07 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Oclusión frontal",
-      "desde": "la tarde del martes 22 de septiembre del 2026",
-      "hasta": "la tarde del miércoles 23 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Norte, Insular Norte, Pampa Patagonica Norte)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de la región de Magallanes",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
       ]
     }
   ]
