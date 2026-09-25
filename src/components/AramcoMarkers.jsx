@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
+import { RESUMEN_RIESGO_REGION, REGIONES_SIN_DATOS_SENAPRED } from '../data/constantes.js';
 
 const ICON = new L.Icon({
   iconUrl: 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="#0e7490" stroke="#22d3ee" stroke-width="2"/><text x="16" y="21" text-anchor="middle" font-size="16" fill="#fff">⛽</text></svg>'),
@@ -12,6 +13,12 @@ const ICON_HIGHLIGHT = new L.Icon({
   iconUrl: 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#f97316" stroke="#fef08a" stroke-width="2"/><text x="16" y="21" text-anchor="middle" font-size="16" fill="#fff">⛽</text></svg>'),
   iconSize: [26, 26],
   iconAnchor: [13, 13],
+});
+
+const ICON_RIESGO = new L.Icon({
+  iconUrl: 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#dc2626" stroke="#fbcfe8" stroke-width="2"/><text x="16" y="21" text-anchor="middle" font-size="15" fill="#fff">⚠️</text></svg>'),
+  iconSize: [28, 28],
+  iconAnchor: [14, 14],
 });
 
 export default function AramcoMarkers({ comuna, region }) {
@@ -110,8 +117,8 @@ export default function AramcoMarkers({ comuna, region }) {
         const enComunaSeleccionada = comuna && region &&
           norm(s.region).includes(norm(region)) &&
           norm(s.locality).includes(norm(comuna));
-        const icon = enComunaSeleccionada ? ICON_HIGHLIGHT : ICON;
-
+        const tieneRiesgo = Array.isArray(s.riesgo) && s.riesgo.length>0;
+        const icon = tieneRiesgo ? ICON_RIESGO : (enComunaSeleccionada ? ICON_HIGHLIGHT : ICON);
         return (
           <Marker key={s.id} position={[s.coords.lat, s.coords.lng]} icon={icon}>
             <Popup>
@@ -119,7 +126,8 @@ export default function AramcoMarkers({ comuna, region }) {
               {s.address}<br/>
               {s.locality && <span style={{fontSize:11, color:'#94a3b8'}}>{s.locality}, {s.region}</span>}<br/>
               <span style={{ color: '#22d3ee', fontSize: 11 }}>{s.services?.join(' · ')}</span>
-              {enComunaSeleccionada && <div style={{color:'#f97316', fontWeight:600, marginTop:4, fontSize:12}}>⚠️ En tu comuna seleccionada</div>}
+              {tieneRiesgo && <div style={{marginTop:6,padding:'5px 8px',background:'#7f1d1d',borderRadius:6,color:'#fecaca',fontSize:11,border:'1px solid #ef4444'}}>⚠️ EN ZONA DE RIESGO ALTO/MUY ALTO<br/>Puntos críticos en radio 300 m:<ul style={{margin:'4px 0 0 14px',padding:0,fontSize:10.5}}>{s.riesgo.map((r,i)=>(<li key={i}>{r[0].toFixed(0)} m — {r[1]} ({r[2]})</li>))}</ul></div>}
+              {enComunaSeleccionada && !tieneRiesgo && <div style={{color:'#f97316', fontWeight:600, marginTop:4, fontSize:12}}>En tu comuna seleccionada</div>}
             </Popup>
           </Marker>
         );

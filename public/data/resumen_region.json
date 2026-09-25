@@ -1,0 +1,66 @@
+{
+ "METROPOLITANA DE SANTIAGO": {
+  "est": 77,
+  "riesgo": 12
+ },
+ "LOS LAGOS": {
+  "est": 27,
+  "riesgo": 6
+ },
+ "BIOBÍO": {
+  "est": 15,
+  "riesgo": 5
+ },
+ "ANTOFAGASTA": {
+  "est": 11,
+  "riesgo": 1
+ },
+ "LA ARAUCANÍA": {
+  "est": 29,
+  "riesgo": 8
+ },
+ "MAULE": {
+  "est": 9,
+  "riesgo": 1
+ },
+ "VALPARAÍSO": {
+  "est": 23,
+  "riesgo": 4
+ },
+ "LIBERTADOR GENERAL BERNARDO OHIGGINS": {
+  "est": 15,
+  "riesgo": 4
+ },
+ "LOS RÍOS": {
+  "est": 6,
+  "riesgo": 3
+ },
+ "ÑUBLE": {
+  "est": 10,
+  "riesgo": 2
+ },
+ "COQUIMBO": {
+  "est": 13,
+  "riesgo": 1
+ },
+ "ATACAMA": {
+  "est": 6,
+  "riesgo": 0
+ },
+ "TARAPACÁ": {
+  "est": 5,
+  "riesgo": 0
+ },
+ "MAGALLANES Y DE LA ANTÁRTICA CHILENA": {
+  "est": 7,
+  "riesgo": 1
+ },
+ "AYSÉN DEL GENERAL CARLOS IBANEZ DEL CAMPO": {
+  "est": 2,
+  "riesgo": 1
+ },
+ "ARICA Y PARINACOTA": {
+  "est": 3,
+  "riesgo": 0
+ }
+}
