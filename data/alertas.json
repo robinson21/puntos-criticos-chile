@@ -1,89 +1,51 @@
 {
-  "actualizado": "2026-09-24T18:01:00.276850",
+  "actualizado": "2026-09-25T00:00:05.729313",
   "totales": {
-    "avisos": 7,
+    "avisos": 6,
     "alertas": 1,
     "alarmas": 0,
-    "total": 8
+    "total": 7
   },
   "alertas": [
     {
-      "id": 5738,
+      "id": 5724,
       "tipo": "Aviso",
-      "codigo": "A505-1/2026",
-      "emision": "Jueves 24 de septiembre del 2026 a las 13:50 hrs.",
+      "codigo": "A504/2026",
+      "emision": "Martes 22 de septiembre del 2026 a las 16:27 hrs.",
+      "fenomeno": "Heladas",
+      "condicion": "Altas presiones",
+      "desde": "la madrugada del jueves 24 de septiembre del 2026",
+      "hasta": "la mañana del viernes 25 de septiembre del 2026",
+      "observacion": "Probabilidad de formación de escarcha",
+      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
+      "titulo": "Heladas Normales a Moderadas en zonas de la región de Magallanes",
+      "icono": "🥶",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5730,
+      "tipo": "Aviso",
+      "codigo": "A503-2/2026",
+      "emision": "Miércoles 23 de septiembre del 2026 a las 11:49 hrs.",
       "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del jueves 24 de septiembre del 2026",
-      "hasta": "la tarde del viernes 25 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del miércoles 23 de septiembre del 2026",
+      "hasta": "la madrugada del viernes 25 de septiembre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
       "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5737,
-      "tipo": "Alerta",
-      "codigo": "AA169-4/2026",
-      "emision": "Jueves 24 de septiembre del 2026 a las 11:14 hrs.",
-      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del jueves 24 de septiembre del 2026",
-      "hasta": "la noche del jueves 24 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "&Ntilde;uble (Valle, Precordillera, Cordillera) | Biobío (Valle, Precordillera, Cordillera)",
-      "titulo": "Precipitaciones Moderadas a Fuertes con Isoterma Cero Alta en zonas de las regiones de &Ntilde;uble y Biobío",
-      "icono": "⚠️",
-      "color": "#f97316",
-      "regiones": [
         "Biobío",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
         "Ñuble"
-      ]
-    },
-    {
-      "id": 5736,
-      "tipo": "Aviso",
-      "codigo": "A497-5/2026",
-      "emision": "Jueves 24 de septiembre del 2026 a las 11:10 hrs.",
-      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del jueves 24 de septiembre del 2026",
-      "hasta": "la noche del jueves 24 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "&Ntilde;uble (Litoral, Cordillera Costa) | Biobío (Litoral, Cordillera Costa) | La Araucanía (Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en zonas de las regiones de &Ntilde;uble, Biobío y La Araucanía",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5733,
-      "tipo": "Aviso",
-      "codigo": "A501-1/2026",
-      "emision": "Miércoles 23 de septiembre del 2026 a las 15:13 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del jueves 24 de septiembre del 2026",
-      "hasta": "la tarde del sábado 26 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Salar) | Atacama (Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
       ]
     },
     {
@@ -111,62 +73,82 @@
       ]
     },
     {
-      "id": 5730,
+      "id": 5733,
       "tipo": "Aviso",
-      "codigo": "A503-2/2026",
-      "emision": "Miércoles 23 de septiembre del 2026 a las 11:49 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
+      "codigo": "A501-1/2026",
+      "emision": "Miércoles 23 de septiembre del 2026 a las 15:13 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del jueves 24 de septiembre del 2026",
+      "hasta": "la tarde del sábado 26 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Salar) | Atacama (Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5736,
+      "tipo": "Aviso",
+      "codigo": "A497-5/2026",
+      "emision": "Jueves 24 de septiembre del 2026 a las 11:10 hrs.",
+      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
       "condicion": "Sistema frontal",
-      "desde": "la tarde del miércoles 23 de septiembre del 2026",
-      "hasta": "la madrugada del viernes 25 de septiembre del 2026",
-      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
-      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
-      "icono": "⚡",
+      "desde": "la mañana del jueves 24 de septiembre del 2026",
+      "hasta": "la noche del jueves 24 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "&Ntilde;uble (Litoral, Cordillera Costa) | Biobío (Litoral, Cordillera Costa) | La Araucanía (Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en zonas de las regiones de &Ntilde;uble, Biobío y La Araucanía",
+      "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
         "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
+        "La Araucanía",
         "Ñuble"
       ]
     },
     {
-      "id": 5724,
-      "tipo": "Aviso",
-      "codigo": "A504/2026",
-      "emision": "Martes 22 de septiembre del 2026 a las 16:27 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Altas presiones",
-      "desde": "la madrugada del jueves 24 de septiembre del 2026",
-      "hasta": "la mañana del viernes 25 de septiembre del 2026",
-      "observacion": "Probabilidad de formación de escarcha",
-      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
-      "titulo": "Heladas Normales a Moderadas en zonas de la región de Magallanes",
-      "icono": "🥶",
-      "color": "#fbbf24",
+      "id": 5737,
+      "tipo": "Alerta",
+      "codigo": "AA169-4/2026",
+      "emision": "Jueves 24 de septiembre del 2026 a las 11:14 hrs.",
+      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del jueves 24 de septiembre del 2026",
+      "hasta": "la noche del jueves 24 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "&Ntilde;uble (Valle, Precordillera, Cordillera) | Biobío (Valle, Precordillera, Cordillera)",
+      "titulo": "Precipitaciones Moderadas a Fuertes con Isoterma Cero Alta en zonas de las regiones de &Ntilde;uble y Biobío",
+      "icono": "⚠️",
+      "color": "#f97316",
       "regiones": [
-        "Magallanes"
+        "Biobío",
+        "Ñuble"
       ]
     },
     {
-      "id": 5722,
+      "id": 5738,
       "tipo": "Aviso",
-      "codigo": "A502/2026",
-      "emision": "Martes 22 de septiembre del 2026 a las 14:29 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la noche del miércoles 23 de septiembre del 2026",
-      "hasta": "la tarde del jueves 24 de septiembre del 2026",
+      "codigo": "A505-1/2026",
+      "emision": "Jueves 24 de septiembre del 2026 a las 13:50 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del jueves 24 de septiembre del 2026",
+      "hasta": "la tarde del viernes 25 de septiembre del 2026",
       "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Precipitaciones Normales a Moderadas en Archipielago Juan Fernández",
-      "icono": "🌧️",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "Archipiélago Juan Fernández"
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
       ]
     }
   ]
