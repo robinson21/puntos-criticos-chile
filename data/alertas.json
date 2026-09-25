@@ -1,53 +1,12 @@
 {
-  "actualizado": "2026-09-25T06:00:13.665592",
+  "actualizado": "2026-09-25T12:00:17.061751",
   "totales": {
-    "avisos": 5,
+    "avisos": 3,
     "alertas": 0,
     "alarmas": 0,
-    "total": 5
+    "total": 3
   },
   "alertas": [
-    {
-      "id": 5724,
-      "tipo": "Aviso",
-      "codigo": "A504/2026",
-      "emision": "Martes 22 de septiembre del 2026 a las 16:27 hrs.",
-      "fenomeno": "Heladas",
-      "condicion": "Altas presiones",
-      "desde": "la madrugada del jueves 24 de septiembre del 2026",
-      "hasta": "la mañana del viernes 25 de septiembre del 2026",
-      "observacion": "Probabilidad de formación de escarcha",
-      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
-      "titulo": "Heladas Normales a Moderadas en zonas de la región de Magallanes",
-      "icono": "🥶",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 5730,
-      "tipo": "Aviso",
-      "codigo": "A503-2/2026",
-      "emision": "Miércoles 23 de septiembre del 2026 a las 11:49 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del miércoles 23 de septiembre del 2026",
-      "hasta": "la madrugada del viernes 25 de septiembre del 2026",
-      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
-      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
     {
       "id": 5731,
       "tipo": "Aviso",
