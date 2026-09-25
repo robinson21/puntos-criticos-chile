@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-25T00:00:05.729313",
+  "actualizado": "2026-09-25T06:00:13.665592",
   "totales": {
-    "avisos": 6,
-    "alertas": 1,
+    "avisos": 5,
+    "alertas": 0,
     "alarmas": 0,
-    "total": 7
+    "total": 5
   },
   "alertas": [
     {
@@ -90,45 +90,6 @@
         "Antofagasta",
         "Atacama",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5736,
-      "tipo": "Aviso",
-      "codigo": "A497-5/2026",
-      "emision": "Jueves 24 de septiembre del 2026 a las 11:10 hrs.",
-      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del jueves 24 de septiembre del 2026",
-      "hasta": "la noche del jueves 24 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "&Ntilde;uble (Litoral, Cordillera Costa) | Biobío (Litoral, Cordillera Costa) | La Araucanía (Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas con Isoterma Cero Alta en zonas de las regiones de &Ntilde;uble, Biobío y La Araucanía",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5737,
-      "tipo": "Alerta",
-      "codigo": "AA169-4/2026",
-      "emision": "Jueves 24 de septiembre del 2026 a las 11:14 hrs.",
-      "fenomeno": "Precipitaciones con Isoterma Cero Alta",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del jueves 24 de septiembre del 2026",
-      "hasta": "la noche del jueves 24 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "&Ntilde;uble (Valle, Precordillera, Cordillera) | Biobío (Valle, Precordillera, Cordillera)",
-      "titulo": "Precipitaciones Moderadas a Fuertes con Isoterma Cero Alta en zonas de las regiones de &Ntilde;uble y Biobío",
-      "icono": "⚠️",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "Ñuble"
       ]
     },
     {
