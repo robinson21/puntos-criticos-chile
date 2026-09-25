@@ -69,6 +69,14 @@ export default function AramcoMarkers({ comuna, region }) {
 
   const { enComuna, enRegion, totalRegion, totalComuna } = filtradas;
 
+  // Estaciones en zona de riesgo dentro de la región/comuna visible
+  const riesgoRegion = useMemo(() => {
+    const base = comuna && region ? enComuna : region ? enRegion : stations;
+    return base.filter(s => Array.isArray(s.riesgo) && s.riesgo.length > 0);
+  }, [enComuna, enRegion, stations, comuna, region]);
+
+  const sinDatosSenapred = region && REGIONES_SIN_DATOS_SENAPRED.includes(region.trim().toUpperCase());
+
   // Mostrar estaciones: si hay comuna seleccionada, solo las de esa comuna; si no, todas las de la región
   const mostrar = visible
     ? (comuna && region ? enComuna : region ? enRegion : stations)
@@ -106,6 +114,22 @@ export default function AramcoMarkers({ comuna, region }) {
               <div>En región: <b>{totalRegion}</b></div>
               {comuna && <div>En {comuna}: <b style={{color: '#f97316'}}>{totalComuna}</b> {totalComuna > 0 ? '🚨' : ''}</div>}
               {comuna && totalComuna > 0 && totalComuna <= 5 && <div style={{color:'#fbbf24', fontSize:10}}>⚠️ Pocas estaciones en comuna</div>}
+              {riesgoRegion.length > 0 && (
+                <div style={{ marginTop: 5, paddingTop: 5, borderTop: '1px solid #334155', color: '#fca5a5' }}>
+                  ⚠️ En zona de riesgo: <b>{riesgoRegion.length}</b>{' '}
+                  <span style={{ fontSize: 10, opacity: .8 }}>({Math.round(riesgoRegion.length / (totalRegion || 1) * 100)}%)</span>
+                </div>
+              )}
+              {riesgoRegion.length === 0 && region && !sinDatosSenapred && (
+                <div style={{ marginTop: 5, paddingTop: 5, borderTop: '1px solid #334155', color: '#86efac', fontSize: 10.5 }}>
+                  ✓ Sin estaciones en zona de riesgo
+                </div>
+              )}
+              {sinDatosSenapred && (
+                <div style={{ marginTop: 5, paddingTop: 5, borderTop: '1px solid #334155', color: '#fbbf24', fontSize: 10.5 }}>
+                  ℹ️ SENAPRED no reporta puntos críticos en esta región
+                </div>
+              )}
             </div>
           )}
         </>

@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useFilters } from '../data/FilterContext';
 import { useData } from '../data/DataContext';
+import { REGIONES, REGIONES_SIN_DATOS_SENAPRED } from '../data/constantes.js';
 
 export default function Filters() {
   const { comuna, setComuna, causa, setCausa, nivel, setNivel, tipoSolucion, setTipoSolucion, filtered, comunas, causas } = useFilters();
@@ -8,7 +9,24 @@ export default function Filters() {
   const [buscar, setBuscar] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
 
-  const regiones = metadata?.regiones ? Object.keys(metadata.regiones) : [];
+  // Las 16 regiones oficiales de Chile. Las que aún no tienen datos SENAPRED
+  // se muestran igual, marcadas, para que el mapa cubra todo el territorio.
+  const regionesConDatos = metadata?.regiones ? Object.keys(metadata.regiones) : [];
+  const regiones = useMemo(() => {
+    const norm = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[''']/g, "'").trim();
+    const mapa = new Map();
+    regionesConDatos.forEach(r => mapa.set(norm(r), r));
+    const lista = [];
+    REGIONES.forEach(r => {
+      const key = norm(r);
+      const conDatos = mapa.get(key);
+      if (conDatos) lista.push({ value: conDatos, label: r.charAt(0) + r.slice(1).toLowerCase(), sinDatos: false });
+      else if (REGIONES_SIN_DATOS_SENAPRED.includes(r.toUpperCase())) lista.push({ value: r, label: r.charAt(0) + r.slice(1).toLowerCase(), sinDatos: true });
+    });
+    // Cualquier región con datos que no esté en REGIONES (por seguridad)
+    regionesConDatos.forEach(r => { if (!lista.some(x => norm(x.value) === norm(r))) lista.push({ value: r, label: r.charAt(0) + r.slice(1).toLowerCase(), sinDatos: false }); });
+    return lista;
+  }, [regionesConDatos]);
 
   const comunasFiltradas = useMemo(() => {
     if (!buscar) return comunas.slice(0, 20);
@@ -39,7 +57,9 @@ export default function Filters() {
       >
         <option value="">🌎 Selecciona región</option>
         {regiones.map(r => (
-          <option key={r} value={r}>{r.charAt(0) + r.slice(1).toLowerCase()}</option>
+          <option key={r.value} value={r.value}>
+            {r.label}{r.sinDatos ? ' — sin datos SENAPRED' : ''}
+          </option>
         ))}
       </select>
 
