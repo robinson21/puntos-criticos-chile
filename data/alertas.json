@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-25T12:00:17.061751",
+  "actualizado": "2026-09-25T18:00:24.266098",
   "totales": {
     "avisos": 3,
     "alertas": 0,
@@ -8,27 +8,23 @@
   },
   "alertas": [
     {
-      "id": 5731,
+      "id": 5739,
       "tipo": "Aviso",
-      "codigo": "A498-1/2026",
-      "emision": "Miércoles 23 de septiembre del 2026 a las 11:52 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del miércoles 23 de septiembre del 2026",
-      "hasta": "la tarde del viernes 25 de septiembre del 2026",
+      "codigo": "A505-2/2026",
+      "emision": "Viernes 25 de septiembre del 2026 a las 10:27 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del viernes 25 de septiembre del 2026",
+      "hasta": "la tarde del sábado 26 de septiembre del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Chiloé, Litoral Interior)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
       ]
     },
     {
@@ -52,23 +48,27 @@
       ]
     },
     {
-      "id": 5738,
+      "id": 5731,
       "tipo": "Aviso",
-      "codigo": "A505-1/2026",
-      "emision": "Jueves 24 de septiembre del 2026 a las 13:50 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del jueves 24 de septiembre del 2026",
+      "codigo": "A498-1/2026",
+      "emision": "Miércoles 23 de septiembre del 2026 a las 11:52 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del miércoles 23 de septiembre del 2026",
       "hasta": "la tarde del viernes 25 de septiembre del 2026",
       "observacion": "",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚡",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
       ]
     }
   ]
