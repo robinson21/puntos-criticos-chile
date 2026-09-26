@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-25T18:00:24.266098",
+  "actualizado": "2026-09-26T00:00:30.600810",
   "totales": {
-    "avisos": 3,
+    "avisos": 2,
     "alertas": 0,
     "alarmas": 0,
-    "total": 3
+    "total": 2
   },
   "alertas": [
     {
@@ -28,14 +28,14 @@
       ]
     },
     {
-      "id": 5733,
+      "id": 5740,
       "tipo": "Aviso",
-      "codigo": "A501-1/2026",
-      "emision": "Miércoles 23 de septiembre del 2026 a las 15:13 hrs.",
+      "codigo": "A501-2/2026",
+      "emision": "Viernes 25 de septiembre del 2026 a las 17:47 hrs.",
       "fenomeno": "Altas Temperaturas",
       "condicion": "Dorsal en altura",
-      "desde": "la tarde del jueves 24 de septiembre del 2026",
-      "hasta": "la tarde del sábado 26 de septiembre del 2026",
+      "desde": "la tarde del viernes 25 de septiembre del 2026",
+      "hasta": "la tarde del domingo 27 de septiembre del 2026",
       "observacion": "",
       "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Salar) | Atacama (Precordillera)",
       "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
@@ -45,30 +45,6 @@
         "Antofagasta",
         "Atacama",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5731,
-      "tipo": "Aviso",
-      "codigo": "A498-1/2026",
-      "emision": "Miércoles 23 de septiembre del 2026 a las 11:52 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del miércoles 23 de septiembre del 2026",
-      "hasta": "la tarde del viernes 25 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     }
   ]
