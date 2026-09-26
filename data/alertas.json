@@ -1,30 +1,29 @@
 {
-  "actualizado": "2026-09-26T18:00:41.870140",
+  "actualizado": "2026-09-26T19:01:36.730909",
   "totales": {
-    "avisos": 2,
+    "avisos": 3,
     "alertas": 0,
     "alarmas": 0,
-    "total": 2
+    "total": 3
   },
   "alertas": [
     {
-      "id": 5739,
+      "id": 5741,
       "tipo": "Aviso",
-      "codigo": "A505-2/2026",
-      "emision": "Viernes 25 de septiembre del 2026 a las 10:27 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del viernes 25 de septiembre del 2026",
-      "hasta": "la tarde del sábado 26 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Chiloé, Litoral Interior)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚡",
+      "codigo": "A506/2026",
+      "emision": "Sábado 26 de septiembre del 2026 a las 15:50 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del martes 29 de septiembre del 2026",
+      "hasta": "la noche del miércoles 30 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Arica y Parinacota y Tarapacá",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
+        "Arica y Parinacota",
+        "Tarapacá"
       ]
     },
     {
@@ -45,6 +44,26 @@
         "Antofagasta",
         "Atacama",
         "Tarapacá"
+      ]
+    },
+    {
+      "id": 5739,
+      "tipo": "Aviso",
+      "codigo": "A505-2/2026",
+      "emision": "Viernes 25 de septiembre del 2026 a las 10:27 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del viernes 25 de septiembre del 2026",
+      "hasta": "la tarde del sábado 26 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Chiloé, Litoral Interior)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
       ]
     }
   ]
