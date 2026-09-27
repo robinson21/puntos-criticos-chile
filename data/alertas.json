@@ -1,12 +1,32 @@
 {
-  "actualizado": "2026-09-26T19:01:36.730909",
+  "actualizado": "2026-09-27T00:00:51.080172",
   "totales": {
-    "avisos": 3,
+    "avisos": 4,
     "alertas": 0,
     "alarmas": 0,
-    "total": 3
+    "total": 4
   },
   "alertas": [
+    {
+      "id": 5742,
+      "tipo": "Aviso",
+      "codigo": "A507/2026",
+      "emision": "Sábado 26 de septiembre del 2026 a las 19:47 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del domingo 27 de septiembre del 2026",
+      "hasta": "la noche del domingo 27 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Cordillera Costa, Valle, Precordillera) | Los Lagos (Valle, Precordillera, Chiloé, Litoral Interior)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
     {
       "id": 5741,
       "tipo": "Aviso",
