@@ -1,12 +1,69 @@
 {
-  "actualizado": "2026-09-27T18:00:01.268735",
+  "actualizado": "2026-09-27T19:00:36.014542",
   "totales": {
-    "avisos": 4,
+    "avisos": 6,
     "alertas": 0,
     "alarmas": 0,
-    "total": 4
+    "total": 6
   },
   "alertas": [
+    {
+      "id": 5746,
+      "tipo": "Aviso",
+      "codigo": "A510/2026",
+      "emision": "Domingo 27 de septiembre del 2026 a las 15:39 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del lunes 28 de septiembre del 2026",
+      "hasta": "la tarde del lunes 28 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Cordillera Costa, Valle, Precordillera) | Los Lagos (Valle, Precordillera, Chiloé, Litoral Interior, Cordillera Austral) | Aysén (Insular Norte, Cordillera Austral Norte, Insular Sur)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de La Araucanía a la región de Aysén",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5745,
+      "tipo": "Aviso",
+      "codigo": "A506-1/2026",
+      "emision": "Domingo 27 de septiembre del 2026 a las 15:32 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del lunes 28 de septiembre del 2026",
+      "hasta": "la noche del miércoles 30 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Precordillera Salar)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5744,
+      "tipo": "Aviso",
+      "codigo": "A509/2026",
+      "emision": "Domingo 27 de septiembre del 2026 a las 15:31 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la tarde del lunes 28 de septiembre del 2026",
+      "hasta": "la noche del miércoles 30 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Litoral de la Provincia de Huasco",
+      "titulo": "Viento Normal a Moderado en Litoral de la Provincia de Huasco",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
     {
       "id": 5743,
       "tipo": "Aviso",
@@ -41,25 +98,6 @@
         "La Araucanía",
         "Los Lagos",
         "Los Ríos"
-      ]
-    },
-    {
-      "id": 5741,
-      "tipo": "Aviso",
-      "codigo": "A506/2026",
-      "emision": "Sábado 26 de septiembre del 2026 a las 15:50 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del martes 29 de septiembre del 2026",
-      "hasta": "la noche del miércoles 30 de septiembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Arica y Parinacota y Tarapacá",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Arica y Parinacota",
-        "Tarapacá"
       ]
     },
     {
