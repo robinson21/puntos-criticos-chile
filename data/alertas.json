@@ -1,30 +1,30 @@
 {
-  "actualizado": "2026-09-27T00:00:51.080172",
+  "actualizado": "2026-09-27T06:00:54.878227",
   "totales": {
-    "avisos": 4,
+    "avisos": 3,
     "alertas": 0,
     "alarmas": 0,
-    "total": 4
+    "total": 3
   },
   "alertas": [
     {
-      "id": 5742,
+      "id": 5740,
       "tipo": "Aviso",
-      "codigo": "A507/2026",
-      "emision": "Sábado 26 de septiembre del 2026 a las 19:47 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del domingo 27 de septiembre del 2026",
-      "hasta": "la noche del domingo 27 de septiembre del 2026",
+      "codigo": "A501-2/2026",
+      "emision": "Viernes 25 de septiembre del 2026 a las 17:47 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del viernes 25 de septiembre del 2026",
+      "hasta": "la tarde del domingo 27 de septiembre del 2026",
       "observacion": "",
-      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Cordillera Costa, Valle, Precordillera) | Los Lagos (Valle, Precordillera, Chiloé, Litoral Interior)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚡",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Salar) | Atacama (Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
       ]
     },
     {
@@ -47,36 +47,16 @@
       ]
     },
     {
-      "id": 5740,
+      "id": 5742,
       "tipo": "Aviso",
-      "codigo": "A501-2/2026",
-      "emision": "Viernes 25 de septiembre del 2026 a las 17:47 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del viernes 25 de septiembre del 2026",
-      "hasta": "la tarde del domingo 27 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Salar) | Atacama (Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5739,
-      "tipo": "Aviso",
-      "codigo": "A505-2/2026",
-      "emision": "Viernes 25 de septiembre del 2026 a las 10:27 hrs.",
+      "codigo": "A507/2026",
+      "emision": "Sábado 26 de septiembre del 2026 a las 19:47 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del viernes 25 de septiembre del 2026",
-      "hasta": "la tarde del sábado 26 de septiembre del 2026",
+      "desde": "la tarde del domingo 27 de septiembre del 2026",
+      "hasta": "la noche del domingo 27 de septiembre del 2026",
       "observacion": "",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Chiloé, Litoral Interior)",
+      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Cordillera Costa, Valle, Precordillera) | Los Lagos (Valle, Precordillera, Chiloé, Litoral Interior)",
       "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
       "icono": "⚡",
       "color": "#fbbf24",
