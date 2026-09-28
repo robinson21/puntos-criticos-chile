@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-28T07:00:48.420623",
+  "actualizado": "2026-09-28T12:00:12.060539",
   "totales": {
     "avisos": 5,
     "alertas": 0,
@@ -8,55 +8,24 @@
   },
   "alertas": [
     {
-      "id": 5743,
+      "id": 5748,
       "tipo": "Aviso",
-      "codigo": "A508/2026",
-      "emision": "Domingo 27 de septiembre del 2026 a las 12:57 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del martes 29 de septiembre del 2026",
-      "hasta": "la mañana del miércoles 30 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
-    },
-    {
-      "id": 5744,
-      "tipo": "Aviso",
-      "codigo": "A509/2026",
-      "emision": "Domingo 27 de septiembre del 2026 a las 15:31 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
+      "codigo": "A511-1/2026",
+      "emision": "Lunes 28 de septiembre del 2026 a las 05:45 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
       "desde": "la tarde del lunes 28 de septiembre del 2026",
-      "hasta": "la noche del miércoles 30 de septiembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Litoral de la Provincia de Huasco",
-      "titulo": "Viento Normal a Moderado en Litoral de la Provincia de Huasco",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
-    },
-    {
-      "id": 5745,
-      "tipo": "Aviso",
-      "codigo": "A506-1/2026",
-      "emision": "Domingo 27 de septiembre del 2026 a las 15:32 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del lunes 28 de septiembre del 2026",
-      "hasta": "la noche del miércoles 30 de septiembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Precordillera Salar)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
-      "icono": "💨",
+      "hasta": "la noche del lunes 28 de septiembre del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Maule",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
       ]
     },
     {
@@ -81,25 +50,56 @@
       ]
     },
     {
-      "id": 5747,
+      "id": 5745,
       "tipo": "Aviso",
-      "codigo": "A511/2026",
-      "emision": "Domingo 27 de septiembre del 2026 a las 16:46 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
+      "codigo": "A506-1/2026",
+      "emision": "Domingo 27 de septiembre del 2026 a las 15:32 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
       "desde": "la tarde del lunes 28 de septiembre del 2026",
-      "hasta": "la noche del lunes 28 de septiembre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Maule",
-      "icono": "⚡",
+      "hasta": "la noche del miércoles 30 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Precordillera Salar)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Tarapacá"
       ]
+    },
+    {
+      "id": 5744,
+      "tipo": "Aviso",
+      "codigo": "A509/2026",
+      "emision": "Domingo 27 de septiembre del 2026 a las 15:31 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la tarde del lunes 28 de septiembre del 2026",
+      "hasta": "la noche del miércoles 30 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Litoral de la Provincia de Huasco",
+      "titulo": "Viento Normal a Moderado en Litoral de la Provincia de Huasco",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 5743,
+      "tipo": "Aviso",
+      "codigo": "A508/2026",
+      "emision": "Domingo 27 de septiembre del 2026 a las 12:57 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del martes 29 de septiembre del 2026",
+      "hasta": "la mañana del miércoles 30 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
     }
   ]
 }
