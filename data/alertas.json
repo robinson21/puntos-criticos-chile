@@ -1,12 +1,32 @@
 {
-  "actualizado": "2026-09-28T18:00:15.366718",
+  "actualizado": "2026-09-28T19:00:56.470758",
   "totales": {
-    "avisos": 6,
+    "avisos": 7,
     "alertas": 0,
     "alarmas": 0,
-    "total": 6
+    "total": 7
   },
   "alertas": [
+    {
+      "id": 5751,
+      "tipo": "Aviso",
+      "codigo": "A513/2026",
+      "emision": "Lunes 28 de septiembre del 2026 a las 15:43 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del miércoles 30 de septiembre del 2026",
+      "hasta": "la noche del jueves 01 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5750,
       "tipo": "Aviso",
