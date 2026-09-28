@@ -1,31 +1,53 @@
 {
-  "actualizado": "2026-09-28T12:00:12.060539",
+  "actualizado": "2026-09-28T18:00:15.366718",
   "totales": {
-    "avisos": 5,
+    "avisos": 6,
     "alertas": 0,
     "alarmas": 0,
-    "total": 5
+    "total": 6
   },
   "alertas": [
     {
-      "id": 5748,
+      "id": 5750,
       "tipo": "Aviso",
-      "codigo": "A511-1/2026",
-      "emision": "Lunes 28 de septiembre del 2026 a las 05:45 hrs.",
+      "codigo": "A512/2026",
+      "emision": "Lunes 28 de septiembre del 2026 a las 12:11 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la mañana del martes 29 de septiembre del 2026",
+      "hasta": "la noche del martes 29 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Valparaíso, Metropolitana y O&#039;Higgins",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5749,
+      "tipo": "Aviso",
+      "codigo": "A511-2/2026",
+      "emision": "Lunes 28 de septiembre del 2026 a las 11:59 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
       "desde": "la tarde del lunes 28 de septiembre del 2026",
       "hasta": "la noche del lunes 28 de septiembre del 2026",
       "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Maule",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera) | &Ntilde;uble (Valle, Precordillera, Cordillera) | Biobío (Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
       "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
+        "Biobío",
         "Maule",
         "Metropolitana",
         "O'Higgins",
-        "Valparaíso"
+        "Valparaíso",
+        "Ñuble"
       ]
     },
     {
