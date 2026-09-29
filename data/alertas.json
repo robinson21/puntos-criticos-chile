@@ -1,12 +1,108 @@
 {
-  "actualizado": "2026-09-29T18:00:35.060459",
+  "actualizado": "2026-09-29T19:01:17.324153",
   "totales": {
-    "avisos": 7,
-    "alertas": 0,
+    "avisos": 10,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 7
+    "total": 11
   },
   "alertas": [
+    {
+      "id": 5760,
+      "tipo": "Aviso",
+      "codigo": "A517/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 15:49 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del jueves 01 de octubre del 2026",
+      "hasta": "la noche del jueves 01 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
+    },
+    {
+      "id": 5759,
+      "tipo": "Aviso",
+      "codigo": "A518/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 15:53 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del viernes 02 de octubre del 2026",
+      "hasta": "la noche del sábado 03 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5758,
+      "tipo": "Alerta",
+      "codigo": "AA171/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 15:45 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la mañana del jueves 01 de octubre del 2026",
+      "hasta": "la tarde del jueves 01 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Cordillera Costa y sectores de valles)",
+      "titulo": "Evento de Altas Temperaturas Extremas en cordillera de la costa y sectores de valles de la región de Atacama",
+      "icono": "⚠️",
+      "color": "#f97316",
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5757,
+      "tipo": "Aviso",
+      "codigo": "A513-1/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 15:45 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del miércoles 30 de septiembre del 2026",
+      "hasta": "la noche del jueves 01 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Litoral, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5756,
+      "tipo": "Aviso",
+      "codigo": "A516/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 15:41 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Frente frío",
+      "desde": "la madrugada del miércoles 30 de septiembre del 2026",
+      "hasta": "la mañana del miércoles 30 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Región Biobío-Provincia Arauco-Cordillera Nahuelbuta-litoral",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en Región Biobío-Provincia Arauco-Cordillera Nahuelbuta-litoral",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": []
+    },
     {
       "id": 5754,
       "tipo": "Aviso",
@@ -64,26 +160,6 @@
         "La Araucanía",
         "Los Lagos",
         "Los Ríos"
-      ]
-    },
-    {
-      "id": 5751,
-      "tipo": "Aviso",
-      "codigo": "A513/2026",
-      "emision": "Lunes 28 de septiembre del 2026 a las 15:43 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del miércoles 30 de septiembre del 2026",
-      "hasta": "la noche del jueves 01 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
       ]
     },
     {
