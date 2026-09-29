@@ -1,43 +1,90 @@
 {
-  "actualizado": "2026-09-29T12:00:31.298709",
+  "actualizado": "2026-09-29T18:00:35.060459",
   "totales": {
-    "avisos": 5,
+    "avisos": 7,
     "alertas": 0,
     "alarmas": 0,
-    "total": 5
+    "total": 7
   },
   "alertas": [
     {
-      "id": 5743,
+      "id": 5754,
       "tipo": "Aviso",
-      "codigo": "A508/2026",
-      "emision": "Domingo 27 de septiembre del 2026 a las 12:57 hrs.",
+      "codigo": "A512-1/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 12:34 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del martes 29 de septiembre del 2026",
-      "hasta": "la mañana del miércoles 30 de septiembre del 2026",
+      "condicion": "Corriente en chorro",
+      "desde": "la mañana del martes 29 de septiembre del 2026",
+      "hasta": "la noche del miércoles 30 de septiembre del 2026",
       "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Valparaíso, Metropolitana y O&#039;Higgins",
       "icono": "💨",
       "color": "#fbbf24",
-      "regiones": []
+      "regiones": [
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
     },
     {
-      "id": 5744,
+      "id": 5753,
       "tipo": "Aviso",
-      "codigo": "A509/2026",
-      "emision": "Domingo 27 de septiembre del 2026 a las 15:31 hrs.",
+      "codigo": "A514/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 11:46 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la tarde del lunes 28 de septiembre del 2026",
-      "hasta": "la noche del miércoles 30 de septiembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Litoral de la Provincia de Huasco",
-      "titulo": "Viento Normal a Moderado en Litoral de la Provincia de Huasco",
+      "condicion": "Sistema frontal",
+      "desde": "la noche del jueves 01 de octubre del 2026",
+      "hasta": "la noche del jueves 01 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Los Lagos (Litoral, Chiloé, Litoral Interior) | Aysén (Insular Norte)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Los Lagos y Aysén",
       "icono": "💨",
       "color": "#fbbf24",
-      "regiones": []
+      "regiones": [
+        "Aysén",
+        "Los Lagos"
+      ]
+    },
+    {
+      "id": 5752,
+      "tipo": "Aviso",
+      "codigo": "A515/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 11:46 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad post frontal",
+      "desde": "la tarde del miércoles 30 de septiembre del 2026",
+      "hasta": "la tarde del miércoles 30 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Cordillera Costa, Valle) | Los Ríos (Cordillera Costa, Valle) | Los Lagos (Cordillera Costa, Valle)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5751,
+      "tipo": "Aviso",
+      "codigo": "A513/2026",
+      "emision": "Lunes 28 de septiembre del 2026 a las 15:43 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del miércoles 30 de septiembre del 2026",
+      "hasta": "la noche del jueves 01 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
     },
     {
       "id": 5745,
@@ -60,44 +107,36 @@
       ]
     },
     {
-      "id": 5750,
+      "id": 5744,
       "tipo": "Aviso",
-      "codigo": "A512/2026",
-      "emision": "Lunes 28 de septiembre del 2026 a las 12:11 hrs.",
+      "codigo": "A509/2026",
+      "emision": "Domingo 27 de septiembre del 2026 a las 15:31 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del martes 29 de septiembre del 2026",
-      "hasta": "la noche del martes 29 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Valparaíso, Metropolitana y O&#039;Higgins",
+      "condicion": "Jet costero",
+      "desde": "la tarde del lunes 28 de septiembre del 2026",
+      "hasta": "la noche del miércoles 30 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Litoral de la Provincia de Huasco",
+      "titulo": "Viento Normal a Moderado en Litoral de la Provincia de Huasco",
       "icono": "💨",
       "color": "#fbbf24",
-      "regiones": [
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
+      "regiones": []
     },
     {
-      "id": 5751,
+      "id": 5743,
       "tipo": "Aviso",
-      "codigo": "A513/2026",
-      "emision": "Lunes 28 de septiembre del 2026 a las 15:43 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del miércoles 30 de septiembre del 2026",
-      "hasta": "la noche del jueves 01 de octubre del 2026",
+      "codigo": "A508/2026",
+      "emision": "Domingo 27 de septiembre del 2026 a las 12:57 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del martes 29 de septiembre del 2026",
+      "hasta": "la mañana del miércoles 30 de septiembre del 2026",
       "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "⚠️",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
       "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
-      ]
+      "regiones": []
     }
   ]
 }
