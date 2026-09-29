@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-29T00:00:19.400087",
+  "actualizado": "2026-09-29T06:00:24.186828",
   "totales": {
-    "avisos": 6,
+    "avisos": 5,
     "alertas": 0,
     "alarmas": 0,
-    "total": 6
+    "total": 5
   },
   "alertas": [
     {
@@ -57,29 +57,6 @@
         "Antofagasta",
         "Arica y Parinacota",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5749,
-      "tipo": "Aviso",
-      "codigo": "A511-2/2026",
-      "emision": "Lunes 28 de septiembre del 2026 a las 11:59 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del lunes 28 de septiembre del 2026",
-      "hasta": "la noche del lunes 28 de septiembre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera) | &Ntilde;uble (Valle, Precordillera, Cordillera) | Biobío (Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     },
     {
