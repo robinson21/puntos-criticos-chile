@@ -1,35 +1,17 @@
 {
-  "actualizado": "2026-09-30T12:00:49.072299",
+  "actualizado": "2026-09-30T18:00:57.889735",
   "totales": {
-    "avisos": 10,
+    "avisos": 12,
     "alertas": 1,
     "alarmas": 0,
-    "total": 11
+    "total": 13
   },
   "alertas": [
     {
-      "id": 5760,
+      "id": 5768,
       "tipo": "Aviso",
-      "codigo": "A517/2026",
-      "emision": "Martes 29 de septiembre del 2026 a las 15:49 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del jueves 01 de octubre del 2026",
-      "hasta": "la noche del jueves 01 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5759,
-      "tipo": "Aviso",
-      "codigo": "A518/2026",
-      "emision": "Martes 29 de septiembre del 2026 a las 15:53 hrs.",
+      "codigo": "A518-1/2026",
+      "emision": "Miércoles 30 de septiembre del 2026 a las 14:45 hrs.",
       "fenomeno": "Viento",
       "condicion": "Sistema frontal",
       "desde": "la madrugada del viernes 02 de octubre del 2026",
@@ -47,6 +29,119 @@
         "O'Higgins",
         "Valparaíso",
         "Ñuble"
+      ]
+    },
+    {
+      "id": 5767,
+      "tipo": "Aviso",
+      "codigo": "A522/2026",
+      "emision": "Miércoles 30 de septiembre del 2026 a las 14:28 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del viernes 02 de octubre del 2026",
+      "hasta": "la mañana del sábado 03 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Sur, Pampa Patagonica Sur)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de la región de Magallanes",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5766,
+      "tipo": "Aviso",
+      "codigo": "A521/2026",
+      "emision": "Miércoles 30 de septiembre del 2026 a las 13:42 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del viernes 02 de octubre del 2026",
+      "hasta": "la mañana del sábado 03 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 5765,
+      "tipo": "Aviso",
+      "codigo": "A515-1/2026",
+      "emision": "Miércoles 30 de septiembre del 2026 a las 12:10 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad post frontal",
+      "desde": "la tarde del miércoles 30 de septiembre del 2026",
+      "hasta": "la tarde del miércoles 30 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Cordillera Costa, Valle) | Los Ríos (Cordillera Costa, Valle) | Los Lagos (Cordillera Costa, Valle)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región del Biobío a la región de Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5764,
+      "tipo": "Aviso",
+      "codigo": "A520-1/2026",
+      "emision": "Miércoles 30 de septiembre del 2026 a las 12:06 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del viernes 02 de octubre del 2026",
+      "hasta": "la tarde del sábado 03 de octubre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle) | Los Lagos (Litoral, Cordillera Costa, Valle, Chiloé, Litoral Interior)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región del Biobío a la región de Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5762,
+      "tipo": "Aviso",
+      "codigo": "A519/2026",
+      "emision": "Miércoles 30 de septiembre del 2026 a las 10:10 hrs.",
+      "fenomeno": "Nubes Convectivas Tornádicas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del viernes 02 de octubre del 2026",
+      "hasta": "la tarde del sábado 03 de octubre del 2026",
+      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
+      "zonas": "Los Ríos (Cordillera Costa, Valle) | Los Lagos (Cordillera Costa, Valle, Litoral Interior)",
+      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de Los Ríos y Los Lagos",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5760,
+      "tipo": "Aviso",
+      "codigo": "A517/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 15:49 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del jueves 01 de octubre del 2026",
+      "hasta": "la noche del jueves 01 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
       ]
     },
     {
@@ -88,22 +183,6 @@
       ]
     },
     {
-      "id": 5756,
-      "tipo": "Aviso",
-      "codigo": "A516/2026",
-      "emision": "Martes 29 de septiembre del 2026 a las 15:41 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Frente frío",
-      "desde": "la madrugada del miércoles 30 de septiembre del 2026",
-      "hasta": "la mañana del miércoles 30 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Región Biobío-Provincia Arauco-Cordillera Nahuelbuta-litoral",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en Región Biobío-Provincia Arauco-Cordillera Nahuelbuta-litoral",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": []
-    },
-    {
       "id": 5754,
       "tipo": "Aviso",
       "codigo": "A512-1/2026",
@@ -143,26 +222,6 @@
       ]
     },
     {
-      "id": 5752,
-      "tipo": "Aviso",
-      "codigo": "A515/2026",
-      "emision": "Martes 29 de septiembre del 2026 a las 11:46 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad post frontal",
-      "desde": "la tarde del miércoles 30 de septiembre del 2026",
-      "hasta": "la tarde del miércoles 30 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Cordillera Costa, Valle) | Los Ríos (Cordillera Costa, Valle) | Los Lagos (Cordillera Costa, Valle)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
       "id": 5745,
       "tipo": "Aviso",
       "codigo": "A506-1/2026",
@@ -194,22 +253,6 @@
       "observacion": "Probabilidad de tormentas de arena",
       "zonas": "Litoral de la Provincia de Huasco",
       "titulo": "Viento Normal a Moderado en Litoral de la Provincia de Huasco",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
-    },
-    {
-      "id": 5743,
-      "tipo": "Aviso",
-      "codigo": "A508/2026",
-      "emision": "Domingo 27 de septiembre del 2026 a las 12:57 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del martes 29 de septiembre del 2026",
-      "hasta": "la mañana del miércoles 30 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": []
