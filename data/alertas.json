@@ -1,48 +1,12 @@
 {
-  "actualizado": "2026-10-01T00:00:01.460476",
+  "actualizado": "2026-10-01T06:00:05.485420",
   "totales": {
-    "avisos": 12,
+    "avisos": 9,
     "alertas": 1,
     "alarmas": 0,
-    "total": 13
+    "total": 10
   },
   "alertas": [
-    {
-      "id": 5744,
-      "tipo": "Aviso",
-      "codigo": "A509/2026",
-      "emision": "Domingo 27 de septiembre del 2026 a las 15:31 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la tarde del lunes 28 de septiembre del 2026",
-      "hasta": "la noche del miércoles 30 de septiembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Litoral de la Provincia de Huasco",
-      "titulo": "Viento Normal a Moderado en Litoral de la Provincia de Huasco",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
-    },
-    {
-      "id": 5745,
-      "tipo": "Aviso",
-      "codigo": "A506-1/2026",
-      "emision": "Domingo 27 de septiembre del 2026 a las 15:32 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del lunes 28 de septiembre del 2026",
-      "hasta": "la noche del miércoles 30 de septiembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Precordillera Salar)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    },
     {
       "id": 5753,
       "tipo": "Aviso",
@@ -60,26 +24,6 @@
       "regiones": [
         "Aysén",
         "Los Lagos"
-      ]
-    },
-    {
-      "id": 5754,
-      "tipo": "Aviso",
-      "codigo": "A512-1/2026",
-      "emision": "Martes 29 de septiembre del 2026 a las 12:34 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del martes 29 de septiembre del 2026",
-      "hasta": "la noche del miércoles 30 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Valparaíso, Metropolitana y O&#039;Higgins",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
       ]
     },
     {
