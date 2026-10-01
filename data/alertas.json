@@ -1,12 +1,83 @@
 {
-  "actualizado": "2026-10-01T12:00:22.465487",
+  "actualizado": "2026-10-01T18:00:25.784497",
   "totales": {
-    "avisos": 9,
+    "avisos": 10,
     "alertas": 1,
     "alarmas": 0,
-    "total": 10
+    "total": 11
   },
   "alertas": [
+    {
+      "id": 5773,
+      "tipo": "Aviso",
+      "codigo": "A524/2026",
+      "emision": "Jueves 1 de octubre del 2026 a las 14:30 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del viernes 02 de octubre del 2026",
+      "hasta": "la noche del lunes 05 de octubre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5772,
+      "tipo": "Aviso",
+      "codigo": "A518-2/2026",
+      "emision": "Jueves 1 de octubre del 2026 a las 11:39 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del viernes 02 de octubre del 2026",
+      "hasta": "la noche del sábado 03 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5771,
+      "tipo": "Aviso",
+      "codigo": "A520-2/2026",
+      "emision": "Jueves 1 de octubre del 2026 a las 11:29 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del viernes 02 de octubre del 2026",
+      "hasta": "la noche del sábado 03 de octubre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle) | Los Lagos (Litoral, Cordillera Costa, Valle, Chiloé, Litoral Interior)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5770,
       "tipo": "Aviso",
@@ -24,30 +95,6 @@
       "regiones": [
         "Biobío",
         "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5768,
-      "tipo": "Aviso",
-      "codigo": "A518-1/2026",
-      "emision": "Miércoles 30 de septiembre del 2026 a las 14:45 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del viernes 02 de octubre del 2026",
-      "hasta": "la noche del sábado 03 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
         "Ñuble"
       ]
     },
@@ -84,27 +131,6 @@
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": []
-    },
-    {
-      "id": 5764,
-      "tipo": "Aviso",
-      "codigo": "A520-1/2026",
-      "emision": "Miércoles 30 de septiembre del 2026 a las 12:06 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del viernes 02 de octubre del 2026",
-      "hasta": "la tarde del sábado 03 de octubre del 2026",
-      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
-      "zonas": "Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle) | Los Lagos (Litoral, Cordillera Costa, Valle, Chiloé, Litoral Interior)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región del Biobío a la región de Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
     },
     {
       "id": 5762,
