@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-30T19:01:43.929790",
+  "actualizado": "2026-10-01T00:00:01.460476",
   "totales": {
     "avisos": 12,
     "alertas": 1,
@@ -8,80 +8,151 @@
   },
   "alertas": [
     {
-      "id": 5768,
+      "id": 5744,
       "tipo": "Aviso",
-      "codigo": "A518-1/2026",
-      "emision": "Miércoles 30 de septiembre del 2026 a las 14:45 hrs.",
+      "codigo": "A509/2026",
+      "emision": "Domingo 27 de septiembre del 2026 a las 15:31 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del viernes 02 de octubre del 2026",
-      "hasta": "la noche del sábado 03 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5767,
-      "tipo": "Aviso",
-      "codigo": "A522/2026",
-      "emision": "Miércoles 30 de septiembre del 2026 a las 14:28 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del viernes 02 de octubre del 2026",
-      "hasta": "la mañana del sábado 03 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Sur, Pampa Patagonica Sur)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de la región de Magallanes",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 5766,
-      "tipo": "Aviso",
-      "codigo": "A521/2026",
-      "emision": "Miércoles 30 de septiembre del 2026 a las 13:42 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del viernes 02 de octubre del 2026",
-      "hasta": "la mañana del sábado 03 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "condicion": "Jet costero",
+      "desde": "la tarde del lunes 28 de septiembre del 2026",
+      "hasta": "la noche del miércoles 30 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Litoral de la Provincia de Huasco",
+      "titulo": "Viento Normal a Moderado en Litoral de la Provincia de Huasco",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": []
     },
     {
-      "id": 5765,
+      "id": 5745,
       "tipo": "Aviso",
-      "codigo": "A515-1/2026",
-      "emision": "Miércoles 30 de septiembre del 2026 a las 12:10 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad post frontal",
-      "desde": "la tarde del miércoles 30 de septiembre del 2026",
-      "hasta": "la tarde del miércoles 30 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Cordillera Costa, Valle) | Los Ríos (Cordillera Costa, Valle) | Los Lagos (Cordillera Costa, Valle)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región del Biobío a la región de Los Lagos",
-      "icono": "⚡",
+      "codigo": "A506-1/2026",
+      "emision": "Domingo 27 de septiembre del 2026 a las 15:32 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del lunes 28 de septiembre del 2026",
+      "hasta": "la noche del miércoles 30 de septiembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Precordillera Salar)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "Biobío",
-        "La Araucanía",
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5753,
+      "tipo": "Aviso",
+      "codigo": "A514/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 11:46 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la noche del jueves 01 de octubre del 2026",
+      "hasta": "la noche del jueves 01 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Los Lagos (Litoral, Chiloé, Litoral Interior) | Aysén (Insular Norte)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "Los Lagos"
+      ]
+    },
+    {
+      "id": 5754,
+      "tipo": "Aviso",
+      "codigo": "A512-1/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 12:34 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la mañana del martes 29 de septiembre del 2026",
+      "hasta": "la noche del miércoles 30 de septiembre del 2026",
+      "observacion": "",
+      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Valparaíso, Metropolitana y O&#039;Higgins",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5757,
+      "tipo": "Aviso",
+      "codigo": "A513-1/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 15:45 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del miércoles 30 de septiembre del 2026",
+      "hasta": "la noche del jueves 01 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Litoral, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5758,
+      "tipo": "Alerta",
+      "codigo": "AA171/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 15:45 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la mañana del jueves 01 de octubre del 2026",
+      "hasta": "la tarde del jueves 01 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Cordillera Costa y sectores de valles)",
+      "titulo": "Evento de Altas Temperaturas Extremas en cordillera de la costa y sectores de valles de la región de Atacama",
+      "icono": "⚠️",
+      "color": "#f97316",
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5760,
+      "tipo": "Aviso",
+      "codigo": "A517/2026",
+      "emision": "Martes 29 de septiembre del 2026 a las 15:49 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del jueves 01 de octubre del 2026",
+      "hasta": "la noche del jueves 01 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
+    },
+    {
+      "id": 5762,
+      "tipo": "Aviso",
+      "codigo": "A519/2026",
+      "emision": "Miércoles 30 de septiembre del 2026 a las 10:10 hrs.",
+      "fenomeno": "Nubes Convectivas Tornádicas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del viernes 02 de octubre del 2026",
+      "hasta": "la tarde del sábado 03 de octubre del 2026",
+      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
+      "zonas": "Los Ríos (Cordillera Costa, Valle) | Los Lagos (Cordillera Costa, Valle, Litoral Interior)",
+      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de Los Ríos y Los Lagos",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
         "Los Lagos",
         "Los Ríos"
       ]
@@ -108,154 +179,81 @@
       ]
     },
     {
-      "id": 5762,
+      "id": 5766,
       "tipo": "Aviso",
-      "codigo": "A519/2026",
-      "emision": "Miércoles 30 de septiembre del 2026 a las 10:10 hrs.",
-      "fenomeno": "Nubes Convectivas Tornádicas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del viernes 02 de octubre del 2026",
-      "hasta": "la tarde del sábado 03 de octubre del 2026",
-      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
-      "zonas": "Los Ríos (Cordillera Costa, Valle) | Los Lagos (Cordillera Costa, Valle, Litoral Interior)",
-      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de Los Ríos y Los Lagos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5760,
-      "tipo": "Aviso",
-      "codigo": "A517/2026",
-      "emision": "Martes 29 de septiembre del 2026 a las 15:49 hrs.",
+      "codigo": "A521/2026",
+      "emision": "Miércoles 30 de septiembre del 2026 a las 13:42 hrs.",
       "fenomeno": "Viento",
       "condicion": "Sistema frontal",
-      "desde": "la mañana del jueves 01 de octubre del 2026",
-      "hasta": "la noche del jueves 01 de octubre del 2026",
+      "desde": "la tarde del viernes 02 de octubre del 2026",
+      "hasta": "la mañana del sábado 03 de octubre del 2026",
       "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5758,
-      "tipo": "Alerta",
-      "codigo": "AA171/2026",
-      "emision": "Martes 29 de septiembre del 2026 a las 15:45 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la mañana del jueves 01 de octubre del 2026",
-      "hasta": "la tarde del jueves 01 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Cordillera Costa y sectores de valles)",
-      "titulo": "Evento de Altas Temperaturas Extremas en cordillera de la costa y sectores de valles de la región de Atacama",
-      "icono": "⚠️",
-      "color": "#f97316",
-      "regiones": [
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5757,
-      "tipo": "Aviso",
-      "codigo": "A513-1/2026",
-      "emision": "Martes 29 de septiembre del 2026 a las 15:45 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del miércoles 30 de septiembre del 2026",
-      "hasta": "la noche del jueves 01 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Litoral, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5754,
-      "tipo": "Aviso",
-      "codigo": "A512-1/2026",
-      "emision": "Martes 29 de septiembre del 2026 a las 12:34 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del martes 29 de septiembre del 2026",
-      "hasta": "la noche del miércoles 30 de septiembre del 2026",
-      "observacion": "",
-      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Valparaíso, Metropolitana y O&#039;Higgins",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5753,
-      "tipo": "Aviso",
-      "codigo": "A514/2026",
-      "emision": "Martes 29 de septiembre del 2026 a las 11:46 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la noche del jueves 01 de octubre del 2026",
-      "hasta": "la noche del jueves 01 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Los Lagos (Litoral, Chiloé, Litoral Interior) | Aysén (Insular Norte)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén",
-        "Los Lagos"
-      ]
-    },
-    {
-      "id": 5745,
-      "tipo": "Aviso",
-      "codigo": "A506-1/2026",
-      "emision": "Domingo 27 de septiembre del 2026 a las 15:32 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del lunes 28 de septiembre del 2026",
-      "hasta": "la noche del miércoles 30 de septiembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Precordillera Salar)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5744,
-      "tipo": "Aviso",
-      "codigo": "A509/2026",
-      "emision": "Domingo 27 de septiembre del 2026 a las 15:31 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la tarde del lunes 28 de septiembre del 2026",
-      "hasta": "la noche del miércoles 30 de septiembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Litoral de la Provincia de Huasco",
-      "titulo": "Viento Normal a Moderado en Litoral de la Provincia de Huasco",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": []
+    },
+    {
+      "id": 5767,
+      "tipo": "Aviso",
+      "codigo": "A522/2026",
+      "emision": "Miércoles 30 de septiembre del 2026 a las 14:28 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del viernes 02 de octubre del 2026",
+      "hasta": "la mañana del sábado 03 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Sur, Pampa Patagonica Sur)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de la región de Magallanes",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5768,
+      "tipo": "Aviso",
+      "codigo": "A518-1/2026",
+      "emision": "Miércoles 30 de septiembre del 2026 a las 14:45 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del viernes 02 de octubre del 2026",
+      "hasta": "la noche del sábado 03 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5769,
+      "tipo": "Aviso",
+      "codigo": "A523/2026",
+      "emision": "Miércoles 30 de septiembre del 2026 a las 18:10 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del viernes 02 de octubre del 2026",
+      "hasta": "la mañana del sábado 03 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Maule (Precordillera) | &Ntilde;uble (Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en precordillera de las regiones del Maule y &Ntilde;uble",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Maule",
+        "Ñuble"
+      ]
     }
   ]
 }
