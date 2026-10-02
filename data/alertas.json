@@ -1,12 +1,58 @@
 {
-  "actualizado": "2026-10-01T19:01:06.321142",
+  "actualizado": "2026-10-02T00:00:31.078752",
   "totales": {
     "avisos": 10,
-    "alertas": 1,
+    "alertas": 0,
     "alarmas": 0,
-    "total": 11
+    "total": 10
   },
   "alertas": [
+    {
+      "id": 5775,
+      "tipo": "Aviso",
+      "codigo": "A520-3/2026",
+      "emision": "Jueves 1 de octubre del 2026 a las 19:34 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la noche del jueves 01 de octubre del 2026",
+      "hasta": "la noche del sábado 03 de octubre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle) | Los Lagos (Litoral, Cordillera Costa, Valle, Chiloé, Litoral Interior)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5774,
+      "tipo": "Aviso",
+      "codigo": "A525/2026",
+      "emision": "Jueves 1 de octubre del 2026 a las 16:22 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Inestabilidad post frontal",
+      "desde": "la tarde del viernes 02 de octubre del 2026",
+      "hasta": "la tarde del sábado 03 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Los Lagos (Cordillera Austral) | Aysén (Cordillera Austral Norte)",
+      "titulo": "Nevadas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "Los Lagos"
+      ]
+    },
     {
       "id": 5773,
       "tipo": "Aviso",
@@ -44,33 +90,6 @@
       "regiones": [
         "Biobío",
         "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5771,
-      "tipo": "Aviso",
-      "codigo": "A520-2/2026",
-      "emision": "Jueves 1 de octubre del 2026 a las 11:29 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del viernes 02 de octubre del 2026",
-      "hasta": "la noche del sábado 03 de octubre del 2026",
-      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle) | Los Lagos (Litoral, Cordillera Costa, Valle, Chiloé, Litoral Interior)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
         "Maule",
         "Metropolitana",
         "O'Higgins",
@@ -167,44 +186,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5758,
-      "tipo": "Alerta",
-      "codigo": "AA171/2026",
-      "emision": "Martes 29 de septiembre del 2026 a las 15:45 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la mañana del jueves 01 de octubre del 2026",
-      "hasta": "la tarde del jueves 01 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Cordillera Costa y sectores de valles)",
-      "titulo": "Evento de Altas Temperaturas Extremas en cordillera de la costa y sectores de valles de la región de Atacama",
-      "icono": "⚠️",
-      "color": "#f97316",
-      "regiones": [
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5757,
-      "tipo": "Aviso",
-      "codigo": "A513-1/2026",
-      "emision": "Martes 29 de septiembre del 2026 a las 15:45 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del miércoles 30 de septiembre del 2026",
-      "hasta": "la noche del jueves 01 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa) | Atacama (Litoral, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
       ]
     },
     {
