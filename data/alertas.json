@@ -1,17 +1,33 @@
 {
-  "actualizado": "2026-10-02T12:00:39.388707",
+  "actualizado": "2026-10-02T18:00:43.169683",
   "totales": {
-    "avisos": 8,
-    "alertas": 0,
+    "avisos": 9,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 8
+    "total": 10
   },
   "alertas": [
     {
-      "id": 5776,
+      "id": 5780,
+      "tipo": "Alerta",
+      "codigo": "AA172/2026",
+      "emision": "Viernes 2 de octubre del 2026 a las 14:47 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la madrugada del domingo 04 de octubre del 2026",
+      "hasta": "la noche del domingo 04 de octubre del 2026",
+      "observacion": "Desarrollo de ventisca",
+      "zonas": "Puna de Atacama",
+      "titulo": "Viento Moderado a Fuerte en Puna de Atacama",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": []
+    },
+    {
+      "id": 5779,
       "tipo": "Aviso",
-      "codigo": "A520-4/2026",
-      "emision": "Viernes 2 de octubre del 2026 a las 06:20 hrs.",
+      "codigo": "A520-5/2026",
+      "emision": "Viernes 2 de octubre del 2026 a las 12:41 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
       "desde": "la madrugada del viernes 02 de octubre del 2026",
@@ -35,6 +51,44 @@
       ]
     },
     {
+      "id": 5778,
+      "tipo": "Aviso",
+      "codigo": "A524-1/2026",
+      "emision": "Viernes 2 de octubre del 2026 a las 12:08 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del viernes 02 de octubre del 2026",
+      "hasta": "la noche del lunes 05 de octubre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5777,
+      "tipo": "Aviso",
+      "codigo": "A526/2026",
+      "emision": "Viernes 2 de octubre del 2026 a las 09:06 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad post frontal",
+      "desde": "la mañana del viernes 02 de octubre del 2026",
+      "hasta": "la noche del viernes 02 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Norte, Insular Norte)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
       "id": 5774,
       "tipo": "Aviso",
       "codigo": "A525/2026",
@@ -51,26 +105,6 @@
       "regiones": [
         "Aysén",
         "Los Lagos"
-      ]
-    },
-    {
-      "id": 5773,
-      "tipo": "Aviso",
-      "codigo": "A524/2026",
-      "emision": "Jueves 1 de octubre del 2026 a las 14:30 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del viernes 02 de octubre del 2026",
-      "hasta": "la noche del lunes 05 de octubre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
       ]
     },
     {
