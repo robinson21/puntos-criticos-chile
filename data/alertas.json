@@ -1,12 +1,32 @@
 {
-  "actualizado": "2026-10-02T19:01:23.031436",
+  "actualizado": "2026-10-03T00:00:48.898423",
   "totales": {
     "avisos": 9,
-    "alertas": 1,
+    "alertas": 2,
     "alarmas": 0,
-    "total": 10
+    "total": 11
   },
   "alertas": [
+    {
+      "id": 5781,
+      "tipo": "Alerta",
+      "codigo": "AA173/2026",
+      "emision": "Viernes 2 de octubre del 2026 a las 19:49 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del viernes 02 de octubre del 2026",
+      "hasta": "la noche del viernes 02 de octubre del 2026",
+      "observacion": "Probabilidad de granizos",
+      "zonas": "Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Valle, Precordillera, Cordillera)",
+      "titulo": "Tormentas Eléctricas en zonas de las regiones de Valparaíso, Metropolitana y O&#039;Higgins",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
     {
       "id": 5780,
       "tipo": "Alerta",
