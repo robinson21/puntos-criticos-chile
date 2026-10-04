@@ -1,30 +1,75 @@
 {
-  "actualizado": "2026-10-04T12:00:28.771543",
+  "actualizado": "2026-10-04T18:00:31.891836",
   "totales": {
-    "avisos": 9,
+    "avisos": 10,
     "alertas": 1,
     "alarmas": 0,
-    "total": 10
+    "total": 11
   },
   "alertas": [
     {
-      "id": 5792,
+      "id": 5795,
       "tipo": "Aviso",
-      "codigo": "A534/2026",
-      "emision": "Domingo 4 de octubre del 2026 a las 07:09 hrs.",
+      "codigo": "A534-1/2026",
+      "emision": "Domingo 4 de octubre del 2026 a las 12:35 hrs.",
       "fenomeno": "Precipitaciones",
       "condicion": "Sistema frontal",
       "desde": "la madrugada del martes 06 de octubre del 2026",
       "hasta": "la mañana del miércoles 07 de octubre del 2026",
       "observacion": "",
-      "zonas": "Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones Metropolitana, O&#039;Higgins y Maule",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Precordillera, Cordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas desde la región de Coquimbo a la región del Maule",
       "icono": "🌧️",
       "color": "#fbbf24",
       "regiones": [
+        "Coquimbo",
         "Maule",
         "Metropolitana",
-        "O'Higgins"
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5794,
+      "tipo": "Aviso",
+      "codigo": "A535/2026",
+      "emision": "Domingo 4 de octubre del 2026 a las 12:30 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del martes 06 de octubre del 2026",
+      "hasta": "la noche del jueves 08 de octubre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5793,
+      "tipo": "Aviso",
+      "codigo": "A525-2/2026",
+      "emision": "Domingo 4 de octubre del 2026 a las 12:23 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Oclusión frontal",
+      "desde": "la mañana del domingo 04 de octubre del 2026",
+      "hasta": "la noche del domingo 04 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Los Lagos (Cordillera Austral) | Aysén (Cordillera Austral Norte)",
+      "titulo": "Nevadas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "Los Lagos"
       ]
     },
     {
@@ -46,25 +91,6 @@
         "Metropolitana",
         "O'Higgins",
         "Valparaíso"
-      ]
-    },
-    {
-      "id": 5790,
-      "tipo": "Aviso",
-      "codigo": "A525-1/2026",
-      "emision": "Sábado 3 de octubre del 2026 a las 18:57 hrs.",
-      "fenomeno": "Nevadas",
-      "condicion": "Oclusión frontal",
-      "desde": "la noche del sábado 03 de octubre del 2026",
-      "hasta": "la mañana del domingo 04 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Los Lagos (Cordillera Austral) | Aysén (Cordillera Austral Norte)",
-      "titulo": "Nevadas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "❄️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén",
-        "Los Lagos"
       ]
     },
     {
