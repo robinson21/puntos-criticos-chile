@@ -1,12 +1,31 @@
 {
-  "actualizado": "2026-10-03T19:00:54.504788",
+  "actualizado": "2026-10-04T00:00:21.663128",
   "totales": {
-    "avisos": 10,
+    "avisos": 9,
     "alertas": 1,
     "alarmas": 0,
-    "total": 11
+    "total": 10
   },
   "alertas": [
+    {
+      "id": 5790,
+      "tipo": "Aviso",
+      "codigo": "A525-1/2026",
+      "emision": "Sábado 3 de octubre del 2026 a las 18:57 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Oclusión frontal",
+      "desde": "la noche del sábado 03 de octubre del 2026",
+      "hasta": "la mañana del domingo 04 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Los Lagos (Cordillera Austral) | Aysén (Cordillera Austral Norte)",
+      "titulo": "Nevadas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "Los Lagos"
+      ]
+    },
     {
       "id": 5789,
       "tipo": "Aviso",
@@ -188,44 +207,6 @@
         "O'Higgins",
         "Valparaíso",
         "Ñuble"
-      ]
-    },
-    {
-      "id": 5774,
-      "tipo": "Aviso",
-      "codigo": "A525/2026",
-      "emision": "Jueves 1 de octubre del 2026 a las 16:22 hrs.",
-      "fenomeno": "Nevadas",
-      "condicion": "Inestabilidad post frontal",
-      "desde": "la tarde del viernes 02 de octubre del 2026",
-      "hasta": "la tarde del sábado 03 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Los Lagos (Cordillera Austral) | Aysén (Cordillera Austral Norte)",
-      "titulo": "Nevadas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "❄️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén",
-        "Los Lagos"
-      ]
-    },
-    {
-      "id": 5762,
-      "tipo": "Aviso",
-      "codigo": "A519/2026",
-      "emision": "Miércoles 30 de septiembre del 2026 a las 10:10 hrs.",
-      "fenomeno": "Nubes Convectivas Tornádicas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del viernes 02 de octubre del 2026",
-      "hasta": "la tarde del sábado 03 de octubre del 2026",
-      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
-      "zonas": "Los Ríos (Cordillera Costa, Valle) | Los Lagos (Cordillera Costa, Valle, Litoral Interior)",
-      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de Los Ríos y Los Lagos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Los Lagos",
-        "Los Ríos"
       ]
     }
   ]
