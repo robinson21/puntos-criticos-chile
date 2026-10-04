@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-04T18:00:31.891836",
+  "actualizado": "2026-10-04T19:01:11.531248",
   "totales": {
     "avisos": 10,
     "alertas": 1,
@@ -7,6 +7,29 @@
     "total": 11
   },
   "alertas": [
+    {
+      "id": 5796,
+      "tipo": "Aviso",
+      "codigo": "A531-1/2026",
+      "emision": "Domingo 4 de octubre del 2026 a las 15:27 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del lunes 05 de octubre del 2026",
+      "hasta": "la madrugada del miércoles 07 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Coquimbo, Valparaíso, O&#039;Higgins, Maule, &Ntilde;uble y Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5795,
       "tipo": "Aviso",
@@ -149,29 +172,6 @@
         "Biobío",
         "Maule",
         "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5786,
-      "tipo": "Aviso",
-      "codigo": "A531/2026",
-      "emision": "Sábado 3 de octubre del 2026 a las 12:33 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del lunes 05 de octubre del 2026",
-      "hasta": "la madrugada del miércoles 07 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Coquimbo, Valparaíso, O&#039;Higgins, Maule, &Ntilde;uble y Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
         "O'Higgins",
         "Valparaíso",
         "Ñuble"
