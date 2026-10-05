@@ -1,12 +1,30 @@
 {
-  "actualizado": "2026-10-05T18:00:49.879110",
+  "actualizado": "2026-10-05T19:01:27.208701",
   "totales": {
-    "avisos": 9,
+    "avisos": 10,
     "alertas": 1,
     "alarmas": 0,
-    "total": 10
+    "total": 11
   },
   "alertas": [
+    {
+      "id": 5803,
+      "tipo": "Aviso",
+      "codigo": "A538/2026",
+      "emision": "Lunes 5 de octubre del 2026 a las 15:34 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del martes 06 de octubre del 2026",
+      "hasta": "la tarde del martes 06 de octubre del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Cordillera Costa, Valle)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de la región de La Araucanía",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía"
+      ]
+    },
     {
       "id": 5802,
       "tipo": "Aviso",
