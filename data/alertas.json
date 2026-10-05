@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-05T00:00:36.805414",
+  "actualizado": "2026-10-05T06:00:40.176291",
   "totales": {
-    "avisos": 10,
+    "avisos": 7,
     "alertas": 0,
     "alarmas": 0,
-    "total": 10
+    "total": 7
   },
   "alertas": [
     {
@@ -44,29 +44,6 @@
       ]
     },
     {
-      "id": 5787,
-      "tipo": "Aviso",
-      "codigo": "A518-3/2026",
-      "emision": "Sábado 3 de octubre del 2026 a las 12:43 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del sábado 03 de octubre del 2026",
-      "hasta": "la noche del domingo 04 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Valparaíso a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
       "id": 5788,
       "tipo": "Aviso",
       "codigo": "A524-2/2026",
@@ -102,46 +79,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Atacama"
-      ]
-    },
-    {
-      "id": 5791,
-      "tipo": "Aviso",
-      "codigo": "A533/2026",
-      "emision": "Domingo 4 de octubre del 2026 a las 06:29 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del domingo 04 de octubre del 2026",
-      "hasta": "la noche del domingo 04 de octubre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de O&#039;Higgins",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5793,
-      "tipo": "Aviso",
-      "codigo": "A525-2/2026",
-      "emision": "Domingo 4 de octubre del 2026 a las 12:23 hrs.",
-      "fenomeno": "Nevadas",
-      "condicion": "Oclusión frontal",
-      "desde": "la mañana del domingo 04 de octubre del 2026",
-      "hasta": "la noche del domingo 04 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Los Lagos (Cordillera Austral) | Aysén (Cordillera Austral Norte)",
-      "titulo": "Nevadas Normales a Moderadas en zonas de las regiones de Los Lagos y Aysén",
-      "icono": "❄️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén",
-        "Los Lagos"
       ]
     },
     {
