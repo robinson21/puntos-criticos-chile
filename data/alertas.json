@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-05T07:01:18.897007",
+  "actualizado": "2026-10-05T12:00:45.185775",
   "totales": {
     "avisos": 7,
     "alertas": 0,
@@ -8,92 +8,18 @@
   },
   "alertas": [
     {
-      "id": 5783,
+      "id": 5797,
       "tipo": "Aviso",
-      "codigo": "A528/2026",
-      "emision": "Sábado 3 de octubre del 2026 a las 12:15 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del lunes 05 de octubre del 2026",
-      "hasta": "la madrugada del martes 06 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Precipitaciones Normales a Moderadas en Archipielago Juan Fernández",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5784,
-      "tipo": "Aviso",
-      "codigo": "A529/2026",
-      "emision": "Sábado 3 de octubre del 2026 a las 12:16 hrs.",
+      "codigo": "A531-2/2026",
+      "emision": "Lunes 5 de octubre del 2026 a las 07:27 hrs.",
       "fenomeno": "Viento",
       "condicion": "Sistema frontal",
-      "desde": "la mañana del lunes 05 de octubre del 2026",
-      "hasta": "la mañana del martes 06 de octubre del 2026",
+      "desde": "la tarde del lunes 05 de octubre del 2026",
+      "hasta": "la madrugada del miércoles 07 de octubre del 2026",
       "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
       "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5788,
-      "tipo": "Aviso",
-      "codigo": "A524-2/2026",
-      "emision": "Sábado 3 de octubre del 2026 a las 14:15 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del sábado 03 de octubre del 2026",
-      "hasta": "la noche del jueves 08 de octubre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5789,
-      "tipo": "Aviso",
-      "codigo": "A532/2026",
-      "emision": "Sábado 3 de octubre del 2026 a las 14:15 hrs.",
-      "fenomeno": "Nevadas",
-      "condicion": "Vaguada en altura",
-      "desde": "la mañana del domingo 04 de octubre del 2026",
-      "hasta": "la madrugada del martes 06 de octubre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Atacama (Cordillera)",
-      "titulo": "Nevadas Normales a Moderadas en cordillera de la región de Atacama",
-      "icono": "❄️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5794,
-      "tipo": "Aviso",
-      "codigo": "A535/2026",
-      "emision": "Domingo 4 de octubre del 2026 a las 12:30 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del martes 06 de octubre del 2026",
-      "hasta": "la noche del jueves 08 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
         "Biobío",
@@ -128,26 +54,101 @@
       ]
     },
     {
-      "id": 5796,
+      "id": 5794,
       "tipo": "Aviso",
-      "codigo": "A531-1/2026",
-      "emision": "Domingo 4 de octubre del 2026 a las 15:27 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del lunes 05 de octubre del 2026",
-      "hasta": "la madrugada del miércoles 07 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Coquimbo, Valparaíso, O&#039;Higgins, Maule, &Ntilde;uble y Biobío",
-      "icono": "💨",
+      "codigo": "A535/2026",
+      "emision": "Domingo 4 de octubre del 2026 a las 12:30 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del martes 06 de octubre del 2026",
+      "hasta": "la noche del jueves 08 de octubre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
         "Biobío",
         "Coquimbo",
         "Maule",
+        "Metropolitana",
         "O'Higgins",
         "Valparaíso",
         "Ñuble"
+      ]
+    },
+    {
+      "id": 5789,
+      "tipo": "Aviso",
+      "codigo": "A532/2026",
+      "emision": "Sábado 3 de octubre del 2026 a las 14:15 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Vaguada en altura",
+      "desde": "la mañana del domingo 04 de octubre del 2026",
+      "hasta": "la madrugada del martes 06 de octubre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Atacama (Cordillera)",
+      "titulo": "Nevadas Normales a Moderadas en cordillera de la región de Atacama",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5788,
+      "tipo": "Aviso",
+      "codigo": "A524-2/2026",
+      "emision": "Sábado 3 de octubre del 2026 a las 14:15 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del sábado 03 de octubre del 2026",
+      "hasta": "la noche del jueves 08 de octubre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5784,
+      "tipo": "Aviso",
+      "codigo": "A529/2026",
+      "emision": "Sábado 3 de octubre del 2026 a las 12:16 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del lunes 05 de octubre del 2026",
+      "hasta": "la mañana del martes 06 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
+    },
+    {
+      "id": 5783,
+      "tipo": "Aviso",
+      "codigo": "A528/2026",
+      "emision": "Sábado 3 de octubre del 2026 a las 12:15 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del lunes 05 de octubre del 2026",
+      "hasta": "la madrugada del martes 06 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Precipitaciones Normales a Moderadas en Archipielago Juan Fernández",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
       ]
     }
   ]
