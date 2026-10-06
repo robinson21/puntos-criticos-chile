@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-05T19:01:27.208701",
+  "actualizado": "2026-10-06T00:00:53.371317",
   "totales": {
     "avisos": 10,
     "alertas": 1,
@@ -7,6 +7,26 @@
     "total": 11
   },
   "alertas": [
+    {
+      "id": 5804,
+      "tipo": "Aviso",
+      "codigo": "A524-3/2026",
+      "emision": "Lunes 5 de octubre del 2026 a las 15:58 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del lunes 05 de octubre del 2026",
+      "hasta": "la noche del viernes 09 de octubre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5803,
       "tipo": "Aviso",
@@ -165,26 +185,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Atacama"
-      ]
-    },
-    {
-      "id": 5788,
-      "tipo": "Aviso",
-      "codigo": "A524-2/2026",
-      "emision": "Sábado 3 de octubre del 2026 a las 14:15 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del sábado 03 de octubre del 2026",
-      "hasta": "la noche del jueves 08 de octubre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
       ]
     },
     {
