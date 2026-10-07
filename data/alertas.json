@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-07T12:00:18.878254",
+  "actualizado": "2026-10-07T18:00:22.062806",
   "totales": {
     "avisos": 7,
     "alertas": 1,
@@ -86,13 +86,50 @@
       ]
     },
     {
-      "id": 5806,
+      "id": 5810,
+      "tipo": "Alerta",
+      "codigo": "AA175/2026",
+      "emision": "Miércoles 7 de octubre del 2026 a las 12:05 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del miércoles 07 de octubre del 2026",
+      "hasta": "la noche del jueves 08 de octubre del 2026",
+      "observacion": "Desarrollo de tormentas de arena",
+      "zonas": "Antofagasta (Cordillera Costa, Precordillera Salar)",
+      "titulo": "Viento Moderado a Fuerte en zonas de la región de Antofagasta",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Antofagasta"
+      ]
+    },
+    {
+      "id": 5811,
       "tipo": "Aviso",
-      "codigo": "A535-1/2026",
-      "emision": "Martes 6 de octubre del 2026 a las 11:54 hrs.",
+      "codigo": "A524-5/2026",
+      "emision": "Miércoles 7 de octubre del 2026 a las 12:05 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del miércoles 07 de octubre del 2026",
+      "hasta": "la noche del viernes 09 de octubre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Antofagasta (Cordillera Costa, Pampa, Precordillera Occidental, Precordillera Alto Loa, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5812,
+      "tipo": "Aviso",
+      "codigo": "A535-2/2026",
+      "emision": "Miércoles 7 de octubre del 2026 a las 12:09 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del martes 06 de octubre del 2026",
+      "desde": "la tarde del miércoles 07 de octubre del 2026",
       "hasta": "la noche del viernes 09 de octubre del 2026",
       "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
       "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
@@ -110,35 +147,16 @@
       ]
     },
     {
-      "id": 5807,
+      "id": 5813,
       "tipo": "Aviso",
-      "codigo": "A524-4/2026",
-      "emision": "Martes 6 de octubre del 2026 a las 14:16 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del martes 06 de octubre del 2026",
-      "hasta": "la noche del viernes 09 de octubre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Antofagasta (Cordillera Costa, Pampa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5808,
-      "tipo": "Aviso",
-      "codigo": "A540/2026",
-      "emision": "Martes 6 de octubre del 2026 a las 14:16 hrs.",
+      "codigo": "A540-1/2026",
+      "emision": "Miércoles 7 de octubre del 2026 a las 12:16 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
       "desde": "la tarde del miércoles 07 de octubre del 2026",
-      "hasta": "la noche del miércoles 07 de octubre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Chiloé, Litoral Interior, Cordillera Austral)",
+      "hasta": "la noche del jueves 08 de octubre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Cordillera Costa, Valle, Precordillera)",
       "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
       "icono": "⚡",
       "color": "#fbbf24",
@@ -146,27 +164,6 @@
         "La Araucanía",
         "Los Lagos",
         "Los Ríos"
-      ]
-    },
-    {
-      "id": 5809,
-      "tipo": "Alerta",
-      "codigo": "AA174-1/2026",
-      "emision": "Martes 6 de octubre del 2026 a las 15:56 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del martes 06 de octubre del 2026",
-      "hasta": "la tarde del miércoles 07 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Precipitaciones Moderadas a Fuertes en zonas desde la región de Coquimbo a la región de O&#039;Higgins",
-      "icono": "🌧️",
-      "color": "#f97316",
-      "regiones": [
-        "Coquimbo",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
       ]
     }
   ]
