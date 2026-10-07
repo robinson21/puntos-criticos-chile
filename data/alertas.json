@@ -1,35 +1,12 @@
 {
-  "actualizado": "2026-10-07T07:00:53.214037",
+  "actualizado": "2026-10-07T12:00:18.878254",
   "totales": {
-    "avisos": 8,
+    "avisos": 7,
     "alertas": 1,
     "alarmas": 0,
-    "total": 9
+    "total": 8
   },
   "alertas": [
-    {
-      "id": 5799,
-      "tipo": "Aviso",
-      "codigo": "A534-2/2026",
-      "emision": "Lunes 5 de octubre del 2026 a las 11:25 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del lunes 05 de octubre del 2026",
-      "hasta": "la noche del martes 06 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Cordillera) | Metropolitana (Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas desde la región de Coquimbo a la región de &Ntilde;uble",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
     {
       "id": 5800,
       "tipo": "Aviso",
