@@ -1,36 +1,12 @@
 {
-  "actualizado": "2026-10-09T00:00:03.701629",
+  "actualizado": "2026-10-09T06:00:07.072260",
   "totales": {
-    "avisos": 6,
-    "alertas": 1,
+    "avisos": 4,
+    "alertas": 0,
     "alarmas": 0,
-    "total": 7
+    "total": 4
   },
   "alertas": [
-    {
-      "id": 5800,
-      "tipo": "Aviso",
-      "codigo": "A531-3/2026",
-      "emision": "Lunes 5 de octubre del 2026 a las 12:43 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del lunes 05 de octubre del 2026",
-      "hasta": "la noche del jueves 08 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
     {
       "id": 5812,
       "tipo": "Aviso",
@@ -53,66 +29,6 @@
         "O'Higgins",
         "Valparaíso",
         "Ñuble"
-      ]
-    },
-    {
-      "id": 5814,
-      "tipo": "Aviso",
-      "codigo": "A541/2026",
-      "emision": "Jueves 8 de octubre del 2026 a las 08:18 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del jueves 08 de octubre del 2026",
-      "hasta": "la noche del jueves 08 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O&#039;Higgins (Valle, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de las regiones de Valparaíso, Metropolitana y O&#039;Higgins",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5815,
-      "tipo": "Aviso",
-      "codigo": "A542/2026",
-      "emision": "Jueves 8 de octubre del 2026 a las 10:57 hrs.",
-      "fenomeno": "Nubes Convectivas Tornádicas",
-      "condicion": "Frente ocluído",
-      "desde": "la tarde del jueves 08 de octubre del 2026",
-      "hasta": "la noche del jueves 08 de octubre del 2026",
-      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de La Araucanía y Los Ríos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5816,
-      "tipo": "Alerta",
-      "codigo": "AA176/2026",
-      "emision": "Jueves 8 de octubre del 2026 a las 14:28 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del jueves 08 de octubre del 2026",
-      "hasta": "la noche del jueves 08 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O&#039;Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
-      "titulo": "Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Maule",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": [
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
       ]
     },
     {
@@ -152,6 +68,25 @@
         "La Araucanía",
         "Los Lagos",
         "Los Ríos"
+      ]
+    },
+    {
+      "id": 5819,
+      "tipo": "Aviso",
+      "codigo": "A531-4/2026",
+      "emision": "Viernes 9 de octubre del 2026 a las 01:51 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la madrugada del viernes 09 de octubre del 2026",
+      "hasta": "la noche del viernes 09 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Valparaíso y Metropolitana",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Metropolitana",
+        "Valparaíso"
       ]
     }
   ]
