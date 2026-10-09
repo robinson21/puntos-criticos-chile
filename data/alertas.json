@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-09T12:00:19.870383",
+  "actualizado": "2026-10-09T20:17:08.973533",
   "totales": {
     "avisos": 4,
     "alertas": 0,
@@ -8,46 +8,43 @@
   },
   "alertas": [
     {
-      "id": 5812,
+      "id": 5820,
       "tipo": "Aviso",
-      "codigo": "A535-2/2026",
-      "emision": "Miércoles 7 de octubre del 2026 a las 12:09 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del miércoles 07 de octubre del 2026",
-      "hasta": "la noche del viernes 09 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5817,
-      "tipo": "Aviso",
-      "codigo": "A524-6/2026",
-      "emision": "Jueves 8 de octubre del 2026 a las 16:46 hrs.",
+      "codigo": "A543/2026",
+      "emision": "Viernes 9 de octubre del 2026 a las 15:01 hrs.",
       "fenomeno": "Viento",
       "condicion": "Corriente en chorro",
-      "desde": "la tarde del jueves 08 de octubre del 2026",
-      "hasta": "la noche del viernes 09 de octubre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Antofagasta (Cordillera Costa, Pampa, Precordillera Occidental, Precordillera Alto Loa, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Antofagasta y Atacama",
+      "desde": "la tarde del domingo 11 de octubre del 2026",
+      "hasta": "la noche del miércoles 14 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
-        "Atacama"
+        "Arica y Parinacota",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5819,
+      "tipo": "Aviso",
+      "codigo": "A531-4/2026",
+      "emision": "Viernes 9 de octubre del 2026 a las 01:51 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la madrugada del viernes 09 de octubre del 2026",
+      "hasta": "la noche del viernes 09 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Valparaíso y Metropolitana",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Metropolitana",
+        "Valparaíso"
       ]
     },
     {
@@ -71,22 +68,27 @@
       ]
     },
     {
-      "id": 5819,
+      "id": 5812,
       "tipo": "Aviso",
-      "codigo": "A531-4/2026",
-      "emision": "Viernes 9 de octubre del 2026 a las 01:51 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la madrugada del viernes 09 de octubre del 2026",
+      "codigo": "A535-2/2026",
+      "emision": "Miércoles 7 de octubre del 2026 a las 12:09 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del miércoles 07 de octubre del 2026",
       "hasta": "la noche del viernes 09 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Valparaíso y Metropolitana",
-      "icono": "💨",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
         "Metropolitana",
-        "Valparaíso"
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
       ]
     }
   ]
