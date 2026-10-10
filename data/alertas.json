@@ -1,12 +1,59 @@
 {
-  "actualizado": "2026-10-10T12:00:10.261447",
+  "actualizado": "2026-10-10T18:00:16.394978",
   "totales": {
-    "avisos": 1,
+    "avisos": 3,
     "alertas": 0,
     "alarmas": 0,
-    "total": 1
+    "total": 3
   },
   "alertas": [
+    {
+      "id": 5822,
+      "tipo": "Aviso",
+      "codigo": "A544/2026",
+      "emision": "Sábado 10 de octubre del 2026 a las 10:51 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del domingo 11 de octubre del 2026",
+      "hasta": "la noche del martes 13 de octubre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera, Cordillera) | Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Atacama a la región del Biobío",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama",
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5821,
+      "tipo": "Aviso",
+      "codigo": "A545/2026",
+      "emision": "Sábado 10 de octubre del 2026 a las 10:52 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del lunes 12 de octubre del 2026",
+      "hasta": "la noche del lunes 12 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Precordillera y valles precordilleranos) | Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O&#039;Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas desde la región de Coquimbo a la región del Maule",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
     {
       "id": 5820,
       "tipo": "Aviso",
