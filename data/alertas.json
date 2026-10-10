@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-10T00:00:04.098577",
+  "actualizado": "2026-10-10T06:00:07.164031",
   "totales": {
-    "avisos": 4,
+    "avisos": 1,
     "alertas": 0,
     "alarmas": 0,
-    "total": 4
+    "total": 1
   },
   "alertas": [
     {
@@ -26,69 +26,6 @@
         "Arica y Parinacota",
         "Atacama",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5819,
-      "tipo": "Aviso",
-      "codigo": "A531-4/2026",
-      "emision": "Viernes 9 de octubre del 2026 a las 01:51 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la madrugada del viernes 09 de octubre del 2026",
-      "hasta": "la noche del viernes 09 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Valparaíso (Cordillera) | Metropolitana (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Valparaíso y Metropolitana",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Metropolitana",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5818,
-      "tipo": "Aviso",
-      "codigo": "A540-2/2026",
-      "emision": "Jueves 8 de octubre del 2026 a las 17:56 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del jueves 08 de octubre del 2026",
-      "hasta": "la noche del viernes 09 de octubre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5812,
-      "tipo": "Aviso",
-      "codigo": "A535-2/2026",
-      "emision": "Miércoles 7 de octubre del 2026 a las 12:09 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del miércoles 07 de octubre del 2026",
-      "hasta": "la noche del viernes 09 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     }
   ]
