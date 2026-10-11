@@ -1,12 +1,67 @@
 {
-  "actualizado": "2026-10-10T19:00:51.310239",
+  "actualizado": "2026-10-11T00:00:28.561444",
   "totales": {
-    "avisos": 3,
-    "alertas": 0,
+    "avisos": 4,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 3
+    "total": 5
   },
   "alertas": [
+    {
+      "id": 5825,
+      "tipo": "Aviso",
+      "codigo": "A543-1/2026",
+      "emision": "Sábado 10 de octubre del 2026 a las 16:11 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del domingo 11 de octubre del 2026",
+      "hasta": "la noche del miércoles 14 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5824,
+      "tipo": "Aviso",
+      "codigo": "A546/2026",
+      "emision": "Sábado 10 de octubre del 2026 a las 16:11 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del domingo 11 de octubre del 2026",
+      "hasta": "la mañana del lunes 12 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Litoral desde Paposo al sur",
+      "titulo": "Precipitaciones Normales a Moderadas en Litoral desde Paposo al sur",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 5823,
+      "tipo": "Alerta",
+      "codigo": "AA177/2026",
+      "emision": "Sábado 10 de octubre del 2026 a las 16:12 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del lunes 12 de octubre del 2026",
+      "hasta": "la madrugada del miércoles 14 de octubre del 2026",
+      "observacion": "Desarrollo de tormentas de arena",
+      "zonas": "Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en zonas de la región de Antofagasta",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Antofagasta"
+      ]
+    },
     {
       "id": 5822,
       "tipo": "Aviso",
@@ -52,27 +107,6 @@
         "Metropolitana",
         "O'Higgins",
         "Valparaíso"
-      ]
-    },
-    {
-      "id": 5820,
-      "tipo": "Aviso",
-      "codigo": "A543/2026",
-      "emision": "Viernes 9 de octubre del 2026 a las 15:01 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del domingo 11 de octubre del 2026",
-      "hasta": "la noche del miércoles 14 de octubre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Atacama",
-        "Tarapacá"
       ]
     }
   ]
