@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-11T00:00:28.561444",
+  "actualizado": "2026-10-11T06:00:32.181982",
   "totales": {
     "avisos": 4,
     "alertas": 1,
@@ -7,6 +7,24 @@
     "total": 5
   },
   "alertas": [
+    {
+      "id": 5826,
+      "tipo": "Alerta",
+      "codigo": "AA177-1/2026",
+      "emision": "Sábado 10 de octubre del 2026 a las 22:07 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del lunes 12 de octubre del 2026",
+      "hasta": "la madrugada del miércoles 14 de octubre del 2026",
+      "observacion": "Desarrollo de tormentas de arena",
+      "zonas": "Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en zonas de la región de Antofagasta",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Antofagasta"
+      ]
+    },
     {
       "id": 5825,
       "tipo": "Aviso",
@@ -43,24 +61,6 @@
       "icono": "🌧️",
       "color": "#fbbf24",
       "regiones": []
-    },
-    {
-      "id": 5823,
-      "tipo": "Alerta",
-      "codigo": "AA177/2026",
-      "emision": "Sábado 10 de octubre del 2026 a las 16:12 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del lunes 12 de octubre del 2026",
-      "hasta": "la madrugada del miércoles 14 de octubre del 2026",
-      "observacion": "Desarrollo de tormentas de arena",
-      "zonas": "Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas de la región de Antofagasta",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Antofagasta"
-      ]
     },
     {
       "id": 5822,
