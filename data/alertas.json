@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-12T12:00:48.962451",
+  "actualizado": "2026-10-12T18:00:52.463033",
   "totales": {
     "avisos": 7,
     "alertas": 1,
@@ -8,43 +8,79 @@
   },
   "alertas": [
     {
-      "id": 5832,
+      "id": 5825,
       "tipo": "Aviso",
-      "codigo": "A550/2026",
-      "emision": "Lunes 12 de octubre del 2026 a las 06:10 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Frente ocluído",
-      "desde": "la mañana del lunes 12 de octubre del 2026",
-      "hasta": "la noche del lunes 12 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Precipitaciones Normales a Moderadas en Archipielago Juan Fernández",
-      "icono": "🌧️",
+      "codigo": "A543-1/2026",
+      "emision": "Sábado 10 de octubre del 2026 a las 16:11 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del domingo 11 de octubre del 2026",
+      "hasta": "la noche del miércoles 14 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "Archipiélago Juan Fernández"
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Atacama",
+        "Tarapacá"
       ]
     },
     {
-      "id": 5831,
+      "id": 5826,
+      "tipo": "Alerta",
+      "codigo": "AA177-1/2026",
+      "emision": "Sábado 10 de octubre del 2026 a las 22:07 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del lunes 12 de octubre del 2026",
+      "hasta": "la madrugada del miércoles 14 de octubre del 2026",
+      "observacion": "Desarrollo de tormentas de arena",
+      "zonas": "Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en zonas de la región de Antofagasta",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Antofagasta"
+      ]
+    },
+    {
+      "id": 5828,
       "tipo": "Aviso",
-      "codigo": "A545-1/2026",
-      "emision": "Domingo 11 de octubre del 2026 a las 12:28 hrs.",
+      "codigo": "A548/2026",
+      "emision": "Domingo 11 de octubre del 2026 a las 11:32 hrs.",
       "fenomeno": "Precipitaciones",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del lunes 12 de octubre del 2026",
+      "condicion": "Oclusión frontal",
+      "desde": "la madrugada del lunes 12 de octubre del 2026",
       "hasta": "la noche del lunes 12 de octubre del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O&#039;Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas desde la región de Coquimbo a la región del Maule",
+      "zonas": "Magallanes (Cordillera Austral Norte, Cordillera Austral Sur, Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de la región de Magallanes",
       "icono": "🌧️",
       "color": "#fbbf24",
       "regiones": [
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5829,
+      "tipo": "Aviso",
+      "codigo": "A549/2026",
+      "emision": "Domingo 11 de octubre del 2026 a las 11:57 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del lunes 12 de octubre del 2026",
+      "hasta": "la tarde del martes 13 de octubre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "La Araucanía y Los Ríos",
+      "titulo": "Probables Tormentas Eléctricas en las regiones de La Araucanía y Los Ríos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Ríos"
       ]
     },
     {
@@ -73,96 +109,62 @@
       ]
     },
     {
-      "id": 5829,
+      "id": 5831,
       "tipo": "Aviso",
-      "codigo": "A549/2026",
-      "emision": "Domingo 11 de octubre del 2026 a las 11:57 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del lunes 12 de octubre del 2026",
-      "hasta": "la tarde del martes 13 de octubre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "La Araucanía y Los Ríos",
-      "titulo": "Probables Tormentas Eléctricas en las regiones de La Araucanía y Los Ríos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5828,
-      "tipo": "Aviso",
-      "codigo": "A548/2026",
-      "emision": "Domingo 11 de octubre del 2026 a las 11:32 hrs.",
+      "codigo": "A545-1/2026",
+      "emision": "Domingo 11 de octubre del 2026 a las 12:28 hrs.",
       "fenomeno": "Precipitaciones",
-      "condicion": "Oclusión frontal",
-      "desde": "la madrugada del lunes 12 de octubre del 2026",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del lunes 12 de octubre del 2026",
       "hasta": "la noche del lunes 12 de octubre del 2026",
       "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Norte, Cordillera Austral Sur, Pampa Patagonica Norte, Pampa Patagonica Sur)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de la región de Magallanes",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O&#039;Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas desde la región de Coquimbo a la región del Maule",
       "icono": "🌧️",
       "color": "#fbbf24",
       "regiones": [
-        "Magallanes"
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
       ]
     },
     {
-      "id": 5826,
-      "tipo": "Alerta",
-      "codigo": "AA177-1/2026",
-      "emision": "Sábado 10 de octubre del 2026 a las 22:07 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del lunes 12 de octubre del 2026",
-      "hasta": "la madrugada del miércoles 14 de octubre del 2026",
-      "observacion": "Desarrollo de tormentas de arena",
-      "zonas": "Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas de la región de Antofagasta",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Antofagasta"
-      ]
-    },
-    {
-      "id": 5825,
+      "id": 5832,
       "tipo": "Aviso",
-      "codigo": "A543-1/2026",
-      "emision": "Sábado 10 de octubre del 2026 a las 16:11 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del domingo 11 de octubre del 2026",
-      "hasta": "la noche del miércoles 14 de octubre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Atacama",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5824,
-      "tipo": "Aviso",
-      "codigo": "A546/2026",
-      "emision": "Sábado 10 de octubre del 2026 a las 16:11 hrs.",
+      "codigo": "A550/2026",
+      "emision": "Lunes 12 de octubre del 2026 a las 06:10 hrs.",
       "fenomeno": "Precipitaciones",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del domingo 11 de octubre del 2026",
-      "hasta": "la mañana del lunes 12 de octubre del 2026",
+      "condicion": "Frente ocluído",
+      "desde": "la mañana del lunes 12 de octubre del 2026",
+      "hasta": "la noche del lunes 12 de octubre del 2026",
       "observacion": "",
-      "zonas": "Litoral desde Paposo al sur",
-      "titulo": "Precipitaciones Normales a Moderadas en Litoral desde Paposo al sur",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Precipitaciones Normales a Moderadas en Archipielago Juan Fernández",
       "icono": "🌧️",
       "color": "#fbbf24",
-      "regiones": []
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
+    },
+    {
+      "id": 5833,
+      "tipo": "Aviso",
+      "codigo": "A551/2026",
+      "emision": "Lunes 12 de octubre del 2026 a las 09:24 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Oclusión frontal",
+      "desde": "la mañana del lunes 12 de octubre del 2026",
+      "hasta": "la noche del lunes 12 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
     }
   ]
 }
