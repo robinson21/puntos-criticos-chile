@@ -1,12 +1,76 @@
 {
-  "actualizado": "2026-10-13T18:00:34.203652",
+  "actualizado": "2026-10-13T19:01:15.107400",
   "totales": {
-    "avisos": 5,
-    "alertas": 1,
+    "avisos": 6,
+    "alertas": 2,
     "alarmas": 0,
-    "total": 6
+    "total": 8
   },
   "alertas": [
+    {
+      "id": 5839,
+      "tipo": "Alerta",
+      "codigo": "AA178/2026",
+      "emision": "Martes 13 de octubre del 2026 a las 15:22 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del martes 13 de octubre del 2026",
+      "hasta": "la noche del martes 13 de octubre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O&#039;Higgins (Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5838,
+      "tipo": "Aviso",
+      "codigo": "A543-2/2026",
+      "emision": "Martes 13 de octubre del 2026 a las 15:22 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del martes 13 de octubre del 2026",
+      "hasta": "la noche del sábado 17 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5837,
+      "tipo": "Aviso",
+      "codigo": "A554/2026",
+      "emision": "Martes 13 de octubre del 2026 a las 15:22 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la mañana del miércoles 14 de octubre del 2026",
+      "hasta": "la noche del domingo 18 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Antofagasta (Litoral) | Atacama (Litoral)",
+      "titulo": "Viento Normal a Moderado en litoral de las regiones de Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
     {
       "id": 5836,
       "tipo": "Aviso",
@@ -104,27 +168,6 @@
       "color": "#f97316",
       "regiones": [
         "Antofagasta"
-      ]
-    },
-    {
-      "id": 5825,
-      "tipo": "Aviso",
-      "codigo": "A543-1/2026",
-      "emision": "Sábado 10 de octubre del 2026 a las 16:11 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del domingo 11 de octubre del 2026",
-      "hasta": "la noche del miércoles 14 de octubre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Atacama",
-        "Tarapacá"
       ]
     }
   ]
