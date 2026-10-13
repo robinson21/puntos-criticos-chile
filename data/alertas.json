@@ -1,12 +1,50 @@
 {
-  "actualizado": "2026-10-13T12:00:30.975147",
+  "actualizado": "2026-10-13T18:00:34.203652",
   "totales": {
-    "avisos": 3,
+    "avisos": 5,
     "alertas": 1,
     "alarmas": 0,
-    "total": 4
+    "total": 6
   },
   "alertas": [
+    {
+      "id": 5836,
+      "tipo": "Aviso",
+      "codigo": "A553/2026",
+      "emision": "Martes 13 de octubre del 2026 a las 13:56 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del miércoles 14 de octubre del 2026",
+      "hasta": "la noche del miércoles 14 de octubre del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Chiloé, Litoral Interior, Cordillera Austral, Patagonia Subandina)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5835,
+      "tipo": "Aviso",
+      "codigo": "A552/2026",
+      "emision": "Martes 13 de octubre del 2026 a las 13:38 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Altas presiones",
+      "desde": "la tarde del jueves 15 de octubre del 2026",
+      "hasta": "la tarde del viernes 16 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Altas Temperaturas en zonas de la región de Magallanes",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
     {
       "id": 5834,
       "tipo": "Aviso",
