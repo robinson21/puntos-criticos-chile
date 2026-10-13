@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-13T00:00:06.261604",
+  "actualizado": "2026-10-13T06:00:23.573146",
   "totales": {
-    "avisos": 7,
+    "avisos": 4,
     "alertas": 1,
     "alarmas": 0,
-    "total": 8
+    "total": 5
   },
   "alertas": [
     {
@@ -106,64 +106,6 @@
         "O'Higgins",
         "Valparaíso",
         "Ñuble"
-      ]
-    },
-    {
-      "id": 5831,
-      "tipo": "Aviso",
-      "codigo": "A545-1/2026",
-      "emision": "Domingo 11 de octubre del 2026 a las 12:28 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del lunes 12 de octubre del 2026",
-      "hasta": "la noche del lunes 12 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O&#039;Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas desde la región de Coquimbo a la región del Maule",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5832,
-      "tipo": "Aviso",
-      "codigo": "A550/2026",
-      "emision": "Lunes 12 de octubre del 2026 a las 06:10 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Frente ocluído",
-      "desde": "la mañana del lunes 12 de octubre del 2026",
-      "hasta": "la noche del lunes 12 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Precipitaciones Normales a Moderadas en Archipielago Juan Fernández",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5833,
-      "tipo": "Aviso",
-      "codigo": "A551/2026",
-      "emision": "Lunes 12 de octubre del 2026 a las 09:24 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Oclusión frontal",
-      "desde": "la mañana del lunes 12 de octubre del 2026",
-      "hasta": "la noche del lunes 12 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
       ]
     }
   ]
