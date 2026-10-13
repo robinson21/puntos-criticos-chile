@@ -1,67 +1,34 @@
 {
-  "actualizado": "2026-10-13T07:01:13.300290",
+  "actualizado": "2026-10-13T12:00:30.975147",
   "totales": {
-    "avisos": 4,
+    "avisos": 3,
     "alertas": 1,
     "alarmas": 0,
-    "total": 5
+    "total": 4
   },
   "alertas": [
     {
-      "id": 5825,
+      "id": 5834,
       "tipo": "Aviso",
-      "codigo": "A543-1/2026",
-      "emision": "Sábado 10 de octubre del 2026 a las 16:11 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del domingo 11 de octubre del 2026",
+      "codigo": "A544-2/2026",
+      "emision": "Martes 13 de octubre del 2026 a las 07:21 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del martes 13 de octubre del 2026",
       "hasta": "la noche del miércoles 14 de octubre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
-      "icono": "💨",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Atacama",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5826,
-      "tipo": "Alerta",
-      "codigo": "AA177-1/2026",
-      "emision": "Sábado 10 de octubre del 2026 a las 22:07 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del lunes 12 de octubre del 2026",
-      "hasta": "la madrugada del miércoles 14 de octubre del 2026",
-      "observacion": "Desarrollo de tormentas de arena",
-      "zonas": "Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas de la región de Antofagasta",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Antofagasta"
-      ]
-    },
-    {
-      "id": 5828,
-      "tipo": "Aviso",
-      "codigo": "A548/2026",
-      "emision": "Domingo 11 de octubre del 2026 a las 11:32 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Oclusión frontal",
-      "desde": "la madrugada del lunes 12 de octubre del 2026",
-      "hasta": "la noche del lunes 12 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Norte, Cordillera Austral Sur, Pampa Patagonica Norte, Pampa Patagonica Sur)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de la región de Magallanes",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
       ]
     },
     {
@@ -84,28 +51,42 @@
       ]
     },
     {
-      "id": 5830,
+      "id": 5826,
+      "tipo": "Alerta",
+      "codigo": "AA177-1/2026",
+      "emision": "Sábado 10 de octubre del 2026 a las 22:07 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del lunes 12 de octubre del 2026",
+      "hasta": "la madrugada del miércoles 14 de octubre del 2026",
+      "observacion": "Desarrollo de tormentas de arena",
+      "zonas": "Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en zonas de la región de Antofagasta",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Antofagasta"
+      ]
+    },
+    {
+      "id": 5825,
       "tipo": "Aviso",
-      "codigo": "A544-1/2026",
-      "emision": "Domingo 11 de octubre del 2026 a las 12:21 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
+      "codigo": "A543-1/2026",
+      "emision": "Sábado 10 de octubre del 2026 a las 16:11 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
       "desde": "la tarde del domingo 11 de octubre del 2026",
       "hasta": "la noche del miércoles 14 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera, Cordillera) | Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Atacama a la región del Biobío",
-      "icono": "⚡",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
         "Atacama",
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
+        "Tarapacá"
       ]
     }
   ]
