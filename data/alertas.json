@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-10-14T12:00:55.876802",
+  "actualizado": "2026-10-14T18:00:58.569624",
   "totales": {
-    "avisos": 5,
-    "alertas": 0,
+    "avisos": 6,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 5
+    "total": 7
   },
   "alertas": [
     {
-      "id": 5834,
+      "id": 5843,
       "tipo": "Aviso",
-      "codigo": "A544-2/2026",
-      "emision": "Martes 13 de octubre del 2026 a las 07:21 hrs.",
+      "codigo": "A544-3/2026",
+      "emision": "Miércoles 14 de octubre del 2026 a las 13:52 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del martes 13 de octubre del 2026",
+      "desde": "la tarde del miércoles 14 de octubre del 2026",
       "hasta": "la noche del miércoles 14 de octubre del 2026",
       "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
       "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
@@ -32,21 +32,80 @@
       ]
     },
     {
-      "id": 5835,
+      "id": 5842,
       "tipo": "Aviso",
-      "codigo": "A552/2026",
-      "emision": "Martes 13 de octubre del 2026 a las 13:38 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Altas presiones",
+      "codigo": "A555/2026",
+      "emision": "Miércoles 14 de octubre del 2026 a las 13:33 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
       "desde": "la tarde del jueves 15 de octubre del 2026",
-      "hasta": "la tarde del viernes 16 de octubre del 2026",
+      "hasta": "la noche del jueves 15 de octubre del 2026",
       "observacion": "",
-      "zonas": "Magallanes (Pampa Patagonica Norte, Pampa Patagonica Sur)",
-      "titulo": "Altas Temperaturas en zonas de la región de Magallanes",
-      "icono": "⚠️",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Litoral Interior, Cordillera Austral, Patagonia Subandina) | Aysén (Insular Norte, Litoral Interior Norte, Cordillera Austral Norte, Patagonia Subandina Norte)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de La Araucanía a la región de Aysén",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "Magallanes"
+        "Aysén",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5841,
+      "tipo": "Alerta",
+      "codigo": "AA179/2026",
+      "emision": "Miércoles 14 de octubre del 2026 a las 11:59 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la noche del miércoles 14 de octubre del 2026",
+      "hasta": "la tarde del jueves 15 de octubre del 2026",
+      "observacion": "Desarrollo de ventisca",
+      "zonas": "Puna de Atacama, Región de Antofagasta",
+      "titulo": "Viento Moderado a Fuerte en Puna de Atacama, Región de Antofagasta",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": []
+    },
+    {
+      "id": 5840,
+      "tipo": "Aviso",
+      "codigo": "A543-3/2026",
+      "emision": "Miércoles 14 de octubre del 2026 a las 11:49 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del miércoles 14 de octubre del 2026",
+      "hasta": "la noche del sábado 17 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5837,
+      "tipo": "Aviso",
+      "codigo": "A554/2026",
+      "emision": "Martes 13 de octubre del 2026 a las 15:22 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la mañana del miércoles 14 de octubre del 2026",
+      "hasta": "la noche del domingo 18 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Antofagasta (Litoral) | Atacama (Litoral)",
+      "titulo": "Viento Normal a Moderado en litoral de las regiones de Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
       ]
     },
     {
@@ -70,43 +129,21 @@
       ]
     },
     {
-      "id": 5837,
+      "id": 5835,
       "tipo": "Aviso",
-      "codigo": "A554/2026",
-      "emision": "Martes 13 de octubre del 2026 a las 15:22 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la mañana del miércoles 14 de octubre del 2026",
-      "hasta": "la noche del domingo 18 de octubre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Antofagasta (Litoral) | Atacama (Litoral)",
-      "titulo": "Viento Normal a Moderado en litoral de las regiones de Antofagasta y Atacama",
-      "icono": "💨",
+      "codigo": "A552/2026",
+      "emision": "Martes 13 de octubre del 2026 a las 13:38 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Altas presiones",
+      "desde": "la tarde del jueves 15 de octubre del 2026",
+      "hasta": "la tarde del viernes 16 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Altas Temperaturas en zonas de la región de Magallanes",
+      "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5838,
-      "tipo": "Aviso",
-      "codigo": "A543-2/2026",
-      "emision": "Martes 13 de octubre del 2026 a las 15:22 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del martes 13 de octubre del 2026",
-      "hasta": "la noche del sábado 17 de octubre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Arica y Parinacota a la región de Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Atacama",
-        "Tarapacá"
+        "Magallanes"
       ]
     }
   ]
