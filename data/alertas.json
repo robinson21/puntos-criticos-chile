@@ -1,12 +1,30 @@
 {
-  "actualizado": "2026-10-14T18:00:58.569624",
+  "actualizado": "2026-10-14T19:01:41.912815",
   "totales": {
-    "avisos": 6,
+    "avisos": 7,
     "alertas": 1,
     "alarmas": 0,
-    "total": 7
+    "total": 8
   },
   "alertas": [
+    {
+      "id": 5844,
+      "tipo": "Aviso",
+      "codigo": "A556/2026",
+      "emision": "Miércoles 14 de octubre del 2026 a las 15:20 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del jueves 15 de octubre del 2026",
+      "hasta": "la noche del sábado 17 de octubre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Magallanes (Cordillera Austral Norte, Cordillera Austral Sur, Insular Norte, Insular Central, Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
     {
       "id": 5843,
       "tipo": "Aviso",
