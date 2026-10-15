@@ -10,7 +10,7 @@ Uso:
 
 import json, os, gzip, sys, subprocess
 from collections import defaultdict
-from urllib.request import urlopen
+from urllib.request import urlopen, Request
 from urllib.error import URLError
 
 PROJECT_DIR = '/home/ubuntu/puntos-criticos'
@@ -24,8 +24,17 @@ URLS = [
     'https://senapred.cl/wp-content/uploads/2026/04/Puntos_Criticos_INV_2026.xlsx',
 ]
 
-# Fallback: el repositorio original
+# Proxy Cloudflare Worker (mimetiza navegador real, evita el anti-bot de SENAPRED)
+CLOUDFLARE_WORKER = 'https://senapred-proxy.gesstiapp.workers.dev'
+
+# Fallback final: mirror del repositorio original
 FALLBACK_URL = 'https://raw.githubusercontent.com/psarricolea/puntos-criticos-chile/main/Puntos_Criticos_INV_2026.xlsx'
+
+BROWSER_HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'es-CL,es;q=0.9,en;q=0.8',
+}
 
 REGION_SLUGS = {
     'METROPOLITANA DE SANTIAGO': 'metropolitana_de_santiago',
@@ -45,24 +54,51 @@ REGION_SLUGS = {
 }
 
 
+def _intentar_url(url, headers=None, timeout=45):
+    """Intenta descargar una URL y valida que sea un Excel real (ZIP magic bytes)."""
+    try:
+        req = Request(url, headers=headers or BROWSER_HEADERS)
+        resp = urlopen(req, timeout=timeout)
+        data = resp.read()
+        if len(data) > 10000 and data[:2] == b'PK':
+            return data
+        return None
+    except Exception as e:
+        print(f'  ❌ {e}')
+        return None
+
+
 def descargar_excel():
-    """Descarga el Excel de SENAPRED. Prueba URLs oficiales, luego fallback."""
-    for url in URLS + [FALLBACK_URL]:
-        try:
-            print(f'  Intentando: {url}')
-            resp = urlopen(url, timeout=30)
-            data = resp.read()
-            if len(data) > 10000:
-                # Validar que sea Excel real (empieza con ZIP magic bytes "PK")
-                if data[:2] == b'PK':
-                    print(f'  ✅ Descargado: {len(data)/1024:.0f} KB')
-                    return data
-                else:
-                    print(f'  ❌ Respuesta no es Excel (HTML? {data[:20]})')
-                    continue  # Probar siguiente URL
-        except Exception as e:
-            print(f'  ❌ {e}')
-    raise Exception('No se pudo descargar el Excel desde ninguna URL')
+    """
+    Descarga el Excel de SENAPRED con cadena de 3 niveles:
+      1. URLs oficiales de SENAPRED (con headers de navegador)
+      2. Cloudflare Worker senapred-proxy (egress IP limpia, evita anti-bot)
+      3. Mirror GitHub (psarricolea)
+    """
+    # --- Nivel 1: URLs oficiales
+    print('  [1/3] URLs oficiales de SENAPRED...')
+    for url in URLS:
+        print(f'  Intentando: {url}')
+        data = _intentar_url(url)
+        if data:
+            print(f'  ✅ Descargado de SENAPRED: {len(data)/1024:.0f} KB')
+            return data
+
+    # --- Nivel 2: Cloudflare Worker
+    print('  [2/3] Proxy Cloudflare (senapred-proxy)...')
+    data = _intentar_url(CLOUDFLARE_WORKER, timeout=90)
+    if data:
+        print(f'  ✅ Descargado vía Cloudflare Worker: {len(data)/1024:.0f} KB')
+        return data
+
+    # --- Nivel 3: Mirror GitHub
+    print('  [3/3] Fallback mirror GitHub...')
+    data = _intentar_url(FALLBACK_URL, timeout=60)
+    if data:
+        print(f'  ✅ Descargado de mirror GitHub: {len(data)/1024:.0f} KB')
+        return data
+
+    raise Exception('No se pudo descargar el Excel desde ninguna fuente (SENAPRED, Cloudflare, GitHub)')
 
 
 def procesar_excel(excel_data):
