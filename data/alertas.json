@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14T19:01:41.912815",
+  "actualizado": "2026-10-15T00:00:02.395602",
   "totales": {
     "avisos": 7,
     "alertas": 1,
@@ -7,6 +7,49 @@
     "total": 8
   },
   "alertas": [
+    {
+      "id": 5846,
+      "tipo": "Aviso",
+      "codigo": "A544-4/2026",
+      "emision": "Miércoles 14 de octubre del 2026 a las 17:30 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la noche del miércoles 14 de octubre del 2026",
+      "hasta": "la noche del jueves 15 de octubre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5845,
+      "tipo": "Aviso",
+      "codigo": "A554-1/2026",
+      "emision": "Miércoles 14 de octubre del 2026 a las 16:05 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la tarde del miércoles 14 de octubre del 2026",
+      "hasta": "la noche del sábado 17 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Antofagasta (Litoral) | Atacama (Litoral)",
+      "titulo": "Viento Normal a Moderado en litoral de las regiones de Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
     {
       "id": 5844,
       "tipo": "Aviso",
@@ -23,30 +66,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5843,
-      "tipo": "Aviso",
-      "codigo": "A544-3/2026",
-      "emision": "Miércoles 14 de octubre del 2026 a las 13:52 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del miércoles 14 de octubre del 2026",
-      "hasta": "la noche del miércoles 14 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     },
     {
@@ -105,25 +124,6 @@
         "Arica y Parinacota",
         "Atacama",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5837,
-      "tipo": "Aviso",
-      "codigo": "A554/2026",
-      "emision": "Martes 13 de octubre del 2026 a las 15:22 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la mañana del miércoles 14 de octubre del 2026",
-      "hasta": "la noche del domingo 18 de octubre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Antofagasta (Litoral) | Atacama (Litoral)",
-      "titulo": "Viento Normal a Moderado en litoral de las regiones de Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
       ]
     },
     {
