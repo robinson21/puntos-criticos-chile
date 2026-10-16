@@ -316,7 +316,8 @@ export default function MapView() {
   const [locErr, setLocErr] = useState('');
   const debounceRef = useRef(null);
 
-  const displayPoints = filtered.slice(0, 2500);
+  // Sin tope: la región más grande tiene ~2.300 puntos y el canvas los dibuja sin problema.
+  const displayPoints = filtered;
 
   // Buscar direcciones con la API de geocodificación de MapTiler (o Nominatim como fallback)
   async function runSearch(raw) {
@@ -531,7 +532,9 @@ export default function MapView() {
       {/* Punto geocodificado (marcador) y re-centrado a Chile se manejan dentro del MapContainer */}
       {/* map-stage: contenedor relativo para que los controles flotantes queden sobre el mapa */}
       <div className="map-stage">
-      <MapContainer center={center} zoom={zoom} zoomControl={false} className="map-container" scrollWheelZoom={true}>
+      {/* preferCanvas: los miles de CircleMarker se dibujan en un solo <canvas> en vez de
+          un <path> SVG cada uno; mismo aspecto y popups, mucho más liviano en celulares. */}
+      <MapContainer center={center} zoom={zoom} zoomControl={false} className="map-container" scrollWheelZoom={true} preferCanvas={true}>
         <ZoomControl position="bottomright" />
         <TileLayer
           url={BASEMAPS[baseMap].url()}
@@ -556,7 +559,7 @@ export default function MapView() {
                 <div className="popup-comuna">{p.c}</div>
                 <div className="popup-row"><b>Causa:</b> {p.cs}</div>
                 <div className="popup-row"><b>Riesgo:</b><span style={{color:COLORS[p.lv],fontWeight:600}}> {p.lv}</span></div>
-                <div className="popup-row"><b>Solución:</b> {p.tp}</div>
+                <div className="popup-row"><b>Solución:</b> {p.tp || <i>sin información en SENAPRED</i>}</div>
               </div>
             </Popup>
           </CircleMarker>
