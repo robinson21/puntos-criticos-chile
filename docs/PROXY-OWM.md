@@ -20,7 +20,8 @@ https://owm-proxy.robinson-armijo.workers.dev
 
 | Método | Ruta | Descripción |
 |---|---|---|
-| GET | `/health` | Health check. Devuelve `{"ok":true}`. |
+| GET | `/health` | Health check. Devuelve `{"ok":true,"firms":true|false}`; el portal usa `firms` para habilitar la capa de incendios. |
+| GET | `/api/firms` | Focos de calor activos en Chile continental (NASA FIRMS, VIIRS, últimas 24 h) como JSON. Cacheado 30 min. Requiere el secreto `FIRMS_MAP_KEY`; sin él responde 503. `?dias=1..3` amplía la ventana. |
 | GET | `/api/tiles/owm/{layer}/{z}/{x}/{y}` | Devuelve el tile PNG de la capa dada en coordenada XYZ. |
 | GET | `/api/tiles/owm/{layer}/{z}/{x}/{y}.png` | Igual que arriba (acepta extensión `.png` opcional). |
 
@@ -29,6 +30,18 @@ https://owm-proxy.robinson-armijo.workers.dev
 - `wind_new` — Viento
 - `temp_new` — Temperatura
 - `precipitation_new` — Precipitación
+
+## Activar la capa de incendios (NASA FIRMS)
+1. Pide una **Map Key gratuita** en https://firms.modaps.eosdis.nasa.gov/api/map_key/ (solo un correo).
+2. Guárdala como secreto del Worker:
+   ```bash
+   echo "TU_MAP_KEY_FIRMS" | npx wrangler secret put FIRMS_MAP_KEY --name owm-proxy
+   ```
+3. Redespliega el Worker (ver más abajo). No hace falta recompilar el portal: al cargar,
+   consulta `/health` y, si ve `"firms": true`, desbloquea y activa la capa.
+
+Opcional: la variable `FIRMS_SOURCES` cambia los satélites consultados
+(por defecto `VIIRS_SNPP_NRT,VIIRS_NOAA20_NRT,VIIRS_NOAA21_NRT`). Si uno falla, se usan los demás.
 
 ## Código fuente del Worker
 El código vive en **este repo** en la raíz `owm-proxy-worker.js` (y `wrangler.toml`).

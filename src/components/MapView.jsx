@@ -5,6 +5,7 @@ import { useFilters } from '../data/FilterContext';
 import { useData } from '../data/DataContext';
 import AramcoMarkers from './AramcoMarkers';
 import LayersControl from './LayersControl';
+import IncendiosLayer from './IncendiosLayer';
 import 'leaflet/dist/leaflet.css';
 
 const COLORS = {'Bajo':'#4FB6A8','Medio':'#E0B84D','Alto':'#E08D45','Muy Alto':'#D5514A'};
@@ -266,8 +267,23 @@ export default function MapView() {
   const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY || 'https://owm-proxy.robinson-armijo.workers.dev').trim();
   const hasTileProxy = TILE_PROXY.length > 0;
   const hasOwmSource = hasTileProxy || hasOwmKey;
-  // Capas ambientales activas. Default: solo lluvia (incendios queda bloqueado sin FIRMS key).
+  // Capas ambientales activas. Default: solo lluvia; incendios se suma solo si el
+  // Worker tiene configurada la Map Key de NASA FIRMS (ver /health).
   const [activeLayers, setActiveLayers] = useState(['lluvia']);
+  const [firmsDisponible, setFirmsDisponible] = useState(false);
+  const [resumenIncendios, setResumenIncendios] = useState(null);
+  useEffect(() => {
+    if (!hasTileProxy) return;
+    fetch(`${TILE_PROXY}/health`)
+      .then(r => (r.ok ? r.json() : null))
+      .then(h => {
+        if (h?.firms) {
+          setFirmsDisponible(true);
+          setActiveLayers(prev => (prev.includes('incendios') ? prev : [...prev, 'incendios']));
+        }
+      })
+      .catch(() => {});
+  }, [TILE_PROXY, hasTileProxy]);
   const [rainFrames, setRainFrames] = useState(null); // timestamps RainViewer para animación
   const [rainNow, setRainNow] = useState(0); // índice del frame actual
   const maptilerValida = useMapTilerValida();
@@ -564,6 +580,12 @@ export default function MapView() {
             </Popup>
           </CircleMarker>
         ))}
+        <IncendiosLayer
+          proxy={firmsDisponible ? TILE_PROXY : null}
+          activo={firmsDisponible && activeLayers.includes('incendios')}
+          puntos={filtered}
+          onResumen={setResumenIncendios}
+        />
         <AramcoMarkers comuna={comuna} region={regionActual} />
         {flyTo && (
           <CircleMarker
@@ -591,12 +613,22 @@ export default function MapView() {
         {locating ? '⏳' : '📍'}
       </button>
       {locErr && <div className="gps-locate-err">{locErr}</div>}
-      <LayersControl activeLayers={activeLayers} onToggle={toggleLayer} hasOwmKey={hasOwmSource} hasFirmsKey={false} />
+      <LayersControl activeLayers={activeLayers} onToggle={toggleLayer} hasOwmKey={hasOwmSource} hasFirmsKey={firmsDisponible} />
+      {resumenIncendios && (
+        <div className={`incendios-resumen ${resumenIncendios.cerca ? 'alerta' : ''}`}>
+          {resumenIncendios.error
+            ? `🔥 No se pudieron cargar los focos de incendio (${resumenIncendios.error})`
+            : `🔥 ${resumenIncendios.focos.toLocaleString('es-CL')} focos activos en Chile (24 h) · ${resumenIncendios.cerca.toLocaleString('es-CL')} de los puntos mostrados a menos de ${resumenIncendios.radioKm} km de un foco`}
+        </div>
+      )}
       </div>
       <div className="legend">
         {Object.entries(COLORS).map(([n, c]) => (
           <span key={n}><span className="dot" style={{background:c}}></span> {n}</span>
         ))}
+        {resumenIncendios && !resumenIncendios.error && (
+          <span><span className="dot dot-foco"></span> Foco de incendio</span>
+        )}
       </div>
     </div>
   );
