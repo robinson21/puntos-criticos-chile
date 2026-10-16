@@ -28,6 +28,16 @@ export const CAPAS_AMBIENTALES = [
     default: true
   },
   {
+    id: 'satelite',
+    label: 'Nubes satélite animadas',
+    icon: '🛰️',
+    color: '#94a3b8',
+    fuente: 'GOES-East · NASA GIBS',
+    descripcion: 'Imágenes reales del satélite GOES-East de las últimas ~2 horas (color real de día, infrarrojo de noche). Muestra el avance de sistemas frontales y nubosidad.',
+    necesitaKey: false,
+    default: false
+  },
+  {
     id: 'viento',
     label: 'Viento',
     icon: '💨',

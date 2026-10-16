@@ -1262,3 +1262,22 @@ footer {
 }
 .incendios-resumen.alerta { border-color: #dc2626; color: #fecaca; }
 .legend .dot-foco { background: #b91c1c; box-shadow: 0 0 0 2px #fde047; }
+
+/* ===== Hora del cuadro satelital ===== */
+.satelite-hora {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 600;
+  background: rgba(15, 23, 42, 0.88);
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+@media (max-width: 600px) { .satelite-hora { top: 56px; font-size: 10px; } }

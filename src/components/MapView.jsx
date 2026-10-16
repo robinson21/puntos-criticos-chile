@@ -6,6 +6,8 @@ import { useData } from '../data/DataContext';
 import AramcoMarkers from './AramcoMarkers';
 import LayersControl from './LayersControl';
 import IncendiosLayer from './IncendiosLayer';
+import NubesSatelite from './NubesSatelite';
+import { horaChile } from '../data/gibs';
 import 'leaflet/dist/leaflet.css';
 
 const COLORS = {'Bajo':'#4FB6A8','Medio':'#E0B84D','Alto':'#E08D45','Muy Alto':'#D5514A'};
@@ -272,6 +274,7 @@ export default function MapView() {
   const [activeLayers, setActiveLayers] = useState(['lluvia']);
   const [firmsDisponible, setFirmsDisponible] = useState(false);
   const [resumenIncendios, setResumenIncendios] = useState(null);
+  const [estadoSatelite, setEstadoSatelite] = useState(null);
   useEffect(() => {
     if (!hasTileProxy) return;
     fetch(`${TILE_PROXY}/health`)
@@ -580,6 +583,7 @@ export default function MapView() {
             </Popup>
           </CircleMarker>
         ))}
+        <NubesSatelite activo={activeLayers.includes('satelite')} onEstado={setEstadoSatelite} />
         <IncendiosLayer
           proxy={firmsDisponible ? TILE_PROXY : null}
           activo={firmsDisponible && activeLayers.includes('incendios')}
@@ -614,6 +618,13 @@ export default function MapView() {
       </button>
       {locErr && <div className="gps-locate-err">{locErr}</div>}
       <LayersControl activeLayers={activeLayers} onToggle={toggleLayer} hasOwmKey={hasOwmSource} hasFirmsKey={firmsDisponible} />
+      {estadoSatelite && (
+        <div className="satelite-hora">
+          {estadoSatelite.error
+            ? `🛰️ Satélite no disponible (${estadoSatelite.error})`
+            : `🛰️ GOES-East · ${horaChile(estadoSatelite.tiempo)} hora de Chile · ${estadoSatelite.cuadro}/${estadoSatelite.total}`}
+        </div>
+      )}
       {resumenIncendios && (
         <div className={`incendios-resumen ${resumenIncendios.cerca ? 'alerta' : ''}`}>
           {resumenIncendios.error
