@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-16T00:00:35.087104",
+  "actualizado": "2026-10-16T06:00:53.469696",
   "totales": {
-    "avisos": 6,
+    "avisos": 4,
     "alertas": 0,
     "alarmas": 0,
-    "total": 6
+    "total": 4
   },
   "alertas": [
     {
@@ -47,27 +47,6 @@
       ]
     },
     {
-      "id": 5842,
-      "tipo": "Aviso",
-      "codigo": "A555/2026",
-      "emision": "Miércoles 14 de octubre del 2026 a las 13:33 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del jueves 15 de octubre del 2026",
-      "hasta": "la noche del jueves 15 de octubre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Litoral Interior, Cordillera Austral, Patagonia Subandina) | Aysén (Insular Norte, Litoral Interior Norte, Cordillera Austral Norte, Patagonia Subandina Norte)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de La Araucanía a la región de Aysén",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
       "id": 5844,
       "tipo": "Aviso",
       "codigo": "A556/2026",
@@ -102,26 +81,6 @@
       "regiones": [
         "Antofagasta",
         "Atacama"
-      ]
-    },
-    {
-      "id": 5847,
-      "tipo": "Aviso",
-      "codigo": "A544-5/2026",
-      "emision": "Jueves 15 de octubre del 2026 a las 11:54 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del jueves 15 de octubre del 2026",
-      "hasta": "la noche del jueves 15 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Ñuble"
       ]
     }
   ]
