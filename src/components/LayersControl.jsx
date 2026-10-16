@@ -60,7 +60,8 @@ export const CAPAS_AMBIENTALES = [
 ];
 
 export default function LayersControl({ activeLayers, onToggle, hasOwmKey = false, hasFirmsKey = false }) {
-  const [open, setOpen] = useState(true);
+  // Abierto en escritorio; en pantallas angostas parte cerrado para no tapar el mapa.
+  const [open, setOpen] = useState(() => typeof window === 'undefined' || window.innerWidth > 700);
 
   return (
     <div className={`layers-control ${open ? 'open' : 'closed'}`}>

@@ -153,6 +153,24 @@ function FlyTo({ coords }) {
 
 // Componente que re-centra a Chile (uso al limpiar la búsqueda). Se dispara
 // una sola vez por incremento de token.
+// Ajusta la vista a los puntos cuando cambia la región o la comuna (no con cada
+// filtro de causa/nivel, para no hacer saltar el mapa). Los territorios insulares
+// (Isla de Pascua, Juan Fernández, Desventuradas: lon < -76) se excluyen del encuadre salvo que
+// sean lo único seleccionado; si no, Valparaíso se vería como un punto en el Pacífico.
+function FitToPoints({ points, fitKey }) {
+  const map = useMap();
+  const lastKey = useRef(null);
+  useEffect(() => {
+    if (!points.length || fitKey === lastKey.current) return;
+    lastKey.current = fitKey;
+    const continentales = points.filter(p => p.lon > -76);
+    const base = continentales.length ? continentales : points;
+    const bounds = L.latLngBounds(base.map(p => [p.lat, p.lon]));
+    if (bounds.isValid()) map.flyToBounds(bounds, { padding: [30, 30], maxZoom: 13, duration: 0.8 });
+  }, [map, points, fitKey]);
+  return null;
+}
+
 function Recenter({ token }) {
   const map = useMap();
   const lastToken = useRef(token);
@@ -511,6 +529,8 @@ export default function MapView() {
       </div>
 
       {/* Punto geocodificado (marcador) y re-centrado a Chile se manejan dentro del MapContainer */}
+      {/* map-stage: contenedor relativo para que los controles flotantes queden sobre el mapa */}
+      <div className="map-stage">
       <MapContainer center={center} zoom={zoom} zoomControl={false} className="map-container" scrollWheelZoom={true}>
         <ZoomControl position="bottomright" />
         <TileLayer
@@ -522,6 +542,7 @@ export default function MapView() {
         {/* Capas ambientales (estilo Zoom Earth) */}
         <EnvironmentalLayers activeLayers={activeLayers} rainFrames={rainFrames} rainNow={rainNow} owmKey={OWM_KEY} tileProxy={hasTileProxy ? TILE_PROXY : null} />
         {recenterToken > 0 && <Recenter token={recenterToken} />}
+        <FitToPoints points={filtered} fitKey={`${regionActual}|${comuna}`} />
         {flyTo && <FlyTo coords={flyTo} />}
         {displayPoints.map((p, i) => (
           <CircleMarker
@@ -568,6 +589,7 @@ export default function MapView() {
       </button>
       {locErr && <div className="gps-locate-err">{locErr}</div>}
       <LayersControl activeLayers={activeLayers} onToggle={toggleLayer} hasOwmKey={hasOwmSource} hasFirmsKey={false} />
+      </div>
       <div className="legend">
         {Object.entries(COLORS).map(([n, c]) => (
           <span key={n}><span className="dot" style={{background:c}}></span> {n}</span>
