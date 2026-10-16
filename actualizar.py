@@ -121,8 +121,10 @@ def procesar_excel(excel_data):
         if 'region' not in comuna_stats[r['c']]:
             comuna_stats[r['c']]['region'] = r['r']
 
+    # Índice 0-100 relativo a la comuna con más puntos.
+    max_n = max(v['n'] for v in comuna_stats.values())
     ranking = sorted(
-        [{'c': c, 'n': v['n'], 'r': v['region'], 'idx': min(100, round(v['n'] / 4.21))}
+        [{'c': c, 'n': v['n'], 'r': v['region'], 'idx': round(v['n'] * 100 / max_n)}
          for c, v in comuna_stats.items()],
         key=lambda x: x['idx'], reverse=True
     )
@@ -138,6 +140,7 @@ def procesar_excel(excel_data):
     metadata = {
         'total': len(records),
         'regiones': region_map,
+        'por_region': {region: len(items) for region, items in by_region.items()},
         'ranking': ranking[:100],
         'niveles': dict(niveles),
         'causas': dict(causas),

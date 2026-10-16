@@ -243,13 +243,13 @@ export default function MapView() {
   const OWM_KEY = (import.meta.env.VITE_OWM_KEY || '').trim();
   const hasOwmKey = OWM_KEY.length > 0;
   // Proxy backend para servir tiles OWM sin exponer la key en el bundle.
-  // Default localhost:8081 (dev). En producción, sobreescribir con
-  // VITE_TILE_PROXY apuntando a un endpoint público del proxy.
-  const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY || 'http://localhost:8081').trim();
+  // Default: Worker de Cloudflare en producción. Para desarrollo local,
+  // sobreescribir con VITE_TILE_PROXY (ej. http://localhost:8081).
+  const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY || 'https://owm-proxy.robinson-armijo.workers.dev').trim();
   const hasTileProxy = TILE_PROXY.length > 0;
   const hasOwmSource = hasTileProxy || hasOwmKey;
-  // Capas ambientales activas. Default: incendios + lluvia (no requieren key).
-  const [activeLayers, setActiveLayers] = useState(['incendios', 'lluvia']);
+  // Capas ambientales activas. Default: solo lluvia (incendios queda bloqueado sin FIRMS key).
+  const [activeLayers, setActiveLayers] = useState(['lluvia']);
   const [rainFrames, setRainFrames] = useState(null); // timestamps RainViewer para animación
   const [rainNow, setRainNow] = useState(0); // índice del frame actual
   const maptilerValida = useMapTilerValida();

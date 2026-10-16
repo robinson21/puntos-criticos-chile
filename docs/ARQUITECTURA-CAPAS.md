@@ -49,7 +49,7 @@
 
 ```js
 const OWM_KEY = (import.meta.env.VITE_OWM_KEY || '').trim();     // solo dev
-const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY || 'http://localhost:8081').trim();
+const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY || 'https://owm-proxy.robinson-armijo.workers.dev').trim();
 const hasTileProxy = TILE_PROXY.length > 0;
 const hasOwmSource = hasTileProxy || hasOwmKey; // proxy o key (dev)
 
