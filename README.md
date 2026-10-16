@@ -8,7 +8,7 @@ Visualizador de los puntos críticos de la temporada de invierno reportados a **
 
 - Mapa por región con los puntos críticos coloreados por nivel de riesgo, filtros (comuna, causa, nivel, tipo de solución) y zoom automático a la región o comuna.
 - Avisos, alertas y alarmas vigentes de la DMC junto al mapa, con los puntos críticos de las regiones afectadas.
-- Capas: lluvia animada (RainViewer), viento, nubes y temperatura (OpenWeatherMap) e incendios activos (NASA FIRMS, se activa al configurar `FIRMS_MAP_KEY` en el Worker).
+- Capas: lluvia animada (RainViewer), nubes satelitales animadas (GOES-East, NASA GIBS), viento, nubes y temperatura (OpenWeatherMap) e incendios activos (NASA FIRMS, se activa al configurar `FIRMS_MAP_KEY` en el Worker).
 - Vistas compartibles por URL (`?region=coquimbo&comuna=VICUÑA&nivel=Alto`) y exportación a CSV de lo filtrado.
 - Indicador de antigüedad de alertas y pronóstico (ámbar > 14 h, rojo > 26 h).
 
@@ -43,4 +43,4 @@ Variables de entorno: ver [`docs/ENV-VARS.md`](docs/ENV-VARS.md). Sin `VITE_TILE
 
 - Puntos críticos: SENAPRED, *Puntos Críticos Invierno 2026*. Solo se incluyen los registros con coordenadas.
 - El **índice** del ranking es la cantidad de puntos de la comuna escalada a 100 respecto de la comuna con más puntos.
-- Clima: OpenWeatherMap y RainViewer. Avisos: Dirección Meteorológica de Chile.
+- Clima: OpenWeatherMap, RainViewer y NASA GIBS (GOES-East). Incendios: NASA FIRMS. Avisos: Dirección Meteorológica de Chile.
