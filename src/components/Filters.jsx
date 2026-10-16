@@ -3,6 +3,7 @@ import { useFilters, SIN_INFO } from '../data/FilterContext';
 import { useData } from '../data/DataContext';
 import { useAlertas, alertasDeRegion } from '../data/alertas';
 import { tituloRegion } from '../data/stats';
+import { descargarCsv } from '../data/csv';
 
 export default function Filters() {
   const { comuna, setComuna, causa, setCausa, nivel, setNivel, tipoSolucion, setTipoSolucion, filtered, comunas, causas, tipos, haySinTipo } = useFilters();
@@ -109,12 +110,21 @@ export default function Filters() {
           </div>
 
           <select value={tipoSolucion} onChange={e => setTipoSolucion(e.target.value)}>
-            <option value="">Todo tipo de solución</option>
+            <option value="">Todo tipo</option>
             {tipos.map(t => <option key={t} value={t}>{t}</option>)}
             {haySinTipo && <option value={SIN_INFO}>Sin información</option>}
           </select>
 
           <div className="filter-count">{filtered.length.toLocaleString('es-CL')} pts</div>
+          <button
+            type="button"
+            className="filter-btn filter-share"
+            onClick={() => descargarCsv(filtered, tituloRegion(regionActual), comuna)}
+            disabled={!filtered.length}
+            title="Descargar los puntos filtrados (CSV para Excel)"
+          >
+            ⬇️ CSV
+          </button>
           <button type="button" className="filter-btn filter-share" onClick={copiarEnlace} title="Copiar enlace a esta vista">
             {copiado ? '✅ Copiado' : '🔗 Compartir'}
           </button>
