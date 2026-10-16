@@ -4,6 +4,14 @@ Visualizador de los puntos críticos de la temporada de invierno reportados a **
 
 🌐 https://robinson21.github.io/puntos-criticos-chile/
 
+## Qué ofrece
+
+- Mapa por región con los puntos críticos coloreados por nivel de riesgo, filtros (comuna, causa, nivel, tipo de solución) y zoom automático a la región o comuna.
+- Avisos, alertas y alarmas vigentes de la DMC junto al mapa, con los puntos críticos de las regiones afectadas.
+- Capas: lluvia animada (RainViewer), viento, nubes y temperatura (OpenWeatherMap) e incendios activos (NASA FIRMS, se activa al configurar `FIRMS_MAP_KEY` en el Worker).
+- Vistas compartibles por URL (`?region=coquimbo&comuna=VICUÑA&nivel=Alto`) y exportación a CSV de lo filtrado.
+- Indicador de antigüedad de alertas y pronóstico (ámbar > 14 h, rojo > 26 h).
+
 ## Desarrollo
 
 ```bash
@@ -18,10 +26,10 @@ Variables de entorno: ver [`docs/ENV-VARS.md`](docs/ENV-VARS.md). Sin `VITE_TILE
 
 | Ruta | Contenido |
 |---|---|
-| `src/data/` | `DataContext` (carga `meta.json` y la región elegida), `FilterContext` (filtros), `stats.js` (cifras derivadas) |
+| `src/data/` | `DataContext` (carga `meta.json` y la región elegida), `FilterContext` (filtros), `stats.js` (cifras derivadas), `alertas.js` (alertas DMC), `url.js` (estado en la URL), `csv.js` (exportación) |
 | `src/components/` | Mapa, filtros, KPIs, gráficos, ranking, pronóstico, alertas |
 | `public/data/` | JSON por región, `meta.json`, `alertas.json`, `pronostico_regional.json` |
-| `owm-proxy-worker.js` | Worker de Cloudflare que agrega la key de OWM y cachea tiles ([docs](docs/PROXY-OWM.md)) |
+| `owm-proxy-worker.js` | Worker de Cloudflare: tiles OWM y focos NASA FIRMS sin exponer las keys ([docs](docs/PROXY-OWM.md)) |
 
 ## Actualización de datos
 
