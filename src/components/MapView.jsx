@@ -220,10 +220,13 @@ function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey, tilePr
 
     // 2. Lluvia animada RainViewer (sin key).
     if (activeLayers.includes('lluvia') && rainFrames && rainFrames[rainNow]) {
-      const ts = rainFrames[rainNow].time;
-      const url = `https://tilecache.rainviewer.com/v2/radar/${ts}/256/{z}/{x}/{y}/2/1_1.png`;
+      // RainViewer (API 2.0) identifica cada cuadro por `host` + `path`; las URLs con la
+      // marca de tiempo responden 410. Su plan gratuito solo sirve hasta zoom 7: más
+      // cerca devuelve un tile "Zoom Level Not Supported", así que se escala el de z7.
+      const { host, path } = rainFrames[rainNow];
+      const url = `${host}${path}/256/{z}/{x}/{y}/2/1_1.png`;
       if (!layersRef.current.lluvia) {
-        add('lluvia', L.tileLayer(url, { tileSize: 256, opacity: 0.7, attribution: '© RainViewer' }));
+        add('lluvia', L.tileLayer(url, { tileSize: 256, opacity: 0.7, maxNativeZoom: 7, maxZoom: 19, attribution: '© RainViewer' }));
       } else {
         layersRef.current.lluvia.setUrl(url);
       }
@@ -308,7 +311,8 @@ export default function MapView() {
       .then(r => r.ok ? r.json() : null)
       .then(data => {
         if (data && Array.isArray(data.radar?.past)) {
-          setRainFrames([...data.radar.past, ...(data.radar.nowcast || [])]);
+          const host = data.host || 'https://tilecache.rainviewer.com';
+          setRainFrames([...data.radar.past, ...(data.radar.nowcast || [])].map(f => ({ ...f, host })));
           setRainNow(0);
         }
       })
