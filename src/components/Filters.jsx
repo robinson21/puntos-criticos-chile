@@ -1,14 +1,17 @@
 import { useState, useMemo } from 'react';
 import { useFilters } from '../data/FilterContext';
 import { useData } from '../data/DataContext';
+import { useAlertas, alertasDeRegion } from '../data/alertas';
+import { tituloRegion } from '../data/stats';
 
 export default function Filters() {
   const { comuna, setComuna, causa, setCausa, nivel, setNivel, tipoSolucion, setTipoSolucion, filtered, comunas, causas } = useFilters();
-  const { metadata, loadRegion, regionActual, setRegionActual, records } = useData();
+  const { metadata, loadRegion, regionActual, records } = useData();
   const [buscar, setBuscar] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
 
   const regiones = metadata?.regiones ? Object.keys(metadata.regiones) : [];
+  const { data: alertas } = useAlertas();
 
   const comunasFiltradas = useMemo(() => {
     if (!buscar) return comunas.slice(0, 20);
@@ -20,12 +23,10 @@ export default function Filters() {
 
   const handleRegionChange = (e) => {
     const r = e.target.value;
-    setRegionActual(r);
-    if (r) {
-      loadRegion(r);
-      setComuna('');
-      setBuscar('');
-    }
+    // loadRegion('') limpia los registros, así el mapa no queda con la región anterior.
+    loadRegion(r);
+    setComuna('');
+    setBuscar('');
   };
 
   return (
@@ -39,7 +40,9 @@ export default function Filters() {
       >
         <option value="">🌎 Selecciona región</option>
         {regiones.map(r => (
-          <option key={r} value={r}>{r.charAt(0) + r.slice(1).toLowerCase()}</option>
+          <option key={r} value={r}>
+            {tituloRegion(r)}{alertasDeRegion(alertas?.alertas, r).length ? ' ⚠️' : ''}
+          </option>
         ))}
       </select>
 

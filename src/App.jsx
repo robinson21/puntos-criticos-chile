@@ -9,6 +9,7 @@ import Charts from './components/Charts';
 import Insights from './components/Insights';
 import Alertas from './components/Alertas';
 import PronosticoRegional from './components/PronosticoRegional';
+import AlertasRegion from './components/AlertasRegion';
 
 // Estado global de tema (claro por defecto como pidió el usuario).
 // Se guarda en localStorage y se aplica al <html data-theme="light|dark">.
@@ -96,6 +97,7 @@ function Dashboard() {
         {loadingRegion && <div className="loading-bar">Cargando datos regionales...</div>}
 
         {/* ===== MAPA PROTAGONISTA (ancho completo, arriba) ===== */}
+        {hasRegion && <AlertasRegion />}
         {hasRegion ? (
           <MapView />
         ) : (

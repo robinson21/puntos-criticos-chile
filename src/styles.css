@@ -1212,3 +1212,35 @@ footer {
   0% { transform: translate(-50%, -50%) scale(0.6); opacity: 0.8; }
   100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0; }
 }
+
+/* ===== Alertas DMC sobre el mapa ===== */
+.alerta-tipo[data-tipo="Aviso"] { color: #1f2937; }
+.alertas-region {
+  margin: 0 0 12px;
+  padding: 10px 14px;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--amber);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--ink);
+}
+.alertas-region.ok {
+  border-left-color: var(--teal);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--muted);
+}
+.alertas-region-head { display: flex; gap: 6px; align-items: baseline; flex-wrap: wrap; }
+.alertas-region-head span { color: var(--muted); }
+.alertas-region ul { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.alertas-region li { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 12px; }
+.alertas-region .ar-fen { font-weight: 600; }
+.alertas-region .ar-hasta, .alertas-region .ar-zonas { color: var(--muted); }
+.edad { font-family: var(--font-mono); font-size: 11px; margin-left: auto; color: var(--muted); }
+.edad.edad-vieja { color: var(--amber); }
+.edad.edad-muy-vieja { color: var(--red); font-weight: 600; }
+.alerta-solo-region { display: inline-flex; gap: 6px; align-items: center; font-size: 12px; color: var(--muted); margin-left: auto; cursor: pointer; }
+.alerta-expuestos { color: var(--accent); font-weight: 500; }

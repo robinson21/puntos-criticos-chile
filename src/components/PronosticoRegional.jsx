@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useData } from '../data/DataContext';
+import { antiguedad } from '../data/alertas';
 
 function fmtFecha(fecha) {
   if (!fecha) return '';
@@ -60,6 +61,7 @@ export default function PronosticoRegional() {
 
   if (!regionActual || error || !data) return null;
   const pron = data.regiones?.[regionActual];
+  const edad = antiguedad(data.actualizado);
   if (!pron) return null;
 
   const actual = pron.actual;
@@ -186,7 +188,13 @@ export default function PronosticoRegional() {
       <p className="pron-foot">
         <span>Fuente: {data.fuente}</span>
         <span className="pron-foot-sep">·</span>
-        <span>Actualizado: {data.actualizado?.slice(0, 16).replace('T', ' ')}</span>
+        {edad ? (
+          <span className={`edad edad-${edad.nivel}`} title={edad.fecha.toLocaleString('es-CL')}>
+            Actualizado {edad.texto}{edad.nivel === 'muy-vieja' && ' · puede estar desactualizado'}
+          </span>
+        ) : (
+          <span>Actualizado: {data.actualizado?.slice(0, 16).replace('T', ' ')}</span>
+        )}
       </p>
     </section>
   );

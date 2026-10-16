@@ -4,11 +4,13 @@
 const fmt = (n) => (n || 0).toLocaleString('es-CL');
 const pct = (n, total) => (total ? Math.round((n / total) * 100) : 0);
 
+const MINUSCULAS = new Set(['de', 'del', 'la', 'las', 'los', 'y']);
 export function tituloRegion(r) {
   return r
     .toLowerCase()
-    .replace(/(^|\s)\S/g, (c) => c.toUpperCase())
-    .replace(/\b(De|Del|La|Las|Los|Y)\b/g, (w) => w.toLowerCase());
+    .split(' ')
+    .map((w, i) => (i > 0 && MINUSCULAS.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)))
+    .join(' ');
 }
 
 export function resumen(metadata) {
