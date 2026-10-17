@@ -75,7 +75,8 @@ export default function LineaTiempo({ linea, capas, mostrarEscala }) {
         <div className="lt-capas">
           {capas.filter(c => Array.isArray(c.cuadros)).map(c => {
             const propios = c.cuadros.map(Date.parse);
-            const mostrado = [...propios].reverse().find(ms => ms <= tiempo);
+            const fueraDeTramo = c.pronostico ? tiempo <= Date.now() : tiempo > Date.now();
+            const mostrado = fueraDeTramo ? null : [...propios].reverse().find(ms => ms <= tiempo);
             return (
               <span key={c.id} className={`lt-chip ${mostrado ? '' : 'apagado'}`} style={{ '--c': c.color }}
                 title={mostrado ? `${c.nombre}: imagen de las ${horaChile(new Date(mostrado).toISOString())}` : `${c.nombre}: sin imagen para esta hora`}>

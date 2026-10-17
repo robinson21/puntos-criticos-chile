@@ -8,7 +8,7 @@ import L from 'leaflet';
 // si `tiempo` es anterior a su primer cuadro, la capa no se ve.
 // `cargar()` devuelve [{ url, tiempo, limites? }] del más antiguo al más reciente; `onCuadros` informa los tiempos.
 export default function AnimacionTiles({
-  activo, cargar, tiempo, onCuadros, maxNativeZoom = 7, opacidad = 0.75,
+  activo, cargar, tiempo, onCuadros, maxNativeZoom = 7, opacidad = 0.75, tipo = 'observado',
   refrescoMs = 10 * 60 * 1000, attribution = '', zIndex = 300, className = '',
 }) {
   const map = useMap();
@@ -22,6 +22,8 @@ export default function AnimacionTiles({
     let idx = -1;
     for (let i = 0; i < ts.length; i++) if (ts[i] <= t) idx = i;
     if (t == null) idx = ts.length - 1;
+    // Lo observado no se muestra en horas futuras, y el pronóstico no se muestra en el pasado
+    else if ((tipo === 'observado' && t > Date.now()) || (tipo === 'pronostico' && t <= Date.now())) idx = -1;
     if (idx === visible.current) return;
     capas.current[visible.current]?.setOpacity(0);
     capas.current[idx]?.setOpacity(opacidad);

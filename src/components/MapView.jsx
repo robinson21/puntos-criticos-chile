@@ -636,7 +636,7 @@ export default function MapView() {
       <LineaTiempo linea={linea} mostrarEscala={conLluvia} capas={[
         { id: 'lluviaNasa', nombre: 'Lluvia NASA', icono: '🌧️', color: '#22c55e', cuadros: cuadros.lluviaNasa },
         { id: 'lluvia', nombre: 'Radar', icono: '📡', color: '#38bdf8', cuadros: cuadros.lluvia },
-        { id: 'pronostico', nombre: 'Pronóstico GFS', icono: '🔮', color: '#a78bfa', cuadros: cuadros.pronostico },
+        { id: 'pronostico', nombre: 'Pronóstico GFS', icono: '🔮', color: '#a78bfa', cuadros: cuadros.pronostico, pronostico: true },
         { id: 'satelite', nombre: 'Nubes GOES', icono: '🛰️', color: '#cbd5e1', cuadros: cuadros.satelite },
       ]} />
       {resumenIncendios && (

@@ -9,6 +9,7 @@ Visualizador de los puntos críticos de la temporada de invierno reportados a **
 - Mapa por región con los puntos críticos coloreados por nivel de riesgo, filtros (comuna, causa, nivel, tipo de solución) y zoom automático a la región o comuna.
 - Avisos, alertas y alarmas vigentes de la DMC junto al mapa, con los puntos críticos de las regiones afectadas.
 - Capas: lluvia animada (RainViewer), nubes satelitales animadas (GOES-East, NASA GIBS), viento, nubes y temperatura (OpenWeatherMap) e incendios activos (NASA FIRMS, se activa con el secreto `FIRMS_MAP_KEY` del repo).
+- **Pronóstico de lluvia 48 h** (NOAA GFS 0,25°, hora a hora, dominio público): se anima en la misma línea de tiempo, después de la marca "Ahora", y calcula la lluvia esperada en 24 h para cada estación (≥ 30 mm → exposición media y ≥ 60 mm → alta, si hay puntos de causas de lluvia en el radio). Lo genera `actualizar_pronostico_lluvia.py` cada 3 h.
 - **Estaciones de servicio expuestas:** cruce de las estaciones Aramco con los puntos críticos dentro de un radio (500 m a 5 km), las alertas DMC de su región y los focos de incendio a ≤ 10 km. Nivel de exposición (alta/media/baja), botón para verla en el mapa con su radio y exportación a CSV.
 - **Vista nacional** al entrar: estaciones, alertas DMC e incendios de todo Chile sin elegir región.
 - **Estado del Excel SENAPRED** en el encabezado: fecha del archivo, cuándo se revisó y si vino del sitio oficial o de la copia de respaldo (`senapred_estado.json`, solo en la rama `datos`).

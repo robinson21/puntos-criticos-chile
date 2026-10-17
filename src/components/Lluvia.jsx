@@ -40,5 +40,5 @@ export function LluviaPronostico({ activo, tiempo, onCuadros, pronostico }) {
       .map(h => ({ url: imagenHora(pronostico, h), tiempo: h.iso, limites: limites(pronostico) }));
   }, [pronostico]);
   return <AnimacionTiles activo={activo && Boolean(pronostico)} cargar={cargar} tiempo={tiempo} onCuadros={onCuadros}
-    opacidad={0.8} refrescoMs={60 * 60 * 1000} attribution="Pronóstico: NOAA GFS" zIndex={315} className="capa-pronostico" />;
+    opacidad={0.8} refrescoMs={60 * 60 * 1000} attribution="Pronóstico: NOAA GFS" zIndex={315} className="capa-pronostico" tipo="pronostico" />;
 }
