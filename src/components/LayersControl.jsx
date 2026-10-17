@@ -28,6 +28,16 @@ export const CAPAS_AMBIENTALES = [
     default: true
   },
   {
+    id: 'pronostico',
+    label: 'Pronóstico de lluvia',
+    icon: '🔮',
+    color: '#a78bfa',
+    fuente: 'NOAA GFS · hora a hora · 48 h',
+    descripcion: 'Lluvia pronosticada por el modelo GFS de NOAA (~25 km) para las próximas 48 horas. Es una orientación: no ve chubascos muy locales; las alertas oficiales son las de la DMC.',
+    necesitaKey: false,
+    default: true
+  },
+  {
     id: 'lluvia',
     label: 'Lluvia radar en vivo',
     icon: '📡',

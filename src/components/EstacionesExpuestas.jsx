@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useData } from '../data/DataContext';
 import { useFilters } from '../data/FilterContext';
 import { useEstaciones } from '../data/EstacionesContext';
-import { EXPOSICION, NIVELES, RADIOS_KM, RADIO_INCENDIO_KM, fmtKm, descargarCsvEstaciones } from '../data/estaciones';
+import { EXPOSICION, NIVELES, RADIOS_KM, RADIO_INCENDIO_KM, LLUVIA_MEDIA_MM, LLUVIA_ALTA_MM, fmtKm, descargarCsvEstaciones } from '../data/estaciones';
 import { COLOR_TIPO, limpiarTexto } from '../data/alertas';
 
 const COLOR_NIVEL = { 'Muy Alto': 'var(--red)', Alto: 'var(--copper)', Medio: 'var(--amber)', Bajo: 'var(--teal)' };
@@ -71,6 +71,7 @@ export default function EstacionesExpuestas() {
                 <span role="columnheader">Puntos críticos a ≤ {fmtKm(radioKm)}</span>
                 <span role="columnheader">Alertas DMC</span>
                 <span role="columnheader">Incendios ≤ {RADIO_INCENDIO_KM} km</span>
+                <span role="columnheader">Lluvia 24 h 🔮</span>
                 <span role="columnheader" />
               </div>
               {mostrar.map(a => (
@@ -108,6 +109,14 @@ export default function EstacionesExpuestas() {
                       ? <span className="est-fuego">🔥 {a.incendios.cantidad} · a {fmtKm(a.incendios.masCercano)}</span>
                       : <small className="est-nada">Ninguno</small>}
                   </span>
+                  <span role="cell" data-label="Lluvia pronosticada 24 h">
+                    {a.lluvia24 == null ? <small className="est-nada">—</small> : (
+                      <span className={`est-lluvia ${a.lluvia24 >= LLUVIA_ALTA_MM ? 'alta' : a.lluvia24 >= LLUVIA_MEDIA_MM ? 'media' : ''}`}
+                        title="Lluvia pronosticada por el modelo GFS (NOAA) para las próximas 24 h en la celda de ~25 km de la estación">
+                        {a.lluvia24 >= 0.5 ? `${String(a.lluvia24).replace('.', ',')} mm` : 'sin lluvia'}
+                      </span>
+                    )}
+                  </span>
                   <span role="cell"><button type="button" className="btn-mini" onClick={() => verEnMapa(a.estacion.id)}>📍 Ver en mapa</button></span>
                 </div>
               ))}
@@ -121,6 +130,7 @@ export default function EstacionesExpuestas() {
           <p className="estaciones-nota">
             <b>Criterio:</b> <i>Alta</i> = foco de incendio a ≤ {RADIO_INCENDIO_KM} km, punto "Muy Alto" en el radio, alerta o alarma DMC 🎯 relacionada (su fenómeno puede activar puntos del radio) o cualquier alarma.
             {' '}<i>Media</i> = punto "Alto" o afectado este invierno en el radio, aviso 🎯 relacionado, o alerta de otro fenómeno. <i>Baja</i> = otros puntos en el radio o solo avisos operacionales.
+            {' '}<i>Lluvia pronosticada</i> (GFS, próximas 24 h) con puntos de causas de lluvia en el radio: ≥ {LLUVIA_ALTA_MM} mm → alta; ≥ {LLUVIA_MEDIA_MM} mm → media.
             {' '}Fenómenos que activan puntos: precipitaciones, nevadas, heladas y marejadas; viento, tormentas eléctricas y altas temperaturas son operacionales.
             {' '}Las alertas sin área exacta se aplican a toda la región (la DMC avisa por zonas: cordillera, costa…): revisa la zona.
           </p>

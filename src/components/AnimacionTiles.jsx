@@ -6,7 +6,7 @@ import L from 'leaflet';
 // Cada cuadro es una capa propia precargada con opacidad 0; al moverse el tiempo solo cambia la
 // opacidad (con fundido CSS), así no parpadea. Muestra el último cuadro anterior o igual a `tiempo`;
 // si `tiempo` es anterior a su primer cuadro, la capa no se ve.
-// `cargar()` devuelve [{ url, tiempo }] del más antiguo al más reciente; `onCuadros` informa los tiempos.
+// `cargar()` devuelve [{ url, tiempo, limites? }] del más antiguo al más reciente; `onCuadros` informa los tiempos.
 export default function AnimacionTiles({
   activo, cargar, tiempo, onCuadros, maxNativeZoom = 7, opacidad = 0.75,
   refrescoMs = 10 * 60 * 1000, attribution = '', zIndex = 300, className = '',
@@ -44,9 +44,11 @@ export default function AnimacionTiles({
         if (!cuadros.length) throw new Error('sin imágenes recientes');
         limpiar();
         tiempos.current = cuadros.map(c => Date.parse(c.tiempo));
-        capas.current = cuadros.map(c =>
-          L.tileLayer(c.url, { maxNativeZoom, maxZoom: 19, opacity: 0, attribution, zIndex, className: `capa-animada ${className}` }).addTo(map)
-        );
+        // Cuadros con `limites` son una imagen sola (pronóstico); el resto, mosaicos de mapa
+        capas.current = cuadros.map(c => (c.limites
+          ? L.imageOverlay(c.url, c.limites, { opacity: 0, attribution, zIndex, className: `capa-animada ${className}` })
+          : L.tileLayer(c.url, { maxNativeZoom, maxZoom: 19, opacity: 0, attribution, zIndex, className: `capa-animada ${className}` })
+        ).addTo(map));
         onCuadros?.(cuadros.map(c => c.tiempo));
       } catch (e) {
         if (vivo) onCuadros?.({ error: e.message });
