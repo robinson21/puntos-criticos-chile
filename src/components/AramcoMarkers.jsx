@@ -73,7 +73,7 @@ export default function AramcoMarkers({ comuna, region }) {
       {stations.length > 0 && (
         <>
           <div className="aramco-toggle" onClick={() => setVisible(v => !v)} style={{
-            position: 'absolute', top: 12, right: 12, zIndex: 1000,
+            position: 'absolute', top: 12, left: 12, zIndex: 1000,
             background: visible ? '#0e7490' : '#1e293b', color: '#fff',
             border: visible ? '1px solid #22d3ee' : '1px solid #334155',
             borderRadius: 8, padding: '6px 12px', fontSize: 12, cursor: 'pointer',

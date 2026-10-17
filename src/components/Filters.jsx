@@ -1,14 +1,31 @@
 import { useState, useMemo } from 'react';
-import { useFilters } from '../data/FilterContext';
+import { useFilters, SIN_INFO } from '../data/FilterContext';
 import { useData } from '../data/DataContext';
+import { useAlertas, alertasDeRegion } from '../data/alertas';
+import { tituloRegion } from '../data/stats';
+import { descargarCsv } from '../data/csv';
 
 export default function Filters() {
-  const { comuna, setComuna, causa, setCausa, nivel, setNivel, tipoSolucion, setTipoSolucion, filtered, comunas, causas } = useFilters();
-  const { metadata, loadRegion, regionActual, setRegionActual, records } = useData();
+  const { comuna, setComuna, causa, setCausa, nivel, setNivel, tipoSolucion, setTipoSolucion, filtered, comunas, causas, tipos, haySinTipo } = useFilters();
+  const { metadata, loadRegion, regionActual, records } = useData();
   const [buscar, setBuscar] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
 
   const regiones = metadata?.regiones ? Object.keys(metadata.regiones) : [];
+  const { data: alertas } = useAlertas();
+  const [copiado, setCopiado] = useState(false);
+
+  // La URL ya refleja región y filtros (FilterContext); basta con copiarla.
+  const copiarEnlace = async () => {
+    const url = window.location.href;
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopiado(true);
+      setTimeout(() => setCopiado(false), 2000);
+    } catch (e) {
+      window.prompt('Copia este enlace:', url);
+    }
+  };
 
   const comunasFiltradas = useMemo(() => {
     if (!buscar) return comunas.slice(0, 20);
@@ -20,12 +37,12 @@ export default function Filters() {
 
   const handleRegionChange = (e) => {
     const r = e.target.value;
-    setRegionActual(r);
-    if (r) {
-      loadRegion(r);
-      setComuna('');
-      setBuscar('');
-    }
+    // loadRegion('') limpia los registros, así el mapa no queda con la región anterior.
+    loadRegion(r);
+    setComuna('');
+    setCausa('');
+    setTipoSolucion('');
+    setBuscar('');
   };
 
   return (
@@ -39,7 +56,9 @@ export default function Filters() {
       >
         <option value="">🌎 Selecciona región</option>
         {regiones.map(r => (
-          <option key={r} value={r}>{r.charAt(0) + r.slice(1).toLowerCase()}</option>
+          <option key={r} value={r}>
+            {tituloRegion(r)}{alertasDeRegion(alertas?.alertas, r).length ? ' ⚠️' : ''}
+          </option>
         ))}
       </select>
 
@@ -92,13 +111,23 @@ export default function Filters() {
 
           <select value={tipoSolucion} onChange={e => setTipoSolucion(e.target.value)}>
             <option value="">Todo tipo</option>
-            <option value="Infraestructura">Infraestructura</option>
-            <option value="Mantención">Mantención</option>
-            <option value="Estudios">Estudios</option>
-            <option value="No Aplica">No Aplica</option>
+            {tipos.map(t => <option key={t} value={t}>{t}</option>)}
+            {haySinTipo && <option value={SIN_INFO}>Sin información</option>}
           </select>
 
           <div className="filter-count">{filtered.length.toLocaleString('es-CL')} pts</div>
+          <button
+            type="button"
+            className="filter-btn filter-share"
+            onClick={() => descargarCsv(filtered, tituloRegion(regionActual), comuna)}
+            disabled={!filtered.length}
+            title="Descargar los puntos filtrados (CSV para Excel)"
+          >
+            ⬇️ CSV
+          </button>
+          <button type="button" className="filter-btn filter-share" onClick={copiarEnlace} title="Copiar enlace a esta vista">
+            {copiado ? '✅ Copiado' : '🔗 Compartir'}
+          </button>
         </>
       )}
     </div>

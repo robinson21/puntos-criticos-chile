@@ -1,19 +1,102 @@
-// owm-proxy-worker.js - Proxy de tiles OpenWeatherMap
+// owm-proxy-worker.js - Proxy de tiles OpenWeatherMap y focos de incendio NASA FIRMS
 // Recibe peticiones del portal y las reenvía a tile.openweathermap.org
 // con la API key almacenada como secreto. Cachea tiles por 30 min.
+// Si existe el secreto FIRMS_MAP_KEY, sirve además /api/firms con los focos
+// activos de Chile continental (JSON), también cacheados 30 min.
 const VALID_LAYERS = ['clouds_new', 'wind_new', 'temp_new', 'precipitation_new'];
 const TILE_BASE = 'https://tile.openweathermap.org/map';
+
+const FIRMS_BASE = 'https://firms.modaps.eosdis.nasa.gov/api/area/csv';
+// Chile continental (oeste, sur, este, norte).
+const FIRMS_AREA = '-76,-56.5,-66,-17.4';
+// Satélites VIIRS en tiempo casi real; se pueden cambiar con la variable FIRMS_SOURCES.
+const FIRMS_SOURCES_DEFAULT = 'VIIRS_SNPP_NRT,VIIRS_NOAA20_NRT,VIIRS_NOAA21_NRT';
+
+const CORS = { 'Access-Control-Allow-Origin': '*' };
+const json = (data, status = 200, extra = {}) =>
+  new Response(JSON.stringify(data), {
+    status,
+    headers: { 'Content-Type': 'application/json', ...CORS, ...extra },
+  });
+
+// CSV de FIRMS → [{lat, lon, frp, confianza, fecha, hora, satelite}]
+function parseFirmsCsv(csv) {
+  const lineas = csv.trim().split(/\r?\n/);
+  if (lineas.length < 2) return [];
+  const cab = lineas[0].split(',').map(h => h.trim());
+  const i = name => cab.indexOf(name);
+  const [iLat, iLon, iFrp, iConf, iFecha, iHora, iSat] =
+    ['latitude', 'longitude', 'frp', 'confidence', 'acq_date', 'acq_time', 'satellite'].map(i);
+  if (iLat < 0 || iLon < 0) throw new Error('CSV de FIRMS sin columnas latitude/longitude');
+  const out = [];
+  for (const linea of lineas.slice(1)) {
+    const c = linea.split(',');
+    const lat = parseFloat(c[iLat]);
+    const lon = parseFloat(c[iLon]);
+    if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue;
+    const hora = iHora >= 0 ? String(c[iHora]).padStart(4, '0') : '';
+    out.push({
+      lat: Math.round(lat * 1e4) / 1e4,
+      lon: Math.round(lon * 1e4) / 1e4,
+      frp: iFrp >= 0 ? parseFloat(c[iFrp]) || 0 : 0,
+      confianza: iConf >= 0 ? c[iConf] : '',
+      fecha: iFecha >= 0 ? c[iFecha] : '',
+      hora: hora ? `${hora.slice(0, 2)}:${hora.slice(2)} UTC` : '',
+      satelite: iSat >= 0 ? c[iSat] : '',
+    });
+  }
+  return out;
+}
+
+async function firms(request, env) {
+  const key = env.FIRMS_MAP_KEY;
+  if (!key) return json({ error: 'Missing FIRMS_MAP_KEY' }, 503);
+
+  const url = new URL(request.url);
+  const dias = Math.min(3, Math.max(1, parseInt(url.searchParams.get('dias') || '1', 10) || 1));
+  const cache = caches.default;
+  const cacheKey = new Request(`${url.origin}/api/firms?dias=${dias}`, { method: 'GET' });
+  const cached = await cache.match(cacheKey);
+  if (cached) return cached;
+
+  const fuentes = String(env.FIRMS_SOURCES || FIRMS_SOURCES_DEFAULT).split(',').map(s => s.trim()).filter(Boolean);
+  // Cada satélite por separado: si uno falla (o no existe), los otros igual sirven.
+  const resultados = await Promise.allSettled(
+    fuentes.map(async fuente => {
+      const r = await fetch(`${FIRMS_BASE}/${key}/${fuente}/${FIRMS_AREA}/${dias}`);
+      const txt = await r.text();
+      if (!r.ok || !txt.startsWith('latitude')) throw new Error(`${fuente}: HTTP ${r.status} ${txt.slice(0, 80)}`);
+      return parseFirmsCsv(txt);
+    })
+  );
+  const ok = resultados.filter(r => r.status === 'fulfilled');
+  if (!ok.length) {
+    return json({ error: 'FIRMS no respondió', detalle: resultados.map(r => r.reason?.message) }, 502);
+  }
+  const focos = ok.flatMap(r => r.value);
+  const resp = json(
+    {
+      actualizado: new Date().toISOString(),
+      dias,
+      fuentes,
+      fallidas: resultados.filter(r => r.status === 'rejected').map(r => r.reason?.message),
+      focos,
+    },
+    200,
+    { 'Cache-Control': 'public, max-age=1800' }
+  );
+  await cache.put(cacheKey, resp.clone());
+  return resp;
+}
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const path = url.pathname;
 
-    // Health check
+    // Health check. `firms` le indica al portal si puede habilitar la capa de incendios.
     if (path === '/health') {
-      return new Response(JSON.stringify({ ok: true }), {
-        headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
-      });
+      return json({ ok: true, firms: Boolean(env.FIRMS_MAP_KEY) });
     }
 
     // Preflight CORS
@@ -21,6 +104,11 @@ export default {
       return new Response('', {
         headers: { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET', 'Access-Control-Allow-Headers': '*' },
       });
+    }
+
+    // Focos de incendio activos (NASA FIRMS)
+    if (path === '/api/firms') {
+      return firms(request, env);
     }
 
     // /api/tiles/owm/{layer}/{z}/{x}/{y}

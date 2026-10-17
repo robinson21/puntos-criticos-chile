@@ -1,6 +1,5 @@
 dist/
 node_modules/
-src/data/
 .env
 .env.local
 .env.*.local

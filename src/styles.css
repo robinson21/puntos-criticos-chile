@@ -497,6 +497,7 @@ h1 em {
 .geocoder-pin { font-size: 12px; margin-top: 1px; }
 
 /* ===== MAP ===== */
+.map-stage { position: relative; }
 .map-container {
   height: 640px;
   width: 100%;
@@ -1120,7 +1121,7 @@ footer {
 /* ===== BOTÓN "MI UBICACIÓN" (GPS) ===== */
 .gps-locate-btn {
   position: absolute;
-  bottom: 90px;
+  bottom: 104px;
   right: 12px;
   z-index: 600;
   width: 38px;
@@ -1163,7 +1164,7 @@ footer {
 }
 .gps-locate-err {
   position: absolute;
-  bottom: 50px;
+  bottom: 136px;
   right: 12px;
   z-index: 600;
   background: rgba(213, 81, 74, 0.95);
@@ -1211,3 +1212,72 @@ footer {
   0% { transform: translate(-50%, -50%) scale(0.6); opacity: 0.8; }
   100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0; }
 }
+
+/* ===== Alertas DMC sobre el mapa ===== */
+.alerta-tipo[data-tipo="Aviso"] { color: #1f2937; }
+.alertas-region {
+  margin: 0 0 12px;
+  padding: 10px 14px;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--amber);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--ink);
+}
+.alertas-region.ok {
+  border-left-color: var(--teal);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--muted);
+}
+.alertas-region-head { display: flex; gap: 6px; align-items: baseline; flex-wrap: wrap; }
+.alertas-region-head span { color: var(--muted); }
+.alertas-region ul { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.alertas-region li { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 12px; }
+.alertas-region .ar-fen { font-weight: 600; }
+.alertas-region .ar-hasta, .alertas-region .ar-zonas { color: var(--muted); }
+.edad { font-family: var(--font-mono); font-size: 11px; margin-left: auto; color: var(--muted); }
+.edad.edad-vieja { color: var(--amber); }
+.edad.edad-muy-vieja { color: var(--red); font-weight: 600; }
+.alerta-solo-region { display: inline-flex; gap: 6px; align-items: center; font-size: 12px; color: var(--muted); margin-left: auto; cursor: pointer; }
+.alerta-expuestos { color: var(--accent); font-weight: 500; }
+
+/* ===== Resumen de focos de incendio sobre el mapa ===== */
+.incendios-resumen {
+  position: absolute;
+  left: 12px;
+  bottom: 28px;
+  z-index: 600;
+  max-width: calc(100% - 80px);
+  background: rgba(15, 23, 42, 0.92);
+  color: #fde68a;
+  border: 1px solid rgba(249, 115, 22, 0.5);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+.incendios-resumen.alerta { border-color: #dc2626; color: #fecaca; }
+.legend .dot-foco { background: #b91c1c; box-shadow: 0 0 0 2px #fde047; }
+
+/* ===== Hora del cuadro satelital ===== */
+.satelite-hora {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 600;
+  background: rgba(15, 23, 42, 0.88);
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+@media (max-width: 600px) { .satelite-hora { top: 56px; font-size: 10px; } }

@@ -50,6 +50,7 @@ def actualizar():
         obj_str = obj_str.replace('&uacute;', 'ú').replace('&ntilde;', 'ñ')
         obj_str = obj_str.replace('&iexcl;', '¡').replace('&quot;', '"')
         obj_str = obj_str.replace('&amp;', '&').replace('&nbsp;', ' ')
+        obj_str = obj_str.replace('&#039;', "'").replace('&#39;', "'")
 
         # Extraer campos con regex (más seguro que eval)
         def get_val(field, s=obj_str):

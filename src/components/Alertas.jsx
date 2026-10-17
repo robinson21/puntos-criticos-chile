@@ -1,22 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useData } from '../data/DataContext';
+import {
+  useAlertas, alertasDeRegion, antiguedad, puntosExpuestos, limpiarTexto, SEVERIDAD, COLOR_TIPO,
+} from '../data/alertas';
+import { tituloRegion } from '../data/stats';
 
 export default function Alertas() {
-  const [alertas, setAlertas] = useState(null);
-  const [error, setError] = useState(null);
+  const { data: alertas, error } = useAlertas();
   const [filtro, setFiltro] = useState('todas');
-  const [regionSel, setRegionSel] = useState('');
-  const { metadata } = useData();
-
-  useEffect(() => {
-    fetch('./data/alertas.json')
-      .then(r => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json();
-      })
-      .then(d => setAlertas(d))
-      .catch(e => setError(e.message));
-  }, []);
+  const [soloRegion, setSoloRegion] = useState(true);
+  const { metadata, regionActual } = useData();
 
   if (error) return null; // No mostrar si falla
   if (!alertas) {
@@ -27,32 +20,38 @@ export default function Alertas() {
     );
   }
 
-  const regionesUsuario = metadata?.regiones ? Object.keys(metadata.regiones) : [];
-
-  let filtradas = alertas.alertas;
+  const filtrarRegion = Boolean(regionActual && soloRegion);
+  const base = filtrarRegion ? alertasDeRegion(alertas.alertas, regionActual) : [...alertas.alertas];
+  // Contadores sobre la misma base que se lista (región o todo Chile).
+  const totales = {
+    total: base.length,
+    alarmas: base.filter(a => a.tipo === 'Alarma').length,
+    alertas: base.filter(a => a.tipo === 'Alerta').length,
+    avisos: base.filter(a => a.tipo === 'Aviso').length,
+  };
+  let filtradas = base;
   if (filtro === 'alarmas') filtradas = filtradas.filter(a => a.tipo === 'Alarma');
   else if (filtro === 'alertas') filtradas = filtradas.filter(a => a.tipo === 'Alerta');
   else if (filtro === 'avisos') filtradas = filtradas.filter(a => a.tipo === 'Aviso');
 
-  if (regionSel) {
-    filtradas = filtradas.filter(a =>
-      a.regiones.some(r => r.toUpperCase().includes(regionSel.split('|')[0].trim().toUpperCase()))
-    );
-  }
+  // Alarmas primero, luego alertas, luego avisos
+  filtradas.sort((a, b) => (SEVERIDAD[b.tipo] || 0) - (SEVERIDAD[a.tipo] || 0));
 
-  // Ordenar: alarmas primero, luego alertas, luego avisos
-  const orden = { 'Alarma': 0, 'Alerta': 1, 'Aviso': 2 };
-  filtradas.sort((a, b) => (orden[a.tipo] ?? 3) - (orden[b.tipo] ?? 3));
-
-  const { totales } = alertas;
+  const edad = antiguedad(alertas.actualizado);
+  const porRegion = metadata?.por_region;
 
   return (
     <div className="alertas-section">
       <div className="panel-head">
         <h2>⚠️ Alertas Meteorológicas</h2>
-        <span className="count">
-          Actualizado: {alertas.actualizado?.slice(0, 10) || 'hoy'}
-        </span>
+        {edad ? (
+          <span className={`count edad edad-${edad.nivel}`} title={edad.fecha.toLocaleString('es-CL')}>
+            Actualizado {edad.texto}
+            {edad.nivel === 'muy-vieja' && ' · puede estar desactualizado'}
+          </span>
+        ) : (
+          <span className="count">Actualizado: {alertas.actualizado?.slice(0, 10) || '—'}</span>
+        )}
       </div>
 
       <div className="alerta-badges">
@@ -80,31 +79,48 @@ export default function Alertas() {
         >
           🟡 Avisos <span className="alerta-num">{totales.avisos}</span>
         </button>
+        {regionActual && (
+          <label className="alerta-solo-region">
+            <input type="checkbox" checked={soloRegion} onChange={e => setSoloRegion(e.target.checked)} />
+            Solo {tituloRegion(regionActual)}
+          </label>
+        )}
       </div>
 
       <div className="alerta-list">
         {filtradas.length === 0 && (
           <div style={{padding: 24, textAlign: 'center', color: 'var(--muted-2)', fontSize: 13}}>
-            Sin alertas disponibles
+            {filtrarRegion ? `Sin alertas vigentes para ${tituloRegion(regionActual)}` : 'Sin alertas vigentes'}
           </div>
         )}
-        {filtradas.map(a => (
-          <div key={a.id} className="alerta-item" style={{borderLeftColor: a.color}}>
-            <div className="alerta-head">
-              <span className="alerta-tipo" style={{background: a.color}}>
-                {a.tipo.toUpperCase()}
-              </span>
-              <span className="alerta-fenomeno">{a.icono} {a.fenomeno}</span>
-              <span className="alerta-codigo">{a.codigo}</span>
+        {filtradas.map(a => {
+          const expuestos = puntosExpuestos(a, porRegion);
+          return (
+            <div key={a.id} className="alerta-item" style={{borderLeftColor: COLOR_TIPO[a.tipo] || a.color}}>
+              <div className="alerta-head">
+                <span className="alerta-tipo" data-tipo={a.tipo} style={{background: COLOR_TIPO[a.tipo] || a.color}}>
+                  {a.tipo.toUpperCase()}
+                </span>
+                <span className="alerta-fenomeno">{a.icono} {a.fenomeno}</span>
+                <span className="alerta-codigo">{a.codigo}</span>
+              </div>
+              <div className="alerta-title">{limpiarTexto(a.titulo)}</div>
+              <div className="alerta-detalle">
+                <span>📅 {limpiarTexto(a.desde)} → {limpiarTexto(a.hasta)}</span>
+                {a.observacion && <span className="alerta-obs">⚠️ {limpiarTexto(a.observacion)}</span>}
+                {a.zonas && <span>📍 {limpiarTexto(a.zonas)}</span>}
+                {expuestos > 0 && (
+                  <span
+                    className="alerta-expuestos"
+                    title="Total de puntos críticos SENAPRED en las regiones afectadas. La DMC avisa por zonas (costa, valle, cordillera), así que no todos están necesariamente dentro de la zona del aviso."
+                  >
+                    🎯 {expuestos.toLocaleString('es-CL')} puntos críticos en las regiones afectadas
+                  </span>
+                )}
+              </div>
             </div>
-            <div className="alerta-title">{a.titulo}</div>
-            <div className="alerta-detalle">
-              <span>📅 {a.desde} → {a.hasta}</span>
-              {a.observacion && <span className="alerta-obs">⚠️ {a.observacion}</span>}
-              {a.zonas && <span>📍 {a.zonas}</span>}
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       <div className="alerta-footer">

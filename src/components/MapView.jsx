@@ -5,6 +5,9 @@ import { useFilters } from '../data/FilterContext';
 import { useData } from '../data/DataContext';
 import AramcoMarkers from './AramcoMarkers';
 import LayersControl from './LayersControl';
+import IncendiosLayer from './IncendiosLayer';
+import NubesSatelite from './NubesSatelite';
+import { horaChile } from '../data/gibs';
 import 'leaflet/dist/leaflet.css';
 
 const COLORS = {'Bajo':'#4FB6A8','Medio':'#E0B84D','Alto':'#E08D45','Muy Alto':'#D5514A'};
@@ -153,6 +156,24 @@ function FlyTo({ coords }) {
 
 // Componente que re-centra a Chile (uso al limpiar la búsqueda). Se dispara
 // una sola vez por incremento de token.
+// Ajusta la vista a los puntos cuando cambia la región o la comuna (no con cada
+// filtro de causa/nivel, para no hacer saltar el mapa). Los territorios insulares
+// (Isla de Pascua, Juan Fernández, Desventuradas: lon < -76) se excluyen del encuadre salvo que
+// sean lo único seleccionado; si no, Valparaíso se vería como un punto en el Pacífico.
+function FitToPoints({ points, fitKey }) {
+  const map = useMap();
+  const lastKey = useRef(null);
+  useEffect(() => {
+    if (!points.length || fitKey === lastKey.current) return;
+    lastKey.current = fitKey;
+    const continentales = points.filter(p => p.lon > -76);
+    const base = continentales.length ? continentales : points;
+    const bounds = L.latLngBounds(base.map(p => [p.lat, p.lon]));
+    if (bounds.isValid()) map.flyToBounds(bounds, { padding: [30, 30], maxZoom: 13, duration: 0.8 });
+  }, [map, points, fitKey]);
+  return null;
+}
+
 function Recenter({ token }) {
   const map = useMap();
   const lastToken = useRef(token);
@@ -199,10 +220,13 @@ function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey, tilePr
 
     // 2. Lluvia animada RainViewer (sin key).
     if (activeLayers.includes('lluvia') && rainFrames && rainFrames[rainNow]) {
-      const ts = rainFrames[rainNow].time;
-      const url = `https://tilecache.rainviewer.com/v2/radar/${ts}/256/{z}/{x}/{y}/2/1_1.png`;
+      // RainViewer (API 2.0) identifica cada cuadro por `host` + `path`; las URLs con la
+      // marca de tiempo responden 410. Su plan gratuito solo sirve hasta zoom 7: más
+      // cerca devuelve un tile "Zoom Level Not Supported", así que se escala el de z7.
+      const { host, path } = rainFrames[rainNow];
+      const url = `${host}${path}/256/{z}/{x}/{y}/2/1_1.png`;
       if (!layersRef.current.lluvia) {
-        add('lluvia', L.tileLayer(url, { tileSize: 256, opacity: 0.7, attribution: '© RainViewer' }));
+        add('lluvia', L.tileLayer(url, { tileSize: 256, opacity: 0.7, maxNativeZoom: 7, maxZoom: 19, attribution: '© RainViewer' }));
       } else {
         layersRef.current.lluvia.setUrl(url);
       }
@@ -243,13 +267,29 @@ export default function MapView() {
   const OWM_KEY = (import.meta.env.VITE_OWM_KEY || '').trim();
   const hasOwmKey = OWM_KEY.length > 0;
   // Proxy backend para servir tiles OWM sin exponer la key en el bundle.
-  // Default localhost:8081 (dev). En producción, sobreescribir con
-  // VITE_TILE_PROXY apuntando a un endpoint público del proxy.
-  const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY || 'http://localhost:8081').trim();
+  // Default: Worker de Cloudflare en producción. Para desarrollo local,
+  // sobreescribir con VITE_TILE_PROXY (ej. http://localhost:8081).
+  const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY || 'https://owm-proxy.robinson-armijo.workers.dev').trim();
   const hasTileProxy = TILE_PROXY.length > 0;
   const hasOwmSource = hasTileProxy || hasOwmKey;
-  // Capas ambientales activas. Default: incendios + lluvia (no requieren key).
-  const [activeLayers, setActiveLayers] = useState(['incendios', 'lluvia']);
+  // Capas ambientales activas. Default: solo lluvia; incendios se suma solo si el
+  // Worker tiene configurada la Map Key de NASA FIRMS (ver /health).
+  const [activeLayers, setActiveLayers] = useState(['lluvia']);
+  const [firmsDisponible, setFirmsDisponible] = useState(false);
+  const [resumenIncendios, setResumenIncendios] = useState(null);
+  const [estadoSatelite, setEstadoSatelite] = useState(null);
+  useEffect(() => {
+    if (!hasTileProxy) return;
+    fetch(`${TILE_PROXY}/health`)
+      .then(r => (r.ok ? r.json() : null))
+      .then(h => {
+        if (h?.firms) {
+          setFirmsDisponible(true);
+          setActiveLayers(prev => (prev.includes('incendios') ? prev : [...prev, 'incendios']));
+        }
+      })
+      .catch(() => {});
+  }, [TILE_PROXY, hasTileProxy]);
   const [rainFrames, setRainFrames] = useState(null); // timestamps RainViewer para animación
   const [rainNow, setRainNow] = useState(0); // índice del frame actual
   const maptilerValida = useMapTilerValida();
@@ -271,7 +311,8 @@ export default function MapView() {
       .then(r => r.ok ? r.json() : null)
       .then(data => {
         if (data && Array.isArray(data.radar?.past)) {
-          setRainFrames([...data.radar.past, ...(data.radar.nowcast || [])]);
+          const host = data.host || 'https://tilecache.rainviewer.com';
+          setRainFrames([...data.radar.past, ...(data.radar.nowcast || [])].map(f => ({ ...f, host })));
           setRainNow(0);
         }
       })
@@ -298,7 +339,8 @@ export default function MapView() {
   const [locErr, setLocErr] = useState('');
   const debounceRef = useRef(null);
 
-  const displayPoints = filtered.slice(0, 2500);
+  // Sin tope: la región más grande tiene ~2.300 puntos y el canvas los dibuja sin problema.
+  const displayPoints = filtered;
 
   // Buscar direcciones con la API de geocodificación de MapTiler (o Nominatim como fallback)
   async function runSearch(raw) {
@@ -511,7 +553,11 @@ export default function MapView() {
       </div>
 
       {/* Punto geocodificado (marcador) y re-centrado a Chile se manejan dentro del MapContainer */}
-      <MapContainer center={center} zoom={zoom} zoomControl={false} className="map-container" scrollWheelZoom={true}>
+      {/* map-stage: contenedor relativo para que los controles flotantes queden sobre el mapa */}
+      <div className="map-stage">
+      {/* preferCanvas: los miles de CircleMarker se dibujan en un solo <canvas> en vez de
+          un <path> SVG cada uno; mismo aspecto y popups, mucho más liviano en celulares. */}
+      <MapContainer center={center} zoom={zoom} zoomControl={false} className="map-container" scrollWheelZoom={true} preferCanvas={true}>
         <ZoomControl position="bottomright" />
         <TileLayer
           url={BASEMAPS[baseMap].url()}
@@ -522,6 +568,7 @@ export default function MapView() {
         {/* Capas ambientales (estilo Zoom Earth) */}
         <EnvironmentalLayers activeLayers={activeLayers} rainFrames={rainFrames} rainNow={rainNow} owmKey={OWM_KEY} tileProxy={hasTileProxy ? TILE_PROXY : null} />
         {recenterToken > 0 && <Recenter token={recenterToken} />}
+        <FitToPoints points={filtered} fitKey={`${regionActual}|${comuna}`} />
         {flyTo && <FlyTo coords={flyTo} />}
         {displayPoints.map((p, i) => (
           <CircleMarker
@@ -535,11 +582,18 @@ export default function MapView() {
                 <div className="popup-comuna">{p.c}</div>
                 <div className="popup-row"><b>Causa:</b> {p.cs}</div>
                 <div className="popup-row"><b>Riesgo:</b><span style={{color:COLORS[p.lv],fontWeight:600}}> {p.lv}</span></div>
-                <div className="popup-row"><b>Solución:</b> {p.tp}</div>
+                <div className="popup-row"><b>Solución:</b> {p.tp || <i>sin información en SENAPRED</i>}</div>
               </div>
             </Popup>
           </CircleMarker>
         ))}
+        <NubesSatelite activo={activeLayers.includes('satelite')} onEstado={setEstadoSatelite} />
+        <IncendiosLayer
+          proxy={firmsDisponible ? TILE_PROXY : null}
+          activo={firmsDisponible && activeLayers.includes('incendios')}
+          puntos={filtered}
+          onResumen={setResumenIncendios}
+        />
         <AramcoMarkers comuna={comuna} region={regionActual} />
         {flyTo && (
           <CircleMarker
@@ -567,11 +621,29 @@ export default function MapView() {
         {locating ? '⏳' : '📍'}
       </button>
       {locErr && <div className="gps-locate-err">{locErr}</div>}
-      <LayersControl activeLayers={activeLayers} onToggle={toggleLayer} hasOwmKey={hasOwmSource} hasFirmsKey={false} />
+      <LayersControl activeLayers={activeLayers} onToggle={toggleLayer} hasOwmKey={hasOwmSource} hasFirmsKey={firmsDisponible} />
+      {estadoSatelite && (
+        <div className="satelite-hora">
+          {estadoSatelite.error
+            ? `🛰️ Satélite no disponible (${estadoSatelite.error})`
+            : `🛰️ GOES-East · ${horaChile(estadoSatelite.tiempo)} hora de Chile · ${estadoSatelite.cuadro}/${estadoSatelite.total}`}
+        </div>
+      )}
+      {resumenIncendios && (
+        <div className={`incendios-resumen ${resumenIncendios.cerca ? 'alerta' : ''}`}>
+          {resumenIncendios.error
+            ? `🔥 No se pudieron cargar los focos de incendio (${resumenIncendios.error})`
+            : `🔥 ${resumenIncendios.focos.toLocaleString('es-CL')} focos activos en Chile (24 h) · ${resumenIncendios.cerca.toLocaleString('es-CL')} de los puntos mostrados a menos de ${resumenIncendios.radioKm} km de un foco`}
+        </div>
+      )}
+      </div>
       <div className="legend">
         {Object.entries(COLORS).map(([n, c]) => (
           <span key={n}><span className="dot" style={{background:c}}></span> {n}</span>
         ))}
+        {resumenIncendios && !resumenIncendios.error && (
+          <span><span className="dot dot-foco"></span> Foco de incendio</span>
+        )}
       </div>
     </div>
   );

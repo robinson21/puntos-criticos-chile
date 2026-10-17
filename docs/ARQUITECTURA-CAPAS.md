@@ -34,11 +34,12 @@
 | ☁️ **Nubes** | OpenWeatherMap (OWM) | Sí | Vía proxy Cloudflare (Worker añade key) | ✅ Activa |
 | 🌡️ **Temperatura** | OpenWeatherMap (OWM) | Sí | Vía proxy Cloudflare (Worker añade key) | ✅ Activa |
 | 🌧️ **Lluvia animada** | RainViewer | No | Endpoint público, animación de radar | ✅ Activa |
-| 🔥 **Incendios** | NASA FIRMS | Sí (Map Key gratuita) | Requiere Map Key de FIRMS | ⛔ Bloqueada (🔑) |
+| 🔥 **Incendios** | NASA FIRMS (VIIRS) | Sí (Map Key gratuita) | Worker `/api/firms` agrega la key; el portal la habilita si `/health` dice `firms: true` | 🔑 Se activa al configurar `FIRMS_MAP_KEY` |
 
-> 🔥 **Incendios activos**: la API pública WMS de NASA FIRMS cambió de política y ahora requiere una
-> "Map Key" gratuita. Hasta que se registre (`firms.modaps.eosdis.nasa.gov`) y se añada al sistema,
-> esta capa queda deshabilitada en el panel (se muestra con candado 🔑).
+> 🔥 **Incendios activos**: NASA FIRMS requiere una "Map Key" gratuita. Basta con guardarla como
+> secreto `FIRMS_MAP_KEY` del Worker (ver `docs/PROXY-OWM.md`); mientras no exista, la capa se
+> muestra bloqueada con candado 🔑. Con la key, el mapa muestra los focos de las últimas 24 h y
+> cuántos puntos críticos están a menos de 5 km de alguno.
 
 ## Código que orquesta las capas
 
@@ -49,7 +50,7 @@
 
 ```js
 const OWM_KEY = (import.meta.env.VITE_OWM_KEY || '').trim();     // solo dev
-const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY || 'http://localhost:8081').trim();
+const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY || 'https://owm-proxy.robinson-armijo.workers.dev').trim();
 const hasTileProxy = TILE_PROXY.length > 0;
 const hasOwmSource = hasTileProxy || hasOwmKey; // proxy o key (dev)
 

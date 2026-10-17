@@ -12,10 +12,10 @@ export const CAPAS_AMBIENTALES = [
     icon: '🔥',
     color: '#dc2626',
     fuente: 'NASA FIRMS · 24h',
-    descripcion: 'Focos activos detectados por satélite (MODIS + VIIRS) en las últimas 24 horas. Útil para evaluar riesgo de evacuación en faenas cercanas a incendios. (Deshabilitado: NASA FIRMS ahora requiere Map Key gratuita. Pídele al admin registrarla y añadir FIRMS_KEY al proxy backend.)',
+    descripcion: 'Focos de calor activos detectados por los satélites VIIRS en las últimas 24 horas. Se habilita cuando el Worker tiene el secreto FIRMS_MAP_KEY (Map Key gratuita de NASA FIRMS).',
     necesitaKey: true,
     keyName: 'FIRMS',
-    default: true
+    default: false
   },
   {
     id: 'lluvia',
@@ -26,6 +26,16 @@ export const CAPAS_AMBIENTALES = [
     descripcion: 'Lluvia real a través de radar meteorológico (animación últimas 2h + pronóstico). Identifica tormentas severas y frentes activos.',
     necesitaKey: false,
     default: true
+  },
+  {
+    id: 'satelite',
+    label: 'Nubes satélite animadas',
+    icon: '🛰️',
+    color: '#94a3b8',
+    fuente: 'GOES-East · NASA GIBS',
+    descripcion: 'Imágenes reales del satélite GOES-East de las últimas ~2 horas (color real de día, infrarrojo de noche). Muestra el avance de sistemas frontales y nubosidad.',
+    necesitaKey: false,
+    default: false
   },
   {
     id: 'viento',
@@ -60,7 +70,8 @@ export const CAPAS_AMBIENTALES = [
 ];
 
 export default function LayersControl({ activeLayers, onToggle, hasOwmKey = false, hasFirmsKey = false }) {
-  const [open, setOpen] = useState(true);
+  // Abierto en escritorio; en pantallas angostas parte cerrado para no tapar el mapa.
+  const [open, setOpen] = useState(() => typeof window === 'undefined' || window.innerWidth > 700);
 
   return (
     <div className={`layers-control ${open ? 'open' : 'closed'}`}>
@@ -110,7 +121,7 @@ export default function LayersControl({ activeLayers, onToggle, hasOwmKey = fals
               <br />
               {hasFirmsKey
                 ? '✅ Incendios NASA FIRMS conectado'
-                : '🔑 NASA FIRMS requiere Map Key gratuita. Regístrala en firms.modaps.eosdis.nasa.gov y añádela al proxy backend.'}
+                : '🔑 Incendios: falta la Map Key gratuita de NASA FIRMS en el Worker (secreto FIRMS_MAP_KEY).'}
             </small>
           </div>
         </div>
