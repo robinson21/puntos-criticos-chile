@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useData } from '../data/DataContext';
-import { useAlertas, alertasDeRegion, antiguedad, zonasDeRegion, limpiarTexto, COLOR_TIPO, esOperacional, puntoRelacionado } from '../data/alertas';
+import { useAlertas, alertasDeRegion, antiguedad, zonasDeRegion, limpiarTexto, COLOR_TIPO, esOperacional, puntoRelacionado, ordenarAlertas } from '../data/alertas';
 import { useFilters } from '../data/FilterContext';
 import { tituloRegion } from '../data/stats';
 
@@ -13,7 +13,8 @@ export default function AlertasRegion() {
   const { filtroAlerta, setFiltroAlerta } = useFilters();
   if (!regionActual || !data) return null;
 
-  const vigentes = alertasDeRegion(data.alertas, regionActual);
+  const relacionados = a => records.filter(p => puntoRelacionado(a, p, regionActual)).length;
+  const vigentes = ordenarAlertas(alertasDeRegion(data.alertas, regionActual), relacionados);
   const edad = antiguedad(data.actualizado);
   const altos = records.filter(r => r.lv === 'Alto' || r.lv === 'Muy Alto').length;
   const nombre = tituloRegion(regionActual);

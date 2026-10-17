@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useData } from '../data/DataContext';
 import {
   useAlertas, alertasDeRegion, antiguedad, limpiarTexto, SEVERIDAD, COLOR_TIPO,
-  resumenRelacionados, esOperacional, regionesSenapred, relacionadosEnRegion,
+  resumenRelacionados, esOperacional, regionesSenapred, relacionadosEnRegion, ordenarAlertas,
 } from '../data/alertas';
 import { useFilters } from '../data/FilterContext';
 import { tituloRegion } from '../data/stats';
@@ -48,8 +48,8 @@ export default function Alertas() {
   else if (filtro === 'alertas') filtradas = filtradas.filter(a => a.tipo === 'Alerta');
   else if (filtro === 'avisos') filtradas = filtradas.filter(a => a.tipo === 'Aviso');
 
-  // Alarmas primero, luego alertas, luego avisos
-  filtradas.sort((a, b) => (SEVERIDAD[b.tipo] || 0) - (SEVERIDAD[a.tipo] || 0));
+  // Alarmas primero, luego alertas, luego avisos; a igual gravedad, las que activan puntos críticos
+  filtradas = ordenarAlertas(filtradas, a => resumenRelacionados(a, metadata?.por_region_causa)?.n || 0);
 
   const edad = antiguedad(alertas.actualizado);
   const porRegionCausa = metadata?.por_region_causa;
