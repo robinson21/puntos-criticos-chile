@@ -12,6 +12,7 @@ import PronosticoRegional from './components/PronosticoRegional';
 import AlertasRegion from './components/AlertasRegion';
 import EstacionesExpuestas from './components/EstacionesExpuestas';
 import SenapredEstado from './components/SenapredEstado';
+import IncendiosPanel from './components/IncendiosPanel';
 import { EstacionesProvider } from './data/EstacionesContext';
 
 // Estado global de tema (claro por defecto como pidió el usuario).
@@ -113,6 +114,7 @@ function Dashboard() {
 
         {/* Cruce de estaciones de servicio con puntos críticos, alertas DMC e incendios */}
         <EstacionesExpuestas />
+        <IncendiosPanel />
 
         {/* Ranking desplegable (plegado por defecto): solo ocupa espacio al abrirlo */}
         {hasRegion && <Ranking />}

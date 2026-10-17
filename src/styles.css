@@ -1552,3 +1552,30 @@ footer {
 .est-lluvia.media { color: #7c3aed; }
 .est-lluvia.alta { color: #fff; background: #7c3aed; padding: 1px 7px; border-radius: 999px; }
 @media (max-width: 760px) { .est-fila { grid-template-columns: 1fr auto; } }
+.est-fuego.gran { display: inline-block; color: #fff; background: #b91c1c; border-radius: 999px; padding: 1px 8px; margin-bottom: 2px; }
+
+/* ===== INCENDIOS POR EVENTO ===== */
+.legend .dot-gran { background: rgba(185, 28, 28, .3); box-shadow: 0 0 0 2px #b91c1c; }
+.legend .dot-incendio { background: rgba(234, 88, 12, .3); box-shadow: 0 0 0 2px #ea580c; }
+.legend .dot-industrial { background: #64748b; box-shadow: 0 0 0 1px #94a3b8; }
+.icono-gran-incendio { display: grid; place-items: center; }
+.icono-gran-incendio span {
+  display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; font-size: 18px;
+  background: #b91c1c; border: 2px solid #fde047; box-shadow: 0 0 0 0 rgba(220, 38, 38, .7); animation: latido 1.8s infinite;
+}
+@keyframes latido { 0% { box-shadow: 0 0 0 0 rgba(220,38,38,.7); } 70% { box-shadow: 0 0 0 16px rgba(220,38,38,0); } 100% { box-shadow: 0 0 0 0 rgba(220,38,38,0); } }
+@media (prefers-reduced-motion: reduce) { .icono-gran-incendio span { animation: none; } }
+.incendios-panel { margin: 16px 0; }
+.inc-lista { padding: 6px 18px; }
+.inc-fila { display: grid; grid-template-columns: 120px 1.4fr 1.3fr auto; gap: 12px; align-items: center; padding: 10px 4px; border-bottom: 1px solid var(--line); font-size: 12.5px; }
+.inc-fila.inactivo { opacity: .55; }
+.inc-clase { color: #fff; font-weight: 700; font-size: 11px; padding: 3px 8px; border-radius: 999px; text-align: center; white-space: nowrap; }
+.inc-datos, .inc-estacion { display: flex; flex-direction: column; min-width: 0; }
+.inc-datos small, .inc-estacion small { color: var(--muted); font-size: 11px; }
+.inc-estacion.amenaza { color: #b91c1c; font-weight: 700; }
+@media (max-width: 760px) {
+  .inc-fila { grid-template-columns: 1fr auto; padding: 12px; margin-bottom: 8px; border: 1px solid var(--line); border-radius: 8px; }
+  .inc-datos, .inc-estacion { grid-column: 1 / -1; }
+  .inc-fila .btn-mini { grid-column: 1 / -1; justify-content: center; }
+  .inc-lista { padding: 6px 12px; }
+}

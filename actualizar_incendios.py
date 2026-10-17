@@ -30,6 +30,7 @@ PIXEL_KM2 = 0.14  # un pixel VIIRS mide ~375 m × 375 m
 # Clases (por área de pixeles distintos y potencia radiativa total)
 GRAN_KM2, GRAN_FRP = 2.0, 500.0      # ≥ ~15 pixeles distintos o ≥ 500 MW en un mismo paso de satélite
 INCENDIO_KM2, INCENDIO_FRP = 0.4, 50.0
+DESIERTO_LAT = -29.0                  # al norte: desierto (focos casi siempre de faenas o industrias)
 PERSISTENTE_DIAS = 5                  # mismo lugar (~1 km) con focos en ≥ 5 de los últimos 10 días
 OVERPASS = 'https://overpass-api.de/api/interpreter'
 UA = {'User-Agent': 'puntos-criticos-chile/1.0 (+https://github.com/robinson21/puntos-criticos-chile)', 'Accept': 'application/json'}
@@ -203,6 +204,7 @@ def eventos_de(focos, persistentes, ahora):
             'activo': bool(tiempos) and (ahora - tiempos[-1]) <= timedelta(hours=24),
             # Persistente: casi todas sus detecciones caen en lugares que arden casi todos los días
             'persistente': en_persistentes >= 0.7 * len(g) and len(pixeles) < 15,
+            '_focos': g,
         })
     orden = {'gran': 0, 'incendio': 1, 'foco': 2}
     eventos.sort(key=lambda e: (orden[e['clase']], -e['area_km2'], -e['frp_pase']))
@@ -211,8 +213,16 @@ def eventos_de(focos, persistentes, ahora):
     for i in industriales_osm(revisar):
         revisar[i]['industrial'] = True
     for e in eventos:
-        e['tipo'] = 'industrial' if e.get('industrial') or e['persistente'] else 'vegetacion'
+        e['tipo'] = ('industrial' if e.get('industrial') or e['persistente']
+                     else 'desierto' if e['lat'] > DESIERTO_LAT else 'vegetacion')
         e.pop('industrial', None)
+    # Ids en el orden final; cada foco sabe a qué evento pertenece y si es de una fuente industrial
+    for i, e in enumerate(eventos):
+        e['id'] = i
+        for f in e.pop('_focos'):
+            f['ev'] = i
+            if e['tipo'] == 'industrial':
+                f['ind'] = 1
     return eventos
 
 

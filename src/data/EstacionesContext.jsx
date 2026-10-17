@@ -4,6 +4,7 @@ import { useFilters } from './FilterContext';
 import { useAlertas } from './alertas';
 import { analizarEstaciones } from './estaciones';
 import { usePronosticoLluvia } from './pronosticoLluvia';
+import { useIncendios, focosReales, grandesActivos } from './incendios';
 
 const EstacionesContext = createContext(null);
 
@@ -14,23 +15,23 @@ export function EstacionesProvider({ children }) {
   const { filtered, comuna } = useFilters();
   const { data: alertas } = useAlertas();
   const pronostico = usePronosticoLluvia();
+  const incendios = useIncendios();
+  const focos = useMemo(() => focosReales(incendios, 24), [incendios]);
+  const grandes = useMemo(() => grandesActivos(incendios), [incendios]);
   const [estaciones, setEstaciones] = useState([]);
-  const [focos, setFocos] = useState([]);
   const [radioKm, setRadioKm] = useState(1);
   const [seleccion, setSeleccion] = useState(null);
   const [visibles, setVisibles] = useState(true);
 
   useEffect(() => {
     fetch('./data/aramco_estaciones.json').then(r => r.json()).then(d => setEstaciones(Array.isArray(d) ? d.filter(e => e.coords) : [])).catch(() => {});
-    fetch('./data/incendios.json', { cache: 'no-cache' }).then(r => (r.ok ? r.json() : null))
-      .then(d => setFocos(Array.isArray(d?.focos) ? d.focos : [])).catch(() => {});
   }, []);
 
   useEffect(() => { setSeleccion(null); }, [regionActual, comuna]);
 
   const analisis = useMemo(
-    () => analizarEstaciones({ estaciones, region: regionActual, comuna, puntos: filtered, alertas: alertas?.alertas, focos, radioKm, pronostico }),
-    [estaciones, regionActual, comuna, filtered, alertas, focos, radioKm, pronostico]
+    () => analizarEstaciones({ estaciones, region: regionActual, comuna, puntos: filtered, alertas: alertas?.alertas, focos, grandes, radioKm, pronostico }),
+    [estaciones, regionActual, comuna, filtered, alertas, focos, grandes, radioKm, pronostico]
   );
   const porId = useMemo(() => Object.fromEntries(analisis.map(a => [a.estacion.id, a])), [analisis]);
 

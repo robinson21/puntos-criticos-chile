@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useState } from 'react';
-import { CircleMarker, Popup } from 'react-leaflet';
+import { useEffect, useMemo } from 'react';
+import { Circle, CircleMarker, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+import { CLASE_INCENDIO, TIPO_INCENDIO, focosReales } from '../data/incendios';
 
-const REFRESCO_MS = 30 * 60 * 1000; // el JSON se renueva cada 3 h y el Worker cachea 30 min
 const RADIO_KM = 5;
 
 // Distancia aproximada en km (equirectangular: sobra para radios de pocos km).
@@ -15,55 +16,77 @@ function distanciaKm(a, b) {
 // Puntos críticos a menos de RADIO_KM de algún foco.
 export function puntosCercaDeFocos(puntos, focos, radioKm = RADIO_KM) {
   if (!focos.length || !puntos.length) return 0;
-  const margen = radioKm / 111; // grados de latitud
+  const margen = radioKm / 111;
   return puntos.filter(p =>
     focos.some(f => Math.abs(f.lat - p.lat) < margen && distanciaKm(p, f) <= radioKm)
   ).length;
 }
 
-// Focos de incendio activos (NASA FIRMS, últimas 24 h). `url` es el JSON que
-// genera GitHub Actions (data/incendios.json) o, si no existe, el /api/firms del Worker.
-export default function IncendiosLayer({ url, activo, puntos, onResumen }) {
-  const [data, setData] = useState(null);
+const fecha = iso => (iso ? new Date(iso).toLocaleString('es-CL', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'America/Santiago' }) : '—');
+const iconoGran = L.divIcon({ className: 'icono-gran-incendio', html: '<span>🔥</span>', iconSize: [34, 34], iconAnchor: [17, 17] });
+
+function PopupEvento({ e }) {
+  const c = CLASE_INCENDIO[e.clase];
+  return (
+    <Popup>
+      <div className="popup-content">
+        <div className="popup-comuna">{c.icono} {e.tipo === 'industrial' ? 'Fuente de calor' : c.texto}{e.activo ? ' · activo' : ' · sin detecciones en 24 h'}</div>
+        <div className="popup-linea"><b>Tipo:</b> {TIPO_INCENDIO[e.tipo].texto}</div>
+        <div className="popup-linea"><b>Área detectada:</b> {String(e.area_km2).replace('.', ',')} km² · extensión ~{String(e.extension_km).replace('.', ',')} km</div>
+        <div className="popup-linea"><b>Detecciones:</b> {e.detecciones} · potencia máx. por paso {Math.round(e.frp_pase)} MW</div>
+        <div className="popup-linea"><b>Primera / última:</b> {fecha(e.primera)} → {fecha(e.ultima)}</div>
+        <div className="popup-linea"><small>NASA FIRMS · VIIRS, focos de las últimas 72 h agrupados a ≤ 1,5 km</small></div>
+      </div>
+    </Popup>
+  );
+}
+
+// Incendios (focos NASA FIRMS agrupados en eventos) y focos sueltos, de las últimas 72 h
+export default function IncendiosLayer({ data, activo, puntos, onResumen }) {
+  const eventos = data?.eventos || [];
+  const reales24 = useMemo(() => focosReales(data, 24), [data]);
+  const cerca = useMemo(() => puntosCercaDeFocos(puntos, reales24), [puntos, reales24]);
 
   useEffect(() => {
-    if (!activo || !url) return;
-    let vivo = true;
-    const cargar = () =>
-      fetch(url, { cache: 'no-cache' })
-        .then(r => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
-        .then(d => vivo && setData(d))
-        .catch(e => vivo && setData({ error: e.message, focos: [] }));
-    cargar();
-    const t = setInterval(cargar, REFRESCO_MS);
-    return () => { vivo = false; clearInterval(t); };
-  }, [activo, url]);
+    if (!activo || !data) { onResumen?.(null); return; }
+    const reales = eventos.filter(e => e.tipo !== 'industrial');
+    onResumen?.({
+      grandes: reales.filter(e => e.clase === 'gran' && e.activo && e.tipo === 'vegetacion').length,
+      incendios: reales.filter(e => e.clase === 'incendio' && e.activo).length,
+      focos: reales.filter(e => e.clase === 'foco' && e.activo).length,
+      industriales: eventos.length - reales.length,
+      cerca, radioKm: RADIO_KM, actualizado: data.actualizado,
+    });
+  }, [activo, data, eventos, cerca, onResumen]);
 
-  const focos = data?.focos || [];
-  const cerca = useMemo(() => puntosCercaDeFocos(puntos, focos), [puntos, focos]);
-
-  useEffect(() => {
-    onResumen?.(activo && data ? { focos: focos.length, cerca, error: data.error, radioKm: RADIO_KM, actualizado: data.actualizado } : null);
-  }, [activo, data, focos.length, cerca, onResumen]);
-
-  if (!activo) return null;
-  return focos.map((f, i) => (
-    <CircleMarker
-      key={i}
-      center={[f.lat, f.lon]}
-      radius={Math.min(10, 4 + Math.sqrt(f.frp || 0) / 2)}
-      // Borde amarillo grueso para no confundirlos con los puntos de riesgo "Muy Alto".
-      pathOptions={{ color: '#fde047', weight: 2.5, fillColor: f.frp > 30 ? '#b91c1c' : '#ea580c', fillOpacity: 0.95 }}
-    >
-      <Popup>
-        <div className="popup-content">
-          <div className="popup-comuna">🔥 Foco de calor activo</div>
-          <div className="popup-row"><b>Detectado:</b> {f.fecha} {f.hora}</div>
-          <div className="popup-row"><b>Potencia (FRP):</b> {f.frp} MW</div>
-          {f.confianza && <div className="popup-row"><b>Confianza:</b> {{ l: 'baja', n: 'nominal', h: 'alta' }[f.confianza] || f.confianza}</div>}
-          <div className="popup-row"><small>NASA FIRMS · VIIRS</small></div>
-        </div>
-      </Popup>
-    </CircleMarker>
-  ));
+  if (!activo || !data) return null;
+  const ahora = Date.now();
+  return (
+    <>
+      {/* Focos individuales: más tenues si tienen más de 24 h o son de fuentes industriales */}
+      {data.focos.map((f, i) => {
+        const t = Date.parse(`${f.fecha}T${(f.hora || '').slice(0, 5)}:00Z`);
+        const viejo = Number.isFinite(t) && ahora - t > 24 * 3600e3;
+        return (
+          <CircleMarker key={`f${i}`} center={[f.lat, f.lon]} radius={f.ind ? 2.5 : Math.min(7, 3 + Math.sqrt(f.frp || 0) / 3)}
+            pathOptions={f.ind
+              ? { color: '#94a3b8', weight: 1, fillColor: '#64748b', fillOpacity: 0.6 }
+              : { color: '#fde047', weight: viejo ? 1 : 2, fillColor: f.frp > 30 ? '#b91c1c' : '#ea580c', fillOpacity: viejo ? 0.45 : 0.95 }} />
+        );
+      })}
+      {/* Eventos: área aproximada coloreada por clase; industriales en gris punteado */}
+      {eventos.filter(e => e.clase !== 'foco').map(e => (
+        <Circle key={`e${e.id}`} center={[e.lat, e.lon]} radius={Math.max(700, e.extension_km * 500 + 400)}
+          pathOptions={e.tipo === 'industrial'
+            ? { color: '#94a3b8', weight: 1.5, dashArray: '4 4', fillOpacity: 0.05 }
+            : { color: CLASE_INCENDIO[e.clase].color, weight: e.clase === 'gran' ? 3 : 2, dashArray: e.tipo === 'desierto' ? '6 4' : null,
+              fillColor: CLASE_INCENDIO[e.clase].color, fillOpacity: e.activo ? 0.18 : 0.06 }}>
+          <PopupEvento e={e} />
+        </Circle>
+      ))}
+      {eventos.filter(e => e.clase === 'gran' && e.tipo === 'vegetacion' && e.activo).map(e => (
+        <Marker key={`g${e.id}`} position={[e.lat, e.lon]} icon={iconoGran} zIndexOffset={2000}><PopupEvento e={e} /></Marker>
+      ))}
+    </>
+  );
 }

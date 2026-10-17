@@ -105,9 +105,14 @@ export default function EstacionesExpuestas() {
                     }) : <small className="est-nada">Sin alertas</small>}
                   </span>
                   <span role="cell" data-label="Incendios">
+                    {a.incendios.gran && (
+                      <span className="est-fuego gran" title={`Gran incendio de vegetación activo (${a.incendios.gran.area_km2} km² en 72 h)`}>
+                        🟥 Gran incendio a {fmtKm(a.incendios.gran.distancia)}
+                      </span>
+                    )}
                     {a.incendios.cantidad
-                      ? <span className="est-fuego">🔥 {a.incendios.cantidad} · a {fmtKm(a.incendios.masCercano)}</span>
-                      : <small className="est-nada">Ninguno</small>}
+                      ? <span className="est-fuego">🔥 {a.incendios.cantidad} focos · a {fmtKm(a.incendios.masCercano)}</span>
+                      : !a.incendios.gran && <small className="est-nada">Ninguno</small>}
                   </span>
                   <span role="cell" data-label="Lluvia pronosticada 24 h">
                     {a.lluvia24 == null ? <small className="est-nada">—</small> : (
@@ -128,7 +133,7 @@ export default function EstacionesExpuestas() {
             </button>
           )}
           <p className="estaciones-nota">
-            <b>Criterio:</b> <i>Alta</i> = foco de incendio a ≤ {RADIO_INCENDIO_KM} km, punto "Muy Alto" en el radio, alerta o alarma DMC 🎯 relacionada (su fenómeno puede activar puntos del radio) o cualquier alarma.
+            <b>Criterio:</b> <i>Alta</i> = gran incendio de vegetación activo a ≤ 25 km o foco de incendio a ≤ {RADIO_INCENDIO_KM} km (sin fuentes industriales), punto "Muy Alto" en el radio, alerta o alarma DMC 🎯 relacionada (su fenómeno puede activar puntos del radio) o cualquier alarma.
             {' '}<i>Media</i> = punto "Alto" o afectado este invierno en el radio, aviso 🎯 relacionado, o alerta de otro fenómeno. <i>Baja</i> = otros puntos en el radio o solo avisos operacionales.
             {' '}<i>Lluvia pronosticada</i> (GFS, próximas 24 h) con puntos de causas de lluvia en el radio: ≥ {LLUVIA_ALTA_MM} mm → alta; ≥ {LLUVIA_MEDIA_MM} mm → media.
             {' '}Fenómenos que activan puntos: precipitaciones, nevadas, heladas y marejadas; viento, tormentas eléctricas y altas temperaturas son operacionales.
