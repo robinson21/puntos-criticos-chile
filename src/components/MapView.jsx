@@ -171,7 +171,12 @@ function FitToPoints({ points, fitKey }) {
   const map = useMap();
   const lastKey = useRef(null);
   useEffect(() => {
-    if (!points.length || fitKey === lastKey.current) return;
+    if (fitKey === lastKey.current) return;
+    if (!points.length) {
+      // Volver a la vista nacional al quitar la región
+      if (fitKey === '|' && lastKey.current) { lastKey.current = fitKey; map.flyTo([-37, -71], 5, { duration: 0.8 }); }
+      return;
+    }
     lastKey.current = fitKey;
     const continentales = points.filter(p => p.lon > -76);
     const base = continentales.length ? continentales : points;

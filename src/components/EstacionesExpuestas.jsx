@@ -31,16 +31,18 @@ export default function EstacionesExpuestas() {
         <div>
           <h2 id="titulo-estaciones">⛽ Estaciones de servicio expuestas</h2>
           <p className="estaciones-sub">
-            {comuna ? `${comuna} · ` : ''}{analisis.length} estaciones Aramco · cruce con {filtered.length.toLocaleString('es-CL')} puntos críticos filtrados, alertas DMC e incendios (24 h)
+            {regionActual
+              ? <>{comuna ? `${comuna} · ` : ''}{analisis.length} estaciones Aramco · cruce con {filtered.length.toLocaleString('es-CL')} puntos críticos filtrados, alertas DMC e incendios (24 h)</>
+              : <>Todo Chile · {analisis.length} estaciones Aramco · alertas DMC e incendios (24 h). Elige una región para sumar los puntos críticos cercanos.</>}
           </p>
         </div>
         <div className="estaciones-acciones">
-          <label className="estaciones-radio">
+          {regionActual && <label className="estaciones-radio">
             Radio
             <select value={radioKm} onChange={e => setRadioKm(Number(e.target.value))} aria-label="Radio de búsqueda de puntos críticos">
               {RADIOS_KM.map(r => <option key={r} value={r}>{fmtKm(r)}</option>)}
             </select>
-          </label>
+          </label>}
           <button type="button" className="btn-mini" disabled={!analisis.length} onClick={() => descargarCsvEstaciones(analisis, regionActual, radioKm)}>⬇ CSV</button>
         </div>
       </div>
@@ -79,7 +81,7 @@ export default function EstacionesExpuestas() {
                     <small>{a.estacion.address}</small>
                   </span>
                   <span role="cell" data-label="Puntos críticos">
-                    {a.puntos.total ? (
+                    {!regionActual ? <small className="est-nada">Elige una región</small> : a.puntos.total ? (
                       <>
                         <span className="est-niveles">
                           {NIVELES.filter(n => a.puntos.porNivel[n]).map(n => (

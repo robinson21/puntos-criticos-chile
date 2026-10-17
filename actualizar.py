@@ -9,6 +9,8 @@ Uso:
 """
 
 import json, os, gzip, sys, subprocess
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from collections import defaultdict
 from urllib.request import urlopen
 from urllib.error import URLError
@@ -57,7 +59,7 @@ def descargar_excel():
                 # Validar que sea Excel real (empieza con ZIP magic bytes "PK")
                 if data[:2] == b'PK':
                     print(f'  ✅ Descargado: {len(data)/1024:.0f} KB')
-                    return data
+                    return data, url, resp.headers.get('Last-Modified')
                 else:
                     print(f'  ❌ Respuesta no es Excel (HTML? {data[:20]})')
                     continue  # Probar siguiente URL
@@ -155,6 +157,38 @@ def procesar_excel(excel_data):
     return metadata
 
 
+def fecha_excel(excel_data, last_modified):
+    """Fecha de última modificación del Excel: la propiedad interna del archivo o, si no, la cabecera HTTP."""
+    try:
+        import openpyxl
+        from io import BytesIO
+        mod = openpyxl.load_workbook(BytesIO(excel_data), read_only=True).properties.modified
+        if mod:
+            return mod.replace(tzinfo=mod.tzinfo or timezone.utc).isoformat()
+    except Exception:
+        pass
+    try:
+        return parsedate_to_datetime(last_modified).isoformat() if last_modified else None
+    except Exception:
+        return None
+
+
+def guardar_estado(ok, url=None, excel_modificado=None, error=None):
+    """senapred_estado.json: cuándo se revisó el Excel y de dónde vino. Cambia en cada revisión,
+    por eso no se guarda en master (el workflow lo excluye) y solo viaja en la rama datos."""
+    estado = {
+        'revisado': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+        'ok': ok,
+        'fuente': None if not url else ('respaldo' if url == FALLBACK_URL else 'oficial'),
+        'url': url,
+        'excel_modificado': excel_modificado,
+        'error': error,
+    }
+    os.makedirs(PUBLIC_DIR, exist_ok=True)
+    with open(os.path.join(PUBLIC_DIR, 'senapred_estado.json'), 'w') as f:
+        json.dump(estado, f, ensure_ascii=False, indent=1)
+
+
 def hacer_deploy():
     """Hace build y push a gh-pages."""
     os.chdir(PROJECT_DIR)
@@ -176,10 +210,15 @@ if __name__ == '__main__':
 
     print('=== Actualizador Puntos Críticos SENAPRED ===')
     print('\n1️⃣  Descargando Excel...')
-    excel = descargar_excel()
+    try:
+        excel, url, last_modified = descargar_excel()
+    except Exception as e:
+        guardar_estado(ok=False, error=str(e))
+        raise
 
     print('\n2️⃣  Procesando datos...')
     meta = procesar_excel(excel)
+    guardar_estado(ok=True, url=url, excel_modificado=fecha_excel(excel, last_modified))
     print(f'   ✅ {meta["total"]} registros · {meta["comunas"]} comunas · {len(meta["regiones"])} regiones')
 
     if do_push:

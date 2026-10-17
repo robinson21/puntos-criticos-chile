@@ -10,6 +10,8 @@ Visualizador de los puntos críticos de la temporada de invierno reportados a **
 - Avisos, alertas y alarmas vigentes de la DMC junto al mapa, con los puntos críticos de las regiones afectadas.
 - Capas: lluvia animada (RainViewer), nubes satelitales animadas (GOES-East, NASA GIBS), viento, nubes y temperatura (OpenWeatherMap) e incendios activos (NASA FIRMS, se activa con el secreto `FIRMS_MAP_KEY` del repo).
 - **Estaciones de servicio expuestas:** cruce de las estaciones Aramco con los puntos críticos dentro de un radio (500 m a 5 km), las alertas DMC de su región y los focos de incendio a ≤ 10 km. Nivel de exposición (alta/media/baja), botón para verla en el mapa con su radio y exportación a CSV.
+- **Vista nacional** al entrar: estaciones, alertas DMC e incendios de todo Chile sin elegir región.
+- **Estado del Excel SENAPRED** en el encabezado: fecha del archivo, cuándo se revisó y si vino del sitio oficial o de la copia de respaldo (`senapred_estado.json`, solo en la rama `datos`).
 - Vistas compartibles por URL (`?region=coquimbo&comuna=VICUÑA&nivel=Alto`) y exportación a CSV de lo filtrado.
 - Indicador de antigüedad de alertas y pronóstico (ámbar > 14 h, rojo > 26 h).
 
@@ -30,7 +32,7 @@ Variables de entorno: ver [`docs/ENV-VARS.md`](docs/ENV-VARS.md). En desarrollo,
 | `worker/index.js` + `wrangler.jsonc` | Worker `puntos-criticos`: sirve la app, entrega `/data/*.json` desde la rama `datos` (respaldo: GitHub Pages y luego la copia incluida) y reenvía `/api/*` y `/health` al Worker `owm-proxy` |
 | `owm-proxy-worker.js` + `wrangler.owm-proxy.toml` | Worker `owm-proxy`: tiles OpenWeatherMap y NASA FIRMS con las claves como secretos |
 
-- Cambios en la app: `npm run deploy` (compila y despliega con Wrangler).
+- Cambios en la app: se publican solos al unirlos a `master` ([`cloudflare.yml`](.github/workflows/cloudflare.yml), requiere los secretos `CLOUDFLARE_API_TOKEN` y `CLOUDFLARE_ACCOUNT_ID`). A mano: `npm run deploy`.
 - Cambios en los datos: no requieren desplegar; GitHub Actions actualiza la rama `datos` cada 3 h.
 
 ## Estructura
