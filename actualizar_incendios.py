@@ -23,14 +23,14 @@ FIRMS_AREA = '-76,-56.5,-66,-17.4'
 FIRMS_SOURCES_DEFAULT = 'VIIRS_SNPP_NRT,VIIRS_NOAA20_NRT,VIIRS_NOAA21_NRT'
 # FIRMS cuenta días por fecha UTC: pedir 1 día deja el mapa vacío tras la medianoche UTC.
 # Se piden 2 y se filtran las últimas HORAS por fecha y hora de detección.
-DIAS = 7          # para detectar fuentes persistentes (chimeneas, fundiciones)
+DIAS = 10         # historia para detectar fuentes persistentes (2 consultas de 5 días: el máximo de FIRMS)
 HORAS = 72        # ventana de los focos y eventos que se muestran
 ENLACE_KM = 1.5   # focos a menos de esta distancia son el mismo incendio
 PIXEL_KM2 = 0.14  # un pixel VIIRS mide ~375 m × 375 m
 # Clases (por área de pixeles distintos y potencia radiativa total)
 GRAN_KM2, GRAN_FRP = 2.0, 300.0      # ≥ ~15 pixeles distintos o ≥ 300 MW
 INCENDIO_KM2, INCENDIO_FRP = 0.4, 50.0
-PERSISTENTE_DIAS = 4                  # mismo lugar (~1 km) con focos en ≥ 4 de los últimos 7 días
+PERSISTENTE_DIAS = 5                  # mismo lugar (~1 km) con focos en ≥ 5 de los últimos 10 días
 OVERPASS = 'https://overpass-api.de/api/interpreter'
 
 def parse_csv(texto):
@@ -56,9 +56,9 @@ def parse_csv(texto):
         })
     return focos
 
-def descargar(key, fuente):
+def descargar(key, fuente, dias=5, fecha=None):
     # La key va en la URL: nunca se imprime la URL, solo el nombre del satélite.
-    url = f'{FIRMS_BASE}/{key}/{fuente}/{FIRMS_AREA}/{DIAS}'
+    url = f'{FIRMS_BASE}/{key}/{fuente}/{FIRMS_AREA}/{dias}' + (f'/{fecha}' if fecha else '')
     texto = urlopen(url, timeout=60).read().decode('utf-8')
     if not texto.startswith('latitude'):
         raise RuntimeError(texto.strip()[:80] or 'respuesta vacía')
@@ -200,12 +200,16 @@ def actualizar():
     focos_7d = []
     for fuente in fuentes:
         try:
-            todos = descargar(key, fuente)
+            todos = descargar(key, fuente)  # últimos 5 días (incluye hoy)
             focos_7d += todos
+            try:  # 5 días anteriores, solo para la persistencia
+                focos_7d += descargar(key, fuente, 5, (ahora - timedelta(days=9)).strftime('%Y-%m-%d'))
+            except Exception as e:
+                print(f'   {fuente}: sin historia anterior ({str(e).replace(key, "***")[:60]})')
             nuevos = recientes(todos, ahora)
             focos += nuevos
             ok.append(fuente)
-            print(f'   {fuente}: {len(nuevos)} focos ({len(todos)} en {DIAS} días)')
+            print(f'   {fuente}: {len(nuevos)} focos en {HORAS} h')
         except Exception as e:
             msg = str(e).replace(key, '***')
             fallidas.append(f'{fuente}: {msg}')
