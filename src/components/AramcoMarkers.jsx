@@ -1,129 +1,101 @@
-import { useState, useEffect, useMemo } from 'react';
-import { Marker, Popup, useMap } from 'react-leaflet';
+import { useEffect, useMemo, useRef } from 'react';
+import { Circle, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
+import { useEstaciones } from '../data/EstacionesContext';
+import { EXPOSICION, NIVELES, RADIO_INCENDIO_KM, fmtKm, regionSenapred } from '../data/estaciones';
 
-const ICON = new L.Icon({
-  iconUrl: 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="#0e7490" stroke="#22d3ee" stroke-width="2"/><text x="16" y="21" text-anchor="middle" font-size="16" fill="#fff">⛽</text></svg>'),
-  iconSize: [22, 22],
-  iconAnchor: [11, 11],
-});
+// Ícono ⛽ con el color de su nivel de exposición (cacheado por color y tamaño)
+const iconos = {};
+function icono(color, grande) {
+  const k = color + grande;
+  if (!iconos[k]) {
+    const s = grande ? 30 : 22;
+    iconos[k] = new L.Icon({
+      iconUrl: 'data:image/svg+xml,' + encodeURIComponent(
+        `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14.5" fill="${color}" stroke="#fff" stroke-width="${grande ? 3 : 2}"/><text x="16" y="21" text-anchor="middle" font-size="15">⛽</text></svg>`),
+      iconSize: [s, s],
+      iconAnchor: [s / 2, s / 2],
+      popupAnchor: [0, -s / 2],
+    });
+  }
+  return iconos[k];
+}
+const COLOR_BASE = '#0e7490';
 
-const ICON_HIGHLIGHT = new L.Icon({
-  iconUrl: 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#f97316" stroke="#fef08a" stroke-width="2"/><text x="16" y="21" text-anchor="middle" font-size="16" fill="#fff">⛽</text></svg>'),
-  iconSize: [26, 26],
-  iconAnchor: [13, 13],
-});
+export function PopupEstacion({ e, a, radioKm }) {
+  return (
+    <div className="popup-content">
+      <div className="popup-comuna">⛽ {e.name}</div>
+      <div className="popup-linea">{e.address}</div>
+      {e.schedule && <div className="popup-linea"><small>{e.schedule}</small></div>}
+      {a && (
+        <>
+          <div className="popup-linea" style={{ marginTop: 6 }}>
+            <b>Exposición:</b> <span style={{ color: EXPOSICION[a.nivel].color, fontWeight: 700 }}>{EXPOSICION[a.nivel].texto}</span>
+          </div>
+          <div className="popup-linea">
+            <b>Puntos críticos a ≤ {fmtKm(radioKm)}:</b> {a.puntos.total}
+            {a.puntos.total > 0 && ` (${NIVELES.filter(n => a.puntos.porNivel[n]).map(n => `${a.puntos.porNivel[n]} ${n}`).join(', ')}) · más cercano a ${fmtKm(a.puntos.masCercano)}`}
+          </div>
+          {a.alertas.length > 0 && <div className="popup-linea"><b>DMC:</b> {a.alertas.map(x => `${x.tipo} ${x.fenomeno}`).join(' · ')}</div>}
+          {a.incendios.cantidad > 0 && <div className="popup-linea" style={{ color: '#dc2626' }}><b>🔥 {a.incendios.cantidad} focos a ≤ {RADIO_INCENDIO_KM} km</b> · más cercano a {fmtKm(a.incendios.masCercano)}</div>}
+        </>
+      )}
+    </div>
+  );
+}
+
+function IrA({ a, radioKm }) {
+  const map = useMap();
+  useEffect(() => {
+    if (!a) return;
+    const zoom = radioKm <= 0.5 ? 16 : radioKm <= 1 ? 15 : radioKm <= 2 ? 14 : 12;
+    map.flyTo([a.pos.lat, a.pos.lon], zoom, { duration: 0.8 });
+  }, [a, radioKm, map]);
+  return null;
+}
 
 export default function AramcoMarkers({ comuna, region }) {
-  const [stations, setStations] = useState([]);
-  const [visible, setVisible] = useState(false);
-  const map = useMap();
+  const { estaciones, porId, radioKm, seleccion, visibles, setVisibles } = useEstaciones();
+  const refs = useRef({});
 
+  // Si hay región: solo sus estaciones (y de la comuna, si se eligió). Sin región: todas.
+  const lista = useMemo(() => {
+    if (!region) return estaciones;
+    return estaciones.filter(e => regionSenapred(e.region) === region && (!comuna || porId[e.id]));
+  }, [estaciones, region, comuna, porId]);
+
+  const sel = seleccion != null ? porId[seleccion] : null;
   useEffect(() => {
-    fetch('./data/aramco_estaciones.json')
-      .then(r => r.json())
-      .then(d => setStations(d))
-      .catch(() => {});
-  }, []);
+    if (sel) setTimeout(() => refs.current[sel.estacion.id]?.openPopup(), 900);
+  }, [sel]);
 
-  // Mapeo de nombre app → nombre Aramco
-  const REGION_MAP = {
-    'metropolitana de santiago': 'metropolitana',
-    'la araucania': 'la araucania',
-    'libertador general bernardo ohiggins': "libertador general bernardo o'higgins",
-    'aysen del general carlos ibanez del campo': 'aysen',
-    'magallanes y de la antartica chilena': 'magallanes y la antartica chilena',
-  };
-
-  // Normalizar strings para comparación
-  const norm = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/['']/g, "'").trim();
-
-  const nomRegion = (r) => {
-    const n = norm(r);
-    return REGION_MAP[n] || n;
-  };
-
-  // Estaciones filtradas por región y comuna
-  const filtradas = useMemo(() => {
-    if (!stations.length) return { enComuna: [], enRegion: [], totalRegion: 0, totalComuna: 0 };
-    const regionTarget = nomRegion(region);
-    const comunaTarget = norm(comuna);
-
-    const enRegion = stations.filter(s => regionTarget ? norm(s.region).includes(regionTarget) : true);
-    const enComuna = enRegion.filter(s => comunaTarget ? norm(s.locality).includes(comunaTarget) : false);
-
-    return {
-      enComuna,
-      enRegion,
-      totalRegion: enRegion.length,
-      totalComuna: enComuna.length,
-    };
-  }, [stations, region, comuna]);
-
-  const { enComuna, enRegion, totalRegion, totalComuna } = filtradas;
-
-  // Mostrar estaciones: si hay comuna seleccionada, solo las de esa comuna; si no, todas las de la región
-  const mostrar = visible
-    ? (comuna && region ? enComuna : region ? enRegion : stations)
-    : [];
+  if (!estaciones.length) return null;
+  const expuestas = lista.filter(e => porId[e.id] && porId[e.id].nivel !== 'sin').length;
 
   return (
     <>
-      {/* Toggle button */}
-      {stations.length > 0 && (
-        <>
-          <div className="aramco-toggle" onClick={() => setVisible(v => !v)} style={{
-            position: 'absolute', top: 12, left: 12, zIndex: 1000,
-            background: visible ? '#0e7490' : '#1e293b', color: '#fff',
-            border: visible ? '1px solid #22d3ee' : '1px solid #334155',
-            borderRadius: 8, padding: '6px 12px', fontSize: 12, cursor: 'pointer',
-            display: 'flex', alignItems: 'center', gap: 6, boxShadow: '0 2px 8px rgba(0,0,0,.4)',
-            userSelect: 'none',
-          }}>
-            <span>⛽</span>
-            <span>Aramco</span>
-            <span style={{ fontSize: 10, opacity: .7 }}>
-              {comuna && region ? totalComuna : region ? totalRegion : stations.length}
-            </span>
-          </div>
+      <button type="button" className={`aramco-toggle ${visibles ? 'on' : ''}`} onClick={() => setVisibles(v => !v)}
+        aria-pressed={visibles} title="Mostrar u ocultar las estaciones de servicio">
+        <span aria-hidden>⛽</span> Estaciones <span className="aramco-num">{lista.length}</span>
+        {region && expuestas > 0 && <span className="aramco-alerta">{expuestas} expuestas</span>}
+      </button>
 
-          {visible && region && (
-            <div style={{
-              position: 'absolute', top: 48, left: 12, zIndex: 1000,
-              background: 'rgba(15,23,42,.85)', color: '#fff',
-              border: '1px solid #334155', borderRadius: 8, padding: '8px 12px',
-              fontSize: 11, lineHeight: 1.5, boxShadow: '0 2px 8px rgba(0,0,0,.4)',
-              backdropFilter: 'blur(4px)', minWidth: 160,
-            }}>
-              <div style={{ fontWeight: 600, marginBottom: 2 }}>⛽ Estaciones Aramco</div>
-              <div>En región: <b>{totalRegion}</b></div>
-              {comuna && <div>En {comuna}: <b style={{color: '#f97316'}}>{totalComuna}</b> {totalComuna > 0 ? '🚨' : ''}</div>}
-              {comuna && totalComuna > 0 && totalComuna <= 5 && <div style={{color:'#fbbf24', fontSize:10}}>⚠️ Pocas estaciones en comuna</div>}
-            </div>
-          )}
-        </>
-      )}
-
-      {/* Marcadores: todas las estaciones de la región */}
-      {visible && mostrar.map(s => {
-        // Determinar si esta estación está en la comuna seleccionada
-        const enComunaSeleccionada = comuna && region &&
-          norm(s.region).includes(norm(region)) &&
-          norm(s.locality).includes(norm(comuna));
-        const icon = enComunaSeleccionada ? ICON_HIGHLIGHT : ICON;
-
+      {visibles && lista.map(e => {
+        const a = porId[e.id];
+        const elegida = sel?.estacion.id === e.id;
         return (
-          <Marker key={s.id} position={[s.coords.lat, s.coords.lng]} icon={icon}>
-            <Popup>
-              <b>⛽ {s.name}</b><br/>
-              {s.address}<br/>
-              {s.locality && <span style={{fontSize:11, color:'#94a3b8'}}>{s.locality}, {s.region}</span>}<br/>
-              <span style={{ color: '#22d3ee', fontSize: 11 }}>{s.services?.join(' · ')}</span>
-              {enComunaSeleccionada && <div style={{color:'#f97316', fontWeight:600, marginTop:4, fontSize:12}}>⚠️ En tu comuna seleccionada</div>}
-            </Popup>
+          <Marker key={e.id} position={[e.coords.lat, e.coords.lng]} icon={icono(a ? EXPOSICION[a.nivel].color : COLOR_BASE, elegida)}
+            zIndexOffset={elegida ? 1000 : a ? EXPOSICION[a.nivel].orden * 100 : 0} ref={r => { refs.current[e.id] = r; }}>
+            <Popup><PopupEstacion e={e} a={a} radioKm={radioKm} /></Popup>
           </Marker>
         );
       })}
+      {visibles && sel && (
+        <Circle center={[sel.pos.lat, sel.pos.lon]} radius={radioKm * 1000}
+          pathOptions={{ color: EXPOSICION[sel.nivel].color, weight: 2, fillOpacity: 0.08, dashArray: '6 4' }} />
+      )}
+      <IrA a={sel} radioKm={radioKm} />
     </>
   );
 }

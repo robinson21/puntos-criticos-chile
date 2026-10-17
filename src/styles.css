@@ -1281,3 +1281,105 @@ footer {
   pointer-events: none;
 }
 @media (max-width: 600px) { .satelite-hora { top: 56px; font-size: 10px; } }
+
+/* ===== BOTÓN PEQUEÑO GENÉRICO ===== */
+.btn-mini {
+  display: inline-flex; align-items: center; gap: 5px; white-space: nowrap;
+  padding: 6px 10px; border-radius: 6px; border: 1px solid var(--line);
+  background: var(--bg-panel-2); color: var(--ink); font: 600 12px var(--font); cursor: pointer;
+  transition: border-color .15s, background .15s;
+}
+.btn-mini:hover:not(:disabled) { border-color: var(--accent); }
+.btn-mini:disabled { opacity: .45; cursor: not-allowed; }
+.btn-mini:focus-visible, .aramco-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ===== BOTÓN DE ESTACIONES SOBRE EL MAPA ===== */
+.aramco-toggle {
+  position: absolute; top: 12px; left: 12px; z-index: 1000;
+  display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px;
+  background: rgba(15, 23, 42, .9); color: #fff; border: 1px solid #334155; border-radius: 8px;
+  font: 600 12px var(--font); cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+.aramco-toggle.on { background: #0e7490; border-color: #22d3ee; }
+.aramco-num { font-size: 11px; opacity: .75; }
+.aramco-alerta { background: #dc2626; color: #fff; border-radius: 999px; padding: 1px 7px; font-size: 10.5px; }
+
+/* ===== PANEL ESTACIONES EXPUESTAS ===== */
+.estaciones-panel { margin: 16px 0; }
+.estaciones-head { flex-wrap: wrap; gap: 10px; align-items: flex-start; }
+.estaciones-sub { color: var(--muted); font-size: 12px; margin: 2px 0 0; }
+.estaciones-acciones { display: flex; gap: 8px; align-items: center; }
+.estaciones-radio { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+.estaciones-radio select {
+  padding: 5px 8px; border-radius: 6px; border: 1px solid var(--line);
+  background: var(--bg-panel-2); color: var(--ink); font: 600 12px var(--font);
+}
+.estaciones-resumen { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 14px 18px 4px; }
+.estaciones-kpi {
+  border: 1px solid var(--line); border-left: 4px solid var(--c); border-radius: 6px;
+  padding: 8px 12px; display: flex; flex-direction: column; background: var(--bg-panel-2);
+}
+.estaciones-kpi b { font-size: 22px; line-height: 1.1; color: var(--c); font-variant-numeric: tabular-nums; }
+.estaciones-kpi span { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.estaciones-filtro { padding: 8px 18px; font-size: 12px; color: var(--muted); }
+.estaciones-filtro input { accent-color: var(--accent); margin-right: 4px; vertical-align: -2px; }
+.estaciones-vacio { padding: 18px; color: var(--muted); font-size: 13px; }
+.estaciones-tabla { padding: 0 18px; }
+.est-fila {
+  display: grid; grid-template-columns: 110px minmax(180px, 1.6fr) 1.4fr 1.3fr 1fr 120px;
+  gap: 12px; align-items: center; padding: 10px 6px; border-bottom: 1px solid var(--line); font-size: 12.5px;
+}
+.est-fila.sel { background: var(--accent-glow); border-radius: 6px; }
+.est-cab { font-size: 10.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted-2); font-weight: 600; padding-top: 4px; }
+.est-nivel { display: inline-block; color: #fff; font-weight: 700; font-size: 11px; padding: 3px 8px; border-radius: 999px; white-space: nowrap; }
+.est-nombre { display: flex; flex-direction: column; min-width: 0; }
+.est-nombre small, .est-fila small { color: var(--muted); font-size: 11px; }
+.est-niveles { display: flex; flex-wrap: wrap; gap: 2px 10px; font-weight: 600; }
+.est-alerta { display: inline-block; border-left: 3px solid; padding: 1px 6px; margin: 1px 4px 1px 0; background: var(--bg-panel-2); border-radius: 3px; font-size: 11.5px; }
+.est-fuego { color: #dc2626; font-weight: 700; }
+.est-nada { opacity: .7; }
+.est-mas { margin: 10px 18px 0; }
+.estaciones-nota { padding: 12px 18px 16px; font-size: 11.5px; color: var(--muted); line-height: 1.5; }
+
+/* ===== CELULAR ===== */
+@media (max-width: 760px) {
+  .estaciones-resumen { grid-template-columns: repeat(2, 1fr); }
+  .est-cab { display: none; }
+  .est-fila {
+    grid-template-columns: 1fr auto; gap: 6px 10px; padding: 12px; margin-bottom: 10px;
+    border: 1px solid var(--line); border-radius: 8px; background: var(--bg-panel-2);
+  }
+  .est-fila > :nth-child(1) { grid-column: 2; grid-row: 1; justify-self: end; }
+  .est-fila > :nth-child(2) { grid-column: 1; grid-row: 1; }
+  .est-fila > [data-label] { grid-column: 1 / -1; }
+  .est-fila > [data-label]::before { content: attr(data-label) ': '; color: var(--muted-2); font-size: 11px; font-weight: 600; margin-right: 4px; }
+  .est-fila > :last-child { grid-column: 1 / -1; }
+  .est-fila > :last-child .btn-mini { width: 100%; justify-content: center; padding: 9px; }
+  .estaciones-tabla { padding: 0 12px; }
+}
+
+@media (max-width: 600px) {
+  html, body { overflow-x: hidden; }
+  header { gap: 12px; padding-bottom: 14px; margin-bottom: 14px; align-items: flex-start; }
+  h1 { font-size: 28px; }
+  .subtitle { font-size: 13px; }
+  .meta, :root .meta { align-items: flex-start; text-align: left; flex-direction: row; flex-wrap: wrap; gap: 4px 12px; }
+  .filters { padding: 10px; }
+  .filters > * { flex: 1 1 100%; min-width: 0; }
+  .filters select, .filters input { font-size: 16px; } /* evita el zoom automático de iOS al tocar */
+  .map-container { height: 62vh; min-height: 360px; }
+  .panel-head { padding: 12px 14px; flex-wrap: wrap; gap: 8px; }
+  .panel-head h2 { font-size: 15px; }
+  .geocoder-input { font-size: 16px; }
+  .aramco-toggle { top: 10px; left: 10px; padding: 6px 10px; }
+  .estaciones-resumen { padding: 12px 12px 4px; }
+  .estaciones-acciones { width: 100%; justify-content: space-between; }
+  .estaciones-nota { padding: 10px 12px 14px; }
+}
+@media (max-width: 600px) {
+  .filters > .filter-share { flex: 1 1 40%; justify-content: center; }
+  .filter-btns { display: flex; }
+  .filter-btns .filter-btn { flex: 1; }
+}
+.popup-linea { font-size: 12px; line-height: 1.45; margin: 2px 0; }
+.popup-linea b { font-weight: 600; }

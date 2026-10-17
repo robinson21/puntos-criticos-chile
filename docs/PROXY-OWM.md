@@ -13,7 +13,7 @@ la key vive solo como **secreto cifrado** en Cloudflare y **nunca llega al naveg
 
 ## URL pública de producción
 ```
-https://owm-proxy.robinson-armijo.workers.dev
+https://owm-proxy.gesstiapp.workers.dev
 ```
 
 ## Endpoints
@@ -44,13 +44,13 @@ Opcional: la variable `FIRMS_SOURCES` cambia los satélites consultados
 (por defecto `VIIRS_SNPP_NRT,VIIRS_NOAA20_NRT,VIIRS_NOAA21_NRT`). Si uno falla, se usan los demás.
 
 ## Código fuente del Worker
-El código vive en **este repo** en la raíz `owm-proxy-worker.js` (y `wrangler.toml`).
+El código vive en **este repo** en la raíz `owm-proxy-worker.js` (y `wrangler.owm-proxy.toml`).
 Esto significa que el proyecto está **100% reproducible**: si Cloudflare se cae o la cuenta se pierde,
 cualquier persona puede redesplegar el Worker en otra cuenta en ~1 minuto.
 
 ## Despliegue automático (GitHub Actions)
 El workflow `.github/workflows/worker.yml` despliega el Worker cada vez que cambia
-`owm-proxy-worker.js` o `wrangler.toml` en `master` (también a mano desde Actions → *Desplegar Worker*),
+`owm-proxy-worker.js` o `wrangler.owm-proxy.toml` en `master` (también a mano desde Actions → *Desplegar Worker*),
 y sincroniza `FIRMS_MAP_KEY` como secreto del Worker. Solo necesita, una vez, el secreto del repo
 `CLOUDFLARE_API_TOKEN` (token con permiso `Account → Workers Scripts:Edit`) y, si el token ve más
 de una cuenta, `CLOUDFLARE_ACCOUNT_ID`.
@@ -76,6 +76,6 @@ de una cuenta, `CLOUDFLARE_ACCOUNT_ID`.
 - **Sin secretos en código**: la key vive en el secreto cifrado `OWM_API_KEY` de Cloudflare.
 
 ## Contacto / mantenimiento
-- Worker: `owm-proxy.robinson-armijo` (cuenta Cloudflare de Robinson Armijo)
+- Worker: `owm-proxy.gesstiapp` (cuenta Cloudflare de Robinson Armijo)
 - Bundle de frontend: lo construye `vite build` leyendo `VITE_TILE_PROXY` (ver abajo).
 - Para rotar la key de OWM: cambiar el secreto `OWM_API_KEY` en el dashboard de Cloudflare (0 cambios de código).

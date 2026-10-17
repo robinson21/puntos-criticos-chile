@@ -2,13 +2,14 @@
 
 Visualizador de los puntos críticos de la temporada de invierno reportados a **SENAPRED**, con mapa por región, filtros, ranking de comunas, pronóstico regional (OpenWeatherMap) y avisos/alertas de la **DMC**.
 
-🌐 https://robinson21.github.io/puntos-criticos-chile/
+🌐 **https://puntos-criticos.gesstiapp.workers.dev** (Cloudflare) · respaldo: https://robinson21.github.io/puntos-criticos-chile/
 
 ## Qué ofrece
 
 - Mapa por región con los puntos críticos coloreados por nivel de riesgo, filtros (comuna, causa, nivel, tipo de solución) y zoom automático a la región o comuna.
 - Avisos, alertas y alarmas vigentes de la DMC junto al mapa, con los puntos críticos de las regiones afectadas.
 - Capas: lluvia animada (RainViewer), nubes satelitales animadas (GOES-East, NASA GIBS), viento, nubes y temperatura (OpenWeatherMap) e incendios activos (NASA FIRMS, se activa con el secreto `FIRMS_MAP_KEY` del repo).
+- **Estaciones de servicio expuestas:** cruce de las estaciones Aramco con los puntos críticos dentro de un radio (500 m a 5 km), las alertas DMC de su región y los focos de incendio a ≤ 10 km. Nivel de exposición (alta/media/baja), botón para verla en el mapa con su radio y exportación a CSV.
 - Vistas compartibles por URL (`?region=coquimbo&comuna=VICUÑA&nivel=Alto`) y exportación a CSV de lo filtrado.
 - Indicador de antigüedad de alertas y pronóstico (ámbar > 14 h, rojo > 26 h).
 
@@ -20,7 +21,17 @@ cp .env.example .env.local   # opcional: key de MapTiler
 npm run dev
 ```
 
-Variables de entorno: ver [`docs/ENV-VARS.md`](docs/ENV-VARS.md). Sin `VITE_TILE_PROXY`, las capas de viento, nubes y temperatura usan el Worker de producción (`owm-proxy.robinson-armijo.workers.dev`).
+Variables de entorno: ver [`docs/ENV-VARS.md`](docs/ENV-VARS.md). En desarrollo, las capas de viento, nubes y temperatura necesitan `VITE_TILE_PROXY=https://puntos-criticos.gesstiapp.workers.dev`.
+
+## Publicación en Cloudflare
+
+| Pieza | Qué hace |
+|---|---|
+| `worker/index.js` + `wrangler.jsonc` | Worker `puntos-criticos`: sirve la app, entrega `/data/*.json` desde la rama `datos` (respaldo: GitHub Pages y luego la copia incluida) y reenvía `/api/*` y `/health` al Worker `owm-proxy` |
+| `owm-proxy-worker.js` + `wrangler.owm-proxy.toml` | Worker `owm-proxy`: tiles OpenWeatherMap y NASA FIRMS con las claves como secretos |
+
+- Cambios en la app: `npm run deploy` (compila y despliega con Wrangler).
+- Cambios en los datos: no requieren desplegar; GitHub Actions actualiza la rama `datos` cada 3 h.
 
 ## Estructura
 
@@ -29,6 +40,7 @@ Variables de entorno: ver [`docs/ENV-VARS.md`](docs/ENV-VARS.md). Sin `VITE_TILE
 | `src/data/` | `DataContext` (carga `meta.json` y la región elegida), `FilterContext` (filtros), `stats.js` (cifras derivadas), `alertas.js` (alertas DMC), `url.js` (estado en la URL), `csv.js` (exportación) |
 | `src/components/` | Mapa, filtros, KPIs, gráficos, ranking, pronóstico, alertas |
 | `public/data/` | JSON por región, `meta.json`, `alertas.json`, `pronostico_regional.json` (`incendios.json` lo genera el workflow) |
+| `src/data/estaciones.js`, `EstacionesContext.jsx` | Cruce de estaciones con puntos críticos, alertas DMC e incendios |
 | `owm-proxy-worker.js` | Worker de Cloudflare: tiles OWM y focos NASA FIRMS sin exponer las keys ([docs](docs/PROXY-OWM.md)) |
 
 ## Actualización de datos y publicación
@@ -39,7 +51,7 @@ El workflow [`publicar.yml`](.github/workflows/publicar.yml) hace todo en GitHub
 |---|---|
 | Cada 3 h | `actualizar_alertas.py` (avisos/alertas/alarmas DMC), `actualizar_pronostico.py` (pronóstico OpenWeatherMap) y `actualizar_incendios.py` (focos NASA FIRMS) |
 | Una vez al día y en cada cambio a `master` | además `actualizar.py` (Excel de puntos críticos SENAPRED); si los datos cambian, se guardan en el repo |
-| Siempre | compila y publica en GitHub Pages |
+| Siempre | deja los datos en la rama `datos` (de ahí los lee Cloudflare) y publica el respaldo en GitHub Pages |
 
 Si una fuente falla, se publica lo último que ya estaba en el sitio. También se puede lanzar a mano desde *Actions → Actualizar datos y publicar → Run workflow*.
 

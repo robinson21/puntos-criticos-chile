@@ -9,7 +9,7 @@ on:
     branches: [master]
     paths:
       - owm-proxy-worker.js
-      - wrangler.toml
+      - wrangler.owm-proxy.toml
       - .github/workflows/worker.yml
   workflow_dispatch:
 
@@ -32,7 +32,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy --name owm-proxy
+          command: deploy --config wrangler.owm-proxy.toml
           secrets: FIRMS_MAP_KEY
         env:
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
@@ -41,4 +41,4 @@ jobs:
         if: env.CLOUDFLARE_API_TOKEN != ''
         run: |
           sleep 10
-          curl -fsS https://owm-proxy.robinson-armijo.workers.dev/health | tee /dev/stderr | grep -q '"firms":true'
+          curl -fsS https://owm-proxy.gesstiapp.workers.dev/health | tee /dev/stderr | grep -q '"firms":true'

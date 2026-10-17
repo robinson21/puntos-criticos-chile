@@ -22,11 +22,15 @@ const DMC_A_SENAPRED = {
 };
 
 // La DMC deja entidades HTML en algunos textos (p. ej. "O&#039;Higgins").
+// También trae entidades con nombre como "&Ntilde;uble": se decodifican todas.
+const ENTIDADES = { apos: "'", quot: '"', amp: '&', lt: '<', gt: '>', nbsp: ' ', ntilde: 'ñ', Ntilde: 'Ñ',
+  aacute: 'á', eacute: 'é', iacute: 'í', oacute: 'ó', uacute: 'ú', Aacute: 'Á', Eacute: 'É', Iacute: 'Í',
+  Oacute: 'Ó', Uacute: 'Ú', uuml: 'ü', Uuml: 'Ü', deg: '°', ordm: 'º', ordf: 'ª' };
 export function limpiarTexto(t) {
   return (t || '')
-    .replace(/&#0*39;|&apos;/g, "'")
-    .replace(/&quot;/g, '"')
-    .replace(/&amp;/g, '&');
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+    .replace(/&([a-z]+);/gi, (m, n) => ENTIDADES[n] ?? m);
 }
 
 // "Coquimbo (Cordillera) | Valparaíso (Cordillera)" → solo las zonas de `region`.
