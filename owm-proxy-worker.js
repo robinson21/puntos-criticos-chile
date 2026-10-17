@@ -63,7 +63,8 @@ async function firms(request, env) {
   // Cada satélite por separado: si uno falla (o no existe), los otros igual sirven.
   const resultados = await Promise.allSettled(
     fuentes.map(async fuente => {
-      const r = await fetch(`${FIRMS_BASE}/${key}/${fuente}/${FIRMS_AREA}/${dias}`);
+      // FIRMS cuenta días por fecha UTC: se pide uno más y se filtran las últimas `dias` × 24 h.
+      const r = await fetch(`${FIRMS_BASE}/${key}/${fuente}/${FIRMS_AREA}/${dias + 1}`);
       const txt = await r.text();
       if (!r.ok || !txt.startsWith('latitude')) throw new Error(`${fuente}: HTTP ${r.status} ${txt.slice(0, 80)}`);
       return parseFirmsCsv(txt);
@@ -73,7 +74,11 @@ async function firms(request, env) {
   if (!ok.length) {
     return json({ error: 'FIRMS no respondió', detalle: resultados.map(r => r.reason?.message) }, 502);
   }
-  const focos = ok.flatMap(r => r.value);
+  const desde = Date.now() - dias * 24 * 3600 * 1000;
+  const focos = ok.flatMap(r => r.value).filter(f => {
+    const t = Date.parse(`${f.fecha}T${f.hora.slice(0, 5)}:00Z`);
+    return !Number.isFinite(t) || t >= desde; // sin fecha/hora legible: mejor mostrarlo que perderlo
+  });
   const resp = json(
     {
       actualizado: new Date().toISOString(),
