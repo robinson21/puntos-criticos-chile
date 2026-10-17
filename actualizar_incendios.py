@@ -28,10 +28,30 @@ HORAS = 72        # ventana de los focos y eventos que se muestran
 ENLACE_KM = 1.5   # focos a menos de esta distancia son el mismo incendio
 PIXEL_KM2 = 0.14  # un pixel VIIRS mide ~375 m × 375 m
 # Clases (por área de pixeles distintos y potencia radiativa total)
-GRAN_KM2, GRAN_FRP = 2.0, 300.0      # ≥ ~15 pixeles distintos o ≥ 300 MW
+GRAN_KM2, GRAN_FRP = 2.0, 500.0      # ≥ ~15 pixeles distintos o ≥ 500 MW en un mismo paso de satélite
 INCENDIO_KM2, INCENDIO_FRP = 0.4, 50.0
 PERSISTENTE_DIAS = 5                  # mismo lugar (~1 km) con focos en ≥ 5 de los últimos 10 días
 OVERPASS = 'https://overpass-api.de/api/interpreter'
+UA = {'User-Agent': 'puntos-criticos-chile/1.0 (+https://github.com/robinson21/puntos-criticos-chile)', 'Accept': 'application/json'}
+# Contorno de Chile (Natural Earth, dominio público): el recuadro de FIRMS incluye Bolivia y Argentina
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'datos_chile_contorno.json')) as _f:
+    CHILE = [(p, min(a for a, b in p), max(a for a, b in p), min(b for a, b in p), max(b for a, b in p))
+             for p in json.load(_f)['poligonos']]
+
+
+def en_chile(lat, lon):
+    for pol, la0, la1, lo0, lo1 in CHILE:
+        if not (la0 <= lat <= la1 and lo0 <= lon <= lo1):
+            continue
+        adentro, j = False, len(pol) - 1
+        for i in range(len(pol)):
+            (yi, xi), (yj, xj) = pol[i], pol[j]
+            if (yi > lat) != (yj > lat) and lon < (xj - xi) * (lat - yi) / (yj - yi) + xi:
+                adentro = not adentro
+            j = i
+        if adentro:
+            return True
+    return False
 
 def parse_csv(texto):
     focos = []
@@ -132,10 +152,12 @@ def industriales_osm(eventos, radio_m=800):
         f'nwr(around:{radio_m},{e["lat"]},{e["lon"]})["landuse"~"^(industrial|quarry|landfill)$"];'
         f'nwr(around:{radio_m},{e["lat"]},{e["lon"]})["man_made"~"^(works|chimney|flare|kiln|mineshaft)$"];'
         f'nwr(around:{radio_m},{e["lat"]},{e["lon"]})["power"="plant"];'
+        f'nwr(around:{radio_m},{e["lat"]},{e["lon"]})["industrial"];'
         for e in eventos)
     consulta = f'[out:json][timeout:60];({zonas});out center;'
     try:
-        with urlopen(OVERPASS, data=urllib.parse.urlencode({'data': consulta}).encode(), timeout=90) as r:
+        from urllib.request import Request
+        with urlopen(Request(OVERPASS, data=urllib.parse.urlencode({'data': consulta}).encode(), headers=UA), timeout=90) as r:
             elementos = json.load(r).get('elements', [])
     except Exception as ex:
         print(f'   OpenStreetMap no respondió ({ex}); se usa solo la persistencia')
@@ -159,8 +181,14 @@ def eventos_de(focos, persistentes, ahora):
         tiempos = sorted(t for t in (tiempo(f) for f in g) if t)
         extension = max((distancia_km({'lat': lat, 'lon': lon}, f) for f in g), default=0) * 2
         en_persistentes = sum(1 for f in g if (round(f['lat'], 2), round(f['lon'], 2)) in persistentes)
-        clase = ('gran' if area >= GRAN_KM2 or frp >= GRAN_FRP
-                 else 'incendio' if area >= INCENDIO_KM2 or frp >= INCENDIO_FRP else 'foco')
+        # Potencia del paso de satélite más intenso (sumar 3 días y 3 satélites inflaría el valor)
+        pases = {}
+        for f in g:
+            k = (f['satelite'], f['fecha'], f['hora'])
+            pases[k] = pases.get(k, 0) + f['frp']
+        frp_pase = max(pases.values(), default=0)
+        clase = ('gran' if area >= GRAN_KM2 or frp_pase >= GRAN_FRP
+                 else 'incendio' if area >= INCENDIO_KM2 or frp_pase >= INCENDIO_FRP else 'foco')
         eventos.append({
             'lat': round(lat, 4), 'lon': round(lon, 4),
             'clase': clase,
@@ -168,6 +196,7 @@ def eventos_de(focos, persistentes, ahora):
             'area_km2': round(area, 2),
             'extension_km': round(extension, 1),
             'frp_total': round(frp, 1),
+            'frp_pase': round(frp_pase, 1),
             'frp_max': round(max(f['frp'] for f in g), 1),
             'primera': tiempos[0].isoformat() if tiempos else None,
             'ultima': tiempos[-1].isoformat() if tiempos else None,
@@ -176,7 +205,7 @@ def eventos_de(focos, persistentes, ahora):
             'persistente': en_persistentes >= 0.7 * len(g) and len(pixeles) < 15,
         })
     orden = {'gran': 0, 'incendio': 1, 'foco': 2}
-    eventos.sort(key=lambda e: (orden[e['clase']], -e['frp_total']))
+    eventos.sort(key=lambda e: (orden[e['clase']], -e['area_km2'], -e['frp_pase']))
     # OpenStreetMap solo para los que no son focos aislados (y como máximo 80)
     revisar = [e for e in eventos if e['clase'] != 'foco'][:80]
     for i in industriales_osm(revisar):
@@ -206,7 +235,7 @@ def actualizar():
                 focos_7d += descargar(key, fuente, 5, (ahora - timedelta(days=9)).strftime('%Y-%m-%d'))
             except Exception as e:
                 print(f'   {fuente}: sin historia anterior ({str(e).replace(key, "***")[:60]})')
-            nuevos = recientes(todos, ahora)
+            nuevos = [f for f in recientes(todos, ahora) if en_chile(f['lat'], f['lon'])]
             focos += nuevos
             ok.append(fuente)
             print(f'   {fuente}: {len(nuevos)} focos en {HORAS} h')
@@ -230,8 +259,8 @@ def actualizar():
             'fallidas': fallidas,
             'focos': focos,
             'eventos': eventos,
-            'criterio': {'enlace_km': ENLACE_KM, 'gran': f'≥ {GRAN_KM2} km² o ≥ {GRAN_FRP:.0f} MW',
-                         'incendio': f'≥ {INCENDIO_KM2} km² o ≥ {INCENDIO_FRP:.0f} MW',
+            'criterio': {'enlace_km': ENLACE_KM, 'gran': f'≥ {GRAN_KM2} km² o ≥ {GRAN_FRP:.0f} MW en un paso',
+                         'incendio': f'≥ {INCENDIO_KM2} km² o ≥ {INCENDIO_FRP:.0f} MW en un paso',
                          'persistente': f'mismo lugar con focos en ≥ {PERSISTENTE_DIAS} de {DIAS} días'},
         }, f, ensure_ascii=False)
     from collections import Counter
