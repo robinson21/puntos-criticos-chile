@@ -1,6 +1,6 @@
 // Cruce de estaciones de servicio con puntos críticos, alertas DMC e incendios.
 import { REGION_SLUGS } from './regiones.js';
-import { alertasDeRegion, SEVERIDAD } from './alertas.js';
+import { alertasDeRegion, SEVERIDAD, alertaAlcanza, causaRelacionada } from './alertas.js';
 
 export const RADIOS_KM = [0.5, 1, 2, 5];
 export const RADIO_INCENDIO_KM = 10;
@@ -30,16 +30,17 @@ export function regionSenapred(regionEstacion) {
   return k ? CLAVES_SENAPRED.find(([s]) => s.startsWith(k))?.[1] || null : null;
 }
 
-// Nivel de exposición de una estación. Criterio simple y explicable:
-// alta  = foco de incendio cerca, punto "Muy Alto" dentro del radio, o alerta/alarma DMC en su región
-// media = punto "Alto" dentro del radio, o aviso DMC con puntos críticos dentro del radio
-// baja  = algún punto crítico dentro del radio, o aviso DMC en su región
-// (un punto afectado este invierno dentro del radio sube la estación al menos a media)
-function nivel({ porNivel, total, afectados }, alertas, incendios) {
-  const maxAlerta = Math.max(0, ...alertas.map(a => SEVERIDAD[a.tipo] || 0));
-  if (incendios.cantidad || porNivel['Muy Alto'] || maxAlerta >= 2) return 'alta';
-  if (porNivel['Alto'] || afectados || (maxAlerta === 1 && total)) return 'media';
-  if (total || maxAlerta === 1) return 'baja';
+// Nivel de exposición de una estación (criterio acordado con el usuario):
+// alta  = foco de incendio a ≤ 10 km, punto "Muy Alto" en el radio, alerta/alarma DMC relacionada
+//         (su fenómeno puede activar puntos que están en el radio) o cualquier alarma
+// media = punto "Alto" o afectado este invierno en el radio, aviso relacionado, o alerta de otro fenómeno
+// baja  = otros puntos en el radio, o solo avisos no relacionados
+const maxSev = lista => Math.max(0, ...lista.map(a => SEVERIDAD[a.tipo] || 0));
+function nivel({ porNivel, total, afectados }, alertas, relacionadas, incendios) {
+  const sev = maxSev(alertas), sevRel = maxSev(relacionadas);
+  if (incendios.cantidad || porNivel['Muy Alto'] || sevRel >= 2 || sev >= 3) return 'alta';
+  if (porNivel['Alto'] || afectados || sevRel === 1 || sev >= 2) return 'media';
+  if (total || sev >= 1) return 'baja';
   return 'sin';
 }
 
@@ -54,10 +55,13 @@ export function analizarEstaciones({ estaciones, region, comuna, puntos, alertas
   return estaciones
     .filter(e => !region || (regionSenapred(e.region) === region && (!comunaClave || clave(e.locality) === comunaClave)))
     .map(e => {
-      const alertasRegion = alertasDe(regionSenapred(e.region));
+      const regionE = regionSenapred(e.region);
+      // Avisos con área exacta solo cuentan si la estación queda dentro
+      const alertasRegion = alertasDe(regionE).filter(a => alertaAlcanza(a, e.coords.lat, e.coords.lng, regionE));
       const pos = { lat: e.coords.lat, lon: e.coords.lng };
       const porNivel = { 'Muy Alto': 0, Alto: 0, Medio: 0, Bajo: 0 };
       let total = 0, afectados = 0, masCercano = null;
+      const causasCerca = new Set();
       for (const p of puntos) {
         if (!(p.lv in porNivel) || Math.abs(p.lat - pos.lat) > margen) continue; // excluye "Solucionado"
         const d = distanciaKm(pos, p);
@@ -65,6 +69,7 @@ export function analizarEstaciones({ estaciones, region, comuna, puntos, alertas
         total++;
         porNivel[p.lv]++;
         if (p.af) afectados++;
+        causasCerca.add(p.cs);
         if (masCercano == null || d < masCercano) masCercano = d;
       }
       let cantidad = 0, fuegoCercano = null;
@@ -77,7 +82,12 @@ export function analizarEstaciones({ estaciones, region, comuna, puntos, alertas
       }
       const puntosCerca = { porNivel, total, afectados, masCercano };
       const incendios = { cantidad, masCercano: fuegoCercano };
-      return { estacion: e, pos, puntos: puntosCerca, alertas: alertasRegion, incendios, nivel: nivel(puntosCerca, alertasRegion, incendios) };
+      // Relacionada: su fenómeno puede activar alguno de los puntos críticos que están en el radio
+      const relacionadas = alertasRegion.filter(a => [...causasCerca].some(c => causaRelacionada(a, c)));
+      return {
+        estacion: e, pos, puntos: puntosCerca, alertas: alertasRegion, relacionadas, incendios,
+        nivel: nivel(puntosCerca, alertasRegion, relacionadas, incendios),
+      };
     })
     .sort((a, b) =>
       EXPOSICION[b.nivel].orden - EXPOSICION[a.nivel].orden
@@ -98,7 +108,7 @@ export function descargarCsvEstaciones(filas, region, radioKm) {
   const lineas = filas.map(f => [
     EXPOSICION[f.nivel].texto, f.estacion.name, f.estacion.address, f.estacion.locality, region || f.estacion.region, f.puntos.total,
     ...NIVELES.map(n => f.puntos.porNivel[n]), f.puntos.afectados, fmtKm(f.puntos.masCercano),
-    f.alertas.map(a => `${a.tipo} ${a.fenomeno}`).join(' | '), f.incendios.cantidad, fmtKm(f.incendios.masCercano),
+    f.alertas.map(a => `${a.tipo} ${a.fenomeno}${f.relacionadas.includes(a) ? ' (relacionada)' : ' (operacional)'}`).join(' | '), f.incendios.cantidad, fmtKm(f.incendios.masCercano),
     String(f.pos.lat).replace('.', ','), String(f.pos.lon).replace('.', ','),
   ].map(celda).join(';'));
   const blob = new Blob(['﻿' + [cab.join(';'), ...lineas].join('\r\n')], { type: 'text/csv;charset=utf-8' });

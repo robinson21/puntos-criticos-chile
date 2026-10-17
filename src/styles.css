@@ -1411,3 +1411,30 @@ footer {
 .popup-afectado { display: inline-block; margin: 2px 0 4px; padding: 1px 7px; border-radius: 999px; background: #0f172a; color: #fff; font-size: 11px; font-weight: 600; }
 .dot-afectado { background: #94a3b8 !important; box-shadow: 0 0 0 2px #fff, 0 0 0 3px #64748b; }
 .est-afectados { color: var(--ink); }
+
+/* ===== ALERTAS ↔ PUNTOS CRÍTICOS ===== */
+.alerta-area, .alerta-operacional { display: inline-block; font-size: 11.5px; color: var(--muted); }
+.alerta-expuestos { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.alerta-ver { padding: 3px 8px; font-size: 11px; }
+.ar-rel { margin-left: 6px; font: 600 11.5px var(--font); color: var(--accent); background: none; border: 1px solid var(--accent); border-radius: 999px; padding: 1px 8px; cursor: pointer; }
+.ar-rel.activo { background: var(--accent); color: var(--on-accent); }
+.ar-rel.ar-op { border-color: var(--line); color: var(--muted); cursor: default; font-weight: 500; }
+.filter-alerta.active { background: #b45309; color: #fff; border-color: #b45309; }
+.est-alerta.op { opacity: .6; }
+.est-alerta.rel { font-weight: 600; }
+
+/* ===== HORA DE LAS CAPAS ANIMADAS ===== */
+.capas-hora {
+  position: absolute; top: 12px; left: 50%; transform: translateX(-50%); z-index: 600;
+  display: flex; flex-direction: column; align-items: center; gap: 4px; pointer-events: none;
+}
+.capa-hora {
+  background: rgba(15, 23, 42, 0.88); color: #e2e8f0; border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 999px; padding: 3px 12px; font-family: var(--font-mono); font-size: 11px; white-space: nowrap;
+}
+.capa-hora.ultimo { border-color: #38bdf8; color: #fff; }
+.capa-hora.error { color: #fca5a5; }
+@media (max-width: 600px) { .capas-hora { top: 56px; } .capa-hora { font-size: 10px; padding: 2px 8px; } }
+.leyenda-lluvia { display: inline-flex; align-items: center; gap: 6px; }
+.leyenda-lluvia i { display: inline-block; width: 70px; height: 8px; border-radius: 4px;
+  background: linear-gradient(90deg, #9be7ff, #2dd4bf, #22c55e, #facc15, #f97316, #dc2626, #a21caf); }

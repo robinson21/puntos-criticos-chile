@@ -18,12 +18,22 @@ export const CAPAS_AMBIENTALES = [
     default: false
   },
   {
-    id: 'lluvia',
-    label: 'Lluvia animada',
+    id: 'lluviaNasa',
+    label: 'Lluvia satelital NASA',
     icon: '🌧️',
+    color: '#16a34a',
+    fuente: 'NASA IMERG · 30 min · ~6 h atraso',
+    descripcion: 'Lluvia estimada por satélites (NASA GPM IMERG) en todo Chile y el mar, cada 30 minutos de las últimas 6 horas disponibles. Llega con ~5-6 h de retraso, pero cubre todo el país.',
+    necesitaKey: false,
+    default: true
+  },
+  {
+    id: 'lluvia',
+    label: 'Lluvia radar en vivo',
+    icon: '📡',
     color: '#2563eb',
-    fuente: 'RainViewer · Radar',
-    descripcion: 'Lluvia real a través de radar meteorológico (animación últimas 2h + pronóstico). Identifica tormentas severas y frentes activos.',
+    fuente: 'RainViewer · Radar · 10 min',
+    descripcion: 'Radar meteorológico casi en tiempo real (últimas ~2 h). En Chile hay pocos radares: donde no hay cobertura no se ve lluvia aunque llueva; usa la capa NASA para todo el país.',
     necesitaKey: false,
     default: true
   },

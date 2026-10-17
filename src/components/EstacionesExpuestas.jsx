@@ -93,9 +93,15 @@ export default function EstacionesExpuestas() {
                     ) : <small className="est-nada">Ninguno</small>}
                   </span>
                   <span role="cell" data-label="Alertas DMC">
-                    {a.alertas.length ? a.alertas.map(x => (
-                      <span key={x.id} className="est-alerta" style={{ borderColor: COLOR_TIPO[x.tipo] }}>{x.tipo} · {limpiarTexto(x.fenomeno)}</span>
-                    )) : <small className="est-nada">Sin alertas</small>}
+                    {a.alertas.length ? a.alertas.map(x => {
+                      const rel = a.relacionadas.includes(x);
+                      return (
+                        <span key={x.id} className={`est-alerta ${rel ? 'rel' : 'op'}`} style={{ borderColor: COLOR_TIPO[x.tipo] }}
+                          title={rel ? 'Relacionada: puede activar puntos críticos cercanos a la estación' : 'Operacional: no activa los puntos críticos cercanos'}>
+                          {rel ? '🎯 ' : ''}{x.tipo} · {limpiarTexto(x.fenomeno)}
+                        </span>
+                      );
+                    }) : <small className="est-nada">Sin alertas</small>}
                   </span>
                   <span role="cell" data-label="Incendios">
                     {a.incendios.cantidad
@@ -113,9 +119,10 @@ export default function EstacionesExpuestas() {
             </button>
           )}
           <p className="estaciones-nota">
-            <b>Criterio:</b> <i>Alta</i> = foco de incendio a ≤ {RADIO_INCENDIO_KM} km, punto "Muy Alto" dentro del radio o alerta/alarma DMC en la región.
-            {' '}<i>Media</i> = punto "Alto" o punto afectado este invierno dentro del radio, o aviso DMC con puntos críticos cerca. <i>Baja</i> = otros puntos dentro del radio o solo aviso DMC.
-            {' '}Las alertas DMC son por zonas de la región (cordillera, costa…), no por comuna: revisa la zona exacta.
+            <b>Criterio:</b> <i>Alta</i> = foco de incendio a ≤ {RADIO_INCENDIO_KM} km, punto "Muy Alto" en el radio, alerta o alarma DMC 🎯 relacionada (su fenómeno puede activar puntos del radio) o cualquier alarma.
+            {' '}<i>Media</i> = punto "Alto" o afectado este invierno en el radio, aviso 🎯 relacionado, o alerta de otro fenómeno. <i>Baja</i> = otros puntos en el radio o solo avisos operacionales.
+            {' '}Fenómenos que activan puntos: precipitaciones, nevadas, heladas y marejadas; viento, tormentas eléctricas y altas temperaturas son operacionales.
+            {' '}Las alertas sin área exacta se aplican a toda la región (la DMC avisa por zonas: cordillera, costa…): revisa la zona.
           </p>
         </>
       )}

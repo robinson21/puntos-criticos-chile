@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useData } from '../data/DataContext';
-import { useAlertas, alertasDeRegion, antiguedad, zonasDeRegion, limpiarTexto, COLOR_TIPO } from '../data/alertas';
+import { useAlertas, alertasDeRegion, antiguedad, zonasDeRegion, limpiarTexto, COLOR_TIPO, esOperacional, puntoRelacionado } from '../data/alertas';
+import { useFilters } from '../data/FilterContext';
 import { tituloRegion } from '../data/stats';
 
 // Franja sobre el mapa: avisos/alertas/alarmas DMC vigentes para la región
@@ -9,6 +10,7 @@ export default function AlertasRegion() {
   const { regionActual, records } = useData();
   const { data } = useAlertas();
   const [abiertas, setAbiertas] = useState(false);
+  const { filtroAlerta, setFiltroAlerta } = useFilters();
   if (!regionActual || !data) return null;
 
   const vigentes = alertasDeRegion(data.alertas, regionActual);
@@ -41,7 +43,18 @@ export default function AlertasRegion() {
             <span className="alerta-tipo" data-tipo={a.tipo} style={{ background: COLOR_TIPO[a.tipo] || a.color }}>{a.tipo.toUpperCase()}</span>
             <span className="ar-fen">{a.icono} {a.fenomeno}</span>
             <span className="ar-hasta">hasta {limpiarTexto(a.hasta)}</span>
-            {a.zonas && <span className="ar-zonas" title={limpiarTexto(a.zonas)}>📍 {zonasDeRegion(a.zonas, regionActual)}</span>}
+            {a.poligono ? <span className="ar-zonas">🗺️ Área exacta (en el mapa)</span>
+              : a.zonas && <span className="ar-zonas" title={limpiarTexto(a.zonas)}>📍 {zonasDeRegion(a.zonas, regionActual)}</span>}
+            {esOperacional(a) ? <span className="ar-rel ar-op">🏭 operacional</span> : (() => {
+              const n = records.filter(p => puntoRelacionado(a, p, regionActual)).length;
+              const activo = String(filtroAlerta) === String(a.id);
+              return n ? (
+                <button type="button" className={`ar-rel ${activo ? 'activo' : ''}`} onClick={() => setFiltroAlerta(activo ? '' : String(a.id))}
+                  title="Mostrar en el mapa solo los puntos que este fenómeno puede activar">
+                  🎯 {n.toLocaleString('es-CL')} puntos relacionados {activo ? '· quitar filtro' : '· ver'}
+                </button>
+              ) : <span className="ar-rel ar-op">sin puntos relacionados</span>;
+            })()}
           </li>
         ))}
       </ul>
