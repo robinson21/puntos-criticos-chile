@@ -3,6 +3,7 @@ import { useData } from './DataContext';
 import { useFilters } from './FilterContext';
 import { useAlertas } from './alertas';
 import { analizarEstaciones } from './estaciones';
+import { usePronosticoLluvia } from './pronosticoLluvia';
 
 const EstacionesContext = createContext(null);
 
@@ -12,6 +13,7 @@ export function EstacionesProvider({ children }) {
   const { regionActual } = useData();
   const { filtered, comuna } = useFilters();
   const { data: alertas } = useAlertas();
+  const pronostico = usePronosticoLluvia();
   const [estaciones, setEstaciones] = useState([]);
   const [focos, setFocos] = useState([]);
   const [radioKm, setRadioKm] = useState(1);
@@ -27,8 +29,8 @@ export function EstacionesProvider({ children }) {
   useEffect(() => { setSeleccion(null); }, [regionActual, comuna]);
 
   const analisis = useMemo(
-    () => analizarEstaciones({ estaciones, region: regionActual, comuna, puntos: filtered, alertas: alertas?.alertas, focos, radioKm }),
-    [estaciones, regionActual, comuna, filtered, alertas, focos, radioKm]
+    () => analizarEstaciones({ estaciones, region: regionActual, comuna, puntos: filtered, alertas: alertas?.alertas, focos, radioKm, pronostico }),
+    [estaciones, regionActual, comuna, filtered, alertas, focos, radioKm, pronostico]
   );
   const porId = useMemo(() => Object.fromEntries(analisis.map(a => [a.estacion.id, a])), [analisis]);
 

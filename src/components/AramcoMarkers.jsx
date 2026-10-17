@@ -39,6 +39,7 @@ export function PopupEstacion({ e, a, radioKm }) {
             {a.puntos.afectados > 0 && <><br />🔁 {a.puntos.afectados} afectados este invierno</>}
           </div>
           {a.alertas.length > 0 && <div className="popup-linea"><b>DMC:</b> {a.alertas.map(x => `${x.tipo} ${x.fenomeno}`).join(' · ')}</div>}
+          {a.lluvia24 >= 0.5 && <div className="popup-linea">🔮 <b>Lluvia pronosticada 24 h:</b> {String(a.lluvia24).replace('.', ',')} mm</div>}
           {a.incendios.cantidad > 0 && <div className="popup-linea" style={{ color: '#dc2626' }}><b>🔥 {a.incendios.cantidad} focos a ≤ {RADIO_INCENDIO_KM} km</b> · más cercano a {fmtKm(a.incendios.masCercano)}</div>}
         </>
       )}

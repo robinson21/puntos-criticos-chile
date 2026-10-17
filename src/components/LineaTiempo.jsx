@@ -14,21 +14,33 @@ export function useLineaTiempo(cuadros) {
   const [idx, setIdx] = useState(-1);
   const [reproduciendo, setReproduciendo] = useState(true);
 
-  // Al llegar cuadros nuevos se parte en el más reciente
-  useEffect(() => { setIdx(tiempos.length - 1); }, [tiempos]);
+  // Último cuadro ya ocurrido ("ahora"); lo que viene después es pronóstico
+  const idxAhora = useMemo(() => {
+    let i = -1;
+    tiempos.forEach((t, k) => { if (t <= Date.now()) i = k; });
+    return i < 0 ? tiempos.length - 1 : i;
+  }, [tiempos]);
+
+  // Al llegar cuadros nuevos se parte en "ahora"
+  useEffect(() => { setIdx(idxAhora); }, [idxAhora, tiempos]);
 
   useEffect(() => {
     if (!reproduciendo || tiempos.length < 2 || idx < 0) return;
-    const t = setTimeout(() => setIdx(i => (i + 1) % tiempos.length), idx === tiempos.length - 1 ? PAUSA_FINAL_MS : PASO_MS);
+    const pausa = idx === tiempos.length - 1 || idx === idxAhora ? PAUSA_FINAL_MS : PASO_MS;
+    const t = setTimeout(() => setIdx(i => (i + 1) % tiempos.length), pausa);
     return () => clearTimeout(t);
-  }, [reproduciendo, idx, tiempos]);
+  }, [reproduciendo, idx, tiempos, idxAhora]);
 
   const ir = useCallback(i => { setReproduciendo(false); setIdx(Math.max(0, Math.min(tiempos.length - 1, i))); }, [tiempos]);
-  return { tiempos, idx, tiempo: tiempos[idx] ?? null, reproduciendo, setReproduciendo, ir };
+  return { tiempos, idx, idxAhora, tiempo: tiempos[idx] ?? null, reproduciendo, setReproduciendo, ir };
 }
 
 function relativo(ms) {
   const min = Math.round((Date.now() - ms) / 60000);
+  if (min < 0) {
+    const f = -min;
+    return f < 60 ? `pronóstico · en ${f} min` : `pronóstico · en ${Math.round(f / 60)} h`;
+  }
   if (min < 1) return 'ahora';
   if (min < 60) return `hace ${min} min`;
   const h = Math.floor(min / 60), m = min % 60;
@@ -36,12 +48,12 @@ function relativo(ms) {
 }
 const diaChile = ms => {
   const f = d => new Date(d).toLocaleDateString('es-CL', { timeZone: 'America/Santiago' });
-  return f(ms) === f(Date.now()) ? 'Hoy' : f(ms) === f(Date.now() - 864e5) ? 'Ayer' : new Date(ms).toLocaleDateString('es-CL', { weekday: 'short', day: 'numeric', timeZone: 'America/Santiago' });
+  return f(ms) === f(Date.now()) ? 'Hoy' : f(ms) === f(Date.now() - 864e5) ? 'Ayer' : f(ms) === f(Date.now() + 864e5) ? 'Mañana' : new Date(ms).toLocaleDateString('es-CL', { weekday: 'short', day: 'numeric', timeZone: 'America/Santiago' });
 };
 
 // Barra estilo Zoom Earth: play/pausa, hora del cuadro, deslizador con los tramos de cada capa y escala de lluvia.
 export default function LineaTiempo({ linea, capas, mostrarEscala }) {
-  const { tiempos, idx, tiempo, reproduciendo, setReproduciendo, ir } = linea;
+  const { tiempos, idx, idxAhora, tiempo, reproduciendo, setReproduciendo, ir } = linea;
   if (!tiempos.length) {
     const errores = capas.filter(c => c.cuadros?.error);
     return errores.length ? <div className="linea-tiempo vacia">{errores.map(c => `${c.icono} ${c.nombre}: no disponible`).join(' · ')}</div> : null;
@@ -56,14 +68,15 @@ export default function LineaTiempo({ linea, capas, mostrarEscala }) {
         <button type="button" className="lt-play" onClick={() => setReproduciendo(r => !r)} aria-label={reproduciendo ? 'Pausar' : 'Reproducir'}>
           {reproduciendo ? '❚❚' : '▶'}
         </button>
-        <div className="lt-hora">
+        <div className={`lt-hora ${tiempo > Date.now() ? 'futuro' : ''}`}>
           <b>{diaChile(tiempo)} {horaChile(new Date(tiempo).toISOString())}</b>
           <span>{relativo(tiempo)}</span>
         </div>
         <div className="lt-capas">
           {capas.filter(c => Array.isArray(c.cuadros)).map(c => {
             const propios = c.cuadros.map(Date.parse);
-            const mostrado = [...propios].reverse().find(ms => ms <= tiempo);
+            const fueraDeTramo = c.pronostico ? tiempo <= Date.now() : tiempo > Date.now();
+            const mostrado = fueraDeTramo ? null : [...propios].reverse().find(ms => ms <= tiempo);
             return (
               <span key={c.id} className={`lt-chip ${mostrado ? '' : 'apagado'}`} style={{ '--c': c.color }}
                 title={mostrado ? `${c.nombre}: imagen de las ${horaChile(new Date(mostrado).toISOString())}` : `${c.nombre}: sin imagen para esta hora`}>
@@ -75,6 +88,12 @@ export default function LineaTiempo({ linea, capas, mostrarEscala }) {
       </div>
 
       <div className="lt-pista">
+        {idxAhora < tiempos.length - 1 && (
+          <>
+            <div className="lt-futuro" style={{ left: `${pos(Date.now())}%` }} title="Pronóstico" />
+            <div className="lt-ahora" style={{ left: `${pos(Date.now())}%` }}><span>Ahora</span></div>
+          </>
+        )}
         {capas.filter(c => Array.isArray(c.cuadros) && c.cuadros.length).map((c, i) => {
           const a = Date.parse(c.cuadros[0]), b = Date.parse(c.cuadros[c.cuadros.length - 1]);
           return <div key={c.id} className="lt-tramo" title={c.nombre}

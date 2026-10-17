@@ -6,9 +6,9 @@ import L from 'leaflet';
 // Cada cuadro es una capa propia precargada con opacidad 0; al moverse el tiempo solo cambia la
 // opacidad (con fundido CSS), así no parpadea. Muestra el último cuadro anterior o igual a `tiempo`;
 // si `tiempo` es anterior a su primer cuadro, la capa no se ve.
-// `cargar()` devuelve [{ url, tiempo }] del más antiguo al más reciente; `onCuadros` informa los tiempos.
+// `cargar()` devuelve [{ url, tiempo, limites? }] del más antiguo al más reciente; `onCuadros` informa los tiempos.
 export default function AnimacionTiles({
-  activo, cargar, tiempo, onCuadros, maxNativeZoom = 7, opacidad = 0.75,
+  activo, cargar, tiempo, onCuadros, maxNativeZoom = 7, opacidad = 0.75, tipo = 'observado',
   refrescoMs = 10 * 60 * 1000, attribution = '', zIndex = 300, className = '',
 }) {
   const map = useMap();
@@ -22,6 +22,8 @@ export default function AnimacionTiles({
     let idx = -1;
     for (let i = 0; i < ts.length; i++) if (ts[i] <= t) idx = i;
     if (t == null) idx = ts.length - 1;
+    // Lo observado no se muestra en horas futuras, y el pronóstico no se muestra en el pasado
+    else if ((tipo === 'observado' && t > Date.now()) || (tipo === 'pronostico' && t <= Date.now())) idx = -1;
     if (idx === visible.current) return;
     capas.current[visible.current]?.setOpacity(0);
     capas.current[idx]?.setOpacity(opacidad);
@@ -44,9 +46,11 @@ export default function AnimacionTiles({
         if (!cuadros.length) throw new Error('sin imágenes recientes');
         limpiar();
         tiempos.current = cuadros.map(c => Date.parse(c.tiempo));
-        capas.current = cuadros.map(c =>
-          L.tileLayer(c.url, { maxNativeZoom, maxZoom: 19, opacity: 0, attribution, zIndex, className: `capa-animada ${className}` }).addTo(map)
-        );
+        // Cuadros con `limites` son una imagen sola (pronóstico); el resto, mosaicos de mapa
+        capas.current = cuadros.map(c => (c.limites
+          ? L.imageOverlay(c.url, c.limites, { opacity: 0, attribution, zIndex, className: `capa-animada ${className}` })
+          : L.tileLayer(c.url, { maxNativeZoom, maxZoom: 19, opacity: 0, attribution, zIndex, className: `capa-animada ${className}` })
+        ).addTo(map));
         onCuadros?.(cuadros.map(c => c.tiempo));
       } catch (e) {
         if (vivo) onCuadros?.({ error: e.message });

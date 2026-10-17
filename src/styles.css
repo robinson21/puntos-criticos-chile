@@ -1539,3 +1539,16 @@ footer {
 }
 
 .map-stage.con-animacion .layers-panel { max-height: 330px; overflow-y: auto; }
+
+/* ===== PRONÓSTICO EN LA LÍNEA DE TIEMPO ===== */
+.lt-futuro { position: absolute; top: 0; right: 0; bottom: 0; background: repeating-linear-gradient(135deg, rgba(167,139,250,.10) 0 6px, transparent 6px 12px); border-radius: 4px; pointer-events: none; }
+.lt-ahora { position: absolute; top: -2px; bottom: 2px; width: 2px; margin-left: -1px; background: #fbbf24; pointer-events: none; }
+.lt-ahora span { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); font: 700 9px var(--font-mono); color: #fbbf24; letter-spacing: .05em; text-transform: uppercase; }
+.lt-hora.futuro b { color: #c4b5fd; }
+.lt-hora.futuro span { color: #a78bfa; }
+.capa-pronostico { image-rendering: auto; filter: blur(var(--suave-pronostico, 4px)) saturate(1.1); }
+.est-fila { grid-template-columns: 110px minmax(170px, 1.5fr) 1.3fr 1.2fr .9fr .8fr 120px; }
+.est-lluvia { font-weight: 600; color: var(--muted); }
+.est-lluvia.media { color: #7c3aed; }
+.est-lluvia.alta { color: #fff; background: #7c3aed; padding: 1px 7px; border-radius: 999px; }
+@media (max-width: 760px) { .est-fila { grid-template-columns: 1fr auto; } }

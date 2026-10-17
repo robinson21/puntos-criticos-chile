@@ -84,10 +84,17 @@ jobs:
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
         run: python3 actualizar_incendios.py
 
+      - name: Pronóstico de lluvia (NOAA GFS, 48 h)
+        id: pronostico_lluvia
+        continue-on-error: true
+        run: |
+          pip install --quiet numpy eccodes eccodeslib
+          python3 actualizar_pronostico_lluvia.py
+
       # Si una fuente falla, se publica lo último que ya estaba en el sitio
       # (más reciente que la copia del repo); si tampoco existe, queda la del repo.
       - name: Conservar lo último publicado si una fuente falló
-        if: steps.alertas.outcome == 'failure' || steps.pronostico.outcome == 'failure' || steps.incendios.outcome == 'failure'
+        if: steps.alertas.outcome == 'failure' || steps.pronostico.outcome == 'failure' || steps.incendios.outcome == 'failure' || steps.pronostico_lluvia.outcome == 'failure'
         run: |
           recuperar() {
             curl -fsSL "$SITIO/data/$1" -o "/tmp/$1" && python3 -m json.tool "/tmp/$1" > /dev/null \
@@ -97,6 +104,7 @@ jobs:
           if [ "${{ steps.alertas.outcome }}" = failure ]; then recuperar alertas.json; fi
           if [ "${{ steps.pronostico.outcome }}" = failure ]; then recuperar pronostico_regional.json; fi
           if [ "${{ steps.incendios.outcome }}" = failure ]; then recuperar incendios.json; fi
+          if [ "${{ steps.pronostico_lluvia.outcome }}" = failure ]; then recuperar pronostico_lluvia.json; fi
 
       # El sitio en Cloudflare lee /data/* desde esta rama: los datos se renuevan sin volver a desplegar.
       - name: Publicar datos (rama datos)

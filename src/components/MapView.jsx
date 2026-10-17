@@ -8,7 +8,8 @@ import AlertasPoligonos from './AlertasPoligonos';
 import LayersControl from './LayersControl';
 import IncendiosLayer from './IncendiosLayer';
 import NubesSatelite from './NubesSatelite';
-import { LluviaRadar, LluviaNasa } from './Lluvia';
+import { LluviaRadar, LluviaNasa, LluviaPronostico } from './Lluvia';
+import { usePronosticoLluvia } from '../data/pronosticoLluvia';
 import LineaTiempo, { useLineaTiempo } from './LineaTiempo';
 
 import { horaChile } from '../data/gibs';
@@ -270,7 +271,8 @@ export default function MapView() {
   // Capas ambientales activas. Default: solo lluvia; incendios se suma si hay focos
   // NASA FIRMS: primero el JSON que genera GitHub Actions y, si no existe, el Worker
   // cuando tiene configurada la Map Key (ver /health).
-  const [activeLayers, setActiveLayers] = useState(['lluviaNasa', 'lluvia']);
+  const [activeLayers, setActiveLayers] = useState(['lluviaNasa', 'lluvia', 'pronostico']);
+  const pronostico = usePronosticoLluvia();
   const [urlIncendios, setUrlIncendios] = useState(null);
   const firmsDisponible = Boolean(urlIncendios);
   const [resumenIncendios, setResumenIncendios] = useState(null);
@@ -296,13 +298,14 @@ export default function MapView() {
     return () => { vivo = false; };
   }, [TILE_PROXY, hasTileProxy]);
   // Cuadros de cada capa animada y línea de tiempo común (estilo Zoom Earth)
-  const [cuadros, setCuadros] = useState({ lluviaNasa: null, lluvia: null, satelite: null });
+  const [cuadros, setCuadros] = useState({ lluviaNasa: null, lluvia: null, pronostico: null, satelite: null });
   const cuadrosDe = useCallback(id => v => setCuadros(c => (c[id] === v ? c : { ...c, [id]: v })), []);
   const onNasa = useMemo(() => cuadrosDe('lluviaNasa'), [cuadrosDe]);
   const onRadar = useMemo(() => cuadrosDe('lluvia'), [cuadrosDe]);
   const onNubes = useMemo(() => cuadrosDe('satelite'), [cuadrosDe]);
+  const onPronostico = useMemo(() => cuadrosDe('pronostico'), [cuadrosDe]);
   const linea = useLineaTiempo(cuadros);
-  const conLluvia = activeLayers.includes('lluviaNasa') || activeLayers.includes('lluvia');
+  const conLluvia = ['lluviaNasa', 'lluvia', 'pronostico'].some(c => activeLayers.includes(c));
   const maptilerValida = useMapTilerValida();
   const usarMapTiler = maptilerValida === true;
   const { comuna } = useFilters();
@@ -546,7 +549,10 @@ export default function MapView() {
       {/* map-stage: contenedor relativo para que los controles flotantes queden sobre el mapa */}
       {/* --suave-imerg: una celda NASA (0,1°) mide 0,0711·2^zoom px; el suavizado es ~90 % de eso */}
       <div className={`map-stage ${conLluvia || activeLayers.includes('satelite') ? 'con-animacion' : ''}`}
-        style={{ '--suave-imerg': `${Math.min(36, Math.max(3, 0.0711 * 2 ** zoomActual * 0.9)).toFixed(1)}px` }}>
+        style={{
+          '--suave-imerg': `${Math.min(36, Math.max(3, 0.0711 * 2 ** zoomActual * 0.9)).toFixed(1)}px`,
+          '--suave-pronostico': `${Math.min(40, Math.max(2, 0.178 * 2 ** zoomActual * 0.5)).toFixed(1)}px`,
+        }}>
       {/* preferCanvas: los miles de CircleMarker se dibujan en un solo <canvas> en vez de
           un <path> SVG cada uno; mismo aspecto y popups, mucho más liviano en celulares. */}
       <MapContainer center={center} zoom={zoom} zoomControl={false} className="map-container" scrollWheelZoom={true} preferCanvas={true}>
@@ -591,6 +597,7 @@ export default function MapView() {
         <NubesSatelite activo={activeLayers.includes('satelite')} tiempo={linea.tiempo} onCuadros={onNubes} />
         <LluviaNasa activo={activeLayers.includes('lluviaNasa')} tiempo={linea.tiempo} onCuadros={onNasa} />
         <LluviaRadar activo={activeLayers.includes('lluvia')} tiempo={linea.tiempo} onCuadros={onRadar} />
+        <LluviaPronostico activo={activeLayers.includes('pronostico')} tiempo={linea.tiempo} onCuadros={onPronostico} pronostico={pronostico} />
         <IncendiosLayer
           url={urlIncendios}
           activo={firmsDisponible && activeLayers.includes('incendios')}
@@ -629,6 +636,7 @@ export default function MapView() {
       <LineaTiempo linea={linea} mostrarEscala={conLluvia} capas={[
         { id: 'lluviaNasa', nombre: 'Lluvia NASA', icono: '🌧️', color: '#22c55e', cuadros: cuadros.lluviaNasa },
         { id: 'lluvia', nombre: 'Radar', icono: '📡', color: '#38bdf8', cuadros: cuadros.lluvia },
+        { id: 'pronostico', nombre: 'Pronóstico GFS', icono: '🔮', color: '#a78bfa', cuadros: cuadros.pronostico, pronostico: true },
         { id: 'satelite', nombre: 'Nubes GOES', icono: '🛰️', color: '#cbd5e1', cuadros: cuadros.satelite },
       ]} />
       {resumenIncendios && (
