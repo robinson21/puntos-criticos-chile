@@ -6,7 +6,8 @@ import { tituloRegion } from '../data/stats';
 import { descargarCsv } from '../data/csv';
 
 export default function Filters() {
-  const { comuna, setComuna, causa, setCausa, nivel, setNivel, tipoSolucion, setTipoSolucion, filtered, comunas, causas, tipos, haySinTipo } = useFilters();
+  const { comuna, setComuna, causa, setCausa, nivel, setNivel, tipoSolucion, setTipoSolucion, filtered, comunas, causas, tipos, haySinTipo,
+    provincia, setProvincia, provincias, soloAfectados, setSoloAfectados, hayAfectados } = useFilters();
   const { metadata, loadRegion, regionActual, records } = useData();
   const [buscar, setBuscar] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
@@ -42,6 +43,8 @@ export default function Filters() {
     setComuna('');
     setCausa('');
     setTipoSolucion('');
+    setProvincia('');
+    setSoloAfectados(false);
     setBuscar('');
   };
 
@@ -92,6 +95,13 @@ export default function Filters() {
       {/* Filtros solo si hay datos */}
       {regionActual && records.length > 0 && (
         <>
+          {provincias.length > 1 && (
+            <select value={provincia} onChange={e => { setProvincia(e.target.value); setComuna(''); }} aria-label="Provincia">
+              <option value="">Todas las provincias</option>
+              {provincias.map(p => <option key={p} value={p}>{p.charAt(0) + p.slice(1).toLowerCase()}</option>)}
+            </select>
+          )}
+
           <select value={causa} onChange={e => setCausa(e.target.value)}>
             <option value="">Todas las causas</option>
             {causas.map(c => <option key={c} value={c}>{c}</option>)}
@@ -108,6 +118,13 @@ export default function Filters() {
               </button>
             ))}
           </div>
+
+          {hayAfectados && (
+            <button type="button" className={`filter-btn filter-afectados ${soloAfectados ? 'active' : ''}`} aria-pressed={soloAfectados}
+              onClick={() => setSoloAfectados(v => !v)} title="Puntos que SENAPRED marca como afectados en el período (este invierno)">
+              🔁 Afectados este invierno
+            </button>
+          )}
 
           <select value={tipoSolucion} onChange={e => setTipoSolucion(e.target.value)}>
             <option value="">Todo tipo</option>

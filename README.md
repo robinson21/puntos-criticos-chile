@@ -52,7 +52,7 @@ El workflow [`publicar.yml`](.github/workflows/publicar.yml) hace todo en GitHub
 | Cuándo | Qué |
 |---|---|
 | Cada 3 h | `actualizar_alertas.py` (avisos/alertas/alarmas DMC), `actualizar_pronostico.py` (pronóstico OpenWeatherMap) y `actualizar_incendios.py` (focos NASA FIRMS) |
-| Una vez al día y en cada cambio a `master` | además `actualizar.py` (Excel de puntos críticos SENAPRED); si los datos cambian, se guardan en el repo |
+| Una vez al día y en cada cambio a `master` | además `actualizar.py` (puntos críticos desde el servicio oficial de SENAPRED; respaldo: Excel) y `actualizar_estaciones.py` (estaciones desde aramcoestaciones.cl); si los datos cambian, se guardan en el repo |
 | Siempre | deja los datos en la rama `datos` (de ahí los lee Cloudflare) y publica el respaldo en GitHub Pages |
 
 Si una fuente falla, se publica lo último que ya estaba en el sitio. También se puede lanzar a mano desde *Actions → Actualizar datos y publicar → Run workflow*.
@@ -68,6 +68,7 @@ Los scripts también se pueden correr a mano (`python3 actualizar_alertas.py`); 
 
 ## Fuentes y metodología
 
-- Puntos críticos: SENAPRED, *Puntos Críticos Invierno 2026*. Solo se incluyen los registros con coordenadas.
+- Puntos críticos: SENAPRED, *Puntos Críticos Invierno 2026*, desde el [servicio ArcGIS oficial](https://services5.arcgis.com/i7S5PSnIJAUcWvSE/arcgis/rest/services/compilado_INV_2026/FeatureServer/0) que usa el tablero de [senapred.cl/programa-invierno](https://www.senapred.cl/programa-invierno/). Solo se incluyen los registros con coordenadas. Incluye provincia, sector, acción principal, responsable y si el punto fue afectado en el período.
+- Estaciones: [aramcoestaciones.cl](https://www.aramcoestaciones.cl/estaciones-de-servicio), actualizadas una vez al día.
 - El **índice** del ranking es la cantidad de puntos de la comuna escalada a 100 respecto de la comuna con más puntos.
 - Clima: OpenWeatherMap, RainViewer y NASA GIBS (GOES-East). Incendios: NASA FIRMS. Avisos: Dirección Meteorológica de Chile.

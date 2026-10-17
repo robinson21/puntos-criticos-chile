@@ -1,28 +1,5 @@
 [
   {
-    "id": 4,
-    "name": "Isabel La Catolica",
-    "address": "Av. Manquehue Sur 1590, Las Condes",
-    "region": "Metropolitana",
-    "locality": "Las Condes",
-    "contact": "800 374 834",
-    "schedule": "Abierto las 24 horas",
-    "coords": {
-      "lat": -33.42483773,
-      "lng": -70.56340456
-    },
-    "services": [
-      "Tienda aStop",
-      "Subway",
-      "Kerosene",
-      "Cargador eléctrico",
-      "Aire",
-      "Baños",
-      "Cajero"
-    ],
-    "tag": "ESTACIÓN DE SERVICIO"
-  },
-  {
     "id": 1,
     "name": "Puerto Montt / Pdte Ibáñez",
     "address": "Pdte. Ibáñez esq. Av. Parque Industrial, Puerto Montt",
@@ -79,6 +56,29 @@
     },
     "services": [
       "Tienda aStop",
+      "Aire",
+      "Baños",
+      "Cajero"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 4,
+    "name": "Isabel La Catolica",
+    "address": "Av. Manquehue Sur 1590, Las Condes",
+    "region": "Metropolitana",
+    "locality": "Las Condes",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -33.42483773,
+      "lng": -70.56340456
+    },
+    "services": [
+      "Tienda aStop",
+      "Subway",
+      "Kerosene",
+      "Cargador eléctrico",
       "Aire",
       "Baños",
       "Cajero"
@@ -172,7 +172,7 @@
   {
     "id": 9,
     "name": "Angol",
-    "address": "Av. Libertador Bernardo O’higgins 1744, Angol",
+    "address": "Av. Libertador Bernardo O'higgins 1744, Angol",
     "region": "La Araucanía",
     "locality": "Angol",
     "contact": "800 374 834",
@@ -626,7 +626,7 @@
     "id": 31,
     "name": "Rancagua III",
     "address": "Av. San Juan 0133, Machalí",
-    "region": "Libertador General Bernardo O’Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "Machalí",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -647,7 +647,7 @@
     "id": 32,
     "name": "Pichilemu",
     "address": "Angel Gaete 708, esq. Santa María, Pichilemu",
-    "region": "Libertador General Bernardo O’Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "Pichilemu",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -806,7 +806,7 @@
     "id": 40,
     "name": "Rosario Carretera",
     "address": "Panamericana Sur km. 110, Rosario, Rengo",
-    "region": "Libertador General Bernardo O’Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "Rengo",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -826,7 +826,7 @@
     "id": 41,
     "name": "San Fernado Carretera",
     "address": "Panamericana Sur km. 135, San Fernando",
-    "region": "Libertador General Bernardo O’Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "San Fernando",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -1295,7 +1295,7 @@
   {
     "id": 66,
     "name": "Pitrufquén",
-    "address": "O’Higgins 290, Casilla 27",
+    "address": "O'Higgins 290, Casilla 27",
     "region": "La Araucanía",
     "locality": "Pitrufquén",
     "contact": "800 374 834",
@@ -1796,7 +1796,7 @@
     "id": 92,
     "name": "Rancagua / Kennedy",
     "address": "Av. Kennedy 1601",
-    "region": "Libertador General Bernardo O’Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "Rancagua",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -1892,7 +1892,7 @@
     "id": 97,
     "name": "Santa Cruz",
     "address": "Rafael Casanova 732",
-    "region": "Libertador General Bernardo O’Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "Santa Cruz",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -2499,8 +2499,8 @@
   {
     "id": 129,
     "name": "COLTAUCO",
-    "address": "Camino A Peumo S/N Con Monseñor Lecaros, Coltauco, O’Higgins",
-    "region": "Libertador General Bernardo O’Higgins",
+    "address": "Camino A Peumo S/N Con Monseñor Lecaros, Coltauco, O'Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "Coltauco",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -2947,7 +2947,7 @@
   {
     "id": 152,
     "name": "LOS ANGELES - CENTRO",
-    "address": "O’Higgins 100, Los Ángeles, Bío Bío",
+    "address": "O'Higgins 100, Los Ángeles, Bío Bío",
     "region": "Biobío",
     "locality": "Los Ángeles",
     "contact": "800 374 834",
@@ -3255,8 +3255,8 @@
   {
     "id": 168,
     "name": "PEUMO",
-    "address": "Codao 601, Peumo, O’Higgins",
-    "region": "Libertador General Bernardo O’Higgins",
+    "address": "Codao 601, Peumo, O'Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "Peumo",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -3502,8 +3502,8 @@
   {
     "id": 181,
     "name": "RANCAGUA I",
-    "address": "Av. M.Ramirez, Av. La Compañía 0353, Rancagua, O’Higgins",
-    "region": "Libertador General Bernardo O’Higgins",
+    "address": "Av. M.Ramirez, Av. La Compañía 0353, Rancagua, O'Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "Rancagua",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -3524,8 +3524,8 @@
   {
     "id": 182,
     "name": "RANCAGUA II (FREIRE)",
-    "address": "Alameda Bdo. O’Higgins 024, Av. Capitán Ramón Freire 30, Rancagua, O’Higgins",
-    "region": "Libertador General Bernardo O’Higgins",
+    "address": "Alameda Bdo. O'Higgins 024, Av. Capitán Ramón Freire 30, Rancagua, O'Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "Rancagua",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -3563,8 +3563,8 @@
   {
     "id": 184,
     "name": "RENGO CIUDAD",
-    "address": "Caupolicán 67, Rengo, O’Higgins",
-    "region": "Libertador General Bernardo O’Higgins",
+    "address": "Caupolicán 67, Rengo, O'Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "Rengo",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -4008,8 +4008,8 @@
   {
     "id": 207,
     "name": "PALMILLA",
-    "address": "Ruta 90 40600, Palmilla, O’Higgins",
-    "region": "Libertador General Bernardo O’Higgins",
+    "address": "Ruta 90 40600, Palmilla, O'Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "Palmilla",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -4063,8 +4063,8 @@
   {
     "id": 210,
     "name": "SAN VICENTE TT / RIESCO",
-    "address": "Av. Germán Riesco 1890 Km. 17 Camino La Fruta, San Vicente de Tagua Tagua, O’Higgins",
-    "region": "Libertador General Bernardo O’Higgins",
+    "address": "Av. Germán Riesco 1890 Km. 17 Camino La Fruta, San Vicente de Tagua Tagua, O'Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "San Vicente",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -4082,8 +4082,8 @@
   {
     "id": 211,
     "name": "CHIMBARONGO",
-    "address": "Pisagua, Esquina, Máximo Valdés, Chimbarongo, O’Higgins",
-    "region": "Libertador General Bernardo O’Higgins",
+    "address": "Pisagua, Esquina, Máximo Valdés, Chimbarongo, O'Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "Chimbarongo",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -4135,7 +4135,7 @@
   {
     "id": 214,
     "name": "LAUTARO II",
-    "address": "Avenida O’higgins & 21 de Mayo, Lautaro, Araucanía",
+    "address": "Avenida O'higgins & 21 de Mayo, Lautaro, Araucanía",
     "region": "La Araucanía",
     "locality": "Lautaro",
     "contact": "800 374 834",
@@ -4392,8 +4392,8 @@
   },
   {
     "id": 228,
-    "name": "TALAGANTE / AV BDO. O’HIGGINS",
-    "address": "Av. Bernardo O’Higgins 292, Talagante, Región Metropolitana",
+    "name": "TALAGANTE / AV BDO. O'HIGGINS",
+    "address": "Av. Bernardo O'Higgins 292, Talagante, Región Metropolitana",
     "region": "Metropolitana",
     "locality": "Talagante",
     "contact": "800 374 834",
@@ -4412,7 +4412,7 @@
   {
     "id": 229,
     "name": "QUILLON",
-    "address": "O’Higgins 622, Quillón, Ñuble",
+    "address": "O'Higgins 622, Quillón, Ñuble",
     "region": "Ñuble",
     "locality": "Chillán",
     "contact": "800 374 834",
@@ -4610,7 +4610,7 @@
   {
     "id": 240,
     "name": "CASTRO",
-    "address": "O’Higgins 601, Castro, Los Lagos",
+    "address": "O'Higgins 601, Castro, Los Lagos",
     "region": "Los Lagos",
     "locality": "Castro",
     "contact": "800 374 834",
@@ -4672,8 +4672,8 @@
   },
   {
     "id": 243,
-    "name": "TEMUCO 1 / CAUPOLICÁN - O’HIGGINS",
-    "address": "Caupolican 096 Esquina O’higgins, Temuco, Araucanía",
+    "name": "TEMUCO 1 / CAUPOLICÁN - O'HIGGINS",
+    "address": "Caupolican 096 Esquina O'higgins, Temuco, Araucanía",
     "region": "La Araucanía",
     "locality": "Temuco",
     "contact": "800 374 834",
@@ -4799,8 +4799,8 @@
   {
     "id": 249,
     "name": "SAN FERNANDO CIUDAD",
-    "address": "Av. Bdo. O’Higgins 790, San Fernando, O’Higgins",
-    "region": "Libertador General Bernardo O’Higgins",
+    "address": "Av. Bdo. O'Higgins 790, San Fernando, O'Higgins",
+    "region": "Libertador General Bernardo O'Higgins",
     "locality": "San Fernando",
     "contact": "800 374 834",
     "schedule": "Abierto las 24 horas",
@@ -4980,8 +4980,8 @@
   },
   {
     "id": 260,
-    "name": "CHILLAN / O’HIGGINS",
-    "address": "Av. O’Higgins 799, 3800771 Chillán, Ñuble",
+    "name": "CHILLAN / O'HIGGINS",
+    "address": "Av. O'Higgins 799, 3800771 Chillán, Ñuble",
     "region": "Ñuble",
     "locality": "Chillán",
     "contact": "800 374 834",
@@ -4992,6 +4992,839 @@
     },
     "services": [
       "Kerosene",
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 261,
+    "name": "ANTOFAGASTA / LA NEGRA",
+    "address": "Panamericana Norte Km 1350 La Negra, Antofagasta",
+    "region": "Antofagasta",
+    "locality": "Antofagasta",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -23.782534,
+      "lng": -70.316757
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 262,
+    "name": "MEJILLONES",
+    "address": "Esq. Av. Andalicán, Primera Industrial 168, 1340000 Mejillones, Antofagasta",
+    "region": "Antofagasta",
+    "locality": "Mejillones",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -23.101635,
+      "lng": -70.442153
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 263,
+    "name": "ARICA / 18 SEPTIEMBRE",
+    "address": "18 Septiembre 1709, esq. Lastarria, Arica",
+    "region": "Arica y Parinacota",
+    "locality": "Arica",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -18.484933,
+      "lng": -70.302876
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 264,
+    "name": "COPIAPÓ / DEPETRIS",
+    "address": "Panamericana Norte s/n, Copiapó",
+    "region": "Atacama",
+    "locality": "Copiapó",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -27.363904,
+      "lng": -70.34485
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 265,
+    "name": "CAÑETE",
+    "address": "Avda. Presidente Frei 1151, Cañete",
+    "region": "Biobío",
+    "locality": "Cañete",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -37.789727,
+      "lng": -73.388635
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 266,
+    "name": "CORONEL CIUDAD",
+    "address": "Manuel Montt 699, Coronel",
+    "region": "Biobío",
+    "locality": "Coronel",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -37.028781,
+      "lng": -73.146013
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 267,
+    "name": "HUEPIL",
+    "address": "Av. Linares 1027, Los Ángeles",
+    "region": "Biobío",
+    "locality": "Los Ángeles",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -37.241971,
+      "lng": -71.950406
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 268,
+    "name": "LOS ANGELES COLON",
+    "address": "Colón 810, Los Ángeles",
+    "region": "Biobío",
+    "locality": "Los Ángeles",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -37.463728,
+      "lng": -72.350807
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 269,
+    "name": "SANTA JUANA",
+    "address": "Av. Lautaro 1100, Santa Juana",
+    "region": "Biobío",
+    "locality": "Santa Juana",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -37.167616,
+      "lng": -72.950045
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 270,
+    "name": "TALCAHUANO / 4 ESQUINAS",
+    "address": "Las Golondrinas 1895 / Gran Bretaña, Talcahuano",
+    "region": "Biobío",
+    "locality": "Talcahuano",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -36.776813,
+      "lng": -73.11258
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 271,
+    "name": "LA SERENA / BALMACEDA",
+    "address": "Balmaceda 1665, La Serena",
+    "region": "Coquimbo",
+    "locality": "La Serena",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -29.916164,
+      "lng": -71.253119
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 272,
+    "name": "LOS VILOS",
+    "address": "Panamericana Norte Km 225, Los Vilos",
+    "region": "Coquimbo",
+    "locality": "Los Vilos",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -31.899422,
+      "lng": -71.489964
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 273,
+    "name": "CUNCO",
+    "address": "Avenida Llaima 1346, Cunco",
+    "region": "La Araucanía",
+    "locality": "Cunco",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -38.9302,
+      "lng": -72.0231
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 274,
+    "name": "PADRE LAS CASAS RUTA S-51",
+    "address": "Ruta S-51 2410, Padre las Casas",
+    "region": "La Araucanía",
+    "locality": "Padre las Casas",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -38.842135,
+      "lng": -72.457006
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 275,
+    "name": "LABRANZA 2",
+    "address": "Ruta S-30 09300, Temuco",
+    "region": "La Araucanía",
+    "locality": "Temuco",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -38.761163,
+      "lng": -72.714725
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 276,
+    "name": "TEMUCO / AV ALEMANIA",
+    "address": "Avda. Alemania 01591, Temuco",
+    "region": "La Araucanía",
+    "locality": "Temuco",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -38.73118,
+      "lng": -72.620841
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 277,
+    "name": "RENGO - ERNESTO RIQUELME",
+    "address": "Ernesto Riquelme 1177, Rengo",
+    "region": "Libertador General Bernardo O'Higgins",
+    "locality": "Rengo",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -34.401949,
+      "lng": -70.869265
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 278,
+    "name": "RENGO CARRETERA",
+    "address": "Longitudinal Sur Km 118, Rengo",
+    "region": "Libertador General Bernardo O'Higgins",
+    "locality": "Rengo",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -34.417204,
+      "lng": -70.881863
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 279,
+    "name": "SAN VICENTE TT/C.LA FRUTA",
+    "address": "Camino Pelequén a Peumo Km 17, San Vicente",
+    "region": "Libertador General Bernardo O'Higgins",
+    "locality": "San Vicente",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -34.433239,
+      "lng": -71.074707
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 280,
+    "name": "CHONCHI",
+    "address": "Sargento Candelaria S/N, Chonchi",
+    "region": "Los Lagos",
+    "locality": "Chonchi",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -42.621685,
+      "lng": -73.781094
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 281,
+    "name": "OSORNO - ELEUTERIO RAMÍREZ",
+    "address": "Eleuterio Ramírez 401, Osorno",
+    "region": "Los Lagos",
+    "locality": "Osorno",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -40.57311,
+      "lng": -73.14222
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 282,
+    "name": "OSORNO ZENTENO",
+    "address": "Manuel Rodríguez 1562 local 1, Osorno",
+    "region": "Los Lagos",
+    "locality": "Osorno",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -40.577588,
+      "lng": -73.123383
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 283,
+    "name": "PUERTO MONTT / PANAMERICANA SUR",
+    "address": "Panamericana 100, Puerto Montt",
+    "region": "Los Lagos",
+    "locality": "Puerto Montt",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -41.463798,
+      "lng": -72.953586
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 284,
+    "name": "RUTA 7 PUERTO MONTT",
+    "address": "Avda. Chamiza Lote 4.1 Pelluco, Puerto Montt",
+    "region": "Los Lagos",
+    "locality": "Puerto Montt",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -41.47351,
+      "lng": -72.91268
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 285,
+    "name": "LA UNION / CIUDAD",
+    "address": "Av. Fischer esq. Av. Grob 300, La Unión",
+    "region": "Los Ríos",
+    "locality": "La Unión",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -40.293941,
+      "lng": -73.072042
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 286,
+    "name": "LA UNION CARRETERA",
+    "address": "Panamericana Sur Km 888, La Unión",
+    "region": "Los Ríos",
+    "locality": "La Unión",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -40.32515,
+      "lng": -72.989151
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 287,
+    "name": "PANGUIPULLI 2",
+    "address": "Ancamoe, Ruta 203, Panguipulli",
+    "region": "Los Ríos",
+    "locality": "Panguipulli",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -39.619211,
+      "lng": -72.348614
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 288,
+    "name": "VALDIVIA / PEDRO AGUIRRE CERDA",
+    "address": "Pedro Aguirre Cerda 600, Valdivia",
+    "region": "Los Ríos",
+    "locality": "Valdivia",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -39.810423,
+      "lng": -73.218132
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 289,
+    "name": "VALDIVIA 2 / PICARTE - BEAUCHEFF",
+    "address": "Picarte 1027 esq. Beaucheff, Valdivia",
+    "region": "Los Ríos",
+    "locality": "Valdivia",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -39.817165,
+      "lng": -73.234777
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 290,
+    "name": "LINARES CARRETERA",
+    "address": "Panamericana Sur Km 300, Linares",
+    "region": "Maule",
+    "locality": "Linares",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -35.833032,
+      "lng": -71.633965
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 291,
+    "name": "LINARES / LEON BUSTOS",
+    "address": "Avenida Aníbal León Bustos 0628, Linares",
+    "region": "Maule",
+    "locality": "Linares",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -35.843343,
+      "lng": -71.613597
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 292,
+    "name": "MOLINA",
+    "address": "Luis Cruz Martínez 1999, Molina",
+    "region": "Maule",
+    "locality": "Molina",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -35.111211,
+      "lng": -71.287645
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 293,
+    "name": "TALCA SAN MIGUEL",
+    "address": "Avenida San Miguel 3921, Talca",
+    "region": "Maule",
+    "locality": "Talca",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -35.436948,
+      "lng": -71.619925
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 294,
+    "name": "SALIDA NORTE",
+    "address": "Ruta 5 Norte Km 28 S/N, Colina",
+    "region": "Metropolitana",
+    "locality": "Colina",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -33.219195,
+      "lng": -70.765429
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 295,
+    "name": "INDEPENDENCIA / TOLHUACA",
+    "address": "Av. Independencia 4905, Conchalí",
+    "region": "Metropolitana",
+    "locality": "Conchalí",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -33.383687,
+      "lng": -70.680837
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 296,
+    "name": "VICUÑA / TRINIDAD",
+    "address": "Av. Vicuña Mackenna 9815, La Florida",
+    "region": "Metropolitana",
+    "locality": "La Florida",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -33.546916,
+      "lng": -70.588451
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 297,
+    "name": "MELIPILLA HUILCO BAJO",
+    "address": "Huilco Bajo 2009, Melipilla",
+    "region": "Metropolitana",
+    "locality": "Melipilla",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -33.710554,
+      "lng": -71.216422
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 298,
+    "name": "PUENTE ALTO - CONCHA Y TORO",
+    "address": "Concha y Toro 555, Puente Alto",
+    "region": "Metropolitana",
+    "locality": "Puente Alto",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -33.606243,
+      "lng": -70.576065
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 299,
+    "name": "QUILICURA SAN MARTIN (BRIONES)",
+    "address": "San Martín 599, Quilicura",
+    "region": "Metropolitana",
+    "locality": "Quilicura",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -33.369917,
+      "lng": -70.738609
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 300,
+    "name": "SAN BERNARDO 2",
+    "address": "Padre Hurtado 13829, San Bernardo",
+    "region": "Metropolitana",
+    "locality": "San Bernardo",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -33.58747,
+      "lng": -70.6783
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 301,
+    "name": "GRAN AVENIDA P.10",
+    "address": "Gran Avenida José Miguel Carrera 4613, San Miguel",
+    "region": "Metropolitana",
+    "locality": "San Miguel",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -33.496144,
+      "lng": -70.653103
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 302,
+    "name": "IQUIQUE / GOMEZ CARREÑO",
+    "address": "Pedro Prado / Gómez Carreño, Iquique",
+    "region": "Tarapacá",
+    "locality": "Iquique",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -20.233006,
+      "lng": -70.135549
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 303,
+    "name": "IQUIQUE / SALVADOR ALLENDE",
+    "address": "Av. Salvador Allende esq. Bernardo O'Higgins, Iquique",
+    "region": "Tarapacá",
+    "locality": "Iquique",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -20.219556,
+      "lng": -70.13453
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 304,
+    "name": "RUTA 78",
+    "address": "Ruta 66 1, 2230150 Santo Domingo, Valparaíso",
+    "region": "Valparaíso",
+    "locality": "Santo Domingo",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -33.635218,
+      "lng": -71.383204
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 305,
+    "name": "SAN FELIPE - MIRAFLORES",
+    "address": "Miraflores 2331, San Felipe",
+    "region": "Valparaíso",
+    "locality": "San Felipe",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -32.750233,
+      "lng": -70.708169
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 306,
+    "name": "VALPARAÍSO / AV. ARGENTINA",
+    "address": "Av. Argentina 710, Valparaíso",
+    "region": "Valparaíso",
+    "locality": "Valparaíso",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -33.049478,
+      "lng": -71.60356
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 307,
+    "name": "VIÑA DEL MAR / LAS SALINAS",
+    "address": "Av. Jorge Montt 1700, Viña del Mar",
+    "region": "Valparaíso",
+    "locality": "Viña del Mar",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -33.004711,
+      "lng": -71.549702
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 308,
+    "name": "CHILLÁN / LOS PUELCHES",
+    "address": "Avenida Los Puelches 1335, Chillán",
+    "region": "Ñuble",
+    "locality": "Chillán",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -36.621108,
+      "lng": -72.086025
+    },
+    "services": [
+      "Aire"
+    ],
+    "tag": "ESTACIÓN DE SERVICIO"
+  },
+  {
+    "id": 309,
+    "name": "CHILLÁN / PINTO",
+    "address": "Av. O'Higgins 26, Pinto",
+    "region": "Ñuble",
+    "locality": "Pinto",
+    "contact": "800 374 834",
+    "schedule": "Abierto las 24 horas",
+    "coords": {
+      "lat": -36.698259,
+      "lng": -71.897035
+    },
+    "services": [
       "Aire"
     ],
     "tag": "ESTACIÓN DE SERVICIO"

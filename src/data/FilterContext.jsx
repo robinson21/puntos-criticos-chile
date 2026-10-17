@@ -14,6 +14,9 @@ export function FilterProvider({ children, records }) {
   const [causa, setCausa] = useState(inicial.causa || '');
   const [nivel, setNivel] = useState(inicial.nivel || '');
   const [tipoSolucion, setTipoSolucion] = useState(inicial.tipo || '');
+  const [provincia, setProvincia] = useState(inicial.provincia || '');
+  // Solo los puntos que SENAPRED marca como afectados en el período (este invierno)
+  const [soloAfectados, setSoloAfectados] = useState(inicial.afectados === '1');
 
   // Refleja región y filtros en la URL (replaceState: no ensucia el historial).
   // Se espera a que cargue la región pedida en la URL para no borrarla antes.
@@ -23,20 +26,24 @@ export function FilterProvider({ children, records }) {
       if (regionActual) setListo(true);
       return;
     }
-    escribirUrl({ region: regionActual, comuna, causa, nivel, tipo: tipoSolucion });
-  }, [listo, regionActual, comuna, causa, nivel, tipoSolucion]);
+    escribirUrl({ region: regionActual, provincia, comuna, causa, nivel, tipo: tipoSolucion, afectados: soloAfectados ? '1' : '' });
+  }, [listo, regionActual, provincia, comuna, causa, nivel, tipoSolucion, soloAfectados]);
 
   const filtered = useMemo(() => {
     if (!records.length) return [];
     return records.filter(r =>
+      !(provincia && r.pv !== provincia) &&
+      !(soloAfectados && !r.af) &&
       !(comuna && r.c !== comuna) &&
       !(causa && r.cs !== causa) &&
       !(nivel && r.lv !== nivel) &&
       !(tipoSolucion && r.tp !== (tipoSolucion === SIN_INFO ? '' : tipoSolucion))
     );
-  }, [records, comuna, causa, nivel, tipoSolucion]);
+  }, [records, provincia, soloAfectados, comuna, causa, nivel, tipoSolucion]);
 
-  const comunas = useMemo(() => [...new Set(records.map(r => r.c))].sort(), [records]);
+  const provincias = useMemo(() => [...new Set(records.map(r => r.pv).filter(Boolean))].sort(), [records]);
+  const hayAfectados = useMemo(() => records.some(r => r.af), [records]);
+  const comunas = useMemo(() => [...new Set(records.filter(r => !provincia || r.pv === provincia).map(r => r.c))].sort(), [records, provincia]);
   const causas = useMemo(() => [...new Set(records.map(r => r.cs).filter(Boolean))].sort(), [records]);
   const tipos = useMemo(() => [...new Set(records.map(r => r.tp).filter(Boolean))].sort(), [records]);
   const haySinTipo = useMemo(() => records.some(r => !r.tp), [records]);
@@ -46,6 +53,8 @@ export function FilterProvider({ children, records }) {
     causa, setCausa,
     nivel, setNivel,
     tipoSolucion, setTipoSolucion,
+    provincia, setProvincia, provincias,
+    soloAfectados, setSoloAfectados, hayAfectados,
     filtered,
     comunas,
     causas,

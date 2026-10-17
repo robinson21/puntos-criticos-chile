@@ -2,7 +2,7 @@
 // para poder compartir exactamente lo que se está viendo.
 import { REGION_SLUGS } from './regiones';
 
-const PARAMS = ['comuna', 'causa', 'nivel', 'tipo'];
+const PARAMS = ['provincia', 'comuna', 'causa', 'nivel', 'tipo', 'afectados'];
 
 export function leerUrl() {
   if (typeof window === 'undefined') return {};

@@ -21,11 +21,13 @@ export default function SenapredEstado() {
       ? `La revisión diaria no corre desde ${revisado?.texto || 'hace tiempo'}.`
       : e.fuente === 'respaldo'
         ? 'El link oficial de SENAPRED no entrega el Excel: se usa una copia de respaldo publicada por un tercero. Verifica si SENAPRED publicó una versión nueva.'
-        : 'Excel descargado desde el sitio oficial de SENAPRED.';
+        : e.formato === 'servicio'
+          ? 'Datos leídos directamente del servicio oficial de SENAPRED (el mismo de su tablero "Ver puntos críticos"). La fecha es la última edición que hizo SENAPRED.'
+          : 'Excel descargado desde el sitio oficial de SENAPRED.';
 
   return (
     <div className={`senapred-estado senapred-${nivel}`} title={detalle}>
-      <span>{nivel === 'ok' ? '✅' : '⚠️'} Excel SENAPRED{e.excel_modificado ? ` del ${fecha(e.excel_modificado)}` : ''}</span>
+      <span>{nivel === 'ok' ? '✅' : '⚠️'} {e.formato === 'servicio' ? 'Datos oficiales SENAPRED' : 'Excel SENAPRED'}{e.excel_modificado ? ` · editados el ${fecha(e.excel_modificado)}` : ''}</span>
       <span>revisado {revisado?.texto || '—'}{e.fuente === 'respaldo' ? ' · copia de respaldo' : ''}</span>
       {nivel !== 'ok' && <small>{detalle}</small>}
     </div>

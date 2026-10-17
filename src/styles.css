@@ -1404,3 +1404,10 @@ footer {
   padding: 10px 14px; border: 1px dashed var(--accent); border-radius: 6px; background: var(--accent-glow); font-size: 13px;
 }
 .vista-nacional b { color: var(--accent); }
+
+/* ===== PUNTOS AFECTADOS ESTE INVIERNO ===== */
+.filter-afectados.active { background: #0f172a; color: #fff; border-color: #0f172a; }
+:root:not([data-theme="light"]) .filter-afectados.active { background: #f8fafc; color: #0f172a; }
+.popup-afectado { display: inline-block; margin: 2px 0 4px; padding: 1px 7px; border-radius: 999px; background: #0f172a; color: #fff; font-size: 11px; font-weight: 600; }
+.dot-afectado { background: #94a3b8 !important; box-shadow: 0 0 0 2px #fff, 0 0 0 3px #64748b; }
+.est-afectados { color: var(--ink); }
