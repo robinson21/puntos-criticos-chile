@@ -1383,3 +1383,24 @@ footer {
 }
 .popup-linea { font-size: 12px; line-height: 1.45; margin: 2px 0; }
 .popup-linea b { font-weight: 600; }
+
+/* ===== ESTADO DEL EXCEL SENAPRED ===== */
+.senapred-estado {
+  display: flex; flex-direction: column; gap: 1px; max-width: 340px; margin-top: 4px;
+  padding: 6px 10px; border-radius: 6px; border: 1px solid var(--line); border-left: 3px solid var(--teal);
+  font-family: var(--font-mono); font-size: 10.5px; color: var(--muted); text-align: left; background: var(--bg-panel);
+}
+.senapred-estado small { font-family: var(--font); font-size: 11px; line-height: 1.35; margin-top: 3px; color: var(--ink); }
+.senapred-aviso { border-left-color: var(--amber); }
+.senapred-mal { border-left-color: var(--red); }
+
+/* ===== ALERTAS DE LA REGIÓN PLEGABLES ===== */
+.ar-mas { margin-top: 6px; background: none; border: 0; color: var(--accent); font: 600 12px var(--font); cursor: pointer; padding: 2px 0; }
+.ar-mas:hover { text-decoration: underline; }
+
+/* ===== VISTA NACIONAL ===== */
+.vista-nacional {
+  display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-bottom: 12px;
+  padding: 10px 14px; border: 1px dashed var(--accent); border-radius: 6px; background: var(--accent-glow); font-size: 13px;
+}
+.vista-nacional b { color: var(--accent); }

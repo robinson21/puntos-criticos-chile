@@ -78,7 +78,7 @@ export default function AramcoMarkers({ comuna, region }) {
       <button type="button" className={`aramco-toggle ${visibles ? 'on' : ''}`} onClick={() => setVisibles(v => !v)}
         aria-pressed={visibles} title="Mostrar u ocultar las estaciones de servicio">
         <span aria-hidden>⛽</span> Estaciones <span className="aramco-num">{lista.length}</span>
-        {region && expuestas > 0 && <span className="aramco-alerta">{expuestas} expuestas</span>}
+        {expuestas > 0 && <span className="aramco-alerta">{expuestas} expuestas</span>}
       </button>
 
       {visibles && lista.map(e => {

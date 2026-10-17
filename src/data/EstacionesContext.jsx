@@ -16,7 +16,7 @@ export function EstacionesProvider({ children }) {
   const [focos, setFocos] = useState([]);
   const [radioKm, setRadioKm] = useState(1);
   const [seleccion, setSeleccion] = useState(null);
-  const [visibles, setVisibles] = useState(false);
+  const [visibles, setVisibles] = useState(true);
 
   useEffect(() => {
     fetch('./data/aramco_estaciones.json').then(r => r.json()).then(d => setEstaciones(Array.isArray(d) ? d.filter(e => e.coords) : [])).catch(() => {});

@@ -10,6 +10,8 @@ Visualizador de los puntos críticos de la temporada de invierno reportados a **
 - Avisos, alertas y alarmas vigentes de la DMC junto al mapa, con los puntos críticos de las regiones afectadas.
 - Capas: lluvia animada (RainViewer), nubes satelitales animadas (GOES-East, NASA GIBS), viento, nubes y temperatura (OpenWeatherMap) e incendios activos (NASA FIRMS, se activa con el secreto `FIRMS_MAP_KEY` del repo).
 - **Estaciones de servicio expuestas:** cruce de las estaciones Aramco con los puntos críticos dentro de un radio (500 m a 5 km), las alertas DMC de su región y los focos de incendio a ≤ 10 km. Nivel de exposición (alta/media/baja), botón para verla en el mapa con su radio y exportación a CSV.
+- **Vista nacional** al entrar: estaciones, alertas DMC e incendios de todo Chile sin elegir región.
+- **Estado del Excel SENAPRED** en el encabezado: fecha del archivo, cuándo se revisó y si vino del sitio oficial o de la copia de respaldo (`senapred_estado.json`, solo en la rama `datos`).
 - Vistas compartibles por URL (`?region=coquimbo&comuna=VICUÑA&nivel=Alto`) y exportación a CSV de lo filtrado.
 - Indicador de antigüedad de alertas y pronóstico (ámbar > 14 h, rojo > 26 h).
 

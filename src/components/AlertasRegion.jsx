@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useData } from '../data/DataContext';
 import { useAlertas, alertasDeRegion, antiguedad, zonasDeRegion, limpiarTexto, COLOR_TIPO } from '../data/alertas';
 import { tituloRegion } from '../data/stats';
@@ -7,6 +8,7 @@ import { tituloRegion } from '../data/stats';
 export default function AlertasRegion() {
   const { regionActual, records } = useData();
   const { data } = useAlertas();
+  const [abiertas, setAbiertas] = useState(false);
   if (!regionActual || !data) return null;
 
   const vigentes = alertasDeRegion(data.alertas, regionActual);
@@ -34,7 +36,7 @@ export default function AlertasRegion() {
         {edad && <small className={`edad edad-${edad.nivel}`}>DMC · {edad.texto}</small>}
       </div>
       <ul>
-        {vigentes.map(a => (
+        {(abiertas ? vigentes : vigentes.slice(0, 1)).map(a => (
           <li key={a.id}>
             <span className="alerta-tipo" data-tipo={a.tipo} style={{ background: COLOR_TIPO[a.tipo] || a.color }}>{a.tipo.toUpperCase()}</span>
             <span className="ar-fen">{a.icono} {a.fenomeno}</span>
@@ -43,6 +45,11 @@ export default function AlertasRegion() {
           </li>
         ))}
       </ul>
+      {vigentes.length > 1 && (
+        <button type="button" className="ar-mas" onClick={() => setAbiertas(v => !v)} aria-expanded={abiertas}>
+          {abiertas ? 'Ver menos' : `Ver ${vigentes.length - 1} ${vigentes.length - 1 === 1 ? 'aviso más' : 'avisos más'} ▾`}
+        </button>
+      )}
     </div>
   );
 }

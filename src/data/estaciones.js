@@ -43,15 +43,17 @@ function nivel({ porNivel, total }, alertas, incendios) {
 }
 
 export function analizarEstaciones({ estaciones, region, comuna, puntos, alertas, focos, radioKm }) {
-  if (!region) return [];
+  // Sin región elegida: todo Chile, solo con alertas DMC e incendios (los puntos críticos se cargan por región).
   const margen = radioKm / 111;
   const margenFuego = RADIO_INCENDIO_KM / 111;
-  const alertasRegion = alertasDeRegion(alertas || [], region);
+  const porRegion = {};
+  const alertasDe = r => (porRegion[r] ??= alertasDeRegion(alertas || [], r));
   const comunaClave = clave(comuna);
 
   return estaciones
-    .filter(e => regionSenapred(e.region) === region && (!comunaClave || clave(e.locality) === comunaClave))
+    .filter(e => !region || (regionSenapred(e.region) === region && (!comunaClave || clave(e.locality) === comunaClave)))
     .map(e => {
+      const alertasRegion = alertasDe(regionSenapred(e.region));
       const pos = { lat: e.coords.lat, lon: e.coords.lng };
       const porNivel = { 'Muy Alto': 0, Alto: 0, Medio: 0, Bajo: 0 };
       let total = 0, masCercano = null;
@@ -91,7 +93,7 @@ export function descargarCsvEstaciones(filas, region, radioKm) {
     'Muy Alto', 'Alto', 'Medio', 'Bajo', 'Punto más cercano', 'Alertas DMC vigentes', `Focos de incendio a ≤ ${RADIO_INCENDIO_KM} km`,
     'Foco más cercano', 'Latitud', 'Longitud'];
   const lineas = filas.map(f => [
-    EXPOSICION[f.nivel].texto, f.estacion.name, f.estacion.address, f.estacion.locality, region, f.puntos.total,
+    EXPOSICION[f.nivel].texto, f.estacion.name, f.estacion.address, f.estacion.locality, region || f.estacion.region, f.puntos.total,
     ...NIVELES.map(n => f.puntos.porNivel[n]), fmtKm(f.puntos.masCercano),
     f.alertas.map(a => `${a.tipo} ${a.fenomeno}`).join(' | '), f.incendios.cantidad, fmtKm(f.incendios.masCercano),
     String(f.pos.lat).replace('.', ','), String(f.pos.lon).replace('.', ','),
@@ -99,7 +101,7 @@ export function descargarCsvEstaciones(filas, region, radioKm) {
   const blob = new Blob(['﻿' + [cab.join(';'), ...lineas].join('\r\n')], { type: 'text/csv;charset=utf-8' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = `estaciones-expuestas_${clave(region)}.csv`;
+  a.download = `estaciones-expuestas_${clave(region) || 'chile'}.csv`;
   document.body.appendChild(a);
   a.click();
   a.remove();

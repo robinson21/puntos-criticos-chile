@@ -11,6 +11,7 @@ import Alertas from './components/Alertas';
 import PronosticoRegional from './components/PronosticoRegional';
 import AlertasRegion from './components/AlertasRegion';
 import EstacionesExpuestas from './components/EstacionesExpuestas';
+import SenapredEstado from './components/SenapredEstado';
 import { EstacionesProvider } from './data/EstacionesContext';
 
 // Estado global de tema (claro por defecto como pidió el usuario).
@@ -90,6 +91,7 @@ function Dashboard() {
           <div className="meta">
             <div><b>Fuente:</b> SENAPRED</div>
             {metadata && <div><b>Datos:</b> {metadata.total.toLocaleString('es-CL')} · {metadata.comunas} comunas</div>}
+            <SenapredEstado />
             <ThemeToggle />
           </div>
         </header>
@@ -101,17 +103,16 @@ function Dashboard() {
 
         {/* ===== MAPA PROTAGONISTA (ancho completo, arriba) ===== */}
         {hasRegion && <AlertasRegion />}
-        {hasRegion ? (
-          <MapView />
-        ) : (
-          <div className="empty-state">
-            <p>Selecciona una región para ver el mapa de puntos críticos detallado</p>
-            <p className="sub">Elige una región arriba para explorar el mapa, ranking y pronóstico</p>
+        {!hasRegion && (
+          <div className="vista-nacional">
+            <b>Vista nacional</b>
+            <span>Estaciones de servicio, alertas DMC e incendios de todo Chile. Elige una región arriba para ver sus puntos críticos, el ranking y el pronóstico.</span>
           </div>
         )}
+        <MapView />
 
         {/* Cruce de estaciones de servicio con puntos críticos, alertas DMC e incendios */}
-        {hasRegion && <EstacionesExpuestas />}
+        <EstacionesExpuestas />
 
         {/* Ranking desplegable (plegado por defecto): solo ocupa espacio al abrirlo */}
         {hasRegion && <Ranking />}
