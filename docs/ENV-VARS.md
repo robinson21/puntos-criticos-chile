@@ -36,7 +36,8 @@ El Worker `owm-proxy` lee una variable secreta al vuelo:
 ## Despliegue
 - Lo hace GitHub Actions (`.github/workflows/publicar.yml`) al unir a `master`, cada 3 h y a mano
   (*Run workflow*). Publica en GitHub Pages con *Source: GitHub Actions*.
-- Secretos del repo usados por el workflow: `OPENWEATHER_API_KEY` (pronóstico) y `VITE_MAPTILER_KEY`
-  (opcional, mapas base). La key de NASA FIRMS no va en el repo: es el secreto `FIRMS_MAP_KEY` del Worker.
+- Secretos del repo usados por el workflow: `OPENWEATHER_API_KEY` (pronóstico), `FIRMS_MAP_KEY`
+  (incendios NASA FIRMS → `public/data/incendios.json`) y `VITE_MAPTILER_KEY` (opcional, mapas base).
+  Si el JSON de incendios no existe, el portal cae al `/api/firms` del Worker (secreto `FIRMS_MAP_KEY` en Cloudflare).
 - `npm run deploy` (gh-pages) queda solo como respaldo manual; con *Source: GitHub Actions* la rama
   `gh-pages` no se publica.

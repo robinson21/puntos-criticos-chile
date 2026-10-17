@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { CircleMarker, Popup } from 'react-leaflet';
 
-const REFRESCO_MS = 30 * 60 * 1000; // el Worker cachea 30 min
+const REFRESCO_MS = 30 * 60 * 1000; // el JSON se renueva cada 3 h y el Worker cachea 30 min
 const RADIO_KM = 5;
 
 // Distancia aproximada en km (equirectangular: sobra para radios de pocos km).
@@ -21,28 +21,29 @@ export function puntosCercaDeFocos(puntos, focos, radioKm = RADIO_KM) {
   ).length;
 }
 
-// Focos de incendio activos (NASA FIRMS, últimas 24 h) servidos por el Worker.
-export default function IncendiosLayer({ proxy, activo, puntos, onResumen }) {
+// Focos de incendio activos (NASA FIRMS, últimas 24 h). `url` es el JSON que
+// genera GitHub Actions (data/incendios.json) o, si no existe, el /api/firms del Worker.
+export default function IncendiosLayer({ url, activo, puntos, onResumen }) {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    if (!activo || !proxy) return;
+    if (!activo || !url) return;
     let vivo = true;
     const cargar = () =>
-      fetch(`${proxy}/api/firms`)
+      fetch(url, { cache: 'no-cache' })
         .then(r => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
         .then(d => vivo && setData(d))
         .catch(e => vivo && setData({ error: e.message, focos: [] }));
     cargar();
     const t = setInterval(cargar, REFRESCO_MS);
     return () => { vivo = false; clearInterval(t); };
-  }, [activo, proxy]);
+  }, [activo, url]);
 
   const focos = data?.focos || [];
   const cerca = useMemo(() => puntosCercaDeFocos(puntos, focos), [puntos, focos]);
 
   useEffect(() => {
-    onResumen?.(activo && data ? { focos: focos.length, cerca, error: data.error, radioKm: RADIO_KM } : null);
+    onResumen?.(activo && data ? { focos: focos.length, cerca, error: data.error, radioKm: RADIO_KM, actualizado: data.actualizado } : null);
   }, [activo, data, focos.length, cerca, onResumen]);
 
   if (!activo) return null;

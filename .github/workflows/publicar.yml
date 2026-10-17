@@ -2,12 +2,13 @@ name: Actualizar datos y publicar
 
 # Reemplaza al servidor: actualiza los datos y publica el sitio en GitHub Pages.
 # Requiere Settings → Pages → Source: "GitHub Actions" y los secretos del repo
-# OPENWEATHER_API_KEY (pronóstico) y, opcional, VITE_MAPTILER_KEY (mapas base).
+# OPENWEATHER_API_KEY (pronóstico), FIRMS_MAP_KEY (incendios NASA FIRMS) y,
+# opcional, VITE_MAPTILER_KEY (mapas base).
 on:
   push:
     branches: [master]
   schedule:
-    - cron: '17 */3 * * *' # alertas DMC y pronóstico, cada 3 h
+    - cron: '17 */3 * * *' # alertas DMC, pronóstico e incendios, cada 3 h
     - cron: '43 9 * * *'   # además, Excel de puntos críticos SENAPRED, una vez al día
   workflow_dispatch:
 
@@ -62,10 +63,17 @@ jobs:
           OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
         run: python3 actualizar_pronostico.py
 
+      - name: Incendios NASA FIRMS
+        id: incendios
+        continue-on-error: true
+        env:
+          FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+        run: python3 actualizar_incendios.py
+
       # Si una fuente falla, se publica lo último que ya estaba en el sitio
       # (más reciente que la copia del repo); si tampoco existe, queda la del repo.
       - name: Conservar lo último publicado si una fuente falló
-        if: steps.alertas.outcome == 'failure' || steps.pronostico.outcome == 'failure'
+        if: steps.alertas.outcome == 'failure' || steps.pronostico.outcome == 'failure' || steps.incendios.outcome == 'failure'
         run: |
           recuperar() {
             curl -fsSL "$SITIO/data/$1" -o "/tmp/$1" && python3 -m json.tool "/tmp/$1" > /dev/null \
@@ -74,6 +82,7 @@ jobs:
           }
           if [ "${{ steps.alertas.outcome }}" = failure ]; then recuperar alertas.json; fi
           if [ "${{ steps.pronostico.outcome }}" = failure ]; then recuperar pronostico_regional.json; fi
+          if [ "${{ steps.incendios.outcome }}" = failure ]; then recuperar incendios.json; fi
 
       - run: npm ci
       - name: Compilar

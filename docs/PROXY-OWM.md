@@ -48,7 +48,14 @@ El código vive en **este repo** en la raíz `owm-proxy-worker.js` (y `wrangler.
 Esto significa que el proyecto está **100% reproducible**: si Cloudflare se cae o la cuenta se pierde,
 cualquier persona puede redesplegar el Worker en otra cuenta en ~1 minuto.
 
-## Cómo redesplegar el Worker (si hiciera falta)
+## Despliegue automático (GitHub Actions)
+El workflow `.github/workflows/worker.yml` despliega el Worker cada vez que cambia
+`owm-proxy-worker.js` o `wrangler.toml` en `master` (también a mano desde Actions → *Desplegar Worker*),
+y sincroniza `FIRMS_MAP_KEY` como secreto del Worker. Solo necesita, una vez, el secreto del repo
+`CLOUDFLARE_API_TOKEN` (token con permiso `Account → Workers Scripts:Edit`) y, si el token ve más
+de una cuenta, `CLOUDFLARE_ACCOUNT_ID`.
+
+## Cómo redesplegar el Worker a mano (si hiciera falta)
 1. Necesitas un token de Cloudflare con permiso `Account → Workers Scripts:Edit` sobre la cuenta.
 2. Configura el secreto (si no existe):
    ```bash
