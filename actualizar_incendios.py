@@ -6,7 +6,7 @@ con el mismo formato que el /api/firms del Worker.
 Requiere la variable de entorno FIRMS_MAP_KEY (Map Key gratuita de NASA FIRMS).
 """
 import csv, io, json, os, sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from urllib.request import urlopen
 
 # Carpeta del proyecto: la del script, salvo que PC_PROJECT_DIR diga otra cosa.
@@ -17,7 +17,10 @@ FIRMS_BASE = 'https://firms.modaps.eosdis.nasa.gov/api/area/csv'
 FIRMS_AREA = '-76,-56.5,-66,-17.4'
 # Satélites VIIRS en tiempo casi real; se pueden cambiar con la variable FIRMS_SOURCES.
 FIRMS_SOURCES_DEFAULT = 'VIIRS_SNPP_NRT,VIIRS_NOAA20_NRT,VIIRS_NOAA21_NRT'
-DIAS = 1
+# FIRMS cuenta días por fecha UTC: pedir 1 día deja el mapa vacío tras la medianoche UTC.
+# Se piden 2 y se filtran las últimas HORAS por fecha y hora de detección.
+DIAS = 2
+HORAS = 24
 
 def parse_csv(texto):
     focos = []
@@ -50,6 +53,19 @@ def descargar(key, fuente):
         raise RuntimeError(texto.strip()[:80] or 'respuesta vacía')
     return parse_csv(texto)
 
+def recientes(focos, ahora):
+    desde = ahora - timedelta(hours=HORAS)
+    out = []
+    for f in focos:
+        try:
+            t = datetime.strptime(f"{f['fecha']} {f['hora'][:5]}", '%Y-%m-%d %H:%M').replace(tzinfo=timezone.utc)
+        except ValueError:
+            out.append(f)  # sin fecha/hora legible: mejor mostrarlo que perderlo
+            continue
+        if t >= desde:
+            out.append(f)
+    return out
+
 def actualizar():
     key = (os.environ.get('FIRMS_MAP_KEY') or '').strip()
     if not key:
@@ -59,9 +75,10 @@ def actualizar():
     fuentes = [f.strip() for f in os.environ.get('FIRMS_SOURCES', FIRMS_SOURCES_DEFAULT).split(',') if f.strip()]
     focos, ok, fallidas = [], [], []
     # Cada satélite por separado: si uno falla (o no existe), los otros igual sirven.
+    ahora = datetime.now(timezone.utc)
     for fuente in fuentes:
         try:
-            nuevos = descargar(key, fuente)
+            nuevos = recientes(descargar(key, fuente), ahora)
             focos += nuevos
             ok.append(fuente)
             print(f'   {fuente}: {len(nuevos)} focos')
@@ -78,14 +95,14 @@ def actualizar():
     path = os.path.join(PUBLIC_DIR, 'incendios.json')
     with open(path, 'w') as f:
         json.dump({
-            'actualizado': datetime.now(timezone.utc).isoformat(timespec='seconds'),
-            'dias': DIAS,
+            'actualizado': ahora.isoformat(timespec='seconds'),
+            'horas': HORAS,
             'fuentes': ok,
             'fallidas': fallidas,
             'focos': focos,
         }, f, ensure_ascii=False)
 
-    print(f'✅ {len(focos)} focos activos ({DIAS} día) desde {len(ok)} satélite(s)')
+    print(f'✅ {len(focos)} focos activos (últimas {HORAS} h) desde {len(ok)} satélite(s)')
     print(f'   Guardado en {path}')
     return len(focos)
 
