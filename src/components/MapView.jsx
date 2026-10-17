@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useMemo, useCallback } from 'react';
 import { MapContainer, TileLayer, CircleMarker, Popup, ZoomControl, useMap, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 import { useFilters } from '../data/FilterContext';
@@ -9,18 +9,8 @@ import LayersControl from './LayersControl';
 import IncendiosLayer from './IncendiosLayer';
 import NubesSatelite from './NubesSatelite';
 import { LluviaRadar, LluviaNasa } from './Lluvia';
+import LineaTiempo, { useLineaTiempo } from './LineaTiempo';
 
-// "🌧️ Lluvia NASA · 18:30 (hace 6 h) · 12/12": hora del cuadro que se está mostrando
-function HoraCapa({ estado, icono, nombre }) {
-  if (!estado) return null;
-  if (estado.error) return <div className="capa-hora error">{icono} {nombre}: no disponible</div>;
-  const horas = Math.round((Date.now() - Date.parse(estado.tiempo)) / 36e5);
-  return (
-    <div className={`capa-hora ${estado.cuadro === estado.total ? 'ultimo' : ''}`}>
-      {icono} {nombre} · {horaChile(estado.tiempo)}{horas >= 1 ? ` (hace ${horas} h)` : ''} · {estado.cuadro}/{estado.total}
-    </div>
-  );
-}
 import { horaChile } from '../data/gibs';
 import 'leaflet/dist/leaflet.css';
 
@@ -284,7 +274,6 @@ export default function MapView() {
   const [urlIncendios, setUrlIncendios] = useState(null);
   const firmsDisponible = Boolean(urlIncendios);
   const [resumenIncendios, setResumenIncendios] = useState(null);
-  const [estadoSatelite, setEstadoSatelite] = useState(null);
   useEffect(() => {
     let vivo = true;
     const activar = url => {
@@ -306,8 +295,14 @@ export default function MapView() {
       .catch(() => {});
     return () => { vivo = false; };
   }, [TILE_PROXY, hasTileProxy]);
-  const [estadoRadar, setEstadoRadar] = useState(null);
-  const [estadoNasa, setEstadoNasa] = useState(null);
+  // Cuadros de cada capa animada y línea de tiempo común (estilo Zoom Earth)
+  const [cuadros, setCuadros] = useState({ lluviaNasa: null, lluvia: null, satelite: null });
+  const cuadrosDe = useCallback(id => v => setCuadros(c => (c[id] === v ? c : { ...c, [id]: v })), []);
+  const onNasa = useMemo(() => cuadrosDe('lluviaNasa'), [cuadrosDe]);
+  const onRadar = useMemo(() => cuadrosDe('lluvia'), [cuadrosDe]);
+  const onNubes = useMemo(() => cuadrosDe('satelite'), [cuadrosDe]);
+  const linea = useLineaTiempo(cuadros);
+  const conLluvia = activeLayers.includes('lluviaNasa') || activeLayers.includes('lluvia');
   const maptilerValida = useMapTilerValida();
   const usarMapTiler = maptilerValida === true;
   const { comuna } = useFilters();
@@ -549,7 +544,9 @@ export default function MapView() {
 
       {/* Punto geocodificado (marcador) y re-centrado a Chile se manejan dentro del MapContainer */}
       {/* map-stage: contenedor relativo para que los controles flotantes queden sobre el mapa */}
-      <div className="map-stage">
+      {/* --suave-imerg: una celda NASA (0,1°) mide 0,0711·2^zoom px; el suavizado es ~90 % de eso */}
+      <div className={`map-stage ${conLluvia || activeLayers.includes('satelite') ? 'con-animacion' : ''}`}
+        style={{ '--suave-imerg': `${Math.min(36, Math.max(3, 0.0711 * 2 ** zoomActual * 0.9)).toFixed(1)}px` }}>
       {/* preferCanvas: los miles de CircleMarker se dibujan en un solo <canvas> en vez de
           un <path> SVG cada uno; mismo aspecto y popups, mucho más liviano en celulares. */}
       <MapContainer center={center} zoom={zoom} zoomControl={false} className="map-container" scrollWheelZoom={true} preferCanvas={true}>
@@ -558,6 +555,7 @@ export default function MapView() {
         <TileLayer
           url={BASEMAPS[baseMap].url()}
           attribution={BASEMAPS[baseMap].attr()}
+          className="capa-base"
         />
         {/* Marcador "Mi ubicación" (GPS del navegador) */}
         {myLoc && <MyLocation coords={myLoc} />}
@@ -590,9 +588,9 @@ export default function MapView() {
             </Popup>
           </CircleMarker>
         ))}
-        <NubesSatelite activo={activeLayers.includes('satelite')} onEstado={setEstadoSatelite} />
-        <LluviaNasa activo={activeLayers.includes('lluviaNasa')} onEstado={setEstadoNasa} />
-        <LluviaRadar activo={activeLayers.includes('lluvia')} onEstado={setEstadoRadar} />
+        <NubesSatelite activo={activeLayers.includes('satelite')} tiempo={linea.tiempo} onCuadros={onNubes} />
+        <LluviaNasa activo={activeLayers.includes('lluviaNasa')} tiempo={linea.tiempo} onCuadros={onNasa} />
+        <LluviaRadar activo={activeLayers.includes('lluvia')} tiempo={linea.tiempo} onCuadros={onRadar} />
         <IncendiosLayer
           url={urlIncendios}
           activo={firmsDisponible && activeLayers.includes('incendios')}
@@ -628,13 +626,11 @@ export default function MapView() {
       </button>
       {locErr && <div className="gps-locate-err">{locErr}</div>}
       <LayersControl activeLayers={activeLayers} onToggle={toggleLayer} hasOwmKey={hasOwmSource} hasFirmsKey={firmsDisponible} />
-      {(estadoSatelite || estadoNasa || estadoRadar) && (
-        <div className="capas-hora">
-          <HoraCapa estado={estadoNasa} icono="🌧️" nombre="Lluvia NASA" />
-          <HoraCapa estado={estadoRadar} icono="📡" nombre="Radar" />
-          <HoraCapa estado={estadoSatelite} icono="🛰️" nombre="Nubes GOES" />
-        </div>
-      )}
+      <LineaTiempo linea={linea} mostrarEscala={conLluvia} capas={[
+        { id: 'lluviaNasa', nombre: 'Lluvia NASA', icono: '🌧️', color: '#22c55e', cuadros: cuadros.lluviaNasa },
+        { id: 'lluvia', nombre: 'Radar', icono: '📡', color: '#38bdf8', cuadros: cuadros.lluvia },
+        { id: 'satelite', nombre: 'Nubes GOES', icono: '🛰️', color: '#cbd5e1', cuadros: cuadros.satelite },
+      ]} />
       {resumenIncendios && (
         <div className={`incendios-resumen ${resumenIncendios.cerca ? 'alerta' : ''}`}>
           {resumenIncendios.error
@@ -648,9 +644,6 @@ export default function MapView() {
           <span key={n}><span className="dot" style={{background:c}}></span> {n}</span>
         ))}
         <span><span className="dot dot-afectado"></span> Afectado este invierno</span>
-        {activeLayers.includes('lluviaNasa') && (
-          <span className="leyenda-lluvia" title="Intensidad de lluvia estimada por satélite (NASA IMERG)">Lluvia NASA <i /> débil → intensa</span>
-        )}
         {resumenIncendios && !resumenIncendios.error && (
           <span><span className="dot dot-foco"></span> Foco de incendio</span>
         )}

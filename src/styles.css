@@ -1438,3 +1438,104 @@ footer {
 .leyenda-lluvia { display: inline-flex; align-items: center; gap: 6px; }
 .leyenda-lluvia i { display: inline-block; width: 70px; height: 8px; border-radius: 4px;
   background: linear-gradient(90deg, #9be7ff, #2dd4bf, #22c55e, #facc15, #f97316, #dc2626, #a21caf); }
+
+/* ===== ANIMACIONES ESTILO ZOOM EARTH ===== */
+/* Fundido entre cuadros */
+.capa-animada { transition: opacity .45s ease; }
+/* NASA IMERG viene en celdas de ~10 km: se suaviza para que se vea como un campo continuo */
+.capa-imerg { filter: blur(var(--suave-imerg, 3px)) saturate(1.15); }
+.capa-radar { filter: saturate(1.1); }
+/* Mapa base atenuado con capas animadas, para que resalten los colores */
+.con-animacion .capa-base { filter: brightness(.62) saturate(.7) contrast(1.05); transition: filter .4s; }
+
+.linea-tiempo {
+  position: absolute; left: 50%; bottom: 26px; transform: translateX(-50%); z-index: 650;
+  width: min(720px, calc(100% - 110px)); padding: 10px 14px 8px;
+  background: rgba(10, 15, 26, .86); color: #e2e8f0; border: 1px solid rgba(148, 163, 184, .25);
+  border-radius: 14px; box-shadow: 0 10px 30px rgba(0, 0, 0, .45); backdrop-filter: blur(8px);
+  font-family: var(--font); user-select: none;
+}
+.linea-tiempo.vacia { width: auto; font-size: 12px; color: #fca5a5; padding: 6px 12px; }
+.lt-fila { display: flex; align-items: center; gap: 12px; }
+.lt-play {
+  flex: none; width: 38px; height: 38px; border-radius: 50%; border: 0; cursor: pointer;
+  background: #f8fafc; color: #0f172a; font-size: 14px; font-weight: 800; display: grid; place-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+.lt-play:hover { transform: scale(1.06); }
+.lt-play:focus-visible { outline: 2px solid #38bdf8; outline-offset: 2px; }
+.lt-hora { display: flex; flex-direction: column; line-height: 1.15; min-width: 118px; }
+.lt-hora b { font-size: 16px; font-weight: 700; color: #fff; font-variant-numeric: tabular-nums; }
+.lt-hora span { font-size: 11px; color: #94a3b8; }
+.lt-capas { display: flex; flex-wrap: wrap; gap: 4px 6px; margin-left: auto; justify-content: flex-end; }
+.lt-chip {
+  font-size: 10.5px; padding: 2px 8px; border-radius: 999px; white-space: nowrap;
+  background: rgba(255,255,255,.06); border: 1px solid var(--c); color: #e2e8f0;
+}
+.lt-chip.apagado { opacity: .4; border-style: dashed; }
+.lt-pista { position: relative; height: 26px; margin-top: 8px; }
+.lt-tramo { position: absolute; height: 3px; border-radius: 2px; opacity: .85; pointer-events: none; }
+.lt-marca {
+  position: absolute; top: 13px; width: 2px; height: 8px; margin-left: -1px; padding: 0; border: 0;
+  background: rgba(226, 232, 240, .45); cursor: pointer;
+}
+.lt-marca.actual { background: #fff; height: 12px; top: 11px; width: 3px; }
+.lt-pista input[type=range] {
+  position: absolute; left: 0; right: 0; bottom: -2px; width: 100%; margin: 0; height: 14px;
+  -webkit-appearance: none; appearance: none; background: transparent; cursor: pointer;
+}
+.lt-pista input[type=range]::-webkit-slider-runnable-track { height: 3px; background: rgba(148,163,184,.35); border-radius: 2px; }
+.lt-pista input[type=range]::-moz-range-track { height: 3px; background: rgba(148,163,184,.35); border-radius: 2px; }
+.lt-pista input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 14px; height: 14px; margin-top: -5.5px; border-radius: 50%;
+  background: #fff; border: 2px solid #38bdf8; box-shadow: 0 0 0 4px rgba(56,189,248,.25);
+}
+.lt-pista input[type=range]::-moz-range-thumb { width: 12px; height: 12px; border-radius: 50%; background: #fff; border: 2px solid #38bdf8; }
+.lt-extremos { display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10px; color: #64748b; margin-top: 2px; }
+.lt-escala { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 2px 8px; margin-top: 6px; }
+.lt-unidad { font-size: 10px; color: #94a3b8; font-family: var(--font-mono); grid-row: 1 / span 2; }
+.lt-gradiente { height: 7px; border-radius: 4px; }
+.lt-gradiente.lluvia {
+  background: linear-gradient(90deg, rgb(0,118,78) 0%, rgb(195,228,0) 16.7%, rgb(255,176,6) 33.3%, rgb(255,71,48) 50%,
+    rgb(231,0,0) 66.7%, rgb(138,0,0) 83.3%, rgb(57,0,0) 100%);
+}
+.lt-valores { grid-column: 2; display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 9.5px; color: #94a3b8; }
+.lt-nieve { grid-column: 3; grid-row: 1 / span 2; font-size: 10px; color: #94a3b8; display: inline-flex; align-items: center; gap: 4px; }
+.lt-nieve i { display: inline-block; width: 26px; height: 7px; border-radius: 4px; background: linear-gradient(90deg, rgb(177,250,238), rgb(79,115,196), rgb(99,46,229), rgb(63,3,54)); }
+/* el resumen de incendios sube para no quedar bajo la línea de tiempo */
+.map-stage.con-animacion .incendios-resumen { bottom: auto; top: 54px; }
+
+@media (max-width: 600px) {
+  .linea-tiempo { width: calc(100% - 20px); bottom: 22px; padding: 8px 10px 6px; border-radius: 12px; }
+  .lt-play { width: 34px; height: 34px; }
+  .lt-hora b { font-size: 14px; }
+  .lt-capas { display: none; }
+  .lt-nieve { display: none; }
+  .lt-escala { grid-template-columns: auto 1fr; }
+  .map-stage.con-animacion .leaflet-bottom.leaflet-right { bottom: 150px; }
+}
+@media (max-width: 600px) {
+  .linea-tiempo { bottom: 8px; padding: 6px 10px 5px; }
+  .lt-fila { gap: 8px; }
+  .lt-play { width: 30px; height: 30px; font-size: 11px; }
+  .lt-hora { min-width: 0; }
+  .lt-hora b { font-size: 13px; }
+  .lt-hora span { font-size: 10px; }
+  .lt-pista { margin-top: 4px; height: 22px; }
+  .lt-extremos { display: none; }
+  .lt-escala { margin-top: 2px; gap: 0 6px; }
+  .lt-valores span:nth-child(2n) { visibility: hidden; }
+  .map-stage.con-animacion .leaflet-bottom.leaflet-right { bottom: 112px; }
+  .map-stage .leaflet-control-attribution {
+    font-size: 8px; max-width: 70vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+}
+/* Con línea de tiempo, el botón "Mi ubicación" sube junto con el zoom */
+.map-stage.con-animacion .gps-locate-btn { bottom: 196px; }
+.map-stage.con-animacion .gps-locate-err { bottom: 232px; }
+@media (max-width: 600px) {
+  .map-stage.con-animacion .gps-locate-btn { bottom: 196px; }
+  .map-stage.con-animacion .gps-locate-err { bottom: 232px; }
+}
+
+.map-stage.con-animacion .layers-panel { max-height: 330px; overflow-y: auto; }
