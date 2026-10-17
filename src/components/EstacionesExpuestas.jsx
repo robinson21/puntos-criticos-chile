@@ -111,7 +111,7 @@ export default function EstacionesExpuestas() {
                       </span>
                     )}
                     {a.incendios.cantidad
-                      ? <span className="est-fuego">🔥 {a.incendios.cantidad} focos · a {fmtKm(a.incendios.masCercano)}</span>
+                      ? <span className="est-fuego">🔥 {a.incendios.cantidad} {a.incendios.cantidad === 1 ? 'foco' : 'focos'} · a {fmtKm(a.incendios.masCercano)}</span>
                       : !a.incendios.gran && <small className="est-nada">Ninguno</small>}
                   </span>
                   <span role="cell" data-label="Lluvia pronosticada 24 h">
