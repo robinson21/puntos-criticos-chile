@@ -1,6 +1,7 @@
 name: Actualizar datos y publicar
 
-# Reemplaza al servidor: actualiza los datos y publica el sitio en GitHub Pages.
+# Reemplaza al servidor: actualiza los datos, los deja en la rama "datos" (de ahí los lee el
+# sitio en Cloudflare, https://puntos-criticos.gesstiapp.workers.dev) y publica el respaldo en GitHub Pages.
 # Requiere Settings → Pages → Source: "GitHub Actions" y los secretos del repo
 # OPENWEATHER_API_KEY (pronóstico), FIRMS_MAP_KEY (incendios NASA FIRMS) y,
 # opcional, VITE_MAPTILER_KEY (mapas base).
@@ -22,7 +23,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  SITIO: https://robinson21.github.io/puntos-criticos-chile
+  SITIO: https://puntos-criticos.gesstiapp.workers.dev
 
 jobs:
   build:
@@ -84,10 +85,24 @@ jobs:
           if [ "${{ steps.pronostico.outcome }}" = failure ]; then recuperar pronostico_regional.json; fi
           if [ "${{ steps.incendios.outcome }}" = failure ]; then recuperar incendios.json; fi
 
+      # El sitio en Cloudflare lee /data/* desde esta rama: los datos se renuevan sin volver a desplegar.
+      - name: Publicar datos (rama datos)
+        run: |
+          tmp=$(mktemp -d)
+          cp public/data/*.json "$tmp"/
+          cd "$tmp"
+          git init -q -b datos
+          git add .
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -qm "datos $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" datos
+
       - run: npm ci
-      - name: Compilar
+      - name: Compilar (respaldo GitHub Pages)
         env:
           VITE_MAPTILER_KEY: ${{ secrets.VITE_MAPTILER_KEY }}
+          VITE_BASE: /puntos-criticos-chile/
+          VITE_TILE_PROXY: https://puntos-criticos.gesstiapp.workers.dev
         run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:

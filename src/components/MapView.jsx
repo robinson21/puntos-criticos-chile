@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { MapContainer, TileLayer, CircleMarker, Popup, ZoomControl, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, CircleMarker, Popup, ZoomControl, useMap, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 import { useFilters } from '../data/FilterContext';
 import { useData } from '../data/DataContext';
@@ -160,6 +160,13 @@ function FlyTo({ coords }) {
 // filtro de causa/nivel, para no hacer saltar el mapa). Los territorios insulares
 // (Isla de Pascua, Juan Fernández, Desventuradas: lon < -76) se excluyen del encuadre salvo que
 // sean lo único seleccionado; si no, Valparaíso se vería como un punto en el Pacífico.
+// Informa el zoom actual: los puntos crecen al acercarse para que se vean sobre el satélite.
+function ZoomWatcher({ onZoom }) {
+  useMapEvents({ zoomend: e => onZoom(e.target.getZoom()) });
+  return null;
+}
+const radioPunto = z => (z >= 15 ? 7 : z >= 13 ? 5.5 : z >= 11 ? 4 : 3);
+
 function FitToPoints({ points, fitKey }) {
   const map = useMap();
   const lastKey = useRef(null);
@@ -169,6 +176,8 @@ function FitToPoints({ points, fitKey }) {
     const continentales = points.filter(p => p.lon > -76);
     const base = continentales.length ? continentales : points;
     const bounds = L.latLngBounds(base.map(p => [p.lat, p.lon]));
+    // En celular el contenedor puede cambiar de alto después de montarse: recalcular antes de encuadrar.
+    map.invalidateSize();
     if (bounds.isValid()) map.flyToBounds(bounds, { padding: [30, 30], maxZoom: 13, duration: 0.8 });
   }, [map, points, fitKey]);
   return null;
@@ -226,11 +235,11 @@ function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey, tilePr
     // 2. Viento / nubes / temperatura vía PROXY backend (sin exponer key).
     //    Si no hay proxy y no hay key, no se dibujan.
     const owm = (layer) => {
-      if (tileProxy) return `${tileProxy}/api/tiles/owm/${layer}/{z}/{x}/{y}.png`;
+      if (tileProxy != null) return `${tileProxy}/api/tiles/owm/${layer}/{z}/{x}/{y}.png`;
       if (owmKey) return `https://tile.openweathermap.org/map/${layer}/{z}/{x}/{y}.png?appid=${owmKey}`;
       return null;
     };
-    if (tileProxy || owmKey) {
+    if (tileProxy != null || owmKey) {
       if (activeLayers.includes('viento')) {
         const u = owm('wind_new');
         if (u && !layersRef.current.viento) add('viento', L.tileLayer(u, { opacity: 0.6 }));
@@ -258,10 +267,10 @@ export default function MapView() {
   const OWM_KEY = (import.meta.env.VITE_OWM_KEY || '').trim();
   const hasOwmKey = OWM_KEY.length > 0;
   // Proxy backend para servir tiles OWM sin exponer la key en el bundle.
-  // Default: Worker de Cloudflare en producción. Para desarrollo local,
-  // sobreescribir con VITE_TILE_PROXY (ej. http://localhost:8081).
-  const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY || 'https://owm-proxy.robinson-armijo.workers.dev').trim();
-  const hasTileProxy = TILE_PROXY.length > 0;
+  // En Cloudflare el mismo sitio reenvía /api/* al Worker owm-proxy, así que basta la ruta
+  // relativa. Fuera de Cloudflare (GitHub Pages, desarrollo) se usa VITE_TILE_PROXY.
+  const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY ?? '').trim().replace(/\/$/, '');
+  const hasTileProxy = true;
   const hasOwmSource = hasTileProxy || hasOwmKey;
   // Capas ambientales activas. Default: solo lluvia; incendios se suma si hay focos
   // NASA FIRMS: primero el JSON que genera GitHub Actions y, si no existe, el Worker
@@ -343,6 +352,7 @@ export default function MapView() {
 
   // Sin tope: la región más grande tiene ~2.300 puntos y el canvas los dibuja sin problema.
   const displayPoints = filtered;
+  const [zoomActual, setZoomActual] = useState(6);
 
   // Buscar direcciones con la API de geocodificación de MapTiler (o Nominatim como fallback)
   async function runSearch(raw) {
@@ -561,6 +571,7 @@ export default function MapView() {
           un <path> SVG cada uno; mismo aspecto y popups, mucho más liviano en celulares. */}
       <MapContainer center={center} zoom={zoom} zoomControl={false} className="map-container" scrollWheelZoom={true} preferCanvas={true}>
         <ZoomControl position="bottomright" />
+        <ZoomWatcher onZoom={setZoomActual} />
         <TileLayer
           url={BASEMAPS[baseMap].url()}
           attribution={BASEMAPS[baseMap].attr()}
@@ -576,7 +587,7 @@ export default function MapView() {
           <CircleMarker
             key={i}
             center={[p.lat, p.lon]}
-            radius={3}
+            radius={radioPunto(zoomActual)}
             pathOptions={{ color: COLORS[p.lv]||'#5D7284', fillColor: COLORS[p.lv]||'#5D7284', fillOpacity: 0.7, weight: 1 }}
           >
             <Popup>

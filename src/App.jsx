@@ -10,6 +10,8 @@ import Insights from './components/Insights';
 import Alertas from './components/Alertas';
 import PronosticoRegional from './components/PronosticoRegional';
 import AlertasRegion from './components/AlertasRegion';
+import EstacionesExpuestas from './components/EstacionesExpuestas';
+import { EstacionesProvider } from './data/EstacionesContext';
 
 // Estado global de tema (claro por defecto como pidió el usuario).
 // Se guarda en localStorage y se aplica al <html data-theme="light|dark">.
@@ -73,6 +75,7 @@ function Dashboard() {
 
   return (
     <FilterProvider records={records}>
+      <EstacionesProvider>
       <div className="wrap">
         <header>
           <div>
@@ -107,6 +110,9 @@ function Dashboard() {
           </div>
         )}
 
+        {/* Cruce de estaciones de servicio con puntos críticos, alertas DMC e incendios */}
+        {hasRegion && <EstacionesExpuestas />}
+
         {/* Ranking desplegable (plegado por defecto): solo ocupa espacio al abrirlo */}
         {hasRegion && <Ranking />}
 
@@ -124,6 +130,7 @@ function Dashboard() {
           <span>v1.0 — {new Date().getFullYear()}</span>
         </footer>
       </div>
+      </EstacionesProvider>
     </FilterProvider>
   );
 }

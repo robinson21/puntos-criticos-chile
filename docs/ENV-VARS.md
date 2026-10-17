@@ -9,7 +9,7 @@ Archivos relevantes: `.env.local` (dev) y `.env.production` (build de producció
 | Variable | Dónde | Para qué | ¿Secreto? |
 |---|---|---|---|
 | `VITE_MAPTILER_KEY` | `.env.local` | Basemap de MapTiler (calles/vistas claro y oscuro) | ⚠️ Sí (client-side, pero es la URL de tiles de MapTiler) |
-| `VITE_TILE_PROXY` | `.env.production` | URL pública del Worker de Cloudflare que sirve los tiles OWM | No (URL pública del Worker) |
+| `VITE_TILE_PROXY` | `.env.local` / build de GitHub Pages | URL del sitio en Cloudflare que reenvía `/api/*` al proxy. Vacía en el build de Cloudflare (usa el mismo sitio) | No |
 | `VITE_OWM_KEY` | `.env.local` (solo fallback dev) | Key directa de OpenWeatherMap para tiles. **Solo para desarrollo local**. En producción se usa el proxy. | ✅ Sí |
 
 > **Regla de seguridad**: En producción (`npm run build`), si `VITE_OWM_KEY` está presente, el código
@@ -31,7 +31,7 @@ El Worker `owm-proxy` lee una variable secreta al vuelo:
 
 1. Clonar repo.
 2. Crear `.env.local` con `VITE_MAPTILER_KEY` (y opcionalmente `VITE_OWM_KEY` solo para dev).
-3. `npm ci && npm run dev`. `VITE_TILE_PROXY` es opcional: por defecto se usa el Worker de producción.
+3. `npm ci && npm run dev`. Para ver viento/nubes/temperatura en desarrollo: `VITE_TILE_PROXY=https://puntos-criticos.gesstiapp.workers.dev`.
 
 ## Despliegue
 - Lo hace GitHub Actions (`.github/workflows/publicar.yml`) al unir a `master`, cada 3 h y a mano

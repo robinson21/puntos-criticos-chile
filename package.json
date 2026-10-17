@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "vite build && npx wrangler deploy",
+    "deploy:proxy": "npx wrangler deploy --config wrangler.owm-proxy.toml"
   },
   "dependencies": {
     "react": "^18.3.1",
