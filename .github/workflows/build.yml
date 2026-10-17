@@ -1,10 +1,8 @@
 name: Build
 
-# Verifica que el proyecto compile desde un clon limpio en cada push y PR.
-# No despliega: la publicación a gh-pages la hacen los scripts actualizar*.py.
+# Verifica que cada PR compile desde un clon limpio y que los JSON sean válidos.
+# La publicación la hace publicar.yml al unir a master.
 on:
-  push:
-    branches: [master]
   pull_request:
 
 jobs:

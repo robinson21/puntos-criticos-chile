@@ -31,9 +31,12 @@ El Worker `owm-proxy` lee una variable secreta al vuelo:
 
 1. Clonar repo.
 2. Crear `.env.local` con `VITE_MAPTILER_KEY` (y opcionalmente `VITE_OWM_KEY` solo para dev).
-3. Crear `.env.production` con `VITE_TILE_PROXY=https://owm-proxy.robinson-armijo.workers.dev`.
-4. `npm install && npm run build && npm run deploy` (despliega `dist/` a gh-pages).
+3. `npm ci && npm run dev`. `VITE_TILE_PROXY` es opcional: por defecto se usa el Worker de producción.
 
 ## Despliegue
-- Build y push a `gh-pages`: `npm run deploy` (= `vite build && gh-pages -d dist`).
-- El bundle resultante incrusta la URL de `VITE_TILE_PROXY` (la del Worker).
+- Lo hace GitHub Actions (`.github/workflows/publicar.yml`) al unir a `master`, cada 3 h y a mano
+  (*Run workflow*). Publica en GitHub Pages con *Source: GitHub Actions*.
+- Secretos del repo usados por el workflow: `OPENWEATHER_API_KEY` (pronóstico) y `VITE_MAPTILER_KEY`
+  (opcional, mapas base). La key de NASA FIRMS no va en el repo: es el secreto `FIRMS_MAP_KEY` del Worker.
+- `npm run deploy` (gh-pages) queda solo como respaldo manual; con *Source: GitHub Actions* la rama
+  `gh-pages` no se publica.

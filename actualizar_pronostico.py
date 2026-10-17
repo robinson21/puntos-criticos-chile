@@ -14,7 +14,9 @@ from datetime import datetime
 from urllib.parse import urlencode
 from urllib.request import urlopen
 
-PUBLIC_DIR = '/home/ubuntu/puntos-criticos/public/data'
+# Carpeta del proyecto: la del script, salvo que PC_PROJECT_DIR diga otra cosa.
+PROJECT_DIR = os.environ.get('PC_PROJECT_DIR') or os.path.dirname(os.path.abspath(__file__))
+PUBLIC_DIR = os.path.join(PROJECT_DIR, 'public', 'data')
 FORECAST_URL = 'https://api.openweathermap.org/data/2.5/forecast'
 CURRENT_URL = 'https://api.openweathermap.org/data/2.5/weather'
 UV_URL = 'https://api.open-meteo.com/v1/forecast'
@@ -204,7 +206,7 @@ def actualizar():
 
 
 def deploy():
-    os.chdir('/home/ubuntu/puntos-criticos')
+    os.chdir(PROJECT_DIR)
     r = subprocess.run(['npm', 'run', 'build'], capture_output=True, text=True, timeout=120)
     if r.returncode != 0:
         print(r.stdout)
