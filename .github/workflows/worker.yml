@@ -18,6 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
     steps:
       - name: Sin token de Cloudflare
         if: env.CLOUDFLARE_API_TOKEN == ''
@@ -38,9 +39,15 @@ jobs:
           wranglerVersion: '4.151.0'
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy --config wrangler.owm-proxy.toml
-          secrets: FIRMS_MAP_KEY
+
+      # Paso propio: la opción "secrets" de wrangler-action no usa --config y guardaba la clave
+      # en el Worker del sitio (puntos-criticos) en vez de owm-proxy.
+      - name: Sincronizar FIRMS_MAP_KEY en owm-proxy
+        if: env.CLOUDFLARE_API_TOKEN != '' && env.FIRMS_MAP_KEY != ''
         env:
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: printf '%s' "$FIRMS_MAP_KEY" | npx --yes wrangler@4.151.0 secret put FIRMS_MAP_KEY --config wrangler.owm-proxy.toml
 
       - name: Comprobar /health
         if: env.CLOUDFLARE_API_TOKEN != ''
