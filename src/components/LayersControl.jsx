@@ -11,8 +11,8 @@ export const CAPAS_AMBIENTALES = [
     label: 'Incendios activos',
     icon: '🔥',
     color: '#dc2626',
-    fuente: 'NASA FIRMS · 24h',
-    descripcion: 'Focos de calor activos detectados por los satélites VIIRS en las últimas 24 horas. Se actualizan cada 3 h con la Map Key gratuita de NASA FIRMS (secreto FIRMS_MAP_KEY del repo).',
+    fuente: 'NASA FIRMS · 72 h · agrupados',
+    descripcion: 'Focos de calor de los satélites VIIRS (72 h) agrupados en incendios por tamaño: gran incendio, incendio y foco aislado. Las fuentes industriales o persistentes se muestran en gris. Se actualiza cada 3 h.',
     necesitaKey: true,
     keyName: 'FIRMS',
     default: false

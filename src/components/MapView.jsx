@@ -7,6 +7,7 @@ import AramcoMarkers from './AramcoMarkers';
 import AlertasPoligonos from './AlertasPoligonos';
 import LayersControl from './LayersControl';
 import IncendiosLayer from './IncendiosLayer';
+import { useIncendios } from '../data/incendios';
 import NubesSatelite from './NubesSatelite';
 import { LluviaRadar, LluviaNasa, LluviaPronostico } from './Lluvia';
 import { usePronosticoLluvia } from '../data/pronosticoLluvia';
@@ -172,6 +173,17 @@ function ZoomWatcher({ onZoom }) {
 }
 const radioPunto = z => (z >= 15 ? 7 : z >= 13 ? 5.5 : z >= 11 ? 4 : 3);
 
+// "Ver en mapa" desde paneles fuera del mapa (evento 'ir-a-mapa')
+function IrAEvento() {
+  const map = useMap();
+  useEffect(() => {
+    const ir = e => map.flyTo([e.detail.lat, e.detail.lon], e.detail.zoom || 11, { duration: 0.8 });
+    window.addEventListener('ir-a-mapa', ir);
+    return () => window.removeEventListener('ir-a-mapa', ir);
+  }, [map]);
+  return null;
+}
+
 function FitToPoints({ points, fitKey }) {
   const map = useMap();
   const lastKey = useRef(null);
@@ -268,35 +280,15 @@ export default function MapView() {
   const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY ?? '').trim().replace(/\/$/, '');
   const hasTileProxy = true;
   const hasOwmSource = hasTileProxy || hasOwmKey;
-  // Capas ambientales activas. Default: solo lluvia; incendios se suma si hay focos
-  // NASA FIRMS: primero el JSON que genera GitHub Actions y, si no existe, el Worker
-  // cuando tiene configurada la Map Key (ver /health).
+  // Capas ambientales activas. Incendios se suma apenas llega incendios.json (lo genera GitHub Actions).
   const [activeLayers, setActiveLayers] = useState(['lluviaNasa', 'lluvia', 'pronostico']);
   const pronostico = usePronosticoLluvia();
-  const [urlIncendios, setUrlIncendios] = useState(null);
-  const firmsDisponible = Boolean(urlIncendios);
+  const datosIncendios = useIncendios();
+  const firmsDisponible = Boolean(datosIncendios);
   const [resumenIncendios, setResumenIncendios] = useState(null);
   useEffect(() => {
-    let vivo = true;
-    const activar = url => {
-      if (!vivo) return;
-      setUrlIncendios(url);
-      setActiveLayers(prev => (prev.includes('incendios') ? prev : [...prev, 'incendios']));
-    };
-    fetch('./data/incendios.json', { cache: 'no-cache' })
-      .then(r => (r.ok ? r.json() : null))
-      .then(d => (Array.isArray(d?.focos) ? d : null))
-      .catch(() => null)
-      .then(d => {
-        if (d) return activar('./data/incendios.json');
-        if (!hasTileProxy) return;
-        return fetch(`${TILE_PROXY}/health`)
-          .then(r => (r.ok ? r.json() : null))
-          .then(h => h?.firms && activar(`${TILE_PROXY}/api/firms`));
-      })
-      .catch(() => {});
-    return () => { vivo = false; };
-  }, [TILE_PROXY, hasTileProxy]);
+    if (datosIncendios) setActiveLayers(prev => (prev.includes('incendios') ? prev : [...prev, 'incendios']));
+  }, [datosIncendios]);
   // Cuadros de cada capa animada y línea de tiempo común (estilo Zoom Earth)
   const [cuadros, setCuadros] = useState({ lluviaNasa: null, lluvia: null, pronostico: null, satelite: null });
   const cuadrosDe = useCallback(id => v => setCuadros(c => (c[id] === v ? c : { ...c, [id]: v })), []);
@@ -598,8 +590,9 @@ export default function MapView() {
         <LluviaNasa activo={activeLayers.includes('lluviaNasa')} tiempo={linea.tiempo} onCuadros={onNasa} />
         <LluviaRadar activo={activeLayers.includes('lluvia')} tiempo={linea.tiempo} onCuadros={onRadar} />
         <LluviaPronostico activo={activeLayers.includes('pronostico')} tiempo={linea.tiempo} onCuadros={onPronostico} pronostico={pronostico} />
+        <IrAEvento />
         <IncendiosLayer
-          url={urlIncendios}
+          data={datosIncendios}
           activo={firmsDisponible && activeLayers.includes('incendios')}
           puntos={filtered}
           onResumen={setResumenIncendios}
@@ -640,10 +633,16 @@ export default function MapView() {
         { id: 'satelite', nombre: 'Nubes GOES', icono: '🛰️', color: '#cbd5e1', cuadros: cuadros.satelite },
       ]} />
       {resumenIncendios && (
-        <div className={`incendios-resumen ${resumenIncendios.cerca ? 'alerta' : ''}`}>
+        <div className={`incendios-resumen ${resumenIncendios.grandes || resumenIncendios.cerca ? 'alerta' : ''}`}>
           {resumenIncendios.error
             ? `🔥 No se pudieron cargar los focos de incendio (${resumenIncendios.error})`
-            : `🔥 ${resumenIncendios.focos.toLocaleString('es-CL')} focos activos en Chile (24 h) · ${resumenIncendios.cerca.toLocaleString('es-CL')} de los puntos mostrados a menos de ${resumenIncendios.radioKm} km de un foco${resumenIncendios.actualizado ? ` · actualizado ${horaChile(resumenIncendios.actualizado)}` : ''}`}
+            : <>
+                🔥 <b>{resumenIncendios.grandes} {resumenIncendios.grandes === 1 ? 'gran incendio activo' : 'grandes incendios activos'}</b>
+                {' '}· {resumenIncendios.incendios} incendios · {resumenIncendios.focos} focos aislados (72 h)
+                {resumenIncendios.industriales ? ` · ${resumenIncendios.industriales} fuentes industriales excluidas` : ''}
+                {resumenIncendios.cerca ? ` · ${resumenIncendios.cerca.toLocaleString('es-CL')} puntos mostrados a ≤ ${resumenIncendios.radioKm} km de un foco` : ''}
+                {resumenIncendios.actualizado ? ` · ${horaChile(resumenIncendios.actualizado)}` : ''}
+              </>}
         </div>
       )}
       </div>
@@ -653,7 +652,12 @@ export default function MapView() {
         ))}
         <span><span className="dot dot-afectado"></span> Afectado este invierno</span>
         {resumenIncendios && !resumenIncendios.error && (
-          <span><span className="dot dot-foco"></span> Foco de incendio</span>
+          <>
+            <span><span className="dot dot-foco"></span> Foco de calor</span>
+            <span><span className="dot dot-gran"></span> Gran incendio</span>
+            <span><span className="dot dot-incendio"></span> Incendio</span>
+            <span><span className="dot dot-industrial"></span> Fuente industrial</span>
+          </>
         )}
       </div>
     </div>
