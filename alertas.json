@@ -1,0 +1,1272 @@
+{
+  "actualizado": "2026-10-17T20:40:19.881502",
+  "totales": {
+    "avisos": 15,
+    "alertas": 1,
+    "alarmas": 0,
+    "total": 16
+  },
+  "alertas": [
+    {
+      "id": 5863,
+      "tipo": "Aviso",
+      "codigo": "A567/2026",
+      "emision": "Sábado 17 de octubre del 2026 a las 14:45 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la mañana del domingo 18 de octubre del 2026",
+      "hasta": "la mañana del lunes 19 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Atacama (Litoral)",
+      "titulo": "Viento Normal a Moderado en litoral de la región de Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5862,
+      "tipo": "Aviso",
+      "codigo": "A568/2026",
+      "emision": "Sábado 17 de octubre del 2026 a las 14:55 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la madrugada del martes 20 de octubre del 2026",
+      "hasta": "la noche del martes 20 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Región de Antofagasta litoral, desde Caleta El Cobre al sur",
+      "titulo": "Precipitaciones Normales a Moderadas en Región de Antofagasta litoral, desde Caleta El Cobre al sur",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -24.2423,
+          -70.52
+        ],
+        [
+          -24.2443,
+          -70.5231
+        ],
+        [
+          -24.2452,
+          -70.526
+        ],
+        [
+          -24.2463,
+          -70.5338
+        ],
+        [
+          -24.2581,
+          -70.5297
+        ],
+        [
+          -24.2615,
+          -70.5293
+        ],
+        [
+          -24.2631,
+          -70.5321
+        ],
+        [
+          -24.2684,
+          -70.5336
+        ],
+        [
+          -24.2776,
+          -70.5272
+        ],
+        [
+          -24.2908,
+          -70.5317
+        ],
+        [
+          -24.2925,
+          -70.5327
+        ],
+        [
+          -24.3049,
+          -70.5322
+        ],
+        [
+          -24.3171,
+          -70.5365
+        ],
+        [
+          -24.3227,
+          -70.5417
+        ],
+        [
+          -24.3315,
+          -70.5484
+        ],
+        [
+          -24.3546,
+          -70.5374
+        ],
+        [
+          -24.3734,
+          -70.549
+        ],
+        [
+          -24.3727,
+          -70.5539
+        ],
+        [
+          -24.3777,
+          -70.5539
+        ],
+        [
+          -24.3853,
+          -70.5484
+        ],
+        [
+          -24.5546,
+          -70.5734
+        ],
+        [
+          -24.5996,
+          -70.5515
+        ],
+        [
+          -24.642,
+          -70.5597
+        ],
+        [
+          -24.6595,
+          -70.5707
+        ],
+        [
+          -24.7094,
+          -70.5638
+        ],
+        [
+          -24.7194,
+          -70.5762
+        ],
+        [
+          -24.7481,
+          -70.5597
+        ],
+        [
+          -24.793,
+          -70.5418
+        ],
+        [
+          -24.8378,
+          -70.5405
+        ],
+        [
+          -24.869,
+          -70.5199
+        ],
+        [
+          -24.9151,
+          -70.5254
+        ],
+        [
+          -24.9873,
+          -70.4649
+        ],
+        [
+          -25.0184,
+          -70.4636
+        ],
+        [
+          -25.3639,
+          -70.4443
+        ],
+        [
+          -25.4085,
+          -70.4828
+        ],
+        [
+          -25.5028,
+          -70.5927
+        ],
+        [
+          -25.6861,
+          -70.6586
+        ],
+        [
+          -25.7999,
+          -70.708
+        ],
+        [
+          -25.8215,
+          -70.732
+        ],
+        [
+          -25.8741,
+          -70.7018
+        ],
+        [
+          -25.9142,
+          -70.686
+        ],
+        [
+          -25.9438,
+          -70.651
+        ],
+        [
+          -25.9803,
+          -70.6366
+        ],
+        [
+          -26.0321,
+          -70.6311
+        ],
+        [
+          -26.0543,
+          -70.6428
+        ],
+        [
+          -26.0617,
+          -70.6311
+        ],
+        [
+          -26.0414,
+          -70.6153
+        ],
+        [
+          -26.0124,
+          -70.605
+        ],
+        [
+          -26.0019,
+          -70.5782
+        ],
+        [
+          -25.6118,
+          -70.4883
+        ],
+        [
+          -25.4234,
+          -70.3894
+        ],
+        [
+          -25.2546,
+          -70.318
+        ],
+        [
+          -24.8615,
+          -70.318
+        ],
+        [
+          -24.4772,
+          -70.3674
+        ],
+        [
+          -24.2269,
+          -70.4004
+        ]
+      ],
+      "puntos_area": {
+        "ANTOFAGASTA": {
+          "Flujos de barro/detritos (Aluvión)": {
+            "n": 4,
+            "alto": 4,
+            "af": 0
+          },
+          "Activación de quebradas": {
+            "n": 4,
+            "alto": 0,
+            "af": 0
+          },
+          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
+            "n": 1,
+            "alto": 0,
+            "af": 0
+          },
+          "Congelamiento de caminos": {
+            "n": 1,
+            "alto": 1,
+            "af": 0
+          }
+        }
+      },
+      "regiones": [
+        "Antofagasta"
+      ]
+    },
+    {
+      "id": 5861,
+      "tipo": "Alerta",
+      "codigo": "AA180/2026",
+      "emision": "Sábado 17 de octubre del 2026 a las 12:58 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del martes 20 de octubre del 2026",
+      "hasta": "la noche del martes 20 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera) | Maule (Valle, Precordillera)",
+      "titulo": "Precipitaciones Moderadas a Fuertes en corto periodo de tiempo en zonas desde la región de Coquimbo a la región del Maule",
+      "icono": "🌧️",
+      "color": "#f97316",
+      "regiones": [
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5860,
+      "tipo": "Aviso",
+      "codigo": "A562-1/2026",
+      "emision": "Sábado 17 de octubre del 2026 a las 12:58 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del martes 20 de octubre del 2026",
+      "hasta": "la mañana del miércoles 21 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Litoral) | Maule (Litoral, Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Coquimbo, Valparaíso, O'Higgins y Maule",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Coquimbo",
+        "Maule",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5859,
+      "tipo": "Aviso",
+      "codigo": "A565/2026",
+      "emision": "Sábado 17 de octubre del 2026 a las 11:21 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la noche del sábado 17 de octubre del 2026",
+      "hasta": "la madrugada del domingo 18 de octubre del 2026",
+      "observacion": "",
+      "zonas": "TORRES DEL PAINE, NATALES Y RIO VERDE",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en TORRES DEL PAINE, NATALES Y RIO VERDE",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -50.4785,
+          -73.3612
+        ],
+        [
+          -50.8684,
+          -74.1302
+        ],
+        [
+          -51.1725,
+          -74.328
+        ],
+        [
+          -51.829,
+          -74.2291
+        ],
+        [
+          -52.389,
+          -74.1962
+        ],
+        [
+          -53.1995,
+          -73.7567
+        ],
+        [
+          -53.2192,
+          -73.1305
+        ],
+        [
+          -52.9288,
+          -72.5922
+        ],
+        [
+          -51.9713,
+          -72.0319
+        ],
+        [
+          -51.9036,
+          -71.922
+        ],
+        [
+          -51.7678,
+          -72.0648
+        ],
+        [
+          -51.6998,
+          -72.2626
+        ],
+        [
+          -51.5907,
+          -72.3065
+        ],
+        [
+          -51.5771,
+          -72.4054
+        ],
+        [
+          -51.5019,
+          -72.3285
+        ],
+        [
+          -51.3649,
+          -72.3065
+        ],
+        [
+          -51.3169,
+          -72.3615
+        ],
+        [
+          -51.2619,
+          -72.2736
+        ],
+        [
+          -51.1242,
+          -72.3834
+        ],
+        [
+          -51.0414,
+          -72.3834
+        ],
+        [
+          -50.993,
+          -72.2626
+        ],
+        [
+          -50.8545,
+          -72.2626
+        ],
+        [
+          -50.7504,
+          -72.3175
+        ],
+        [
+          -50.6669,
+          -72.2736
+        ],
+        [
+          -50.6111,
+          -72.3505
+        ],
+        [
+          -50.6529,
+          -72.5482
+        ],
+        [
+          -50.632,
+          -72.7679
+        ],
+        [
+          -50.7365,
+          -72.9437
+        ],
+        [
+          -50.799,
+          -73.0536
+        ],
+        [
+          -50.7782,
+          -73.1305
+        ],
+        [
+          -50.646,
+          -73.1415
+        ],
+        [
+          -50.5832,
+          -73.2294
+        ]
+      ],
+      "puntos_area": {
+        "MAGALLANES Y DE LA ANTÁRTICA CHILENA": {
+          "Colapso colectores de aguas lluvia/alcantarillados": {
+            "n": 7,
+            "alto": 0,
+            "af": 1
+          },
+          "Inundación por desborde de cauce": {
+            "n": 10,
+            "alto": 6,
+            "af": 3
+          },
+          "Anegamiento de caminos/pasos a desnivel": {
+            "n": 10,
+            "alto": 0,
+            "af": 0
+          },
+          "Interrupción de caminos": {
+            "n": 22,
+            "alto": 9,
+            "af": 0
+          },
+          "Congelamiento de caminos": {
+            "n": 14,
+            "alto": 7,
+            "af": 0
+          },
+          "Acumulación de nieve": {
+            "n": 7,
+            "alto": 2,
+            "af": 0
+          },
+          "Deslizamiento/Derrumbe/Rodado/Caída": {
+            "n": 3,
+            "alto": 1,
+            "af": 0
+          }
+        }
+      },
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5858,
+      "tipo": "Aviso",
+      "codigo": "A552-1/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 18:05 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Altas presiones",
+      "desde": "la tarde del viernes 16 de octubre del 2026",
+      "hasta": "la tarde del sábado 17 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Altas Temperaturas en zonas de la región de Magallanes",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5857,
+      "tipo": "Aviso",
+      "codigo": "A554-2/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 15:58 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la tarde del viernes 16 de octubre del 2026",
+      "hasta": "la noche del sábado 17 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Litoral provincia de Huasco",
+      "titulo": "Viento Normal a Moderado en Litoral provincia de Huasco",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -28.4235,
+          -71.1972
+        ],
+        [
+          -28.4959,
+          -71.1903
+        ],
+        [
+          -28.5864,
+          -71.2068
+        ],
+        [
+          -28.6792,
+          -71.2192
+        ],
+        [
+          -28.8261,
+          -71.2892
+        ],
+        [
+          -28.9067,
+          -71.3304
+        ],
+        [
+          -28.9656,
+          -71.3469
+        ],
+        [
+          -29.0545,
+          -71.3551
+        ],
+        [
+          -29.1456,
+          -71.3606
+        ],
+        [
+          -29.1492,
+          -71.3744
+        ],
+        [
+          -29.1708,
+          -71.3867
+        ],
+        [
+          -29.184,
+          -71.4114
+        ],
+        [
+          -29.1816,
+          -71.4677
+        ],
+        [
+          -29.1816,
+          -71.4938
+        ],
+        [
+          -29.1648,
+          -71.4938
+        ],
+        [
+          -29.148,
+          -71.5034
+        ],
+        [
+          -29.1301,
+          -71.4938
+        ],
+        [
+          -29.1061,
+          -71.4581
+        ],
+        [
+          -29.0917,
+          -71.4664
+        ],
+        [
+          -29.0809,
+          -71.4828
+        ],
+        [
+          -29.0797,
+          -71.4925
+        ],
+        [
+          -29.0725,
+          -71.4897
+        ],
+        [
+          -29.0653,
+          -71.4787
+        ],
+        [
+          -29.0521,
+          -71.4842
+        ],
+        [
+          -29.0376,
+          -71.4856
+        ],
+        [
+          -29.0376,
+          -71.4952
+        ],
+        [
+          -29.0256,
+          -71.4966
+        ],
+        [
+          -29.0064,
+          -71.4966
+        ],
+        [
+          -28.9884,
+          -71.4911
+        ],
+        [
+          -28.9812,
+          -71.5103
+        ],
+        [
+          -28.986,
+          -71.524
+        ],
+        [
+          -28.9704,
+          -71.5103
+        ],
+        [
+          -28.9584,
+          -71.5076
+        ],
+        [
+          -28.9439,
+          -71.5048
+        ],
+        [
+          -28.9247,
+          -71.5131
+        ],
+        [
+          -28.9091,
+          -71.5117
+        ],
+        [
+          -28.8923,
+          -71.5062
+        ],
+        [
+          -28.8622,
+          -71.4883
+        ],
+        [
+          -28.8526,
+          -71.4801
+        ],
+        [
+          -28.8454,
+          -71.4609
+        ],
+        [
+          -28.8357,
+          -71.4417
+        ],
+        [
+          -28.8225,
+          -71.4293
+        ],
+        [
+          -28.8177,
+          -71.4114
+        ],
+        [
+          -28.7996,
+          -71.3785
+        ],
+        [
+          -28.7804,
+          -71.3716
+        ],
+        [
+          -28.7647,
+          -71.3702
+        ],
+        [
+          -28.7539,
+          -71.3689
+        ],
+        [
+          -28.7443,
+          -71.3579
+        ],
+        [
+          -28.7322,
+          -71.34
+        ],
+        [
+          -28.7202,
+          -71.3277
+        ],
+        [
+          -28.6937,
+          -71.3194
+        ],
+        [
+          -28.6828,
+          -71.3029
+        ],
+        [
+          -28.6636,
+          -71.2878
+        ],
+        [
+          -28.6334,
+          -71.2796
+        ],
+        [
+          -28.6238,
+          -71.2796
+        ],
+        [
+          -28.6093,
+          -71.2865
+        ],
+        [
+          -28.5924,
+          -71.3029
+        ],
+        [
+          -28.5768,
+          -71.3098
+        ],
+        [
+          -28.5671,
+          -71.3126
+        ],
+        [
+          -28.5671,
+          -71.3002
+        ],
+        [
+          -28.5551,
+          -71.2837
+        ],
+        [
+          -28.5466,
+          -71.2617
+        ],
+        [
+          -28.5201,
+          -71.259
+        ],
+        [
+          -28.5008,
+          -71.2604
+        ],
+        [
+          -28.5008,
+          -71.2714
+        ],
+        [
+          -28.4839,
+          -71.2576
+        ],
+        [
+          -28.4718,
+          -71.2563
+        ],
+        [
+          -28.4633,
+          -71.2563
+        ],
+        [
+          -28.4597,
+          -71.2219
+        ],
+        [
+          -28.4501,
+          -71.2054
+        ]
+      ],
+      "puntos_area": {
+        "ATACAMA": {
+          "Interrupción de caminos": {
+            "n": 2,
+            "alto": 2,
+            "af": 0
+          },
+          "Activación de quebradas": {
+            "n": 8,
+            "alto": 8,
+            "af": 0
+          }
+        }
+      },
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5856,
+      "tipo": "Aviso",
+      "codigo": "A543-4/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 15:06 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del viernes 16 de octubre del 2026",
+      "hasta": "la noche del miércoles 21 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5855,
+      "tipo": "Aviso",
+      "codigo": "A564/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 12:33 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del martes 20 de octubre del 2026",
+      "hasta": "la noche del miércoles 21 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera) | O'Higgins (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región de O'Higgins",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Coquimbo",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5853,
+      "tipo": "Aviso",
+      "codigo": "A563/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 12:22 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del domingo 18 de octubre del 2026",
+      "hasta": "la noche del martes 20 de octubre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Cordillera Sector Provincia de Huasco",
+      "titulo": "Nevadas Normales a Moderadas en Cordillera Sector Provincia de Huasco",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -28.598,
+          -69.6924
+        ],
+        [
+          -28.6414,
+          -69.7061
+        ],
+        [
+          -28.6823,
+          -69.7308
+        ],
+        [
+          -28.7136,
+          -69.7308
+        ],
+        [
+          -28.745,
+          -69.7171
+        ],
+        [
+          -28.7738,
+          -69.7006
+        ],
+        [
+          -28.822,
+          -69.7171
+        ],
+        [
+          -28.846,
+          -69.7391
+        ],
+        [
+          -28.8653,
+          -69.7473
+        ],
+        [
+          -28.8893,
+          -69.7583
+        ],
+        [
+          -28.911,
+          -69.7638
+        ],
+        [
+          -28.9422,
+          -69.7556
+        ],
+        [
+          -28.9783,
+          -69.7556
+        ],
+        [
+          -28.9975,
+          -69.7775
+        ],
+        [
+          -29.0479,
+          -69.7913
+        ],
+        [
+          -29.0791,
+          -69.7913
+        ],
+        [
+          -29.1271,
+          -69.783
+        ],
+        [
+          -29.1367,
+          -69.8132
+        ],
+        [
+          -29.1391,
+          -69.8627
+        ],
+        [
+          -29.1583,
+          -69.9011
+        ],
+        [
+          -29.1727,
+          -69.9203
+        ],
+        [
+          -29.1847,
+          -69.9396
+        ],
+        [
+          -29.2087,
+          -69.9506
+        ],
+        [
+          -29.2303,
+          -69.9478
+        ],
+        [
+          -29.2494,
+          -69.9368
+        ],
+        [
+          -29.2686,
+          -69.9588
+        ],
+        [
+          -29.2878,
+          -69.9945
+        ],
+        [
+          -29.3213,
+          -70.0137
+        ],
+        [
+          -29.362,
+          -70.0137
+        ],
+        [
+          -29.3907,
+          -70.0027
+        ],
+        [
+          -29.4075,
+          -69.978
+        ],
+        [
+          -29.4505,
+          -69.9698
+        ],
+        [
+          -29.4768,
+          -69.9561
+        ],
+        [
+          -29.4983,
+          -69.9643
+        ],
+        [
+          -29.5007,
+          -69.9973
+        ],
+        [
+          -29.5246,
+          -70.0385
+        ],
+        [
+          -29.5342,
+          -70.0797
+        ],
+        [
+          -29.5246,
+          -70.1154
+        ],
+        [
+          -29.5175,
+          -70.1566
+        ],
+        [
+          -29.5175,
+          -70.1923
+        ],
+        [
+          -29.496,
+          -70.2005
+        ],
+        [
+          -29.4553,
+          -70.2252
+        ],
+        [
+          -29.4146,
+          -70.2582
+        ],
+        [
+          -29.3788,
+          -70.3131
+        ],
+        [
+          -29.35,
+          -70.3104
+        ],
+        [
+          -29.2614,
+          -70.2802
+        ],
+        [
+          -29.1871,
+          -70.2664
+        ],
+        [
+          -29.0383,
+          -70.1978
+        ],
+        [
+          -28.947,
+          -70.1318
+        ],
+        [
+          -28.8581,
+          -70.0797
+        ],
+        [
+          -28.7498,
+          -70.0
+        ],
+        [
+          -28.6799,
+          -69.9506
+        ],
+        [
+          -28.6365,
+          -69.9149
+        ],
+        [
+          -28.6052,
+          -69.827
+        ],
+        [
+          -28.6004,
+          -69.7198
+        ]
+      ],
+      "puntos_area": {
+        "ATACAMA": {
+          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
+            "n": 2,
+            "alto": 2,
+            "af": 2
+          },
+          "Anegamiento de caminos/pasos a desnivel": {
+            "n": 3,
+            "alto": 1,
+            "af": 1
+          },
+          "Congelamiento de caminos": {
+            "n": 4,
+            "alto": 4,
+            "af": 2
+          }
+        }
+      },
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5852,
+      "tipo": "Aviso",
+      "codigo": "A561/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 12:10 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del lunes 19 de octubre del 2026",
+      "hasta": "la noche del martes 20 de octubre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Coquimbo, Valparaíso, Metropolitana, O'Higgins, Maule, &Ntilde;uble y Biobío",
+      "titulo": "Probables Tormentas Eléctricas desde la región de Coquimbo a la región del Biobío",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5851,
+      "tipo": "Aviso",
+      "codigo": "A560/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 12:07 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del lunes 19 de octubre del 2026",
+      "hasta": "la noche del martes 20 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
+    },
+    {
+      "id": 5850,
+      "tipo": "Aviso",
+      "codigo": "A559/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 12:06 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del lunes 19 de octubre del 2026",
+      "hasta": "la tarde del martes 20 de octubre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Probables Tormentas Eléctricas en Archipielago Juan Fernández",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
+    },
+    {
+      "id": 5849,
+      "tipo": "Aviso",
+      "codigo": "A558/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 12:04 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del lunes 19 de octubre del 2026",
+      "hasta": "la noche del martes 20 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Precipitaciones Normales a Moderadas en Archipielago Juan Fernández",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
+    },
+    {
+      "id": 5848,
+      "tipo": "Aviso",
+      "codigo": "A557/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 09:04 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del viernes 16 de octubre del 2026",
+      "hasta": "la noche del sábado 17 de octubre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "La Araucanía (Precordillera, Cordillera) | Los Ríos (Precordillera, Cordillera) | Los Lagos (Precordillera, Cordillera, Cordillera Austral, Patagonia Subandina) | Aysén (Insular Norte, Litoral Interior Norte, Cordillera Austral Norte, Patagonia Subandina Norte, Cordillera Austral Sur, Patagonia Subandina Sur)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de La Araucanía a la región de Aysén",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5844,
+      "tipo": "Aviso",
+      "codigo": "A556/2026",
+      "emision": "Miércoles 14 de octubre del 2026 a las 15:20 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del jueves 15 de octubre del 2026",
+      "hasta": "la noche del sábado 17 de octubre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Magallanes (Cordillera Austral Norte, Cordillera Austral Sur, Insular Norte, Insular Central, Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    }
+  ]
+}
