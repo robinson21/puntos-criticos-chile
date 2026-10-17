@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
 Actualizador de datos Puntos Críticos SENAPRED.
-Descarga el Excel, procesa, genera JSONs regionales y hace deploy a gh-pages.
+Fuente principal: el servicio ArcGIS público de SENAPRED que alimenta su tablero oficial
+(compilado_INV_2026). Respaldo: el Excel (links oficiales antiguos y copia de un tercero).
+Genera los JSON regionales, meta.json y senapred_estado.json.
 
 Uso:
   python3 actualizar.py          # Solo descarga y procesa
@@ -20,7 +22,12 @@ PROJECT_DIR = os.environ.get('PC_PROJECT_DIR') or os.path.dirname(os.path.abspat
 PUBLIC_DIR = os.path.join(PROJECT_DIR, 'public', 'data')
 SRC_DATA = os.path.join(PROJECT_DIR, 'src', 'data')
 
-# URLs oficiales donde SENAPRED publica el Excel
+# Servicio oficial (lo usa el tablero "Ver puntos críticos" de https://www.senapred.cl/programa-invierno/)
+ARCGIS_URL = 'https://services5.arcgis.com/i7S5PSnIJAUcWvSE/arcgis/rest/services/compilado_INV_2026/FeatureServer/0'
+ARCGIS_CAMPOS = ['FID', 'Región', 'Provincia', 'Comuna', 'Sector', 'Causa_del_', 'Acciones_P', 'La_soluci',
+                 'Si_la_resp', 'Nivel_de_R', 'Tipo_de_So', 'Punto_Crí', 'Longitud', 'Latitud']
+
+# URLs oficiales donde SENAPRED publicaba el Excel (respaldo)
 # Verificar cada año cuál es la URL vigente
 URLS = [
     'https://web.senapred.cl/wp-content/uploads/2026/04/Puntos_Criticos_INV_2026.xlsx',
@@ -68,34 +75,89 @@ def descargar_excel():
     raise Exception('No se pudo descargar el Excel desde ninguna URL')
 
 
-def procesar_excel(excel_data):
-    """Procesa el Excel y genera los JSONs regionales + metadata."""
+def _txt(v):
+    return str(v or '').strip()
+
+
+def registro(region, provincia, comuna, sector, causa, accion, solucion, institucion, nivel, tipo, afectado, lon, lat):
+    """Normaliza un punto crítico (venga del servicio ArcGIS o del Excel) al formato compacto de la app.
+    Claves: c comuna, cs causa, lv nivel, tp tipo de solución, lat/lon y, si hay dato,
+    pv provincia, s sector, ac acción principal, rs responsable de la solución, af afectado este invierno."""
+    if lon in (None, '') or lat in (None, ''):
+        return None
+    nivel = _txt(nivel)
+    if nivel.lower().startswith('solucionado'):
+        nivel = 'Solucionado'
+    solucion, institucion = _txt(solucion), _txt(institucion)
+    r = {
+        'r': _txt(region).upper(),
+        'c': _txt(comuna).upper(),
+        'cs': _txt(causa),
+        'lv': nivel,
+        'tp': _txt(tipo),
+        'lat': round(float(lat), 4),
+        'lon': round(float(lon), 4),
+        'pv': _txt(provincia).upper(),
+        's': _txt(sector)[:80],
+        'ac': '' if _txt(accion).lower() in ('', 'no aplica') else _txt(accion),
+        'rs': (institucion if institucion and institucion.lower() != 'otro' else 'Sectorial') if solucion == 'Sectorial'
+              else 'Municipalidad' if solucion == 'Comunal' else '',
+        'af': 1 if _txt(afectado).upper() == 'SI' else 0,
+    }
+    return r
+
+
+def descargar_arcgis():
+    """Lee todos los puntos del servicio oficial, de a 2.000 (límite del servicio)."""
+    import urllib.parse
+    def consulta(**p):
+        p.setdefault('f', 'json')
+        with urlopen(f'{ARCGIS_URL}/query?{urllib.parse.urlencode(p)}', timeout=60) as r:
+            d = json.load(r)
+        if 'error' in d:
+            raise Exception(f"ArcGIS: {d['error']}")
+        return d
+    total = consulta(where='1=1', returnCountOnly='true')['count']
+    filas, offset = [], 0
+    while offset < total:
+        d = consulta(where='1=1', outFields=','.join(ARCGIS_CAMPOS), returnGeometry='false',
+                     orderByFields='FID', resultOffset=offset, resultRecordCount=2000)
+        lote = [f['attributes'] for f in d.get('features', [])]
+        if not lote:
+            break
+        filas += lote
+        offset += len(lote)
+    if len(filas) != total or total < 10000:
+        raise Exception(f'ArcGIS devolvió {len(filas)} de {total} puntos')
+    with urlopen(f'{ARCGIS_URL}?f=json', timeout=60) as r:
+        edicion = json.load(r).get('editingInfo', {}).get('dataLastEditDate')
+    modificado = datetime.fromtimestamp(edicion / 1000, timezone.utc).isoformat() if edicion else None
+    a = lambda f, k: f.get(k)
+    registros = [registro(a(f, 'Región'), a(f, 'Provincia'), a(f, 'Comuna'), a(f, 'Sector'), a(f, 'Causa_del_'),
+                          a(f, 'Acciones_P'), a(f, 'La_soluci'), a(f, 'Si_la_resp'), a(f, 'Nivel_de_R'),
+                          a(f, 'Tipo_de_So'), a(f, 'Punto_Crí'), a(f, 'Longitud'), a(f, 'Latitud')) for f in filas]
+    print(f'  ✅ Servicio oficial ArcGIS: {len(filas)} puntos')
+    return [r for r in registros if r], modificado
+
+
+def leer_excel(excel_data):
+    """Excel de SENAPRED → registros normalizados."""
     import openpyxl
     from io import BytesIO
 
     wb = openpyxl.load_workbook(BytesIO(excel_data), read_only=True, data_only=True)
     sheet = wb.active if wb.active else wb[wb.sheetnames[0]]
-
-    records = []
-    total_rows = 0
+    registros = []
     for row in sheet.iter_rows(min_row=2, values_only=True):
-        total_rows += 1
-        lon, lat = row[13], row[14]
-        if lon is None or lat is None:
-            continue
-        region = str(row[0] or '').strip().upper()
-        records.append({
-            'c': str(row[2] or '').strip().upper(),   # comuna
-            'cs': str(row[4] or '').strip(),            # causa
-            'lv': str(row[10] or '').strip(),           # nivel riesgo
-            'tp': str(row[11] or '').strip(),           # tipo solucion
-            'lat': round(float(lat), 4),
-            'lon': round(float(lon), 4),
-        })
-        # Asignar region después
-        records[-1]['r'] = region
+        row = list(row) + [None] * 15
+        r = registro(row[0], row[1], row[2], row[3], row[4], row[5], row[7], row[8], row[10], row[11], row[12], row[13], row[14])
+        if r:
+            registros.append(r)
+    return registros
 
-    print(f'  Filas leídas: {total_rows}')
+
+def procesar_registros(records):
+    """Genera los JSON regionales y meta.json."""
     print(f'  Registros con coordenadas: {len(records)}')
 
     # Agrupar por región
@@ -110,7 +172,8 @@ def procesar_excel(excel_data):
     region_map = {}
     for region, items in sorted(by_region.items(), key=lambda x: len(x[1]), reverse=True):
         slug = REGION_SLUGS.get(region, region.lower().replace(' ','_'))
-        clean = [{'c':i['c'],'cs':i['cs'],'lv':i['lv'],'tp':i['tp'],'lat':i['lat'],'lon':i['lon']} for i in items]
+        # Sin la región (va en el nombre del archivo) y sin campos vacíos, para que pesen menos
+        clean = [{k: v for k, v in i.items() if k != 'r' and (v or k in ('c', 'cs', 'lv', 'tp', 'lat', 'lon'))} for i in items]
         path = os.path.join(PUBLIC_DIR, f'{slug}.json')
         with open(path, 'w') as f:
             json.dump(clean, f, ensure_ascii=False)
@@ -149,6 +212,8 @@ def procesar_excel(excel_data):
         'causas': dict(causas),
         'tipos': dict(tipos),
         'comunas': len(comuna_stats),
+        'afectados': sum(1 for r in records if r.get('af')),
+        'solucionados': sum(1 for r in records if r['lv'] == 'Solucionado'),
     }
 
     with open(os.path.join(PUBLIC_DIR, 'meta.json'), 'w') as f:
@@ -180,6 +245,7 @@ def guardar_estado(ok, url=None, excel_modificado=None, error=None):
         'revisado': datetime.now(timezone.utc).isoformat(timespec='seconds'),
         'ok': ok,
         'fuente': None if not url else ('respaldo' if url == FALLBACK_URL else 'oficial'),
+        'formato': None if not url else ('servicio' if url == ARCGIS_URL else 'excel'),
         'url': url,
         'excel_modificado': excel_modificado,
         'error': error,
@@ -209,16 +275,22 @@ if __name__ == '__main__':
     do_push = '--push' in sys.argv
 
     print('=== Actualizador Puntos Críticos SENAPRED ===')
-    print('\n1️⃣  Descargando Excel...')
+    print('\n1️⃣  Descargando datos SENAPRED...')
     try:
-        excel, url, last_modified = descargar_excel()
-    except Exception as e:
-        guardar_estado(ok=False, error=str(e))
-        raise
+        registros, modificado = descargar_arcgis()
+        url = ARCGIS_URL
+    except Exception as e_arcgis:
+        print(f'  ❌ Servicio oficial: {e_arcgis}. Se prueba el Excel.')
+        try:
+            excel, url, last_modified = descargar_excel()
+        except Exception as e:
+            guardar_estado(ok=False, error=f'ArcGIS: {e_arcgis} · Excel: {e}')
+            raise
+        registros, modificado = leer_excel(excel), fecha_excel(excel, last_modified)
 
     print('\n2️⃣  Procesando datos...')
-    meta = procesar_excel(excel)
-    guardar_estado(ok=True, url=url, excel_modificado=fecha_excel(excel, last_modified))
+    meta = procesar_registros(registros)
+    guardar_estado(ok=True, url=url, excel_modificado=modificado)
     print(f'   ✅ {meta["total"]} registros · {meta["comunas"]} comunas · {len(meta["regiones"])} regiones')
 
     if do_push:

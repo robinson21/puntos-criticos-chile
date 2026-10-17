@@ -88,7 +88,7 @@ export default function EstacionesExpuestas() {
                             <span key={n} style={{ color: COLOR_NIVEL[n] }} title={n}>● {a.puntos.porNivel[n]} {n}</span>
                           ))}
                         </span>
-                        <small>más cercano a {fmtKm(a.puntos.masCercano)}</small>
+                        <small>{a.puntos.afectados ? <b className="est-afectados">🔁 {a.puntos.afectados} afectados este invierno · </b> : null}más cercano a {fmtKm(a.puntos.masCercano)}</small>
                       </>
                     ) : <small className="est-nada">Ninguno</small>}
                   </span>
@@ -114,7 +114,7 @@ export default function EstacionesExpuestas() {
           )}
           <p className="estaciones-nota">
             <b>Criterio:</b> <i>Alta</i> = foco de incendio a ≤ {RADIO_INCENDIO_KM} km, punto "Muy Alto" dentro del radio o alerta/alarma DMC en la región.
-            {' '}<i>Media</i> = punto "Alto" dentro del radio, o aviso DMC con puntos críticos cerca. <i>Baja</i> = otros puntos dentro del radio o solo aviso DMC.
+            {' '}<i>Media</i> = punto "Alto" o punto afectado este invierno dentro del radio, o aviso DMC con puntos críticos cerca. <i>Baja</i> = otros puntos dentro del radio o solo aviso DMC.
             {' '}Las alertas DMC son por zonas de la región (cordillera, costa…), no por comuna: revisa la zona exacta.
           </p>
         </>

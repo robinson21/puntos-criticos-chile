@@ -34,10 +34,11 @@ export function regionSenapred(regionEstacion) {
 // alta  = foco de incendio cerca, punto "Muy Alto" dentro del radio, o alerta/alarma DMC en su región
 // media = punto "Alto" dentro del radio, o aviso DMC con puntos críticos dentro del radio
 // baja  = algún punto crítico dentro del radio, o aviso DMC en su región
-function nivel({ porNivel, total }, alertas, incendios) {
+// (un punto afectado este invierno dentro del radio sube la estación al menos a media)
+function nivel({ porNivel, total, afectados }, alertas, incendios) {
   const maxAlerta = Math.max(0, ...alertas.map(a => SEVERIDAD[a.tipo] || 0));
   if (incendios.cantidad || porNivel['Muy Alto'] || maxAlerta >= 2) return 'alta';
-  if (porNivel['Alto'] || (maxAlerta === 1 && total)) return 'media';
+  if (porNivel['Alto'] || afectados || (maxAlerta === 1 && total)) return 'media';
   if (total || maxAlerta === 1) return 'baja';
   return 'sin';
 }
@@ -56,13 +57,14 @@ export function analizarEstaciones({ estaciones, region, comuna, puntos, alertas
       const alertasRegion = alertasDe(regionSenapred(e.region));
       const pos = { lat: e.coords.lat, lon: e.coords.lng };
       const porNivel = { 'Muy Alto': 0, Alto: 0, Medio: 0, Bajo: 0 };
-      let total = 0, masCercano = null;
+      let total = 0, afectados = 0, masCercano = null;
       for (const p of puntos) {
-        if (Math.abs(p.lat - pos.lat) > margen) continue;
+        if (!(p.lv in porNivel) || Math.abs(p.lat - pos.lat) > margen) continue; // excluye "Solucionado"
         const d = distanciaKm(pos, p);
         if (d > radioKm) continue;
         total++;
-        if (p.lv in porNivel) porNivel[p.lv]++;
+        porNivel[p.lv]++;
+        if (p.af) afectados++;
         if (masCercano == null || d < masCercano) masCercano = d;
       }
       let cantidad = 0, fuegoCercano = null;
@@ -73,7 +75,7 @@ export function analizarEstaciones({ estaciones, region, comuna, puntos, alertas
         cantidad++;
         if (fuegoCercano == null || d < fuegoCercano) fuegoCercano = d;
       }
-      const puntosCerca = { porNivel, total, masCercano };
+      const puntosCerca = { porNivel, total, afectados, masCercano };
       const incendios = { cantidad, masCercano: fuegoCercano };
       return { estacion: e, pos, puntos: puntosCerca, alertas: alertasRegion, incendios, nivel: nivel(puntosCerca, alertasRegion, incendios) };
     })
@@ -81,6 +83,7 @@ export function analizarEstaciones({ estaciones, region, comuna, puntos, alertas
       EXPOSICION[b.nivel].orden - EXPOSICION[a.nivel].orden
       || b.incendios.cantidad - a.incendios.cantidad
       || b.puntos.porNivel['Muy Alto'] - a.puntos.porNivel['Muy Alto']
+      || b.puntos.afectados - a.puntos.afectados
       || b.puntos.total - a.puntos.total);
 }
 
@@ -90,11 +93,11 @@ export const fmtKm = km => (km == null ? '' : km < 1 ? `${Math.round(km * 1000)}
 export function descargarCsvEstaciones(filas, region, radioKm) {
   const celda = v => { const s = String(v ?? ''); return /[";\n\r]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
   const cab = ['Exposición', 'Estación', 'Dirección', 'Comuna', 'Región', `Puntos críticos a ≤ ${fmtKm(radioKm)}`,
-    'Muy Alto', 'Alto', 'Medio', 'Bajo', 'Punto más cercano', 'Alertas DMC vigentes', `Focos de incendio a ≤ ${RADIO_INCENDIO_KM} km`,
+    'Muy Alto', 'Alto', 'Medio', 'Bajo', 'Afectados este invierno', 'Punto más cercano', 'Alertas DMC vigentes', `Focos de incendio a ≤ ${RADIO_INCENDIO_KM} km`,
     'Foco más cercano', 'Latitud', 'Longitud'];
   const lineas = filas.map(f => [
     EXPOSICION[f.nivel].texto, f.estacion.name, f.estacion.address, f.estacion.locality, region || f.estacion.region, f.puntos.total,
-    ...NIVELES.map(n => f.puntos.porNivel[n]), fmtKm(f.puntos.masCercano),
+    ...NIVELES.map(n => f.puntos.porNivel[n]), f.puntos.afectados, fmtKm(f.puntos.masCercano),
     f.alertas.map(a => `${a.tipo} ${a.fenomeno}`).join(' | '), f.incendios.cantidad, fmtKm(f.incendios.masCercano),
     String(f.pos.lat).replace('.', ','), String(f.pos.lon).replace('.', ','),
   ].map(celda).join(';'));

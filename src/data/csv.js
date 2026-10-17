@@ -2,10 +2,15 @@
 // UTF-8 para que tildes y "ñ" se vean bien al abrirlo con doble clic.
 const COLUMNAS = [
   ['Región', (r, region) => region],
+  ['Provincia', r => r.pv || ''],
   ['Comuna', r => r.c],
+  ['Sector', r => r.s || ''],
   ['Causa', r => r.cs],
   ['Nivel de riesgo', r => r.lv],
   ['Tipo de solución', r => r.tp || 'Sin información'],
+  ['Acción principal', r => r.ac || ''],
+  ['Responsable', r => r.rs || ''],
+  ['Afectado este invierno', r => (r.af ? 'Sí' : 'No')],
   ['Latitud', r => decimal(r.lat)],
   ['Longitud', r => decimal(r.lon)],
 ];

@@ -593,14 +593,21 @@ export default function MapView() {
             key={i}
             center={[p.lat, p.lon]}
             radius={radioPunto(zoomActual)}
-            pathOptions={{ color: COLORS[p.lv]||'#5D7284', fillColor: COLORS[p.lv]||'#5D7284', fillOpacity: 0.7, weight: 1 }}
+            // Afectados este invierno: borde blanco para distinguirlos
+            pathOptions={p.af
+              ? { color: '#ffffff', fillColor: COLORS[p.lv]||'#5D7284', fillOpacity: 0.9, weight: 2 }
+              : { color: COLORS[p.lv]||'#5D7284', fillColor: COLORS[p.lv]||'#5D7284', fillOpacity: 0.7, weight: 1 }}
           >
             <Popup>
               <div className="popup-content">
-                <div className="popup-comuna">{p.c}</div>
+                <div className="popup-comuna">{p.s ? `${p.s} · ` : ''}{p.c}</div>
+                {p.af ? <div className="popup-afectado">🔁 Afectado este invierno</div> : null}
                 <div className="popup-row"><b>Causa:</b> {p.cs}</div>
                 <div className="popup-row"><b>Riesgo:</b><span style={{color:COLORS[p.lv],fontWeight:600}}> {p.lv}</span></div>
                 <div className="popup-row"><b>Solución:</b> {p.tp || <i>sin información en SENAPRED</i>}</div>
+                {p.ac && <div className="popup-row"><b>Acción:</b> {p.ac}</div>}
+                {p.rs && <div className="popup-row"><b>Responsable:</b> {p.rs}</div>}
+                {p.pv && <div className="popup-row"><b>Provincia:</b> {p.pv}</div>}
               </div>
             </Popup>
           </CircleMarker>
@@ -659,6 +666,7 @@ export default function MapView() {
         {Object.entries(COLORS).map(([n, c]) => (
           <span key={n}><span className="dot" style={{background:c}}></span> {n}</span>
         ))}
+        <span><span className="dot dot-afectado"></span> Afectado este invierno</span>
         {resumenIncendios && !resumenIncendios.error && (
           <span><span className="dot dot-foco"></span> Foco de incendio</span>
         )}
