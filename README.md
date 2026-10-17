@@ -32,7 +32,7 @@ Variables de entorno: ver [`docs/ENV-VARS.md`](docs/ENV-VARS.md). En desarrollo,
 | `worker/index.js` + `wrangler.jsonc` | Worker `puntos-criticos`: sirve la app, entrega `/data/*.json` desde la rama `datos` (respaldo: GitHub Pages y luego la copia incluida) y reenvía `/api/*` y `/health` al Worker `owm-proxy` |
 | `owm-proxy-worker.js` + `wrangler.owm-proxy.toml` | Worker `owm-proxy`: tiles OpenWeatherMap y NASA FIRMS con las claves como secretos |
 
-- Cambios en la app: `npm run deploy` (compila y despliega con Wrangler).
+- Cambios en la app: se publican solos al unirlos a `master` ([`cloudflare.yml`](.github/workflows/cloudflare.yml), requiere los secretos `CLOUDFLARE_API_TOKEN` y `CLOUDFLARE_ACCOUNT_ID`). A mano: `npm run deploy`.
 - Cambios en los datos: no requieren desplegar; GitHub Actions actualiza la rama `datos` cada 3 h.
 
 ## Estructura

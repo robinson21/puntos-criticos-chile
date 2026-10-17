@@ -1,0 +1,62 @@
+name: Publicar sitio en Cloudflare
+
+# Despliega el Worker "puntos-criticos" (app + worker/index.js) cuando cambia el código en master.
+# Los datos NO necesitan esto: el sitio los lee de la rama "datos".
+# Requiere los secretos del repo CLOUDFLARE_API_TOKEN (plantilla "Edit Cloudflare Workers")
+# y CLOUDFLARE_ACCOUNT_ID. Sin token, avisa y no hace nada.
+on:
+  push:
+    branches: [master]
+    paths:
+      - src/**
+      - worker/**
+      - public/**
+      - index.html
+      - vite.config.js
+      - package.json
+      - package-lock.json
+      - wrangler.jsonc
+      - .github/workflows/cloudflare.yml
+  workflow_dispatch:
+
+concurrency:
+  group: cloudflare-sitio
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - name: Sin token de Cloudflare
+        if: env.CLOUDFLARE_API_TOKEN == ''
+        run: echo "::warning::Falta el secreto CLOUDFLARE_API_TOKEN; el sitio no se desplegó en Cloudflare."
+
+      - uses: actions/checkout@v4
+        if: env.CLOUDFLARE_API_TOKEN != ''
+      - uses: actions/setup-node@v4
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+        if: env.CLOUDFLARE_API_TOKEN != ''
+      - name: Compilar
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        env:
+          VITE_MAPTILER_KEY: ${{ secrets.VITE_MAPTILER_KEY }}
+        run: npm run build
+      - name: Desplegar
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
+      - name: Comprobar el sitio
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: |
+          sleep 10
+          curl -fsS -o /dev/null https://puntos-criticos.gesstiapp.workers.dev/
+          curl -fsS https://puntos-criticos.gesstiapp.workers.dev/data/meta.json | head -c 50
