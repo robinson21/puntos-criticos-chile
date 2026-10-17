@@ -38,7 +38,7 @@ jobs:
       - uses: actions/setup-node@v4
         if: env.CLOUDFLARE_API_TOKEN != ''
         with:
-          node-version: 20
+          node-version: 22 # Wrangler 4 necesita Node 22
           cache: npm
       - run: npm ci
         if: env.CLOUDFLARE_API_TOKEN != ''
