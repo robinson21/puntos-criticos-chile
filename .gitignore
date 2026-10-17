@@ -5,3 +5,5 @@ node_modules/
 .env.*.local
 .env.production
 __pycache__/
+# Lo genera GitHub Actions en cada publicación (actualizar_incendios.py)
+public/data/incendios.json

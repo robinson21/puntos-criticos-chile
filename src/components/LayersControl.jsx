@@ -12,7 +12,7 @@ export const CAPAS_AMBIENTALES = [
     icon: '🔥',
     color: '#dc2626',
     fuente: 'NASA FIRMS · 24h',
-    descripcion: 'Focos de calor activos detectados por los satélites VIIRS en las últimas 24 horas. Se habilita cuando el Worker tiene el secreto FIRMS_MAP_KEY (Map Key gratuita de NASA FIRMS).',
+    descripcion: 'Focos de calor activos detectados por los satélites VIIRS en las últimas 24 horas. Se actualizan cada 3 h con la Map Key gratuita de NASA FIRMS (secreto FIRMS_MAP_KEY del repo).',
     necesitaKey: true,
     keyName: 'FIRMS',
     default: false
@@ -121,7 +121,7 @@ export default function LayersControl({ activeLayers, onToggle, hasOwmKey = fals
               <br />
               {hasFirmsKey
                 ? '✅ Incendios NASA FIRMS conectado'
-                : '🔑 Incendios: falta la Map Key gratuita de NASA FIRMS en el Worker (secreto FIRMS_MAP_KEY).'}
+                : '🔑 Incendios: falta la Map Key gratuita de NASA FIRMS (secreto FIRMS_MAP_KEY del repo).'}
             </small>
           </div>
         </div>

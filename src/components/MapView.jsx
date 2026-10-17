@@ -188,10 +188,8 @@ function Recenter({ token }) {
   return null;
 }
 
-// Capas ambientales estilo Zoom Earth:
-//  - Incendios FIRMS (deshabilitado: el WMS público dejó de funcionar, ahora
-//    requiere Map Key; queda bloqueado con 🔑 hasta que se configure FIRMS_KEY
-//    en el proxy backend).
+// Capas ambientales estilo Zoom Earth (los incendios FIRMS los dibuja
+// IncendiosLayer como marcadores, no como tiles):
 //  - Lluvia animada RainViewer (sin key).
 //  - Viento / nubes / temperatura / precipitación OWM: servidas vía proxy
 //    backend en `tileProxy` para no exponer la API key en el bundle.
@@ -211,14 +209,7 @@ function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey, tilePr
       if (l) { map.removeLayer(l); delete layersRef.current[id]; }
     };
 
-    // 1. Incendios FIRMS — desactivado: el WMS público dejó de funcionar.
-    //    Se deja la rama remove() para que el panel pueda apagar la capa limpia.
-    if (activeLayers.includes('incendios')) {
-      // Sin proxy FIRMS configurado: no se dibuja nada.
-      remove('incendios');
-    } else remove('incendios');
-
-    // 2. Lluvia animada RainViewer (sin key).
+    // 1. Lluvia animada RainViewer (sin key).
     if (activeLayers.includes('lluvia') && rainFrames && rainFrames[rainNow]) {
       // RainViewer (API 2.0) identifica cada cuadro por `host` + `path`; las URLs con la
       // marca de tiempo responden 410. Su plan gratuito solo sirve hasta zoom 7: más
@@ -232,7 +223,7 @@ function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey, tilePr
       }
     } else remove('lluvia');
 
-    // 3. Viento / nubes / temperatura vía PROXY backend (sin exponer key).
+    // 2. Viento / nubes / temperatura vía PROXY backend (sin exponer key).
     //    Si no hay proxy y no hay key, no se dibujan.
     const owm = (layer) => {
       if (tileProxy) return `${tileProxy}/api/tiles/owm/${layer}/{z}/{x}/{y}.png`;
@@ -272,23 +263,34 @@ export default function MapView() {
   const TILE_PROXY = (import.meta.env.VITE_TILE_PROXY || 'https://owm-proxy.robinson-armijo.workers.dev').trim();
   const hasTileProxy = TILE_PROXY.length > 0;
   const hasOwmSource = hasTileProxy || hasOwmKey;
-  // Capas ambientales activas. Default: solo lluvia; incendios se suma solo si el
-  // Worker tiene configurada la Map Key de NASA FIRMS (ver /health).
+  // Capas ambientales activas. Default: solo lluvia; incendios se suma si hay focos
+  // NASA FIRMS: primero el JSON que genera GitHub Actions y, si no existe, el Worker
+  // cuando tiene configurada la Map Key (ver /health).
   const [activeLayers, setActiveLayers] = useState(['lluvia']);
-  const [firmsDisponible, setFirmsDisponible] = useState(false);
+  const [urlIncendios, setUrlIncendios] = useState(null);
+  const firmsDisponible = Boolean(urlIncendios);
   const [resumenIncendios, setResumenIncendios] = useState(null);
   const [estadoSatelite, setEstadoSatelite] = useState(null);
   useEffect(() => {
-    if (!hasTileProxy) return;
-    fetch(`${TILE_PROXY}/health`)
+    let vivo = true;
+    const activar = url => {
+      if (!vivo) return;
+      setUrlIncendios(url);
+      setActiveLayers(prev => (prev.includes('incendios') ? prev : [...prev, 'incendios']));
+    };
+    fetch('./data/incendios.json', { cache: 'no-cache' })
       .then(r => (r.ok ? r.json() : null))
-      .then(h => {
-        if (h?.firms) {
-          setFirmsDisponible(true);
-          setActiveLayers(prev => (prev.includes('incendios') ? prev : [...prev, 'incendios']));
-        }
+      .then(d => (Array.isArray(d?.focos) ? d : null))
+      .catch(() => null)
+      .then(d => {
+        if (d) return activar('./data/incendios.json');
+        if (!hasTileProxy) return;
+        return fetch(`${TILE_PROXY}/health`)
+          .then(r => (r.ok ? r.json() : null))
+          .then(h => h?.firms && activar(`${TILE_PROXY}/api/firms`));
       })
       .catch(() => {});
+    return () => { vivo = false; };
   }, [TILE_PROXY, hasTileProxy]);
   const [rainFrames, setRainFrames] = useState(null); // timestamps RainViewer para animación
   const [rainNow, setRainNow] = useState(0); // índice del frame actual
@@ -589,7 +591,7 @@ export default function MapView() {
         ))}
         <NubesSatelite activo={activeLayers.includes('satelite')} onEstado={setEstadoSatelite} />
         <IncendiosLayer
-          proxy={firmsDisponible ? TILE_PROXY : null}
+          url={urlIncendios}
           activo={firmsDisponible && activeLayers.includes('incendios')}
           puntos={filtered}
           onResumen={setResumenIncendios}
@@ -633,7 +635,7 @@ export default function MapView() {
         <div className={`incendios-resumen ${resumenIncendios.cerca ? 'alerta' : ''}`}>
           {resumenIncendios.error
             ? `🔥 No se pudieron cargar los focos de incendio (${resumenIncendios.error})`
-            : `🔥 ${resumenIncendios.focos.toLocaleString('es-CL')} focos activos en Chile (24 h) · ${resumenIncendios.cerca.toLocaleString('es-CL')} de los puntos mostrados a menos de ${resumenIncendios.radioKm} km de un foco`}
+            : `🔥 ${resumenIncendios.focos.toLocaleString('es-CL')} focos activos en Chile (24 h) · ${resumenIncendios.cerca.toLocaleString('es-CL')} de los puntos mostrados a menos de ${resumenIncendios.radioKm} km de un foco${resumenIncendios.actualizado ? ` · actualizado ${horaChile(resumenIncendios.actualizado)}` : ''}`}
         </div>
       )}
       </div>

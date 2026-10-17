@@ -34,10 +34,10 @@
 | ☁️ **Nubes** | OpenWeatherMap (OWM) | Sí | Vía proxy Cloudflare (Worker añade key) | ✅ Activa |
 | 🌡️ **Temperatura** | OpenWeatherMap (OWM) | Sí | Vía proxy Cloudflare (Worker añade key) | ✅ Activa |
 | 🌧️ **Lluvia animada** | RainViewer | No | Endpoint público, animación de radar | ✅ Activa |
-| 🔥 **Incendios** | NASA FIRMS (VIIRS) | Sí (Map Key gratuita) | Worker `/api/firms` agrega la key; el portal la habilita si `/health` dice `firms: true` | 🔑 Se activa al configurar `FIRMS_MAP_KEY` |
+| 🔥 **Incendios** | NASA FIRMS (VIIRS) | Sí (Map Key gratuita) | GitHub Actions genera `data/incendios.json` cada 3 h (secreto `FIRMS_MAP_KEY` del repo); si no está, el Worker `/api/firms` | 🔑 Se activa al configurar `FIRMS_MAP_KEY` |
 
 > 🔥 **Incendios activos**: NASA FIRMS requiere una "Map Key" gratuita. Basta con guardarla como
-> secreto `FIRMS_MAP_KEY` del Worker (ver `docs/PROXY-OWM.md`); mientras no exista, la capa se
+> secreto `FIRMS_MAP_KEY` del repo (o del Worker, ver `docs/PROXY-OWM.md`); mientras no exista, la capa se
 > muestra bloqueada con candado 🔑. Con la key, el mapa muestra los focos de las últimas 24 h y
 > cuántos puntos críticos están a menos de 5 km de alguno.
 
