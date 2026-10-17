@@ -174,3 +174,12 @@ export function relacionadosEnRegion(alerta, region, porRegionCausa) {
   const causas = (alerta.puntos_area || porRegionCausa || {})[region] || {};
   return Object.entries(causas).reduce((s, [c, v]) => s + (causaRelacionada(alerta, c) ? v.n : 0), 0);
 }
+
+// Orden para mostrar: más grave primero; a igual gravedad, las que activan puntos críticos
+// (y entre ellas, las con más puntos relacionados) antes que las operacionales.
+export function ordenarAlertas(alertas, relacionados = () => 0) {
+  return [...alertas].sort((a, b) =>
+    (SEVERIDAD[b.tipo] || 0) - (SEVERIDAD[a.tipo] || 0)
+    || Number(esOperacional(a)) - Number(esOperacional(b))
+    || relacionados(b) - relacionados(a));
+}
