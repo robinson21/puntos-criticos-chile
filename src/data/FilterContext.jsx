@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { useData } from './DataContext';
 import { leerUrl, escribirUrl } from './url';
+import { useAlertas, alertasDeRegion, esOperacional, puntoRelacionado } from './alertas';
 
 const FilterContext = createContext(null);
 
@@ -17,6 +18,9 @@ export function FilterProvider({ children, records }) {
   const [provincia, setProvincia] = useState(inicial.provincia || '');
   // Solo los puntos que SENAPRED marca como afectados en el período (este invierno)
   const [soloAfectados, setSoloAfectados] = useState(inicial.afectados === '1');
+  // Puntos que una alerta DMC vigente puede activar: '' (sin filtro), 'todas' o el id de una alerta
+  const [filtroAlerta, setFiltroAlerta] = useState(inicial.alerta || '');
+  const { data: alertasData } = useAlertas();
 
   // Refleja región y filtros en la URL (replaceState: no ensucia el historial).
   // Se espera a que cargue la región pedida en la URL para no borrarla antes.
@@ -26,20 +30,31 @@ export function FilterProvider({ children, records }) {
       if (regionActual) setListo(true);
       return;
     }
-    escribirUrl({ region: regionActual, provincia, comuna, causa, nivel, tipo: tipoSolucion, afectados: soloAfectados ? '1' : '' });
-  }, [listo, regionActual, provincia, comuna, causa, nivel, tipoSolucion, soloAfectados]);
+    escribirUrl({ region: regionActual, provincia, comuna, causa, nivel, tipo: tipoSolucion, afectados: soloAfectados ? '1' : '', alerta: filtroAlerta });
+  }, [listo, regionActual, provincia, comuna, causa, nivel, tipoSolucion, soloAfectados, filtroAlerta]);
+
+  // Alertas de la región que tienen causas relacionadas (las operacionales no filtran puntos)
+  const alertasConCausas = useMemo(
+    () => alertasDeRegion(alertasData?.alertas, regionActual).filter(a => !esOperacional(a)),
+    [alertasData, regionActual]
+  );
+  const alertasFiltro = useMemo(() => {
+    if (!filtroAlerta) return null;
+    return filtroAlerta === 'todas' ? alertasConCausas : alertasConCausas.filter(a => String(a.id) === String(filtroAlerta));
+  }, [filtroAlerta, alertasConCausas]);
 
   const filtered = useMemo(() => {
     if (!records.length) return [];
     return records.filter(r =>
       !(provincia && r.pv !== provincia) &&
       !(soloAfectados && !r.af) &&
+      !(alertasFiltro && !alertasFiltro.some(a => puntoRelacionado(a, r, regionActual))) &&
       !(comuna && r.c !== comuna) &&
       !(causa && r.cs !== causa) &&
       !(nivel && r.lv !== nivel) &&
       !(tipoSolucion && r.tp !== (tipoSolucion === SIN_INFO ? '' : tipoSolucion))
     );
-  }, [records, provincia, soloAfectados, comuna, causa, nivel, tipoSolucion]);
+  }, [records, provincia, soloAfectados, alertasFiltro, regionActual, comuna, causa, nivel, tipoSolucion]);
 
   const provincias = useMemo(() => [...new Set(records.map(r => r.pv).filter(Boolean))].sort(), [records]);
   const hayAfectados = useMemo(() => records.some(r => r.af), [records]);
@@ -55,6 +70,7 @@ export function FilterProvider({ children, records }) {
     tipoSolucion, setTipoSolucion,
     provincia, setProvincia, provincias,
     soloAfectados, setSoloAfectados, hayAfectados,
+    filtroAlerta, setFiltroAlerta, alertasConCausas,
     filtered,
     comunas,
     causas,

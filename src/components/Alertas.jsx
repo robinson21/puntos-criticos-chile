@@ -1,15 +1,29 @@
 import { useState } from 'react';
 import { useData } from '../data/DataContext';
 import {
-  useAlertas, alertasDeRegion, antiguedad, puntosExpuestos, limpiarTexto, SEVERIDAD, COLOR_TIPO,
+  useAlertas, alertasDeRegion, antiguedad, limpiarTexto, SEVERIDAD, COLOR_TIPO,
+  resumenRelacionados, esOperacional, regionesSenapred, relacionadosEnRegion,
 } from '../data/alertas';
+import { useFilters } from '../data/FilterContext';
 import { tituloRegion } from '../data/stats';
 
 export default function Alertas() {
   const { data: alertas, error } = useAlertas();
   const [filtro, setFiltro] = useState('todas');
   const [soloRegion, setSoloRegion] = useState(true);
-  const { metadata, regionActual } = useData();
+  const { metadata, regionActual, loadRegion } = useData();
+  const { setFiltroAlerta } = useFilters();
+
+  // Lleva al mapa con los puntos que la alerta puede activar (en la región elegida o en la más expuesta)
+  const verEnMapa = a => {
+    const regiones = regionesSenapred(a);
+    const n = r => relacionadosEnRegion(a, r, metadata?.por_region_causa);
+    const destino = regiones.includes(regionActual) ? regionActual : [...regiones].sort((x, y) => n(y) - n(x))[0];
+    if (!destino) return;
+    if (destino !== regionActual) loadRegion(destino);
+    setFiltroAlerta(String(a.id));
+    setTimeout(() => document.querySelector('.map-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 300);
+  };
 
   if (error) return null; // No mostrar si falla
   if (!alertas) {
@@ -38,7 +52,7 @@ export default function Alertas() {
   filtradas.sort((a, b) => (SEVERIDAD[b.tipo] || 0) - (SEVERIDAD[a.tipo] || 0));
 
   const edad = antiguedad(alertas.actualizado);
-  const porRegion = metadata?.por_region;
+  const porRegionCausa = metadata?.por_region_causa;
 
   return (
     <div className="alertas-section">
@@ -94,7 +108,8 @@ export default function Alertas() {
           </div>
         )}
         {filtradas.map(a => {
-          const expuestos = puntosExpuestos(a, porRegion);
+          const operacional = esOperacional(a);
+          const rel = operacional ? null : resumenRelacionados(a, porRegionCausa);
           return (
             <div key={a.id} className="alerta-item" style={{borderLeftColor: COLOR_TIPO[a.tipo] || a.color}}>
               <div className="alerta-head">
@@ -109,14 +124,21 @@ export default function Alertas() {
                 <span>📅 {limpiarTexto(a.desde)} → {limpiarTexto(a.hasta)}</span>
                 {a.observacion && <span className="alerta-obs">⚠️ {limpiarTexto(a.observacion)}</span>}
                 {a.zonas && <span>📍 {limpiarTexto(a.zonas)}</span>}
-                {expuestos > 0 && (
-                  <span
-                    className="alerta-expuestos"
-                    title="Total de puntos críticos SENAPRED en las regiones afectadas. La DMC avisa por zonas (costa, valle, cordillera), así que no todos están necesariamente dentro de la zona del aviso."
-                  >
-                    🎯 {expuestos.toLocaleString('es-CL')} puntos críticos en las regiones afectadas
+                {a.poligono && <span className="alerta-area">🗺️ Área exacta definida por la DMC (se dibuja en el mapa)</span>}
+                {operacional ? (
+                  <span className="alerta-operacional" title="Este fenómeno no activa causas de los puntos críticos de invierno. Igual es relevante para la operación de las instalaciones.">
+                    🏭 Alerta operacional: no activa causas de puntos críticos de invierno
                   </span>
-                )}
+                ) : rel && rel.n > 0 ? (
+                  <span className="alerta-expuestos"
+                    title={a.poligono ? 'Puntos críticos dentro del área exacta del aviso cuya causa puede activarse con este fenómeno.'
+                      : 'Puntos críticos de las regiones afectadas cuya causa puede activarse con este fenómeno. La DMC avisa por zonas (costa, valle, cordillera): revisa la zona exacta.'}>
+                    🎯 {rel.n.toLocaleString('es-CL')} puntos relacionados{a.poligono ? ' en el área' : ''} · {rel.alto.toLocaleString('es-CL')} Alto/Muy Alto · {rel.af.toLocaleString('es-CL')} afectados este invierno
+                    <button type="button" className="btn-mini alerta-ver" onClick={() => verEnMapa(a)}>📍 Ver en el mapa</button>
+                  </span>
+                ) : rel ? (
+                  <span className="alerta-operacional">Sin puntos críticos relacionados en el área afectada</span>
+                ) : null}
               </div>
             </div>
           );

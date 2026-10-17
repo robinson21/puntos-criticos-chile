@@ -4,9 +4,23 @@ import L from 'leaflet';
 import { useFilters } from '../data/FilterContext';
 import { useData } from '../data/DataContext';
 import AramcoMarkers from './AramcoMarkers';
+import AlertasPoligonos from './AlertasPoligonos';
 import LayersControl from './LayersControl';
 import IncendiosLayer from './IncendiosLayer';
 import NubesSatelite from './NubesSatelite';
+import { LluviaRadar, LluviaNasa } from './Lluvia';
+
+// "🌧️ Lluvia NASA · 18:30 (hace 6 h) · 12/12": hora del cuadro que se está mostrando
+function HoraCapa({ estado, icono, nombre }) {
+  if (!estado) return null;
+  if (estado.error) return <div className="capa-hora error">{icono} {nombre}: no disponible</div>;
+  const horas = Math.round((Date.now() - Date.parse(estado.tiempo)) / 36e5);
+  return (
+    <div className={`capa-hora ${estado.cuadro === estado.total ? 'ultimo' : ''}`}>
+      {icono} {nombre} · {horaChile(estado.tiempo)}{horas >= 1 ? ` (hace ${horas} h)` : ''} · {estado.cuadro}/{estado.total}
+    </div>
+  );
+}
 import { horaChile } from '../data/gibs';
 import 'leaflet/dist/leaflet.css';
 
@@ -209,7 +223,7 @@ function Recenter({ token }) {
 //    backend en `tileProxy` para no exponer la API key en el bundle.
 // Si el proxy está caído, las capas se sirven desde OWM directo si owmKey está
 // presente (fallback opcional).
-function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey, tileProxy }) {
+function EnvironmentalLayers({ activeLayers, owmKey, tileProxy }) {
   const map = useMap();
   const layersRef = useRef({});
 
@@ -222,20 +236,6 @@ function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey, tilePr
       const l = layersRef.current[id];
       if (l) { map.removeLayer(l); delete layersRef.current[id]; }
     };
-
-    // 1. Lluvia animada RainViewer (sin key).
-    if (activeLayers.includes('lluvia') && rainFrames && rainFrames[rainNow]) {
-      // RainViewer (API 2.0) identifica cada cuadro por `host` + `path`; las URLs con la
-      // marca de tiempo responden 410. Su plan gratuito solo sirve hasta zoom 7: más
-      // cerca devuelve un tile "Zoom Level Not Supported", así que se escala el de z7.
-      const { host, path } = rainFrames[rainNow];
-      const url = `${host}${path}/256/{z}/{x}/{y}/2/1_1.png`;
-      if (!layersRef.current.lluvia) {
-        add('lluvia', L.tileLayer(url, { tileSize: 256, opacity: 0.7, maxNativeZoom: 7, maxZoom: 19, attribution: '© RainViewer' }));
-      } else {
-        layersRef.current.lluvia.setUrl(url);
-      }
-    } else remove('lluvia');
 
     // 2. Viento / nubes / temperatura vía PROXY backend (sin exponer key).
     //    Si no hay proxy y no hay key, no se dibujan.
@@ -260,7 +260,7 @@ function EnvironmentalLayers({ activeLayers, rainFrames, rainNow, owmKey, tilePr
     } else {
       remove('viento'); remove('nubes'); remove('temperatura');
     }
-  }, [map, activeLayers, rainFrames, rainNow, owmKey]);
+  }, [map, activeLayers, owmKey]);
 
   return null;
 }
@@ -280,7 +280,7 @@ export default function MapView() {
   // Capas ambientales activas. Default: solo lluvia; incendios se suma si hay focos
   // NASA FIRMS: primero el JSON que genera GitHub Actions y, si no existe, el Worker
   // cuando tiene configurada la Map Key (ver /health).
-  const [activeLayers, setActiveLayers] = useState(['lluvia']);
+  const [activeLayers, setActiveLayers] = useState(['lluviaNasa', 'lluvia']);
   const [urlIncendios, setUrlIncendios] = useState(null);
   const firmsDisponible = Boolean(urlIncendios);
   const [resumenIncendios, setResumenIncendios] = useState(null);
@@ -306,8 +306,8 @@ export default function MapView() {
       .catch(() => {});
     return () => { vivo = false; };
   }, [TILE_PROXY, hasTileProxy]);
-  const [rainFrames, setRainFrames] = useState(null); // timestamps RainViewer para animación
-  const [rainNow, setRainNow] = useState(0); // índice del frame actual
+  const [estadoRadar, setEstadoRadar] = useState(null);
+  const [estadoNasa, setEstadoNasa] = useState(null);
   const maptilerValida = useMapTilerValida();
   const usarMapTiler = maptilerValida === true;
   const { comuna } = useFilters();
@@ -319,28 +319,6 @@ export default function MapView() {
   function toggleLayer(id) {
     setActiveLayers(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
   }
-
-  // Carga frames de animación de lluvia desde RainViewer (gratis, sin key).
-  useEffect(() => {
-    if (!activeLayers.includes('lluvia')) return;
-    fetch('https://api.rainviewer.com/public/weather-maps.json')
-      .then(r => r.ok ? r.json() : null)
-      .then(data => {
-        if (data && Array.isArray(data.radar?.past)) {
-          const host = data.host || 'https://tilecache.rainviewer.com';
-          setRainFrames([...data.radar.past, ...(data.radar.nowcast || [])].map(f => ({ ...f, host })));
-          setRainNow(0);
-        }
-      })
-      .catch(() => setRainFrames(null));
-  }, [activeLayers]);
-
-  // Avanza la animación de lluvia cada 600ms.
-  useEffect(() => {
-    if (!rainFrames || rainFrames.length < 2) return;
-    const t = setInterval(() => setRainNow(i => (i + 1) % rainFrames.length), 600);
-    return () => clearInterval(t);
-  }, [rainFrames]);
 
   // Estado para la geocodificación (búsqueda por dirección)
   const [query, setQuery] = useState('');
@@ -584,7 +562,7 @@ export default function MapView() {
         {/* Marcador "Mi ubicación" (GPS del navegador) */}
         {myLoc && <MyLocation coords={myLoc} />}
         {/* Capas ambientales (estilo Zoom Earth) */}
-        <EnvironmentalLayers activeLayers={activeLayers} rainFrames={rainFrames} rainNow={rainNow} owmKey={OWM_KEY} tileProxy={hasTileProxy ? TILE_PROXY : null} />
+        <EnvironmentalLayers activeLayers={activeLayers} owmKey={OWM_KEY} tileProxy={hasTileProxy ? TILE_PROXY : null} />
         {recenterToken > 0 && <Recenter token={recenterToken} />}
         <FitToPoints points={filtered} fitKey={`${regionActual}|${comuna}`} />
         {flyTo && <FlyTo coords={flyTo} />}
@@ -613,12 +591,15 @@ export default function MapView() {
           </CircleMarker>
         ))}
         <NubesSatelite activo={activeLayers.includes('satelite')} onEstado={setEstadoSatelite} />
+        <LluviaNasa activo={activeLayers.includes('lluviaNasa')} onEstado={setEstadoNasa} />
+        <LluviaRadar activo={activeLayers.includes('lluvia')} onEstado={setEstadoRadar} />
         <IncendiosLayer
           url={urlIncendios}
           activo={firmsDisponible && activeLayers.includes('incendios')}
           puntos={filtered}
           onResumen={setResumenIncendios}
         />
+        <AlertasPoligonos />
         <AramcoMarkers comuna={comuna} region={regionActual} />
         {flyTo && (
           <CircleMarker
@@ -647,11 +628,11 @@ export default function MapView() {
       </button>
       {locErr && <div className="gps-locate-err">{locErr}</div>}
       <LayersControl activeLayers={activeLayers} onToggle={toggleLayer} hasOwmKey={hasOwmSource} hasFirmsKey={firmsDisponible} />
-      {estadoSatelite && (
-        <div className="satelite-hora">
-          {estadoSatelite.error
-            ? `🛰️ Satélite no disponible (${estadoSatelite.error})`
-            : `🛰️ GOES-East · ${horaChile(estadoSatelite.tiempo)} hora de Chile · ${estadoSatelite.cuadro}/${estadoSatelite.total}`}
+      {(estadoSatelite || estadoNasa || estadoRadar) && (
+        <div className="capas-hora">
+          <HoraCapa estado={estadoNasa} icono="🌧️" nombre="Lluvia NASA" />
+          <HoraCapa estado={estadoRadar} icono="📡" nombre="Radar" />
+          <HoraCapa estado={estadoSatelite} icono="🛰️" nombre="Nubes GOES" />
         </div>
       )}
       {resumenIncendios && (
@@ -667,6 +648,9 @@ export default function MapView() {
           <span key={n}><span className="dot" style={{background:c}}></span> {n}</span>
         ))}
         <span><span className="dot dot-afectado"></span> Afectado este invierno</span>
+        {activeLayers.includes('lluviaNasa') && (
+          <span className="leyenda-lluvia" title="Intensidad de lluvia estimada por satélite (NASA IMERG)">Lluvia NASA <i /> débil → intensa</span>
+        )}
         {resumenIncendios && !resumenIncendios.error && (
           <span><span className="dot dot-foco"></span> Foco de incendio</span>
         )}

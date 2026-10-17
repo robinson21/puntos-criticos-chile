@@ -7,7 +7,10 @@ export const CAPA = 'GOES-East_ABI_GeoColor';
 const MATRIZ = 'GoogleMapsCompatible_Level7';
 export const ZOOM_NATIVO = 7;
 
-export const urlTiles = (tiempo) => `${BASE}/${CAPA}/default/${tiempo}/${MATRIZ}/{z}/{y}/{x}.png`;
+export const urlTiles = (tiempo, capa = CAPA, matriz = MATRIZ) => `${BASE}/${capa}/default/${tiempo}/${matriz}/{z}/{y}/{x}.png`;
+
+// Lluvia estimada por satélite NASA IMERG (GPM): todo el planeta, cada 30 min, ~5-6 h de retraso.
+export const IMERG = { capa: 'IMERG_Precipitation_Rate_30min', matriz: 'GoogleMapsCompatible_Level6', zoomNativo: 6 };
 
 const iso = (d) => d.toISOString().replace(/\.\d{3}Z$/, 'Z');
 
@@ -35,17 +38,20 @@ export function elegirCuadros(fechas, cuadros = 6, cadaMin = 20) {
   return elegidos.reverse().map(iso);
 }
 
-export async function cuadrosRecientes({ horas = 3, cuadros = 6, cadaMin = 20, ahora = new Date() } = {}) {
+export async function cuadrosRecientes({
+  horas = 3, cuadros = 6, cadaMin = 20, ahora = new Date(), capa = CAPA, matriz = MATRIZ, omitirUltimo = true,
+} = {}) {
   const desde = iso(new Date(ahora.getTime() - horas * 3600000));
   const hasta = iso(ahora);
-  const url = `${BASE}/1.0.0/${CAPA}/default/${MATRIZ}/all/${desde}--${hasta}.xml`;
+  const url = `${BASE}/1.0.0/${capa}/default/${matriz}/all/${desde}--${hasta}.xml`;
   const r = await fetch(url);
   if (!r.ok) throw new Error(`GIBS HTTP ${r.status}`);
   const xml = await r.text();
   const dom = xml.match(/<Domain>([^<]+)<\/Domain>/);
   if (!dom) throw new Error('GIBS sin imágenes recientes');
   // El último instante anunciado a veces aún se está generando (faltan tiles): se omite.
-  return elegirCuadros(expandirDominio(dom[1]).slice(0, -1), cuadros, cadaMin);
+  const fechas = expandirDominio(dom[1]);
+  return elegirCuadros(omitirUltimo ? fechas.slice(0, -1) : fechas, cuadros, cadaMin);
 }
 
 export const horaChile = (tiempo) =>

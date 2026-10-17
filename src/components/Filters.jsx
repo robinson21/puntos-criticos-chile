@@ -7,7 +7,7 @@ import { descargarCsv } from '../data/csv';
 
 export default function Filters() {
   const { comuna, setComuna, causa, setCausa, nivel, setNivel, tipoSolucion, setTipoSolucion, filtered, comunas, causas, tipos, haySinTipo,
-    provincia, setProvincia, provincias, soloAfectados, setSoloAfectados, hayAfectados } = useFilters();
+    provincia, setProvincia, provincias, soloAfectados, setSoloAfectados, hayAfectados, filtroAlerta, setFiltroAlerta, alertasConCausas } = useFilters();
   const { metadata, loadRegion, regionActual, records } = useData();
   const [buscar, setBuscar] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
@@ -45,6 +45,7 @@ export default function Filters() {
     setTipoSolucion('');
     setProvincia('');
     setSoloAfectados(false);
+    setFiltroAlerta('');
     setBuscar('');
   };
 
@@ -123,6 +124,14 @@ export default function Filters() {
             <button type="button" className={`filter-btn filter-afectados ${soloAfectados ? 'active' : ''}`} aria-pressed={soloAfectados}
               onClick={() => setSoloAfectados(v => !v)} title="Puntos que SENAPRED marca como afectados en el período (este invierno)">
               🔁 Afectados este invierno
+            </button>
+          )}
+
+          {alertasConCausas.length > 0 && (
+            <button type="button" className={`filter-btn filter-alerta ${filtroAlerta ? 'active' : ''}`} aria-pressed={Boolean(filtroAlerta)}
+              onClick={() => setFiltroAlerta(filtroAlerta ? '' : 'todas')}
+              title="Solo los puntos cuya causa puede activarse con un aviso, alerta o alarma DMC vigente en la región">
+              ⚠️ {filtroAlerta && filtroAlerta !== 'todas' ? 'Según la alerta elegida' : 'Según alertas vigentes'}
             </button>
           )}
 

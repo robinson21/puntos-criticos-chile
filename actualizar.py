@@ -156,6 +156,18 @@ def leer_excel(excel_data):
     return registros
 
 
+def por_region_causa(records):
+    out = defaultdict(lambda: defaultdict(lambda: {'n': 0, 'alto': 0, 'af': 0}))
+    for r in records:
+        if r['lv'] == 'Solucionado':
+            continue
+        v = out[r['r']][r['cs']]
+        v['n'] += 1
+        v['alto'] += r['lv'] in ('Alto', 'Muy Alto')
+        v['af'] += r.get('af', 0)
+    return {reg: dict(c) for reg, c in out.items()}
+
+
 def procesar_registros(records):
     """Genera los JSON regionales y meta.json."""
     print(f'  Registros con coordenadas: {len(records)}')
@@ -213,6 +225,8 @@ def procesar_registros(records):
         'tipos': dict(tipos),
         'comunas': len(comuna_stats),
         'afectados': sum(1 for r in records if r.get('af')),
+        # Para cruzar alertas DMC con causas: por región y causa, total, Alto/Muy Alto y afectados
+        'por_region_causa': por_region_causa(records),
         'solucionados': sum(1 for r in records if r['lv'] == 'Solucionado'),
     }
 

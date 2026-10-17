@@ -27,6 +27,72 @@ ICON_MAP = {
     'Tormentas Eléctricas': '⚡', 'Heladas': '🥶', 'Rolaje': '🌊',
 }
 
+def leer_poligono(texto):
+    """La DMC a veces entrega el área exacta como "lat,lon|lat,lon|…" en vez de códigos de zona."""
+    if '|' not in texto and texto.count(',') != 1:
+        return None
+    puntos = []
+    for par in texto.split('|'):
+        try:
+            lat, lon = (float(x) for x in par.split(','))
+        except ValueError:
+            return None
+        if -60 < lat < -15 and -115 < lon < -60:
+            puntos.append([round(lat, 4), round(lon, 4)])
+    return puntos if len(puntos) >= 3 else None
+
+
+def dentro(lat, lon, poligono):
+    """Punto en polígono (ray casting)."""
+    adentro = False
+    j = len(poligono) - 1
+    for i in range(len(poligono)):
+        yi, xi = poligono[i]
+        yj, xj = poligono[j]
+        if (yi > lat) != (yj > lat) and lon < (xj - xi) * (lat - yi) / (yj - yi) + xi:
+            adentro = not adentro
+        j = i
+    return adentro
+
+
+# Región SENAPRED (nombre en los JSON) → nombre corto de la DMC
+SENAPRED_A_DMC = {
+    'ANTOFAGASTA': 'Antofagasta', 'ATACAMA': 'Atacama', 'COQUIMBO': 'Coquimbo', 'VALPARAÍSO': 'Valparaíso',
+    'METROPOLITANA DE SANTIAGO': 'Metropolitana', 'LIBERTADOR GENERAL BERNARDO OHIGGINS': "O'Higgins",
+    'MAULE': 'Maule', 'ÑUBLE': 'Ñuble', 'BIOBÍO': 'Biobío', 'LA ARAUCANÍA': 'La Araucanía',
+    'LOS RÍOS': 'Los Ríos', 'LOS LAGOS': 'Los Lagos', 'AYSÉN DEL GENERAL CARLOS IBANEZ DEL CAMPO': 'Aysén',
+    'MAGALLANES Y DE LA ANTÁRTICA CHILENA': 'Magallanes',
+}
+
+
+def puntos_en_area(poligono):
+    """Puntos críticos SENAPRED dentro del polígono, agrupados por región y causa ({n, alto, af})."""
+    try:
+        with open(os.path.join(PUBLIC_DIR, 'meta.json'), encoding='utf-8') as f:
+            regiones = json.load(f).get('regiones', {})
+    except Exception:
+        return {}
+    lats = [p[0] for p in poligono]; lons = [p[1] for p in poligono]
+    caja = (min(lats), max(lats), min(lons), max(lons))
+    out = {}
+    for region, slug in regiones.items():
+        try:
+            with open(os.path.join(PUBLIC_DIR, f'{slug}.json'), encoding='utf-8') as f:
+                puntos = json.load(f)
+        except Exception:
+            continue
+        for p in puntos:
+            if p.get('lv') == 'Solucionado' or not (caja[0] <= p['lat'] <= caja[1] and caja[2] <= p['lon'] <= caja[3]):
+                continue
+            if not dentro(p['lat'], p['lon'], poligono):
+                continue
+            v = out.setdefault(region, {}).setdefault(p.get('cs', ''), {'n': 0, 'alto': 0, 'af': 0})
+            v['n'] += 1
+            v['alto'] += p.get('lv') in ('Alto', 'Muy Alto')
+            v['af'] += p.get('af', 0)
+    return out
+
+
 def actualizar():
     ts = datetime.now().strftime('%Y%m%d%H%M%S')
     url = DMC_URL + ts
@@ -86,6 +152,16 @@ def actualizar():
             code = code.strip().split('_')[0]
             if code in REGION_MAP:
                 regiones_afectadas.add(REGION_MAP[code])
+        # Área exacta (polígono): se guarda y se cuentan los puntos críticos que quedan dentro
+        poligono = leer_poligono(zonas_raw)
+        if poligono:
+            alert['poligono'] = poligono
+            alert['puntos_area'] = puntos_en_area(poligono)
+            regiones_afectadas |= {SENAPRED_A_DMC[r] for r in alert['puntos_area'] if r in SENAPRED_A_DMC}
+        # Sin códigos ni puntos dentro: se busca el nombre de la región en el texto de las zonas
+        if not regiones_afectadas:
+            texto = f"{alert['zonas']} {alert['titulo']}".lower()
+            regiones_afectadas = {n for n in REGION_MAP.values() if n.lower() in texto}
         alert['regiones'] = sorted(regiones_afectadas) if regiones_afectadas else []
 
         alerts.append(alert)
