@@ -38,7 +38,7 @@ jobs:
       - uses: actions/setup-node@v4
         if: env.CLOUDFLARE_API_TOKEN != ''
         with:
-          node-version: 20
+          node-version: 22 # Wrangler 4 necesita Node 22
           cache: npm
       - run: npm ci
         if: env.CLOUDFLARE_API_TOKEN != ''
@@ -52,6 +52,7 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          wranglerVersion: '4.151.0'
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy
       - name: Comprobar el sitio
