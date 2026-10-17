@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-16T19:00:38.509399",
+  "actualizado": "2026-10-17T00:00:07.684992",
   "totales": {
     "avisos": 12,
     "alertas": 0,
@@ -7,6 +7,40 @@
     "total": 12
   },
   "alertas": [
+    {
+      "id": 5858,
+      "tipo": "Aviso",
+      "codigo": "A552-1/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 18:05 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Altas presiones",
+      "desde": "la tarde del viernes 16 de octubre del 2026",
+      "hasta": "la tarde del sábado 17 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Altas Temperaturas en zonas de la región de Magallanes",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5857,
+      "tipo": "Aviso",
+      "codigo": "A554-2/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 15:58 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la tarde del viernes 16 de octubre del 2026",
+      "hasta": "la noche del sábado 17 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Litoral provincia de Huasco",
+      "titulo": "Viento Normal a Moderado en Litoral provincia de Huasco",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
     {
       "id": 5856,
       "tipo": "Aviso",
@@ -186,25 +220,6 @@
       ]
     },
     {
-      "id": 5845,
-      "tipo": "Aviso",
-      "codigo": "A554-1/2026",
-      "emision": "Miércoles 14 de octubre del 2026 a las 16:05 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la tarde del miércoles 14 de octubre del 2026",
-      "hasta": "la noche del sábado 17 de octubre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Antofagasta (Litoral) | Atacama (Litoral)",
-      "titulo": "Viento Normal a Moderado en litoral de las regiones de Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
       "id": 5844,
       "tipo": "Aviso",
       "codigo": "A556/2026",
@@ -217,24 +232,6 @@
       "zonas": "Magallanes (Cordillera Austral Norte, Cordillera Austral Sur, Insular Norte, Insular Central, Pampa Patagonica Norte, Pampa Patagonica Sur)",
       "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
       "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 5835,
-      "tipo": "Aviso",
-      "codigo": "A552/2026",
-      "emision": "Martes 13 de octubre del 2026 a las 13:38 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Altas presiones",
-      "desde": "la tarde del jueves 15 de octubre del 2026",
-      "hasta": "la tarde del viernes 16 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Pampa Patagonica Norte, Pampa Patagonica Sur)",
-      "titulo": "Altas Temperaturas en zonas de la región de Magallanes",
-      "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
