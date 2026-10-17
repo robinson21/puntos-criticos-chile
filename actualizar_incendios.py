@@ -9,9 +9,9 @@ Descarga los focos de Chile continental y los guarda en public/data/incendios.js
   o que se repiten en el mismo lugar casi todos los días (últimos 7 días): no son incendios.
 Requiere la variable de entorno FIRMS_MAP_KEY (Map Key gratuita de NASA FIRMS).
 """
-import csv, io, json, os, sys
+import csv, io, json, os, sys, time
 from datetime import datetime, timedelta, timezone
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 
 # Carpeta del proyecto: la del script, salvo que PC_PROJECT_DIR diga otra cosa.
 PROJECT_DIR = os.environ.get('PC_PROJECT_DIR') or os.path.dirname(os.path.abspath(__file__))
@@ -32,7 +32,12 @@ GRAN_KM2, GRAN_FRP = 2.0, 500.0      # ≥ ~15 pixeles distintos o ≥ 500 MW en
 INCENDIO_KM2, INCENDIO_FRP = 0.4, 50.0
 DESIERTO_LAT = -29.0                  # al norte: desierto (focos casi siempre de faenas o industrias)
 PERSISTENTE_DIAS = 5                  # mismo lugar (~1 km) con focos en ≥ 5 de los últimos 10 días
-OVERPASS = 'https://overpass-api.de/api/interpreter'
+# Servidores públicos de OpenStreetMap (Overpass): fallan seguido, se prueban varios
+OVERPASS = ['https://overpass-api.de/api/interpreter', 'https://lz4.overpass-api.de/api/interpreter',
+            'https://z.overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter']
+# Sitio publicado: de ahí se leen las fuentes industriales ya conocidas (memoria entre corridas)
+SITIO = os.environ.get('SITIO', 'https://puntos-criticos.gesstiapp.workers.dev')
+MAX_CONOCIDAS = 3000
 UA = {'User-Agent': 'puntos-criticos-chile/1.0 (+https://github.com/robinson21/puntos-criticos-chile)', 'Accept': 'application/json'}
 # Contorno de Chile (Natural Earth, dominio público): el recuadro de FIRMS incluye Bolivia y Argentina
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'datos_chile_contorno.json')) as _f:
@@ -156,13 +161,22 @@ def industriales_osm(eventos, radio_m=800):
         f'nwr(around:{radio_m},{e["lat"]},{e["lon"]})["industrial"];'
         for e in eventos)
     consulta = f'[out:json][timeout:60];({zonas});out center;'
-    try:
-        from urllib.request import Request
-        with urlopen(Request(OVERPASS, data=urllib.parse.urlencode({'data': consulta}).encode(), headers=UA), timeout=90) as r:
-            elementos = json.load(r).get('elements', [])
-    except Exception as ex:
-        print(f'   OpenStreetMap no respondió ({ex}); se usa solo la persistencia')
-        return set()
+    from urllib.request import Request
+    elementos, errores = None, []
+    for intento in range(2):
+        for url in OVERPASS:
+            try:
+                with urlopen(Request(url, data=urllib.parse.urlencode({'data': consulta}).encode(), headers=UA), timeout=90) as r:
+                    elementos = json.load(r).get('elements', [])
+                break
+            except Exception as ex:
+                errores.append(f'{url.split("/")[2]}: {ex}')
+        if elementos is not None:
+            break
+        time.sleep(20)
+    if elementos is None:
+        print(f'   OpenStreetMap no respondió ({"; ".join(errores[-2:])}); se usan la memoria y la persistencia')
+        return None
     pos = [{'lat': el.get('lat', el.get('center', {}).get('lat')), 'lon': el.get('lon', el.get('center', {}).get('lon'))}
            for el in elementos]
     pos = [p for p in pos if p['lat'] is not None]
@@ -170,7 +184,20 @@ def industriales_osm(eventos, radio_m=800):
     return {i for i, e in enumerate(eventos) if any(distancia_km(e, p) * 1000 <= radio_m * 1.5 for p in pos)}
 
 
-def eventos_de(focos, persistentes, ahora):
+def fuentes_conocidas():
+    """Fuentes industriales identificadas en corridas anteriores (del incendios.json publicado)."""
+    try:
+        with urlopen(Request(f'{SITIO}/data/incendios.json', headers=UA), timeout=30) as r:
+            previo = json.load(r)
+    except Exception as ex:
+        print(f'   Sin memoria de fuentes industriales ({ex})')
+        return []
+    conocidas = [{'lat': a, 'lon': b} for a, b in previo.get('fuentes_industriales', [])]
+    conocidas += [{'lat': e['lat'], 'lon': e['lon']} for e in previo.get('eventos', []) if e.get('tipo') == 'industrial']
+    return conocidas
+
+
+def eventos_de(focos, persistentes, ahora, conocidas=()):
     eventos = []
     for g in agrupar(focos):
         frp = sum(f['frp'] for f in g)
@@ -210,8 +237,12 @@ def eventos_de(focos, persistentes, ahora):
     eventos.sort(key=lambda e: (orden[e['clase']], -e['area_km2'], -e['frp_pase']))
     # OpenStreetMap solo para los que no son focos aislados (y como máximo 80)
     revisar = [e for e in eventos if e['clase'] != 'foco'][:80]
-    for i in industriales_osm(revisar):
+    for i in industriales_osm(revisar) or ():
         revisar[i]['industrial'] = True
+    # Memoria: lo que ya se identificó como industrial en corridas anteriores (por si OpenStreetMap falla)
+    for e in eventos:
+        if any(distancia_km(e, c) <= ENLACE_KM for c in conocidas):
+            e['industrial'] = True
     for e in eventos:
         e['tipo'] = ('industrial' if e.get('industrial') or e['persistente']
                      else 'desierto' if e['lat'] > DESIERTO_LAT else 'vegetacion')
@@ -258,7 +289,13 @@ def actualizar():
         print('❌ FIRMS no respondió con ningún satélite')
         return None
 
-    eventos = eventos_de(focos, celdas_persistentes(focos_7d), ahora)
+    conocidas = fuentes_conocidas()
+    eventos = eventos_de(focos, celdas_persistentes(focos_7d), ahora, conocidas)
+    # Memoria acumulada de fuentes industriales (sin repetir lugares a menos de ~1 km)
+    memoria = {}
+    for c in conocidas + [e for e in eventos if e['tipo'] == 'industrial']:
+        memoria.setdefault((round(c['lat'], 2), round(c['lon'], 2)), [round(c['lat'], 4), round(c['lon'], 4)])
+    fuentes_industriales = list(memoria.values())[-MAX_CONOCIDAS:]
     os.makedirs(PUBLIC_DIR, exist_ok=True)
     path = os.path.join(PUBLIC_DIR, 'incendios.json')
     with open(path, 'w') as f:
@@ -269,6 +306,7 @@ def actualizar():
             'fallidas': fallidas,
             'focos': focos,
             'eventos': eventos,
+            'fuentes_industriales': fuentes_industriales,
             'criterio': {'enlace_km': ENLACE_KM, 'gran': f'≥ {GRAN_KM2} km² o ≥ {GRAN_FRP:.0f} MW en un paso',
                          'incendio': f'≥ {INCENDIO_KM2} km² o ≥ {INCENDIO_FRP:.0f} MW en un paso',
                          'persistente': f'mismo lugar con focos en ≥ {PERSISTENTE_DIAS} de {DIAS} días'},
