@@ -13,7 +13,8 @@ from collections import defaultdict
 from urllib.request import urlopen
 from urllib.error import URLError
 
-PROJECT_DIR = '/home/ubuntu/puntos-criticos'
+# Carpeta del proyecto: la del script, salvo que PC_PROJECT_DIR diga otra cosa.
+PROJECT_DIR = os.environ.get('PC_PROJECT_DIR') or os.path.dirname(os.path.abspath(__file__))
 PUBLIC_DIR = os.path.join(PROJECT_DIR, 'public', 'data')
 SRC_DATA = os.path.join(PROJECT_DIR, 'src', 'data')
 

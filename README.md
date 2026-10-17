@@ -31,13 +31,25 @@ Variables de entorno: ver [`docs/ENV-VARS.md`](docs/ENV-VARS.md). Sin `VITE_TILE
 | `public/data/` | JSON por región, `meta.json`, `alertas.json`, `pronostico_regional.json` |
 | `owm-proxy-worker.js` | Worker de Cloudflare: tiles OWM y focos NASA FIRMS sin exponer las keys ([docs](docs/PROXY-OWM.md)) |
 
-## Actualización de datos
+## Actualización de datos y publicación
 
-| Script | Qué hace |
+El workflow [`publicar.yml`](.github/workflows/publicar.yml) hace todo en GitHub Actions, sin servidor:
+
+| Cuándo | Qué |
 |---|---|
-| `actualizar.py` | Descarga el Excel de SENAPRED y regenera los JSON regionales y `meta.json` (`--push` compila y publica) |
-| `actualizar_alertas.py` | Avisos, alertas y alarmas vigentes de la DMC |
-| `actualizar_pronostico.py` | Pronóstico 5 días por ciudad de referencia regional (requiere `OWM_API_KEY`) |
+| Cada 3 h | `actualizar_alertas.py` (avisos/alertas/alarmas DMC) y `actualizar_pronostico.py` (pronóstico OpenWeatherMap) |
+| Una vez al día y en cada cambio a `master` | además `actualizar.py` (Excel de puntos críticos SENAPRED); si los datos cambian, se guardan en el repo |
+| Siempre | compila y publica en GitHub Pages |
+
+Si una fuente falla, se publica lo último que ya estaba en el sitio. También se puede lanzar a mano desde *Actions → Actualizar datos y publicar → Run workflow*.
+
+**Configuración (una vez):**
+1. *Settings → Pages → Build and deployment → Source:* **GitHub Actions**.
+2. *Settings → Secrets and variables → Actions → New repository secret:*
+   - `OPENWEATHER_API_KEY` — key de OpenWeatherMap para el pronóstico.
+   - `VITE_MAPTILER_KEY` — opcional, para los mapas base de MapTiler.
+
+Los scripts también se pueden correr a mano (`python3 actualizar_alertas.py`); escriben en `public/data/` del repo (o en `PC_PROJECT_DIR`).
 
 ## Fuentes y metodología
 

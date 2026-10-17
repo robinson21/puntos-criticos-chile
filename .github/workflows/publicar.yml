@@ -1,0 +1,95 @@
+name: Actualizar datos y publicar
+
+# Reemplaza al servidor: actualiza los datos y publica el sitio en GitHub Pages.
+# Requiere Settings → Pages → Source: "GitHub Actions" y los secretos del repo
+# OPENWEATHER_API_KEY (pronóstico) y, opcional, VITE_MAPTILER_KEY (mapas base).
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: '17 */3 * * *' # alertas DMC y pronóstico, cada 3 h
+    - cron: '43 9 * * *'   # además, Excel de puntos críticos SENAPRED, una vez al día
+  workflow_dispatch:
+
+permissions:
+  contents: write # guardar en el repo los datos SENAPRED cuando cambian
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  SITIO: https://robinson21.github.io/puntos-criticos-chile
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Puntos críticos SENAPRED (diario)
+        if: github.event_name != 'schedule' || github.event.schedule == '43 9 * * *'
+        continue-on-error: true
+        run: |
+          pip install --quiet openpyxl
+          python3 actualizar.py
+          git add public/data
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "datos: actualizar puntos críticos SENAPRED"
+            git push
+          fi
+
+      - name: Alertas DMC
+        id: alertas
+        continue-on-error: true
+        run: python3 actualizar_alertas.py
+
+      - name: Pronóstico regional
+        id: pronostico
+        continue-on-error: true
+        env:
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+        run: python3 actualizar_pronostico.py
+
+      # Si una fuente falla, se publica lo último que ya estaba en el sitio
+      # (más reciente que la copia del repo); si tampoco existe, queda la del repo.
+      - name: Conservar lo último publicado si una fuente falló
+        if: steps.alertas.outcome == 'failure' || steps.pronostico.outcome == 'failure'
+        run: |
+          recuperar() {
+            curl -fsSL "$SITIO/data/$1" -o "/tmp/$1" && python3 -m json.tool "/tmp/$1" > /dev/null \
+              && mv "/tmp/$1" "public/data/$1" && echo "Usando $1 publicado" \
+              || echo "Sin copia publicada de $1; se usa la del repo"
+          }
+          if [ "${{ steps.alertas.outcome }}" = failure ]; then recuperar alertas.json; fi
+          if [ "${{ steps.pronostico.outcome }}" = failure ]; then recuperar pronostico_regional.json; fi
+
+      - run: npm ci
+      - name: Compilar
+        env:
+          VITE_MAPTILER_KEY: ${{ secrets.VITE_MAPTILER_KEY }}
+        run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
