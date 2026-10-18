@@ -10,17 +10,21 @@ Uso:
   python3 actualizar.py --push   # Descarga, procesa y hace deploy
 """
 
-import json, os, gzip, sys, subprocess
+import json, os, gzip, sys, subprocess, hashlib
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from collections import defaultdict
-from urllib.request import urlopen
+from urllib.request import urlopen, Request
 from urllib.error import URLError
 
 # Carpeta del proyecto: la del script, salvo que PC_PROJECT_DIR diga otra cosa.
 PROJECT_DIR = os.environ.get('PC_PROJECT_DIR') or os.path.dirname(os.path.abspath(__file__))
 PUBLIC_DIR = os.path.join(PROJECT_DIR, 'public', 'data')
 SRC_DATA = os.path.join(PROJECT_DIR, 'src', 'data')
+# Sitio canónico (Worker Cloudflare, lee /data/* de la rama `datos`) y respaldo en Pages
+WORKER_SITIO = 'https://puntos-criticos.gesstiapp.workers.dev'
+GITHUB_PAGES_URL = 'https://robinson21.github.io/puntos-criticos-chile'
+REMOTE_URL = 'https://github.com/robinson21/puntos-criticos-chile.git'
 
 # Servicio oficial (lo usa el tablero "Ver puntos críticos" de https://www.senapred.cl/programa-invierno/)
 ARCGIS_URL = 'https://services5.arcgis.com/i7S5PSnIJAUcWvSE/arcgis/rest/services/compilado_INV_2026/FeatureServer/0'
@@ -270,19 +274,119 @@ def guardar_estado(ok, url=None, excel_modificado=None, error=None):
 
 
 def hacer_deploy():
-    """Hace build y push a gh-pages."""
+    """Publica los datos donde el sitio REALMENTE los lee y verifica que llegaron.
+
+    HALLAZGO 2026-10-18 (por qué el cron reportaba "✅ Deploy exitoso" sin que nada cambiara):
+      · GitHub Pages está en build_type="workflow": publicar.yml recompila y publica
+        desde `master` → `public/data` cada 3 h. Un push directo a la rama gh-pages no
+        se publica nunca y el siguiente run del workflow lo pisa.
+      · El sitio canónico es el Worker de Cloudflare
+        https://puntos-criticos.gesstiapp.workers.dev, que sirve /data/* desde la rama
+        `datos`: si esa rama no se actualiza, el usuario sigue viendo datos viejos.
+      · `npx gh-pages` devolvía exit 0 y se imprimía "Deploy exitoso" aunque el push
+        fuera no-op (non-fast-forward contra la rama reescrita por el workflow).
+
+    Publicación (en este orden):
+      1. commit de public/data en la rama actual + push → dispara publicar.yml.
+      2. push de los JSON a la rama `datos` → el Worker sirve los datos al instante.
+      3. verificación por SHA de blob git contra el Worker y el respaldo de Pages.
+    """
     os.chdir(PROJECT_DIR)
-    result = subprocess.run(['npm', 'run', 'build'], capture_output=True, text=True, timeout=120)
-    if result.returncode != 0:
-        print(f'Build failed: {result.stderr}')
-        return False
-    result = subprocess.run(['npx', 'gh-pages', '-d', 'dist'], capture_output=True, text=True, timeout=120)
-    if result.returncode == 0:
-        print('✅ Deploy exitoso')
-        return True
+    estado = {'git': False, 'datos': False, 'worker': False, 'pages': False}
+
+    # --- 1. commit + push en la rama actual ---
+    rama = (subprocess.run(['git', 'rev-parse', '--abbrev-ref', 'HEAD'],
+                           cwd=PROJECT_DIR, capture_output=True, text=True).stdout.strip() or 'master')
+    subprocess.run(['git', 'add', 'public/data', ':!public/data/senapred_estado.json'],
+                   cwd=PROJECT_DIR, capture_output=True, text=True)
+    hay_cambios = subprocess.run(['git', 'diff', '--cached', '--quiet', '--', 'public/data'],
+                                 cwd=PROJECT_DIR).returncode != 0
+    if hay_cambios:
+        meta = json.load(open(os.path.join(PUBLIC_DIR, 'meta.json')))
+        subprocess.run(['git', '-c', 'user.name=GesstIA', '-c', 'user.email=botasisstia@gmail.com',
+                        'commit', '-m', f'datos: actualizar puntos críticos SENAPRED ({meta["total"]} puntos)',
+                        '--', 'public/data'], cwd=PROJECT_DIR, capture_output=True, text=True)
     else:
-        print(f'Deploy falló: {result.stderr}')
-        return False
+        print('   (public/data sin cambios respecto al commit anterior; se publica igual senapred_estado.json)')
+
+    p = subprocess.run(['git', 'push', 'origin', rama], cwd=PROJECT_DIR,
+                       capture_output=True, text=True, timeout=300)
+    estado['git'] = p.returncode == 0
+    print(f'{"✅" if estado["git"] else "⚠️ "} Push a origin/{rama}: '
+          f'{"ok (dispara publicar.yml)" if estado["git"] else (p.stderr or "")[-300:]}')
+
+    # --- 2. rama `datos` (fuente del Worker de Cloudflare) ---
+    import tempfile, shutil
+    tmp = tempfile.mkdtemp(prefix='datos_')
+    try:
+        for f in os.listdir(PUBLIC_DIR):
+            if f.endswith('.json'):
+                shutil.copy(os.path.join(PUBLIC_DIR, f), tmp)
+        subprocess.run(['git', 'init', '-q', '-b', 'datos'], cwd=tmp, check=True)
+        subprocess.run(['git', 'add', '.'], cwd=tmp, check=True)
+        sello = datetime.now(timezone.utc).strftime('datos %Y-%m-%dT%H:%MZ')
+        subprocess.run(['git', '-c', 'user.name=GesstIA', '-c', 'user.email=botasisstia@gmail.com',
+                        'commit', '-qm', sello], cwd=tmp, check=True)
+        d = subprocess.run(['git', 'push', '-qf', REMOTE_URL, 'datos'], cwd=tmp,
+                           capture_output=True, text=True, timeout=300)
+        estado['datos'] = d.returncode == 0
+        print(f'{"✅" if estado["datos"] else "⚠️ "} Rama `datos` (Worker Cloudflare): '
+              f'{"ok" if estado["datos"] else (d.stderr or "")[-300:]}')
+    except Exception as e:
+        print(f'⚠️  No se pudo publicar la rama datos: {e}')
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+    # --- 3. verificación real ---
+    return verificar_publicado(estado)
+
+
+def _blob_git(nombre):
+    """SHA de blob git (igual al que publica GitHub) de un JSON local."""
+    with open(os.path.join(PUBLIC_DIR, nombre), 'rb') as f:
+        raw = f.read()
+    return hashlib.sha1(b'blob %d\0' % len(raw) + raw).hexdigest()
+
+
+def _blob_remoto(base, nombre, timeout=30):
+    req = Request(f'{base}/data/{nombre}', headers={
+        'User-Agent': 'Mozilla/5.0', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache'})
+    raw = urlopen(req, timeout=timeout).read()
+    return hashlib.sha1(b'blob %d\0' % len(raw) + raw).hexdigest()
+
+
+def verificar_publicado(estado, intentos=6, espera=15):
+    """Confirma por SHA de blob que el Worker y el respaldo sirven los JSON locales.
+
+    El Worker cachea /data/* con Cache-Control max-age=300: justo después de
+    publicar puede seguir sirviendo la copia previa hasta 5 min. Por eso se reintenta
+    (6 × 15 s por archivo) antes de declarar un fallo.
+    """
+    import time
+    # alertas/pronóstico pueden ir con otro ritmo, se verifican los de puntos críticos
+    muestra = ['meta.json', 'coquimbo.json', 'metropolitana_de_santiago.json']
+    locales = {n: _blob_git(n) for n in muestra}
+
+    for etiqueta, base, clave, intentos_base in (('Worker Cloudflare', WORKER_SITIO, 'worker', intentos),
+                                                 ('respaldo GitHub Pages', GITHUB_PAGES_URL, 'pages', 2)):
+        pendientes = []
+        for n in muestra:
+            for i in range(intentos_base):
+                try:
+                    if _blob_remoto(base, n) == locales[n]:
+                        break
+                except Exception:
+                    pass
+                time.sleep(espera)
+            else:
+                pendientes.append(n)
+        estado[clave] = not pendientes
+        if estado[clave]:
+            print(f'✅ VERIFICADO en {etiqueta}: {", ".join(muestra)} idénticos a los locales')
+        else:
+            print(f'⚠️  {etiqueta} aún sirve versiones anteriores de: {", ".join(pendientes)}')
+    return estado
+
 
 
 if __name__ == '__main__':
@@ -308,10 +412,13 @@ if __name__ == '__main__':
     print(f'   ✅ {meta["total"]} registros · {meta["comunas"]} comunas · {len(meta["regiones"])} regiones')
 
     if do_push:
-        print('\n3️⃣  Build y deploy...')
-        hacer_deploy()
+        print('\n3️⃣  Publicando y verificando...')
+        estado = hacer_deploy()
+        if not (estado['worker'] or estado['pages']):
+            print('\n❌ Listo con ERRORES: ningún sitio sirve los puntos críticos nuevos')
+            sys.exit(1)
     else:
-        print('\n3️⃣  Skipeando deploy (usa --push para hacerlo)')
+        print('\n3️⃣  Skipeando publicación (usa --push para publicar)')
         print('   Datos actualizados en public/data/')
 
     print('\n✅ Listo')

@@ -9,3 +9,5 @@ __pycache__/
 public/data/incendios.json
 public/data/senapred_estado.json
 public/data/pronostico_lluvia.json
+.cache/
+src/data/
