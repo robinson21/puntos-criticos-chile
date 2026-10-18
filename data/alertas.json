@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-18T18:00:41.481249",
+  "actualizado": "2026-10-18T19:01:19.896724",
   "totales": {
     "avisos": 11,
     "alertas": 3,
@@ -7,6 +7,26 @@
     "total": 14
   },
   "alertas": [
+    {
+      "id": 5874,
+      "tipo": "Aviso",
+      "codigo": "A543-6/2026",
+      "emision": "Domingo 18 de octubre del 2026 a las 14:59 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la mañana del domingo 18 de octubre del 2026",
+      "hasta": "la noche del jueves 22 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5873,
       "tipo": "Aviso",
@@ -55,8 +75,8 @@
       "desde": "la mañana del martes 20 de octubre del 2026",
       "hasta": "la noche del miércoles 21 de octubre del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera) | O&#039;Higgins (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región de O&#039;Higgins",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera) | O'Higgins (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región de O'Higgins",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
@@ -76,7 +96,7 @@
       "desde": "la tarde del martes 20 de octubre del 2026",
       "hasta": "la noche del martes 20 de octubre del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O&#039;Higgins (Cordillera Costa, Valle, Precordillera) | Maule (Valle, Precordillera)",
+      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera) | Maule (Valle, Precordillera)",
       "titulo": "Precipitaciones Moderadas a Fuertes en corto periodo de tiempo en zonas desde la región de Coquimbo a la región del Maule",
       "icono": "🌧️",
       "color": "#f97316",
@@ -98,8 +118,8 @@
       "desde": "la mañana del martes 20 de octubre del 2026",
       "hasta": "la madrugada del jueves 22 de octubre del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Litoral) | Valparaíso (Litoral) | O&#039;Higgins (Litoral) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral) | Biobío (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Coquimbo, Valparaíso, O&#039;Higgins, Maule, &Ntilde;uble y Biobío",
+      "zonas": "Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Litoral) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral) | Biobío (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble y Biobío",
       "icono": "🌧️",
       "color": "#fbbf24",
       "regiones": [
@@ -121,7 +141,7 @@
       "desde": "la tarde del lunes 19 de octubre del 2026",
       "hasta": "la noche del jueves 22 de octubre del 2026",
       "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O&#039;Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
       "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
       "icono": "⚡",
       "color": "#fbbf24",
@@ -133,26 +153,6 @@
         "O'Higgins",
         "Valparaíso",
         "Ñuble"
-      ]
-    },
-    {
-      "id": 5866,
-      "tipo": "Aviso",
-      "codigo": "A543-5/2026",
-      "emision": "Domingo 18 de octubre del 2026 a las 11:01 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del domingo 18 de octubre del 2026",
-      "hasta": "la noche del jueves 22 de octubre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
       ]
     },
     {
@@ -206,7 +206,255 @@
       "titulo": "Precipitaciones Normales a Moderadas en Región de Antofagasta litoral, desde Caleta El Cobre al sur",
       "icono": "🌧️",
       "color": "#fbbf24",
-      "regiones": []
+      "poligono": [
+        [
+          -24.2423,
+          -70.52
+        ],
+        [
+          -24.2443,
+          -70.5231
+        ],
+        [
+          -24.2452,
+          -70.526
+        ],
+        [
+          -24.2463,
+          -70.5338
+        ],
+        [
+          -24.2581,
+          -70.5297
+        ],
+        [
+          -24.2615,
+          -70.5293
+        ],
+        [
+          -24.2631,
+          -70.5321
+        ],
+        [
+          -24.2684,
+          -70.5336
+        ],
+        [
+          -24.2776,
+          -70.5272
+        ],
+        [
+          -24.2908,
+          -70.5317
+        ],
+        [
+          -24.2925,
+          -70.5327
+        ],
+        [
+          -24.3049,
+          -70.5322
+        ],
+        [
+          -24.3171,
+          -70.5365
+        ],
+        [
+          -24.3227,
+          -70.5417
+        ],
+        [
+          -24.3315,
+          -70.5484
+        ],
+        [
+          -24.3546,
+          -70.5374
+        ],
+        [
+          -24.3734,
+          -70.549
+        ],
+        [
+          -24.3727,
+          -70.5539
+        ],
+        [
+          -24.3777,
+          -70.5539
+        ],
+        [
+          -24.3853,
+          -70.5484
+        ],
+        [
+          -24.5546,
+          -70.5734
+        ],
+        [
+          -24.5996,
+          -70.5515
+        ],
+        [
+          -24.642,
+          -70.5597
+        ],
+        [
+          -24.6595,
+          -70.5707
+        ],
+        [
+          -24.7094,
+          -70.5638
+        ],
+        [
+          -24.7194,
+          -70.5762
+        ],
+        [
+          -24.7481,
+          -70.5597
+        ],
+        [
+          -24.793,
+          -70.5418
+        ],
+        [
+          -24.8378,
+          -70.5405
+        ],
+        [
+          -24.869,
+          -70.5199
+        ],
+        [
+          -24.9151,
+          -70.5254
+        ],
+        [
+          -24.9873,
+          -70.4649
+        ],
+        [
+          -25.0184,
+          -70.4636
+        ],
+        [
+          -25.3639,
+          -70.4443
+        ],
+        [
+          -25.4085,
+          -70.4828
+        ],
+        [
+          -25.5028,
+          -70.5927
+        ],
+        [
+          -25.6861,
+          -70.6586
+        ],
+        [
+          -25.7999,
+          -70.708
+        ],
+        [
+          -25.8215,
+          -70.732
+        ],
+        [
+          -25.8741,
+          -70.7018
+        ],
+        [
+          -25.9142,
+          -70.686
+        ],
+        [
+          -25.9438,
+          -70.651
+        ],
+        [
+          -25.9803,
+          -70.6366
+        ],
+        [
+          -26.0321,
+          -70.6311
+        ],
+        [
+          -26.0543,
+          -70.6428
+        ],
+        [
+          -26.0617,
+          -70.6311
+        ],
+        [
+          -26.0414,
+          -70.6153
+        ],
+        [
+          -26.0124,
+          -70.605
+        ],
+        [
+          -26.0019,
+          -70.5782
+        ],
+        [
+          -25.6118,
+          -70.4883
+        ],
+        [
+          -25.4234,
+          -70.3894
+        ],
+        [
+          -25.2546,
+          -70.318
+        ],
+        [
+          -24.8615,
+          -70.318
+        ],
+        [
+          -24.4772,
+          -70.3674
+        ],
+        [
+          -24.2269,
+          -70.4004
+        ]
+      ],
+      "puntos_area": {
+        "ANTOFAGASTA": {
+          "Flujos de barro/detritos (Aluvión)": {
+            "n": 4,
+            "alto": 4,
+            "af": 0
+          },
+          "Activación de quebradas": {
+            "n": 4,
+            "alto": 0,
+            "af": 0
+          },
+          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
+            "n": 1,
+            "alto": 0,
+            "af": 0
+          },
+          "Congelamiento de caminos": {
+            "n": 1,
+            "alto": 1,
+            "af": 0
+          }
+        }
+      },
+      "regiones": [
+        "Antofagasta"
+      ]
     },
     {
       "id": 5853,
@@ -222,7 +470,250 @@
       "titulo": "Nevadas Normales a Moderadas en Cordillera Sector Provincia de Huasco",
       "icono": "❄️",
       "color": "#fbbf24",
-      "regiones": []
+      "poligono": [
+        [
+          -28.598,
+          -69.6924
+        ],
+        [
+          -28.6414,
+          -69.7061
+        ],
+        [
+          -28.6823,
+          -69.7308
+        ],
+        [
+          -28.7136,
+          -69.7308
+        ],
+        [
+          -28.745,
+          -69.7171
+        ],
+        [
+          -28.7738,
+          -69.7006
+        ],
+        [
+          -28.822,
+          -69.7171
+        ],
+        [
+          -28.846,
+          -69.7391
+        ],
+        [
+          -28.8653,
+          -69.7473
+        ],
+        [
+          -28.8893,
+          -69.7583
+        ],
+        [
+          -28.911,
+          -69.7638
+        ],
+        [
+          -28.9422,
+          -69.7556
+        ],
+        [
+          -28.9783,
+          -69.7556
+        ],
+        [
+          -28.9975,
+          -69.7775
+        ],
+        [
+          -29.0479,
+          -69.7913
+        ],
+        [
+          -29.0791,
+          -69.7913
+        ],
+        [
+          -29.1271,
+          -69.783
+        ],
+        [
+          -29.1367,
+          -69.8132
+        ],
+        [
+          -29.1391,
+          -69.8627
+        ],
+        [
+          -29.1583,
+          -69.9011
+        ],
+        [
+          -29.1727,
+          -69.9203
+        ],
+        [
+          -29.1847,
+          -69.9396
+        ],
+        [
+          -29.2087,
+          -69.9506
+        ],
+        [
+          -29.2303,
+          -69.9478
+        ],
+        [
+          -29.2494,
+          -69.9368
+        ],
+        [
+          -29.2686,
+          -69.9588
+        ],
+        [
+          -29.2878,
+          -69.9945
+        ],
+        [
+          -29.3213,
+          -70.0137
+        ],
+        [
+          -29.362,
+          -70.0137
+        ],
+        [
+          -29.3907,
+          -70.0027
+        ],
+        [
+          -29.4075,
+          -69.978
+        ],
+        [
+          -29.4505,
+          -69.9698
+        ],
+        [
+          -29.4768,
+          -69.9561
+        ],
+        [
+          -29.4983,
+          -69.9643
+        ],
+        [
+          -29.5007,
+          -69.9973
+        ],
+        [
+          -29.5246,
+          -70.0385
+        ],
+        [
+          -29.5342,
+          -70.0797
+        ],
+        [
+          -29.5246,
+          -70.1154
+        ],
+        [
+          -29.5175,
+          -70.1566
+        ],
+        [
+          -29.5175,
+          -70.1923
+        ],
+        [
+          -29.496,
+          -70.2005
+        ],
+        [
+          -29.4553,
+          -70.2252
+        ],
+        [
+          -29.4146,
+          -70.2582
+        ],
+        [
+          -29.3788,
+          -70.3131
+        ],
+        [
+          -29.35,
+          -70.3104
+        ],
+        [
+          -29.2614,
+          -70.2802
+        ],
+        [
+          -29.1871,
+          -70.2664
+        ],
+        [
+          -29.0383,
+          -70.1978
+        ],
+        [
+          -28.947,
+          -70.1318
+        ],
+        [
+          -28.8581,
+          -70.0797
+        ],
+        [
+          -28.7498,
+          -70.0
+        ],
+        [
+          -28.6799,
+          -69.9506
+        ],
+        [
+          -28.6365,
+          -69.9149
+        ],
+        [
+          -28.6052,
+          -69.827
+        ],
+        [
+          -28.6004,
+          -69.7198
+        ]
+      ],
+      "puntos_area": {
+        "ATACAMA": {
+          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
+            "n": 2,
+            "alto": 2,
+            "af": 2
+          },
+          "Anegamiento de caminos/pasos a desnivel": {
+            "n": 3,
+            "alto": 1,
+            "af": 1
+          },
+          "Congelamiento de caminos": {
+            "n": 4,
+            "alto": 4,
+            "af": 2
+          }
+        }
+      },
+      "regiones": [
+        "Atacama"
+      ]
     },
     {
       "id": 5851,
