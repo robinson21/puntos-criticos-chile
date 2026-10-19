@@ -1,12 +1,32 @@
 {
-  "actualizado": "2026-10-19T18:00:12.267768",
+  "actualizado": "2026-10-19T19:00:49.861691",
   "totales": {
-    "avisos": 10,
+    "avisos": 11,
     "alertas": 4,
     "alarmas": 0,
-    "total": 14
+    "total": 15
   },
   "alertas": [
+    {
+      "id": 5882,
+      "tipo": "Aviso",
+      "codigo": "A570/2026",
+      "emision": "Lunes 19 de octubre del 2026 a las 15:00 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la tarde del jueves 22 de octubre del 2026",
+      "hasta": "la noche del sábado 24 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
+      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5881,
       "tipo": "Aviso",
