@@ -1,378 +1,88 @@
 {
-  "actualizado": "2026-10-20T06:00:19.360796",
+  "actualizado": "2026-10-20T18:00:34.980435",
   "totales": {
     "avisos": 10,
-    "alertas": 4,
+    "alertas": 5,
     "alarmas": 0,
-    "total": 14
+    "total": 15
   },
   "alertas": [
     {
-      "id": 5849,
+      "id": 5888,
       "tipo": "Aviso",
-      "codigo": "A558/2026",
-      "emision": "Viernes 16 de octubre del 2026 a las 12:04 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del lunes 19 de octubre del 2026",
-      "hasta": "la noche del martes 20 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Precipitaciones Normales a Moderadas en Archipielago Juan Fernández",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5850,
-      "tipo": "Aviso",
-      "codigo": "A559/2026",
-      "emision": "Viernes 16 de octubre del 2026 a las 12:06 hrs.",
+      "codigo": "A561-4/2026",
+      "emision": "Martes 20 de octubre del 2026 a las 14:48 hrs.",
       "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del lunes 19 de octubre del 2026",
-      "hasta": "la tarde del martes 20 de octubre del 2026",
-      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Probables Tormentas Eléctricas en Archipielago Juan Fernández",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del martes 20 de octubre del 2026",
+      "hasta": "la noche del jueves 22 de octubre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
       "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5851,
-      "tipo": "Aviso",
-      "codigo": "A560/2026",
-      "emision": "Viernes 16 de octubre del 2026 a las 12:07 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del lunes 19 de octubre del 2026",
-      "hasta": "la noche del martes 20 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5853,
-      "tipo": "Aviso",
-      "codigo": "A563/2026",
-      "emision": "Viernes 16 de octubre del 2026 a las 12:22 hrs.",
-      "fenomeno": "Nevadas",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del domingo 18 de octubre del 2026",
-      "hasta": "la noche del martes 20 de octubre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Cordillera Sector Provincia de Huasco",
-      "titulo": "Nevadas Normales a Moderadas en Cordillera Sector Provincia de Huasco",
-      "icono": "❄️",
-      "color": "#fbbf24",
-      "poligono": [
-        [
-          -28.598,
-          -69.6924
-        ],
-        [
-          -28.6414,
-          -69.7061
-        ],
-        [
-          -28.6823,
-          -69.7308
-        ],
-        [
-          -28.7136,
-          -69.7308
-        ],
-        [
-          -28.745,
-          -69.7171
-        ],
-        [
-          -28.7738,
-          -69.7006
-        ],
-        [
-          -28.822,
-          -69.7171
-        ],
-        [
-          -28.846,
-          -69.7391
-        ],
-        [
-          -28.8653,
-          -69.7473
-        ],
-        [
-          -28.8893,
-          -69.7583
-        ],
-        [
-          -28.911,
-          -69.7638
-        ],
-        [
-          -28.9422,
-          -69.7556
-        ],
-        [
-          -28.9783,
-          -69.7556
-        ],
-        [
-          -28.9975,
-          -69.7775
-        ],
-        [
-          -29.0479,
-          -69.7913
-        ],
-        [
-          -29.0791,
-          -69.7913
-        ],
-        [
-          -29.1271,
-          -69.783
-        ],
-        [
-          -29.1367,
-          -69.8132
-        ],
-        [
-          -29.1391,
-          -69.8627
-        ],
-        [
-          -29.1583,
-          -69.9011
-        ],
-        [
-          -29.1727,
-          -69.9203
-        ],
-        [
-          -29.1847,
-          -69.9396
-        ],
-        [
-          -29.2087,
-          -69.9506
-        ],
-        [
-          -29.2303,
-          -69.9478
-        ],
-        [
-          -29.2494,
-          -69.9368
-        ],
-        [
-          -29.2686,
-          -69.9588
-        ],
-        [
-          -29.2878,
-          -69.9945
-        ],
-        [
-          -29.3213,
-          -70.0137
-        ],
-        [
-          -29.362,
-          -70.0137
-        ],
-        [
-          -29.3907,
-          -70.0027
-        ],
-        [
-          -29.4075,
-          -69.978
-        ],
-        [
-          -29.4505,
-          -69.9698
-        ],
-        [
-          -29.4768,
-          -69.9561
-        ],
-        [
-          -29.4983,
-          -69.9643
-        ],
-        [
-          -29.5007,
-          -69.9973
-        ],
-        [
-          -29.5246,
-          -70.0385
-        ],
-        [
-          -29.5342,
-          -70.0797
-        ],
-        [
-          -29.5246,
-          -70.1154
-        ],
-        [
-          -29.5175,
-          -70.1566
-        ],
-        [
-          -29.5175,
-          -70.1923
-        ],
-        [
-          -29.496,
-          -70.2005
-        ],
-        [
-          -29.4553,
-          -70.2252
-        ],
-        [
-          -29.4146,
-          -70.2582
-        ],
-        [
-          -29.3788,
-          -70.3131
-        ],
-        [
-          -29.35,
-          -70.3104
-        ],
-        [
-          -29.2614,
-          -70.2802
-        ],
-        [
-          -29.1871,
-          -70.2664
-        ],
-        [
-          -29.0383,
-          -70.1978
-        ],
-        [
-          -28.947,
-          -70.1318
-        ],
-        [
-          -28.8581,
-          -70.0797
-        ],
-        [
-          -28.7498,
-          -70.0
-        ],
-        [
-          -28.6799,
-          -69.9506
-        ],
-        [
-          -28.6365,
-          -69.9149
-        ],
-        [
-          -28.6052,
-          -69.827
-        ],
-        [
-          -28.6004,
-          -69.7198
-        ]
-      ],
-      "puntos_area": {
-        "ATACAMA": {
-          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
-            "n": 2,
-            "alto": 2,
-            "af": 2
-          },
-          "Anegamiento de caminos/pasos a desnivel": {
-            "n": 3,
-            "alto": 1,
-            "af": 1
-          },
-          "Congelamiento de caminos": {
-            "n": 4,
-            "alto": 4,
-            "af": 2
-          }
-        }
-      },
-      "regiones": [
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5865,
-      "tipo": "Alerta",
-      "codigo": "AA181/2026",
-      "emision": "Domingo 18 de octubre del 2026 a las 11:01 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la madrugada del martes 20 de octubre del 2026",
-      "hasta": "la noche del martes 20 de octubre del 2026",
-      "observacion": "Desarrollo de ventisca",
-      "zonas": "Antofagasta (Cordillera Costa, Precordillera Salar) | Atacama (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5869,
-      "tipo": "Aviso",
-      "codigo": "A562-2/2026",
-      "emision": "Domingo 18 de octubre del 2026 a las 13:04 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del martes 20 de octubre del 2026",
-      "hasta": "la madrugada del jueves 22 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Litoral) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral) | Biobío (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble y Biobío",
-      "icono": "🌧️",
       "color": "#fbbf24",
       "regiones": [
         "Biobío",
         "Coquimbo",
         "Maule",
+        "Metropolitana",
         "O'Higgins",
         "Valparaíso",
         "Ñuble"
       ]
     },
     {
-      "id": 5870,
+      "id": 5887,
+      "tipo": "Aviso",
+      "codigo": "A569-2/2026",
+      "emision": "Martes 20 de octubre del 2026 a las 12:02 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del martes 20 de octubre del 2026",
+      "hasta": "la noche del miércoles 21 de octubre del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Chiloé, Litoral Interior, Cordillera Austral)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5886,
       "tipo": "Alerta",
-      "codigo": "AA180-1/2026",
-      "emision": "Domingo 18 de octubre del 2026 a las 12:59 hrs.",
+      "codigo": "AA185-1/2026",
+      "emision": "Martes 20 de octubre del 2026 a las 10:27 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del martes 20 de octubre del 2026",
+      "hasta": "la noche del martes 20 de octubre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "Valparaíso (Litoral, Cordillera Costa) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Maule",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5885,
+      "tipo": "Alerta",
+      "codigo": "AA180-2/2026",
+      "emision": "Martes 20 de octubre del 2026 a las 06:49 hrs.",
       "fenomeno": "Precipitaciones",
       "condicion": "Sistema frontal",
       "desde": "la tarde del martes 20 de octubre del 2026",
       "hasta": "la noche del martes 20 de octubre del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera) | Maule (Valle, Precordillera)",
+      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Valle, Precordillera)",
       "titulo": "Precipitaciones Moderadas a Fuertes en corto periodo de tiempo en zonas desde la región de Coquimbo a la región del Maule",
       "icono": "🌧️",
       "color": "#f97316",
@@ -385,23 +95,65 @@
       ]
     },
     {
-      "id": 5874,
+      "id": 5884,
       "tipo": "Aviso",
-      "codigo": "A543-6/2026",
-      "emision": "Domingo 18 de octubre del 2026 a las 14:59 hrs.",
+      "codigo": "A564-3/2026",
+      "emision": "Martes 20 de octubre del 2026 a las 06:04 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del domingo 18 de octubre del 2026",
-      "hasta": "la noche del jueves 22 de octubre del 2026",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del martes 20 de octubre del 2026",
+      "hasta": "la noche del viernes 23 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Cordillera) | Maule (Litoral, Valle) | &Ntilde;uble (Litoral) | Biobío (Litoral)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5882,
+      "tipo": "Aviso",
+      "codigo": "A570/2026",
+      "emision": "Lunes 19 de octubre del 2026 a las 15:00 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la tarde del jueves 22 de octubre del 2026",
+      "hasta": "la noche del sábado 24 de octubre del 2026",
       "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
+      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
         "Atacama",
         "Tarapacá"
+      ]
+    },
+    {
+      "id": 5880,
+      "tipo": "Alerta",
+      "codigo": "AA182-1/2026",
+      "emision": "Lunes 19 de octubre del 2026 a las 14:03 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la madrugada del martes 20 de octubre del 2026",
+      "hasta": "la noche del viernes 23 de octubre del 2026",
+      "observacion": "Desarrollo de ventisca",
+      "zonas": "Coquimbo (Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en cordillera de la región de Coquimbo",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Coquimbo"
       ]
     },
     {
@@ -665,106 +417,378 @@
       ]
     },
     {
-      "id": 5878,
+      "id": 5874,
       "tipo": "Aviso",
-      "codigo": "A569-1/2026",
-      "emision": "Lunes 19 de octubre del 2026 a las 11:35 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del lunes 19 de octubre del 2026",
-      "hasta": "la noche del martes 20 de octubre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Cordillera Costa, Valle, Precordillera, Cordillera, Cordillera Austral, Patagonia Subandina)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5879,
-      "tipo": "Aviso",
-      "codigo": "A564-2/2026",
-      "emision": "Lunes 19 de octubre del 2026 a las 14:01 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del martes 20 de octubre del 2026",
-      "hasta": "la noche del viernes 23 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera) | O'Higgins (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región de O'Higgins",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5880,
-      "tipo": "Alerta",
-      "codigo": "AA182-1/2026",
-      "emision": "Lunes 19 de octubre del 2026 a las 14:03 hrs.",
+      "codigo": "A543-6/2026",
+      "emision": "Domingo 18 de octubre del 2026 a las 14:59 hrs.",
       "fenomeno": "Viento",
       "condicion": "Corriente en chorro",
-      "desde": "la madrugada del martes 20 de octubre del 2026",
-      "hasta": "la noche del viernes 23 de octubre del 2026",
-      "observacion": "Desarrollo de ventisca",
-      "zonas": "Coquimbo (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en cordillera de la región de Coquimbo",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Coquimbo"
-      ]
-    },
-    {
-      "id": 5881,
-      "tipo": "Aviso",
-      "codigo": "A561-3/2026",
-      "emision": "Lunes 19 de octubre del 2026 a las 14:14 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del lunes 19 de octubre del 2026",
+      "desde": "la mañana del domingo 18 de octubre del 2026",
       "hasta": "la noche del jueves 22 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5882,
-      "tipo": "Aviso",
-      "codigo": "A570/2026",
-      "emision": "Lunes 19 de octubre del 2026 a las 15:00 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la tarde del jueves 22 de octubre del 2026",
-      "hasta": "la noche del sábado 24 de octubre del 2026",
       "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
-      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
+      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
         "Atacama",
         "Tarapacá"
+      ]
+    },
+    {
+      "id": 5869,
+      "tipo": "Aviso",
+      "codigo": "A562-2/2026",
+      "emision": "Domingo 18 de octubre del 2026 a las 13:04 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del martes 20 de octubre del 2026",
+      "hasta": "la madrugada del jueves 22 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Litoral) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral) | Biobío (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble y Biobío",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5865,
+      "tipo": "Alerta",
+      "codigo": "AA181/2026",
+      "emision": "Domingo 18 de octubre del 2026 a las 11:01 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la madrugada del martes 20 de octubre del 2026",
+      "hasta": "la noche del martes 20 de octubre del 2026",
+      "observacion": "Desarrollo de ventisca",
+      "zonas": "Antofagasta (Cordillera Costa, Precordillera Salar) | Atacama (Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en zonas de las regiones de Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5853,
+      "tipo": "Aviso",
+      "codigo": "A563/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 12:22 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del domingo 18 de octubre del 2026",
+      "hasta": "la noche del martes 20 de octubre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Cordillera Sector Provincia de Huasco",
+      "titulo": "Nevadas Normales a Moderadas en Cordillera Sector Provincia de Huasco",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -28.598,
+          -69.6924
+        ],
+        [
+          -28.6414,
+          -69.7061
+        ],
+        [
+          -28.6823,
+          -69.7308
+        ],
+        [
+          -28.7136,
+          -69.7308
+        ],
+        [
+          -28.745,
+          -69.7171
+        ],
+        [
+          -28.7738,
+          -69.7006
+        ],
+        [
+          -28.822,
+          -69.7171
+        ],
+        [
+          -28.846,
+          -69.7391
+        ],
+        [
+          -28.8653,
+          -69.7473
+        ],
+        [
+          -28.8893,
+          -69.7583
+        ],
+        [
+          -28.911,
+          -69.7638
+        ],
+        [
+          -28.9422,
+          -69.7556
+        ],
+        [
+          -28.9783,
+          -69.7556
+        ],
+        [
+          -28.9975,
+          -69.7775
+        ],
+        [
+          -29.0479,
+          -69.7913
+        ],
+        [
+          -29.0791,
+          -69.7913
+        ],
+        [
+          -29.1271,
+          -69.783
+        ],
+        [
+          -29.1367,
+          -69.8132
+        ],
+        [
+          -29.1391,
+          -69.8627
+        ],
+        [
+          -29.1583,
+          -69.9011
+        ],
+        [
+          -29.1727,
+          -69.9203
+        ],
+        [
+          -29.1847,
+          -69.9396
+        ],
+        [
+          -29.2087,
+          -69.9506
+        ],
+        [
+          -29.2303,
+          -69.9478
+        ],
+        [
+          -29.2494,
+          -69.9368
+        ],
+        [
+          -29.2686,
+          -69.9588
+        ],
+        [
+          -29.2878,
+          -69.9945
+        ],
+        [
+          -29.3213,
+          -70.0137
+        ],
+        [
+          -29.362,
+          -70.0137
+        ],
+        [
+          -29.3907,
+          -70.0027
+        ],
+        [
+          -29.4075,
+          -69.978
+        ],
+        [
+          -29.4505,
+          -69.9698
+        ],
+        [
+          -29.4768,
+          -69.9561
+        ],
+        [
+          -29.4983,
+          -69.9643
+        ],
+        [
+          -29.5007,
+          -69.9973
+        ],
+        [
+          -29.5246,
+          -70.0385
+        ],
+        [
+          -29.5342,
+          -70.0797
+        ],
+        [
+          -29.5246,
+          -70.1154
+        ],
+        [
+          -29.5175,
+          -70.1566
+        ],
+        [
+          -29.5175,
+          -70.1923
+        ],
+        [
+          -29.496,
+          -70.2005
+        ],
+        [
+          -29.4553,
+          -70.2252
+        ],
+        [
+          -29.4146,
+          -70.2582
+        ],
+        [
+          -29.3788,
+          -70.3131
+        ],
+        [
+          -29.35,
+          -70.3104
+        ],
+        [
+          -29.2614,
+          -70.2802
+        ],
+        [
+          -29.1871,
+          -70.2664
+        ],
+        [
+          -29.0383,
+          -70.1978
+        ],
+        [
+          -28.947,
+          -70.1318
+        ],
+        [
+          -28.8581,
+          -70.0797
+        ],
+        [
+          -28.7498,
+          -70.0
+        ],
+        [
+          -28.6799,
+          -69.9506
+        ],
+        [
+          -28.6365,
+          -69.9149
+        ],
+        [
+          -28.6052,
+          -69.827
+        ],
+        [
+          -28.6004,
+          -69.7198
+        ]
+      ],
+      "puntos_area": {
+        "ATACAMA": {
+          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
+            "n": 2,
+            "alto": 2,
+            "af": 2
+          },
+          "Anegamiento de caminos/pasos a desnivel": {
+            "n": 3,
+            "alto": 1,
+            "af": 1
+          },
+          "Congelamiento de caminos": {
+            "n": 4,
+            "alto": 4,
+            "af": 2
+          }
+        }
+      },
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5851,
+      "tipo": "Aviso",
+      "codigo": "A560/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 12:07 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del lunes 19 de octubre del 2026",
+      "hasta": "la noche del martes 20 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
+    },
+    {
+      "id": 5850,
+      "tipo": "Aviso",
+      "codigo": "A559/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 12:06 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del lunes 19 de octubre del 2026",
+      "hasta": "la tarde del martes 20 de octubre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Probables Tormentas Eléctricas en Archipielago Juan Fernández",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
+      ]
+    },
+    {
+      "id": 5849,
+      "tipo": "Aviso",
+      "codigo": "A558/2026",
+      "emision": "Viernes 16 de octubre del 2026 a las 12:04 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del lunes 19 de octubre del 2026",
+      "hasta": "la noche del martes 20 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Archipielago Juan Fernández",
+      "titulo": "Precipitaciones Normales a Moderadas en Archipielago Juan Fernández",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Archipiélago Juan Fernández"
       ]
     }
   ]
