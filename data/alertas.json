@@ -1,12 +1,80 @@
 {
-  "actualizado": "2026-10-20T18:00:34.980435",
+  "actualizado": "2026-10-20T19:01:19.174154",
   "totales": {
-    "avisos": 10,
+    "avisos": 11,
     "alertas": 5,
     "alarmas": 0,
-    "total": 15
+    "total": 16
   },
   "alertas": [
+    {
+      "id": 5891,
+      "tipo": "Aviso",
+      "codigo": "A571/2026",
+      "emision": "Martes 20 de octubre del 2026 a las 15:30 hrs.",
+      "fenomeno": "Nubes Convectivas Tornádicas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la madrugada del miércoles 21 de octubre del 2026",
+      "hasta": "la noche del miércoles 21 de octubre del 2026",
+      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
+      "zonas": "Maule (Litoral, Cordillera Costa, Valle) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle) | La Araucanía (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas desde la región del Maule a la región de La Araucanía",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5890,
+      "tipo": "Aviso",
+      "codigo": "A562-3/2026",
+      "emision": "Martes 20 de octubre del 2026 a las 15:08 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del martes 20 de octubre del 2026",
+      "hasta": "la mañana del jueves 22 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Litoral) | Maule (Litoral, Cordillera Costa, Valle) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble y Biobío",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5889,
+      "tipo": "Aviso",
+      "codigo": "A564-4/2026",
+      "emision": "Martes 20 de octubre del 2026 a las 14:56 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del martes 20 de octubre del 2026",
+      "hasta": "la noche del viernes 23 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5888,
       "tipo": "Aviso",
@@ -92,30 +160,6 @@
         "Metropolitana",
         "O'Higgins",
         "Valparaíso"
-      ]
-    },
-    {
-      "id": 5884,
-      "tipo": "Aviso",
-      "codigo": "A564-3/2026",
-      "emision": "Martes 20 de octubre del 2026 a las 06:04 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del martes 20 de octubre del 2026",
-      "hasta": "la noche del viernes 23 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Cordillera) | Maule (Litoral, Valle) | &Ntilde;uble (Litoral) | Biobío (Litoral)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     },
     {
@@ -434,29 +478,6 @@
         "Antofagasta",
         "Atacama",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5869,
-      "tipo": "Aviso",
-      "codigo": "A562-2/2026",
-      "emision": "Domingo 18 de octubre del 2026 a las 13:04 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del martes 20 de octubre del 2026",
-      "hasta": "la madrugada del jueves 22 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Litoral) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral) | Biobío (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones de Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble y Biobío",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     },
     {
