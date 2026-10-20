@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-20T12:00:22.774396",
+  "actualizado": "2026-10-20T18:00:34.980435",
   "totales": {
     "avisos": 10,
     "alertas": 5,
@@ -7,6 +7,71 @@
     "total": 15
   },
   "alertas": [
+    {
+      "id": 5888,
+      "tipo": "Aviso",
+      "codigo": "A561-4/2026",
+      "emision": "Martes 20 de octubre del 2026 a las 14:48 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del martes 20 de octubre del 2026",
+      "hasta": "la noche del jueves 22 de octubre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5887,
+      "tipo": "Aviso",
+      "codigo": "A569-2/2026",
+      "emision": "Martes 20 de octubre del 2026 a las 12:02 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del martes 20 de octubre del 2026",
+      "hasta": "la noche del miércoles 21 de octubre del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Chiloé, Litoral Interior, Cordillera Austral)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5886,
+      "tipo": "Alerta",
+      "codigo": "AA185-1/2026",
+      "emision": "Martes 20 de octubre del 2026 a las 10:27 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del martes 20 de octubre del 2026",
+      "hasta": "la noche del martes 20 de octubre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "Valparaíso (Litoral, Cordillera Costa) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Maule",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
     {
       "id": 5885,
       "tipo": "Alerta",
@@ -54,26 +119,6 @@
       ]
     },
     {
-      "id": 5883,
-      "tipo": "Alerta",
-      "codigo": "AA185/2026",
-      "emision": "Martes 20 de octubre del 2026 a las 05:48 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la madrugada del martes 20 de octubre del 2026",
-      "hasta": "la noche del martes 20 de octubre del 2026",
-      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
-      "zonas": "Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Precordillera, Cordillera)",
-      "titulo": "Tormentas Eléctricas en zonas de las regiones Metropolitana, O'Higgins y Maule",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": [
-        "Maule",
-        "Metropolitana",
-        "O'Higgins"
-      ]
-    },
-    {
       "id": 5882,
       "tipo": "Aviso",
       "codigo": "A570/2026",
@@ -94,30 +139,6 @@
       ]
     },
     {
-      "id": 5881,
-      "tipo": "Aviso",
-      "codigo": "A561-3/2026",
-      "emision": "Lunes 19 de octubre del 2026 a las 14:14 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del lunes 19 de octubre del 2026",
-      "hasta": "la noche del jueves 22 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
       "id": 5880,
       "tipo": "Alerta",
       "codigo": "AA182-1/2026",
@@ -133,26 +154,6 @@
       "color": "#f97316",
       "regiones": [
         "Coquimbo"
-      ]
-    },
-    {
-      "id": 5878,
-      "tipo": "Aviso",
-      "codigo": "A569-1/2026",
-      "emision": "Lunes 19 de octubre del 2026 a las 11:35 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del lunes 19 de octubre del 2026",
-      "hasta": "la noche del martes 20 de octubre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Cordillera Costa, Valle, Precordillera, Cordillera, Cordillera Austral, Patagonia Subandina)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
       ]
     },
     {
