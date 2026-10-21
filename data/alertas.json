@@ -1,344 +1,12 @@
 {
-  "actualizado": "2026-10-21T00:00:37.576435",
+  "actualizado": "2026-10-21T06:00:40.968780",
   "totales": {
-    "avisos": 11,
-    "alertas": 4,
+    "avisos": 8,
+    "alertas": 3,
     "alarmas": 0,
-    "total": 15
+    "total": 11
   },
   "alertas": [
-    {
-      "id": 5849,
-      "tipo": "Aviso",
-      "codigo": "A558/2026",
-      "emision": "Viernes 16 de octubre del 2026 a las 12:04 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del lunes 19 de octubre del 2026",
-      "hasta": "la noche del martes 20 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Precipitaciones Normales a Moderadas en Archipielago Juan Fernández",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5850,
-      "tipo": "Aviso",
-      "codigo": "A559/2026",
-      "emision": "Viernes 16 de octubre del 2026 a las 12:06 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del lunes 19 de octubre del 2026",
-      "hasta": "la tarde del martes 20 de octubre del 2026",
-      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Probables Tormentas Eléctricas en Archipielago Juan Fernández",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5851,
-      "tipo": "Aviso",
-      "codigo": "A560/2026",
-      "emision": "Viernes 16 de octubre del 2026 a las 12:07 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del lunes 19 de octubre del 2026",
-      "hasta": "la noche del martes 20 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Archipielago Juan Fernández",
-      "titulo": "Viento Normal a Moderado en Archipielago Juan Fernández",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Archipiélago Juan Fernández"
-      ]
-    },
-    {
-      "id": 5853,
-      "tipo": "Aviso",
-      "codigo": "A563/2026",
-      "emision": "Viernes 16 de octubre del 2026 a las 12:22 hrs.",
-      "fenomeno": "Nevadas",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del domingo 18 de octubre del 2026",
-      "hasta": "la noche del martes 20 de octubre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Cordillera Sector Provincia de Huasco",
-      "titulo": "Nevadas Normales a Moderadas en Cordillera Sector Provincia de Huasco",
-      "icono": "❄️",
-      "color": "#fbbf24",
-      "poligono": [
-        [
-          -28.598,
-          -69.6924
-        ],
-        [
-          -28.6414,
-          -69.7061
-        ],
-        [
-          -28.6823,
-          -69.7308
-        ],
-        [
-          -28.7136,
-          -69.7308
-        ],
-        [
-          -28.745,
-          -69.7171
-        ],
-        [
-          -28.7738,
-          -69.7006
-        ],
-        [
-          -28.822,
-          -69.7171
-        ],
-        [
-          -28.846,
-          -69.7391
-        ],
-        [
-          -28.8653,
-          -69.7473
-        ],
-        [
-          -28.8893,
-          -69.7583
-        ],
-        [
-          -28.911,
-          -69.7638
-        ],
-        [
-          -28.9422,
-          -69.7556
-        ],
-        [
-          -28.9783,
-          -69.7556
-        ],
-        [
-          -28.9975,
-          -69.7775
-        ],
-        [
-          -29.0479,
-          -69.7913
-        ],
-        [
-          -29.0791,
-          -69.7913
-        ],
-        [
-          -29.1271,
-          -69.783
-        ],
-        [
-          -29.1367,
-          -69.8132
-        ],
-        [
-          -29.1391,
-          -69.8627
-        ],
-        [
-          -29.1583,
-          -69.9011
-        ],
-        [
-          -29.1727,
-          -69.9203
-        ],
-        [
-          -29.1847,
-          -69.9396
-        ],
-        [
-          -29.2087,
-          -69.9506
-        ],
-        [
-          -29.2303,
-          -69.9478
-        ],
-        [
-          -29.2494,
-          -69.9368
-        ],
-        [
-          -29.2686,
-          -69.9588
-        ],
-        [
-          -29.2878,
-          -69.9945
-        ],
-        [
-          -29.3213,
-          -70.0137
-        ],
-        [
-          -29.362,
-          -70.0137
-        ],
-        [
-          -29.3907,
-          -70.0027
-        ],
-        [
-          -29.4075,
-          -69.978
-        ],
-        [
-          -29.4505,
-          -69.9698
-        ],
-        [
-          -29.4768,
-          -69.9561
-        ],
-        [
-          -29.4983,
-          -69.9643
-        ],
-        [
-          -29.5007,
-          -69.9973
-        ],
-        [
-          -29.5246,
-          -70.0385
-        ],
-        [
-          -29.5342,
-          -70.0797
-        ],
-        [
-          -29.5246,
-          -70.1154
-        ],
-        [
-          -29.5175,
-          -70.1566
-        ],
-        [
-          -29.5175,
-          -70.1923
-        ],
-        [
-          -29.496,
-          -70.2005
-        ],
-        [
-          -29.4553,
-          -70.2252
-        ],
-        [
-          -29.4146,
-          -70.2582
-        ],
-        [
-          -29.3788,
-          -70.3131
-        ],
-        [
-          -29.35,
-          -70.3104
-        ],
-        [
-          -29.2614,
-          -70.2802
-        ],
-        [
-          -29.1871,
-          -70.2664
-        ],
-        [
-          -29.0383,
-          -70.1978
-        ],
-        [
-          -28.947,
-          -70.1318
-        ],
-        [
-          -28.8581,
-          -70.0797
-        ],
-        [
-          -28.7498,
-          -70.0
-        ],
-        [
-          -28.6799,
-          -69.9506
-        ],
-        [
-          -28.6365,
-          -69.9149
-        ],
-        [
-          -28.6052,
-          -69.827
-        ],
-        [
-          -28.6004,
-          -69.7198
-        ]
-      ],
-      "puntos_area": {
-        "ATACAMA": {
-          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
-            "n": 2,
-            "alto": 2,
-            "af": 2
-          },
-          "Anegamiento de caminos/pasos a desnivel": {
-            "n": 3,
-            "alto": 1,
-            "af": 1
-          },
-          "Congelamiento de caminos": {
-            "n": 4,
-            "alto": 4,
-            "af": 2
-          }
-        }
-      },
-      "regiones": [
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5865,
-      "tipo": "Alerta",
-      "codigo": "AA181/2026",
-      "emision": "Domingo 18 de octubre del 2026 a las 11:01 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la madrugada del martes 20 de octubre del 2026",
-      "hasta": "la noche del martes 20 de octubre del 2026",
-      "observacion": "Desarrollo de ventisca",
-      "zonas": "Antofagasta (Cordillera Costa, Precordillera Salar) | Atacama (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
     {
       "id": 5874,
       "tipo": "Aviso",
@@ -395,49 +63,6 @@
         "Antofagasta",
         "Atacama",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5885,
-      "tipo": "Alerta",
-      "codigo": "AA180-2/2026",
-      "emision": "Martes 20 de octubre del 2026 a las 06:49 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del martes 20 de octubre del 2026",
-      "hasta": "la noche del martes 20 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Valle, Precordillera)",
-      "titulo": "Precipitaciones Moderadas a Fuertes en corto periodo de tiempo en zonas desde la región de Coquimbo a la región del Maule",
-      "icono": "🌧️",
-      "color": "#f97316",
-      "regiones": [
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5886,
-      "tipo": "Alerta",
-      "codigo": "AA185-1/2026",
-      "emision": "Martes 20 de octubre del 2026 a las 10:27 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del martes 20 de octubre del 2026",
-      "hasta": "la noche del martes 20 de octubre del 2026",
-      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
-      "zonas": "Valparaíso (Litoral, Cordillera Costa) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Maule",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": [
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
       ]
     },
     {
@@ -548,6 +173,65 @@
       "regiones": [
         "Biobío",
         "La Araucanía",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5893,
+      "tipo": "Aviso",
+      "codigo": "A572-1/2026",
+      "emision": "Martes 20 de octubre del 2026 a las 21:29 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del miércoles 21 de octubre del 2026",
+      "hasta": "la tarde del miércoles 21 de octubre del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de La Araucanía y Los Ríos",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5894,
+      "tipo": "Alerta",
+      "codigo": "AA186/2026",
+      "emision": "Miércoles 21 de octubre del 2026 a las 00:54 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la madrugada del miércoles 21 de octubre del 2026",
+      "hasta": "la mañana del miércoles 21 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral, Cordillera Costa) | Biobío (Litoral, Cordillera Costa)",
+      "titulo": "Precipitaciones Moderadas a Fuertes en corto periodo de tiempo en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "🌧️",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5895,
+      "tipo": "Alerta",
+      "codigo": "AA185-2/2026",
+      "emision": "Miércoles 21 de octubre del 2026 a las 01:38 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la madrugada del miércoles 21 de octubre del 2026",
+      "hasta": "la mañana del miércoles 21 de octubre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Cordillera Costa, Valle)",
+      "titulo": "Tormentas Eléctricas en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
         "Maule",
         "Ñuble"
       ]
