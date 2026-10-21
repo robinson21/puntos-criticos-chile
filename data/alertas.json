@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-21T12:00:44.063974",
+  "actualizado": "2026-10-21T18:00:49.270451",
   "totales": {
     "avisos": 8,
     "alertas": 2,
@@ -8,16 +8,16 @@
   },
   "alertas": [
     {
-      "id": 5897,
+      "id": 5898,
       "tipo": "Aviso",
-      "codigo": "A561-5/2026",
-      "emision": "Miércoles 21 de octubre del 2026 a las 07:32 hrs.",
+      "codigo": "A561-6/2026",
+      "emision": "Miércoles 21 de octubre del 2026 a las 13:12 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del miércoles 21 de octubre del 2026",
+      "desde": "la tarde del miércoles 21 de octubre del 2026",
       "hasta": "la noche del jueves 22 de octubre del 2026",
       "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
       "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
       "icono": "⚡",
       "color": "#fbbf24",
