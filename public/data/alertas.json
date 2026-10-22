@@ -1,25 +1,63 @@
 {
-  "actualizado": "2026-10-21T18:00:49.270451",
+  "actualizado": "2026-10-22T06:00:02.980057",
   "totales": {
-    "avisos": 8,
-    "alertas": 2,
+    "avisos": 6,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 10
+    "total": 7
   },
   "alertas": [
     {
-      "id": 5898,
+      "id": 5880,
+      "tipo": "Alerta",
+      "codigo": "AA182-1/2026",
+      "emision": "Lunes 19 de octubre del 2026 a las 14:03 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la madrugada del martes 20 de octubre del 2026",
+      "hasta": "la noche del viernes 23 de octubre del 2026",
+      "observacion": "Desarrollo de ventisca",
+      "zonas": "Coquimbo (Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en cordillera de la región de Coquimbo",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Coquimbo"
+      ]
+    },
+    {
+      "id": 5882,
       "tipo": "Aviso",
-      "codigo": "A561-6/2026",
-      "emision": "Miércoles 21 de octubre del 2026 a las 13:12 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del miércoles 21 de octubre del 2026",
-      "hasta": "la noche del jueves 22 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "⚡",
+      "codigo": "A570/2026",
+      "emision": "Lunes 19 de octubre del 2026 a las 15:00 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la tarde del jueves 22 de octubre del 2026",
+      "hasta": "la noche del sábado 24 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
+      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5889,
+      "tipo": "Aviso",
+      "codigo": "A564-4/2026",
+      "emision": "Martes 20 de octubre del 2026 a las 14:56 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la tarde del martes 20 de octubre del 2026",
+      "hasta": "la noche del viernes 23 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Biobío",
@@ -52,78 +90,18 @@
       ]
     },
     {
-      "id": 5894,
-      "tipo": "Alerta",
-      "codigo": "AA186/2026",
-      "emision": "Miércoles 21 de octubre del 2026 a las 00:54 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la madrugada del miércoles 21 de octubre del 2026",
-      "hasta": "la mañana del miércoles 21 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral, Cordillera Costa) | Biobío (Litoral, Cordillera Costa)",
-      "titulo": "Precipitaciones Moderadas a Fuertes en corto periodo de tiempo en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "🌧️",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5893,
+      "id": 5898,
       "tipo": "Aviso",
-      "codigo": "A572-1/2026",
-      "emision": "Martes 20 de octubre del 2026 a las 21:29 hrs.",
-      "fenomeno": "Viento",
+      "codigo": "A561-6/2026",
+      "emision": "Miércoles 21 de octubre del 2026 a las 13:12 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del miércoles 21 de octubre del 2026",
-      "hasta": "la tarde del miércoles 21 de octubre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de La Araucanía y Los Ríos",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5891,
-      "tipo": "Aviso",
-      "codigo": "A571/2026",
-      "emision": "Martes 20 de octubre del 2026 a las 15:30 hrs.",
-      "fenomeno": "Nubes Convectivas Tornádicas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la madrugada del miércoles 21 de octubre del 2026",
-      "hasta": "la noche del miércoles 21 de octubre del 2026",
-      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
-      "zonas": "Maule (Litoral, Cordillera Costa, Valle) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle) | La Araucanía (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas desde la región del Maule a la región de La Araucanía",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5889,
-      "tipo": "Aviso",
-      "codigo": "A564-4/2026",
-      "emision": "Martes 20 de octubre del 2026 a las 14:56 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del martes 20 de octubre del 2026",
-      "hasta": "la noche del viernes 23 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
+      "desde": "la tarde del miércoles 21 de octubre del 2026",
+      "hasta": "la noche del jueves 22 de octubre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
         "Biobío",
@@ -136,14 +114,14 @@
       ]
     },
     {
-      "id": 5887,
+      "id": 5899,
       "tipo": "Aviso",
-      "codigo": "A569-2/2026",
-      "emision": "Martes 20 de octubre del 2026 a las 12:02 hrs.",
+      "codigo": "A573/2026",
+      "emision": "Miércoles 21 de octubre del 2026 a las 15:05 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del martes 20 de octubre del 2026",
-      "hasta": "la noche del miércoles 21 de octubre del 2026",
+      "desde": "la tarde del jueves 22 de octubre del 2026",
+      "hasta": "la noche del jueves 22 de octubre del 2026",
       "observacion": "",
       "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Chiloé, Litoral Interior, Cordillera Austral)",
       "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
@@ -156,61 +134,22 @@
       ]
     },
     {
-      "id": 5882,
+      "id": 5901,
       "tipo": "Aviso",
-      "codigo": "A570/2026",
-      "emision": "Lunes 19 de octubre del 2026 a las 15:00 hrs.",
+      "codigo": "A543-7/2026",
+      "emision": "Miércoles 21 de octubre del 2026 a las 15:55 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la tarde del jueves 22 de octubre del 2026",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del miércoles 21 de octubre del 2026",
       "hasta": "la noche del sábado 24 de octubre del 2026",
       "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
-      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
+      "zonas": "Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Antofagasta y Atacama",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
-        "Atacama",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5880,
-      "tipo": "Alerta",
-      "codigo": "AA182-1/2026",
-      "emision": "Lunes 19 de octubre del 2026 a las 14:03 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la madrugada del martes 20 de octubre del 2026",
-      "hasta": "la noche del viernes 23 de octubre del 2026",
-      "observacion": "Desarrollo de ventisca",
-      "zonas": "Coquimbo (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en cordillera de la región de Coquimbo",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Coquimbo"
-      ]
-    },
-    {
-      "id": 5874,
-      "tipo": "Aviso",
-      "codigo": "A543-6/2026",
-      "emision": "Domingo 18 de octubre del 2026 a las 14:59 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del domingo 18 de octubre del 2026",
-      "hasta": "la noche del jueves 22 de octubre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
+        "Atacama"
       ]
     }
   ]
