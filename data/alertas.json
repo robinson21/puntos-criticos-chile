@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-22T00:00:59.964912",
+  "actualizado": "2026-10-22T06:00:02.980057",
   "totales": {
-    "avisos": 8,
-    "alertas": 2,
+    "avisos": 6,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 10
+    "total": 7
   },
   "alertas": [
     {
@@ -43,26 +43,6 @@
         "Antofagasta",
         "Atacama",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5887,
-      "tipo": "Aviso",
-      "codigo": "A569-2/2026",
-      "emision": "Martes 20 de octubre del 2026 a las 12:02 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del martes 20 de octubre del 2026",
-      "hasta": "la noche del miércoles 21 de octubre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Chiloé, Litoral Interior, Cordillera Austral)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
       ]
     },
     {
@@ -154,29 +134,6 @@
       ]
     },
     {
-      "id": 5900,
-      "tipo": "Aviso",
-      "codigo": "A571-1/2026",
-      "emision": "Miércoles 21 de octubre del 2026 a las 15:06 hrs.",
-      "fenomeno": "Nubes Convectivas Tornádicas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del miércoles 21 de octubre del 2026",
-      "hasta": "la noche del miércoles 21 de octubre del 2026",
-      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
-      "zonas": "Maule (Litoral, Cordillera Costa, Valle) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Valle, Precordillera, Chiloé)",
-      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas desde la región del Maule a la región de Los Lagos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "Ñuble"
-      ]
-    },
-    {
       "id": 5901,
       "tipo": "Aviso",
       "codigo": "A543-7/2026",
@@ -193,26 +150,6 @@
       "regiones": [
         "Antofagasta",
         "Atacama"
-      ]
-    },
-    {
-      "id": 5902,
-      "tipo": "Alerta",
-      "codigo": "AA187/2026",
-      "emision": "Miércoles 21 de octubre del 2026 a las 16:24 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del miércoles 21 de octubre del 2026",
-      "hasta": "la noche del miércoles 21 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Maule, &Ntilde;uble y Biobío",
-      "titulo": "Tormentas Eléctricas en las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Ñuble"
       ]
     }
   ]
