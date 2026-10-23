@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-23T07:00:54.492909",
+  "actualizado": "2026-10-23T12:00:21.380042",
   "totales": {
-    "avisos": 10,
+    "avisos": 9,
     "alertas": 1,
     "alarmas": 0,
-    "total": 11
+    "total": 10
   },
   "alertas": [
     {
@@ -86,26 +86,6 @@
       "regiones": [
         "Antofagasta",
         "Atacama"
-      ]
-    },
-    {
-      "id": 5903,
-      "tipo": "Aviso",
-      "codigo": "A574/2026",
-      "emision": "Jueves 22 de octubre del 2026 a las 09:32 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Baja segregada",
-      "desde": "la mañana del jueves 22 de octubre del 2026",
-      "hasta": "la mañana del viernes 23 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Maule (Litoral, Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Ñuble"
       ]
     },
     {
