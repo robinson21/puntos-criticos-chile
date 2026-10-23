@@ -1,12 +1,52 @@
 {
-  "actualizado": "2026-10-22T19:00:42.766976",
+  "actualizado": "2026-10-23T00:00:13.476360",
   "totales": {
-    "avisos": 11,
-    "alertas": 2,
+    "avisos": 12,
+    "alertas": 3,
     "alarmas": 0,
-    "total": 13
+    "total": 15
   },
   "alertas": [
+    {
+      "id": 5913,
+      "tipo": "Aviso",
+      "codigo": "A580/2026",
+      "emision": "Jueves 22 de octubre del 2026 a las 19:28 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del viernes 23 de octubre del 2026",
+      "hasta": "la noche del viernes 23 de octubre del 2026",
+      "observacion": "",
+      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Chiloé, Litoral Interior, Cordillera Austral)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5912,
+      "tipo": "Alerta",
+      "codigo": "AA189/2026",
+      "emision": "Jueves 22 de octubre del 2026 a las 17:24 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Baja segregada",
+      "desde": "la tarde del jueves 22 de octubre del 2026",
+      "hasta": "la noche del jueves 22 de octubre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Maule, &Ntilde;uble y Biobío",
+      "titulo": "Tormentas Eléctricas en las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
     {
       "id": 5911,
       "tipo": "Aviso",
