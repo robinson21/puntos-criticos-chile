@@ -1,30 +1,12 @@
 {
-  "actualizado": "2026-10-23T18:00:24.378070",
+  "actualizado": "2026-10-24T06:00:33.577441",
   "totales": {
-    "avisos": 9,
-    "alertas": 1,
+    "avisos": 6,
+    "alertas": 0,
     "alarmas": 0,
-    "total": 10
+    "total": 6
   },
   "alertas": [
-    {
-      "id": 5880,
-      "tipo": "Alerta",
-      "codigo": "AA182-1/2026",
-      "emision": "Lunes 19 de octubre del 2026 a las 14:03 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la madrugada del martes 20 de octubre del 2026",
-      "hasta": "la noche del viernes 23 de octubre del 2026",
-      "observacion": "Desarrollo de ventisca",
-      "zonas": "Coquimbo (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en cordillera de la región de Coquimbo",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Coquimbo"
-      ]
-    },
     {
       "id": 5882,
       "tipo": "Aviso",
@@ -43,30 +25,6 @@
         "Antofagasta",
         "Atacama",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5889,
-      "tipo": "Aviso",
-      "codigo": "A564-4/2026",
-      "emision": "Martes 20 de octubre del 2026 a las 14:56 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la tarde del martes 20 de octubre del 2026",
-      "hasta": "la noche del viernes 23 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     },
     {
@@ -395,24 +353,6 @@
       ]
     },
     {
-      "id": 5909,
-      "tipo": "Aviso",
-      "codigo": "A577/2026",
-      "emision": "Jueves 22 de octubre del 2026 a las 15:24 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del viernes 23 de octubre del 2026",
-      "hasta": "la noche del viernes 23 de octubre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Arica y Parinacota (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de la región de Arica y Parinacota",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Arica y Parinacota"
-      ]
-    },
-    {
       "id": 5910,
       "tipo": "Aviso",
       "codigo": "A578/2026",
@@ -575,26 +515,6 @@
       },
       "regiones": [
         "Antofagasta"
-      ]
-    },
-    {
-      "id": 5913,
-      "tipo": "Aviso",
-      "codigo": "A580/2026",
-      "emision": "Jueves 22 de octubre del 2026 a las 19:28 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del viernes 23 de octubre del 2026",
-      "hasta": "la noche del viernes 23 de octubre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Chiloé, Litoral Interior, Cordillera Austral)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
       ]
     }
   ]
