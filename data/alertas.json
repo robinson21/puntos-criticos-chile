@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-23T19:01:02.386955",
+  "actualizado": "2026-10-24T00:00:29.370882",
   "totales": {
-    "avisos": 9,
+    "avisos": 8,
     "alertas": 1,
     "alarmas": 0,
-    "total": 10
+    "total": 9
   },
   "alertas": [
     {
@@ -392,24 +392,6 @@
       },
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5909,
-      "tipo": "Aviso",
-      "codigo": "A577/2026",
-      "emision": "Jueves 22 de octubre del 2026 a las 15:24 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del viernes 23 de octubre del 2026",
-      "hasta": "la noche del viernes 23 de octubre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Arica y Parinacota (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de la región de Arica y Parinacota",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Arica y Parinacota"
       ]
     },
     {
