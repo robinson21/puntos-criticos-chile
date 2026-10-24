@@ -1,0 +1,535 @@
+{
+  "actualizado": "2026-10-24T18:01:57.054178",
+  "totales": {
+    "avisos": 7,
+    "alertas": 0,
+    "alarmas": 0,
+    "total": 7
+  },
+  "alertas": [
+    {
+      "id": 5915,
+      "tipo": "Aviso",
+      "codigo": "A582/2026",
+      "emision": "Sábado 24 de octubre del 2026 a las 14:15 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del sábado 24 de octubre del 2026",
+      "hasta": "la noche del sábado 24 de octubre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones Metropolitana, O'Higgins y Maule",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Maule",
+        "Metropolitana",
+        "O'Higgins"
+      ]
+    },
+    {
+      "id": 5914,
+      "tipo": "Aviso",
+      "codigo": "A581/2026",
+      "emision": "Sábado 24 de octubre del 2026 a las 13:25 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del domingo 25 de octubre del 2026",
+      "hasta": "la noche del domingo 25 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Norte, Insular Norte, Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5911,
+      "tipo": "Aviso",
+      "codigo": "A579/2026",
+      "emision": "Jueves 22 de octubre del 2026 a las 15:45 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Jet costero",
+      "desde": "la tarde del jueves 22 de octubre del 2026",
+      "hasta": "la tarde del sábado 24 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Litoral comuna de Mejillones de la región de Antofagasta.",
+      "titulo": "Altas Temperaturas en Litoral comuna de Mejillones de la región de Antofagasta.",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -22.9375,
+          -70.3043
+        ],
+        [
+          -23.1018,
+          -70.3365
+        ],
+        [
+          -23.2628,
+          -70.4327
+        ],
+        [
+          -23.2779,
+          -70.5569
+        ],
+        [
+          -23.2483,
+          -70.5878
+        ],
+        [
+          -23.194,
+          -70.5611
+        ],
+        [
+          -23.1662,
+          -70.5645
+        ],
+        [
+          -23.1429,
+          -70.5693
+        ],
+        [
+          -23.1227,
+          -70.5686
+        ],
+        [
+          -23.1056,
+          -70.5796
+        ],
+        [
+          -23.0962,
+          -70.5727
+        ],
+        [
+          -23.081,
+          -70.5734
+        ],
+        [
+          -23.069,
+          -70.5611
+        ],
+        [
+          -23.057,
+          -70.5487
+        ],
+        [
+          -23.0481,
+          -70.5336
+        ],
+        [
+          -23.0399,
+          -70.5185
+        ],
+        [
+          -23.0267,
+          -70.5151
+        ],
+        [
+          -23.0317,
+          -70.5013
+        ],
+        [
+          -23.0494,
+          -70.5013
+        ],
+        [
+          -23.081,
+          -70.4945
+        ],
+        [
+          -23.0968,
+          -70.4807
+        ],
+        [
+          -23.1012,
+          -70.4526
+        ],
+        [
+          -23.0804,
+          -70.4038
+        ],
+        [
+          -23.057,
+          -70.3736
+        ],
+        [
+          -23.0052,
+          -70.3358
+        ],
+        [
+          -22.9679,
+          -70.3221
+        ],
+        [
+          -22.9653,
+          -70.3125
+        ]
+      ],
+      "puntos_area": {
+        "ANTOFAGASTA": {
+          "Daño/pérdida en infraestructura (Ej.: Vial, Portuario/Costero, Agrícola, otros)": {
+            "n": 2,
+            "alto": 1,
+            "af": 0
+          },
+          "Deslizamiento/Derrumbe/Rodado/Caída": {
+            "n": 1,
+            "alto": 1,
+            "af": 0
+          },
+          "Interrupción de caminos": {
+            "n": 1,
+            "alto": 0,
+            "af": 0
+          }
+        }
+      },
+      "regiones": [
+        "Antofagasta"
+      ]
+    },
+    {
+      "id": 5910,
+      "tipo": "Aviso",
+      "codigo": "A578/2026",
+      "emision": "Jueves 22 de octubre del 2026 a las 15:25 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del domingo 25 de octubre del 2026",
+      "hasta": "la tarde del domingo 25 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5908,
+      "tipo": "Aviso",
+      "codigo": "A576/2026",
+      "emision": "Jueves 22 de octubre del 2026 a las 14:24 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Altas presiones",
+      "desde": "la tarde del sábado 24 de octubre del 2026",
+      "hasta": "la noche del sábado 24 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Pampa Patagonica Norte, Laguna Blanca, San Gregorio y Primavera en la región de Magallanes",
+      "titulo": "Altas Temperaturas en Pampa Patagonica Norte, Laguna Blanca, San Gregorio y Primavera en la región de Magallanes",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -50.6042,
+          -72.4878
+        ],
+        [
+          -50.6738,
+          -72.5757
+        ],
+        [
+          -50.632,
+          -72.7185
+        ],
+        [
+          -50.6599,
+          -72.8394
+        ],
+        [
+          -50.7434,
+          -72.9492
+        ],
+        [
+          -50.7851,
+          -73.103
+        ],
+        [
+          -50.792,
+          -73.1909
+        ],
+        [
+          -50.9446,
+          -73.3557
+        ],
+        [
+          -51.1173,
+          -73.2898
+        ],
+        [
+          -51.4335,
+          -73.147
+        ],
+        [
+          -51.6385,
+          -73.114
+        ],
+        [
+          -51.7678,
+          -72.9822
+        ],
+        [
+          -52.0322,
+          -72.6636
+        ],
+        [
+          -52.2278,
+          -72.4768
+        ],
+        [
+          -52.3152,
+          -72.0044
+        ],
+        [
+          -52.4962,
+          -71.5979
+        ],
+        [
+          -52.6231,
+          -71.3013
+        ],
+        [
+          -52.8559,
+          -70.4114
+        ],
+        [
+          -52.889,
+          -70.0049
+        ],
+        [
+          -52.9486,
+          -69.1919
+        ],
+        [
+          -52.9817,
+          -68.6096
+        ],
+        [
+          -52.6697,
+          -68.6096
+        ],
+        [
+          -52.3756,
+          -68.4338
+        ],
+        [
+          -52.3286,
+          -68.4119
+        ],
+        [
+          -52.2816,
+          -68.8074
+        ],
+        [
+          -52.1605,
+          -69.2029
+        ],
+        [
+          -52.1402,
+          -69.4775
+        ],
+        [
+          -51.9916,
+          -69.939
+        ],
+        [
+          -51.9916,
+          -71.9495
+        ],
+        [
+          -51.9713,
+          -72.0264
+        ],
+        [
+          -51.9172,
+          -71.9495
+        ],
+        [
+          -51.8697,
+          -71.9385
+        ],
+        [
+          -51.7746,
+          -72.0593
+        ],
+        [
+          -51.6998,
+          -72.2021
+        ],
+        [
+          -51.6998,
+          -72.301
+        ],
+        [
+          -51.6112,
+          -72.301
+        ],
+        [
+          -51.5566,
+          -72.4109
+        ],
+        [
+          -51.5019,
+          -72.3669
+        ],
+        [
+          -51.4198,
+          -72.323
+        ],
+        [
+          -51.3581,
+          -72.312
+        ],
+        [
+          -51.3237,
+          -72.3669
+        ],
+        [
+          -51.2688,
+          -72.2791
+        ],
+        [
+          -51.2138,
+          -72.29
+        ],
+        [
+          -51.138,
+          -72.3889
+        ],
+        [
+          -51.0552,
+          -72.356
+        ],
+        [
+          -51.0068,
+          -72.356
+        ],
+        [
+          -51.0138,
+          -72.29
+        ],
+        [
+          -50.8614,
+          -72.2571
+        ],
+        [
+          -50.7504,
+          -72.323
+        ],
+        [
+          -50.6529,
+          -72.2791
+        ],
+        [
+          -50.646,
+          -72.356
+        ],
+        [
+          -50.6042,
+          -72.3669
+        ]
+      ],
+      "puntos_area": {
+        "MAGALLANES Y DE LA ANTÁRTICA CHILENA": {
+          "Inundación por desborde de cauce": {
+            "n": 17,
+            "alto": 8,
+            "af": 3
+          },
+          "Interrupción de caminos": {
+            "n": 27,
+            "alto": 10,
+            "af": 0
+          },
+          "Acumulación de nieve": {
+            "n": 45,
+            "alto": 16,
+            "af": 0
+          },
+          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
+            "n": 6,
+            "alto": 5,
+            "af": 0
+          },
+          "Daño/pérdida en infraestructura (Ej.: Vial, Portuario/Costero, Agrícola, otros)": {
+            "n": 6,
+            "alto": 3,
+            "af": 0
+          },
+          "Congelamiento de caminos": {
+            "n": 30,
+            "alto": 19,
+            "af": 1
+          },
+          "Deslizamiento/Derrumbe/Rodado/Caída": {
+            "n": 4,
+            "alto": 1,
+            "af": 0
+          },
+          "Flujos de barro/detritos (Aluvión)": {
+            "n": 1,
+            "alto": 0,
+            "af": 0
+          },
+          "Colapso colectores de aguas lluvia/alcantarillados": {
+            "n": 7,
+            "alto": 0,
+            "af": 1
+          },
+          "Anegamiento de caminos/pasos a desnivel": {
+            "n": 10,
+            "alto": 0,
+            "af": 0
+          }
+        }
+      },
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5901,
+      "tipo": "Aviso",
+      "codigo": "A543-7/2026",
+      "emision": "Miércoles 21 de octubre del 2026 a las 15:55 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del miércoles 21 de octubre del 2026",
+      "hasta": "la noche del sábado 24 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5882,
+      "tipo": "Aviso",
+      "codigo": "A570/2026",
+      "emision": "Lunes 19 de octubre del 2026 a las 15:00 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la tarde del jueves 22 de octubre del 2026",
+      "hasta": "la noche del sábado 24 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
+      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    }
+  ]
+}
