@@ -1,73 +1,213 @@
 {
-  "actualizado": "2026-10-24T06:00:33.577441",
+  "actualizado": "2026-10-24T18:00:39.460813",
   "totales": {
-    "avisos": 6,
+    "avisos": 7,
     "alertas": 0,
     "alarmas": 0,
-    "total": 6
+    "total": 7
   },
   "alertas": [
     {
-      "id": 5882,
+      "id": 5915,
       "tipo": "Aviso",
-      "codigo": "A570/2026",
-      "emision": "Lunes 19 de octubre del 2026 a las 15:00 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la tarde del jueves 22 de octubre del 2026",
-      "hasta": "la noche del sábado 24 de octubre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
-      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5901,
-      "tipo": "Aviso",
-      "codigo": "A543-7/2026",
-      "emision": "Miércoles 21 de octubre del 2026 a las 15:55 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del miércoles 21 de octubre del 2026",
-      "hasta": "la noche del sábado 24 de octubre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5905,
-      "tipo": "Aviso",
-      "codigo": "A561-7/2026",
-      "emision": "Jueves 22 de octubre del 2026 a las 10:23 hrs.",
+      "codigo": "A582/2026",
+      "emision": "Sábado 24 de octubre del 2026 a las 14:15 hrs.",
       "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Baja segregada",
-      "desde": "la tarde del jueves 22 de octubre del 2026",
-      "hasta": "la noche del viernes 23 de octubre del 2026",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del sábado 24 de octubre del 2026",
+      "hasta": "la noche del sábado 24 de octubre del 2026",
       "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
+      "zonas": "Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones Metropolitana, O'Higgins y Maule",
       "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "Biobío",
-        "Coquimbo",
         "Maule",
         "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
+        "O'Higgins"
+      ]
+    },
+    {
+      "id": 5914,
+      "tipo": "Aviso",
+      "codigo": "A581/2026",
+      "emision": "Sábado 24 de octubre del 2026 a las 13:25 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del domingo 25 de octubre del 2026",
+      "hasta": "la noche del domingo 25 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Norte, Insular Norte, Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5911,
+      "tipo": "Aviso",
+      "codigo": "A579/2026",
+      "emision": "Jueves 22 de octubre del 2026 a las 15:45 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Jet costero",
+      "desde": "la tarde del jueves 22 de octubre del 2026",
+      "hasta": "la tarde del sábado 24 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Litoral comuna de Mejillones de la región de Antofagasta.",
+      "titulo": "Altas Temperaturas en Litoral comuna de Mejillones de la región de Antofagasta.",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -22.9375,
+          -70.3043
+        ],
+        [
+          -23.1018,
+          -70.3365
+        ],
+        [
+          -23.2628,
+          -70.4327
+        ],
+        [
+          -23.2779,
+          -70.5569
+        ],
+        [
+          -23.2483,
+          -70.5878
+        ],
+        [
+          -23.194,
+          -70.5611
+        ],
+        [
+          -23.1662,
+          -70.5645
+        ],
+        [
+          -23.1429,
+          -70.5693
+        ],
+        [
+          -23.1227,
+          -70.5686
+        ],
+        [
+          -23.1056,
+          -70.5796
+        ],
+        [
+          -23.0962,
+          -70.5727
+        ],
+        [
+          -23.081,
+          -70.5734
+        ],
+        [
+          -23.069,
+          -70.5611
+        ],
+        [
+          -23.057,
+          -70.5487
+        ],
+        [
+          -23.0481,
+          -70.5336
+        ],
+        [
+          -23.0399,
+          -70.5185
+        ],
+        [
+          -23.0267,
+          -70.5151
+        ],
+        [
+          -23.0317,
+          -70.5013
+        ],
+        [
+          -23.0494,
+          -70.5013
+        ],
+        [
+          -23.081,
+          -70.4945
+        ],
+        [
+          -23.0968,
+          -70.4807
+        ],
+        [
+          -23.1012,
+          -70.4526
+        ],
+        [
+          -23.0804,
+          -70.4038
+        ],
+        [
+          -23.057,
+          -70.3736
+        ],
+        [
+          -23.0052,
+          -70.3358
+        ],
+        [
+          -22.9679,
+          -70.3221
+        ],
+        [
+          -22.9653,
+          -70.3125
+        ]
+      ],
+      "puntos_area": {
+        "ANTOFAGASTA": {
+          "Daño/pérdida en infraestructura (Ej.: Vial, Portuario/Costero, Agrícola, otros)": {
+            "n": 2,
+            "alto": 1,
+            "af": 0
+          },
+          "Deslizamiento/Derrumbe/Rodado/Caída": {
+            "n": 1,
+            "alto": 1,
+            "af": 0
+          },
+          "Interrupción de caminos": {
+            "n": 1,
+            "alto": 0,
+            "af": 0
+          }
+        }
+      },
+      "regiones": [
+        "Antofagasta"
+      ]
+    },
+    {
+      "id": 5910,
+      "tipo": "Aviso",
+      "codigo": "A578/2026",
+      "emision": "Jueves 22 de octubre del 2026 a las 15:25 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del domingo 25 de octubre del 2026",
+      "hasta": "la tarde del domingo 25 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
       ]
     },
     {
@@ -353,168 +493,42 @@
       ]
     },
     {
-      "id": 5910,
+      "id": 5901,
       "tipo": "Aviso",
-      "codigo": "A578/2026",
-      "emision": "Jueves 22 de octubre del 2026 a las 15:25 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del domingo 25 de octubre del 2026",
-      "hasta": "la tarde del domingo 25 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
-      "icono": "⚠️",
+      "codigo": "A543-7/2026",
+      "emision": "Miércoles 21 de octubre del 2026 a las 15:55 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del miércoles 21 de octubre del 2026",
+      "hasta": "la noche del sábado 24 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Antofagasta y Atacama",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
+        "Antofagasta",
         "Atacama"
       ]
     },
     {
-      "id": 5911,
+      "id": 5882,
       "tipo": "Aviso",
-      "codigo": "A579/2026",
-      "emision": "Jueves 22 de octubre del 2026 a las 15:45 hrs.",
-      "fenomeno": "Altas Temperaturas",
+      "codigo": "A570/2026",
+      "emision": "Lunes 19 de octubre del 2026 a las 15:00 hrs.",
+      "fenomeno": "Viento",
       "condicion": "Jet costero",
       "desde": "la tarde del jueves 22 de octubre del 2026",
-      "hasta": "la tarde del sábado 24 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Litoral comuna de Mejillones de la región de Antofagasta.",
-      "titulo": "Altas Temperaturas en Litoral comuna de Mejillones de la región de Antofagasta.",
-      "icono": "⚠️",
+      "hasta": "la noche del sábado 24 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
+      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "💨",
       "color": "#fbbf24",
-      "poligono": [
-        [
-          -22.9375,
-          -70.3043
-        ],
-        [
-          -23.1018,
-          -70.3365
-        ],
-        [
-          -23.2628,
-          -70.4327
-        ],
-        [
-          -23.2779,
-          -70.5569
-        ],
-        [
-          -23.2483,
-          -70.5878
-        ],
-        [
-          -23.194,
-          -70.5611
-        ],
-        [
-          -23.1662,
-          -70.5645
-        ],
-        [
-          -23.1429,
-          -70.5693
-        ],
-        [
-          -23.1227,
-          -70.5686
-        ],
-        [
-          -23.1056,
-          -70.5796
-        ],
-        [
-          -23.0962,
-          -70.5727
-        ],
-        [
-          -23.081,
-          -70.5734
-        ],
-        [
-          -23.069,
-          -70.5611
-        ],
-        [
-          -23.057,
-          -70.5487
-        ],
-        [
-          -23.0481,
-          -70.5336
-        ],
-        [
-          -23.0399,
-          -70.5185
-        ],
-        [
-          -23.0267,
-          -70.5151
-        ],
-        [
-          -23.0317,
-          -70.5013
-        ],
-        [
-          -23.0494,
-          -70.5013
-        ],
-        [
-          -23.081,
-          -70.4945
-        ],
-        [
-          -23.0968,
-          -70.4807
-        ],
-        [
-          -23.1012,
-          -70.4526
-        ],
-        [
-          -23.0804,
-          -70.4038
-        ],
-        [
-          -23.057,
-          -70.3736
-        ],
-        [
-          -23.0052,
-          -70.3358
-        ],
-        [
-          -22.9679,
-          -70.3221
-        ],
-        [
-          -22.9653,
-          -70.3125
-        ]
-      ],
-      "puntos_area": {
-        "ANTOFAGASTA": {
-          "Daño/pérdida en infraestructura (Ej.: Vial, Portuario/Costero, Agrícola, otros)": {
-            "n": 2,
-            "alto": 1,
-            "af": 0
-          },
-          "Deslizamiento/Derrumbe/Rodado/Caída": {
-            "n": 1,
-            "alto": 1,
-            "af": 0
-          },
-          "Interrupción de caminos": {
-            "n": 1,
-            "alto": 0,
-            "af": 0
-          }
-        }
-      },
       "regiones": [
-        "Antofagasta"
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
       ]
     }
   ]
