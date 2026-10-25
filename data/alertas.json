@@ -1,32 +1,12 @@
 {
-  "actualizado": "2026-10-25T00:00:42.173405",
+  "actualizado": "2026-10-25T06:00:59.878730",
   "totales": {
-    "avisos": 6,
+    "avisos": 4,
     "alertas": 0,
     "alarmas": 0,
-    "total": 6
+    "total": 4
   },
   "alertas": [
-    {
-      "id": 5882,
-      "tipo": "Aviso",
-      "codigo": "A570/2026",
-      "emision": "Lunes 19 de octubre del 2026 a las 15:00 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la tarde del jueves 22 de octubre del 2026",
-      "hasta": "la noche del sábado 24 de octubre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Tarapacá (Litoral) | Antofagasta (Litoral) | Atacama (Litoral)",
-      "titulo": "Viento Normal a Moderado en litoral de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
-      ]
-    },
     {
       "id": 5908,
       "tipo": "Aviso",
@@ -343,26 +323,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5915,
-      "tipo": "Aviso",
-      "codigo": "A582/2026",
-      "emision": "Sábado 24 de octubre del 2026 a las 14:15 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del sábado 24 de octubre del 2026",
-      "hasta": "la noche del sábado 24 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Metropolitana (Cordillera Costa, Valle, Precordillera, Cordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones Metropolitana, O'Higgins y Maule",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Maule",
-        "Metropolitana",
-        "O'Higgins"
       ]
     },
     {
