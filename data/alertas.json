@@ -1,12 +1,30 @@
 {
-  "actualizado": "2026-10-26T12:00:36.778075",
+  "actualizado": "2026-10-26T18:00:40.471092",
   "totales": {
-    "avisos": 3,
+    "avisos": 4,
     "alertas": 0,
     "alarmas": 0,
-    "total": 3
+    "total": 4
   },
   "alertas": [
+    {
+      "id": 5920,
+      "tipo": "Aviso",
+      "codigo": "A586/2026",
+      "emision": "Lunes 26 de octubre del 2026 a las 09:17 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del lunes 26 de octubre del 2026",
+      "hasta": "la noche del lunes 26 de octubre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
     {
       "id": 5919,
       "tipo": "Aviso",
