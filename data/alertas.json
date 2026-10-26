@@ -1,23 +1,44 @@
 {
-  "actualizado": "2026-10-26T07:00:48.420795",
+  "actualizado": "2026-10-26T12:00:36.778075",
   "totales": {
-    "avisos": 2,
+    "avisos": 3,
     "alertas": 0,
     "alarmas": 0,
-    "total": 2
+    "total": 3
   },
   "alertas": [
     {
-      "id": 5916,
+      "id": 5919,
       "tipo": "Aviso",
-      "codigo": "A583/2026",
-      "emision": "Sábado 24 de octubre del 2026 a las 16:43 hrs.",
+      "codigo": "A585/2026",
+      "emision": "Lunes 26 de octubre del 2026 a las 07:20 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del lunes 26 de octubre del 2026",
+      "hasta": "la noche del lunes 26 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas desde la región de Valparaíso a la región del Maule",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5918,
+      "tipo": "Aviso",
+      "codigo": "A583-1/2026",
+      "emision": "Lunes 26 de octubre del 2026 a las 06:33 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Vaguada en altura",
       "desde": "la tarde del lunes 26 de octubre del 2026",
       "hasta": "la noche del lunes 26 de octubre del 2026",
       "observacion": "Probabilidad de granizos",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Precordillera, Cordillera) | O'Higgins (Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera) | &Ntilde;uble (Valle, Precordillera, Cordillera) | Biobío (Valle, Precordillera, Cordillera)",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Cordillera Costa, Valle, Precordillera, Cordillera)",
       "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
       "icono": "⚡",
       "color": "#fbbf24",
