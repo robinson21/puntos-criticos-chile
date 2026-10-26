@@ -1,32 +1,12 @@
 {
-  "actualizado": "2026-10-25T18:00:06.174112",
+  "actualizado": "2026-10-26T06:00:11.970311",
   "totales": {
-    "avisos": 4,
+    "avisos": 2,
     "alertas": 0,
     "alarmas": 0,
-    "total": 4
+    "total": 2
   },
   "alertas": [
-    {
-      "id": 5917,
-      "tipo": "Aviso",
-      "codigo": "A584/2026",
-      "emision": "Domingo 25 de octubre del 2026 a las 13:59 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del lunes 26 de octubre del 2026",
-      "hasta": "la noche del lunes 26 de octubre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Precordillera, Cordillera) | Los Lagos (Precordillera, Cordillera, Cordillera Austral)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
     {
       "id": 5916,
       "tipo": "Aviso",
@@ -51,39 +31,23 @@
       ]
     },
     {
-      "id": 5914,
+      "id": 5917,
       "tipo": "Aviso",
-      "codigo": "A581/2026",
-      "emision": "Sábado 24 de octubre del 2026 a las 13:25 hrs.",
+      "codigo": "A584/2026",
+      "emision": "Domingo 25 de octubre del 2026 a las 13:59 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del domingo 25 de octubre del 2026",
-      "hasta": "la noche del domingo 25 de octubre del 2026",
+      "desde": "la tarde del lunes 26 de octubre del 2026",
+      "hasta": "la noche del lunes 26 de octubre del 2026",
       "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Norte, Insular Norte, Pampa Patagonica Norte, Pampa Patagonica Sur)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
+      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Precordillera, Cordillera) | Los Lagos (Precordillera, Cordillera, Cordillera Austral)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
       "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 5910,
-      "tipo": "Aviso",
-      "codigo": "A578/2026",
-      "emision": "Jueves 22 de octubre del 2026 a las 15:25 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del domingo 25 de octubre del 2026",
-      "hasta": "la tarde del domingo 25 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Atacama"
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
       ]
     }
   ]
