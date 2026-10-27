@@ -1,32 +1,65 @@
 {
-  "actualizado": "2026-10-27T00:00:43.091871",
+  "actualizado": "2026-10-27T06:00:46.563417",
   "totales": {
-    "avisos": 8,
-    "alertas": 1,
+    "avisos": 4,
+    "alertas": 0,
     "alarmas": 0,
-    "total": 9
+    "total": 4
   },
   "alertas": [
     {
-      "id": 5926,
-      "tipo": "Alerta",
-      "codigo": "AA190-1/2026",
-      "emision": "Lunes 26 de octubre del 2026 a las 16:23 hrs.",
+      "id": 5921,
+      "tipo": "Aviso",
+      "codigo": "A587/2026",
+      "emision": "Lunes 26 de octubre del 2026 a las 15:08 hrs.",
       "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del lunes 26 de octubre del 2026",
-      "hasta": "la noche del lunes 26 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Tormentas Eléctricas en zonas desde la región Metropolitana a la región del Biobío",
+      "condicion": "Vaguada en altura",
+      "desde": "la mañana del miércoles 28 de octubre del 2026",
+      "hasta": "la noche del jueves 29 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Precordillera, Cordillera) | Antofagasta (Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de Tarapacá y Antofagasta",
       "icono": "⚡",
-      "color": "#f97316",
+      "color": "#fbbf24",
       "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Ñuble"
+        "Antofagasta",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5922,
+      "tipo": "Aviso",
+      "codigo": "A588/2026",
+      "emision": "Lunes 26 de octubre del 2026 a las 15:09 hrs.",
+      "fenomeno": "Nevadas",
+      "condicion": "Vaguada en altura",
+      "desde": "la mañana del jueves 29 de octubre del 2026",
+      "hasta": "la madrugada del viernes 30 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Antofagasta (Cordillera)",
+      "titulo": "Nevadas Normales a Moderadas en cordillera de la región de Antofagasta",
+      "icono": "❄️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta"
+      ]
+    },
+    {
+      "id": 5924,
+      "tipo": "Aviso",
+      "codigo": "A589/2026",
+      "emision": "Lunes 26 de octubre del 2026 a las 15:38 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Altas presiones",
+      "desde": "la mañana del miércoles 28 de octubre del 2026",
+      "hasta": "la noche del miércoles 28 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Altas Temperaturas en zonas de la región de Magallanes",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
       ]
     },
     {
@@ -305,143 +338,6 @@
       },
       "regiones": [
         "Atacama"
-      ]
-    },
-    {
-      "id": 5924,
-      "tipo": "Aviso",
-      "codigo": "A589/2026",
-      "emision": "Lunes 26 de octubre del 2026 a las 15:38 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Altas presiones",
-      "desde": "la mañana del miércoles 28 de octubre del 2026",
-      "hasta": "la noche del miércoles 28 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Pampa Patagonica Norte, Pampa Patagonica Sur)",
-      "titulo": "Altas Temperaturas en zonas de la región de Magallanes",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 5922,
-      "tipo": "Aviso",
-      "codigo": "A588/2026",
-      "emision": "Lunes 26 de octubre del 2026 a las 15:09 hrs.",
-      "fenomeno": "Nevadas",
-      "condicion": "Vaguada en altura",
-      "desde": "la mañana del jueves 29 de octubre del 2026",
-      "hasta": "la madrugada del viernes 30 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Cordillera)",
-      "titulo": "Nevadas Normales a Moderadas en cordillera de la región de Antofagasta",
-      "icono": "❄️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta"
-      ]
-    },
-    {
-      "id": 5921,
-      "tipo": "Aviso",
-      "codigo": "A587/2026",
-      "emision": "Lunes 26 de octubre del 2026 a las 15:08 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la mañana del miércoles 28 de octubre del 2026",
-      "hasta": "la noche del jueves 29 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Precordillera, Cordillera) | Antofagasta (Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de Tarapacá y Antofagasta",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5920,
-      "tipo": "Aviso",
-      "codigo": "A586/2026",
-      "emision": "Lunes 26 de octubre del 2026 a las 09:17 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del lunes 26 de octubre del 2026",
-      "hasta": "la noche del lunes 26 de octubre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 5919,
-      "tipo": "Aviso",
-      "codigo": "A585/2026",
-      "emision": "Lunes 26 de octubre del 2026 a las 07:20 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del lunes 26 de octubre del 2026",
-      "hasta": "la noche del lunes 26 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas desde la región de Valparaíso a la región del Maule",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5918,
-      "tipo": "Aviso",
-      "codigo": "A583-1/2026",
-      "emision": "Lunes 26 de octubre del 2026 a las 06:33 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del lunes 26 de octubre del 2026",
-      "hasta": "la noche del lunes 26 de octubre del 2026",
-      "observacion": "Probabilidad de granizos",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5917,
-      "tipo": "Aviso",
-      "codigo": "A584/2026",
-      "emision": "Domingo 25 de octubre del 2026 a las 13:59 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del lunes 26 de octubre del 2026",
-      "hasta": "la noche del lunes 26 de octubre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Precordillera, Cordillera) | Los Lagos (Precordillera, Cordillera, Cordillera Austral)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
       ]
     }
   ]
