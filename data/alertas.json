@@ -1,12 +1,312 @@
 {
-  "actualizado": "2026-10-26T19:01:16.809848",
+  "actualizado": "2026-10-27T00:00:43.091871",
   "totales": {
-    "avisos": 7,
+    "avisos": 8,
     "alertas": 1,
     "alarmas": 0,
-    "total": 8
+    "total": 9
   },
   "alertas": [
+    {
+      "id": 5926,
+      "tipo": "Alerta",
+      "codigo": "AA190-1/2026",
+      "emision": "Lunes 26 de octubre del 2026 a las 16:23 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del lunes 26 de octubre del 2026",
+      "hasta": "la noche del lunes 26 de octubre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Tormentas Eléctricas en zonas desde la región Metropolitana a la región del Biobío",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5925,
+      "tipo": "Aviso",
+      "codigo": "A590/2026",
+      "emision": "Lunes 26 de octubre del 2026 a las 16:04 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la tarde del lunes 26 de octubre del 2026",
+      "hasta": "la noche del martes 27 de octubre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Sector costero de provincia de Huasco - Región de Atacama",
+      "titulo": "Viento Normal a Moderado en Sector costero de provincia de Huasco - Región de Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -28.0557,
+          -71.1478
+        ],
+        [
+          -28.2047,
+          -71.0667
+        ],
+        [
+          -28.5394,
+          -71.1382
+        ],
+        [
+          -28.7611,
+          -71.2082
+        ],
+        [
+          -28.8333,
+          -71.2082
+        ],
+        [
+          -29.1816,
+          -71.237
+        ],
+        [
+          -29.178,
+          -71.2659
+        ],
+        [
+          -29.1852,
+          -71.2823
+        ],
+        [
+          -29.1612,
+          -71.3126
+        ],
+        [
+          -29.142,
+          -71.3469
+        ],
+        [
+          -29.142,
+          -71.3771
+        ],
+        [
+          -29.1732,
+          -71.3867
+        ],
+        [
+          -29.1828,
+          -71.4224
+        ],
+        [
+          -29.1828,
+          -71.4801
+        ],
+        [
+          -29.1792,
+          -71.4952
+        ],
+        [
+          -29.16,
+          -71.4966
+        ],
+        [
+          -29.1432,
+          -71.5021
+        ],
+        [
+          -29.1001,
+          -71.4664
+        ],
+        [
+          -29.0881,
+          -71.4719
+        ],
+        [
+          -29.0773,
+          -71.4897
+        ],
+        [
+          -29.0641,
+          -71.4828
+        ],
+        [
+          -29.046,
+          -71.4815
+        ],
+        [
+          -29.0328,
+          -71.4966
+        ],
+        [
+          -29.0052,
+          -71.4952
+        ],
+        [
+          -28.9788,
+          -71.5117
+        ],
+        [
+          -28.986,
+          -71.5227
+        ],
+        [
+          -28.962,
+          -71.5144
+        ],
+        [
+          -28.9295,
+          -71.5089
+        ],
+        [
+          -28.9031,
+          -71.5144
+        ],
+        [
+          -28.8766,
+          -71.5021
+        ],
+        [
+          -28.8586,
+          -71.487
+        ],
+        [
+          -28.8478,
+          -71.465
+        ],
+        [
+          -28.8261,
+          -71.432
+        ],
+        [
+          -28.8069,
+          -71.4046
+        ],
+        [
+          -28.7599,
+          -71.3702
+        ],
+        [
+          -28.7214,
+          -71.3345
+        ],
+        [
+          -28.6853,
+          -71.3057
+        ],
+        [
+          -28.6515,
+          -71.2892
+        ],
+        [
+          -28.6274,
+          -71.2851
+        ],
+        [
+          -28.584,
+          -71.3084
+        ],
+        [
+          -28.5683,
+          -71.3002
+        ],
+        [
+          -28.5406,
+          -71.2549
+        ],
+        [
+          -28.5128,
+          -71.2576
+        ],
+        [
+          -28.4971,
+          -71.2645
+        ],
+        [
+          -28.4839,
+          -71.2576
+        ],
+        [
+          -28.4694,
+          -71.2549
+        ],
+        [
+          -28.4718,
+          -71.2315
+        ],
+        [
+          -28.4416,
+          -71.2054
+        ],
+        [
+          -28.3764,
+          -71.189
+        ],
+        [
+          -28.3546,
+          -71.1574
+        ],
+        [
+          -28.3196,
+          -71.1835
+        ],
+        [
+          -28.3039,
+          -71.1931
+        ],
+        [
+          -28.2918,
+          -71.1821
+        ],
+        [
+          -28.2627,
+          -71.1684
+        ],
+        [
+          -28.2228,
+          -71.156
+        ],
+        [
+          -28.1768,
+          -71.1629
+        ],
+        [
+          -28.1405,
+          -71.1642
+        ],
+        [
+          -28.1139,
+          -71.1821
+        ],
+        [
+          -28.1017,
+          -71.1697
+        ],
+        [
+          -28.086,
+          -71.1546
+        ],
+        [
+          -28.0715,
+          -71.1505
+        ]
+      ],
+      "puntos_area": {
+        "ATACAMA": {
+          "Interrupción de caminos": {
+            "n": 1,
+            "alto": 1,
+            "af": 0
+          },
+          "Activación de quebradas": {
+            "n": 20,
+            "alto": 20,
+            "af": 0
+          }
+        }
+      },
+      "regiones": [
+        "Atacama"
+      ]
+    },
     {
       "id": 5924,
       "tipo": "Aviso",
@@ -23,27 +323,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5923,
-      "tipo": "Alerta",
-      "codigo": "AA190/2026",
-      "emision": "Lunes 26 de octubre del 2026 a las 15:08 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del lunes 26 de octubre del 2026",
-      "hasta": "la noche del lunes 26 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "O'Higgins (Cordillera Costa, Valle, Precordillera, Cordillera) | Maule (Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Tormentas Eléctricas en zonas desde la región de O'Higgins a la región del Biobío",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "O'Higgins",
-        "Ñuble"
       ]
     },
     {
