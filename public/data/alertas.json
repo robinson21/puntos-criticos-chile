@@ -1,50 +1,89 @@
 {
-  "actualizado": "2026-10-28T06:00:02.462657",
+  "actualizado": "2026-10-28T18:00:08.665703",
   "totales": {
-    "avisos": 5,
+    "avisos": 6,
     "alertas": 0,
     "alarmas": 0,
-    "total": 5
+    "total": 6
   },
   "alertas": [
     {
-      "id": 5924,
+      "id": 5934,
       "tipo": "Aviso",
-      "codigo": "A589/2026",
-      "emision": "Lunes 26 de octubre del 2026 a las 15:38 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Altas presiones",
-      "desde": "la mañana del miércoles 28 de octubre del 2026",
-      "hasta": "la noche del miércoles 28 de octubre del 2026",
+      "codigo": "A593/2026",
+      "emision": "Miércoles 28 de octubre del 2026 a las 14:48 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Oclusión frontal",
+      "desde": "la tarde del jueves 29 de octubre del 2026",
+      "hasta": "la mañana del viernes 30 de octubre del 2026",
       "observacion": "",
-      "zonas": "Magallanes (Pampa Patagonica Norte, Pampa Patagonica Sur)",
-      "titulo": "Altas Temperaturas en zonas de la región de Magallanes",
-      "icono": "⚠️",
+      "zonas": "Magallanes (Insular Sur)",
+      "titulo": "Precipitaciones Normales a Moderadas en insular sur de la región de Magallanes",
+      "icono": "🌧️",
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
       ]
     },
     {
-      "id": 5927,
+      "id": 5933,
       "tipo": "Aviso",
-      "codigo": "A591/2026",
-      "emision": "Martes 27 de octubre del 2026 a las 12:49 hrs.",
+      "codigo": "A591-1/2026",
+      "emision": "Miércoles 28 de octubre del 2026 a las 12:18 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
       "desde": "la tarde del miércoles 28 de octubre del 2026",
       "hasta": "la noche del jueves 29 de octubre del 2026",
       "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Precordillera, Cordillera) | O'Higgins (Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Maule",
+      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de Coquimbo, Valparaíso y Metropolitana",
       "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
         "Coquimbo",
-        "Maule",
         "Metropolitana",
-        "O'Higgins",
         "Valparaíso"
+      ]
+    },
+    {
+      "id": 5932,
+      "tipo": "Aviso",
+      "codigo": "A592-1/2026",
+      "emision": "Miércoles 28 de octubre del 2026 a las 12:16 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del miércoles 28 de octubre del 2026",
+      "hasta": "la noche del viernes 30 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5931,
+      "tipo": "Aviso",
+      "codigo": "A587-2/2026",
+      "emision": "Miércoles 28 de octubre del 2026 a las 12:16 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del miércoles 28 de octubre del 2026",
+      "hasta": "la noche del jueves 29 de octubre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Arica y Parinacota (Pampa, Precordillera) | Tarapacá (Cordillera Costa, Pampa, Precordillera, Cordillera) | Antofagasta (Cordillera Costa, Pampa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Arica y Parinacota a la región de Atacama",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Atacama",
+        "Tarapacá"
       ]
     },
     {
@@ -66,42 +105,21 @@
       ]
     },
     {
-      "id": 5929,
+      "id": 5924,
       "tipo": "Aviso",
-      "codigo": "A592/2026",
-      "emision": "Martes 27 de octubre del 2026 a las 15:10 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del miércoles 28 de octubre del 2026",
-      "hasta": "la mañana del jueves 29 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Arica y Parinacota y Tarapacá",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5930,
-      "tipo": "Aviso",
-      "codigo": "A587-1/2026",
-      "emision": "Martes 27 de octubre del 2026 a las 15:11 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
+      "codigo": "A589/2026",
+      "emision": "Lunes 26 de octubre del 2026 a las 15:38 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Altas presiones",
       "desde": "la mañana del miércoles 28 de octubre del 2026",
-      "hasta": "la noche del jueves 29 de octubre del 2026",
+      "hasta": "la noche del miércoles 28 de octubre del 2026",
       "observacion": "",
-      "zonas": "Tarapacá (Precordillera, Cordillera) | Antofagasta (Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "⚡",
+      "zonas": "Magallanes (Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Altas Temperaturas en zonas de la región de Magallanes",
+      "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
+        "Magallanes"
       ]
     }
   ]
