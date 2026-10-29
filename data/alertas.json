@@ -1,28 +1,319 @@
 {
-  "actualizado": "2026-10-29T12:00:17.800878",
+  "actualizado": "2026-10-29T18:00:21.377649",
   "totales": {
     "avisos": 5,
-    "alertas": 0,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 5
+    "total": 6
   },
   "alertas": [
     {
-      "id": 5928,
-      "tipo": "Aviso",
-      "codigo": "A588-1/2026",
-      "emision": "Martes 27 de octubre del 2026 a las 12:48 hrs.",
-      "fenomeno": "Nevadas",
+      "id": 5938,
+      "tipo": "Alerta",
+      "codigo": "AA191/2026",
+      "emision": "Jueves 29 de octubre del 2026 a las 14:08 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
       "condicion": "Vaguada en altura",
-      "desde": "la tarde del miércoles 28 de octubre del 2026",
-      "hasta": "la madrugada del viernes 30 de octubre del 2026",
+      "desde": "la tarde del jueves 29 de octubre del 2026",
+      "hasta": "la noche del jueves 29 de octubre del 2026",
       "observacion": "",
-      "zonas": "Antofagasta (Cordillera)",
-      "titulo": "Nevadas Normales a Moderadas en cordillera de la región de Antofagasta",
-      "icono": "❄️",
+      "zonas": "Cordillera sur Antofagasta-Cordillera y Precordillera Atacama",
+      "titulo": "Tormentas Eléctricas en Cordillera sur Antofagasta-Cordillera y Precordillera Atacama",
+      "icono": "⚡",
+      "color": "#f97316",
+      "poligono": [
+        [
+          -23.8586,
+          -68.3691
+        ],
+        [
+          -24.959,
+          -69.0558
+        ],
+        [
+          -26.4685,
+          -69.3085
+        ],
+        [
+          -27.3014,
+          -69.5282
+        ],
+        [
+          -28.283,
+          -70.0995
+        ],
+        [
+          -28.8811,
+          -70.3247
+        ],
+        [
+          -29.4136,
+          -70.3906
+        ],
+        [
+          -29.4068,
+          -70.249
+        ],
+        [
+          -29.5598,
+          -70.1392
+        ],
+        [
+          -29.4833,
+          -69.9524
+        ],
+        [
+          -29.2823,
+          -69.9854
+        ],
+        [
+          -29.1768,
+          -69.9304
+        ],
+        [
+          -29.1096,
+          -69.7876
+        ],
+        [
+          -28.7057,
+          -69.6777
+        ],
+        [
+          -28.4645,
+          -69.6887
+        ],
+        [
+          -28.3002,
+          -69.502
+        ],
+        [
+          -28.1647,
+          -69.3591
+        ],
+        [
+          -27.932,
+          -69.2053
+        ],
+        [
+          -27.864,
+          -69.1174
+        ],
+        [
+          -27.5333,
+          -69.0076
+        ],
+        [
+          -27.4163,
+          -68.9307
+        ],
+        [
+          -27.2797,
+          -68.8428
+        ],
+        [
+          -27.0843,
+          -68.7659
+        ],
+        [
+          -27.1527,
+          -68.6011
+        ],
+        [
+          -27.0745,
+          -68.4583
+        ],
+        [
+          -26.9962,
+          -68.3044
+        ],
+        [
+          -26.8591,
+          -68.3264
+        ],
+        [
+          -26.5548,
+          -68.5242
+        ],
+        [
+          -26.3384,
+          -68.5681
+        ],
+        [
+          -26.1413,
+          -68.3813
+        ],
+        [
+          -26.0547,
+          -68.3911
+        ],
+        [
+          -25.7978,
+          -68.457
+        ],
+        [
+          -25.6097,
+          -68.5229
+        ],
+        [
+          -25.5006,
+          -68.5449
+        ],
+        [
+          -25.4362,
+          -68.5779
+        ],
+        [
+          -25.3171,
+          -68.5229
+        ],
+        [
+          -25.2376,
+          -68.5229
+        ],
+        [
+          -25.1531,
+          -68.479
+        ],
+        [
+          -25.1382,
+          -68.3801
+        ],
+        [
+          -25.0586,
+          -68.3582
+        ],
+        [
+          -24.9192,
+          -68.4296
+        ],
+        [
+          -24.7946,
+          -68.5559
+        ],
+        [
+          -24.6349,
+          -68.512
+        ],
+        [
+          -24.49,
+          -68.4131
+        ],
+        [
+          -24.395,
+          -68.2813
+        ],
+        [
+          -24.2899,
+          -68.0066
+        ],
+        [
+          -24.1947,
+          -67.8473
+        ]
+      ],
+      "puntos_area": {
+        "ATACAMA": {
+          "Deslizamiento/Derrumbe/Rodado/Caída": {
+            "n": 7,
+            "alto": 7,
+            "af": 3
+          },
+          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
+            "n": 16,
+            "alto": 16,
+            "af": 16
+          },
+          "Congelamiento de caminos": {
+            "n": 16,
+            "alto": 16,
+            "af": 14
+          },
+          "Anegamiento de caminos/pasos a desnivel": {
+            "n": 16,
+            "alto": 14,
+            "af": 11
+          },
+          "Inundación por desborde de cauce": {
+            "n": 5,
+            "alto": 4,
+            "af": 5
+          },
+          "Flujos de barro/detritos (Aluvión)": {
+            "n": 2,
+            "alto": 2,
+            "af": 2
+          },
+          "Activación de quebradas": {
+            "n": 1,
+            "alto": 1,
+            "af": 1
+          }
+        }
+      },
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5937,
+      "tipo": "Aviso",
+      "codigo": "A591-3/2026",
+      "emision": "Jueves 29 de octubre del 2026 a las 14:08 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del jueves 29 de octubre del 2026",
+      "hasta": "la noche del sábado 31 de octubre del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera) | &Ntilde;uble (Valle, Precordillera, Cordillera) | Biobío (Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta"
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5936,
+      "tipo": "Aviso",
+      "codigo": "A592-2/2026",
+      "emision": "Jueves 29 de octubre del 2026 a las 13:55 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del jueves 29 de octubre del 2026",
+      "hasta": "la noche del sábado 31 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5934,
+      "tipo": "Aviso",
+      "codigo": "A593/2026",
+      "emision": "Miércoles 28 de octubre del 2026 a las 14:48 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Oclusión frontal",
+      "desde": "la tarde del jueves 29 de octubre del 2026",
+      "hasta": "la mañana del viernes 30 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Insular Sur)",
+      "titulo": "Precipitaciones Normales a Moderadas en insular sur de la región de Magallanes",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
       ]
     },
     {
@@ -47,61 +338,21 @@
       ]
     },
     {
-      "id": 5932,
+      "id": 5928,
       "tipo": "Aviso",
-      "codigo": "A592-1/2026",
-      "emision": "Miércoles 28 de octubre del 2026 a las 12:16 hrs.",
-      "fenomeno": "Viento",
+      "codigo": "A588-1/2026",
+      "emision": "Martes 27 de octubre del 2026 a las 12:48 hrs.",
+      "fenomeno": "Nevadas",
       "condicion": "Vaguada en altura",
       "desde": "la tarde del miércoles 28 de octubre del 2026",
-      "hasta": "la noche del viernes 30 de octubre del 2026",
+      "hasta": "la madrugada del viernes 30 de octubre del 2026",
       "observacion": "",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
-      "icono": "💨",
+      "zonas": "Antofagasta (Cordillera)",
+      "titulo": "Nevadas Normales a Moderadas en cordillera de la región de Antofagasta",
+      "icono": "❄️",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5933,
-      "tipo": "Aviso",
-      "codigo": "A591-1/2026",
-      "emision": "Miércoles 28 de octubre del 2026 a las 12:18 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del miércoles 28 de octubre del 2026",
-      "hasta": "la noche del jueves 29 de octubre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de Coquimbo, Valparaíso y Metropolitana",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Metropolitana",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5934,
-      "tipo": "Aviso",
-      "codigo": "A593/2026",
-      "emision": "Miércoles 28 de octubre del 2026 a las 14:48 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Oclusión frontal",
-      "desde": "la tarde del jueves 29 de octubre del 2026",
-      "hasta": "la mañana del viernes 30 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Insular Sur)",
-      "titulo": "Precipitaciones Normales a Moderadas en insular sur de la región de Magallanes",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
+        "Antofagasta"
       ]
     }
   ]
