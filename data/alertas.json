@@ -1,39 +1,20 @@
 {
-  "actualizado": "2026-10-30T07:01:04.901905",
+  "actualizado": "2026-10-30T12:00:31.079642",
   "totales": {
-    "avisos": 5,
+    "avisos": 3,
     "alertas": 0,
     "alarmas": 0,
-    "total": 5
+    "total": 3
   },
   "alertas": [
     {
-      "id": 5939,
+      "id": 5940,
       "tipo": "Aviso",
-      "codigo": "A587-3/2026",
-      "emision": "Jueves 29 de octubre del 2026 a las 23:27 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la noche del jueves 29 de octubre del 2026",
-      "hasta": "la madrugada del viernes 30 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Antofagasta y Atacama",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5937,
-      "tipo": "Aviso",
-      "codigo": "A591-3/2026",
-      "emision": "Jueves 29 de octubre del 2026 a las 14:08 hrs.",
+      "codigo": "A591-4/2026",
+      "emision": "Viernes 30 de octubre del 2026 a las 06:19 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del jueves 29 de octubre del 2026",
+      "desde": "la tarde del viernes 30 de octubre del 2026",
       "hasta": "la noche del sábado 31 de octubre del 2026",
       "observacion": "Asociadas con Chubascos aislados",
       "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera) | &Ntilde;uble (Valle, Precordillera, Cordillera) | Biobío (Valle, Precordillera, Cordillera)",
@@ -86,24 +67,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5928,
-      "tipo": "Aviso",
-      "codigo": "A588-1/2026",
-      "emision": "Martes 27 de octubre del 2026 a las 12:48 hrs.",
-      "fenomeno": "Nevadas",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del miércoles 28 de octubre del 2026",
-      "hasta": "la madrugada del viernes 30 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Cordillera)",
-      "titulo": "Nevadas Normales a Moderadas en cordillera de la región de Antofagasta",
-      "icono": "❄️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta"
       ]
     }
   ]
