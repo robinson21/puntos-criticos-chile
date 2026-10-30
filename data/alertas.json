@@ -1,256 +1,28 @@
 {
-  "actualizado": "2026-10-30T00:00:24.861633",
+  "actualizado": "2026-10-30T06:00:27.662972",
   "totales": {
     "avisos": 5,
-    "alertas": 1,
+    "alertas": 0,
     "alarmas": 0,
-    "total": 6
+    "total": 5
   },
   "alertas": [
     {
-      "id": 5938,
-      "tipo": "Alerta",
-      "codigo": "AA191/2026",
-      "emision": "Jueves 29 de octubre del 2026 a las 14:08 hrs.",
+      "id": 5939,
+      "tipo": "Aviso",
+      "codigo": "A587-3/2026",
+      "emision": "Jueves 29 de octubre del 2026 a las 23:27 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Vaguada en altura",
-      "desde": "la tarde del jueves 29 de octubre del 2026",
-      "hasta": "la noche del jueves 29 de octubre del 2026",
+      "desde": "la noche del jueves 29 de octubre del 2026",
+      "hasta": "la madrugada del viernes 30 de octubre del 2026",
       "observacion": "",
-      "zonas": "Cordillera sur Antofagasta-Cordillera y Precordillera Atacama",
-      "titulo": "Tormentas Eléctricas en Cordillera sur Antofagasta-Cordillera y Precordillera Atacama",
+      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Antofagasta y Atacama",
       "icono": "⚡",
-      "color": "#f97316",
-      "poligono": [
-        [
-          -23.8586,
-          -68.3691
-        ],
-        [
-          -24.959,
-          -69.0558
-        ],
-        [
-          -26.4685,
-          -69.3085
-        ],
-        [
-          -27.3014,
-          -69.5282
-        ],
-        [
-          -28.283,
-          -70.0995
-        ],
-        [
-          -28.8811,
-          -70.3247
-        ],
-        [
-          -29.4136,
-          -70.3906
-        ],
-        [
-          -29.4068,
-          -70.249
-        ],
-        [
-          -29.5598,
-          -70.1392
-        ],
-        [
-          -29.4833,
-          -69.9524
-        ],
-        [
-          -29.2823,
-          -69.9854
-        ],
-        [
-          -29.1768,
-          -69.9304
-        ],
-        [
-          -29.1096,
-          -69.7876
-        ],
-        [
-          -28.7057,
-          -69.6777
-        ],
-        [
-          -28.4645,
-          -69.6887
-        ],
-        [
-          -28.3002,
-          -69.502
-        ],
-        [
-          -28.1647,
-          -69.3591
-        ],
-        [
-          -27.932,
-          -69.2053
-        ],
-        [
-          -27.864,
-          -69.1174
-        ],
-        [
-          -27.5333,
-          -69.0076
-        ],
-        [
-          -27.4163,
-          -68.9307
-        ],
-        [
-          -27.2797,
-          -68.8428
-        ],
-        [
-          -27.0843,
-          -68.7659
-        ],
-        [
-          -27.1527,
-          -68.6011
-        ],
-        [
-          -27.0745,
-          -68.4583
-        ],
-        [
-          -26.9962,
-          -68.3044
-        ],
-        [
-          -26.8591,
-          -68.3264
-        ],
-        [
-          -26.5548,
-          -68.5242
-        ],
-        [
-          -26.3384,
-          -68.5681
-        ],
-        [
-          -26.1413,
-          -68.3813
-        ],
-        [
-          -26.0547,
-          -68.3911
-        ],
-        [
-          -25.7978,
-          -68.457
-        ],
-        [
-          -25.6097,
-          -68.5229
-        ],
-        [
-          -25.5006,
-          -68.5449
-        ],
-        [
-          -25.4362,
-          -68.5779
-        ],
-        [
-          -25.3171,
-          -68.5229
-        ],
-        [
-          -25.2376,
-          -68.5229
-        ],
-        [
-          -25.1531,
-          -68.479
-        ],
-        [
-          -25.1382,
-          -68.3801
-        ],
-        [
-          -25.0586,
-          -68.3582
-        ],
-        [
-          -24.9192,
-          -68.4296
-        ],
-        [
-          -24.7946,
-          -68.5559
-        ],
-        [
-          -24.6349,
-          -68.512
-        ],
-        [
-          -24.49,
-          -68.4131
-        ],
-        [
-          -24.395,
-          -68.2813
-        ],
-        [
-          -24.2899,
-          -68.0066
-        ],
-        [
-          -24.1947,
-          -67.8473
-        ]
-      ],
-      "puntos_area": {
-        "ATACAMA": {
-          "Deslizamiento/Derrumbe/Rodado/Caída": {
-            "n": 7,
-            "alto": 7,
-            "af": 3
-          },
-          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
-            "n": 16,
-            "alto": 16,
-            "af": 16
-          },
-          "Congelamiento de caminos": {
-            "n": 16,
-            "alto": 16,
-            "af": 14
-          },
-          "Anegamiento de caminos/pasos a desnivel": {
-            "n": 16,
-            "alto": 14,
-            "af": 11
-          },
-          "Inundación por desborde de cauce": {
-            "n": 5,
-            "alto": 4,
-            "af": 5
-          },
-          "Flujos de barro/detritos (Aluvión)": {
-            "n": 2,
-            "alto": 2,
-            "af": 2
-          },
-          "Activación de quebradas": {
-            "n": 1,
-            "alto": 1,
-            "af": 1
-          }
-        }
-      },
+      "color": "#fbbf24",
       "regiones": [
+        "Antofagasta",
         "Atacama"
       ]
     },
@@ -314,27 +86,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5931,
-      "tipo": "Aviso",
-      "codigo": "A587-2/2026",
-      "emision": "Miércoles 28 de octubre del 2026 a las 12:16 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del miércoles 28 de octubre del 2026",
-      "hasta": "la noche del jueves 29 de octubre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Arica y Parinacota (Pampa, Precordillera) | Tarapacá (Cordillera Costa, Pampa, Precordillera, Cordillera) | Antofagasta (Cordillera Costa, Pampa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera) | Atacama (Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Arica y Parinacota a la región de Atacama",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Atacama",
-        "Tarapacá"
       ]
     },
     {
