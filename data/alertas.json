@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-11-01T00:00:49.264955",
+  "actualizado": "2026-11-01T06:00:52.277392",
   "totales": {
-    "avisos": 6,
+    "avisos": 4,
     "alertas": 0,
     "alarmas": 0,
-    "total": 6
+    "total": 4
   },
   "alertas": [
     {
@@ -23,45 +23,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5942,
-      "tipo": "Aviso",
-      "codigo": "A595/2026",
-      "emision": "Viernes 30 de octubre del 2026 a las 11:48 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del sábado 31 de octubre del 2026",
-      "hasta": "la noche del sábado 31 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de las regiones Metropolitana, O'Higgins y Maule",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Maule",
-        "Metropolitana",
-        "O'Higgins"
-      ]
-    },
-    {
-      "id": 5943,
-      "tipo": "Aviso",
-      "codigo": "A596/2026",
-      "emision": "Viernes 30 de octubre del 2026 a las 11:49 hrs.",
-      "fenomeno": "Nubes Convectivas Tornádicas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del sábado 31 de octubre del 2026",
-      "hasta": "la noche del sábado 31 de octubre del 2026",
-      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
-      "zonas": "O'Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
-      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de O'Higgins y Maule",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Maule",
-        "O'Higgins"
       ]
     },
     {
