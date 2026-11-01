@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-01T07:01:29.816901",
+  "actualizado": "2026-11-01T12:00:55.182839",
   "totales": {
     "avisos": 4,
     "alertas": 0,
@@ -8,45 +8,43 @@
   },
   "alertas": [
     {
-      "id": 5941,
+      "id": 5947,
       "tipo": "Aviso",
-      "codigo": "A594/2026",
-      "emision": "Viernes 30 de octubre del 2026 a las 09:03 hrs.",
+      "codigo": "A591-6/2026",
+      "emision": "Domingo 1 de noviembre del 2026 a las 06:38 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del sábado 31 de octubre del 2026",
-      "hasta": "la noche del domingo 01 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Magallanes",
-      "titulo": "Probables Tormentas Eléctricas en la región de Magallanes",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 5944,
-      "tipo": "Aviso",
-      "codigo": "A591-5/2026",
-      "emision": "Viernes 30 de octubre del 2026 a las 12:02 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del viernes 30 de octubre del 2026",
+      "desde": "la tarde del domingo 01 de noviembre del 2026",
       "hasta": "la noche del domingo 01 de noviembre del 2026",
       "observacion": "Probabilidad de granizos",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera) | &Ntilde;uble (Valle, Precordillera, Cordillera) | Biobío (Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Maule",
       "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "Biobío",
         "Coquimbo",
         "Maule",
         "Metropolitana",
         "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5946,
+      "tipo": "Aviso",
+      "codigo": "A598/2026",
+      "emision": "Sábado 31 de octubre del 2026 a las 14:53 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la madrugada del martes 03 de noviembre del 2026",
+      "hasta": "la noche del martes 03 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Sur, Insular Central, Pampa Patagonica Sur)",
+      "titulo": "Viento Normal a Moderado en zonas de la región de Magallanes",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
       ]
     },
     {
@@ -68,18 +66,18 @@
       ]
     },
     {
-      "id": 5946,
+      "id": 5941,
       "tipo": "Aviso",
-      "codigo": "A598/2026",
-      "emision": "Sábado 31 de octubre del 2026 a las 14:53 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la madrugada del martes 03 de noviembre del 2026",
-      "hasta": "la noche del martes 03 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Sur, Insular Central, Pampa Patagonica Sur)",
-      "titulo": "Viento Normal a Moderado en zonas de la región de Magallanes",
-      "icono": "💨",
+      "codigo": "A594/2026",
+      "emision": "Viernes 30 de octubre del 2026 a las 09:03 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del sábado 31 de octubre del 2026",
+      "hasta": "la noche del domingo 01 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Magallanes",
+      "titulo": "Probables Tormentas Eléctricas en la región de Magallanes",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
