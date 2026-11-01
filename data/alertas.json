@@ -1,46 +1,67 @@
 {
-  "actualizado": "2026-10-31T19:01:23.609663",
+  "actualizado": "2026-11-01T00:00:49.264955",
   "totales": {
-    "avisos": 7,
+    "avisos": 6,
     "alertas": 0,
     "alarmas": 0,
-    "total": 7
+    "total": 6
   },
   "alertas": [
     {
-      "id": 5946,
+      "id": 5941,
       "tipo": "Aviso",
-      "codigo": "A598/2026",
-      "emision": "Sábado 31 de octubre del 2026 a las 14:53 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la madrugada del martes 03 de noviembre del 2026",
-      "hasta": "la noche del martes 03 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Sur, Insular Central, Pampa Patagonica Sur)",
-      "titulo": "Viento Normal a Moderado en zonas de la región de Magallanes",
-      "icono": "💨",
+      "codigo": "A594/2026",
+      "emision": "Viernes 30 de octubre del 2026 a las 09:03 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del sábado 31 de octubre del 2026",
+      "hasta": "la noche del domingo 01 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Magallanes",
+      "titulo": "Probables Tormentas Eléctricas en la región de Magallanes",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
       ]
     },
     {
-      "id": 5945,
+      "id": 5942,
       "tipo": "Aviso",
-      "codigo": "A597/2026",
-      "emision": "Sábado 31 de octubre del 2026 a las 12:45 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del domingo 01 de noviembre del 2026",
-      "hasta": "la noche del miércoles 04 de noviembre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Coquimbo (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de la región de Coquimbo",
-      "icono": "💨",
+      "codigo": "A595/2026",
+      "emision": "Viernes 30 de octubre del 2026 a las 11:48 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del sábado 31 de octubre del 2026",
+      "hasta": "la noche del sábado 31 de octubre del 2026",
+      "observacion": "",
+      "zonas": "Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de las regiones Metropolitana, O'Higgins y Maule",
+      "icono": "🌧️",
       "color": "#fbbf24",
       "regiones": [
-        "Coquimbo"
+        "Maule",
+        "Metropolitana",
+        "O'Higgins"
+      ]
+    },
+    {
+      "id": 5943,
+      "tipo": "Aviso",
+      "codigo": "A596/2026",
+      "emision": "Viernes 30 de octubre del 2026 a las 11:49 hrs.",
+      "fenomeno": "Nubes Convectivas Tornádicas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del sábado 31 de octubre del 2026",
+      "hasta": "la noche del sábado 31 de octubre del 2026",
+      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
+      "zonas": "O'Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
+      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de O'Higgins y Maule",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Maule",
+        "O'Higgins"
       ]
     },
     {
@@ -68,80 +89,39 @@
       ]
     },
     {
-      "id": 5943,
+      "id": 5945,
       "tipo": "Aviso",
-      "codigo": "A596/2026",
-      "emision": "Viernes 30 de octubre del 2026 a las 11:49 hrs.",
-      "fenomeno": "Nubes Convectivas Tornádicas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del sábado 31 de octubre del 2026",
-      "hasta": "la noche del sábado 31 de octubre del 2026",
-      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
-      "zonas": "O'Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
-      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de O'Higgins y Maule",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Maule",
-        "O'Higgins"
-      ]
-    },
-    {
-      "id": 5942,
-      "tipo": "Aviso",
-      "codigo": "A595/2026",
-      "emision": "Viernes 30 de octubre del 2026 a las 11:48 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del sábado 31 de octubre del 2026",
-      "hasta": "la noche del sábado 31 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de las regiones Metropolitana, O'Higgins y Maule",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Maule",
-        "Metropolitana",
-        "O'Higgins"
-      ]
-    },
-    {
-      "id": 5941,
-      "tipo": "Aviso",
-      "codigo": "A594/2026",
-      "emision": "Viernes 30 de octubre del 2026 a las 09:03 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del sábado 31 de octubre del 2026",
-      "hasta": "la noche del domingo 01 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Magallanes",
-      "titulo": "Probables Tormentas Eléctricas en la región de Magallanes",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 5936,
-      "tipo": "Aviso",
-      "codigo": "A592-2/2026",
-      "emision": "Jueves 29 de octubre del 2026 a las 13:55 hrs.",
+      "codigo": "A597/2026",
+      "emision": "Sábado 31 de octubre del 2026 a las 12:45 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del jueves 29 de octubre del 2026",
-      "hasta": "la noche del sábado 31 de octubre del 2026",
-      "observacion": "",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera Costa, Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
+      "condicion": "Corriente en chorro",
+      "desde": "la mañana del domingo 01 de noviembre del 2026",
+      "hasta": "la noche del miércoles 04 de noviembre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Coquimbo (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de la región de Coquimbo",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
+        "Coquimbo"
+      ]
+    },
+    {
+      "id": 5946,
+      "tipo": "Aviso",
+      "codigo": "A598/2026",
+      "emision": "Sábado 31 de octubre del 2026 a las 14:53 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la madrugada del martes 03 de noviembre del 2026",
+      "hasta": "la noche del martes 03 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Sur, Insular Central, Pampa Patagonica Sur)",
+      "titulo": "Viento Normal a Moderado en zonas de la región de Magallanes",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
       ]
     }
   ]
