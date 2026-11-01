@@ -1,70 +1,221 @@
 {
-  "actualizado": "2026-11-01T06:00:52.277392",
+  "actualizado": "2026-11-01T18:01:00.290193",
   "totales": {
-    "avisos": 4,
-    "alertas": 0,
+    "avisos": 6,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 4
+    "total": 7
   },
   "alertas": [
     {
-      "id": 5941,
-      "tipo": "Aviso",
-      "codigo": "A594/2026",
-      "emision": "Viernes 30 de octubre del 2026 a las 09:03 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del sábado 31 de octubre del 2026",
-      "hasta": "la noche del domingo 01 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Magallanes",
-      "titulo": "Probables Tormentas Eléctricas en la región de Magallanes",
-      "icono": "⚡",
-      "color": "#fbbf24",
+      "id": 5952,
+      "tipo": "Alerta",
+      "codigo": "AA192/2026",
+      "emision": "Domingo 1 de noviembre del 2026 a las 13:10 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la madrugada del martes 03 de noviembre del 2026",
+      "hasta": "la noche del martes 03 de noviembre del 2026",
+      "observacion": "Desarrollo de ventisca",
+      "zonas": "Coquimbo (Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en cordillera de la región de Coquimbo",
+      "icono": "💨",
+      "color": "#f97316",
       "regiones": [
-        "Magallanes"
+        "Coquimbo"
       ]
     },
     {
-      "id": 5944,
+      "id": 5951,
       "tipo": "Aviso",
-      "codigo": "A591-5/2026",
-      "emision": "Viernes 30 de octubre del 2026 a las 12:02 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del viernes 30 de octubre del 2026",
-      "hasta": "la noche del domingo 01 de noviembre del 2026",
-      "observacion": "Probabilidad de granizos",
-      "zonas": "Coquimbo (Precordillera y valles precordilleranos, Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera) | &Ntilde;uble (Valle, Precordillera, Cordillera) | Biobío (Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "⚡",
+      "codigo": "A597-1/2026",
+      "emision": "Domingo 1 de noviembre del 2026 a las 13:08 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del domingo 01 de noviembre del 2026",
+      "hasta": "la noche del miércoles 04 de noviembre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O'Higgins (Cordillera) | Maule (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera desde la región de Coquimbo a la región del Maule",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "Biobío",
         "Coquimbo",
         "Maule",
         "Metropolitana",
         "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
+        "Valparaíso"
       ]
     },
     {
-      "id": 5945,
+      "id": 5950,
       "tipo": "Aviso",
-      "codigo": "A597/2026",
-      "emision": "Sábado 31 de octubre del 2026 a las 12:45 hrs.",
+      "codigo": "A591-7/2026",
+      "emision": "Domingo 1 de noviembre del 2026 a las 12:41 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del domingo 01 de noviembre del 2026",
+      "hasta": "la noche del lunes 02 de noviembre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Maule",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5949,
+      "tipo": "Aviso",
+      "codigo": "A600/2026",
+      "emision": "Domingo 1 de noviembre del 2026 a las 12:35 hrs.",
       "fenomeno": "Viento",
       "condicion": "Corriente en chorro",
-      "desde": "la mañana del domingo 01 de noviembre del 2026",
-      "hasta": "la noche del miércoles 04 de noviembre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Coquimbo (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de la región de Coquimbo",
+      "desde": "la mañana del lunes 02 de noviembre del 2026",
+      "hasta": "la mañana del miércoles 04 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Antofagasta (Cordillera Costa, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Antofagasta y Atacama",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "Coquimbo"
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5948,
+      "tipo": "Aviso",
+      "codigo": "A599/2026",
+      "emision": "Domingo 1 de noviembre del 2026 a las 12:34 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la tarde del miércoles 04 de noviembre del 2026",
+      "hasta": "la noche del viernes 06 de noviembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Litoral provincia de Huasco - Región de Atacama",
+      "titulo": "Viento Normal a Moderado en Litoral provincia de Huasco - Región de Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -27.9672,
+          -71.1409
+        ],
+        [
+          -27.9878,
+          -71.1052
+        ],
+        [
+          -28.2373,
+          -71.1072
+        ],
+        [
+          -28.357,
+          -71.1154
+        ],
+        [
+          -28.4537,
+          -71.1346
+        ],
+        [
+          -28.543,
+          -71.1745
+        ],
+        [
+          -28.6925,
+          -71.2376
+        ],
+        [
+          -28.7948,
+          -71.2706
+        ],
+        [
+          -29.0773,
+          -71.3928
+        ],
+        [
+          -29.1636,
+          -71.3887
+        ],
+        [
+          -29.1816,
+          -71.489
+        ],
+        [
+          -29.1409,
+          -71.4999
+        ],
+        [
+          -29.0857,
+          -71.4738
+        ],
+        [
+          -29.0521,
+          -71.4848
+        ],
+        [
+          -28.9884,
+          -71.5027
+        ],
+        [
+          -28.9175,
+          -71.5137
+        ],
+        [
+          -28.849,
+          -71.4766
+        ],
+        [
+          -28.8165,
+          -71.4024
+        ],
+        [
+          -28.7443,
+          -71.3654
+        ],
+        [
+          -28.6973,
+          -71.3036
+        ],
+        [
+          -28.631,
+          -71.2857
+        ],
+        [
+          -28.5744,
+          -71.3118
+        ],
+        [
+          -28.4959,
+          -71.2692
+        ],
+        [
+          -28.4658,
+          -71.25
+        ]
+      ],
+      "puntos_area": {
+        "ATACAMA": {
+          "Interrupción de caminos": {
+            "n": 1,
+            "alto": 1,
+            "af": 0
+          },
+          "Activación de quebradas": {
+            "n": 19,
+            "alto": 19,
+            "af": 0
+          }
+        }
+      },
+      "regiones": [
+        "Atacama"
       ]
     },
     {
@@ -80,6 +231,24 @@
       "zonas": "Magallanes (Cordillera Austral Sur, Insular Central, Pampa Patagonica Sur)",
       "titulo": "Viento Normal a Moderado en zonas de la región de Magallanes",
       "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5941,
+      "tipo": "Aviso",
+      "codigo": "A594/2026",
+      "emision": "Viernes 30 de octubre del 2026 a las 09:03 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del sábado 31 de octubre del 2026",
+      "hasta": "la noche del domingo 01 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Magallanes",
+      "titulo": "Probables Tormentas Eléctricas en la región de Magallanes",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
