@@ -1,91 +1,28 @@
 {
-  "actualizado": "2026-11-02T00:00:03.177579",
+  "actualizado": "2026-11-02T06:00:06.189534",
   "totales": {
-    "avisos": 6,
+    "avisos": 5,
     "alertas": 1,
     "alarmas": 0,
-    "total": 7
+    "total": 6
   },
   "alertas": [
     {
-      "id": 5952,
-      "tipo": "Alerta",
-      "codigo": "AA192/2026",
-      "emision": "Domingo 1 de noviembre del 2026 a las 13:10 hrs.",
+      "id": 5946,
+      "tipo": "Aviso",
+      "codigo": "A598/2026",
+      "emision": "Sábado 31 de octubre del 2026 a las 14:53 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
+      "condicion": "Jet de bajo nivel",
       "desde": "la madrugada del martes 03 de noviembre del 2026",
       "hasta": "la noche del martes 03 de noviembre del 2026",
-      "observacion": "Desarrollo de ventisca",
-      "zonas": "Coquimbo (Cordillera)",
-      "titulo": "Viento Moderado a Fuerte en cordillera de la región de Coquimbo",
-      "icono": "💨",
-      "color": "#f97316",
-      "regiones": [
-        "Coquimbo"
-      ]
-    },
-    {
-      "id": 5951,
-      "tipo": "Aviso",
-      "codigo": "A597-1/2026",
-      "emision": "Domingo 1 de noviembre del 2026 a las 13:08 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del domingo 01 de noviembre del 2026",
-      "hasta": "la noche del miércoles 04 de noviembre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O'Higgins (Cordillera) | Maule (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera desde la región de Coquimbo a la región del Maule",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5950,
-      "tipo": "Aviso",
-      "codigo": "A591-7/2026",
-      "emision": "Domingo 1 de noviembre del 2026 a las 12:41 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del domingo 01 de noviembre del 2026",
-      "hasta": "la noche del lunes 02 de noviembre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Maule",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5949,
-      "tipo": "Aviso",
-      "codigo": "A600/2026",
-      "emision": "Domingo 1 de noviembre del 2026 a las 12:35 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del lunes 02 de noviembre del 2026",
-      "hasta": "la mañana del miércoles 04 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Antofagasta (Cordillera Costa, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Antofagasta y Atacama",
+      "zonas": "Magallanes (Cordillera Austral Sur, Insular Central, Pampa Patagonica Sur)",
+      "titulo": "Viento Normal a Moderado en zonas de la región de Magallanes",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Atacama"
+        "Magallanes"
       ]
     },
     {
@@ -219,39 +156,84 @@
       ]
     },
     {
-      "id": 5946,
+      "id": 5949,
       "tipo": "Aviso",
-      "codigo": "A598/2026",
-      "emision": "Sábado 31 de octubre del 2026 a las 14:53 hrs.",
+      "codigo": "A600/2026",
+      "emision": "Domingo 1 de noviembre del 2026 a las 12:35 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la madrugada del martes 03 de noviembre del 2026",
-      "hasta": "la noche del martes 03 de noviembre del 2026",
+      "condicion": "Corriente en chorro",
+      "desde": "la mañana del lunes 02 de noviembre del 2026",
+      "hasta": "la mañana del miércoles 04 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Sur, Insular Central, Pampa Patagonica Sur)",
-      "titulo": "Viento Normal a Moderado en zonas de la región de Magallanes",
+      "zonas": "Antofagasta (Cordillera Costa, Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Antofagasta y Atacama",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "Magallanes"
+        "Antofagasta",
+        "Atacama"
       ]
     },
     {
-      "id": 5941,
+      "id": 5950,
       "tipo": "Aviso",
-      "codigo": "A594/2026",
-      "emision": "Viernes 30 de octubre del 2026 a las 09:03 hrs.",
+      "codigo": "A591-7/2026",
+      "emision": "Domingo 1 de noviembre del 2026 a las 12:41 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del sábado 31 de octubre del 2026",
-      "hasta": "la noche del domingo 01 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Magallanes",
-      "titulo": "Probables Tormentas Eléctricas en la región de Magallanes",
+      "desde": "la tarde del domingo 01 de noviembre del 2026",
+      "hasta": "la noche del lunes 02 de noviembre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región del Maule",
       "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "Magallanes"
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5951,
+      "tipo": "Aviso",
+      "codigo": "A597-1/2026",
+      "emision": "Domingo 1 de noviembre del 2026 a las 13:08 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del domingo 01 de noviembre del 2026",
+      "hasta": "la noche del miércoles 04 de noviembre del 2026",
+      "observacion": "Probabilidad de ventisca",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O'Higgins (Cordillera) | Maule (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera desde la región de Coquimbo a la región del Maule",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5952,
+      "tipo": "Alerta",
+      "codigo": "AA192/2026",
+      "emision": "Domingo 1 de noviembre del 2026 a las 13:10 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la madrugada del martes 03 de noviembre del 2026",
+      "hasta": "la noche del martes 03 de noviembre del 2026",
+      "observacion": "Desarrollo de ventisca",
+      "zonas": "Coquimbo (Cordillera)",
+      "titulo": "Viento Moderado a Fuerte en cordillera de la región de Coquimbo",
+      "icono": "💨",
+      "color": "#f97316",
+      "regiones": [
+        "Coquimbo"
       ]
     }
   ]
