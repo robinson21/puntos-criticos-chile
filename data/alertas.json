@@ -1,12 +1,53 @@
 {
-  "actualizado": "2026-11-03T12:00:04.088500",
+  "actualizado": "2026-11-03T18:00:07.769962",
   "totales": {
-    "avisos": 8,
+    "avisos": 9,
     "alertas": 1,
     "alarmas": 0,
-    "total": 9
+    "total": 10
   },
   "alertas": [
+    {
+      "id": 5959,
+      "tipo": "Aviso",
+      "codigo": "A591-9/2026",
+      "emision": "Martes 3 de noviembre del 2026 a las 09:39 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del martes 03 de noviembre del 2026",
+      "hasta": "la noche del martes 03 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Precordillera, Cordillera) | O'Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5958,
+      "tipo": "Aviso",
+      "codigo": "A604/2026",
+      "emision": "Martes 3 de noviembre del 2026 a las 09:12 hrs.",
+      "fenomeno": "Nubes Convectivas Tornádicas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del martes 03 de noviembre del 2026",
+      "hasta": "la tarde del martes 03 de noviembre del 2026",
+      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
+      "zonas": "La Araucanía (Litoral, Valle, Precordillera)",
+      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de la región de La Araucanía",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía"
+      ]
+    },
     {
       "id": 5957,
       "tipo": "Aviso",
@@ -25,29 +66,6 @@
         "Biobío",
         "Coquimbo",
         "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5956,
-      "tipo": "Aviso",
-      "codigo": "A591-8/2026",
-      "emision": "Lunes 2 de noviembre del 2026 a las 15:28 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del lunes 02 de noviembre del 2026",
-      "hasta": "la noche del martes 03 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Precordillera, Cordillera) | O'Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Precordillera, Cordillera) | Biobío (Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Biobío",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
         "Ñuble"
       ]
     },
