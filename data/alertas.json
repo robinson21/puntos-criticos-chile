@@ -1,21 +1,86 @@
 {
-  "actualizado": "2026-11-05T12:00:33.975951",
+  "actualizado": "2026-11-05T18:00:38.275057",
   "totales": {
-    "avisos": 3,
+    "avisos": 6,
     "alertas": 0,
     "alarmas": 0,
-    "total": 3
+    "total": 6
   },
   "alertas": [
     {
-      "id": 5948,
+      "id": 5968,
       "tipo": "Aviso",
-      "codigo": "A599/2026",
-      "emision": "Domingo 1 de noviembre del 2026 a las 12:34 hrs.",
+      "codigo": "A608/2026",
+      "emision": "Jueves 5 de noviembre del 2026 a las 12:19 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del jueves 05 de noviembre del 2026",
+      "hasta": "la noche del jueves 05 de noviembre del 2026",
+      "observacion": "Probabilidad de fuertes rachas de vientos locales",
+      "zonas": "La Araucanía (Precordillera) | Los Ríos (Valle, Precordillera) | Los Lagos (Valle, Precordillera, Chiloé, Litoral Interior)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 5967,
+      "tipo": "Aviso",
+      "codigo": "A605-2/2026",
+      "emision": "Jueves 5 de noviembre del 2026 a las 11:58 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del sábado 07 de noviembre del 2026",
+      "hasta": "la tarde del domingo 08 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera) | Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera) | Maule (Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera) | Biobío (Cordillera Costa, Valle, Precordillera) | La Araucanía (Valle, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas desde la región de Atacama a la región de La Araucanía",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama",
+        "Biobío",
+        "Coquimbo",
+        "La Araucanía",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5966,
+      "tipo": "Aviso",
+      "codigo": "A607/2026",
+      "emision": "Jueves 5 de noviembre del 2026 a las 11:51 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Alta de Bolivia",
+      "desde": "la tarde del viernes 06 de noviembre del 2026",
+      "hasta": "la noche del lunes 09 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5965,
+      "tipo": "Aviso",
+      "codigo": "A599-1/2026",
+      "emision": "Jueves 5 de noviembre del 2026 a las 11:53 hrs.",
       "fenomeno": "Viento",
       "condicion": "Jet costero",
-      "desde": "la tarde del miércoles 04 de noviembre del 2026",
-      "hasta": "la noche del viernes 06 de noviembre del 2026",
+      "desde": "la tarde del jueves 05 de noviembre del 2026",
+      "hasta": "la noche del sábado 07 de noviembre del 2026",
       "observacion": "Probabilidad de tormentas de arena",
       "zonas": "Litoral provincia de Huasco - Región de Atacama",
       "titulo": "Viento Normal a Moderado en Litoral provincia de Huasco - Región de Atacama",
@@ -138,10 +203,10 @@
       ]
     },
     {
-      "id": 5960,
+      "id": 5964,
       "tipo": "Aviso",
-      "codigo": "A601-1/2026",
-      "emision": "Miércoles 4 de noviembre del 2026 a las 11:46 hrs.",
+      "codigo": "A601-2/2026",
+      "emision": "Jueves 5 de noviembre del 2026 a las 11:53 hrs.",
       "fenomeno": "Viento",
       "condicion": "Altas presiones",
       "desde": "la tarde del jueves 05 de noviembre del 2026",
@@ -161,27 +226,23 @@
       ]
     },
     {
-      "id": 5961,
+      "id": 5963,
       "tipo": "Aviso",
-      "codigo": "A605/2026",
-      "emision": "Miércoles 4 de noviembre del 2026 a las 11:46 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del sábado 07 de noviembre del 2026",
-      "hasta": "la tarde del domingo 08 de noviembre del 2026",
+      "codigo": "A606/2026",
+      "emision": "Jueves 5 de noviembre del 2026 a las 11:43 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la madrugada del viernes 06 de noviembre del 2026",
+      "hasta": "la noche del viernes 06 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera) | Maule (Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera) | Biobío (Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "⚠️",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Coquimbo, Valparaíso y Metropolitana",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "Biobío",
         "Coquimbo",
-        "Maule",
         "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
+        "Valparaíso"
       ]
     }
   ]
