@@ -1,93 +1,12 @@
 {
-  "actualizado": "2026-11-04T18:00:20.271165",
+  "actualizado": "2026-11-05T06:00:30.889559",
   "totales": {
-    "avisos": 5,
+    "avisos": 3,
     "alertas": 0,
     "alarmas": 0,
-    "total": 5
+    "total": 3
   },
   "alertas": [
-    {
-      "id": 5960,
-      "tipo": "Aviso",
-      "codigo": "A601-1/2026",
-      "emision": "Miércoles 4 de noviembre del 2026 a las 11:46 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Altas presiones",
-      "desde": "la tarde del jueves 05 de noviembre del 2026",
-      "hasta": "la tarde del sábado 07 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Litoral) | Maule (Litoral) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble y Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5957,
-      "tipo": "Aviso",
-      "codigo": "A597-2/2026",
-      "emision": "Martes 3 de noviembre del 2026 a las 06:07 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del martes 03 de noviembre del 2026",
-      "hasta": "la noche del miércoles 04 de noviembre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Coquimbo (Cordillera) | Maule (Cordillera) | &Ntilde;uble (Cordillera) | Biobío (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Coquimbo, Maule, &Ntilde;uble y Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5954,
-      "tipo": "Aviso",
-      "codigo": "A602/2026",
-      "emision": "Lunes 2 de noviembre del 2026 a las 14:22 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del miércoles 04 de noviembre del 2026",
-      "hasta": "la noche del miércoles 04 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Arica y Parinacota (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de la región de Arica y Parinacota",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Arica y Parinacota"
-      ]
-    },
-    {
-      "id": 5949,
-      "tipo": "Aviso",
-      "codigo": "A600/2026",
-      "emision": "Domingo 1 de noviembre del 2026 a las 12:35 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del lunes 02 de noviembre del 2026",
-      "hasta": "la mañana del miércoles 04 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Cordillera Costa, Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
     {
       "id": 5948,
       "tipo": "Aviso",
@@ -216,6 +135,53 @@
       },
       "regiones": [
         "Atacama"
+      ]
+    },
+    {
+      "id": 5960,
+      "tipo": "Aviso",
+      "codigo": "A601-1/2026",
+      "emision": "Miércoles 4 de noviembre del 2026 a las 11:46 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Altas presiones",
+      "desde": "la tarde del jueves 05 de noviembre del 2026",
+      "hasta": "la tarde del sábado 07 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Litoral) | Maule (Litoral) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble y Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5961,
+      "tipo": "Aviso",
+      "codigo": "A605/2026",
+      "emision": "Miércoles 4 de noviembre del 2026 a las 11:46 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del sábado 07 de noviembre del 2026",
+      "hasta": "la tarde del domingo 08 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera) | Maule (Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera) | Biobío (Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
       ]
     }
   ]
