@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-11-05T00:00:23.504620",
+  "actualizado": "2026-11-05T06:00:30.889559",
   "totales": {
-    "avisos": 5,
+    "avisos": 3,
     "alertas": 0,
     "alarmas": 0,
-    "total": 5
+    "total": 3
   },
   "alertas": [
     {
@@ -135,45 +135,6 @@
       },
       "regiones": [
         "Atacama"
-      ]
-    },
-    {
-      "id": 5954,
-      "tipo": "Aviso",
-      "codigo": "A602/2026",
-      "emision": "Lunes 2 de noviembre del 2026 a las 14:22 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del miércoles 04 de noviembre del 2026",
-      "hasta": "la noche del miércoles 04 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Arica y Parinacota (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de la región de Arica y Parinacota",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Arica y Parinacota"
-      ]
-    },
-    {
-      "id": 5957,
-      "tipo": "Aviso",
-      "codigo": "A597-2/2026",
-      "emision": "Martes 3 de noviembre del 2026 a las 06:07 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la mañana del martes 03 de noviembre del 2026",
-      "hasta": "la noche del miércoles 04 de noviembre del 2026",
-      "observacion": "Probabilidad de ventisca",
-      "zonas": "Coquimbo (Cordillera) | Maule (Cordillera) | &Ntilde;uble (Cordillera) | Biobío (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Coquimbo, Maule, &Ntilde;uble y Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Ñuble"
       ]
     },
     {
