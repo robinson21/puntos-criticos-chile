@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-06T18:00:51.075335",
+  "actualizado": "2026-11-06T19:01:27.165244",
   "totales": {
     "avisos": 5,
     "alertas": 1,
@@ -8,14 +8,14 @@
   },
   "alertas": [
     {
-      "id": 5974,
+      "id": 5975,
       "tipo": "Aviso",
-      "codigo": "A605-4/2026",
-      "emision": "Viernes 6 de noviembre del 2026 a las 14:52 hrs.",
+      "codigo": "A605-5/2026",
+      "emision": "Viernes 6 de noviembre del 2026 a las 15:37 hrs.",
       "fenomeno": "Altas Temperaturas",
       "condicion": "Dorsal en altura",
-      "desde": "la mañana del sábado 07 de noviembre del 2026",
-      "hasta": "la tarde del domingo 08 de noviembre del 2026",
+      "desde": "la tarde del sábado 07 de noviembre del 2026",
+      "hasta": "la tarde del lunes 09 de noviembre del 2026",
       "observacion": "",
       "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera) | Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Cordillera Costa) | Maule (Cordillera Costa) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera) | Biobío (Cordillera Costa, Valle, Precordillera) | La Araucanía (Valle, Precordillera) | Los Ríos (Litoral, Precordillera) | Los Lagos (Precordillera)",
       "titulo": "Altas Temperaturas en zonas de las regiones de Atacama, Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble, Biobío, La Araucanía, Los Ríos y Los Lagos",
