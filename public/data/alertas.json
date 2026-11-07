@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-06T18:00:51.075335",
+  "actualizado": "2026-11-07T06:00:10.867787",
   "totales": {
     "avisos": 5,
     "alertas": 1,
@@ -7,97 +7,6 @@
     "total": 6
   },
   "alertas": [
-    {
-      "id": 5974,
-      "tipo": "Aviso",
-      "codigo": "A605-4/2026",
-      "emision": "Viernes 6 de noviembre del 2026 a las 14:52 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la mañana del sábado 07 de noviembre del 2026",
-      "hasta": "la tarde del domingo 08 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera) | Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Cordillera Costa) | Maule (Cordillera Costa) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera) | Biobío (Cordillera Costa, Valle, Precordillera) | La Araucanía (Valle, Precordillera) | Los Ríos (Litoral, Precordillera) | Los Lagos (Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Atacama, Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble, Biobío, La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Atacama",
-        "Biobío",
-        "Coquimbo",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5973,
-      "tipo": "Aviso",
-      "codigo": "A607-1/2026",
-      "emision": "Viernes 6 de noviembre del 2026 a las 14:53 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Alta de Bolivia",
-      "desde": "la tarde del viernes 06 de noviembre del 2026",
-      "hasta": "la noche del lunes 09 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5971,
-      "tipo": "Aviso",
-      "codigo": "A601-3/2026",
-      "emision": "Viernes 6 de noviembre del 2026 a las 12:05 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Altas presiones",
-      "desde": "la tarde del viernes 06 de noviembre del 2026",
-      "hasta": "la tarde del sábado 07 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Litoral) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble y Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5970,
-      "tipo": "Alerta",
-      "codigo": "AA193/2026",
-      "emision": "Viernes 6 de noviembre del 2026 a las 12:02 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del sábado 07 de noviembre del 2026",
-      "hasta": "la tarde del domingo 08 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
-      "titulo": "Evento de Altas Temperaturas Extremas en zonas desde la región de Coquimbo a la región del Maule",
-      "icono": "⚠️",
-      "color": "#f97316",
-      "regiones": [
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
     {
       "id": 5965,
       "tipo": "Aviso",
@@ -229,23 +138,112 @@
       ]
     },
     {
-      "id": 5963,
+      "id": 5971,
       "tipo": "Aviso",
-      "codigo": "A606/2026",
-      "emision": "Jueves 5 de noviembre del 2026 a las 11:43 hrs.",
+      "codigo": "A601-3/2026",
+      "emision": "Viernes 6 de noviembre del 2026 a las 12:05 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la madrugada del viernes 06 de noviembre del 2026",
-      "hasta": "la noche del viernes 06 de noviembre del 2026",
+      "condicion": "Altas presiones",
+      "desde": "la tarde del viernes 06 de noviembre del 2026",
+      "hasta": "la tarde del sábado 07 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Coquimbo, Valparaíso y Metropolitana",
+      "zonas": "Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Litoral) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble y Biobío",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
+        "Biobío",
         "Coquimbo",
+        "Maule",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5970,
+      "tipo": "Alerta",
+      "codigo": "AA193/2026",
+      "emision": "Viernes 6 de noviembre del 2026 a las 12:02 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del sábado 07 de noviembre del 2026",
+      "hasta": "la tarde del domingo 08 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
+      "titulo": "Evento de Altas Temperaturas Extremas en zonas desde la región de Coquimbo a la región del Maule",
+      "icono": "⚠️",
+      "color": "#f97316",
+      "regiones": [
+        "Coquimbo",
+        "Maule",
         "Metropolitana",
+        "O'Higgins",
         "Valparaíso"
+      ]
+    },
+    {
+      "id": 5975,
+      "tipo": "Aviso",
+      "codigo": "A605-5/2026",
+      "emision": "Viernes 6 de noviembre del 2026 a las 15:37 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del sábado 07 de noviembre del 2026",
+      "hasta": "la tarde del lunes 09 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera) | Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Cordillera Costa) | Maule (Cordillera Costa) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera) | Biobío (Cordillera Costa, Valle, Precordillera) | La Araucanía (Valle, Precordillera) | Los Ríos (Litoral, Precordillera) | Los Lagos (Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Atacama, Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble, Biobío, La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama",
+        "Biobío",
+        "Coquimbo",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Maule",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5973,
+      "tipo": "Aviso",
+      "codigo": "A607-1/2026",
+      "emision": "Viernes 6 de noviembre del 2026 a las 14:53 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Alta de Bolivia",
+      "desde": "la tarde del viernes 06 de noviembre del 2026",
+      "hasta": "la noche del lunes 09 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5976,
+      "tipo": "Aviso",
+      "codigo": "A609/2026",
+      "emision": "Viernes 6 de noviembre del 2026 a las 17:40 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel asociado a paso de sistema frontal",
+      "desde": "la mañana del domingo 08 de noviembre del 2026",
+      "hasta": "la noche del lunes 09 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes",
+      "titulo": "Viento Normal a Moderado en la región de Magallanes",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
       ]
     }
   ]
