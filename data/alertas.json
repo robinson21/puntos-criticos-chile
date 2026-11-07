@@ -1,12 +1,30 @@
 {
-  "actualizado": "2026-11-06T19:01:27.165244",
+  "actualizado": "2026-11-07T00:00:08.070010",
   "totales": {
-    "avisos": 5,
+    "avisos": 6,
     "alertas": 1,
     "alarmas": 0,
-    "total": 6
+    "total": 7
   },
   "alertas": [
+    {
+      "id": 5976,
+      "tipo": "Aviso",
+      "codigo": "A609/2026",
+      "emision": "Viernes 6 de noviembre del 2026 a las 17:40 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel asociado a paso de sistema frontal",
+      "desde": "la mañana del domingo 08 de noviembre del 2026",
+      "hasta": "la noche del lunes 09 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes",
+      "titulo": "Viento Normal a Moderado en la región de Magallanes",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
     {
       "id": 5975,
       "tipo": "Aviso",
