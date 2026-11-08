@@ -1,28 +1,78 @@
 {
-  "actualizado": "2026-11-08T00:00:20.861372",
+  "actualizado": "2026-11-08T06:00:26.481985",
   "totales": {
-    "avisos": 5,
+    "avisos": 3,
     "alertas": 2,
     "alarmas": 0,
-    "total": 7
+    "total": 5
   },
   "alertas": [
     {
-      "id": 5978,
-      "tipo": "Aviso",
-      "codigo": "A609-1/2026",
-      "emision": "Sábado 7 de noviembre del 2026 a las 15:06 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la mañana del domingo 08 de noviembre del 2026",
-      "hasta": "la tarde del martes 10 de noviembre del 2026",
+      "id": 5970,
+      "tipo": "Alerta",
+      "codigo": "AA193/2026",
+      "emision": "Viernes 6 de noviembre del 2026 a las 12:02 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del sábado 07 de noviembre del 2026",
+      "hasta": "la tarde del domingo 08 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Magallanes",
-      "titulo": "Viento Normal a Moderado en la región de Magallanes",
-      "icono": "💨",
+      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
+      "titulo": "Evento de Altas Temperaturas Extremas en zonas desde la región de Coquimbo a la región del Maule",
+      "icono": "⚠️",
+      "color": "#f97316",
+      "regiones": [
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5975,
+      "tipo": "Aviso",
+      "codigo": "A605-5/2026",
+      "emision": "Viernes 6 de noviembre del 2026 a las 15:37 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del sábado 07 de noviembre del 2026",
+      "hasta": "la tarde del lunes 09 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera) | Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Cordillera Costa) | Maule (Cordillera Costa) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera) | Biobío (Cordillera Costa, Valle, Precordillera) | La Araucanía (Valle, Precordillera) | Los Ríos (Litoral, Precordillera) | Los Lagos (Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Atacama, Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble, Biobío, La Araucanía, Los Ríos y Los Lagos",
+      "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
-        "Magallanes"
+        "Atacama",
+        "Biobío",
+        "Coquimbo",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Maule",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 5973,
+      "tipo": "Aviso",
+      "codigo": "A607-1/2026",
+      "emision": "Viernes 6 de noviembre del 2026 a las 14:53 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Alta de Bolivia",
+      "desde": "la tarde del viernes 06 de noviembre del 2026",
+      "hasta": "la noche del lunes 09 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Arica y Parinacota",
+        "Tarapacá"
       ]
     },
     {
@@ -300,224 +350,21 @@
       ]
     },
     {
-      "id": 5975,
+      "id": 5978,
       "tipo": "Aviso",
-      "codigo": "A605-5/2026",
-      "emision": "Viernes 6 de noviembre del 2026 a las 15:37 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del sábado 07 de noviembre del 2026",
-      "hasta": "la tarde del lunes 09 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera) | Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Cordillera Costa) | Maule (Cordillera Costa) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera) | Biobío (Cordillera Costa, Valle, Precordillera) | La Araucanía (Valle, Precordillera) | Los Ríos (Litoral, Precordillera) | Los Lagos (Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Atacama, Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble, Biobío, La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Atacama",
-        "Biobío",
-        "Coquimbo",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5973,
-      "tipo": "Aviso",
-      "codigo": "A607-1/2026",
-      "emision": "Viernes 6 de noviembre del 2026 a las 14:53 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Alta de Bolivia",
-      "desde": "la tarde del viernes 06 de noviembre del 2026",
-      "hasta": "la noche del lunes 09 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5971,
-      "tipo": "Aviso",
-      "codigo": "A601-3/2026",
-      "emision": "Viernes 6 de noviembre del 2026 a las 12:05 hrs.",
+      "codigo": "A609-1/2026",
+      "emision": "Sábado 7 de noviembre del 2026 a las 15:06 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Altas presiones",
-      "desde": "la tarde del viernes 06 de noviembre del 2026",
-      "hasta": "la tarde del sábado 07 de noviembre del 2026",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la mañana del domingo 08 de noviembre del 2026",
+      "hasta": "la tarde del martes 10 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Litoral) | Valparaíso (Litoral) | O'Higgins (Litoral) | Maule (Litoral, Cordillera Costa) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Coquimbo, Valparaíso, O'Higgins, Maule, &Ntilde;uble y Biobío",
+      "zonas": "Magallanes",
+      "titulo": "Viento Normal a Moderado en la región de Magallanes",
       "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 5970,
-      "tipo": "Alerta",
-      "codigo": "AA193/2026",
-      "emision": "Viernes 6 de noviembre del 2026 a las 12:02 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del sábado 07 de noviembre del 2026",
-      "hasta": "la tarde del domingo 08 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
-      "titulo": "Evento de Altas Temperaturas Extremas en zonas desde la región de Coquimbo a la región del Maule",
-      "icono": "⚠️",
-      "color": "#f97316",
-      "regiones": [
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5965,
-      "tipo": "Aviso",
-      "codigo": "A599-1/2026",
-      "emision": "Jueves 5 de noviembre del 2026 a las 11:53 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la tarde del jueves 05 de noviembre del 2026",
-      "hasta": "la noche del sábado 07 de noviembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Litoral provincia de Huasco - Región de Atacama",
-      "titulo": "Viento Normal a Moderado en Litoral provincia de Huasco - Región de Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "poligono": [
-        [
-          -27.9672,
-          -71.1409
-        ],
-        [
-          -27.9878,
-          -71.1052
-        ],
-        [
-          -28.2373,
-          -71.1072
-        ],
-        [
-          -28.357,
-          -71.1154
-        ],
-        [
-          -28.4537,
-          -71.1346
-        ],
-        [
-          -28.543,
-          -71.1745
-        ],
-        [
-          -28.6925,
-          -71.2376
-        ],
-        [
-          -28.7948,
-          -71.2706
-        ],
-        [
-          -29.0773,
-          -71.3928
-        ],
-        [
-          -29.1636,
-          -71.3887
-        ],
-        [
-          -29.1816,
-          -71.489
-        ],
-        [
-          -29.1409,
-          -71.4999
-        ],
-        [
-          -29.0857,
-          -71.4738
-        ],
-        [
-          -29.0521,
-          -71.4848
-        ],
-        [
-          -28.9884,
-          -71.5027
-        ],
-        [
-          -28.9175,
-          -71.5137
-        ],
-        [
-          -28.849,
-          -71.4766
-        ],
-        [
-          -28.8165,
-          -71.4024
-        ],
-        [
-          -28.7443,
-          -71.3654
-        ],
-        [
-          -28.6973,
-          -71.3036
-        ],
-        [
-          -28.631,
-          -71.2857
-        ],
-        [
-          -28.5744,
-          -71.3118
-        ],
-        [
-          -28.4959,
-          -71.2692
-        ],
-        [
-          -28.4658,
-          -71.25
-        ]
-      ],
-      "puntos_area": {
-        "ATACAMA": {
-          "Interrupción de caminos": {
-            "n": 1,
-            "alto": 1,
-            "af": 0
-          },
-          "Activación de quebradas": {
-            "n": 19,
-            "alto": 19,
-            "af": 0
-          }
-        }
-      },
-      "regiones": [
-        "Atacama"
+        "Magallanes"
       ]
     }
   ]
