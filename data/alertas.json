@@ -1,364 +1,12 @@
 {
-  "actualizado": "2026-11-09T00:00:35.564997",
+  "actualizado": "2026-11-09T06:00:38.373403",
   "totales": {
     "avisos": 6,
-    "alertas": 2,
+    "alertas": 0,
     "alarmas": 0,
-    "total": 8
+    "total": 6
   },
   "alertas": [
-    {
-      "id": 5981,
-      "tipo": "Aviso",
-      "codigo": "A612/2026",
-      "emision": "Domingo 8 de noviembre del 2026 a las 12:48 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Baja segregada",
-      "desde": "la noche del lunes 09 de noviembre del 2026",
-      "hasta": "la madrugada del martes 10 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de las regiones de Valparaíso, Metropolitana y O'Higgins",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5980,
-      "tipo": "Aviso",
-      "codigo": "A611/2026",
-      "emision": "Domingo 8 de noviembre del 2026 a las 12:25 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Baja segregada",
-      "desde": "la tarde del lunes 09 de noviembre del 2026",
-      "hasta": "la madrugada del martes 10 de noviembre del 2026",
-      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Maule",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5979,
-      "tipo": "Aviso",
-      "codigo": "A610/2026",
-      "emision": "Domingo 8 de noviembre del 2026 a las 10:58 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del domingo 08 de noviembre del 2026",
-      "hasta": "la tarde del miércoles 11 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 5978,
-      "tipo": "Aviso",
-      "codigo": "A609-1/2026",
-      "emision": "Sábado 7 de noviembre del 2026 a las 15:06 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la mañana del domingo 08 de noviembre del 2026",
-      "hasta": "la tarde del martes 10 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes",
-      "titulo": "Viento Normal a Moderado en la región de Magallanes",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 5977,
-      "tipo": "Alerta",
-      "codigo": "AA194/2026",
-      "emision": "Sábado 7 de noviembre del 2026 a las 15:10 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la mañana del domingo 08 de noviembre del 2026",
-      "hasta": "la noche del domingo 08 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "comunas de Laguna Blanca, Río Verde, Punta Arenas y San Gregorio - Reg. Magallanes",
-      "titulo": "Viento Moderado a Fuerte en comunas de Laguna Blanca, Río Verde, Punta Arenas y San Gregorio - Reg. Magallanes",
-      "icono": "💨",
-      "color": "#f97316",
-      "poligono": [
-        [
-          -52.3756,
-          -68.4119
-        ],
-        [
-          -52.3286,
-          -68.5437
-        ],
-        [
-          -52.295,
-          -68.6975
-        ],
-        [
-          -52.2816,
-          -68.8074
-        ],
-        [
-          -52.1941,
-          -68.9832
-        ],
-        [
-          -52.1335,
-          -69.137
-        ],
-        [
-          -52.1672,
-          -69.4556
-        ],
-        [
-          -52.0863,
-          -69.7083
-        ],
-        [
-          -51.9916,
-          -69.9609
-        ],
-        [
-          -52.0119,
-          -70.1477
-        ],
-        [
-          -51.9984,
-          -71.0156
-        ],
-        [
-          -51.9984,
-          -71.3342
-        ],
-        [
-          -52.2345,
-          -71.3232
-        ],
-        [
-          -52.3689,
-          -71.3782
-        ],
-        [
-          -52.4225,
-          -71.3782
-        ],
-        [
-          -52.543,
-          -71.51
-        ],
-        [
-          -52.583,
-          -71.8396
-        ],
-        [
-          -52.6631,
-          -72.29
-        ],
-        [
-          -52.703,
-          -72.4768
-        ],
-        [
-          -52.7562,
-          -72.7844
-        ],
-        [
-          -52.8625,
-          -72.9712
-        ],
-        [
-          -52.9553,
-          -73.3447
-        ],
-        [
-          -52.9817,
-          -73.7073
-        ],
-        [
-          -52.7695,
-          -74.5093
-        ],
-        [
-          -52.7429,
-          -74.707
-        ],
-        [
-          -53.1797,
-          -74.5532
-        ],
-        [
-          -53.4292,
-          -74.1687
-        ],
-        [
-          -53.6055,
-          -73.7952
-        ],
-        [
-          -53.8136,
-          -73.4436
-        ],
-        [
-          -53.9819,
-          -73.4436
-        ],
-        [
-          -54.2716,
-          -72.9712
-        ],
-        [
-          -54.4892,
-          -72.2681
-        ],
-        [
-          -54.3357,
-          -71.7627
-        ],
-        [
-          -54.3486,
-          -71.3123
-        ],
-        [
-          -54.3678,
-          -71.0376
-        ],
-        [
-          -54.0981,
-          -70.8948
-        ],
-        [
-          -54.0529,
-          -70.6531
-        ],
-        [
-          -53.7227,
-          -70.4004
-        ],
-        [
-          -53.5534,
-          -70.4663
-        ],
-        [
-          -53.344,
-          -70.9058
-        ],
-        [
-          -52.8758,
-          -70.5652
-        ],
-        [
-          -52.7429,
-          -70.4773
-        ],
-        [
-          -52.6964,
-          -70.2356
-        ],
-        [
-          -52.6631,
-          -69.7742
-        ],
-        [
-          -52.4962,
-          -69.5874
-        ],
-        [
-          -52.3823,
-          -69.3677
-        ],
-        [
-          -52.2883,
-          -69.1809
-        ],
-        [
-          -52.3555,
-          -68.9392
-        ],
-        [
-          -52.3823,
-          -68.6865
-        ],
-        [
-          -52.4024,
-          -68.5547
-        ]
-      ],
-      "puntos_area": {
-        "MAGALLANES Y DE LA ANTÁRTICA CHILENA": {
-          "Inundación por desborde de cauce": {
-            "n": 25,
-            "alto": 9,
-            "af": 1
-          },
-          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
-            "n": 8,
-            "alto": 3,
-            "af": 0
-          },
-          "Acumulación de nieve": {
-            "n": 61,
-            "alto": 16,
-            "af": 0
-          },
-          "Interrupción de caminos": {
-            "n": 24,
-            "alto": 0,
-            "af": 0
-          },
-          "Anegamiento de caminos/pasos a desnivel": {
-            "n": 25,
-            "alto": 4,
-            "af": 1
-          },
-          "Deslizamiento/Derrumbe/Rodado/Caída": {
-            "n": 4,
-            "alto": 1,
-            "af": 0
-          },
-          "Colapso colectores de aguas lluvia/alcantarillados": {
-            "n": 2,
-            "alto": 0,
-            "af": 1
-          },
-          "Flujos de barro/detritos (Aluvión)": {
-            "n": 4,
-            "alto": 2,
-            "af": 1
-          },
-          "Daño/pérdida en infraestructura (Ej.: Vial, Portuario/Costero, Agrícola, otros)": {
-            "n": 4,
-            "alto": 0,
-            "af": 0
-          },
-          "Congelamiento de caminos": {
-            "n": 9,
-            "alto": 7,
-            "af": 0
-          }
-        }
-      },
-      "regiones": [
-        "Magallanes"
-      ]
-    },
     {
       "id": 5975,
       "tipo": "Aviso",
@@ -406,22 +54,78 @@
       ]
     },
     {
-      "id": 5970,
-      "tipo": "Alerta",
-      "codigo": "AA193/2026",
-      "emision": "Viernes 6 de noviembre del 2026 a las 12:02 hrs.",
+      "id": 5978,
+      "tipo": "Aviso",
+      "codigo": "A609-1/2026",
+      "emision": "Sábado 7 de noviembre del 2026 a las 15:06 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la mañana del domingo 08 de noviembre del 2026",
+      "hasta": "la tarde del martes 10 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes",
+      "titulo": "Viento Normal a Moderado en la región de Magallanes",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5979,
+      "tipo": "Aviso",
+      "codigo": "A610/2026",
+      "emision": "Domingo 8 de noviembre del 2026 a las 10:58 hrs.",
       "fenomeno": "Altas Temperaturas",
       "condicion": "Dorsal en altura",
-      "desde": "la tarde del sábado 07 de noviembre del 2026",
-      "hasta": "la tarde del domingo 08 de noviembre del 2026",
+      "desde": "la tarde del domingo 08 de noviembre del 2026",
+      "hasta": "la tarde del miércoles 11 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Valle, Precordillera) | Maule (Valle, Precordillera)",
-      "titulo": "Evento de Altas Temperaturas Extremas en zonas desde la región de Coquimbo a la región del Maule",
+      "zonas": "Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Antofagasta y Atacama",
       "icono": "⚠️",
-      "color": "#f97316",
+      "color": "#fbbf24",
       "regiones": [
-        "Coquimbo",
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 5980,
+      "tipo": "Aviso",
+      "codigo": "A611/2026",
+      "emision": "Domingo 8 de noviembre del 2026 a las 12:25 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Baja segregada",
+      "desde": "la tarde del lunes 09 de noviembre del 2026",
+      "hasta": "la madrugada del martes 10 de noviembre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Maule",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
         "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5981,
+      "tipo": "Aviso",
+      "codigo": "A612/2026",
+      "emision": "Domingo 8 de noviembre del 2026 a las 12:48 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Baja segregada",
+      "desde": "la noche del lunes 09 de noviembre del 2026",
+      "hasta": "la madrugada del martes 10 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de las regiones de Valparaíso, Metropolitana y O'Higgins",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
         "Metropolitana",
         "O'Higgins",
         "Valparaíso"
