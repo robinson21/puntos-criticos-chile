@@ -1,12 +1,51 @@
 {
-  "actualizado": "2026-11-09T12:00:41.576204",
+  "actualizado": "2026-11-09T18:00:44.768721",
   "totales": {
     "avisos": 6,
-    "alertas": 0,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 6
+    "total": 7
   },
   "alertas": [
+    {
+      "id": 5984,
+      "tipo": "Alerta",
+      "codigo": "AA195/2026",
+      "emision": "Lunes 9 de noviembre del 2026 a las 13:52 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Alta de Bolivia",
+      "desde": "la tarde del lunes 09 de noviembre del 2026",
+      "hasta": "la noche del lunes 09 de noviembre del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
+      "titulo": "Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5983,
+      "tipo": "Aviso",
+      "codigo": "A607-2/2026",
+      "emision": "Lunes 9 de noviembre del 2026 a las 11:55 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Alta de Bolivia",
+      "desde": "la tarde del lunes 09 de noviembre del 2026",
+      "hasta": "la noche del martes 10 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5982,
       "tipo": "Aviso",
@@ -103,25 +142,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5973,
-      "tipo": "Aviso",
-      "codigo": "A607-1/2026",
-      "emision": "Viernes 6 de noviembre del 2026 a las 14:53 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Alta de Bolivia",
-      "desde": "la tarde del viernes 06 de noviembre del 2026",
-      "hasta": "la noche del lunes 09 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Arica y Parinacota",
-        "Tarapacá"
       ]
     }
   ]
