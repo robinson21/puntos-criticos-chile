@@ -1,12 +1,30 @@
 {
-  "actualizado": "2026-11-09T18:00:44.768721",
+  "actualizado": "2026-11-09T19:01:22.211449",
   "totales": {
-    "avisos": 6,
+    "avisos": 7,
     "alertas": 1,
     "alarmas": 0,
-    "total": 7
+    "total": 8
   },
   "alertas": [
+    {
+      "id": 5985,
+      "tipo": "Aviso",
+      "codigo": "A613/2026",
+      "emision": "Lunes 9 de noviembre del 2026 a las 15:51 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la noche del martes 10 de noviembre del 2026",
+      "hasta": "la mañana del miércoles 11 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de la región de Magallanes",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
     {
       "id": 5984,
       "tipo": "Alerta",
