@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-11-10T07:01:29.409875",
+  "actualizado": "2026-11-10T12:00:55.269099",
   "totales": {
-    "avisos": 6,
+    "avisos": 4,
     "alertas": 1,
     "alarmas": 0,
-    "total": 7
+    "total": 5
   },
   "alertas": [
     {
@@ -23,47 +23,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5980,
-      "tipo": "Aviso",
-      "codigo": "A611/2026",
-      "emision": "Domingo 8 de noviembre del 2026 a las 12:25 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Baja segregada",
-      "desde": "la tarde del lunes 09 de noviembre del 2026",
-      "hasta": "la madrugada del martes 10 de noviembre del 2026",
-      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Maule",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 5981,
-      "tipo": "Aviso",
-      "codigo": "A612/2026",
-      "emision": "Domingo 8 de noviembre del 2026 a las 12:48 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Baja segregada",
-      "desde": "la noche del lunes 09 de noviembre del 2026",
-      "hasta": "la madrugada del martes 10 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de las regiones de Valparaíso, Metropolitana y O'Higgins",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
       ]
     },
     {
