@@ -1,107 +1,28 @@
 {
-  "actualizado": "2026-11-09T19:01:22.211449",
+  "actualizado": "2026-11-10T00:00:48.076968",
   "totales": {
-    "avisos": 7,
+    "avisos": 6,
     "alertas": 1,
     "alarmas": 0,
-    "total": 8
+    "total": 7
   },
   "alertas": [
     {
-      "id": 5985,
+      "id": 5978,
       "tipo": "Aviso",
-      "codigo": "A613/2026",
-      "emision": "Lunes 9 de noviembre del 2026 a las 15:51 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la noche del martes 10 de noviembre del 2026",
-      "hasta": "la mañana del miércoles 11 de noviembre del 2026",
+      "codigo": "A609-1/2026",
+      "emision": "Sábado 7 de noviembre del 2026 a las 15:06 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la mañana del domingo 08 de noviembre del 2026",
+      "hasta": "la tarde del martes 10 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de la región de Magallanes",
-      "icono": "🌧️",
+      "zonas": "Magallanes",
+      "titulo": "Viento Normal a Moderado en la región de Magallanes",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5984,
-      "tipo": "Alerta",
-      "codigo": "AA195/2026",
-      "emision": "Lunes 9 de noviembre del 2026 a las 13:52 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Alta de Bolivia",
-      "desde": "la tarde del lunes 09 de noviembre del 2026",
-      "hasta": "la noche del lunes 09 de noviembre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
-      "titulo": "Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
-      "icono": "⚡",
-      "color": "#f97316",
-      "regiones": [
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5983,
-      "tipo": "Aviso",
-      "codigo": "A607-2/2026",
-      "emision": "Lunes 9 de noviembre del 2026 a las 11:55 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Alta de Bolivia",
-      "desde": "la tarde del lunes 09 de noviembre del 2026",
-      "hasta": "la noche del martes 10 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5982,
-      "tipo": "Aviso",
-      "codigo": "A605-6/2026",
-      "emision": "Lunes 9 de noviembre del 2026 a las 07:18 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del lunes 09 de noviembre del 2026",
-      "hasta": "la tarde del lunes 09 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Litoral, Precordillera) | Los Lagos (Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 5981,
-      "tipo": "Aviso",
-      "codigo": "A612/2026",
-      "emision": "Domingo 8 de noviembre del 2026 a las 12:48 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Baja segregada",
-      "desde": "la noche del lunes 09 de noviembre del 2026",
-      "hasta": "la madrugada del martes 10 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de las regiones de Valparaíso, Metropolitana y O'Higgins",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
       ]
     },
     {
@@ -126,40 +47,98 @@
       ]
     },
     {
-      "id": 5979,
+      "id": 5981,
       "tipo": "Aviso",
-      "codigo": "A610/2026",
-      "emision": "Domingo 8 de noviembre del 2026 a las 10:58 hrs.",
+      "codigo": "A612/2026",
+      "emision": "Domingo 8 de noviembre del 2026 a las 12:48 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Baja segregada",
+      "desde": "la noche del lunes 09 de noviembre del 2026",
+      "hasta": "la madrugada del martes 10 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de las regiones de Valparaíso, Metropolitana y O'Higgins",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 5983,
+      "tipo": "Aviso",
+      "codigo": "A607-2/2026",
+      "emision": "Lunes 9 de noviembre del 2026 a las 11:55 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Alta de Bolivia",
+      "desde": "la tarde del lunes 09 de noviembre del 2026",
+      "hasta": "la noche del martes 10 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5985,
+      "tipo": "Aviso",
+      "codigo": "A613/2026",
+      "emision": "Lunes 9 de noviembre del 2026 a las 15:51 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la noche del martes 10 de noviembre del 2026",
+      "hasta": "la mañana del miércoles 11 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de la región de Magallanes",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5990,
+      "tipo": "Aviso",
+      "codigo": "A610-1/2026",
+      "emision": "Lunes 9 de noviembre del 2026 a las 16:40 hrs.",
       "fenomeno": "Altas Temperaturas",
       "condicion": "Dorsal en altura",
-      "desde": "la tarde del domingo 08 de noviembre del 2026",
-      "hasta": "la tarde del miércoles 11 de noviembre del 2026",
+      "desde": "la tarde del lunes 09 de noviembre del 2026",
+      "hasta": "la tarde del jueves 12 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Antofagasta y Atacama",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá y Antofagasta",
       "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
         "Antofagasta",
-        "Atacama"
+        "Tarapacá"
       ]
     },
     {
-      "id": 5978,
-      "tipo": "Aviso",
-      "codigo": "A609-1/2026",
-      "emision": "Sábado 7 de noviembre del 2026 a las 15:06 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la mañana del domingo 08 de noviembre del 2026",
-      "hasta": "la tarde del martes 10 de noviembre del 2026",
+      "id": 5989,
+      "tipo": "Alerta",
+      "codigo": "AA196/2026",
+      "emision": "Lunes 9 de noviembre del 2026 a las 16:40 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del martes 10 de noviembre del 2026",
+      "hasta": "la tarde del jueves 12 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Magallanes",
-      "titulo": "Viento Normal a Moderado en la región de Magallanes",
-      "icono": "💨",
-      "color": "#fbbf24",
+      "zonas": "Atacama (Precordillera)",
+      "titulo": "Evento de Altas Temperaturas Extremas en precordillera de la región de Atacama",
+      "icono": "⚠️",
+      "color": "#f97316",
       "regiones": [
-        "Magallanes"
+        "Atacama"
       ]
     }
   ]
