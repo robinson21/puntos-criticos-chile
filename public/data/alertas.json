@@ -1,69 +1,66 @@
 {
-  "actualizado": "2026-11-10T06:00:52.084621",
+  "actualizado": "2026-11-10T18:00:57.869619",
   "totales": {
-    "avisos": 6,
+    "avisos": 4,
     "alertas": 1,
     "alarmas": 0,
-    "total": 7
+    "total": 5
   },
   "alertas": [
     {
-      "id": 5978,
-      "tipo": "Aviso",
-      "codigo": "A609-1/2026",
-      "emision": "Sábado 7 de noviembre del 2026 a las 15:06 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la mañana del domingo 08 de noviembre del 2026",
-      "hasta": "la tarde del martes 10 de noviembre del 2026",
+      "id": 5991,
+      "tipo": "Alerta",
+      "codigo": "AA196-1/2026",
+      "emision": "Martes 10 de noviembre del 2026 a las 11:40 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del martes 10 de noviembre del 2026",
+      "hasta": "la tarde del jueves 12 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Magallanes",
-      "titulo": "Viento Normal a Moderado en la región de Magallanes",
-      "icono": "💨",
-      "color": "#fbbf24",
+      "zonas": "Atacama (Precordillera) | Coquimbo (Precordillera y valles precordilleranos)",
+      "titulo": "Evento de Altas Temperaturas Extremas en zonas de las regiones de Atacama y Coquimbo",
+      "icono": "⚠️",
+      "color": "#f97316",
       "regiones": [
-        "Magallanes"
+        "Atacama",
+        "Coquimbo"
       ]
     },
     {
-      "id": 5980,
+      "id": 5990,
       "tipo": "Aviso",
-      "codigo": "A611/2026",
-      "emision": "Domingo 8 de noviembre del 2026 a las 12:25 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Baja segregada",
+      "codigo": "A610-1/2026",
+      "emision": "Lunes 9 de noviembre del 2026 a las 16:40 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
       "desde": "la tarde del lunes 09 de noviembre del 2026",
-      "hasta": "la madrugada del martes 10 de noviembre del 2026",
-      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Valparaíso a la región del Maule",
-      "icono": "⚡",
+      "hasta": "la tarde del jueves 12 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá y Antofagasta",
+      "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
+        "Antofagasta",
+        "Tarapacá"
       ]
     },
     {
-      "id": 5981,
+      "id": 5985,
       "tipo": "Aviso",
-      "codigo": "A612/2026",
-      "emision": "Domingo 8 de noviembre del 2026 a las 12:48 hrs.",
+      "codigo": "A613/2026",
+      "emision": "Lunes 9 de noviembre del 2026 a las 15:51 hrs.",
       "fenomeno": "Precipitaciones",
-      "condicion": "Baja segregada",
-      "desde": "la noche del lunes 09 de noviembre del 2026",
-      "hasta": "la madrugada del martes 10 de noviembre del 2026",
+      "condicion": "Sistema frontal",
+      "desde": "la noche del martes 10 de noviembre del 2026",
+      "hasta": "la mañana del miércoles 11 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de las regiones de Valparaíso, Metropolitana y O'Higgins",
+      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de la región de Magallanes",
       "icono": "🌧️",
       "color": "#fbbf24",
       "regiones": [
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
+        "Magallanes"
       ]
     },
     {
@@ -87,58 +84,21 @@
       ]
     },
     {
-      "id": 5985,
+      "id": 5978,
       "tipo": "Aviso",
-      "codigo": "A613/2026",
-      "emision": "Lunes 9 de noviembre del 2026 a las 15:51 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la noche del martes 10 de noviembre del 2026",
-      "hasta": "la mañana del miércoles 11 de noviembre del 2026",
+      "codigo": "A609-1/2026",
+      "emision": "Sábado 7 de noviembre del 2026 a las 15:06 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la mañana del domingo 08 de noviembre del 2026",
+      "hasta": "la tarde del martes 10 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de la región de Magallanes",
-      "icono": "🌧️",
+      "zonas": "Magallanes",
+      "titulo": "Viento Normal a Moderado en la región de Magallanes",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 5990,
-      "tipo": "Aviso",
-      "codigo": "A610-1/2026",
-      "emision": "Lunes 9 de noviembre del 2026 a las 16:40 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del lunes 09 de noviembre del 2026",
-      "hasta": "la tarde del jueves 12 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá y Antofagasta",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5989,
-      "tipo": "Alerta",
-      "codigo": "AA196/2026",
-      "emision": "Lunes 9 de noviembre del 2026 a las 16:40 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del martes 10 de noviembre del 2026",
-      "hasta": "la tarde del jueves 12 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Precordillera)",
-      "titulo": "Evento de Altas Temperaturas Extremas en precordillera de la región de Atacama",
-      "icono": "⚠️",
-      "color": "#f97316",
-      "regiones": [
-        "Atacama"
       ]
     }
   ]
