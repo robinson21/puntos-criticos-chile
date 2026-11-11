@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-10T19:01:41.350376",
+  "actualizado": "2026-11-11T00:00:01.089464",
   "totales": {
     "avisos": 5,
     "alertas": 1,
@@ -7,6 +7,26 @@
     "total": 6
   },
   "alertas": [
+    {
+      "id": 5994,
+      "tipo": "Aviso",
+      "codigo": "A610-2/2026",
+      "emision": "Martes 10 de noviembre del 2026 a las 16:22 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del martes 10 de noviembre del 2026",
+      "hasta": "la tarde del jueves 12 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 5993,
       "tipo": "Aviso",
@@ -62,25 +82,6 @@
       "regiones": [
         "Atacama",
         "Coquimbo"
-      ]
-    },
-    {
-      "id": 5990,
-      "tipo": "Aviso",
-      "codigo": "A610-1/2026",
-      "emision": "Lunes 9 de noviembre del 2026 a las 16:40 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del lunes 09 de noviembre del 2026",
-      "hasta": "la tarde del jueves 12 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá y Antofagasta",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Tarapacá"
       ]
     },
     {
