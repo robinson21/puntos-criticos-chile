@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-11T07:00:49.260382",
+  "actualizado": "2026-11-11T12:00:07.577760",
   "totales": {
     "avisos": 4,
     "alertas": 1,
@@ -8,31 +8,13 @@
   },
   "alertas": [
     {
-      "id": 5985,
-      "tipo": "Aviso",
-      "codigo": "A613/2026",
-      "emision": "Lunes 9 de noviembre del 2026 a las 15:51 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la noche del martes 10 de noviembre del 2026",
-      "hasta": "la mañana del miércoles 11 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de la región de Magallanes",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 5991,
+      "id": 5997,
       "tipo": "Alerta",
-      "codigo": "AA196-1/2026",
-      "emision": "Martes 10 de noviembre del 2026 a las 11:40 hrs.",
+      "codigo": "AA196-2/2026",
+      "emision": "Miércoles 11 de noviembre del 2026 a las 06:18 hrs.",
       "fenomeno": "Altas Temperaturas",
       "condicion": "Dorsal en altura",
-      "desde": "la tarde del martes 10 de noviembre del 2026",
+      "desde": "la tarde del miércoles 11 de noviembre del 2026",
       "hasta": "la tarde del jueves 12 de noviembre del 2026",
       "observacion": "",
       "zonas": "Atacama (Precordillera) | Coquimbo (Precordillera y valles precordilleranos)",
@@ -45,21 +27,24 @@
       ]
     },
     {
-      "id": 5992,
+      "id": 5996,
       "tipo": "Aviso",
-      "codigo": "A614/2026",
-      "emision": "Martes 10 de noviembre del 2026 a las 14:57 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del miércoles 11 de noviembre del 2026",
-      "hasta": "la tarde del miércoles 11 de noviembre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Magallanes (Cordillera Austral Sur, Insular Sur, Pampa Patagonica Sur)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
-      "icono": "⚡",
+      "codigo": "A610-3/2026",
+      "emision": "Miércoles 11 de noviembre del 2026 a las 06:17 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del miércoles 11 de noviembre del 2026",
+      "hasta": "la tarde del jueves 12 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa) | Coquimbo (Cordillera Costa)",
+      "titulo": "Altas Temperaturas en zonas desde la región de Tarapacá a la región de Coquimbo",
+      "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
-        "Magallanes"
+        "Antofagasta",
+        "Atacama",
+        "Coquimbo",
+        "Tarapacá"
       ]
     },
     {
@@ -83,23 +68,39 @@
       ]
     },
     {
-      "id": 5994,
+      "id": 5992,
       "tipo": "Aviso",
-      "codigo": "A610-2/2026",
-      "emision": "Martes 10 de noviembre del 2026 a las 16:22 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del martes 10 de noviembre del 2026",
-      "hasta": "la tarde del jueves 12 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
-      "icono": "⚠️",
+      "codigo": "A614/2026",
+      "emision": "Martes 10 de noviembre del 2026 a las 14:57 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del miércoles 11 de noviembre del 2026",
+      "hasta": "la tarde del miércoles 11 de noviembre del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Magallanes (Cordillera Austral Sur, Insular Sur, Pampa Patagonica Sur)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Tarapacá"
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 5985,
+      "tipo": "Aviso",
+      "codigo": "A613/2026",
+      "emision": "Lunes 9 de noviembre del 2026 a las 15:51 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la noche del martes 10 de noviembre del 2026",
+      "hasta": "la mañana del miércoles 11 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de la región de Magallanes",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
       ]
     }
   ]
