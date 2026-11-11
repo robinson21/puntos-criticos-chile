@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-10T18:00:57.869619",
+  "actualizado": "2026-11-11T06:00:04.171883",
   "totales": {
     "avisos": 4,
     "alertas": 1,
@@ -7,6 +7,24 @@
     "total": 5
   },
   "alertas": [
+    {
+      "id": 5985,
+      "tipo": "Aviso",
+      "codigo": "A613/2026",
+      "emision": "Lunes 9 de noviembre del 2026 a las 15:51 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Sistema frontal",
+      "desde": "la noche del martes 10 de noviembre del 2026",
+      "hasta": "la mañana del miércoles 11 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
+      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de la región de Magallanes",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
     {
       "id": 5991,
       "tipo": "Alerta",
@@ -27,51 +45,32 @@
       ]
     },
     {
-      "id": 5990,
+      "id": 5992,
       "tipo": "Aviso",
-      "codigo": "A610-1/2026",
-      "emision": "Lunes 9 de noviembre del 2026 a las 16:40 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del lunes 09 de noviembre del 2026",
-      "hasta": "la tarde del jueves 12 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá y Antofagasta",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5985,
-      "tipo": "Aviso",
-      "codigo": "A613/2026",
-      "emision": "Lunes 9 de noviembre del 2026 a las 15:51 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Sistema frontal",
-      "desde": "la noche del martes 10 de noviembre del 2026",
-      "hasta": "la mañana del miércoles 11 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
-      "titulo": "Precipitaciones Normales a Moderadas en corto periodo de tiempo en zonas de la región de Magallanes",
-      "icono": "🌧️",
+      "codigo": "A614/2026",
+      "emision": "Martes 10 de noviembre del 2026 a las 14:57 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del miércoles 11 de noviembre del 2026",
+      "hasta": "la tarde del miércoles 11 de noviembre del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Magallanes (Cordillera Austral Sur, Insular Sur, Pampa Patagonica Sur)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
       ]
     },
     {
-      "id": 5983,
+      "id": 5993,
       "tipo": "Aviso",
-      "codigo": "A607-2/2026",
-      "emision": "Lunes 9 de noviembre del 2026 a las 11:55 hrs.",
+      "codigo": "A607-3/2026",
+      "emision": "Martes 10 de noviembre del 2026 a las 15:15 hrs.",
       "fenomeno": "Tormentas Eléctricas",
       "condicion": "Alta de Bolivia",
-      "desde": "la tarde del lunes 09 de noviembre del 2026",
-      "hasta": "la noche del martes 10 de noviembre del 2026",
+      "desde": "la tarde del martes 10 de noviembre del 2026",
+      "hasta": "la noche del sábado 14 de noviembre del 2026",
       "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
       "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera)",
       "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
@@ -84,21 +83,23 @@
       ]
     },
     {
-      "id": 5978,
+      "id": 5994,
       "tipo": "Aviso",
-      "codigo": "A609-1/2026",
-      "emision": "Sábado 7 de noviembre del 2026 a las 15:06 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la mañana del domingo 08 de noviembre del 2026",
-      "hasta": "la tarde del martes 10 de noviembre del 2026",
+      "codigo": "A610-2/2026",
+      "emision": "Martes 10 de noviembre del 2026 a las 16:22 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del martes 10 de noviembre del 2026",
+      "hasta": "la tarde del jueves 12 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Magallanes",
-      "titulo": "Viento Normal a Moderado en la región de Magallanes",
-      "icono": "💨",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá, Antofagasta y Atacama",
+      "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
-        "Magallanes"
+        "Antofagasta",
+        "Atacama",
+        "Tarapacá"
       ]
     }
   ]
