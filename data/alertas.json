@@ -1,12 +1,482 @@
 {
-  "actualizado": "2026-11-13T18:00:46.061500",
+  "actualizado": "2026-11-13T19:01:19.218650",
   "totales": {
-    "avisos": 5,
+    "avisos": 7,
     "alertas": 2,
     "alarmas": 0,
-    "total": 7
+    "total": 9
   },
   "alertas": [
+    {
+      "id": 6009,
+      "tipo": "Aviso",
+      "codigo": "A620/2026",
+      "emision": "Viernes 13 de noviembre del 2026 a las 15:35 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Altas presiones",
+      "desde": "la mañana del domingo 15 de noviembre del 2026",
+      "hasta": "la noche del domingo 15 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "comunas de Torres del Paine, Pto. Natales, Laguna Blanca, San Gregorio y Primavera, Reg. Magallanes",
+      "titulo": "Altas Temperaturas en comunas de Torres del Paine, Pto. Natales, Laguna Blanca, San Gregorio y Primavera, Reg. Magallanes",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -50.6708,
+          -72.2815
+        ],
+        [
+          -50.6221,
+          -72.3584
+        ],
+        [
+          -50.5942,
+          -72.4683
+        ],
+        [
+          -50.6639,
+          -72.5671
+        ],
+        [
+          -50.636,
+          -72.699
+        ],
+        [
+          -50.643,
+          -72.8308
+        ],
+        [
+          -50.7335,
+          -73.0176
+        ],
+        [
+          -50.7682,
+          -73.1824
+        ],
+        [
+          -50.907,
+          -73.4241
+        ],
+        [
+          -51.1488,
+          -73.468
+        ],
+        [
+          -51.4168,
+          -73.3801
+        ],
+        [
+          -51.8668,
+          -72.8748
+        ],
+        [
+          -51.9549,
+          -72.655
+        ],
+        [
+          -52.1103,
+          -72.1057
+        ],
+        [
+          -52.171,
+          -71.6663
+        ],
+        [
+          -52.4732,
+          -71.4575
+        ],
+        [
+          -52.6669,
+          -71.2488
+        ],
+        [
+          -52.8596,
+          -70.8752
+        ],
+        [
+          -52.8132,
+          -70.5017
+        ],
+        [
+          -52.8795,
+          -69.7217
+        ],
+        [
+          -52.8663,
+          -69.1394
+        ],
+        [
+          -52.8397,
+          -68.7988
+        ],
+        [
+          -52.7534,
+          -68.6011
+        ],
+        [
+          -52.6269,
+          -68.5901
+        ],
+        [
+          -52.3324,
+          -68.4253
+        ],
+        [
+          -52.3056,
+          -68.689
+        ],
+        [
+          -52.171,
+          -69.1284
+        ],
+        [
+          -52.1508,
+          -69.3042
+        ],
+        [
+          -52.1441,
+          -69.5129
+        ],
+        [
+          -52.0158,
+          -69.9854
+        ],
+        [
+          -51.9994,
+          -70.0
+        ],
+        [
+          -52.0028,
+          -70.6592
+        ],
+        [
+          -51.996,
+          -71.9281
+        ],
+        [
+          -51.9858,
+          -71.9473
+        ],
+        [
+          -51.9757,
+          -71.9611
+        ],
+        [
+          -51.9638,
+          -71.9693
+        ],
+        [
+          -51.9723,
+          -71.994
+        ],
+        [
+          -51.9605,
+          -72.0297
+        ],
+        [
+          -51.9385,
+          -71.9775
+        ],
+        [
+          -51.9215,
+          -71.9336
+        ],
+        [
+          -51.8825,
+          -71.9446
+        ],
+        [
+          -51.835,
+          -71.994
+        ],
+        [
+          -51.7773,
+          -72.0764
+        ],
+        [
+          -51.7603,
+          -72.1286
+        ],
+        [
+          -51.7348,
+          -72.1341
+        ],
+        [
+          -51.7348,
+          -72.1973
+        ],
+        [
+          -51.7212,
+          -72.1835
+        ],
+        [
+          -51.7025,
+          -72.244
+        ],
+        [
+          -51.7025,
+          -72.2934
+        ],
+        [
+          -51.6531,
+          -72.2961
+        ],
+        [
+          -51.6377,
+          -72.2824
+        ],
+        [
+          -51.5849,
+          -72.3291
+        ],
+        [
+          -51.5866,
+          -72.3758
+        ],
+        [
+          -51.5832,
+          -72.4417
+        ],
+        [
+          -51.5354,
+          -72.4307
+        ],
+        [
+          -51.5114,
+          -72.4033
+        ],
+        [
+          -51.5217,
+          -72.3621
+        ],
+        [
+          -51.4772,
+          -72.3566
+        ],
+        [
+          -51.467,
+          -72.3318
+        ],
+        [
+          -51.4396,
+          -72.3373
+        ],
+        [
+          -51.4087,
+          -72.3318
+        ],
+        [
+          -51.3796,
+          -72.3154
+        ],
+        [
+          -51.3487,
+          -72.3236
+        ],
+        [
+          -51.3419,
+          -72.3511
+        ],
+        [
+          -51.3282,
+          -72.3676
+        ],
+        [
+          -51.3127,
+          -72.3401
+        ],
+        [
+          -51.2955,
+          -72.3099
+        ],
+        [
+          -51.2801,
+          -72.2824
+        ],
+        [
+          -51.2543,
+          -72.2714
+        ],
+        [
+          -51.2302,
+          -72.2879
+        ],
+        [
+          -51.201,
+          -72.2989
+        ],
+        [
+          -51.201,
+          -72.3236
+        ],
+        [
+          -51.182,
+          -72.3483
+        ],
+        [
+          -51.1597,
+          -72.3703
+        ],
+        [
+          -51.1286,
+          -72.3923
+        ],
+        [
+          -51.089,
+          -72.4005
+        ],
+        [
+          -51.0786,
+          -72.3785
+        ],
+        [
+          -51.0407,
+          -72.3785
+        ],
+        [
+          -51.0199,
+          -72.3758
+        ],
+        [
+          -51.0303,
+          -72.2714
+        ],
+        [
+          -50.9231,
+          -72.2604
+        ],
+        [
+          -50.8902,
+          -72.2467
+        ],
+        [
+          -50.8728,
+          -72.2604
+        ],
+        [
+          -50.8572,
+          -72.2659
+        ],
+        [
+          -50.8382,
+          -72.2604
+        ],
+        [
+          -50.8087,
+          -72.2742
+        ],
+        [
+          -50.7861,
+          -72.2934
+        ],
+        [
+          -50.7687,
+          -72.3126
+        ],
+        [
+          -50.7566,
+          -72.3428
+        ],
+        [
+          -50.7322,
+          -72.3428
+        ],
+        [
+          -50.7166,
+          -72.3264
+        ],
+        [
+          -50.7096,
+          -72.3071
+        ],
+        [
+          -50.6922,
+          -72.2989
+        ]
+      ],
+      "puntos_area": {
+        "MAGALLANES Y DE LA ANTÁRTICA CHILENA": {
+          "Inundación por desborde de cauce": {
+            "n": 17,
+            "alto": 8,
+            "af": 3
+          },
+          "Interrupción de caminos": {
+            "n": 26,
+            "alto": 9,
+            "af": 0
+          },
+          "Acumulación de nieve": {
+            "n": 45,
+            "alto": 17,
+            "af": 0
+          },
+          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
+            "n": 6,
+            "alto": 5,
+            "af": 0
+          },
+          "Daño/pérdida en infraestructura (Ej.: Vial, Portuario/Costero, Agrícola, otros)": {
+            "n": 6,
+            "alto": 3,
+            "af": 0
+          },
+          "Congelamiento de caminos": {
+            "n": 28,
+            "alto": 18,
+            "af": 1
+          },
+          "Deslizamiento/Derrumbe/Rodado/Caída": {
+            "n": 4,
+            "alto": 1,
+            "af": 0
+          },
+          "Flujos de barro/detritos (Aluvión)": {
+            "n": 1,
+            "alto": 0,
+            "af": 0
+          },
+          "Colapso colectores de aguas lluvia/alcantarillados": {
+            "n": 7,
+            "alto": 0,
+            "af": 1
+          },
+          "Anegamiento de caminos/pasos a desnivel": {
+            "n": 10,
+            "alto": 0,
+            "af": 0
+          }
+        }
+      },
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 6008,
+      "tipo": "Aviso",
+      "codigo": "A619/2026",
+      "emision": "Viernes 13 de noviembre del 2026 a las 15:21 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Baja segregada",
+      "desde": "la tarde del sábado 14 de noviembre del 2026",
+      "hasta": "la noche del lunes 16 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O'Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
     {
       "id": 6007,
       "tipo": "Alerta",
