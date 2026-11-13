@@ -1,67 +1,48 @@
 {
-  "actualizado": "2026-11-13T00:00:34.492612",
+  "actualizado": "2026-11-13T06:00:37.966102",
   "totales": {
-    "avisos": 4,
+    "avisos": 5,
     "alertas": 1,
     "alarmas": 0,
-    "total": 5
+    "total": 6
   },
   "alertas": [
     {
-      "id": 5993,
+      "id": 6006,
       "tipo": "Aviso",
-      "codigo": "A607-3/2026",
-      "emision": "Martes 10 de noviembre del 2026 a las 15:15 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
+      "codigo": "A618/2026",
+      "emision": "Jueves 12 de noviembre del 2026 a las 23:07 hrs.",
+      "fenomeno": "Precipitaciones",
       "condicion": "Alta de Bolivia",
-      "desde": "la tarde del martes 10 de noviembre del 2026",
-      "hasta": "la noche del sábado 14 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
-      "icono": "⚡",
+      "desde": "la tarde del viernes 13 de noviembre del 2026",
+      "hasta": "la madrugada del sábado 14 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Arica y Parinacota (Cordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en cordillera de la región de Arica y Parinacota",
+      "icono": "🌧️",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
+        "Arica y Parinacota"
       ]
     },
     {
-      "id": 5998,
+      "id": 6005,
       "tipo": "Aviso",
-      "codigo": "A615/2026",
-      "emision": "Miércoles 11 de noviembre del 2026 a las 09:27 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal",
-      "desde": "la mañana del viernes 13 de noviembre del 2026",
-      "hasta": "la mañana del sábado 14 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
-    },
-    {
-      "id": 6000,
-      "tipo": "Aviso",
-      "codigo": "A610-4/2026",
-      "emision": "Miércoles 11 de noviembre del 2026 a las 12:07 hrs.",
+      "codigo": "A616-2/2026",
+      "emision": "Jueves 12 de noviembre del 2026 a las 13:31 hrs.",
       "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del miércoles 11 de noviembre del 2026",
-      "hasta": "la tarde del sábado 14 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa) | Coquimbo (Cordillera Costa)",
-      "titulo": "Altas Temperaturas en zonas desde la región de Tarapacá a la región de Coquimbo",
+      "condicion": "Alta subtropical",
+      "desde": "la madrugada del sábado 14 de noviembre del 2026",
+      "hasta": "la noche del sábado 14 de noviembre del 2026",
+      "observacion": "Este evento también afectará la comuna de Valdivia",
+      "zonas": "Los Ríos (Valle) | Los Lagos (Valle, Chiloé, Litoral Interior, Patagonia Subandina) | Aysén (Insular Norte, Litoral Interior Norte)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Los Ríos, Los Lagos y Aysén",
       "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Coquimbo",
-        "Tarapacá"
+        "Aysén",
+        "Los Lagos",
+        "Los Ríos"
       ]
     },
     {
@@ -85,23 +66,60 @@
       ]
     },
     {
-      "id": 6005,
+      "id": 6000,
       "tipo": "Aviso",
-      "codigo": "A616-2/2026",
-      "emision": "Jueves 12 de noviembre del 2026 a las 13:31 hrs.",
+      "codigo": "A610-4/2026",
+      "emision": "Miércoles 11 de noviembre del 2026 a las 12:07 hrs.",
       "fenomeno": "Altas Temperaturas",
-      "condicion": "Alta subtropical",
-      "desde": "la madrugada del sábado 14 de noviembre del 2026",
-      "hasta": "la noche del sábado 14 de noviembre del 2026",
-      "observacion": "Este evento también afectará la comuna de Valdivia",
-      "zonas": "Los Ríos (Valle) | Los Lagos (Valle, Chiloé, Litoral Interior, Patagonia Subandina) | Aysén (Insular Norte, Litoral Interior Norte)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Los Ríos, Los Lagos y Aysén",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del miércoles 11 de noviembre del 2026",
+      "hasta": "la tarde del sábado 14 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa) | Coquimbo (Cordillera Costa)",
+      "titulo": "Altas Temperaturas en zonas desde la región de Tarapacá a la región de Coquimbo",
       "icono": "⚠️",
       "color": "#fbbf24",
       "regiones": [
-        "Aysén",
-        "Los Lagos",
-        "Los Ríos"
+        "Antofagasta",
+        "Atacama",
+        "Coquimbo",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 5998,
+      "tipo": "Aviso",
+      "codigo": "A615/2026",
+      "emision": "Miércoles 11 de noviembre del 2026 a las 09:27 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal",
+      "desde": "la mañana del viernes 13 de noviembre del 2026",
+      "hasta": "la mañana del sábado 14 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 5993,
+      "tipo": "Aviso",
+      "codigo": "A607-3/2026",
+      "emision": "Martes 10 de noviembre del 2026 a las 15:15 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Alta de Bolivia",
+      "desde": "la tarde del martes 10 de noviembre del 2026",
+      "hasta": "la noche del sábado 14 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Arica y Parinacota",
+        "Tarapacá"
       ]
     }
   ]
