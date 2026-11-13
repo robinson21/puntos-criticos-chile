@@ -1,12 +1,30 @@
 {
-  "actualizado": "2026-11-12T18:00:31.465945",
+  "actualizado": "2026-11-13T06:00:37.966102",
   "totales": {
     "avisos": 5,
-    "alertas": 2,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 7
+    "total": 6
   },
   "alertas": [
+    {
+      "id": 6006,
+      "tipo": "Aviso",
+      "codigo": "A618/2026",
+      "emision": "Jueves 12 de noviembre del 2026 a las 23:07 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Alta de Bolivia",
+      "desde": "la tarde del viernes 13 de noviembre del 2026",
+      "hasta": "la madrugada del sábado 14 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Arica y Parinacota (Cordillera)",
+      "titulo": "Precipitaciones Normales a Moderadas en cordillera de la región de Arica y Parinacota",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Arica y Parinacota"
+      ]
+    },
     {
       "id": 6005,
       "tipo": "Aviso",
@@ -48,24 +66,6 @@
       ]
     },
     {
-      "id": 6001,
-      "tipo": "Aviso",
-      "codigo": "A617/2026",
-      "emision": "Miércoles 11 de noviembre del 2026 a las 14:14 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del jueves 12 de noviembre del 2026",
-      "hasta": "la tarde del jueves 12 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Aysén (Cordillera Austral Norte, Patagonia Subandina Norte)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Aysén",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén"
-      ]
-    },
-    {
       "id": 6000,
       "tipo": "Aviso",
       "codigo": "A610-4/2026",
@@ -84,28 +84,6 @@
         "Atacama",
         "Coquimbo",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 5999,
-      "tipo": "Alerta",
-      "codigo": "AA196-3/2026",
-      "emision": "Miércoles 11 de noviembre del 2026 a las 12:07 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del miércoles 11 de noviembre del 2026",
-      "hasta": "la tarde del jueves 12 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Pampa) | Atacama (Precordillera) | Coquimbo (Precordillera y valles precordilleranos) | Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Evento de Altas Temperaturas Extremas en zonas desde la región de Antofagasta a la región Metropolitana",
-      "icono": "⚠️",
-      "color": "#f97316",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Coquimbo",
-        "Metropolitana",
-        "Valparaíso"
       ]
     },
     {
