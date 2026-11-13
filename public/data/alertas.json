@@ -1,12 +1,31 @@
 {
-  "actualizado": "2026-11-13T06:00:37.966102",
+  "actualizado": "2026-11-13T18:00:46.061500",
   "totales": {
     "avisos": 5,
-    "alertas": 1,
+    "alertas": 2,
     "alarmas": 0,
-    "total": 6
+    "total": 7
   },
   "alertas": [
+    {
+      "id": 6007,
+      "tipo": "Alerta",
+      "codigo": "AA198/2026",
+      "emision": "Viernes 13 de noviembre del 2026 a las 12:31 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Alta de Bolivia",
+      "desde": "la tarde del viernes 13 de noviembre del 2026",
+      "hasta": "la noche del viernes 13 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
+      "titulo": "Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
     {
       "id": 6006,
       "tipo": "Aviso",
