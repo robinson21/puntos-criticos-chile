@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-11-14T07:01:25.877660",
+  "actualizado": "2026-11-14T12:00:56.773748",
   "totales": {
-    "avisos": 7,
+    "avisos": 6,
     "alertas": 1,
     "alarmas": 0,
-    "total": 8
+    "total": 7
   },
   "alertas": [
     {
@@ -102,24 +102,6 @@
         "Aysén",
         "Los Lagos",
         "Los Ríos"
-      ]
-    },
-    {
-      "id": 6006,
-      "tipo": "Aviso",
-      "codigo": "A618/2026",
-      "emision": "Jueves 12 de noviembre del 2026 a las 23:07 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Alta de Bolivia",
-      "desde": "la tarde del viernes 13 de noviembre del 2026",
-      "hasta": "la madrugada del sábado 14 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Arica y Parinacota (Cordillera)",
-      "titulo": "Precipitaciones Normales a Moderadas en cordillera de la región de Arica y Parinacota",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Arica y Parinacota"
       ]
     },
     {
