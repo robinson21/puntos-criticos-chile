@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-15T07:00:42.407550",
+  "actualizado": "2026-11-15T12:00:09.383813",
   "totales": {
     "avisos": 7,
     "alertas": 0,
@@ -7,6 +7,132 @@
     "total": 7
   },
   "alertas": [
+    {
+      "id": 6019,
+      "tipo": "Aviso",
+      "codigo": "A624-1/2026",
+      "emision": "Domingo 15 de noviembre del 2026 a las 06:20 hrs.",
+      "fenomeno": "Nubes Convectivas Tornádicas",
+      "condicion": "Baja segregada",
+      "desde": "la tarde del domingo 15 de noviembre del 2026",
+      "hasta": "la tarde del domingo 15 de noviembre del 2026",
+      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
+      "zonas": "&Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle) | La Araucanía (Valle)",
+      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de &Ntilde;uble, Biobío y La Araucanía",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6018,
+      "tipo": "Aviso",
+      "codigo": "A621-1/2026",
+      "emision": "Domingo 15 de noviembre del 2026 a las 05:55 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Baja segregada",
+      "desde": "la mañana del domingo 15 de noviembre del 2026",
+      "hasta": "la noche del domingo 15 de noviembre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "O'Higgins (Precordillera, Cordillera) | Maule (Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Litoral Interior)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de O'Higgins a la región de Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Maule",
+        "O'Higgins",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6016,
+      "tipo": "Aviso",
+      "codigo": "A623/2026",
+      "emision": "Sábado 14 de noviembre del 2026 a las 15:58 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la tarde del domingo 15 de noviembre del 2026",
+      "hasta": "la tarde del domingo 15 de noviembre del 2026",
+      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Valparaíso, Metropolitana y O'Higgins",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 6015,
+      "tipo": "Aviso",
+      "codigo": "A619-1/2026",
+      "emision": "Sábado 14 de noviembre del 2026 a las 15:45 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Baja segregada",
+      "desde": "la tarde del sábado 14 de noviembre del 2026",
+      "hasta": "la noche del lunes 16 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O'Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6014,
+      "tipo": "Aviso",
+      "codigo": "A610-5/2026",
+      "emision": "Sábado 14 de noviembre del 2026 a las 15:38 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del sábado 14 de noviembre del 2026",
+      "hasta": "la tarde del domingo 15 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Salar)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá y Antofagasta",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 6013,
+      "tipo": "Aviso",
+      "codigo": "A622/2026",
+      "emision": "Sábado 14 de noviembre del 2026 a las 15:38 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del lunes 16 de noviembre del 2026",
+      "hasta": "la noche del miércoles 18 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
     {
       "id": 6009,
       "tipo": "Aviso",
@@ -451,131 +577,6 @@
       },
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 6011,
-      "tipo": "Aviso",
-      "codigo": "A621/2026",
-      "emision": "Sábado 14 de noviembre del 2026 a las 12:41 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Baja segregada",
-      "desde": "la tarde del domingo 15 de noviembre del 2026",
-      "hasta": "la noche del domingo 15 de noviembre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Maule (Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Litoral Interior)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región del Maule a la región de Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 6013,
-      "tipo": "Aviso",
-      "codigo": "A622/2026",
-      "emision": "Sábado 14 de noviembre del 2026 a las 15:38 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del lunes 16 de noviembre del 2026",
-      "hasta": "la noche del miércoles 18 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 6014,
-      "tipo": "Aviso",
-      "codigo": "A610-5/2026",
-      "emision": "Sábado 14 de noviembre del 2026 a las 15:38 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del sábado 14 de noviembre del 2026",
-      "hasta": "la tarde del domingo 15 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Salar)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá y Antofagasta",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 6015,
-      "tipo": "Aviso",
-      "codigo": "A619-1/2026",
-      "emision": "Sábado 14 de noviembre del 2026 a las 15:45 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Baja segregada",
-      "desde": "la tarde del sábado 14 de noviembre del 2026",
-      "hasta": "la noche del lunes 16 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O'Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 6016,
-      "tipo": "Aviso",
-      "codigo": "A623/2026",
-      "emision": "Sábado 14 de noviembre del 2026 a las 15:58 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la tarde del domingo 15 de noviembre del 2026",
-      "hasta": "la tarde del domingo 15 de noviembre del 2026",
-      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Valparaíso, Metropolitana y O'Higgins",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 6017,
-      "tipo": "Aviso",
-      "codigo": "A624/2026",
-      "emision": "Sábado 14 de noviembre del 2026 a las 16:58 hrs.",
-      "fenomeno": "Nubes Convectivas Tornádicas",
-      "condicion": "Baja segregada",
-      "desde": "la tarde del domingo 15 de noviembre del 2026",
-      "hasta": "la tarde del domingo 15 de noviembre del 2026",
-      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
-      "zonas": "&Ntilde;uble (Valle) | Biobío (Valle) | La Araucanía (Valle)",
-      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en valle de las regiones de &Ntilde;uble, Biobío y La Araucanía",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Ñuble"
       ]
     }
   ]
