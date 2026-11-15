@@ -1,35 +1,12 @@
 {
-  "actualizado": "2026-11-14T18:01:00.283141",
+  "actualizado": "2026-11-15T06:00:06.369460",
   "totales": {
-    "avisos": 6,
-    "alertas": 1,
+    "avisos": 7,
+    "alertas": 0,
     "alarmas": 0,
     "total": 7
   },
   "alertas": [
-    {
-      "id": 6011,
-      "tipo": "Aviso",
-      "codigo": "A621/2026",
-      "emision": "Sábado 14 de noviembre del 2026 a las 12:41 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Baja segregada",
-      "desde": "la tarde del domingo 15 de noviembre del 2026",
-      "hasta": "la noche del domingo 15 de noviembre del 2026",
-      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
-      "zonas": "Maule (Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Litoral Interior)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región del Maule a la región de Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "Ñuble"
-      ]
-    },
     {
       "id": 6009,
       "tipo": "Aviso",
@@ -477,10 +454,71 @@
       ]
     },
     {
-      "id": 6008,
+      "id": 6011,
       "tipo": "Aviso",
-      "codigo": "A619/2026",
-      "emision": "Viernes 13 de noviembre del 2026 a las 15:21 hrs.",
+      "codigo": "A621/2026",
+      "emision": "Sábado 14 de noviembre del 2026 a las 12:41 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Baja segregada",
+      "desde": "la tarde del domingo 15 de noviembre del 2026",
+      "hasta": "la noche del domingo 15 de noviembre del 2026",
+      "observacion": "Probabilidad de granizos y fuertes rachas de vientos locales",
+      "zonas": "Maule (Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Litoral Interior)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región del Maule a la región de Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6013,
+      "tipo": "Aviso",
+      "codigo": "A622/2026",
+      "emision": "Sábado 14 de noviembre del 2026 a las 15:38 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del lunes 16 de noviembre del 2026",
+      "hasta": "la noche del miércoles 18 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta y Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 6014,
+      "tipo": "Aviso",
+      "codigo": "A610-5/2026",
+      "emision": "Sábado 14 de noviembre del 2026 a las 15:38 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del sábado 14 de noviembre del 2026",
+      "hasta": "la tarde del domingo 15 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Salar)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá y Antofagasta",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 6015,
+      "tipo": "Aviso",
+      "codigo": "A619-1/2026",
+      "emision": "Sábado 14 de noviembre del 2026 a las 15:45 hrs.",
       "fenomeno": "Viento",
       "condicion": "Baja segregada",
       "desde": "la tarde del sábado 14 de noviembre del 2026",
@@ -501,84 +539,43 @@
       ]
     },
     {
-      "id": 6005,
+      "id": 6016,
       "tipo": "Aviso",
-      "codigo": "A616-2/2026",
-      "emision": "Jueves 12 de noviembre del 2026 a las 13:31 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Alta subtropical",
-      "desde": "la madrugada del sábado 14 de noviembre del 2026",
-      "hasta": "la noche del sábado 14 de noviembre del 2026",
-      "observacion": "Este evento también afectará la comuna de Valdivia",
-      "zonas": "Los Ríos (Valle) | Los Lagos (Valle, Chiloé, Litoral Interior, Patagonia Subandina) | Aysén (Insular Norte, Litoral Interior Norte)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Los Ríos, Los Lagos y Aysén",
-      "icono": "⚠️",
+      "codigo": "A623/2026",
+      "emision": "Sábado 14 de noviembre del 2026 a las 15:58 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la tarde del domingo 15 de noviembre del 2026",
+      "hasta": "la tarde del domingo 15 de noviembre del 2026",
+      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones de Valparaíso, Metropolitana y O'Higgins",
+      "icono": "💨",
       "color": "#fbbf24",
       "regiones": [
-        "Aysén",
-        "Los Lagos",
-        "Los Ríos"
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
       ]
     },
     {
-      "id": 6004,
-      "tipo": "Alerta",
-      "codigo": "AA197/2026",
-      "emision": "Jueves 12 de noviembre del 2026 a las 13:31 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Alta subtropical",
-      "desde": "la tarde del sábado 14 de noviembre del 2026",
-      "hasta": "la tarde del sábado 14 de noviembre del 2026",
-      "observacion": "Este evento también afectará la comuna de Valdivia",
-      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Precordillera) | Los Lagos (Precordillera)",
-      "titulo": "Evento de Altas Temperaturas Extremas en zonas de las regiones de La Araucanía, Los Ríos y Los Lagos",
+      "id": 6017,
+      "tipo": "Aviso",
+      "codigo": "A624/2026",
+      "emision": "Sábado 14 de noviembre del 2026 a las 16:58 hrs.",
+      "fenomeno": "Nubes Convectivas Tornádicas",
+      "condicion": "Baja segregada",
+      "desde": "la tarde del domingo 15 de noviembre del 2026",
+      "hasta": "la tarde del domingo 15 de noviembre del 2026",
+      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
+      "zonas": "&Ntilde;uble (Valle) | Biobío (Valle) | La Araucanía (Valle)",
+      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en valle de las regiones de &Ntilde;uble, Biobío y La Araucanía",
       "icono": "⚠️",
-      "color": "#f97316",
+      "color": "#fbbf24",
       "regiones": [
+        "Biobío",
         "La Araucanía",
-        "Los Lagos",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 6000,
-      "tipo": "Aviso",
-      "codigo": "A610-4/2026",
-      "emision": "Miércoles 11 de noviembre del 2026 a las 12:07 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del miércoles 11 de noviembre del 2026",
-      "hasta": "la tarde del sábado 14 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa) | Coquimbo (Cordillera Costa)",
-      "titulo": "Altas Temperaturas en zonas desde la región de Tarapacá a la región de Coquimbo",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Coquimbo",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 5993,
-      "tipo": "Aviso",
-      "codigo": "A607-3/2026",
-      "emision": "Martes 10 de noviembre del 2026 a las 15:15 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Alta de Bolivia",
-      "desde": "la tarde del martes 10 de noviembre del 2026",
-      "hasta": "la noche del sábado 14 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
+        "Ñuble"
       ]
     }
   ]
