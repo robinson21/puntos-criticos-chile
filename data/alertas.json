@@ -1,32 +1,12 @@
 {
-  "actualizado": "2026-11-15T00:00:02.972802",
+  "actualizado": "2026-11-15T06:00:06.369460",
   "totales": {
-    "avisos": 8,
+    "avisos": 7,
     "alertas": 0,
     "alarmas": 0,
-    "total": 8
+    "total": 7
   },
   "alertas": [
-    {
-      "id": 5993,
-      "tipo": "Aviso",
-      "codigo": "A607-3/2026",
-      "emision": "Martes 10 de noviembre del 2026 a las 15:15 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Alta de Bolivia",
-      "desde": "la tarde del martes 10 de noviembre del 2026",
-      "hasta": "la noche del sábado 14 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera) | Antofagasta (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota, Tarapacá y Antofagasta",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    },
     {
       "id": 6009,
       "tipo": "Aviso",
