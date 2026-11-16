@@ -1,443 +1,12 @@
 {
-  "actualizado": "2026-11-15T19:00:45.384078",
+  "actualizado": "2026-11-16T00:00:15.895237",
   "totales": {
-    "avisos": 8,
+    "avisos": 5,
     "alertas": 0,
     "alarmas": 0,
-    "total": 8
+    "total": 5
   },
   "alertas": [
-    {
-      "id": 6021,
-      "tipo": "Aviso",
-      "codigo": "A621-2/2026",
-      "emision": "Domingo 15 de noviembre del 2026 a las 15:42 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del domingo 15 de noviembre del 2026",
-      "hasta": "la noche del martes 17 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Litoral Interior)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 6020,
-      "tipo": "Aviso",
-      "codigo": "A625/2026",
-      "emision": "Domingo 15 de noviembre del 2026 a las 15:13 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Altas presiones",
-      "desde": "la tarde del martes 17 de noviembre del 2026",
-      "hasta": "la noche del martes 17 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Comunas: Torres del Paine, Puerto Natales, Laguna Blanca, San Gregorio y Primavera - Reg. Magallanes",
-      "titulo": "Altas Temperaturas en Comunas: Torres del Paine, Puerto Natales, Laguna Blanca, San Gregorio y Primavera - Reg. Magallanes",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "poligono": [
-        [
-          -50.8173,
-          -73.1998
-        ],
-        [
-          -50.9023,
-          -73.4222
-        ],
-        [
-          -51.0562,
-          -73.3673
-        ],
-        [
-          -51.2302,
-          -73.5129
-        ],
-        [
-          -51.335,
-          -73.3453
-        ],
-        [
-          -52.2163,
-          -72.5549
-        ],
-        [
-          -52.2633,
-          -71.8903
-        ],
-        [
-          -52.5449,
-          -71.8628
-        ],
-        [
-          -52.78,
-          -71.084
-        ],
-        [
-          -52.8132,
-          -70.4907
-        ],
-        [
-          -52.9921,
-          -70.2271
-        ],
-        [
-          -53.0185,
-          -68.6121
-        ],
-        [
-          -52.654,
-          -68.613
-        ],
-        [
-          -52.3799,
-          -68.4262
-        ],
-        [
-          -52.3363,
-          -68.4207
-        ],
-        [
-          -52.3245,
-          -68.5718
-        ],
-        [
-          -52.3066,
-          -68.5885
-        ],
-        [
-          -52.2856,
-          -68.7093
-        ],
-        [
-          -52.2781,
-          -68.8377
-        ],
-        [
-          -52.2052,
-          -68.9893
-        ],
-        [
-          -52.1513,
-          -69.1953
-        ],
-        [
-          -52.1513,
-          -69.4727
-        ],
-        [
-          -52.0006,
-          -69.9956
-        ],
-        [
-          -51.9989,
-          -71.9223
-        ],
-        [
-          -51.9887,
-          -71.9566
-        ],
-        [
-          -51.9752,
-          -71.9717
-        ],
-        [
-          -51.9794,
-          -72.0061
-        ],
-        [
-          -51.96,
-          -72.0418
-        ],
-        [
-          -51.9106,
-          -71.9379
-        ],
-        [
-          -51.7256,
-          -72.1594
-        ],
-        [
-          -51.7051,
-          -72.2583
-        ],
-        [
-          -51.6949,
-          -72.3132
-        ],
-        [
-          -51.6404,
-          -72.3022
-        ],
-        [
-          -51.5927,
-          -72.3517
-        ],
-        [
-          -51.5927,
-          -72.467
-        ],
-        [
-          -51.5209,
-          -72.4176
-        ],
-        [
-          -51.5244,
-          -72.3572
-        ],
-        [
-          -51.3532,
-          -72.3352
-        ],
-        [
-          -51.336,
-          -72.3792
-        ],
-        [
-          -51.2742,
-          -72.2913
-        ],
-        [
-          -51.2329,
-          -72.2858
-        ],
-        [
-          -51.2123,
-          -72.3407
-        ],
-        [
-          -51.1262,
-          -72.4121
-        ],
-        [
-          -51.0779,
-          -72.3792
-        ],
-        [
-          -51.0192,
-          -72.3737
-        ],
-        [
-          -51.033,
-          -72.2858
-        ],
-        [
-          -50.8808,
-          -72.2638
-        ],
-        [
-          -50.7662,
-          -72.3407
-        ],
-        [
-          -50.7454,
-          -72.3737
-        ],
-        [
-          -50.6758,
-          -72.3022
-        ],
-        [
-          -50.6271,
-          -72.3517
-        ],
-        [
-          -50.641,
-          -72.3956
-        ],
-        [
-          -50.6061,
-          -72.5165
-        ],
-        [
-          -50.6932,
-          -72.5879
-        ],
-        [
-          -50.6236,
-          -72.7472
-        ],
-        [
-          -50.7801,
-          -73.0658
-        ],
-        [
-          -50.7767,
-          -73.1427
-        ]
-      ],
-      "puntos_area": {
-        "MAGALLANES Y DE LA ANTÁRTICA CHILENA": {
-          "Inundación por desborde de cauce": {
-            "n": 17,
-            "alto": 8,
-            "af": 3
-          },
-          "Interrupción de caminos": {
-            "n": 27,
-            "alto": 10,
-            "af": 0
-          },
-          "Acumulación de nieve": {
-            "n": 48,
-            "alto": 17,
-            "af": 0
-          },
-          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
-            "n": 7,
-            "alto": 5,
-            "af": 0
-          },
-          "Daño/pérdida en infraestructura (Ej.: Vial, Portuario/Costero, Agrícola, otros)": {
-            "n": 6,
-            "alto": 3,
-            "af": 0
-          },
-          "Congelamiento de caminos": {
-            "n": 32,
-            "alto": 20,
-            "af": 1
-          },
-          "Deslizamiento/Derrumbe/Rodado/Caída": {
-            "n": 5,
-            "alto": 1,
-            "af": 0
-          },
-          "Anegamiento de caminos/pasos a desnivel": {
-            "n": 11,
-            "alto": 0,
-            "af": 0
-          },
-          "Flujos de barro/detritos (Aluvión)": {
-            "n": 2,
-            "alto": 0,
-            "af": 1
-          },
-          "Colapso colectores de aguas lluvia/alcantarillados": {
-            "n": 7,
-            "alto": 0,
-            "af": 1
-          }
-        }
-      },
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 6019,
-      "tipo": "Aviso",
-      "codigo": "A624-1/2026",
-      "emision": "Domingo 15 de noviembre del 2026 a las 06:20 hrs.",
-      "fenomeno": "Nubes Convectivas Tornádicas",
-      "condicion": "Baja segregada",
-      "desde": "la tarde del domingo 15 de noviembre del 2026",
-      "hasta": "la tarde del domingo 15 de noviembre del 2026",
-      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
-      "zonas": "&Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle) | La Araucanía (Valle)",
-      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas de las regiones de &Ntilde;uble, Biobío y La Araucanía",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 6016,
-      "tipo": "Aviso",
-      "codigo": "A623/2026",
-      "emision": "Sábado 14 de noviembre del 2026 a las 15:58 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la tarde del domingo 15 de noviembre del 2026",
-      "hasta": "la tarde del domingo 15 de noviembre del 2026",
-      "observacion": "Viento de dirección ESTE (Raco, Puelche)",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Valle, Precordillera) | O'Higgins (Valle, Precordillera)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones de Valparaíso, Metropolitana y O'Higgins",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 6015,
-      "tipo": "Aviso",
-      "codigo": "A619-1/2026",
-      "emision": "Sábado 14 de noviembre del 2026 a las 15:45 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Baja segregada",
-      "desde": "la tarde del sábado 14 de noviembre del 2026",
-      "hasta": "la noche del lunes 16 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O'Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 6014,
-      "tipo": "Aviso",
-      "codigo": "A610-5/2026",
-      "emision": "Sábado 14 de noviembre del 2026 a las 15:38 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del sábado 14 de noviembre del 2026",
-      "hasta": "la tarde del domingo 15 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Tarapacá (Pampa) | Antofagasta (Pampa, Precordillera Salar)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Tarapacá y Antofagasta",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 6013,
-      "tipo": "Aviso",
-      "codigo": "A622/2026",
-      "emision": "Sábado 14 de noviembre del 2026 a las 15:38 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del lunes 16 de noviembre del 2026",
-      "hasta": "la noche del miércoles 18 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta y Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
     {
       "id": 6009,
       "tipo": "Aviso",
@@ -882,6 +451,379 @@
       },
       "regiones": [
         "Magallanes"
+      ]
+    },
+    {
+      "id": 6015,
+      "tipo": "Aviso",
+      "codigo": "A619-1/2026",
+      "emision": "Sábado 14 de noviembre del 2026 a las 15:45 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Baja segregada",
+      "desde": "la tarde del sábado 14 de noviembre del 2026",
+      "hasta": "la noche del lunes 16 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O'Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6020,
+      "tipo": "Aviso",
+      "codigo": "A625/2026",
+      "emision": "Domingo 15 de noviembre del 2026 a las 15:13 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Altas presiones",
+      "desde": "la tarde del martes 17 de noviembre del 2026",
+      "hasta": "la noche del martes 17 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Comunas: Torres del Paine, Puerto Natales, Laguna Blanca, San Gregorio y Primavera - Reg. Magallanes",
+      "titulo": "Altas Temperaturas en Comunas: Torres del Paine, Puerto Natales, Laguna Blanca, San Gregorio y Primavera - Reg. Magallanes",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -50.8173,
+          -73.1998
+        ],
+        [
+          -50.9023,
+          -73.4222
+        ],
+        [
+          -51.0562,
+          -73.3673
+        ],
+        [
+          -51.2302,
+          -73.5129
+        ],
+        [
+          -51.335,
+          -73.3453
+        ],
+        [
+          -52.2163,
+          -72.5549
+        ],
+        [
+          -52.2633,
+          -71.8903
+        ],
+        [
+          -52.5449,
+          -71.8628
+        ],
+        [
+          -52.78,
+          -71.084
+        ],
+        [
+          -52.8132,
+          -70.4907
+        ],
+        [
+          -52.9921,
+          -70.2271
+        ],
+        [
+          -53.0185,
+          -68.6121
+        ],
+        [
+          -52.654,
+          -68.613
+        ],
+        [
+          -52.3799,
+          -68.4262
+        ],
+        [
+          -52.3363,
+          -68.4207
+        ],
+        [
+          -52.3245,
+          -68.5718
+        ],
+        [
+          -52.3066,
+          -68.5885
+        ],
+        [
+          -52.2856,
+          -68.7093
+        ],
+        [
+          -52.2781,
+          -68.8377
+        ],
+        [
+          -52.2052,
+          -68.9893
+        ],
+        [
+          -52.1513,
+          -69.1953
+        ],
+        [
+          -52.1513,
+          -69.4727
+        ],
+        [
+          -52.0006,
+          -69.9956
+        ],
+        [
+          -51.9989,
+          -71.9223
+        ],
+        [
+          -51.9887,
+          -71.9566
+        ],
+        [
+          -51.9752,
+          -71.9717
+        ],
+        [
+          -51.9794,
+          -72.0061
+        ],
+        [
+          -51.96,
+          -72.0418
+        ],
+        [
+          -51.9106,
+          -71.9379
+        ],
+        [
+          -51.7256,
+          -72.1594
+        ],
+        [
+          -51.7051,
+          -72.2583
+        ],
+        [
+          -51.6949,
+          -72.3132
+        ],
+        [
+          -51.6404,
+          -72.3022
+        ],
+        [
+          -51.5927,
+          -72.3517
+        ],
+        [
+          -51.5927,
+          -72.467
+        ],
+        [
+          -51.5209,
+          -72.4176
+        ],
+        [
+          -51.5244,
+          -72.3572
+        ],
+        [
+          -51.3532,
+          -72.3352
+        ],
+        [
+          -51.336,
+          -72.3792
+        ],
+        [
+          -51.2742,
+          -72.2913
+        ],
+        [
+          -51.2329,
+          -72.2858
+        ],
+        [
+          -51.2123,
+          -72.3407
+        ],
+        [
+          -51.1262,
+          -72.4121
+        ],
+        [
+          -51.0779,
+          -72.3792
+        ],
+        [
+          -51.0192,
+          -72.3737
+        ],
+        [
+          -51.033,
+          -72.2858
+        ],
+        [
+          -50.8808,
+          -72.2638
+        ],
+        [
+          -50.7662,
+          -72.3407
+        ],
+        [
+          -50.7454,
+          -72.3737
+        ],
+        [
+          -50.6758,
+          -72.3022
+        ],
+        [
+          -50.6271,
+          -72.3517
+        ],
+        [
+          -50.641,
+          -72.3956
+        ],
+        [
+          -50.6061,
+          -72.5165
+        ],
+        [
+          -50.6932,
+          -72.5879
+        ],
+        [
+          -50.6236,
+          -72.7472
+        ],
+        [
+          -50.7801,
+          -73.0658
+        ],
+        [
+          -50.7767,
+          -73.1427
+        ]
+      ],
+      "puntos_area": {
+        "MAGALLANES Y DE LA ANTÁRTICA CHILENA": {
+          "Inundación por desborde de cauce": {
+            "n": 17,
+            "alto": 8,
+            "af": 3
+          },
+          "Interrupción de caminos": {
+            "n": 27,
+            "alto": 10,
+            "af": 0
+          },
+          "Acumulación de nieve": {
+            "n": 48,
+            "alto": 17,
+            "af": 0
+          },
+          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
+            "n": 7,
+            "alto": 5,
+            "af": 0
+          },
+          "Daño/pérdida en infraestructura (Ej.: Vial, Portuario/Costero, Agrícola, otros)": {
+            "n": 6,
+            "alto": 3,
+            "af": 0
+          },
+          "Congelamiento de caminos": {
+            "n": 32,
+            "alto": 20,
+            "af": 1
+          },
+          "Deslizamiento/Derrumbe/Rodado/Caída": {
+            "n": 5,
+            "alto": 1,
+            "af": 0
+          },
+          "Anegamiento de caminos/pasos a desnivel": {
+            "n": 11,
+            "alto": 0,
+            "af": 0
+          },
+          "Flujos de barro/detritos (Aluvión)": {
+            "n": 2,
+            "alto": 0,
+            "af": 1
+          },
+          "Colapso colectores de aguas lluvia/alcantarillados": {
+            "n": 7,
+            "alto": 0,
+            "af": 1
+          }
+        }
+      },
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 6021,
+      "tipo": "Aviso",
+      "codigo": "A621-2/2026",
+      "emision": "Domingo 15 de noviembre del 2026 a las 15:42 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del domingo 15 de noviembre del 2026",
+      "hasta": "la noche del martes 17 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Litoral Interior)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6023,
+      "tipo": "Aviso",
+      "codigo": "A622-2/2026",
+      "emision": "Domingo 15 de noviembre del 2026 a las 19:32 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del lunes 16 de noviembre del 2026",
+      "hasta": "la noche del miércoles 18 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera) | Coquimbo (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta, Atacama y Coquimbo",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Coquimbo"
       ]
     }
   ]
