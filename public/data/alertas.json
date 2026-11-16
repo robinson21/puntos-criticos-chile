@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-16T06:00:19.462654",
+  "actualizado": "2026-11-16T18:00:27.383350",
   "totales": {
     "avisos": 4,
     "alertas": 0,
@@ -8,26 +8,69 @@
   },
   "alertas": [
     {
-      "id": 6015,
+      "id": 6026,
       "tipo": "Aviso",
-      "codigo": "A619-1/2026",
-      "emision": "Sábado 14 de noviembre del 2026 a las 15:45 hrs.",
+      "codigo": "A622-3/2026",
+      "emision": "Lunes 16 de noviembre del 2026 a las 11:56 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Baja segregada",
-      "desde": "la tarde del sábado 14 de noviembre del 2026",
-      "hasta": "la noche del lunes 16 de noviembre del 2026",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del lunes 16 de noviembre del 2026",
+      "hasta": "la noche del jueves 19 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O'Higgins (Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Viento Normal a Moderado en zonas desde la región de Coquimbo a la región del Biobío",
+      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera) | Coquimbo (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta, Atacama y Coquimbo",
       "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Coquimbo"
+      ]
+    },
+    {
+      "id": 6025,
+      "tipo": "Aviso",
+      "codigo": "A621-3/2026",
+      "emision": "Lunes 16 de noviembre del 2026 a las 10:43 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del lunes 16 de noviembre del 2026",
+      "hasta": "la noche del martes 17 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de Los Lagos",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
         "Biobío",
         "Coquimbo",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
         "Maule",
         "Metropolitana",
         "O'Higgins",
         "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6024,
+      "tipo": "Aviso",
+      "codigo": "A619-2/2026",
+      "emision": "Lunes 16 de noviembre del 2026 a las 10:27 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Baja segregada",
+      "desde": "la tarde del lunes 16 de noviembre del 2026",
+      "hasta": "la noche del lunes 16 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Maule (Cordillera) | &Ntilde;uble (Cordillera) | Biobío (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
         "Ñuble"
       ]
     },
@@ -331,53 +374,6 @@
       },
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 6021,
-      "tipo": "Aviso",
-      "codigo": "A621-2/2026",
-      "emision": "Domingo 15 de noviembre del 2026 a las 15:42 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del domingo 15 de noviembre del 2026",
-      "hasta": "la noche del martes 17 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera, Litoral Interior)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 6023,
-      "tipo": "Aviso",
-      "codigo": "A622-2/2026",
-      "emision": "Domingo 15 de noviembre del 2026 a las 19:32 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del lunes 16 de noviembre del 2026",
-      "hasta": "la noche del miércoles 18 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera) | Coquimbo (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta, Atacama y Coquimbo",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Coquimbo"
       ]
     }
   ]
