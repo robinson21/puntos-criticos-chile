@@ -1,12 +1,33 @@
 {
-  "actualizado": "2026-11-17T00:00:30.493643",
+  "actualizado": "2026-11-17T06:00:33.773556",
   "totales": {
-    "avisos": 4,
+    "avisos": 5,
     "alertas": 0,
     "alarmas": 0,
-    "total": 4
+    "total": 5
   },
   "alertas": [
+    {
+      "id": 6027,
+      "tipo": "Aviso",
+      "codigo": "A626/2026",
+      "emision": "Lunes 16 de noviembre del 2026 a las 23:52 hrs.",
+      "fenomeno": "Nubes Convectivas Tornádicas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del martes 17 de noviembre del 2026",
+      "hasta": "la noche del martes 17 de noviembre del 2026",
+      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
+      "zonas": "&Ntilde;uble (Valle) | Biobío (Litoral, Cordillera Costa, Valle) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas desde la región de &Ntilde;uble a la región de Los Ríos",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Ríos",
+        "Ñuble"
+      ]
+    },
     {
       "id": 6026,
       "tipo": "Aviso",
