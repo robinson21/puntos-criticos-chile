@@ -1,12 +1,124 @@
 {
-  "actualizado": "2026-11-17T18:00:49.393909",
+  "actualizado": "2026-11-17T19:01:25.868456",
   "totales": {
-    "avisos": 4,
-    "alertas": 0,
+    "avisos": 5,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 4
+    "total": 6
   },
   "alertas": [
+    {
+      "id": 6030,
+      "tipo": "Alerta",
+      "codigo": "AA200-1/2026",
+      "emision": "Martes 17 de noviembre del 2026 a las 15:19 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Baja segregada",
+      "desde": "la tarde del martes 17 de noviembre del 2026",
+      "hasta": "la noche del martes 17 de noviembre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "&Ntilde;uble (Valle, Precordillera) | Biobío (Valle, Precordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera) | Los Lagos (Litoral, Cordillera Costa, Valle, Precordillera, Litoral Interior)",
+      "titulo": "Tormentas Eléctricas en zonas desde la región de &Ntilde;uble a la región de Los Lagos",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6028,
+      "tipo": "Aviso",
+      "codigo": "A627/2026",
+      "emision": "Martes 17 de noviembre del 2026 a las 15:00 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del miércoles 18 de noviembre del 2026",
+      "hasta": "la noche del miércoles 18 de noviembre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "Biobío (Precordillera, Cordillera) | La Araucanía (Valle, Precordillera) | Los Ríos (Cordillera Costa, Valle, Precordillera) | Los Lagos (Valle, Precordillera, Chiloé, Litoral Interior, Cordillera Austral, Patagonia Subandina) | Aysén (Patagonia Subandina Norte, Patagonia Subandina Sur)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región del Biobío a la región de Aysén",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén",
+        "Biobío",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 6027,
+      "tipo": "Aviso",
+      "codigo": "A626/2026",
+      "emision": "Lunes 16 de noviembre del 2026 a las 23:52 hrs.",
+      "fenomeno": "Nubes Convectivas Tornádicas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del martes 17 de noviembre del 2026",
+      "hasta": "la noche del martes 17 de noviembre del 2026",
+      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
+      "zonas": "&Ntilde;uble (Valle) | Biobío (Litoral, Cordillera Costa, Valle) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas desde la región de &Ntilde;uble a la región de Los Ríos",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "La Araucanía",
+        "Los Ríos",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6026,
+      "tipo": "Aviso",
+      "codigo": "A622-3/2026",
+      "emision": "Lunes 16 de noviembre del 2026 a las 11:56 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Corriente en chorro",
+      "desde": "la tarde del lunes 16 de noviembre del 2026",
+      "hasta": "la noche del jueves 19 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera) | Coquimbo (Cordillera)",
+      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta, Atacama y Coquimbo",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama",
+        "Coquimbo"
+      ]
+    },
+    {
+      "id": 6025,
+      "tipo": "Aviso",
+      "codigo": "A621-3/2026",
+      "emision": "Lunes 16 de noviembre del 2026 a las 10:43 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del lunes 16 de noviembre del 2026",
+      "hasta": "la noche del martes 17 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Cordillera Costa, Valle, Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de Los Lagos",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "La Araucanía",
+        "Los Lagos",
+        "Los Ríos",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
     {
       "id": 6020,
       "tipo": "Aviso",
@@ -307,74 +419,6 @@
       },
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 6025,
-      "tipo": "Aviso",
-      "codigo": "A621-3/2026",
-      "emision": "Lunes 16 de noviembre del 2026 a las 10:43 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del lunes 16 de noviembre del 2026",
-      "hasta": "la noche del martes 17 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Precordillera y valles precordilleranos, Cordillera) | Metropolitana (Valle, Precordillera, Cordillera) | O'Higgins (Valle, Precordillera, Cordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | La Araucanía (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Ríos (Litoral, Cordillera Costa, Valle, Precordillera, Cordillera) | Los Lagos (Cordillera Costa, Valle, Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas desde la región de Coquimbo a la región de Los Lagos",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "La Araucanía",
-        "Los Lagos",
-        "Los Ríos",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 6026,
-      "tipo": "Aviso",
-      "codigo": "A622-3/2026",
-      "emision": "Lunes 16 de noviembre del 2026 a las 11:56 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del lunes 16 de noviembre del 2026",
-      "hasta": "la noche del jueves 19 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Cordillera) | Atacama (Cordillera) | Coquimbo (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de las regiones de Antofagasta, Atacama y Coquimbo",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama",
-        "Coquimbo"
-      ]
-    },
-    {
-      "id": 6027,
-      "tipo": "Aviso",
-      "codigo": "A626/2026",
-      "emision": "Lunes 16 de noviembre del 2026 a las 23:52 hrs.",
-      "fenomeno": "Nubes Convectivas Tornádicas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del martes 17 de noviembre del 2026",
-      "hasta": "la noche del martes 17 de noviembre del 2026",
-      "observacion": "Probabilidad de intensos vientos locales arrachados y tornádicos",
-      "zonas": "&Ntilde;uble (Valle) | Biobío (Litoral, Cordillera Costa, Valle) | La Araucanía (Litoral, Cordillera Costa, Valle) | Los Ríos (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Probable desarrollo de Nubes Convectivas con características tornádicas en zonas desde la región de &Ntilde;uble a la región de Los Ríos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "La Araucanía",
-        "Los Ríos",
-        "Ñuble"
       ]
     }
   ]
