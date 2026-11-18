@@ -1,12 +1,30 @@
 {
-  "actualizado": "2026-11-18T18:00:03.379671",
+  "actualizado": "2026-11-18T19:00:38.585493",
   "totales": {
-    "avisos": 6,
+    "avisos": 7,
     "alertas": 0,
     "alarmas": 0,
-    "total": 6
+    "total": 7
   },
   "alertas": [
+    {
+      "id": 6035,
+      "tipo": "Aviso",
+      "codigo": "A631/2026",
+      "emision": "Miércoles 18 de noviembre del 2026 a las 15:21 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del jueves 19 de noviembre del 2026",
+      "hasta": "la noche del jueves 19 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Norte, Insular Norte, Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
     {
       "id": 6034,
       "tipo": "Aviso",
