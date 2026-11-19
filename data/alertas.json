@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-18T19:00:38.585493",
+  "actualizado": "2026-11-19T00:00:05.768765",
   "totales": {
     "avisos": 7,
     "alertas": 0,
@@ -7,6 +7,25 @@
     "total": 7
   },
   "alertas": [
+    {
+      "id": 6036,
+      "tipo": "Aviso",
+      "codigo": "A628-1/2026",
+      "emision": "Miércoles 18 de noviembre del 2026 a las 17:44 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del jueves 19 de noviembre del 2026",
+      "hasta": "la tarde del lunes 23 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Antofagasta y Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
     {
       "id": 6035,
       "tipo": "Aviso",
@@ -443,25 +462,6 @@
       },
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 6031,
-      "tipo": "Aviso",
-      "codigo": "A628/2026",
-      "emision": "Martes 17 de noviembre del 2026 a las 16:20 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del jueves 19 de noviembre del 2026",
-      "hasta": "la tarde del sábado 21 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Pampa) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
       ]
     },
     {
