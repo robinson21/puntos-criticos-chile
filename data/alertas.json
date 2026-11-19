@@ -1,12 +1,30 @@
 {
-  "actualizado": "2026-11-19T18:00:16.171725",
+  "actualizado": "2026-11-19T19:00:49.704254",
   "totales": {
     "avisos": 6,
-    "alertas": 0,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 6
+    "total": 7
   },
   "alertas": [
+    {
+      "id": 6040,
+      "tipo": "Alerta",
+      "codigo": "AA201/2026",
+      "emision": "Jueves 19 de noviembre del 2026 a las 15:47 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del jueves 19 de noviembre del 2026",
+      "hasta": "la noche del jueves 19 de noviembre del 2026",
+      "observacion": "Probabilidad de precipitaciones fuertes en un corto período de tiempo",
+      "zonas": "La Araucanía (Valle, Precordillera)",
+      "titulo": "Tormentas Eléctricas en zonas de la región de La Araucanía",
+      "icono": "⚡",
+      "color": "#f97316",
+      "regiones": [
+        "La Araucanía"
+      ]
+    },
     {
       "id": 6039,
       "tipo": "Aviso",
