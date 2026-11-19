@@ -1,12 +1,28 @@
 {
-  "actualizado": "2026-11-19T12:00:12.477439",
+  "actualizado": "2026-11-19T18:00:16.171725",
   "totales": {
-    "avisos": 5,
+    "avisos": 6,
     "alertas": 0,
     "alarmas": 0,
-    "total": 5
+    "total": 6
   },
   "alertas": [
+    {
+      "id": 6039,
+      "tipo": "Aviso",
+      "codigo": "A632/2026",
+      "emision": "Jueves 19 de noviembre del 2026 a las 14:37 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Borde de ataque de baja segregada",
+      "desde": "la madrugada del domingo 22 de noviembre del 2026",
+      "hasta": "la mañana del lunes 23 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
     {
       "id": 6037,
       "tipo": "Aviso",
