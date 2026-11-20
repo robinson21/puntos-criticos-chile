@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-20T18:00:30.379109",
+  "actualizado": "2026-11-20T19:01:16.174968",
   "totales": {
     "avisos": 4,
     "alertas": 0,
@@ -8,14 +8,14 @@
   },
   "alertas": [
     {
-      "id": 6033,
+      "id": 6043,
       "tipo": "Aviso",
-      "codigo": "A629/2026",
-      "emision": "Martes 17 de noviembre del 2026 a las 16:21 hrs.",
+      "codigo": "A629-1/2026",
+      "emision": "Viernes 20 de noviembre del 2026 a las 15:51 hrs.",
       "fenomeno": "Viento",
       "condicion": "Jet costero",
-      "desde": "la tarde del miércoles 18 de noviembre del 2026",
-      "hasta": "la noche del sábado 21 de noviembre del 2026",
+      "desde": "la tarde del viernes 20 de noviembre del 2026",
+      "hasta": "la noche del lunes 23 de noviembre del 2026",
       "observacion": "Probabilidad de tormentas de arena",
       "zonas": "Litoral de la Provincia de Huasco, Región de Atacama",
       "titulo": "Viento Normal a Moderado en Litoral de la Provincia de Huasco, Región de Atacama",
@@ -99,13 +99,13 @@
       ]
     },
     {
-      "id": 6036,
+      "id": 6042,
       "tipo": "Aviso",
-      "codigo": "A628-1/2026",
-      "emision": "Miércoles 18 de noviembre del 2026 a las 17:44 hrs.",
+      "codigo": "A628-2/2026",
+      "emision": "Viernes 20 de noviembre del 2026 a las 15:51 hrs.",
       "fenomeno": "Altas Temperaturas",
       "condicion": "Dorsal en altura",
-      "desde": "la tarde del jueves 19 de noviembre del 2026",
+      "desde": "la tarde del viernes 20 de noviembre del 2026",
       "hasta": "la tarde del lunes 23 de noviembre del 2026",
       "observacion": "",
       "zonas": "Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
@@ -116,22 +116,6 @@
         "Antofagasta",
         "Atacama"
       ]
-    },
-    {
-      "id": 6039,
-      "tipo": "Aviso",
-      "codigo": "A632/2026",
-      "emision": "Jueves 19 de noviembre del 2026 a las 14:37 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Borde de ataque de baja segregada",
-      "desde": "la madrugada del domingo 22 de noviembre del 2026",
-      "hasta": "la mañana del lunes 23 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
     },
     {
       "id": 6041,
@@ -370,6 +354,22 @@
       "regiones": [
         "Magallanes"
       ]
+    },
+    {
+      "id": 6039,
+      "tipo": "Aviso",
+      "codigo": "A632/2026",
+      "emision": "Jueves 19 de noviembre del 2026 a las 14:37 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Borde de ataque de baja segregada",
+      "desde": "la madrugada del domingo 22 de noviembre del 2026",
+      "hasta": "la mañana del lunes 23 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
     }
   ]
 }
