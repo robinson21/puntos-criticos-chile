@@ -1,0 +1,137 @@
+{
+  "actualizado": "2026-11-21T11:14:14.586084",
+  "totales": {
+    "avisos": 3,
+    "alertas": 0,
+    "alarmas": 0,
+    "total": 3
+  },
+  "alertas": [
+    {
+      "id": 6039,
+      "tipo": "Aviso",
+      "codigo": "A632/2026",
+      "emision": "Jueves 19 de noviembre del 2026 a las 14:37 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Borde de ataque de baja segregada",
+      "desde": "la madrugada del domingo 22 de noviembre del 2026",
+      "hasta": "la mañana del lunes 23 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 6042,
+      "tipo": "Aviso",
+      "codigo": "A628-2/2026",
+      "emision": "Viernes 20 de noviembre del 2026 a las 15:51 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del viernes 20 de noviembre del 2026",
+      "hasta": "la tarde del lunes 23 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Antofagasta y Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 6043,
+      "tipo": "Aviso",
+      "codigo": "A629-1/2026",
+      "emision": "Viernes 20 de noviembre del 2026 a las 15:51 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la tarde del viernes 20 de noviembre del 2026",
+      "hasta": "la noche del lunes 23 de noviembre del 2026",
+      "observacion": "Probabilidad de tormentas de arena",
+      "zonas": "Litoral de la Provincia de Huasco, Región de Atacama",
+      "titulo": "Viento Normal a Moderado en Litoral de la Provincia de Huasco, Región de Atacama",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -27.8488,
+          -71.1035
+        ],
+        [
+          -28.0914,
+          -71.1639
+        ],
+        [
+          -28.2995,
+          -71.1694
+        ],
+        [
+          -28.4397,
+          -71.1969
+        ],
+        [
+          -28.5121,
+          -71.2573
+        ],
+        [
+          -28.5652,
+          -71.3068
+        ],
+        [
+          -28.6472,
+          -71.2903
+        ],
+        [
+          -28.8543,
+          -71.4606
+        ],
+        [
+          -29.0033,
+          -71.5045
+        ],
+        [
+          -29.1713,
+          -71.5045
+        ],
+        [
+          -29.1618,
+          -71.3232
+        ],
+        [
+          -28.5121,
+          -71.1035
+        ],
+        [
+          -27.9071,
+          -70.9827
+        ]
+      ],
+      "puntos_area": {
+        "ATACAMA": {
+          "Anegamiento de caminos/pasos a desnivel": {
+            "n": 1,
+            "alto": 0,
+            "af": 0
+          },
+          "Interrupción de caminos": {
+            "n": 3,
+            "alto": 2,
+            "af": 0
+          },
+          "Activación de quebradas": {
+            "n": 20,
+            "alto": 20,
+            "af": 0
+          }
+        }
+      },
+      "regiones": [
+        "Atacama"
+      ]
+    }
+  ]
+}
