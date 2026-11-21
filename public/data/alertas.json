@@ -1,45 +1,30 @@
 {
-  "actualizado": "2026-11-21T06:00:48.763721",
+  "actualizado": "2026-11-21T18:00:58.174982",
   "totales": {
-    "avisos": 3,
+    "avisos": 4,
     "alertas": 0,
     "alarmas": 0,
-    "total": 3
+    "total": 4
   },
   "alertas": [
     {
-      "id": 6039,
+      "id": 6044,
       "tipo": "Aviso",
-      "codigo": "A632/2026",
-      "emision": "Jueves 19 de noviembre del 2026 a las 14:37 hrs.",
+      "codigo": "A634/2026",
+      "emision": "Sábado 21 de noviembre del 2026 a las 12:42 hrs.",
       "fenomeno": "Viento",
-      "condicion": "Borde de ataque de baja segregada",
-      "desde": "la madrugada del domingo 22 de noviembre del 2026",
-      "hasta": "la mañana del lunes 23 de noviembre del 2026",
+      "condicion": "Jet costero",
+      "desde": "la mañana del martes 24 de noviembre del 2026",
+      "hasta": "la noche del miércoles 25 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "zonas": "Maule (Litoral, Cordillera Costa, Valle) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
       "icono": "💨",
       "color": "#fbbf24",
-      "regiones": []
-    },
-    {
-      "id": 6042,
-      "tipo": "Aviso",
-      "codigo": "A628-2/2026",
-      "emision": "Viernes 20 de noviembre del 2026 a las 15:51 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del viernes 20 de noviembre del 2026",
-      "hasta": "la tarde del lunes 23 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
       "regiones": [
-        "Antofagasta",
-        "Atacama"
+        "Biobío",
+        "Maule",
+        "Ñuble"
       ]
     },
     {
@@ -132,6 +117,41 @@
       "regiones": [
         "Atacama"
       ]
+    },
+    {
+      "id": 6042,
+      "tipo": "Aviso",
+      "codigo": "A628-2/2026",
+      "emision": "Viernes 20 de noviembre del 2026 a las 15:51 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del viernes 20 de noviembre del 2026",
+      "hasta": "la tarde del lunes 23 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Antofagasta y Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 6039,
+      "tipo": "Aviso",
+      "codigo": "A632/2026",
+      "emision": "Jueves 19 de noviembre del 2026 a las 14:37 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Borde de ataque de baja segregada",
+      "desde": "la madrugada del domingo 22 de noviembre del 2026",
+      "hasta": "la mañana del lunes 23 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
     }
   ]
 }
