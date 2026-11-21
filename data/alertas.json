@@ -1,12 +1,54 @@
 {
-  "actualizado": "2026-11-21T18:00:58.174982",
+  "actualizado": "2026-11-21T20:35:14.176096",
   "totales": {
-    "avisos": 4,
+    "avisos": 6,
     "alertas": 0,
     "alarmas": 0,
-    "total": 4
+    "total": 6
   },
   "alertas": [
+    {
+      "id": 6046,
+      "tipo": "Aviso",
+      "codigo": "A636/2026",
+      "emision": "Sábado 21 de noviembre del 2026 a las 16:34 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del martes 24 de noviembre del 2026",
+      "hasta": "la tarde del jueves 26 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Coquimbo",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6045,
+      "tipo": "Aviso",
+      "codigo": "A635/2026",
+      "emision": "Sábado 21 de noviembre del 2026 a las 15:10 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la mañana del domingo 22 de noviembre del 2026",
+      "hasta": "la tarde del martes 24 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Norte, Cordillera Austral Sur, Insular Norte, Insular Central, Insular Sur, Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
     {
       "id": 6044,
       "tipo": "Aviso",
