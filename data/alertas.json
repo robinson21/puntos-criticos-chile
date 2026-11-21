@@ -1,12 +1,47 @@
 {
-  "actualizado": "2026-11-21T00:00:45.366664",
+  "actualizado": "2026-11-21T06:00:48.763721",
   "totales": {
-    "avisos": 4,
+    "avisos": 3,
     "alertas": 0,
     "alarmas": 0,
-    "total": 4
+    "total": 3
   },
   "alertas": [
+    {
+      "id": 6039,
+      "tipo": "Aviso",
+      "codigo": "A632/2026",
+      "emision": "Jueves 19 de noviembre del 2026 a las 14:37 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Borde de ataque de baja segregada",
+      "desde": "la madrugada del domingo 22 de noviembre del 2026",
+      "hasta": "la mañana del lunes 23 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Isla de Pascua",
+      "titulo": "Viento Normal a Moderado en Isla de Pascua",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": []
+    },
+    {
+      "id": 6042,
+      "tipo": "Aviso",
+      "codigo": "A628-2/2026",
+      "emision": "Viernes 20 de noviembre del 2026 a las 15:51 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del viernes 20 de noviembre del 2026",
+      "hasta": "la tarde del lunes 23 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de Antofagasta y Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
     {
       "id": 6043,
       "tipo": "Aviso",
@@ -97,279 +132,6 @@
       "regiones": [
         "Atacama"
       ]
-    },
-    {
-      "id": 6042,
-      "tipo": "Aviso",
-      "codigo": "A628-2/2026",
-      "emision": "Viernes 20 de noviembre del 2026 a las 15:51 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del viernes 20 de noviembre del 2026",
-      "hasta": "la tarde del lunes 23 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 6041,
-      "tipo": "Aviso",
-      "codigo": "A633/2026",
-      "emision": "Jueves 19 de noviembre del 2026 a las 16:20 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del viernes 20 de noviembre del 2026",
-      "hasta": "la noche del viernes 20 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Comunas de Torres del Paine, Natales, Laguna Blanca y San Gregorio - Reg. Magallanes",
-      "titulo": "Probables Tormentas Eléctricas en Comunas de Torres del Paine, Natales, Laguna Blanca y San Gregorio - Reg. Magallanes",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "poligono": [
-        [
-          -50.8044,
-          -73.1757
-        ],
-        [
-          -50.9085,
-          -73.4338
-        ],
-        [
-          -51.0399,
-          -73.3789
-        ],
-        [
-          -51.2088,
-          -73.5052
-        ],
-        [
-          -51.3532,
-          -73.3405
-        ],
-        [
-          -52.4613,
-          -72.9614
-        ],
-        [
-          -52.7983,
-          -70.7578
-        ],
-        [
-          -52.3943,
-          -68.4076
-        ],
-        [
-          -52.3406,
-          -68.4406
-        ],
-        [
-          -52.3238,
-          -68.5614
-        ],
-        [
-          -52.2902,
-          -68.6932
-        ],
-        [
-          -52.2835,
-          -68.8141
-        ],
-        [
-          -52.2014,
-          -68.9917
-        ],
-        [
-          -52.15,
-          -69.1922
-        ],
-        [
-          -52.1523,
-          -69.5007
-        ],
-        [
-          -52.0071,
-          -69.9896
-        ],
-        [
-          -51.9996,
-          -71.9238
-        ],
-        [
-          -51.9911,
-          -71.9324
-        ],
-        [
-          -51.9905,
-          -71.9447
-        ],
-        [
-          -51.9718,
-          -71.9704
-        ],
-        [
-          -51.9803,
-          -71.9978
-        ],
-        [
-          -51.9591,
-          -72.0363
-        ],
-        [
-          -51.9126,
-          -71.9347
-        ],
-        [
-          -51.8702,
-          -71.9511
-        ],
-        [
-          -51.787,
-          -72.0624
-        ],
-        [
-          -51.7403,
-          -72.131
-        ],
-        [
-          -51.6994,
-          -72.2505
-        ],
-        [
-          -51.696,
-          -72.3
-        ],
-        [
-          -51.6338,
-          -72.2917
-        ],
-        [
-          -51.5827,
-          -72.3384
-        ],
-        [
-          -51.5844,
-          -72.4387
-        ],
-        [
-          -51.41,
-          -72.3474
-        ],
-        [
-          -51.2521,
-          -72.2595
-        ],
-        [
-          -51.1212,
-          -72.4683
-        ],
-        [
-          -51.0177,
-          -72.4133
-        ],
-        [
-          -51.0177,
-          -72.2375
-        ],
-        [
-          -50.643,
-          -72.3145
-        ],
-        [
-          -50.5733,
-          -72.2705
-        ],
-        [
-          -50.5942,
-          -72.4902
-        ],
-        [
-          -50.6081,
-          -72.7319
-        ],
-        [
-          -50.7682,
-          -73.0835
-        ]
-      ],
-      "puntos_area": {
-        "MAGALLANES Y DE LA ANTÁRTICA CHILENA": {
-          "Inundación por desborde de cauce": {
-            "n": 16,
-            "alto": 8,
-            "af": 3
-          },
-          "Interrupción de caminos": {
-            "n": 28,
-            "alto": 10,
-            "af": 0
-          },
-          "Acumulación de nieve": {
-            "n": 45,
-            "alto": 17,
-            "af": 0
-          },
-          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
-            "n": 7,
-            "alto": 5,
-            "af": 0
-          },
-          "Daño/pérdida en infraestructura (Ej.: Vial, Portuario/Costero, Agrícola, otros)": {
-            "n": 7,
-            "alto": 3,
-            "af": 0
-          },
-          "Congelamiento de caminos": {
-            "n": 27,
-            "alto": 15,
-            "af": 0
-          },
-          "Deslizamiento/Derrumbe/Rodado/Caída": {
-            "n": 5,
-            "alto": 1,
-            "af": 0
-          },
-          "Anegamiento de caminos/pasos a desnivel": {
-            "n": 11,
-            "alto": 0,
-            "af": 0
-          },
-          "Flujos de barro/detritos (Aluvión)": {
-            "n": 2,
-            "alto": 0,
-            "af": 1
-          },
-          "Colapso colectores de aguas lluvia/alcantarillados": {
-            "n": 7,
-            "alto": 0,
-            "af": 1
-          }
-        }
-      },
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 6039,
-      "tipo": "Aviso",
-      "codigo": "A632/2026",
-      "emision": "Jueves 19 de noviembre del 2026 a las 14:37 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Borde de ataque de baja segregada",
-      "desde": "la madrugada del domingo 22 de noviembre del 2026",
-      "hasta": "la mañana del lunes 23 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Isla de Pascua",
-      "titulo": "Viento Normal a Moderado en Isla de Pascua",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": []
     }
   ]
 }
