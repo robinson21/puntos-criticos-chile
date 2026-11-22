@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-22T07:01:16.963144",
+  "actualizado": "2026-11-22T12:00:42.175774",
   "totales": {
     "avisos": 6,
     "alertas": 0,
@@ -7,6 +7,24 @@
     "total": 6
   },
   "alertas": [
+    {
+      "id": 6047,
+      "tipo": "Aviso",
+      "codigo": "A628-3/2026",
+      "emision": "Domingo 22 de noviembre del 2026 a las 07:38 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del domingo 22 de noviembre del 2026",
+      "hasta": "la tarde del lunes 23 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar)",
+      "titulo": "Altas Temperaturas en zonas de la región de Antofagasta",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Antofagasta"
+      ]
+    },
     {
       "id": 6046,
       "tipo": "Aviso",
@@ -157,25 +175,6 @@
         }
       },
       "regiones": [
-        "Atacama"
-      ]
-    },
-    {
-      "id": 6042,
-      "tipo": "Aviso",
-      "codigo": "A628-2/2026",
-      "emision": "Viernes 20 de noviembre del 2026 a las 15:51 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del viernes 20 de noviembre del 2026",
-      "hasta": "la tarde del lunes 23 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Pampa, Precordillera Occidental, Precordillera Salar) | Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
         "Atacama"
       ]
     },
