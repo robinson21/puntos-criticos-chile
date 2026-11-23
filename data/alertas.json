@@ -1,12 +1,30 @@
 {
-  "actualizado": "2026-11-23T12:00:41.983685",
+  "actualizado": "2026-11-23T18:00:45.290210",
   "totales": {
-    "avisos": 13,
+    "avisos": 14,
     "alertas": 0,
     "alarmas": 0,
-    "total": 13
+    "total": 14
   },
   "alertas": [
+    {
+      "id": 6058,
+      "tipo": "Aviso",
+      "codigo": "A644/2026",
+      "emision": "Lunes 23 de noviembre del 2026 a las 14:48 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del miércoles 25 de noviembre del 2026",
+      "hasta": "la noche del miércoles 25 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
+      ]
+    },
     {
       "id": 6057,
       "tipo": "Aviso",
