@@ -1,12 +1,181 @@
 {
-  "actualizado": "2026-11-24T18:00:44.899038",
+  "actualizado": "2026-11-24T19:01:06.515565",
   "totales": {
-    "avisos": 9,
-    "alertas": 1,
+    "avisos": 10,
+    "alertas": 2,
     "alarmas": 0,
-    "total": 10
+    "total": 12
   },
   "alertas": [
+    {
+      "id": 6062,
+      "tipo": "Aviso",
+      "codigo": "A645/2026",
+      "emision": "Martes 24 de noviembre del 2026 a las 15:25 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Margen anticiclónico con inestabilidad en cordillera",
+      "desde": "la tarde del martes 24 de noviembre del 2026",
+      "hasta": "la noche del miércoles 25 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Coquimbo y Valparaíso",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Coquimbo",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 6061,
+      "tipo": "Alerta",
+      "codigo": "AA203/2026",
+      "emision": "Martes 24 de noviembre del 2026 a las 15:22 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la noche del miércoles 25 de noviembre del 2026",
+      "hasta": "la madrugada del jueves 26 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "REG. MAGALLANES COMUNAS LAGUNA BLANCA, RIO VERDE, PUNTA ARENAS, SAN GREGORIO Y PRIMAVERA",
+      "titulo": "Viento Moderado a Fuerte en REG. MAGALLANES COMUNAS LAGUNA BLANCA, RIO VERDE, PUNTA ARENAS, SAN GREGORIO Y PRIMAVERA",
+      "icono": "💨",
+      "color": "#f97316",
+      "poligono": [
+        [
+          -51.9887,
+          -71.3696
+        ],
+        [
+          -52.4129,
+          -71.4355
+        ],
+        [
+          -52.5334,
+          -72.0837
+        ],
+        [
+          -52.7467,
+          -72.0508
+        ],
+        [
+          -53.0119,
+          -71.842
+        ],
+        [
+          -53.5636,
+          -71.4795
+        ],
+        [
+          -53.6744,
+          -70.9412
+        ],
+        [
+          -53.2295,
+          -70.4248
+        ],
+        [
+          -53.0185,
+          -69.7217
+        ],
+        [
+          -52.906,
+          -68.6011
+        ],
+        [
+          -52.6602,
+          -68.623
+        ],
+        [
+          -52.3526,
+          -68.4143
+        ],
+        [
+          -52.3296,
+          -68.4262
+        ],
+        [
+          -52.3212,
+          -68.5855
+        ],
+        [
+          -52.3027,
+          -68.591
+        ],
+        [
+          -52.2758,
+          -68.8354
+        ],
+        [
+          -52.2018,
+          -68.992
+        ],
+        [
+          -52.1277,
+          -69.4824
+        ],
+        [
+          -51.9655,
+          -69.9438
+        ]
+      ],
+      "puntos_area": {
+        "MAGALLANES Y DE LA ANTÁRTICA CHILENA": {
+          "Inundación por desborde de cauce": {
+            "n": 25,
+            "alto": 9,
+            "af": 1
+          },
+          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
+            "n": 9,
+            "alto": 4,
+            "af": 0
+          },
+          "Acumulación de nieve": {
+            "n": 68,
+            "alto": 18,
+            "af": 0
+          },
+          "Interrupción de caminos": {
+            "n": 24,
+            "alto": 0,
+            "af": 0
+          },
+          "Daño/pérdida en infraestructura (Ej.: Vial, Portuario/Costero, Agrícola, otros)": {
+            "n": 7,
+            "alto": 2,
+            "af": 0
+          },
+          "Anegamiento de caminos/pasos a desnivel": {
+            "n": 25,
+            "alto": 4,
+            "af": 1
+          },
+          "Deslizamiento/Derrumbe/Rodado/Caída": {
+            "n": 4,
+            "alto": 1,
+            "af": 0
+          },
+          "Colapso colectores de aguas lluvia/alcantarillados": {
+            "n": 2,
+            "alto": 0,
+            "af": 1
+          },
+          "Flujos de barro/detritos (Aluvión)": {
+            "n": 4,
+            "alto": 2,
+            "af": 1
+          },
+          "Congelamiento de caminos": {
+            "n": 18,
+            "alto": 13,
+            "af": 1
+          }
+        }
+      },
+      "regiones": [
+        "Magallanes"
+      ]
+    },
     {
       "id": 6060,
       "tipo": "Aviso",
