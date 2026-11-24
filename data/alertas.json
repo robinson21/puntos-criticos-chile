@@ -1,103 +1,12 @@
 {
-  "actualizado": "2026-11-24T00:00:39.777969",
+  "actualizado": "2026-11-24T06:00:47.524944",
   "totales": {
-    "avisos": 11,
+    "avisos": 9,
     "alertas": 0,
     "alarmas": 0,
-    "total": 11
+    "total": 9
   },
   "alertas": [
-    {
-      "id": 6043,
-      "tipo": "Aviso",
-      "codigo": "A629-1/2026",
-      "emision": "Viernes 20 de noviembre del 2026 a las 15:51 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la tarde del viernes 20 de noviembre del 2026",
-      "hasta": "la noche del lunes 23 de noviembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Litoral de la Provincia de Huasco, Región de Atacama",
-      "titulo": "Viento Normal a Moderado en Litoral de la Provincia de Huasco, Región de Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "poligono": [
-        [
-          -27.8488,
-          -71.1035
-        ],
-        [
-          -28.0914,
-          -71.1639
-        ],
-        [
-          -28.2995,
-          -71.1694
-        ],
-        [
-          -28.4397,
-          -71.1969
-        ],
-        [
-          -28.5121,
-          -71.2573
-        ],
-        [
-          -28.5652,
-          -71.3068
-        ],
-        [
-          -28.6472,
-          -71.2903
-        ],
-        [
-          -28.8543,
-          -71.4606
-        ],
-        [
-          -29.0033,
-          -71.5045
-        ],
-        [
-          -29.1713,
-          -71.5045
-        ],
-        [
-          -29.1618,
-          -71.3232
-        ],
-        [
-          -28.5121,
-          -71.1035
-        ],
-        [
-          -27.9071,
-          -70.9827
-        ]
-      ],
-      "puntos_area": {
-        "ATACAMA": {
-          "Anegamiento de caminos/pasos a desnivel": {
-            "n": 1,
-            "alto": 0,
-            "af": 0
-          },
-          "Interrupción de caminos": {
-            "n": 3,
-            "alto": 2,
-            "af": 0
-          },
-          "Activación de quebradas": {
-            "n": 20,
-            "alto": 20,
-            "af": 0
-          }
-        }
-      },
-      "regiones": [
-        "Atacama"
-      ]
-    },
     {
       "id": 6044,
       "tipo": "Aviso",
@@ -153,24 +62,6 @@
       "regiones": [
         "Arica y Parinacota",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 6051,
-      "tipo": "Aviso",
-      "codigo": "A639/2026",
-      "emision": "Domingo 22 de noviembre del 2026 a las 12:15 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Corriente en chorro",
-      "desde": "la tarde del domingo 22 de noviembre del 2026",
-      "hasta": "la noche del lunes 23 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Cordillera)",
-      "titulo": "Viento Normal a Moderado en cordillera de la región de Atacama",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Atacama"
       ]
     },
     {
