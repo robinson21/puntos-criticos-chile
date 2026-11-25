@@ -1,29 +1,183 @@
 {
-  "actualizado": "2026-11-24T19:01:06.515565",
+  "actualizado": "2026-11-25T00:00:38.968100",
   "totales": {
-    "avisos": 10,
+    "avisos": 9,
     "alertas": 2,
     "alarmas": 0,
-    "total": 12
+    "total": 11
   },
   "alertas": [
     {
-      "id": 6062,
+      "id": 6044,
       "tipo": "Aviso",
-      "codigo": "A645/2026",
-      "emision": "Martes 24 de noviembre del 2026 a las 15:25 hrs.",
+      "codigo": "A634/2026",
+      "emision": "Sábado 21 de noviembre del 2026 a las 12:42 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet costero",
+      "desde": "la mañana del martes 24 de noviembre del 2026",
+      "hasta": "la noche del miércoles 25 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Maule (Litoral, Cordillera Costa, Valle) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
+      "titulo": "Viento Normal a Moderado en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6050,
+      "tipo": "Aviso",
+      "codigo": "A638/2026",
+      "emision": "Domingo 22 de noviembre del 2026 a las 12:15 hrs.",
       "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Margen anticiclónico con inestabilidad en cordillera",
+      "condicion": "Inestabilidad atmosférica",
       "desde": "la tarde del martes 24 de noviembre del 2026",
       "hasta": "la noche del miércoles 25 de noviembre del 2026",
       "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Coquimbo y Valparaíso",
+      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
       "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
+        "Arica y Parinacota",
+        "Tarapacá"
+      ]
+    },
+    {
+      "id": 6054,
+      "tipo": "Aviso",
+      "codigo": "A641/2026",
+      "emision": "Domingo 22 de noviembre del 2026 a las 13:45 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Sistema frontal aproxima la zona",
+      "desde": "la tarde del martes 24 de noviembre del 2026",
+      "hasta": "la noche del martes 24 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Aysén (Patagonia Subandina Norte)",
+      "titulo": "Viento Normal a Moderado en patagonia subandina norte de la región de Aysén",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Aysén"
+      ]
+    },
+    {
+      "id": 6055,
+      "tipo": "Aviso",
+      "codigo": "A640/2026",
+      "emision": "Domingo 22 de noviembre del 2026 a las 13:45 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Alta subtropical",
+      "desde": "la mañana del jueves 26 de noviembre del 2026",
+      "hasta": "la tarde del viernes 27 de noviembre del 2026",
+      "observacion": "Este evento también afectará la comuna de Valdivia",
+      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Litoral)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de La Araucanía y Los Ríos",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Ríos"
+      ]
+    },
+    {
+      "id": 6056,
+      "tipo": "Aviso",
+      "codigo": "A643/2026",
+      "emision": "Domingo 22 de noviembre del 2026 a las 15:39 hrs.",
+      "fenomeno": "Precipitaciones",
+      "condicion": "Frente frío e inestabilidad post frontal",
+      "desde": "la mañana del miércoles 25 de noviembre del 2026",
+      "hasta": "la mañana del jueves 26 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
+      "titulo": "Precipitaciones Normales a Moderadas en zonas de la región de Magallanes",
+      "icono": "🌧️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 6057,
+      "tipo": "Aviso",
+      "codigo": "A642/2026",
+      "emision": "Domingo 22 de noviembre del 2026 a las 15:38 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la tarde del miércoles 25 de noviembre del 2026",
+      "hasta": "la mañana del jueves 26 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Sur, Insular Central, Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Viento Normal a Moderado en zonas de la región de Magallanes",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 6058,
+      "tipo": "Aviso",
+      "codigo": "A644/2026",
+      "emision": "Lunes 23 de noviembre del 2026 a las 14:48 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del miércoles 25 de noviembre del 2026",
+      "hasta": "la noche del miércoles 25 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
+      ]
+    },
+    {
+      "id": 6059,
+      "tipo": "Alerta",
+      "codigo": "AA202/2026",
+      "emision": "Martes 24 de noviembre del 2026 a las 12:18 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del jueves 26 de noviembre del 2026",
+      "hasta": "la noche del jueves 26 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Maule (Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Evento de Altas Temperaturas Extremas en zonas de las regiones del Maule y &Ntilde;uble",
+      "icono": "⚠️",
+      "color": "#f97316",
+      "regiones": [
+        "Maule",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6060,
+      "tipo": "Aviso",
+      "codigo": "A636-2/2026",
+      "emision": "Martes 24 de noviembre del 2026 a las 12:18 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del martes 24 de noviembre del 2026",
+      "hasta": "la tarde del viernes 27 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas desde la región de Coquimbo a la región del Biobío",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
         "Coquimbo",
-        "Valparaíso"
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
       ]
     },
     {
@@ -177,194 +331,22 @@
       ]
     },
     {
-      "id": 6060,
+      "id": 6062,
       "tipo": "Aviso",
-      "codigo": "A636-2/2026",
-      "emision": "Martes 24 de noviembre del 2026 a las 12:18 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del martes 24 de noviembre del 2026",
-      "hasta": "la tarde del viernes 27 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Coquimbo (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Valparaíso (Litoral, Cordillera Costa, Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas desde la región de Coquimbo a la región del Biobío",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Coquimbo",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 6059,
-      "tipo": "Alerta",
-      "codigo": "AA202/2026",
-      "emision": "Martes 24 de noviembre del 2026 a las 12:18 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del jueves 26 de noviembre del 2026",
-      "hasta": "la noche del jueves 26 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Maule (Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Evento de Altas Temperaturas Extremas en zonas de las regiones del Maule y &Ntilde;uble",
-      "icono": "⚠️",
-      "color": "#f97316",
-      "regiones": [
-        "Maule",
-        "Ñuble"
-      ]
-    },
-    {
-      "id": 6058,
-      "tipo": "Aviso",
-      "codigo": "A644/2026",
-      "emision": "Lunes 23 de noviembre del 2026 a las 14:48 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del miércoles 25 de noviembre del 2026",
-      "hasta": "la noche del miércoles 25 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Atacama"
-      ]
-    },
-    {
-      "id": 6057,
-      "tipo": "Aviso",
-      "codigo": "A642/2026",
-      "emision": "Domingo 22 de noviembre del 2026 a las 15:38 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la tarde del miércoles 25 de noviembre del 2026",
-      "hasta": "la mañana del jueves 26 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Sur, Insular Central, Pampa Patagonica Norte, Pampa Patagonica Sur)",
-      "titulo": "Viento Normal a Moderado en zonas de la región de Magallanes",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 6056,
-      "tipo": "Aviso",
-      "codigo": "A643/2026",
-      "emision": "Domingo 22 de noviembre del 2026 a las 15:39 hrs.",
-      "fenomeno": "Precipitaciones",
-      "condicion": "Frente frío e inestabilidad post frontal",
-      "desde": "la mañana del miércoles 25 de noviembre del 2026",
-      "hasta": "la mañana del jueves 26 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Norte, Pampa Patagonica Norte)",
-      "titulo": "Precipitaciones Normales a Moderadas en zonas de la región de Magallanes",
-      "icono": "🌧️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 6055,
-      "tipo": "Aviso",
-      "codigo": "A640/2026",
-      "emision": "Domingo 22 de noviembre del 2026 a las 13:45 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Alta subtropical",
-      "desde": "la mañana del jueves 26 de noviembre del 2026",
-      "hasta": "la tarde del viernes 27 de noviembre del 2026",
-      "observacion": "Este evento también afectará la comuna de Valdivia",
-      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Litoral)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de La Araucanía y Los Ríos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Ríos"
-      ]
-    },
-    {
-      "id": 6054,
-      "tipo": "Aviso",
-      "codigo": "A641/2026",
-      "emision": "Domingo 22 de noviembre del 2026 a las 13:45 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal aproxima la zona",
-      "desde": "la tarde del martes 24 de noviembre del 2026",
-      "hasta": "la noche del martes 24 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Aysén (Patagonia Subandina Norte)",
-      "titulo": "Viento Normal a Moderado en patagonia subandina norte de la región de Aysén",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén"
-      ]
-    },
-    {
-      "id": 6050,
-      "tipo": "Aviso",
-      "codigo": "A638/2026",
-      "emision": "Domingo 22 de noviembre del 2026 a las 12:15 hrs.",
+      "codigo": "A645/2026",
+      "emision": "Martes 24 de noviembre del 2026 a las 15:25 hrs.",
       "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
+      "condicion": "Margen anticiclónico con inestabilidad en cordillera",
       "desde": "la tarde del martes 24 de noviembre del 2026",
       "hasta": "la noche del miércoles 25 de noviembre del 2026",
       "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Arica y Parinacota (Cordillera) | Tarapacá (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Arica y Parinacota y Tarapacá",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Coquimbo y Valparaíso",
       "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "Arica y Parinacota",
-        "Tarapacá"
-      ]
-    },
-    {
-      "id": 6045,
-      "tipo": "Aviso",
-      "codigo": "A635/2026",
-      "emision": "Sábado 21 de noviembre del 2026 a las 15:10 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la mañana del domingo 22 de noviembre del 2026",
-      "hasta": "la tarde del martes 24 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Norte, Cordillera Austral Sur, Insular Norte, Insular Central, Insular Sur, Pampa Patagonica Norte, Pampa Patagonica Sur)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de la región de Magallanes",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 6044,
-      "tipo": "Aviso",
-      "codigo": "A634/2026",
-      "emision": "Sábado 21 de noviembre del 2026 a las 12:42 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la mañana del martes 24 de noviembre del 2026",
-      "hasta": "la noche del miércoles 25 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Maule (Litoral, Cordillera Costa, Valle) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Ñuble"
+        "Coquimbo",
+        "Valparaíso"
       ]
     }
   ]
