@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-11-25T00:00:38.968100",
+  "actualizado": "2026-11-25T06:00:44.989176",
   "totales": {
-    "avisos": 9,
+    "avisos": 8,
     "alertas": 2,
     "alarmas": 0,
-    "total": 11
+    "total": 10
   },
   "alertas": [
     {
@@ -44,24 +44,6 @@
       "regiones": [
         "Arica y Parinacota",
         "Tarapacá"
-      ]
-    },
-    {
-      "id": 6054,
-      "tipo": "Aviso",
-      "codigo": "A641/2026",
-      "emision": "Domingo 22 de noviembre del 2026 a las 13:45 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Sistema frontal aproxima la zona",
-      "desde": "la tarde del martes 24 de noviembre del 2026",
-      "hasta": "la noche del martes 24 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Aysén (Patagonia Subandina Norte)",
-      "titulo": "Viento Normal a Moderado en patagonia subandina norte de la región de Aysén",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Aysén"
       ]
     },
     {
