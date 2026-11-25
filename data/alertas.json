@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-25T18:00:44.293123",
+  "actualizado": "2026-11-25T19:01:07.164087",
   "totales": {
     "avisos": 8,
     "alertas": 2,
@@ -7,6 +7,25 @@
     "total": 10
   },
   "alertas": [
+    {
+      "id": 6064,
+      "tipo": "Aviso",
+      "codigo": "A640-1/2026",
+      "emision": "Miércoles 25 de noviembre del 2026 a las 15:48 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Alta subtropical",
+      "desde": "la mañana del jueves 26 de noviembre del 2026",
+      "hasta": "la tarde del viernes 27 de noviembre del 2026",
+      "observacion": "Este evento también afectará la comuna de Valdivia",
+      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Litoral)",
+      "titulo": "Altas Temperaturas en zonas de las regiones de La Araucanía y Los Ríos",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "La Araucanía",
+        "Los Ríos"
+      ]
+    },
     {
       "id": 6063,
       "tipo": "Aviso",
@@ -271,25 +290,6 @@
       "color": "#fbbf24",
       "regiones": [
         "Magallanes"
-      ]
-    },
-    {
-      "id": 6055,
-      "tipo": "Aviso",
-      "codigo": "A640/2026",
-      "emision": "Domingo 22 de noviembre del 2026 a las 13:45 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Alta subtropical",
-      "desde": "la mañana del jueves 26 de noviembre del 2026",
-      "hasta": "la tarde del viernes 27 de noviembre del 2026",
-      "observacion": "Este evento también afectará la comuna de Valdivia",
-      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Litoral)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de La Araucanía y Los Ríos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Ríos"
       ]
     },
     {
