@@ -1,32 +1,12 @@
 {
-  "actualizado": "2026-11-26T00:00:38.985940",
+  "actualizado": "2026-11-26T06:00:45.874693",
   "totales": {
-    "avisos": 7,
+    "avisos": 6,
     "alertas": 2,
     "alarmas": 0,
-    "total": 9
+    "total": 8
   },
   "alertas": [
-    {
-      "id": 6044,
-      "tipo": "Aviso",
-      "codigo": "A634/2026",
-      "emision": "Sábado 21 de noviembre del 2026 a las 12:42 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet costero",
-      "desde": "la mañana del martes 24 de noviembre del 2026",
-      "hasta": "la noche del miércoles 25 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Maule (Litoral, Cordillera Costa, Valle) | &Ntilde;uble (Litoral, Cordillera Costa, Valle) | Biobío (Litoral, Cordillera Costa, Valle)",
-      "titulo": "Viento Normal a Moderado en zonas de las regiones del Maule, &Ntilde;uble y Biobío",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Ñuble"
-      ]
-    },
     {
       "id": 6056,
       "tipo": "Aviso",
