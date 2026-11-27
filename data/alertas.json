@@ -1,12 +1,53 @@
 {
-  "actualizado": "2026-11-27T12:00:42.891903",
+  "actualizado": "2026-11-27T18:00:42.686285",
   "totales": {
-    "avisos": 2,
+    "avisos": 3,
     "alertas": 0,
     "alarmas": 0,
-    "total": 2
+    "total": 3
   },
   "alertas": [
+    {
+      "id": 6073,
+      "tipo": "Aviso",
+      "codigo": "A636-5/2026",
+      "emision": "Viernes 27 de noviembre del 2026 a las 13:09 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del viernes 27 de noviembre del 2026",
+      "hasta": "la tarde del lunes 30 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera) | Maule (Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas desde la región de Valparaíso a la región del Biobío",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6071,
+      "tipo": "Aviso",
+      "codigo": "A648/2026",
+      "emision": "Viernes 27 de noviembre del 2026 a las 12:55 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del viernes 27 de noviembre del 2026",
+      "hasta": "la tarde del viernes 27 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama"
+      ]
+    },
     {
       "id": 6064,
       "tipo": "Aviso",
@@ -24,29 +65,6 @@
       "regiones": [
         "La Araucanía",
         "Los Ríos"
-      ]
-    },
-    {
-      "id": 6069,
-      "tipo": "Aviso",
-      "codigo": "A636-4/2026",
-      "emision": "Jueves 26 de noviembre del 2026 a las 12:04 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del jueves 26 de noviembre del 2026",
-      "hasta": "la tarde del lunes 30 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas desde la región de Valparaíso a la región del Biobío",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "Biobío",
-        "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
-        "Ñuble"
       ]
     }
   ]
