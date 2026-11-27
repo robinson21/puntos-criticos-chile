@@ -1,421 +1,29 @@
 {
-  "actualizado": "2026-11-26T19:01:07.515790",
+  "actualizado": "2026-11-27T00:00:39.020140",
   "totales": {
-    "avisos": 6,
-    "alertas": 2,
+    "avisos": 5,
+    "alertas": 1,
     "alarmas": 0,
-    "total": 8
+    "total": 6
   },
   "alertas": [
     {
-      "id": 6070,
+      "id": 6059,
       "tipo": "Alerta",
-      "codigo": "AA204/2026",
-      "emision": "Jueves 26 de noviembre del 2026 a las 15:10 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del jueves 26 de noviembre del 2026",
-      "hasta": "la noche del jueves 26 de noviembre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "sectores cordilleranos de las regiones de Antofagasta y Atacama",
-      "titulo": "Tormentas Eléctricas en sectores cordilleranos de las regiones de Antofagasta y Atacama",
-      "icono": "⚡",
-      "color": "#f97316",
-      "poligono": [
-        [
-          -22.2666,
-          -67.9187
-        ],
-        [
-          -22.4698,
-          -68.3142
-        ],
-        [
-          -23.1398,
-          -68.0716
-        ],
-        [
-          -23.3997,
-          -68.2117
-        ],
-        [
-          -23.5874,
-          -68.3366
-        ],
-        [
-          -25.2163,
-          -69.3506
-        ],
-        [
-          -27.0864,
-          -69.6985
-        ],
-        [
-          -28.4859,
-          -70.0995
-        ],
-        [
-          -28.7271,
-          -69.8907
-        ],
-        [
-          -28.7752,
-          -69.7095
-        ],
-        [
-          -28.5631,
-          -69.6875
-        ],
-        [
-          -28.457,
-          -69.6655
-        ],
-        [
-          -28.3555,
-          -69.6106
-        ],
-        [
-          -28.2636,
-          -69.5062
-        ],
-        [
-          -28.2104,
-          -69.4678
-        ],
-        [
-          -28.2007,
-          -69.3854
-        ],
-        [
-          -28.0796,
-          -69.2975
-        ],
-        [
-          -27.9826,
-          -69.2426
-        ],
-        [
-          -27.9098,
-          -69.1437
-        ],
-        [
-          -27.7106,
-          -69.0668
-        ],
-        [
-          -27.6084,
-          -69.0448
-        ],
-        [
-          -27.5305,
-          -68.9569
-        ],
-        [
-          -27.4477,
-          -68.9899
-        ],
-        [
-          -27.3989,
-          -68.9294
-        ],
-        [
-          -27.316,
-          -68.847
-        ],
-        [
-          -27.2232,
-          -68.858
-        ],
-        [
-          -27.1255,
-          -68.8251
-        ],
-        [
-          -27.1059,
-          -68.7701
-        ],
-        [
-          -27.145,
-          -68.6383
-        ],
-        [
-          -27.1108,
-          -68.5559
-        ],
-        [
-          -27.0961,
-          -68.479
-        ],
-        [
-          -27.0277,
-          -68.3966
-        ],
-        [
-          -27.013,
-          -68.2977
-        ],
-        [
-          -26.9151,
-          -68.2813
-        ],
-        [
-          -26.768,
-          -68.3911
-        ],
-        [
-          -26.6699,
-          -68.4406
-        ],
-        [
-          -26.5324,
-          -68.5559
-        ],
-        [
-          -26.3799,
-          -68.5944
-        ],
-        [
-          -26.2371,
-          -68.5449
-        ],
-        [
-          -26.1533,
-          -68.4076
-        ],
-        [
-          -25.9905,
-          -68.4186
-        ],
-        [
-          -25.6939,
-          -68.4955
-        ],
-        [
-          -25.5948,
-          -68.5449
-        ],
-        [
-          -25.4511,
-          -68.5834
-        ],
-        [
-          -25.3419,
-          -68.5284
-        ],
-        [
-          -25.1879,
-          -68.5175
-        ],
-        [
-          -25.1133,
-          -68.3856
-        ],
-        [
-          -24.959,
-          -68.4351
-        ],
-        [
-          -24.8195,
-          -68.5449
-        ],
-        [
-          -24.6399,
-          -68.501
-        ],
-        [
-          -24.475,
-          -68.3582
-        ],
-        [
-          -24.1983,
-          -67.9663
-        ],
-        [
-          -24.0178,
-          -67.373
-        ],
-        [
-          -23.6359,
-          -67.1973
-        ],
-        [
-          -23.0306,
-          -66.9995
-        ],
-        [
-          -22.8282,
-          -67.3291
-        ],
-        [
-          -22.8485,
-          -67.7905
-        ],
-        [
-          -22.4632,
-          -67.9004
-        ]
-      ],
-      "puntos_area": {
-        "ATACAMA": {
-          "Activación de quebradas": {
-            "n": 2,
-            "alto": 2,
-            "af": 0
-          },
-          "Congelamiento de caminos": {
-            "n": 11,
-            "alto": 8,
-            "af": 0
-          },
-          "Anegamiento de caminos/pasos a desnivel": {
-            "n": 2,
-            "alto": 2,
-            "af": 0
-          },
-          "Deslizamiento/Derrumbe/Rodado/Caída": {
-            "n": 4,
-            "alto": 4,
-            "af": 0
-          }
-        },
-        "ANTOFAGASTA": {
-          "Anegamiento de caminos/pasos a desnivel": {
-            "n": 22,
-            "alto": 17,
-            "af": 0
-          },
-          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
-            "n": 54,
-            "alto": 51,
-            "af": 0
-          },
-          "Congelamiento de caminos": {
-            "n": 4,
-            "alto": 4,
-            "af": 0
-          },
-          "Flujos de barro/detritos (Aluvión)": {
-            "n": 3,
-            "alto": 3,
-            "af": 0
-          },
-          "Acumulación de nieve": {
-            "n": 7,
-            "alto": 7,
-            "af": 0
-          },
-          "Interrupción de caminos": {
-            "n": 2,
-            "alto": 2,
-            "af": 0
-          },
-          "Inundación por desborde de cauce": {
-            "n": 1,
-            "alto": 1,
-            "af": 0
-          }
-        }
-      },
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
-      ]
-    },
-    {
-      "id": 6069,
-      "tipo": "Aviso",
-      "codigo": "A636-4/2026",
-      "emision": "Jueves 26 de noviembre del 2026 a las 12:04 hrs.",
+      "codigo": "AA202/2026",
+      "emision": "Martes 24 de noviembre del 2026 a las 12:18 hrs.",
       "fenomeno": "Altas Temperaturas",
       "condicion": "Dorsal en altura",
       "desde": "la tarde del jueves 26 de noviembre del 2026",
-      "hasta": "la tarde del lunes 30 de noviembre del 2026",
+      "hasta": "la noche del jueves 26 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas desde la región de Valparaíso a la región del Biobío",
+      "zonas": "Maule (Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Evento de Altas Temperaturas Extremas en zonas de las regiones del Maule y &Ntilde;uble",
       "icono": "⚠️",
-      "color": "#fbbf24",
+      "color": "#f97316",
       "regiones": [
-        "Biobío",
         "Maule",
-        "Metropolitana",
-        "O'Higgins",
-        "Valparaíso",
         "Ñuble"
-      ]
-    },
-    {
-      "id": 6068,
-      "tipo": "Aviso",
-      "codigo": "A642-1/2026",
-      "emision": "Jueves 26 de noviembre del 2026 a las 11:43 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Jet de bajo nivel",
-      "desde": "la tarde del jueves 26 de noviembre del 2026",
-      "hasta": "la noche del jueves 26 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Magallanes (Cordillera Austral Sur, Insular Central, Pampa Patagonica Norte, Pampa Patagonica Sur)",
-      "titulo": "Viento Normal a Moderado en zonas de la región de Magallanes",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Magallanes"
-      ]
-    },
-    {
-      "id": 6067,
-      "tipo": "Aviso",
-      "codigo": "A647/2026",
-      "emision": "Jueves 26 de noviembre del 2026 a las 09:00 hrs.",
-      "fenomeno": "Viento",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del jueves 26 de noviembre del 2026",
-      "hasta": "la tarde del jueves 26 de noviembre del 2026",
-      "observacion": "Probabilidad de tormentas de arena",
-      "zonas": "Antofagasta (Precordillera Occidental, Precordillera Alto Loa, Precordillera Salar)",
-      "titulo": "Viento Normal a Moderado en zonas de la región de Antofagasta",
-      "icono": "💨",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta"
-      ]
-    },
-    {
-      "id": 6066,
-      "tipo": "Aviso",
-      "codigo": "A645-1/2026",
-      "emision": "Miércoles 25 de noviembre del 2026 a las 17:23 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Margen anticiclónico con inestabilidad en cordillera",
-      "desde": "la tarde del miércoles 25 de noviembre del 2026",
-      "hasta": "la noche del jueves 26 de noviembre del 2026",
-      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Coquimbo y Valparaíso",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Coquimbo",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 6065,
-      "tipo": "Aviso",
-      "codigo": "A646/2026",
-      "emision": "Miércoles 25 de noviembre del 2026 a las 16:52 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
-      "desde": "la tarde del jueves 26 de noviembre del 2026",
-      "hasta": "la noche del jueves 26 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Antofagasta (Cordillera) | Atacama (Precordillera, Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de Antofagasta y Atacama",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Antofagasta",
-        "Atacama"
       ]
     },
     {
@@ -438,21 +46,81 @@
       ]
     },
     {
-      "id": 6059,
-      "tipo": "Alerta",
-      "codigo": "AA202/2026",
-      "emision": "Martes 24 de noviembre del 2026 a las 12:18 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
+      "id": 6065,
+      "tipo": "Aviso",
+      "codigo": "A646/2026",
+      "emision": "Miércoles 25 de noviembre del 2026 a las 16:52 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
       "desde": "la tarde del jueves 26 de noviembre del 2026",
       "hasta": "la noche del jueves 26 de noviembre del 2026",
       "observacion": "",
-      "zonas": "Maule (Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Cordillera Costa, Valle, Precordillera)",
-      "titulo": "Evento de Altas Temperaturas Extremas en zonas de las regiones del Maule y &Ntilde;uble",
-      "icono": "⚠️",
-      "color": "#f97316",
+      "zonas": "Antofagasta (Cordillera) | Atacama (Precordillera, Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en zonas de las regiones de Antofagasta y Atacama",
+      "icono": "⚡",
+      "color": "#fbbf24",
       "regiones": [
+        "Antofagasta",
+        "Atacama"
+      ]
+    },
+    {
+      "id": 6066,
+      "tipo": "Aviso",
+      "codigo": "A645-1/2026",
+      "emision": "Miércoles 25 de noviembre del 2026 a las 17:23 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Margen anticiclónico con inestabilidad en cordillera",
+      "desde": "la tarde del miércoles 25 de noviembre del 2026",
+      "hasta": "la noche del jueves 26 de noviembre del 2026",
+      "observacion": "Preferentemente durante la tarde-noche, con precipitaciones aisladas",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Coquimbo y Valparaíso",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Coquimbo",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 6068,
+      "tipo": "Aviso",
+      "codigo": "A642-1/2026",
+      "emision": "Jueves 26 de noviembre del 2026 a las 11:43 hrs.",
+      "fenomeno": "Viento",
+      "condicion": "Jet de bajo nivel",
+      "desde": "la tarde del jueves 26 de noviembre del 2026",
+      "hasta": "la noche del jueves 26 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Magallanes (Cordillera Austral Sur, Insular Central, Pampa Patagonica Norte, Pampa Patagonica Sur)",
+      "titulo": "Viento Normal a Moderado en zonas de la región de Magallanes",
+      "icono": "💨",
+      "color": "#fbbf24",
+      "regiones": [
+        "Magallanes"
+      ]
+    },
+    {
+      "id": 6069,
+      "tipo": "Aviso",
+      "codigo": "A636-4/2026",
+      "emision": "Jueves 26 de noviembre del 2026 a las 12:04 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del jueves 26 de noviembre del 2026",
+      "hasta": "la tarde del lunes 30 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Litoral, Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas desde la región de Valparaíso a la región del Biobío",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
         "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
         "Ñuble"
       ]
     }
