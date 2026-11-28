@@ -1,48 +1,29 @@
 {
-  "actualizado": "2026-11-27T19:01:06.541223",
+  "actualizado": "2026-11-28T00:00:38.963257",
   "totales": {
-    "avisos": 5,
+    "avisos": 3,
     "alertas": 1,
     "alarmas": 0,
-    "total": 6
+    "total": 4
   },
   "alertas": [
     {
-      "id": 6075,
-      "tipo": "Aviso",
-      "codigo": "A650/2026",
-      "emision": "Viernes 27 de noviembre del 2026 a las 15:55 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Vaguada en altura",
+      "id": 6072,
+      "tipo": "Alerta",
+      "codigo": "AA205/2026",
+      "emision": "Viernes 27 de noviembre del 2026 a las 13:09 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
       "desde": "la tarde del sábado 28 de noviembre del 2026",
-      "hasta": "la noche del sábado 28 de noviembre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Coquimbo, Valparaíso y Metropolitana",
-      "icono": "⚡",
-      "color": "#fbbf24",
+      "hasta": "la tarde del sábado 28 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Maule (Valle) | &Ntilde;uble (Valle)",
+      "titulo": "Evento de Altas Temperaturas Extremas en valle de las regiones del Maule y &Ntilde;uble",
+      "icono": "⚠️",
+      "color": "#f97316",
       "regiones": [
-        "Coquimbo",
-        "Metropolitana",
-        "Valparaíso"
-      ]
-    },
-    {
-      "id": 6074,
-      "tipo": "Aviso",
-      "codigo": "A649/2026",
-      "emision": "Viernes 27 de noviembre del 2026 a las 15:53 hrs.",
-      "fenomeno": "Tormentas Eléctricas",
-      "condicion": "Inestabilidad atmosférica",
-      "desde": "la tarde del sábado 28 de noviembre del 2026",
-      "hasta": "la noche del domingo 29 de noviembre del 2026",
-      "observacion": "Asociadas con Chubascos aislados",
-      "zonas": "Arica y Parinacota (Cordillera)",
-      "titulo": "Probables Tormentas Eléctricas en cordillera de la región de Arica y Parinacota",
-      "icono": "⚡",
-      "color": "#fbbf24",
-      "regiones": [
-        "Arica y Parinacota"
+        "Maule",
+        "Ñuble"
       ]
     },
     {
@@ -69,59 +50,41 @@
       ]
     },
     {
-      "id": 6072,
-      "tipo": "Alerta",
-      "codigo": "AA205/2026",
-      "emision": "Viernes 27 de noviembre del 2026 a las 13:09 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
+      "id": 6074,
+      "tipo": "Aviso",
+      "codigo": "A649/2026",
+      "emision": "Viernes 27 de noviembre del 2026 a las 15:53 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
       "desde": "la tarde del sábado 28 de noviembre del 2026",
-      "hasta": "la tarde del sábado 28 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Maule (Valle) | &Ntilde;uble (Valle)",
-      "titulo": "Evento de Altas Temperaturas Extremas en valle de las regiones del Maule y &Ntilde;uble",
-      "icono": "⚠️",
-      "color": "#f97316",
+      "hasta": "la noche del domingo 29 de noviembre del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Arica y Parinacota (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de la región de Arica y Parinacota",
+      "icono": "⚡",
+      "color": "#fbbf24",
       "regiones": [
-        "Maule",
-        "Ñuble"
+        "Arica y Parinacota"
       ]
     },
     {
-      "id": 6071,
+      "id": 6075,
       "tipo": "Aviso",
-      "codigo": "A648/2026",
-      "emision": "Viernes 27 de noviembre del 2026 a las 12:55 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Dorsal en altura",
-      "desde": "la tarde del viernes 27 de noviembre del 2026",
-      "hasta": "la tarde del viernes 27 de noviembre del 2026",
-      "observacion": "",
-      "zonas": "Atacama (Litoral, Cordillera Costa y sectores de valles, Pampa, Precordillera)",
-      "titulo": "Altas Temperaturas en zonas de la región de Atacama",
-      "icono": "⚠️",
+      "codigo": "A650/2026",
+      "emision": "Viernes 27 de noviembre del 2026 a las 15:55 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del sábado 28 de noviembre del 2026",
+      "hasta": "la noche del sábado 28 de noviembre del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de las regiones de Coquimbo, Valparaíso y Metropolitana",
+      "icono": "⚡",
       "color": "#fbbf24",
       "regiones": [
-        "Atacama"
-      ]
-    },
-    {
-      "id": 6064,
-      "tipo": "Aviso",
-      "codigo": "A640-1/2026",
-      "emision": "Miércoles 25 de noviembre del 2026 a las 15:48 hrs.",
-      "fenomeno": "Altas Temperaturas",
-      "condicion": "Alta subtropical",
-      "desde": "la mañana del jueves 26 de noviembre del 2026",
-      "hasta": "la tarde del viernes 27 de noviembre del 2026",
-      "observacion": "Este evento también afectará la comuna de Valdivia",
-      "zonas": "La Araucanía (Valle, Precordillera) | Los Ríos (Litoral)",
-      "titulo": "Altas Temperaturas en zonas de las regiones de La Araucanía y Los Ríos",
-      "icono": "⚠️",
-      "color": "#fbbf24",
-      "regiones": [
-        "La Araucanía",
-        "Los Ríos"
+        "Coquimbo",
+        "Metropolitana",
+        "Valparaíso"
       ]
     }
   ]
