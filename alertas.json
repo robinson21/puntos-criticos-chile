@@ -1,0 +1,214 @@
+{
+  "actualizado": "2026-11-28T17:49:39.432793",
+  "totales": {
+    "avisos": 4,
+    "alertas": 1,
+    "alarmas": 0,
+    "total": 5
+  },
+  "alertas": [
+    {
+      "id": 6079,
+      "tipo": "Aviso",
+      "codigo": "A651/2026",
+      "emision": "Sábado 28 de noviembre del 2026 a las 12:44 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del sábado 28 de noviembre del 2026",
+      "hasta": "la tarde del martes 01 de diciembre del 2026",
+      "observacion": "",
+      "zonas": "Comunas de Angol y Renaico",
+      "titulo": "Altas Temperaturas en Comunas de Angol y Renaico",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "poligono": [
+        [
+          -37.6229,
+          -73.0591
+        ],
+        [
+          -37.5903,
+          -72.7789
+        ],
+        [
+          -37.6512,
+          -72.4933
+        ],
+        [
+          -37.9399,
+          -72.5208
+        ],
+        [
+          -37.9594,
+          -72.5812
+        ],
+        [
+          -37.8098,
+          -72.8888
+        ],
+        [
+          -37.8315,
+          -73.0399
+        ],
+        [
+          -37.7338,
+          -73.0206
+        ],
+        [
+          -37.7121,
+          -73.0481
+        ],
+        [
+          -37.7186,
+          -73.0975
+        ],
+        [
+          -37.6903,
+          -73.125
+        ]
+      ],
+      "puntos_area": {
+        "BIOBÍO": {
+          "Inundación por desborde de cauce": {
+            "n": 2,
+            "alto": 2,
+            "af": 0
+          },
+          "Interrupción de caminos": {
+            "n": 1,
+            "alto": 1,
+            "af": 0
+          }
+        },
+        "LA ARAUCANÍA": {
+          "Flujos de barro/detritos (Aluvión)": {
+            "n": 3,
+            "alto": 0,
+            "af": 1
+          },
+          "Inundación por desborde de cauce": {
+            "n": 31,
+            "alto": 26,
+            "af": 10
+          },
+          "Deslizamiento/Derrumbe/Rodado/Caída": {
+            "n": 11,
+            "alto": 7,
+            "af": 0
+          },
+          "Colapso colectores de aguas lluvia/alcantarillados": {
+            "n": 23,
+            "alto": 8,
+            "af": 11
+          },
+          "Interrupción de caminos": {
+            "n": 12,
+            "alto": 9,
+            "af": 0
+          },
+          "Subsidencia/Licuefacción/Socavamiento/Erosión": {
+            "n": 2,
+            "alto": 1,
+            "af": 2
+          },
+          "Acumulación de nieve": {
+            "n": 1,
+            "alto": 1,
+            "af": 0
+          },
+          "Anegamiento de caminos/pasos a desnivel": {
+            "n": 10,
+            "alto": 6,
+            "af": 3
+          }
+        }
+      },
+      "regiones": [
+        "Biobío",
+        "La Araucanía"
+      ]
+    },
+    {
+      "id": 6078,
+      "tipo": "Aviso",
+      "codigo": "A650-2/2026",
+      "emision": "Sábado 28 de noviembre del 2026 a las 11:57 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Vaguada en altura",
+      "desde": "la tarde del sábado 28 de noviembre del 2026",
+      "hasta": "la noche del sábado 28 de noviembre del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Atacama (Cordillera) | Coquimbo (Cordillera) | Valparaíso (Cordillera) | Metropolitana (Cordillera) | O'Higgins (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera desde la región de Atacama a la región de O'Higgins",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Atacama",
+        "Coquimbo",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso"
+      ]
+    },
+    {
+      "id": 6076,
+      "tipo": "Aviso",
+      "codigo": "A636-6/2026",
+      "emision": "Sábado 28 de noviembre del 2026 a las 07:03 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del sábado 28 de noviembre del 2026",
+      "hasta": "la tarde del lunes 30 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Valparaíso (Precordillera y valles precordilleranos) | Metropolitana (Cordillera Costa, Valle, Precordillera) | O'Higgins (Cordillera Costa, Valle, Precordillera) | Maule (Litoral, Cordillera Costa, Valle, Precordillera) | &Ntilde;uble (Litoral, Cordillera Costa, Valle, Precordillera) | Biobío (Litoral, Cordillera Costa, Valle, Precordillera)",
+      "titulo": "Altas Temperaturas en zonas desde la región de Valparaíso a la región del Biobío",
+      "icono": "⚠️",
+      "color": "#fbbf24",
+      "regiones": [
+        "Biobío",
+        "Maule",
+        "Metropolitana",
+        "O'Higgins",
+        "Valparaíso",
+        "Ñuble"
+      ]
+    },
+    {
+      "id": 6074,
+      "tipo": "Aviso",
+      "codigo": "A649/2026",
+      "emision": "Viernes 27 de noviembre del 2026 a las 15:53 hrs.",
+      "fenomeno": "Tormentas Eléctricas",
+      "condicion": "Inestabilidad atmosférica",
+      "desde": "la tarde del sábado 28 de noviembre del 2026",
+      "hasta": "la noche del domingo 29 de noviembre del 2026",
+      "observacion": "Asociadas con Chubascos aislados",
+      "zonas": "Arica y Parinacota (Cordillera)",
+      "titulo": "Probables Tormentas Eléctricas en cordillera de la región de Arica y Parinacota",
+      "icono": "⚡",
+      "color": "#fbbf24",
+      "regiones": [
+        "Arica y Parinacota"
+      ]
+    },
+    {
+      "id": 6072,
+      "tipo": "Alerta",
+      "codigo": "AA205/2026",
+      "emision": "Viernes 27 de noviembre del 2026 a las 13:09 hrs.",
+      "fenomeno": "Altas Temperaturas",
+      "condicion": "Dorsal en altura",
+      "desde": "la tarde del sábado 28 de noviembre del 2026",
+      "hasta": "la tarde del sábado 28 de noviembre del 2026",
+      "observacion": "",
+      "zonas": "Maule (Valle) | &Ntilde;uble (Valle)",
+      "titulo": "Evento de Altas Temperaturas Extremas en valle de las regiones del Maule y &Ntilde;uble",
+      "icono": "⚠️",
+      "color": "#f97316",
+      "regiones": [
+        "Maule",
+        "Ñuble"
+      ]
+    }
+  ]
+}
